@@ -1,0 +1,61 @@
+{
+  "type": "scroller",
+  "graphic": "intro_scroller",
+  "title": "Fossil fuel subsidies",
+  "subtitle": "Global trend",
+  "source": "Black, Liu, Parry, and Vernon (2023) [reference: black1]",
+  "visdescription": "Describe what the visualization shows",
+  "theme": "light (alternatively: dark)",
+  "visSize": "fullScreen",
+  "data_download": "12_1_global.zip",
+  "data": "1pMPXVMzsZfnsMZFRk2m76TRDI5xBb_vhVe0pUTmi27g",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "column_total",
+      "text": "Globally, government spending on fossil fuel subsidies in the period 2015-2022 has more than tripled to USD 1.3 trillion. The largest year-on-year increase occurred as part of the energy crisis  in 2022, when governments tried to cushion their populations as the cost of crude oil tripled - from about USD 40 a barrel in 2021 to more than USD 120 in 2022.",
+      "translationPrefix": "goal_12.content.#6.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "column_pct_gdp",
+      "text": "Also when measured as a share of GDP, global fossil fuel subsidies have increased substantially from 0.46 percent of global GDP in 2015 to 1.3 percent in 2022.",
+      "translationPrefix": "goal_12.content.#6.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "map_pct_change",
+      "text": "Over this time period fossil fuel subsidies as a percent of GDP increased in 121 out of 168 countries with data available. On average, fossil fuel subsidies increased by 1 percentage point. Typically, oil-exporting countries (such as Algeria, Angola, Iran or Qatar) have increased fossil fuel subsidies the most - up to 14 percentage points over the period. ",
+      "translationPrefix": "goal_12.content.#6.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "map_pct_gdp",
+      "text": "Following the increased subsidies in 2022, 23 countries spent at least 5% of GDP - up from 11 countries in 2015. Algeria topped the list, spending 23% of GDP.",
+      "translationPrefix": "goal_12.content.#6.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "bubble_high",
+      "text": "Fossil fuel subsidies per capita tend to rise with country income as the consumption of fossil fuels also increase, particularly among exporters (i.e., highlighted countries). In 2022, fossil fuel subsidy was about $3.30 per capita in low-income countries, $16.50 in lower-middle, $74.50 in upper-middle, and $104 in high-income. ",
+      "translationPrefix": "goal_12.content.#6.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "bubble_low",
+      "text": "Some high-income countries have kept subsidies at fairly low levels below USD 30 per capita, including Finland, Sweden, and Portugal as well as Norway, an oil exporting country.",
+      "translationPrefix": "goal_12.content.#6.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_12.content.#6",
+  "_meta": {
+    "index": 95,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/00-intro-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "scroller",
+  "graphic": "growth_since_90",
+  "title": "Low income countries in 1990 have experienced markedly different growth paths",
+  "subtitle": "Indexed constant USD (1990=100), grouped by current income classification.",
+  "y_axis_title": "",
+  "y_axis_units": "Index (1990=100)",
+  "source": "WB, World Development Indicators (<span style=\"background-color: rgb(255,255,255);\">NY.GDP.PCAP.KD.ZG</span>)",
+  "visdescription": "Describe what the visualization shows",
+  "visSize": "default",
+  "data_download": "08_data_lic_growth_rates.csv",
+  "data": "1JgVm6y5olvIBowRHLD3yP5kHkgEuQodjDahIsx4yyeY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "hic",
+      "text": "Of the countries classified as low income in 1990 one country has managed to move to [emphasis: high income] by 2024. ",
+      "translationPrefix": "goal_08.content.#11.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "umc",
+      "text": "Four countries have moved to [emphasis: upper middle income].",
+      "translationPrefix": "goal_08.content.#11.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "lmc",
+      "text": "A number of countries experienced sufficient growth to be classified as [emphasis: lower-middle income ]by 2024.",
+      "translationPrefix": "goal_08.content.#11.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "lic",
+      "text": "And a group of countries have been unable to sustain growth sufficient to escape the [emphasis: low income ]classification after 25 years.",
+      "translationPrefix": "goal_08.content.#11.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_08.content.#11",
+  "_meta": {
+    "index": 60,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/02-growth-since-90",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

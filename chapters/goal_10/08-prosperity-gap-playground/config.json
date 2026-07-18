@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "prosperity_gap_playground",
+  "title": "Choose an economy to see the changes in their Prosperity Gap",
+  "subtitle": "",
+  "absolute_change": "Change in absolute income ($/day)",
+  "relative_change": "Change in relative income (percent)",
+  "prosperity_gap": "Prosperity Gap",
+  "income": "Income",
+  "average_income": "Average income:",
+  "average_income_units": "/day",
+  "average_prosperity_gap": "Prosperity Gap:",
+  "source": "Authors’ calculation, <a href=\"https://pip.worldbank.org/key-inequality-indicators\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). ",
+  "visdescription": "This visualization reports the changes in the Prosperity Gap due to income increase, in percent or $, for an economy of choice. ",
+  "data_download": "10_data_prosperity_gap_interactive.csv",
+  "data": "1L99hy4R6DNW1aCn6GZym-ijXMU7Woim8vhWEaUowtHU",
+  "translationPrefix": "goal_10.content.#43",
+  "_meta": {
+    "index": 84,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/08-prosperity-gap-playground",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "affordability_barrier",
+  "title": "Mobile data is prohibitively expensive in low-income countries",
+  "subtitle": "Cost of data-only 5GB mobile package as a share of non-food household budget",
+  "source": "<a href=\"https://www.itu.int/en/Pages/default.aspx\" target=\"_blank\" rel=\"external\">International Telecommunication Union (ITU</a>), <a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank’s Poverty and Inequality Platform (PIP)</a>, <a href=\"https://blogs.worldbank.org/en/opendata/pandemic-prices-and-poverty\" target=\"_blank\" rel=\"external\">Mahler et al. (2022)</a>, and <a href=\"https://www.ers.usda.gov/\" target=\"_blank\" rel=\"external\">U.S. Department of Agriculture Economic Research Service</a>.",
+  "visdescription": "Chart showing the cost of a data package relative to a household’s budget, by income group, and relative to food expenditure.",
+  "visSize": "small",
+  "data_download": "affordability_incgroup.csv",
+  "data": "1MepA2Dpz0HUoZRmMMlr-5a7s5jPJcbH-aIvXL3Gbiu4",
+  "prompt_text": "Can everyone afford to use AI?",
+  "foodLabelShort": "food",
+  "foodLabelLong": "average expenditure on food",
+  "keyFact": "Nearly 50%",
+  "keyFactLabel": "of households' budget remaining after food consumption in low-income countries would be taken up by a data-only 5GB mobile package.",
+  "legendLabelCostOfData": "Cost of data-only 5GB mobile package",
+  "legendLabelRemainingBudget": "Remaining household budget,  after food consumption",
+  "translationPrefix": "goal_16.content.#14",
+  "_meta": {
+    "index": 135,
+    "chapterId": "16",
+    "chapterTitle": "Artificial Intelligence (AI)",
+    "dir": "chapters/goal_16/01-affordability-barrier",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

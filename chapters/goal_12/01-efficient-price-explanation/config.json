@@ -1,0 +1,84 @@
+{
+  "type": "scroller",
+  "graphic": "efficient_price_explanation",
+  "title": "Efficient fuel price",
+  "subtitle": "Illustration",
+  "source": "Black, Liu, Parry, and Vernon (2023) [reference: black1]",
+  "visdescription": "Describe what the visualization shows",
+  "theme": "light (alternatively: dark)",
+  "visSize": "fullScreen",
+  "publish_progress": "true",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "intro",
+      "text": "The “efficient price” of a fuel is its cost after externalities have been factored in.",
+      "translationPrefix": "goal_12.content.#16.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "price_at_pump",
+      "text": "Firms or households pay a price at the pump. This is the retail price.",
+      "translationPrefix": "goal_12.content.#16.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "subsidy",
+      "text": "The amount firms and individuals pay is reduced by government subsidies intended to keep affordable. This amount is added to the retail price when calculating the efficient price. These two amounts together equals the private/supply cost.",
+      "translationPrefix": "goal_12.content.#16.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "externalities_intro",
+      "text": "There are more costs on top of this, which are burdened by society at large.",
+      "translationPrefix": "goal_12.content.#16.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "air_pollution",
+      "text": "Burning fuels emits air pollution, which impacts life expectancy locally and across borders.",
+      "translationPrefix": "goal_12.content.#16.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "congestion",
+      "text": "Vehicles cause congestion and deteriorate roads, which must then be repaired to allow the continued operation.",
+      "translationPrefix": "goal_12.content.#16.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "global_warming",
+      "text": "In addition, fossil fuels release carbon dioxide into the atmosphere, which contributes to global warming.",
+      "translationPrefix": "goal_12.content.#16.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "forgone_vat",
+      "text": "On top of all of that, governments forgo collecting VAT on fuels, which acts as an additional implicit subsidy via lost tax revenues.",
+      "translationPrefix": "goal_12.content.#16.scenes.#7"
+    },
+    {
+      "type": "scene",
+      "id": "externalities_outro",
+      "text": "Together, these types of costs are labelled externalities, or external costs.",
+      "translationPrefix": "goal_12.content.#16.scenes.#8"
+    },
+    {
+      "type": "scene",
+      "id": "outro",
+      "text": "When you add the [emphasis: private/supply costs] and the [emphasis: external costs] together, you get the [emphasis: efficient price]. ",
+      "translationPrefix": "goal_12.content.#16.scenes.#9"
+    }
+  ],
+  "translationPrefix": "goal_12.content.#16",
+  "_meta": {
+    "index": 96,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/01-efficient-price-explanation",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas component kit — playground</title>
+  <link rel="stylesheet" href="../shared/shell.css" />
+  <style>
+    body { background: #f3f4f6; margin: 0; font-family: system-ui, sans-serif; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0 0 8px; font-size: 1.4rem; }
+    .lead { color: #6a7781; margin: 0 0 20px; }
+    .grid { display: grid; gap: 16px; }
+    .card {
+      background: #fff; border: 1px solid #e8eaef; border-radius: 12px;
+      padding: 14px 16px 18px;
+    }
+    .card h2 { margin: 0 0 4px; font-size: 1rem; }
+    .card p { margin: 0 0 12px; font-size: 13px; color: #6a7781; }
+    .stage-box { height: 320px; position: relative; border: 1px dashed #d0d5de; border-radius: 8px; }
+    .stage-box.tall { height: 380px; }
+    code { background: #eef2f7; padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+    a { color: #0071bc; }
+    pre {
+      background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 8px;
+      font-size: 12px; overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="../gallery.html">← Gallery</a> · <a href="../docs/DEV.md">DEV guide</a></p>
+    <h1>Component kit playground</h1>
+    <p class="lead">
+      Primitivas listas para usar en cualquier <code>main.js</code>.
+      Cárgalas desde <code>shared/</code> (ya están en el shell de cada scaffold).
+    </p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>AtlasLineChart</h2>
+        <p>Series temporales · nigeria_poverty, growth trends, etc.</p>
+        <div class="stage-box" id="line"></div>
+      </section>
+
+      <section class="card">
+        <h2>AtlasBeeswarmChart</h2>
+        <p>Distribuciones · spi_scroller, wage beeswarm, pay_beeswarm</p>
+        <div class="stage-box tall" id="beeswarm"></div>
+      </section>
+
+      <section class="card">
+        <h2>AtlasScatter</h2>
+        <p>Correlaciones · spi_gdp_scatter, urban_gdp_scatterplot…</p>
+        <div class="stage-box" id="scatter"></div>
+      </section>
+
+      <section class="card">
+        <h2>AtlasWaffle</h2>
+        <p>Proporciones · missing_children waffles, slum_waffle…</p>
+        <div class="stage-box" id="waffle" style="height:auto;padding:16px;display:flex;align-items:center;justify-content:center"></div>
+      </section>
+
+      <section class="card">
+        <h2>Uso en main.js</h2>
+<pre>window.AtlasReplica = {
+  ready: true,
+  isStub: false,
+  async render(scene, ctx) {
+    ctx.hidePlaceholder();
+    const { rows } = await AtlasLoad.firstCsv(ctx.config.data_download);
+    AtlasLineChart.mount(ctx.chartEl, {
+      data: rows.map(d =&gt; ({ x: d.year, y: d.rate })),
+      x: d =&gt; d.x, y: d =&gt; d.y,
+      yDomain: [0, 100],
+      width: ctx.chartEl.clientWidth,
+      height: ctx.chartEl.clientHeight,
+    });
+  }
+};</pre>
+      </section>
+    </div>
+  </div>
+
+  <script src="../shared/wb-colors.js"></script>
+  <script src="../shared/beeswarm.js"></script>
+  <script src="../shared/svg.js"></script>
+  <script src="../shared/load.js"></script>
+  <script src="../shared/components/Axis.js"></script>
+  <script src="../shared/components/LineChart.js"></script>
+  <script src="../shared/components/BeeswarmChart.js"></script>
+  <script src="../shared/components/Waffle.js"></script>
+  <script src="../shared/components/Scatter.js"></script>
+  <script src="../shared/components/index.js"></script>
+  <script>
+    // demo data
+    const years = Array.from({ length: 30 }, (_, i) => 1995 + i);
+    const lineData = years.map((y) => ({
+      x: y,
+      y: 40 - (y - 1995) * 0.7 + Math.sin(y) * 2,
+    }));
+    AtlasLineChart.mount(document.getElementById("line"), {
+      data: lineData,
+      x: (d) => d.x,
+      y: (d) => d.y,
+      yDomain: [0, 50],
+      xTicks: [1995, 2000, 2005, 2010, 2015, 2020, 2024],
+      width: document.getElementById("line").clientWidth,
+      height: 320,
+      colors: { default: WB_COLORS.wbBlue },
+    });
+
+    const swarm = Array.from({ length: 120 }, (_, i) => ({
+      id: i,
+      value: 30 + Math.random() * 60,
+      income: ["LIC", "LMC", "UMC", "HIC"][i % 4],
+    }));
+    AtlasBeeswarmChart.mount(document.getElementById("beeswarm"), {
+      data: swarm,
+      value: (d) => d.value,
+      color: (d) => WB_COLORS[d.income],
+      domain: [0, 100],
+      radius: 3.5,
+      width: document.getElementById("beeswarm").clientWidth,
+      height: 380,
+      title: (d) => `${d.income}: ${d.value.toFixed(1)}`,
+    });
+
+    const pts = Array.from({ length: 80 }, () => ({
+      x: Math.exp(6 + Math.random() * 3),
+      y: 40 + Math.random() * 50,
+      income: ["LIC", "LMC", "UMC", "HIC"][(Math.random() * 4) | 0],
+    }));
+    AtlasScatter.mount(document.getElementById("scatter"), {
+      data: pts,
+      x: (d) => Math.log10(d.x),
+      y: (d) => d.y,
+      color: (d) => WB_COLORS[d.income],
+      yDomain: [0, 100],
+      width: document.getElementById("scatter").clientWidth,
+      height: 320,
+      title: (d) => `${d.income}`,
+    });
+
+    AtlasWaffle.mount(document.getElementById("waffle"), {
+      total: 100,
+      filled: 62,
+      cols: 10,
+      cell: 16,
+      colors: { on: WB_COLORS.cat8 || "#AA0000", off: "#e8eaef" },
+    });
+  </script>
+</body>
+</html>

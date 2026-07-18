@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "ai_adoption",
+  "title": "Use of ChatGPT is 50 times higher in rich countries than in poorer countries",
+  "subtitle": "Visits to ChatGPT per internet user, May 2025",
+  "source": "<a href=\"https://hdl.handle.net/10986/43859\" target=\"_blank\" rel=\"external\">Liu, Huang, and Wang (2025)</a>, sourced from <a href=\"https://www.semrush.com/\" target=\"_blank\" rel=\"external\">Semrush. </a>",
+  "visdescription": "A global map of traffic to ChatGPT per internet user and a scatter plot showing a positive correlation between GDP per capita and chatGPT usage ",
+  "visSize": "default",
+  "data_download": "chatgpt.csv",
+  "data": "1_KJJCNEzSgK0Jn_trZgpvE_0wePSwvI-8G34Jcc-XyA",
+  "prompt_text": "Where in the world are people using AI?",
+  "keyFact": "50 times",
+  "keyFactLabel": "more ChatGPT usage occurs per internet user in high-income countries than in low-income countries.",
+  "yAxisLabel": "Visits per internet user",
+  "xAxisLabel": "GDP per capita ($)",
+  "legendLabel": "Visits to chatGPT per 100 internet users",
+  "disableDataDownload": "true",
+  "translationPrefix": "goal_16.content.#5",
+  "_meta": {
+    "index": 134,
+    "chapterId": "16",
+    "chapterTitle": "Artificial Intelligence (AI)",
+    "dir": "chapters/goal_16/00-ai-adoption",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

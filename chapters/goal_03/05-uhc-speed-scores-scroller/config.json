@@ -1,0 +1,45 @@
+{
+  "type": "scroller",
+  "graphic": "uhc_speed_scores_scroller",
+  "title": "Speed of Progress in RMNCH Mortality (2015–2030)",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_speed_scores_scroller.zip",
+  "data": "1jNNLrejvMRWJooxlTh-GB6qQ8AiI8GnJDXfoGRyWVCw",
+  "speed_score_label": "Speed score",
+  "title_scene_1": "Maternal Mortality​ ",
+  "title_scene_2": "Under-5 Mortality",
+  "title_scene_3": "Neonatal Mortality​ ",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "In reducing [emphasis: maternal mortality], several countries in <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span> recorded rapid gains, while many countries in <span data-color-id=\"LCN\" class=\"LCN\">Latin America and the Caribbean</span> experienced stagnation or reversal. ",
+      "translationPrefix": "goal_03.content.#22.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "Similar contrasts emerge for [emphasis: under-five mortality]. South Sudan recorded one of the fastest declines, reducing under-five mortality from 237 deaths per 1,000 live births in 2015 to 99 in 2023. At the same time, nearly 70 percent of countries in <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa </span>progressed more slowly than the typical pace or experienced reversals.",
+      "translationPrefix": "goal_03.content.#22.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "Progress in reducing [emphasis: neonatal mortality] has also been uneven. Several countries in <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span>, including India, Bangladesh, and Nepal, achieved rapid improvements, bringing them closer to the global target of 12 neonatal deaths per 1,000 live births by 2030.",
+      "translationPrefix": "goal_03.content.#22.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_03.content.#22",
+  "_meta": {
+    "index": 18,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/05-uhc-speed-scores-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

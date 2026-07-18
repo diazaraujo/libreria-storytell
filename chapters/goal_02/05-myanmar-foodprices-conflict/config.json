@@ -1,0 +1,33 @@
+{
+  "type": "scroller",
+  "graphic": "myanmar_foodprices_conflict",
+  "title": "Local violence triggered nationwide food price spikes in Myanmar",
+  "subtitle": "Circles on the map represent violent events with fatalities. The size of the circle represents the number of fatalities",
+  "events_title": "Number of monthly violent events with fatalities",
+  "price_title": "Food price index",
+  "source": "Source of the data",
+  "visdescription": "Describe what the visualization shows",
+  "visSize": "default",
+  "publish_progress": "true",
+  "data_download": "02_data_myanmar_markets_conflict.zip",
+  "data": "11_2hIONYC-s4nRasbR5THTjWmX8tEDGApR2E2QAe4gM",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "intro",
+      "text": "Following the surge in conflict incidents beginning in February 2021, food prices rose sharply and have remained elevated since. According to the World Food Programme, prices have more than quadrupled since the conflict began, deepening food insecurity for millions.",
+      "translationPrefix": "goal_02.content.#30.scenes.#0"
+    }
+  ],
+  "translationPrefix": "goal_02.content.#30",
+  "_meta": {
+    "index": 11,
+    "chapterId": "02",
+    "chapterTitle": "Global hunger",
+    "dir": "chapters/goal_02/05-myanmar-foodprices-conflict",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

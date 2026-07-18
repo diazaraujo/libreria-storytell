@@ -1,0 +1,28 @@
+# secrets / local env
+.env
+.env.*
+!.env.example
+scripts/capture/.env
+library/nightlights-hexmap/mapbox-config.js
+
+# dependencies
+node_modules/
+**/node_modules/
+library/nightlights-hexmap/h3-js-*.tgz
+
+# local capture / heavy artifacts
+recordings/
+*.mov
+*.mp4
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# editor
+.idea/
+.vscode/
+*.swp
+*.local.bak

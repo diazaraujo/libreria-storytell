@@ -1,0 +1,65 @@
+{
+  "type": "scroller",
+  "graphic": "prosperity_gaps",
+  "title": "From national gaps to regional and global gaps",
+  "subtitle": "A group’s Prosperity Gap is the average gap of all its members",
+  "source": "Authors’ calculation using <a href=\"https://pip.worldbank.org/\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). ",
+  "million_people": "million people",
+  "y_axis_title": "Prosperity Gap",
+  "visdescription": "This chart shows national Prosperity Gaps aggregated to regional and global Prosperity Gaps. ",
+  "disableScreenshot": "true",
+  "data_download": "10_data_prosperity_gaps.zip",
+  "data": "1dMwhGsyOLcQQI7y3WNmSHxSO09ftZGYRUOc5128tY_s",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "col_mex",
+      "text": "In 2026, the Prosperity Gap for Colombia was 4.5 and for Peru, 3.5.",
+      "translationPrefix": "goal_10.content.#28.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "country_gaps",
+      "text": "Each square represents an economy’s Prosperity Gap in 2026, colored by region and reflecting the population size.",
+      "translationPrefix": "goal_10.content.#28.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "country_gaps",
+      "text": "There is a large difference in prosperity between economies. In some, such as the United States, Japan, and Estonia, incomes are almost high enough to meet the prosperity standard, but in others, such as South Sudan and Mozambique, incomes would have to grow roughly 25 times to reach that level.",
+      "translationPrefix": "goal_10.content.#28.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "region_gaps",
+      "text": "The regional Prosperity Gaps reflect the average gap of all individuals living in the region. This is equivalent to taking the average Prosperity Gap across economies while accounting for the size of their population.",
+      "translationPrefix": "goal_10.content.#28.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "region_gaps",
+      "text": "Today, most people in <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Europe & Central Asia</span> and <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">North America</span> have reached the prosperity standard of $28 per day. On average, people in <span data-color-id=\"LCN\" class=\"LCN\">Latin America & the Caribbean</span> need to increase their incomes about [emphasis: three times] to reach that same level of prosperity. In <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span> and the <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Middle East, North Africa, Afghanistan & Pakistan</span>, incomes need to be about [emphasis: five times] higher, and in <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, almost [emphasis: 11 times] higher.",
+      "translationPrefix": "goal_10.content.#28.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "global_gap",
+      "text": "The <span data-color-id=\"WLD\" class=\"WLD\">Global Prosperity Gap</span> combines the Prosperity Gaps of every person in the world. Today, individual incomes worldwide would need to rise nearly [emphasis: five times] on average for everyone to reach the prosperity standard of $28 per day.",
+      "translationPrefix": "goal_10.content.#28.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_10.content.#28",
+  "_meta": {
+    "index": 80,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/04-prosperity-gaps",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "log scatter custom (earlier fix)"
+  }
+}

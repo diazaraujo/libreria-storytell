@@ -1,0 +1,56 @@
+{
+  "type": "scroller",
+  "graphic": "schooling_scroller",
+  "title": "Years of schooling have improved significantly over time",
+  "subtitle": "",
+  "source": "<span style=\"color: rgb(68,68,68);\">Barro-Lee Dataset. Barro, Robert and Jong-Wha Lee, 2013, </span><a href=\"http://www.sciencedirect.com/science/article/pii/S0304387812000855\" target=\"_blank\" rel=\"external\">“A New Data Set of Educational Attainment in the World, 1950-2010.”</a><span style=\"color: rgb(68,68,68);\"> </span><span style=\"color: rgb(68,68,68);\">Journal of Development Economics</span><span style=\"color: rgb(68,68,68);\">, vol 104, pp.184-198.</span>",
+  "visdescription": "The average number of years of schooling has expanded dramatically. The data is presented as a line chart showing increases in the number of years of schooling.<span style=\"background-color: rgb(255,255,0);\"></span>",
+  "data_download": "04_data_trends_schooling.csv",
+  "data": "1nd7cgUAXC4mlmOTZ99bFhTYz7JEr7h4KEsQPidAxmCI",
+  "y_title": "Average years of schooling (ages 25–64)",
+  "y_unit": "Number of years",
+  "avg_title": "Global average",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "In 1920, the average adult had only 1.6 years of education—ranging from nearly zero years in <span data-color-id=\"SSF\" class=\"SSF\">Mali</span> to seven in the <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">United States</span>.",
+      "translationPrefix": "goal_04.content.#9.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "By 1960, the <span data-color-id=\"WLD\" class=\"WLD\">global average</span> had doubled to 3.5 years, but the pace of progress was slow. On average, the world population gained half a year of school per decade. In low-income countries like <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Mali</span><span style=\"color: rgb(4,1,16);\">,</span> there was almost no improvement . ",
+      "translationPrefix": "goal_04.content.#9.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "…but trends changed dramatically after 1960. Many countries will make rapid progress in improving years of schooling, while some are left with persistently low levels of education.",
+      "translationPrefix": "goal_04.content.#9.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "4",
+      "text": "Between 1960 and 2025, the average in the <span data-color-id=\"EAS\" class=\"EAS\">Republic of Korea</span> jumped from around 3.5 to more than 14 years. <span data-color-id=\"MEA\" class=\"MEA\">Egypt</span> improved from less than one year to more than eight years of schooling. In <span data-color-id=\"SAS\" class=\"SAS\">India</span>, it went from around one to nearly eight years, and in <span data-color-id=\"LCN\" class=\"LCN\">Mexico</span> from 2.3 to more than 10 years over the same period. ",
+      "translationPrefix": "goal_04.content.#9.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "5",
+      "text": "By 2025, the global <span data-color-id=\"WLD\" class=\"WLD\">average</span> for 25–64-year-olds was more than nine years, equivalent to a lower secondary education. But the gaps between countries are large: the average in <span data-color-id=\"SSF\" class=\"SSF\">Mali</span> is around 3 years, compared to 14 years in <span data-color-id=\"EAS\" class=\"EAS\">Korea</span> and <span data-color-id=\"ECS\" class=\"ECS\">Ireland</span>.",
+      "translationPrefix": "goal_04.content.#9.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_04.content.#9",
+  "_meta": {
+    "index": 24,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/01-schooling-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

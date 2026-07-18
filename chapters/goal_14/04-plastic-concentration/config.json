@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "plastic_concentration",
+  "title": "Large plastic accumulations in the oceans (garbage patches)",
+  "subtitle": "Colored areas have microplastic concentrations of > 100,000/km2",
+  "north_pacific_gyre": "North Pacific Gyre",
+  "south_pacific_gyre": "South Pacific Gyre",
+  "north_atlantic_gyre": "North Atlantic Gyre",
+  "south_atlantic_gyre": "South Atlantic Gyre",
+  "indian_ocean_gyre": "Indian Ocean Gyre",
+  "mediterranean": "Mediterranean",
+  "yellow_sea": "Yellow Sea",
+  "legend_title": "Microplastics count per square meter, logarithmic scale",
+  "source": "Seven years into the North Pacific garbage patch: legacy plastic fragments rising disproportionally faster than larger floating objects",
+  "visdescription": "Describe what the visualization shows",
+  "data": "",
+  "texture": "sdg14/textures/plastic_concentration.jpeg",
+  "translationPrefix": "goal_14.content.#16",
+  "_meta": {
+    "index": 114,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/04-plastic-concentration",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

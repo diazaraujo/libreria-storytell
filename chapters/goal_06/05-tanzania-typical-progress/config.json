@@ -1,0 +1,64 @@
+{
+  "type": "scroller",
+  "graphic": "tanzania_typical_progress",
+  "title": "Progress in improving water quality lags progress in availability and accessibility",
+  "subtitle": "People with access to each component: <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water free from contamination</span><span style=\"color: rgb(255,255,255);\">  </span>or <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">water accessible on premises</span>, or <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">water available when needed</span> and years left to reach universal access (% of people using improved water sources) for Tanzania and “typical” country",
+  "access": "Accessibility",
+  "availability": "Availability",
+  "quality": "Quality",
+  "x_axis_title": "Year",
+  "x_axis_title_typical": "Years left to reach universal access",
+  "pp": "pp",
+  "years": "years",
+  "source": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, <a href=\"https://washdata.org/data/downloads#WLD\" target=\"_blank\" rel=\"external\">JMP Global Database</a>; World Bank staff calculations. ",
+  "visdescription": "Three line charts showing the share of population meeting each component of safely managed drinking water—quality, accessibility, and availability—from 2000 to 2024. Each line represents one component, and the slope indicates how quickly it is changing. In the final two scenes, the charts compare progress in Tanzania with the typical trajectory.",
+  "visSize": "default",
+  "data_download": "06_data_drinking_water_progress.zip",
+  "data": "1VT3PtyjplyFtkVFZqeKIO4lbsaLMPb2CIeWi_HcbZkc",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "tanzania_start",
+      "text": "In 2000, nearly 15 percent of people in [emphasis: Tanzania ]had access to <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">uncontaminated water</span>, but only 1 percent had access to <span data-color-id=\"cat1\" class=\"cat1\">water on premises</span>.",
+      "translationPrefix": "goal_06.content.#21.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "tanzania_progress",
+      "text": "Over the next two decades, <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">accessibility</span> improved dramatically but <span style=\"color: rgb(4,1,16);\">improvements in </span><span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span><span style=\"color: rgb(4,1,16);\"> were more limited</span>. Infrastructure expanded rapidly and by 2024, almost half the population had water on premises. Yet only about one-third had access to <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">uncontaminated water</span>.",
+      "translationPrefix": "goal_06.content.#21.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene2_Id",
+      "text": "Is this pattern unique to Tanzania? Let’s take a look at the average path of[emphasis:  progress across countries ]from 2000 to 2024. Using historical country-level data, we estimate a “typical” trajectory of improvement for each component of safely managed drinking water (see this link[reference: progress-paper] for the methodology).",
+      "translationPrefix": "goal_06.content.#21.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "scene3_Id",
+      "text": "The contrast is striking. On the typical path, increasing water <span data-color-id=\"cat1\" class=\"cat1\">accessibility</span> from 40 percent to 75 percent of the population would take 33 years.",
+      "translationPrefix": "goal_06.content.#21.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "scene4_Id",
+      "text": "Achieving the same scale of progress in <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span> would take 101 years, or three times longer.",
+      "translationPrefix": "goal_06.content.#21.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#21",
+  "_meta": {
+    "index": 45,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/05-tanzania-typical-progress",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

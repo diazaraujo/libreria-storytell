@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas Hero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #062958;
+      --bg-deep: #041c3d;
+      --text: #fff;
+      --muted: rgba(255,255,255,.72);
+      --stick: #3ecfbf;
+      --font: "Open Sans", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; font-family: var(--font); background: var(--bg-deep); color: var(--text); }
+    .page {
+      min-height: 100%; position: relative; overflow: hidden;
+      background: radial-gradient(1200px 600px at 18% 85%, #0a4a6e 0%, var(--bg) 48%, var(--bg-deep) 100%);
+    }
+    .topbar {
+      position: relative; z-index: 5; display: flex; justify-content: space-between; gap: 16px;
+      padding: 14px 28px 0; align-items: flex-start;
+    }
+    .reveal { font-size: 12px; color: var(--muted); max-width: 380px; display: flex; flex-direction: column; gap: 4px; }
+    .reveal label { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-weight: 600; cursor: pointer; }
+    .switch { width: 36px; height: 20px; border-radius: 999px; background: rgba(255,255,255,.25); position: relative; }
+    .switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: .2s; }
+    input { display: none; }
+    input:checked + .switch { background: var(--stick); }
+    input:checked + .switch::after { left: 18px; }
+    .explore { font-size: 12px; color: #7dd3fc; text-decoration: none; white-space: nowrap; }
+    .stage { position: absolute; inset: 0; z-index: 1; }
+    .stage svg { width: 100%; height: 100%; display: block; }
+    .content {
+      position: relative; z-index: 3; max-width: 560px; margin-left: auto; margin-right: 6vw;
+      padding: 7vh 0 3vh; pointer-events: none;
+    }
+    .content * { pointer-events: auto; }
+    .kicker { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+    h1 { font-size: clamp(1.7rem, 3vw, 2.6rem); line-height: 1.15; margin: 0 0 14px; font-weight: 700; }
+    .lede { font-size: 15px; line-height: 1.55; color: var(--muted); margin: 0 0 24px; }
+    .facts-label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: 10px; }
+    .facts { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+    .fact {
+      background: rgba(10,58,92,.92); border: 1px solid rgba(255,255,255,.08); border-radius: 4px;
+      padding: 14px 12px; min-height: 120px; display: flex; flex-direction: column;
+    }
+    .fact .num { font-size: 1.25rem; font-weight: 700; color: var(--stick); margin-bottom: 8px; }
+    .fact p { margin: 0; font-size: 12px; line-height: 1.4; color: var(--muted); }
+    .tooltip {
+      position: absolute; z-index: 10; pointer-events: none; display: none;
+      background: rgba(4,28,61,.95); border: 1px solid rgba(255,255,255,.15);
+      padding: 8px 10px; border-radius: 4px; font-size: 12px; line-height: 1.35;
+      transform: translate(-50%, -120%); white-space: nowrap;
+      box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+    .tooltip .name { font-weight: 700; }
+    .tooltip .val { color: var(--stick); }
+    .tooltip .cat { color: rgba(255,255,255,.65); font-size: 11px; }
+    .guide { position: absolute; left: 24px; bottom: 14px; z-index: 5; font-size: 11px; color: rgba(255,255,255,.4); }
+    .guide a { color: #7dd3fc; }
+    @media (max-width: 900px) {
+      .content { margin: 0 auto; padding: 12vh 16px 16px; max-width: 100%; }
+      .facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="stage" id="stage"></div>
+    <div class="tooltip" id="tip"></div>
+    <div class="topbar">
+      <div class="reveal">
+        <label>
+          <input type="checkbox" id="reveal" checked />
+          <span class="switch"></span>
+          reveal data
+        </label>
+        <div id="caption"></div>
+      </div>
+      <a class="explore" id="explore" href="#" target="_blank" rel="noopener">Explore further →</a>
+    </div>
+    <div class="content">
+      <div class="kicker" id="kicker"></div>
+      <h1 id="title"></h1>
+      <p class="lede" id="lede"></p>
+      <div class="facts-label">Key facts from this story</div>
+      <div class="facts" id="facts"></div>
+    </div>
+    <div class="guide">
+      Progress sticks · Atlas yearly-data ·
+      <a href="../heroes.html">All heroes</a> ·
+      <a href="../../gallery.html">Gallery</a>
+    </div>
+  </div>
+  <script>
+  const tip = document.getElementById("tip");
+  const stage = document.getElementById("stage");
+  const revealEl = document.getElementById("reveal");
+  const PROGRESS_LABEL = {
+    standstill: "standstill",
+    slow: "slow progress",
+    typical: "typical progress",
+    fast: "fast progress",
+    "very fast": "very fast progress",
+  };
+
+  let META = null;
+  let DATA = [];
+  let hoverIso = null;
+
+  async function boot() {
+    META = await (await fetch("./meta.json")).json();
+    DATA = await (await fetch("./data/country_progress.json")).json();
+    document.title = META.title;
+    document.documentElement.style.setProperty("--stick", META.stick || "#3ecfbf");
+    document.getElementById("kicker").textContent = META.kicker || "";
+    document.getElementById("title").textContent = META.title || "";
+    document.getElementById("lede").textContent = META.lede || "";
+    document.getElementById("caption").textContent = META.caption || "";
+    const ex = document.getElementById("explore");
+    ex.href = META.original || "#";
+    const facts = document.getElementById("facts");
+    facts.innerHTML = (META.facts || [])
+      .map(
+        (f) => `<div class="fact"><div class="num">${f.num}</div><p>${f.text}</p></div>`
+      )
+      .join("");
+    DATA = DATA.filter((d) => d.y2024 != null && d.name);
+    DATA.sort((a, b) => a.y2024 - b.y2024);
+    draw();
+  }
+
+  function draw() {
+    const revealed = revealEl.checked;
+    const w = stage.clientWidth;
+    const h = stage.clientHeight;
+    const margin = { top: 70, right: 24, bottom: 40, left: 40 };
+    const innerW = w - margin.left - margin.right;
+    const innerH = h - margin.top - margin.bottom;
+    stage.innerHTML = "";
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+    svg.style.cssText = "width:100%;height:100%";
+    stage.appendChild(svg);
+    const el = (tag, attrs = {}, parent = svg) => {
+      const n = document.createElementNS(svgNS, tag);
+      for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+      parent.appendChild(n);
+      return n;
+    };
+
+    const vals = DATA.flatMap((d) => [d.y2015, d.y2024]).filter((v) => v != null);
+    let yMin = Math.min(0, ...vals);
+    let yMax = Math.max(100, ...vals);
+    // if values are small indices, don't force 100
+    if (Math.max(...vals) <= 40) yMax = Math.max(...vals) * 1.15;
+    if (Math.min(...vals) >= 0) yMin = 0;
+
+    const yScale = (v) => margin.top + (1 - (v - yMin) / (yMax - yMin || 1)) * innerH;
+    const n = DATA.length || 1;
+    const xScale = (i) => margin.left + ((i + 0.5) / n) * innerW;
+    const barW = Math.max(1.1, (innerW / n) * 0.55);
+
+    const ticks = 5;
+    for (let i = 0; i <= ticks; i++) {
+      const v = yMin + ((yMax - yMin) * i) / ticks;
+      const y = yScale(v);
+      el("line", {
+        x1: margin.left, x2: w - margin.right, y1: y, y2: y,
+        stroke: "rgba(255,255,255,0.06)",
+      });
+      el("text", {
+        x: margin.left - 8, y: y + 4, "text-anchor": "end",
+        fill: "rgba(255,255,255,0.35)", "font-size": 11,
+      }).textContent = Math.abs(v) >= 10 ? v.toFixed(0) : v.toFixed(1);
+    }
+
+    DATA.forEach((d, i) => {
+      const x = xScale(i);
+      const y1 = yScale(d.y2015);
+      const y2 = yScale(d.y2024);
+      const active = !hoverIso || hoverIso === d.iso3c;
+      const opacity = revealed ? (active ? 0.95 : 0.15) : 0.1;
+      el("line", {
+        x1: x, x2: x, y1: y1, y2: y2,
+        stroke: hoverIso === d.iso3c ? "#fff" : "var(--stick)",
+        "stroke-width": hoverIso === d.iso3c ? 2.2 : Math.min(2.4, barW),
+        "stroke-linecap": "round",
+        opacity,
+      });
+      el("circle", {
+        cx: x, cy: y2,
+        r: hoverIso === d.iso3c ? 3.2 : Math.min(2.1, barW * 0.7),
+        fill: hoverIso === d.iso3c ? "#fff" : "var(--stick)",
+        opacity: revealed ? (active ? 1 : 0.12) : 0.06,
+      });
+      const hit = el("rect", {
+        x: x - Math.max(3, barW),
+        y: margin.top,
+        width: Math.max(6, barW * 2),
+        height: innerH,
+        fill: "transparent",
+        style: "cursor:crosshair",
+      });
+      hit.addEventListener("pointerenter", (ev) => onHover(d, ev));
+      hit.addEventListener("pointermove", (ev) => onHover(d, ev));
+      hit.addEventListener("pointerleave", onLeave);
+    });
+
+    el("text", {
+      x: 12, y: margin.top - 28,
+      fill: "rgba(255,255,255,0.4)", "font-size": 11,
+    }).textContent = META.yLabel || "";
+  }
+
+  function onHover(d, ev) {
+    if (hoverIso !== d.iso3c) {
+      hoverIso = d.iso3c;
+      draw();
+    }
+    const t = document.getElementById("tip");
+    t.style.display = "block";
+    t.style.left = ev.clientX + "px";
+    t.style.top = ev.clientY + "px";
+    const label = PROGRESS_LABEL[d.progress] || d.progress;
+    t.innerHTML = `<div class="name">${d.name}</div>
+      <div class="val">${Number(d.y2024).toFixed(1)} <span style="opacity:.7">in ${d.end_year || 2024}</span></div>
+      <div class="cat">${label}.${d.size || "small"}</div>`;
+  }
+  function onLeave() {
+    hoverIso = null;
+    document.getElementById("tip").style.display = "none";
+    draw();
+  }
+
+  revealEl.addEventListener("change", draw);
+  window.addEventListener("resize", () => {
+    clearTimeout(window.__w);
+    window.__w = setTimeout(draw, 80);
+  });
+  boot();
+  </script>
+</body>
+</html>

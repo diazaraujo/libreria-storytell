@@ -1,0 +1,60 @@
+{
+  "type": "scroller",
+  "graphic": "mobile_vs_fixed_broadband",
+  "title": "Worldwide, mobile broadband far surpasses fixed broadband adoption",
+  "subtitle": "",
+  "x_axis_title": "Mobile broadband subscriptions",
+  "x_axis_units": "per 100 people",
+  "y_axis_title": "Fixed broadband subscribers",
+  "y_axis_units": "per 100 people",
+  "more_fixed": "More fixed broadband",
+  "more_mobile": "More mobile broadband",
+  "fixed_tooltip": "Fixed:",
+  "mobile_tooltip": "Mobile:",
+  "source": "International Telecommunication Union, ITU DataHub. Retrieved from Data360 (<a href=\"https://data360.worldbank.org/en/int/indicator/WB_WDI_IT_NET_BBND_P2\" target=\"_blank\" rel=\"external\">WB_WDI_IT_NET_BBND_P2</a>, <a href=\"https://data360.worldbank.org/en/int/indicator/ACT_MOB_SB\" target=\"_blank\" rel=\"external\">ACT_MOB_SB</a>)",
+  "visdescription": "Scatterplot showing the number of fixed and mobile broadband subscriptions, per 100 people, by country",
+  "visSize": "default",
+  "data_download": "09_data_mobile_fixed_broadband_subscriptions.zip",
+  "data": "1L-yEyxkQMrc5MA5gSNTjxlmQtHCpgfZtG1cddhgW7DE",
+  "indicator_360": "ACT_MOB_SB",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "global",
+      "text": "Between 2015 and 2025, fixed broadband levels doubled, reaching 20 subscriptions per 100 people. Meanwhile, [emphasis: mobile Internet connectivity has surged to 99 active mobile broadband subscriptions per 100 people.] ",
+      "translationPrefix": "goal_09.content.#27.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "hic",
+      "text": "[emphasis: Fixed broadband] is common in many high-income countries. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">Germany</span>], for example, there are approximately 46 fixed broadband connections per 100 people. [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">China</span>], an upper-middle-income country, is also highly connected, with 47 fixed high-speed Internet subscriptions per 100 people in 2024. ",
+      "translationPrefix": "goal_09.content.#27.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "income_levels",
+      "text": "But fixed broadband is nearly absent in low and lower middle-income economies. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Morocco</span>]and[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Eswatini</span>], for example, penetration is minimal, with 7 and 2.5 fixed broadband subscriptions per 100 people, respectively.",
+      "translationPrefix": "goal_09.content.#27.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "civ_sen",
+      "text": "Across much of the world, people connect to the Internet through mobile phones. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Morocco</span>] and in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Eswatini</span>][emphasis: , ]there are 98 and 116 active [emphasis: mobile broadband] subscriptions, respectively, per 100 people. (In many countries, there are more than 100 mobile broadband subscriptions per 100 people due to  multiple connections—for example, through smartphones, tablets, work devices, or other connected equipment.)[reference: mrbs1]",
+      "translationPrefix": "goal_09.content.#27.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_09.content.#27",
+  "_meta": {
+    "index": 70,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/04-mobile-vs-fixed-broadband",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  }
+}

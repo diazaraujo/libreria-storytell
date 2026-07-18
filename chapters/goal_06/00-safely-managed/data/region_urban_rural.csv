@@ -1,0 +1,601 @@
+year,region,region_label,location,level,value
+2000,EAS,East Asia & Pacific,rural,safely_managed,
+2001,EAS,East Asia & Pacific,rural,safely_managed,
+2002,EAS,East Asia & Pacific,rural,safely_managed,
+2003,EAS,East Asia & Pacific,rural,safely_managed,
+2004,EAS,East Asia & Pacific,rural,safely_managed,
+2005,EAS,East Asia & Pacific,rural,safely_managed,
+2006,EAS,East Asia & Pacific,rural,safely_managed,
+2007,EAS,East Asia & Pacific,rural,safely_managed,
+2008,EAS,East Asia & Pacific,rural,safely_managed,
+2009,EAS,East Asia & Pacific,rural,safely_managed,
+2010,EAS,East Asia & Pacific,rural,safely_managed,
+2011,EAS,East Asia & Pacific,rural,safely_managed,
+2012,EAS,East Asia & Pacific,rural,safely_managed,
+2013,EAS,East Asia & Pacific,rural,safely_managed,
+2014,EAS,East Asia & Pacific,rural,safely_managed,
+2015,EAS,East Asia & Pacific,rural,safely_managed,42.37237317
+2016,EAS,East Asia & Pacific,rural,safely_managed,42.81809018
+2017,EAS,East Asia & Pacific,rural,safely_managed,43.26373796
+2018,EAS,East Asia & Pacific,rural,safely_managed,43.70615538
+2019,EAS,East Asia & Pacific,rural,safely_managed,44.14259073
+2020,EAS,East Asia & Pacific,rural,safely_managed,44.56791684
+2021,EAS,East Asia & Pacific,rural,safely_managed,44.99643319
+2022,EAS,East Asia & Pacific,rural,safely_managed,45.3809905
+2023,EAS,East Asia & Pacific,rural,safely_managed,45.72039461
+2024,EAS,East Asia & Pacific,rural,safely_managed,57.66008192
+2000,ECS,Europe & Central Asia,rural,safely_managed,70.15485502
+2001,ECS,Europe & Central Asia,rural,safely_managed,70.3401756
+2002,ECS,Europe & Central Asia,rural,safely_managed,70.62610493
+2003,ECS,Europe & Central Asia,rural,safely_managed,70.92259875
+2004,ECS,Europe & Central Asia,rural,safely_managed,71.87716206
+2005,ECS,Europe & Central Asia,rural,safely_managed,74.35459082
+2006,ECS,Europe & Central Asia,rural,safely_managed,75.28821951
+2007,ECS,Europe & Central Asia,rural,safely_managed,76.24824434
+2008,ECS,Europe & Central Asia,rural,safely_managed,77.21331649
+2009,ECS,Europe & Central Asia,rural,safely_managed,78.16620836
+2010,ECS,Europe & Central Asia,rural,safely_managed,79.06546698
+2011,ECS,Europe & Central Asia,rural,safely_managed,79.95792307
+2012,ECS,Europe & Central Asia,rural,safely_managed,80.84165666
+2013,ECS,Europe & Central Asia,rural,safely_managed,81.69927946
+2014,ECS,Europe & Central Asia,rural,safely_managed,82.10032525
+2015,ECS,Europe & Central Asia,rural,safely_managed,82.48166734
+2016,ECS,Europe & Central Asia,rural,safely_managed,82.87075693
+2017,ECS,Europe & Central Asia,rural,safely_managed,83.27035385
+2018,ECS,Europe & Central Asia,rural,safely_managed,83.59059812
+2019,ECS,Europe & Central Asia,rural,safely_managed,83.90494318
+2020,ECS,Europe & Central Asia,rural,safely_managed,84.13016563
+2021,ECS,Europe & Central Asia,rural,safely_managed,84.32968623
+2022,ECS,Europe & Central Asia,rural,safely_managed,84.48065147
+2023,ECS,Europe & Central Asia,rural,safely_managed,84.57665008
+2024,ECS,Europe & Central Asia,rural,safely_managed,84.72213235
+2000,LCN,Latin America & Caribbean,rural,safely_managed,40.83996206
+2001,LCN,Latin America & Caribbean,rural,safely_managed,41.24534446
+2002,LCN,Latin America & Caribbean,rural,safely_managed,41.67314481
+2003,LCN,Latin America & Caribbean,rural,safely_managed,42.10376056
+2004,LCN,Latin America & Caribbean,rural,safely_managed,42.52271884
+2005,LCN,Latin America & Caribbean,rural,safely_managed,43.61896094
+2006,LCN,Latin America & Caribbean,rural,safely_managed,44.05793135
+2007,LCN,Latin America & Caribbean,rural,safely_managed,44.4967157
+2008,LCN,Latin America & Caribbean,rural,safely_managed,45.05275739
+2009,LCN,Latin America & Caribbean,rural,safely_managed,45.60936433
+2010,LCN,Latin America & Caribbean,rural,safely_managed,46.17256142
+2011,LCN,Latin America & Caribbean,rural,safely_managed,46.73517984
+2012,LCN,Latin America & Caribbean,rural,safely_managed,47.29863138
+2013,LCN,Latin America & Caribbean,rural,safely_managed,47.93905667
+2014,LCN,Latin America & Caribbean,rural,safely_managed,48.58553631
+2015,LCN,Latin America & Caribbean,rural,safely_managed,49.16592932
+2016,LCN,Latin America & Caribbean,rural,safely_managed,49.72417864
+2017,LCN,Latin America & Caribbean,rural,safely_managed,50.20562232
+2018,LCN,Latin America & Caribbean,rural,safely_managed,50.79499091
+2019,LCN,Latin America & Caribbean,rural,safely_managed,51.3777845
+2020,LCN,Latin America & Caribbean,rural,safely_managed,51.96293393
+2021,LCN,Latin America & Caribbean,rural,safely_managed,52.53406603
+2022,LCN,Latin America & Caribbean,rural,safely_managed,52.93857822
+2023,LCN,Latin America & Caribbean,rural,safely_managed,53.33564439
+2024,LCN,Latin America & Caribbean,rural,safely_managed,53.69939215
+2000,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.12046876
+2001,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.29103962
+2002,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.38499853
+2003,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.51564716
+2004,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.74188882
+2005,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,49.97446391
+2006,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,50.19442662
+2007,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,50.45406376
+2008,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,50.68427657
+2009,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,50.88007257
+2010,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,51.10100351
+2011,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,51.31189522
+2012,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,51.53418557
+2013,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,51.79422959
+2014,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,52.08033613
+2015,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,52.37850896
+2016,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,52.69607705
+2017,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,52.97873921
+2018,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,53.24111938
+2019,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,53.48286764
+2020,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,53.69481349
+2021,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,53.88772025
+2022,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,54.10645245
+2023,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,54.25609708
+2024,MEA,"Middle East, North Africa, Afghanistan & Pakistan",rural,safely_managed,54.38955242
+2000,NAC,North America,rural,safely_managed,
+2001,NAC,North America,rural,safely_managed,
+2002,NAC,North America,rural,safely_managed,
+2003,NAC,North America,rural,safely_managed,
+2004,NAC,North America,rural,safely_managed,
+2005,NAC,North America,rural,safely_managed,
+2006,NAC,North America,rural,safely_managed,
+2007,NAC,North America,rural,safely_managed,
+2008,NAC,North America,rural,safely_managed,
+2009,NAC,North America,rural,safely_managed,
+2010,NAC,North America,rural,safely_managed,
+2011,NAC,North America,rural,safely_managed,
+2012,NAC,North America,rural,safely_managed,
+2013,NAC,North America,rural,safely_managed,
+2014,NAC,North America,rural,safely_managed,
+2015,NAC,North America,rural,safely_managed,
+2016,NAC,North America,rural,safely_managed,
+2017,NAC,North America,rural,safely_managed,
+2018,NAC,North America,rural,safely_managed,
+2019,NAC,North America,rural,safely_managed,
+2020,NAC,North America,rural,safely_managed,
+2021,NAC,North America,rural,safely_managed,
+2022,NAC,North America,rural,safely_managed,
+2023,NAC,North America,rural,safely_managed,
+2024,NAC,North America,rural,safely_managed,
+2000,SAS,South Asia,rural,safely_managed,30.99039315
+2001,SAS,South Asia,rural,safely_managed,32.41338506
+2002,SAS,South Asia,rural,safely_managed,33.85342435
+2003,SAS,South Asia,rural,safely_managed,35.31572234
+2004,SAS,South Asia,rural,safely_managed,36.79997742
+2005,SAS,South Asia,rural,safely_managed,38.42227031
+2006,SAS,South Asia,rural,safely_managed,40.0805364
+2007,SAS,South Asia,rural,safely_managed,41.76173582
+2008,SAS,South Asia,rural,safely_managed,43.46628981
+2009,SAS,South Asia,rural,safely_managed,45.19229277
+2010,SAS,South Asia,rural,safely_managed,46.94033072
+2011,SAS,South Asia,rural,safely_managed,48.71385126
+2012,SAS,South Asia,rural,safely_managed,50.51397744
+2013,SAS,South Asia,rural,safely_managed,52.33919147
+2014,SAS,South Asia,rural,safely_managed,54.18972964
+2015,SAS,South Asia,rural,safely_managed,56.06582163
+2016,SAS,South Asia,rural,safely_managed,57.96584169
+2017,SAS,South Asia,rural,safely_managed,59.88954105
+2018,SAS,South Asia,rural,safely_managed,61.83801031
+2019,SAS,South Asia,rural,safely_managed,63.81275916
+2020,SAS,South Asia,rural,safely_managed,65.81272681
+2021,SAS,South Asia,rural,safely_managed,67.83835891
+2022,SAS,South Asia,rural,safely_managed,69.88681426
+2023,SAS,South Asia,rural,safely_managed,71.95353496
+2024,SAS,South Asia,rural,safely_managed,74.02369897
+2000,SSF,Sub-Saharan Africa,rural,safely_managed,6.472586815
+2001,SSF,Sub-Saharan Africa,rural,safely_managed,6.649724158
+2002,SSF,Sub-Saharan Africa,rural,safely_managed,6.904079553
+2003,SSF,Sub-Saharan Africa,rural,safely_managed,7.167356604
+2004,SSF,Sub-Saharan Africa,rural,safely_managed,7.440352112
+2005,SSF,Sub-Saharan Africa,rural,safely_managed,7.745019399
+2006,SSF,Sub-Saharan Africa,rural,safely_managed,8.086213416
+2007,SSF,Sub-Saharan Africa,rural,safely_managed,8.463786721
+2008,SSF,Sub-Saharan Africa,rural,safely_managed,8.865666638
+2009,SSF,Sub-Saharan Africa,rural,safely_managed,9.283295802
+2010,SSF,Sub-Saharan Africa,rural,safely_managed,9.711382833
+2011,SSF,Sub-Saharan Africa,rural,safely_managed,10.01841275
+2012,SSF,Sub-Saharan Africa,rural,safely_managed,10.46854173
+2013,SSF,Sub-Saharan Africa,rural,safely_managed,10.93486718
+2014,SSF,Sub-Saharan Africa,rural,safely_managed,11.42313676
+2015,SSF,Sub-Saharan Africa,rural,safely_managed,11.93494497
+2016,SSF,Sub-Saharan Africa,rural,safely_managed,12.44858543
+2017,SSF,Sub-Saharan Africa,rural,safely_managed,12.9801781
+2018,SSF,Sub-Saharan Africa,rural,safely_managed,13.52732347
+2019,SSF,Sub-Saharan Africa,rural,safely_managed,14.07768574
+2020,SSF,Sub-Saharan Africa,rural,safely_managed,14.63791996
+2021,SSF,Sub-Saharan Africa,rural,safely_managed,15.21189372
+2022,SSF,Sub-Saharan Africa,rural,safely_managed,15.72570512
+2023,SSF,Sub-Saharan Africa,rural,safely_managed,16.26209062
+2024,SSF,Sub-Saharan Africa,rural,safely_managed,16.73338726
+2000,WLD,World,rural,safely_managed,41.9654508
+2001,WLD,World,rural,safely_managed,42.13116495
+2002,WLD,World,rural,safely_managed,42.43638813
+2003,WLD,World,rural,safely_managed,42.74816707
+2004,WLD,World,rural,safely_managed,43.06208637
+2005,WLD,World,rural,safely_managed,43.3878703
+2006,WLD,World,rural,safely_managed,43.70545651
+2007,WLD,World,rural,safely_managed,44.01840352
+2008,WLD,World,rural,safely_managed,44.33456181
+2009,WLD,World,rural,safely_managed,45.10732355
+2010,WLD,World,rural,safely_managed,45.89300914
+2011,WLD,World,rural,safely_managed,46.62526702
+2012,WLD,World,rural,safely_managed,47.42918135
+2013,WLD,World,rural,safely_managed,48.24063122
+2014,WLD,World,rural,safely_managed,49.0637257
+2015,WLD,World,rural,safely_managed,49.8918036
+2016,WLD,World,rural,safely_managed,50.73134274
+2017,WLD,World,rural,safely_managed,51.57488801
+2018,WLD,World,rural,safely_managed,52.42580128
+2019,WLD,World,rural,safely_managed,53.27333903
+2020,WLD,World,rural,safely_managed,54.11486734
+2021,WLD,World,rural,safely_managed,54.95400807
+2022,WLD,World,rural,safely_managed,55.81030997
+2023,WLD,World,rural,safely_managed,56.63629463
+2024,WLD,World,rural,safely_managed,60.40175473
+2000,EAS,East Asia & Pacific,urban,safely_managed,81.30528398
+2001,EAS,East Asia & Pacific,urban,safely_managed,81.33560652
+2002,EAS,East Asia & Pacific,urban,safely_managed,81.33702469
+2003,EAS,East Asia & Pacific,urban,safely_managed,81.34329637
+2004,EAS,East Asia & Pacific,urban,safely_managed,81.34920244
+2005,EAS,East Asia & Pacific,urban,safely_managed,81.35284676
+2006,EAS,East Asia & Pacific,urban,safely_managed,81.3475936
+2007,EAS,East Asia & Pacific,urban,safely_managed,81.33721901
+2008,EAS,East Asia & Pacific,urban,safely_managed,81.32790424
+2009,EAS,East Asia & Pacific,urban,safely_managed,81.31837484
+2010,EAS,East Asia & Pacific,urban,safely_managed,81.30656357
+2011,EAS,East Asia & Pacific,urban,safely_managed,81.62148439
+2012,EAS,East Asia & Pacific,urban,safely_managed,81.93463842
+2013,EAS,East Asia & Pacific,urban,safely_managed,82.24980389
+2014,EAS,East Asia & Pacific,urban,safely_managed,82.56587933
+2015,EAS,East Asia & Pacific,urban,safely_managed,82.88145768
+2016,EAS,East Asia & Pacific,urban,safely_managed,83.20398769
+2017,EAS,East Asia & Pacific,urban,safely_managed,83.5290271
+2018,EAS,East Asia & Pacific,urban,safely_managed,83.8460751
+2019,EAS,East Asia & Pacific,urban,safely_managed,84.15181508
+2020,EAS,East Asia & Pacific,urban,safely_managed,84.44789628
+2021,EAS,East Asia & Pacific,urban,safely_managed,84.73744183
+2022,EAS,East Asia & Pacific,urban,safely_managed,85.01178249
+2023,EAS,East Asia & Pacific,urban,safely_managed,85.25577029
+2024,EAS,East Asia & Pacific,urban,safely_managed,85.30884129
+2000,ECS,Europe & Central Asia,urban,safely_managed,93.89610158
+2001,ECS,Europe & Central Asia,urban,safely_managed,93.93735022
+2002,ECS,Europe & Central Asia,urban,safely_managed,93.99588019
+2003,ECS,Europe & Central Asia,urban,safely_managed,94.05591678
+2004,ECS,Europe & Central Asia,urban,safely_managed,94.09686222
+2005,ECS,Europe & Central Asia,urban,safely_managed,94.51315635
+2006,ECS,Europe & Central Asia,urban,safely_managed,94.54135583
+2007,ECS,Europe & Central Asia,urban,safely_managed,94.56268206
+2008,ECS,Europe & Central Asia,urban,safely_managed,94.57132298
+2009,ECS,Europe & Central Asia,urban,safely_managed,94.57118054
+2010,ECS,Europe & Central Asia,urban,safely_managed,94.56132927
+2011,ECS,Europe & Central Asia,urban,safely_managed,94.55264967
+2012,ECS,Europe & Central Asia,urban,safely_managed,94.53552584
+2013,ECS,Europe & Central Asia,urban,safely_managed,94.5430604
+2014,ECS,Europe & Central Asia,urban,safely_managed,94.57086381
+2015,ECS,Europe & Central Asia,urban,safely_managed,94.60281415
+2016,ECS,Europe & Central Asia,urban,safely_managed,94.7069325
+2017,ECS,Europe & Central Asia,urban,safely_managed,94.81504765
+2018,ECS,Europe & Central Asia,urban,safely_managed,94.92800843
+2019,ECS,Europe & Central Asia,urban,safely_managed,95.04584589
+2020,ECS,Europe & Central Asia,urban,safely_managed,95.13177165
+2021,ECS,Europe & Central Asia,urban,safely_managed,95.16566927
+2022,ECS,Europe & Central Asia,urban,safely_managed,95.21141762
+2023,ECS,Europe & Central Asia,urban,safely_managed,95.25144482
+2024,ECS,Europe & Central Asia,urban,safely_managed,95.26703291
+2000,LCN,Latin America & Caribbean,urban,safely_managed,79.69296362
+2001,LCN,Latin America & Caribbean,urban,safely_managed,79.75237543
+2002,LCN,Latin America & Caribbean,urban,safely_managed,79.8133318
+2003,LCN,Latin America & Caribbean,urban,safely_managed,79.87137184
+2004,LCN,Latin America & Caribbean,urban,safely_managed,79.9348986
+2005,LCN,Latin America & Caribbean,urban,safely_managed,80.27379103
+2006,LCN,Latin America & Caribbean,urban,safely_managed,80.33435122
+2007,LCN,Latin America & Caribbean,urban,safely_managed,80.39792575
+2008,LCN,Latin America & Caribbean,urban,safely_managed,80.47878947
+2009,LCN,Latin America & Caribbean,urban,safely_managed,80.5609692
+2010,LCN,Latin America & Caribbean,urban,safely_managed,80.64343034
+2011,LCN,Latin America & Caribbean,urban,safely_managed,80.72510007
+2012,LCN,Latin America & Caribbean,urban,safely_managed,80.78887972
+2013,LCN,Latin America & Caribbean,urban,safely_managed,81.10967396
+2014,LCN,Latin America & Caribbean,urban,safely_managed,81.42878213
+2015,LCN,Latin America & Caribbean,urban,safely_managed,81.76337238
+2016,LCN,Latin America & Caribbean,urban,safely_managed,82.09515838
+2017,LCN,Latin America & Caribbean,urban,safely_managed,82.43158705
+2018,LCN,Latin America & Caribbean,urban,safely_managed,82.76310284
+2019,LCN,Latin America & Caribbean,urban,safely_managed,83.08706812
+2020,LCN,Latin America & Caribbean,urban,safely_managed,83.40116458
+2021,LCN,Latin America & Caribbean,urban,safely_managed,83.68211115
+2022,LCN,Latin America & Caribbean,urban,safely_managed,83.95697633
+2023,LCN,Latin America & Caribbean,urban,safely_managed,84.25871894
+2024,LCN,Latin America & Caribbean,urban,safely_managed,84.49696468
+2000,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.84652679
+2001,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.81512266
+2002,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.7353442
+2003,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.66800843
+2004,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.6587854
+2005,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.6627149
+2006,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.71671711
+2007,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.78556965
+2008,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.76947336
+2009,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.7121653
+2010,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.67530419
+2011,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.63833642
+2012,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.59932003
+2013,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.5843974
+2014,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.57152012
+2015,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.58750216
+2016,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.61950429
+2017,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.54787982
+2018,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.44989741
+2019,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.32729108
+2020,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,75.14724154
+2021,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,74.96430289
+2022,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,74.85183553
+2023,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,74.72962175
+2024,MEA,"Middle East, North Africa, Afghanistan & Pakistan",urban,safely_managed,74.56733605
+2000,NAC,North America,urban,safely_managed,96.46073077
+2001,NAC,North America,urban,safely_managed,96.46075989
+2002,NAC,North America,urban,safely_managed,96.46074975
+2003,NAC,North America,urban,safely_managed,96.4607309
+2004,NAC,North America,urban,safely_managed,96.46070789
+2005,NAC,North America,urban,safely_managed,96.45267874
+2006,NAC,North America,urban,safely_managed,96.44467225
+2007,NAC,North America,urban,safely_managed,96.43667349
+2008,NAC,North America,urban,safely_managed,96.42866493
+2009,NAC,North America,urban,safely_managed,96.42062844
+2010,NAC,North America,urban,safely_managed,96.49868324
+2011,NAC,North America,urban,safely_managed,96.5767582
+2012,NAC,North America,urban,safely_managed,96.65489559
+2013,NAC,North America,urban,safely_managed,96.73305279
+2014,NAC,North America,urban,safely_managed,96.81129851
+2015,NAC,North America,urban,safely_managed,96.88961648
+2016,NAC,North America,urban,safely_managed,96.96784514
+2017,NAC,North America,urban,safely_managed,97.04591627
+2018,NAC,North America,urban,safely_managed,97.12382579
+2019,NAC,North America,urban,safely_managed,97.20165396
+2020,NAC,North America,urban,safely_managed,97.27936046
+2021,NAC,North America,urban,safely_managed,97.35701559
+2022,NAC,North America,urban,safely_managed,97.43456523
+2023,NAC,North America,urban,safely_managed,97.51186779
+2024,NAC,North America,urban,safely_managed,97.51119362
+2000,SAS,South Asia,urban,safely_managed,68.50170955
+2001,SAS,South Asia,urban,safely_managed,69.06881626
+2002,SAS,South Asia,urban,safely_managed,69.63689338
+2003,SAS,South Asia,urban,safely_managed,70.20511694
+2004,SAS,South Asia,urban,safely_managed,70.77351981
+2005,SAS,South Asia,urban,safely_managed,71.39637457
+2006,SAS,South Asia,urban,safely_managed,72.02493296
+2007,SAS,South Asia,urban,safely_managed,72.65495579
+2008,SAS,South Asia,urban,safely_managed,73.28659569
+2009,SAS,South Asia,urban,safely_managed,73.91933979
+2010,SAS,South Asia,urban,safely_managed,74.55329214
+2011,SAS,South Asia,urban,safely_managed,75.18925915
+2012,SAS,South Asia,urban,safely_managed,75.82720841
+2013,SAS,South Asia,urban,safely_managed,76.46680212
+2014,SAS,South Asia,urban,safely_managed,77.10806225
+2015,SAS,South Asia,urban,safely_managed,77.75091766
+2016,SAS,South Asia,urban,safely_managed,78.39508759
+2017,SAS,South Asia,urban,safely_managed,79.04051468
+2018,SAS,South Asia,urban,safely_managed,79.68741404
+2019,SAS,South Asia,urban,safely_managed,80.33588111
+2020,SAS,South Asia,urban,safely_managed,80.9857747
+2021,SAS,South Asia,urban,safely_managed,81.63762305
+2022,SAS,South Asia,urban,safely_managed,82.29206443
+2023,SAS,South Asia,urban,safely_managed,82.94842084
+2024,SAS,South Asia,urban,safely_managed,83.60288468
+2000,SSF,Sub-Saharan Africa,urban,safely_managed,42.51655935
+2001,SSF,Sub-Saharan Africa,urban,safely_managed,42.44422567
+2002,SSF,Sub-Saharan Africa,urban,safely_managed,42.68972082
+2003,SSF,Sub-Saharan Africa,urban,safely_managed,42.94736205
+2004,SSF,Sub-Saharan Africa,urban,safely_managed,43.33423503
+2005,SSF,Sub-Saharan Africa,urban,safely_managed,43.73635697
+2006,SSF,Sub-Saharan Africa,urban,safely_managed,44.16908301
+2007,SSF,Sub-Saharan Africa,urban,safely_managed,44.62898402
+2008,SSF,Sub-Saharan Africa,urban,safely_managed,45.11783662
+2009,SSF,Sub-Saharan Africa,urban,safely_managed,45.63811408
+2010,SSF,Sub-Saharan Africa,urban,safely_managed,46.18620817
+2011,SSF,Sub-Saharan Africa,urban,safely_managed,46.52561742
+2012,SSF,Sub-Saharan Africa,urban,safely_managed,47.15127237
+2013,SSF,Sub-Saharan Africa,urban,safely_managed,47.81130568
+2014,SSF,Sub-Saharan Africa,urban,safely_managed,48.50740522
+2015,SSF,Sub-Saharan Africa,urban,safely_managed,49.24785442
+2016,SSF,Sub-Saharan Africa,urban,safely_managed,49.96438628
+2017,SSF,Sub-Saharan Africa,urban,safely_managed,50.63570472
+2018,SSF,Sub-Saharan Africa,urban,safely_managed,51.43787394
+2019,SSF,Sub-Saharan Africa,urban,safely_managed,52.22786579
+2020,SSF,Sub-Saharan Africa,urban,safely_managed,52.66664153
+2021,SSF,Sub-Saharan Africa,urban,safely_managed,52.70134812
+2022,SSF,Sub-Saharan Africa,urban,safely_managed,52.73704102
+2023,SSF,Sub-Saharan Africa,urban,safely_managed,52.72066107
+2024,SSF,Sub-Saharan Africa,urban,safely_managed,52.76048778
+2000,WLD,World,urban,safely_managed,83.43839306
+2001,WLD,World,urban,safely_managed,83.34950993
+2002,WLD,World,urban,safely_managed,83.25644061
+2003,WLD,World,urban,safely_managed,83.16771805
+2004,WLD,World,urban,safely_managed,83.08660231
+2005,WLD,World,urban,safely_managed,83.04654179
+2006,WLD,World,urban,safely_managed,82.97613279
+2007,WLD,World,urban,safely_managed,82.91182761
+2008,WLD,World,urban,safely_managed,82.83300535
+2009,WLD,World,urban,safely_managed,82.75093835
+2010,WLD,World,urban,safely_managed,82.67028405
+2011,WLD,World,urban,safely_managed,82.67499572
+2012,WLD,World,urban,safely_managed,82.71246145
+2013,WLD,World,urban,safely_managed,82.78972377
+2014,WLD,World,urban,safely_managed,82.87407431
+2015,WLD,World,urban,safely_managed,82.96011982
+2016,WLD,World,urban,safely_managed,83.05462203
+2017,WLD,World,urban,safely_managed,83.13922184
+2018,WLD,World,urban,safely_managed,83.22379298
+2019,WLD,World,urban,safely_managed,83.29917157
+2020,WLD,World,urban,safely_managed,83.35742182
+2021,WLD,World,urban,safely_managed,83.40464548
+2022,WLD,World,urban,safely_managed,83.43924171
+2023,WLD,World,urban,safely_managed,83.45783466
+2024,WLD,World,urban,safely_managed,83.40723383
+2000,EAS,East Asia & Pacific,total,safely_managed,68.39888767
+2001,EAS,East Asia & Pacific,total,safely_managed,68.94711129
+2002,EAS,East Asia & Pacific,total,safely_managed,70.00421944
+2003,EAS,East Asia & Pacific,total,safely_managed,70.64267759
+2004,EAS,East Asia & Pacific,total,safely_managed,71.26292951
+2005,EAS,East Asia & Pacific,total,safely_managed,71.87162187
+2006,EAS,East Asia & Pacific,total,safely_managed,72.4603418
+2007,EAS,East Asia & Pacific,total,safely_managed,73.02470689
+2008,EAS,East Asia & Pacific,total,safely_managed,73.57187384
+2009,EAS,East Asia & Pacific,total,safely_managed,74.10693327
+2010,EAS,East Asia & Pacific,total,safely_managed,74.62316214
+2011,EAS,East Asia & Pacific,total,safely_managed,75.10659541
+2012,EAS,East Asia & Pacific,total,safely_managed,75.5702218
+2013,EAS,East Asia & Pacific,total,safely_managed,76.01967044
+2014,EAS,East Asia & Pacific,total,safely_managed,76.45488227
+2015,EAS,East Asia & Pacific,total,safely_managed,65.13897505
+2016,EAS,East Asia & Pacific,total,safely_managed,65.87651235
+2017,EAS,East Asia & Pacific,total,safely_managed,66.61013191
+2018,EAS,East Asia & Pacific,total,safely_managed,67.32839156
+2019,EAS,East Asia & Pacific,total,safely_managed,68.02644304
+2020,EAS,East Asia & Pacific,total,safely_managed,68.70096635
+2021,EAS,East Asia & Pacific,total,safely_managed,69.36026549
+2022,EAS,East Asia & Pacific,total,safely_managed,69.98398684
+2023,EAS,East Asia & Pacific,total,safely_managed,70.56126603
+2024,EAS,East Asia & Pacific,total,safely_managed,75.23360823
+2000,ECS,Europe & Central Asia,total,safely_managed,86.45593018
+2001,ECS,Europe & Central Asia,total,safely_managed,86.57752192
+2002,ECS,Europe & Central Asia,total,safely_managed,86.75323299
+2003,ECS,Europe & Central Asia,total,safely_managed,86.93572935
+2004,ECS,Europe & Central Asia,total,safely_managed,87.30546851
+2005,ECS,Europe & Central Asia,total,safely_managed,88.39556288
+2006,ECS,Europe & Central Asia,total,safely_managed,88.73898457
+2007,ECS,Europe & Central Asia,total,safely_managed,89.08241907
+2008,ECS,Europe & Central Asia,total,safely_managed,89.41451086
+2009,ECS,Europe & Central Asia,total,safely_managed,89.73202621
+2010,ECS,Europe & Central Asia,total,safely_managed,90.02179828
+2011,ECS,Europe & Central Asia,total,safely_managed,90.30538692
+2012,ECS,Europe & Central Asia,total,safely_managed,90.57451106
+2013,ECS,Europe & Central Asia,total,safely_managed,90.85040971
+2014,ECS,Europe & Central Asia,total,safely_managed,91.00740394
+2015,ECS,Europe & Central Asia,total,safely_managed,91.1611975
+2016,ECS,Europe & Central Asia,total,safely_managed,91.36830858
+2017,ECS,Europe & Central Asia,total,safely_managed,91.58055503
+2018,ECS,Europe & Central Asia,total,safely_managed,91.77383965
+2019,ECS,Europe & Central Asia,total,safely_managed,91.96863752
+2020,ECS,Europe & Central Asia,total,safely_managed,92.11519764
+2021,ECS,Europe & Central Asia,total,safely_managed,92.21712863
+2022,ECS,Europe & Central Asia,total,safely_managed,92.31502461
+2023,ECS,Europe & Central Asia,total,safely_managed,92.39413628
+2024,ECS,Europe & Central Asia,total,safely_managed,92.4685293
+2000,LCN,Latin America & Caribbean,total,safely_managed,70.16854942
+2001,LCN,Latin America & Caribbean,total,safely_managed,70.45072092
+2002,LCN,Latin America & Caribbean,total,safely_managed,70.7254493
+2003,LCN,Latin America & Caribbean,total,safely_managed,70.99301783
+2004,LCN,Latin America & Caribbean,total,safely_managed,71.25477512
+2005,LCN,Latin America & Caribbean,total,safely_managed,71.87988873
+2006,LCN,Latin America & Caribbean,total,safely_managed,72.13558259
+2007,LCN,Latin America & Caribbean,total,safely_managed,72.38980789
+2008,LCN,Latin America & Caribbean,total,safely_managed,72.67875506
+2009,LCN,Latin America & Caribbean,total,safely_managed,72.96343843
+2010,LCN,Latin America & Caribbean,total,safely_managed,73.24655841
+2011,LCN,Latin America & Caribbean,total,safely_managed,73.52503683
+2012,LCN,Latin America & Caribbean,total,safely_managed,73.78404559
+2013,LCN,Latin America & Caribbean,total,safely_managed,74.25851265
+2014,LCN,Latin America & Caribbean,total,safely_managed,74.73079972
+2015,LCN,Latin America & Caribbean,total,safely_managed,75.19971256
+2016,LCN,Latin America & Caribbean,total,safely_managed,75.65899071
+2017,LCN,Latin America & Caribbean,total,safely_managed,76.1029642
+2018,LCN,Latin America & Caribbean,total,safely_managed,76.55987742
+2019,LCN,Latin America & Caribbean,total,safely_managed,77.00856023
+2020,LCN,Latin America & Caribbean,total,safely_managed,77.45010624
+2021,LCN,Latin America & Caribbean,total,safely_managed,77.86063464
+2022,LCN,Latin America & Caribbean,total,safely_managed,78.2336121
+2023,LCN,Latin America & Caribbean,total,safely_managed,78.62617375
+2024,LCN,Latin America & Caribbean,total,safely_managed,78.96017945
+2000,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.13484481
+2001,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.28780888
+2002,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.36234981
+2003,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.45851191
+2004,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.64234216
+2005,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,62.84316297
+2006,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.0636003
+2007,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.31006942
+2008,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.4934717
+2009,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.63091581
+2010,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.78825725
+2011,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,63.92777581
+2012,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,64.07525672
+2013,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,64.26734945
+2014,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,64.47662537
+2015,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,64.71010715
+2016,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,64.95045084
+2017,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.10172221
+2018,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.21854945
+2019,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.31237491
+2020,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.35965767
+2021,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.40138454
+2022,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.5107134
+2023,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.58405606
+2024,MEA,"Middle East, North Africa, Afghanistan & Pakistan",total,safely_managed,65.61733961
+2000,NAC,North America,total,safely_managed,
+2001,NAC,North America,total,safely_managed,
+2002,NAC,North America,total,safely_managed,
+2003,NAC,North America,total,safely_managed,
+2004,NAC,North America,total,safely_managed,
+2005,NAC,North America,total,safely_managed,95.4121368
+2006,NAC,North America,total,safely_managed,95.41436281
+2007,NAC,North America,total,safely_managed,95.41678125
+2008,NAC,North America,total,safely_managed,95.41914394
+2009,NAC,North America,total,safely_managed,95.42144004
+2010,NAC,North America,total,safely_managed,95.5729337
+2011,NAC,North America,total,safely_managed,95.72365199
+2012,NAC,North America,total,safely_managed,95.87322297
+2013,NAC,North America,total,safely_managed,96.02196007
+2014,NAC,North America,total,safely_managed,96.16981099
+2015,NAC,North America,total,safely_managed,96.31674442
+2016,NAC,North America,total,safely_managed,96.46257331
+2017,NAC,North America,total,safely_managed,96.60724478
+2018,NAC,North America,total,safely_managed,96.750621
+2019,NAC,North America,total,safely_managed,96.89277492
+2020,NAC,North America,total,safely_managed,97.03357125
+2021,NAC,North America,total,safely_managed,97.1730694
+2022,NAC,North America,total,safely_managed,97.30764288
+2023,NAC,North America,total,safely_managed,97.39585822
+2024,NAC,North America,total,safely_managed,97.39641723
+2000,SAS,South Asia,total,safely_managed,41.04140028
+2001,SAS,South Asia,total,safely_managed,42.33873056
+2002,SAS,South Asia,total,safely_managed,43.67129694
+2003,SAS,South Asia,total,safely_managed,45.01496728
+2004,SAS,South Asia,total,safely_managed,46.36945265
+2005,SAS,South Asia,total,safely_managed,47.83208363
+2006,SAS,South Asia,total,safely_managed,49.315492
+2007,SAS,South Asia,total,safely_managed,50.80902899
+2008,SAS,South Asia,total,safely_managed,52.31264279
+2009,SAS,South Asia,total,safely_managed,53.82404607
+2010,SAS,South Asia,total,safely_managed,55.34362089
+2011,SAS,South Asia,total,safely_managed,56.87383576
+2012,SAS,South Asia,total,safely_managed,58.4168752
+2013,SAS,South Asia,total,safely_managed,59.97058079
+2014,SAS,South Asia,total,safely_managed,61.53473567
+2015,SAS,South Asia,total,safely_managed,63.10864456
+2016,SAS,South Asia,total,safely_managed,64.69070785
+2017,SAS,South Asia,total,safely_managed,66.28022187
+2018,SAS,South Asia,total,safely_managed,67.87691289
+2019,SAS,South Asia,total,safely_managed,69.48073546
+2020,SAS,South Asia,total,safely_managed,71.09033531
+2021,SAS,South Asia,total,safely_managed,72.70589819
+2022,SAS,South Asia,total,safely_managed,74.32524817
+2023,SAS,South Asia,total,safely_managed,75.94446753
+2024,SAS,South Asia,total,safely_managed,77.5514602
+2000,SSF,Sub-Saharan Africa,total,safely_managed,17.85632678
+2001,SSF,Sub-Saharan Africa,total,safely_managed,18.10914219
+2002,SSF,Sub-Saharan Africa,total,safely_managed,18.51921661
+2003,SSF,Sub-Saharan Africa,total,safely_managed,18.93999752
+2004,SSF,Sub-Saharan Africa,total,safely_managed,19.41203805
+2005,SSF,Sub-Saharan Africa,total,safely_managed,19.91711301
+2006,SSF,Sub-Saharan Africa,total,safely_managed,20.45681314
+2007,SSF,Sub-Saharan Africa,total,safely_managed,21.01532187
+2008,SSF,Sub-Saharan Africa,total,safely_managed,21.63253875
+2009,SSF,Sub-Saharan Africa,total,safely_managed,22.27348136
+2010,SSF,Sub-Saharan Africa,total,safely_managed,22.93561238
+2011,SSF,Sub-Saharan Africa,total,safely_managed,23.37176271
+2012,SSF,Sub-Saharan Africa,total,safely_managed,24.07489999
+2013,SSF,Sub-Saharan Africa,total,safely_managed,24.80474383
+2014,SSF,Sub-Saharan Africa,total,safely_managed,25.5684363
+2015,SSF,Sub-Saharan Africa,total,safely_managed,26.37121355
+2016,SSF,Sub-Saharan Africa,total,safely_managed,27.16416105
+2017,SSF,Sub-Saharan Africa,total,safely_managed,27.95197469
+2018,SSF,Sub-Saharan Africa,total,safely_managed,28.8053121
+2019,SSF,Sub-Saharan Africa,total,safely_managed,29.65563923
+2020,SSF,Sub-Saharan Africa,total,safely_managed,30.36999259
+2021,SSF,Sub-Saharan Africa,total,safely_managed,30.92295492
+2022,SSF,Sub-Saharan Africa,total,safely_managed,31.43681449
+2023,SSF,Sub-Saharan Africa,total,safely_managed,31.93497553
+2024,SSF,Sub-Saharan Africa,total,safely_managed,32.41555335
+2000,WLD,World,total,safely_managed,61.24825811
+2001,WLD,World,total,safely_managed,61.48111144
+2002,WLD,World,total,safely_managed,61.80238137
+2003,WLD,World,total,safely_managed,62.1281325
+2004,WLD,World,total,safely_managed,62.455784
+2005,WLD,World,total,safely_managed,62.80723349
+2006,WLD,World,total,safely_managed,63.13165708
+2007,WLD,World,total,safely_managed,63.44926479
+2008,WLD,World,total,safely_managed,63.76205336
+2009,WLD,World,total,safely_managed,64.29065054
+2010,WLD,World,total,safely_managed,64.81645735
+2011,WLD,World,total,safely_managed,65.3227715
+2012,WLD,World,total,safely_managed,65.8869865
+2013,WLD,World,total,safely_managed,66.47130295
+2014,WLD,World,total,safely_managed,67.06120353
+2015,WLD,World,total,safely_managed,67.65043775
+2016,WLD,World,total,safely_managed,68.24117173
+2017,WLD,World,total,safely_managed,68.81892154
+2018,WLD,World,total,safely_managed,69.39036385
+2019,WLD,World,total,safely_managed,69.94603736
+2020,WLD,World,total,safely_managed,70.47846064
+2021,WLD,World,total,safely_managed,70.99527696
+2022,WLD,World,total,safely_managed,71.50800206
+2023,WLD,World,total,safely_managed,71.99074032
+2024,WLD,World,total,safely_managed,73.66861443

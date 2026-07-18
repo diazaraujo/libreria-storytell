@@ -1,0 +1,39 @@
+{
+  "type": "scroller",
+  "graphic": "unemployment_global",
+  "title": "Unemployment levels are at the lowest since global measurement started",
+  "subtitle": "Percentage of adult population unemployed",
+  "source": "WB, World Development Indicators (SL.UEM.TOTL.ZS)",
+  "youth": "Age 15 - 24",
+  "adult": "Age 25+",
+  "unemployment_rate": "Unemployment rate",
+  "visdescription": "Describe what the visualization shows",
+  "theme": "dark",
+  "data_download": "08_data_unemployment_global.csv",
+  "data": "1WS_25sPCM1tDWgSATVDeprv-_CAWpVF6Nu1Py1MA-8Q",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "unemployment_global",
+      "text": "When looking at unemployment at a global scale, things are looking positive. Following a short spike in unemployment in the COVID-years, unemployment is at a stable and very low level. In fact, global unemployment is at the lowest level since the ILO started modelling it in 1991.",
+      "translationPrefix": "goal_08.content.#21.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "unemployment_age",
+      "text": "But these low global average unemployment levels mask great diversity - across countries, across genders, and across age groups. Young people (age 15-24) have consistently experienced unemployment three times the level of those aged 25+ throughout the past three decades. Focusing on youth is particularly pertinent as 1.2 billion young people will reach working age in developing countries over the next decade. Based on current trajectories the World Bank estimates nearly 300 million of these could end up without employment.",
+      "translationPrefix": "goal_08.content.#21.scenes.#1"
+    }
+  ],
+  "translationPrefix": "goal_08.content.#21",
+  "_meta": {
+    "index": 64,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/06-unemployment-global",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

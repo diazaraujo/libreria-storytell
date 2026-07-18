@@ -1,0 +1,48 @@
+{
+  "type": "scroller",
+  "graphic": "safely_managed_country",
+  "title": "Access to safely managed drinking water is low in Sub-Saharan Africa and small island economies in the Pacific",
+  "subtitle": "People using safely managed drinking water services, 2024 (% of population)",
+  "source": "WHO/UNICEF JMP for Water Supply, Sanitation and Hygiene. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS\" target=\"_blank\" rel=\"external\">SH.H2O.SMDW.ZS</a><span style=\"color: rgb(112,111,125); background-color: rgb(255,255,255);\">).</span>",
+  "note": "There are no available estimates of safely managed drinking water access in 2024 for the 69 countries shaded gray. ",
+  "visSize": "default",
+  "visdescription": "A grid map displays the share of the population using safely managed drinking water services by country, using equally sized tiles.  Countries are shaded according to their level of access, with darker colors indicating higher coverage and lighter colors, lower coverage. Gray shading indicates missing data or no available estimates.",
+  "indicator_360": "WB_WDI_SH_H2O_SMDW_ZS",
+  "data_download": "Country_SafelyManaged_2024.csv",
+  "data": "1ABOxAmGnoBjgKOe5cnvMCc0xc4K_HWIPPLVvXUwdXsI",
+  "legendLabel": " Access to safely managed drinking water (% of population)",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1",
+      "text": "Data on access to safely managed drinking water services are available for 148 countries for 2024. Due to insufficient water monitoring or testing systems, approximately one-third of countries lack water quality data.",
+      "translationPrefix": "goal_06.content.#12.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2",
+      "text": "Among the countries with data available, only 29 have achieved universal (99 percent or higher) access to safely managed drinking water.[footnote:   Values are rounded for display; countries shown as 99% may still fall below the universal access threshold. ]",
+      "translationPrefix": "goal_06.content.#12.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3",
+      "text": "Low access is concentrated in Sub-Saharan Africa, where less than half of the populations has access to safe drinking water in 22 of the 25 countries with data. At approximately 6 percent, the Central African Republic and Chad have the lowest levels of access to safe drinking water.",
+      "translationPrefix": "goal_06.content.#12.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#12",
+  "_meta": {
+    "index": 42,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/02-safely-managed-country",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

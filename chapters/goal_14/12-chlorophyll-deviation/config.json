@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "chlorophyll_deviation",
+  "title": "Chlorophyll-a deviation from the global average",
+  "subtitle": "The share of satellite imagery pixels measuring chlorophyll-a within a country's Exclusive Economic Zone that are above the 90th percentile of the global baseline (2000-2004). The value given is an annual average of monthly deviations.",
+  "source": "United Nations, Department of Economic and Social AffairsStatistics Division, SDG Indicator Database. <a href=\"https://unstats.un.org/sdgs/dataportal/SDMXMetadataPage?14.1.1-EN_MAR_CHLDEV\" target=\"_blank\" rel=\"external\">https://unstats.un.org/sdgs/dataportal/SDMXMetadataPage?14.1.1-EN_MAR_CHLDEV</a>",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_chlorophyll_deviation.csv",
+  "data": "1tq254ChAaAyXlbv6mbP_vAcfVOHH78AvACeVWZA-EIM",
+  "translationPrefix": "goal_14.content.#42",
+  "_meta": {
+    "index": 122,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/12-chlorophyll-deviation",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

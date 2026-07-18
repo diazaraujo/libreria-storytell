@@ -1,0 +1,33 @@
+{
+  "type": "vis",
+  "graphic": "gender_gap_informal_gdp",
+  "title": "Vulnerable employment is higher among women than men in lower-income countries and economies ",
+  "subtitle": "",
+  "textParagraph": "Vulnerable employment is common in <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low-income</span> countries and economies. Among the poorest countries, vulnerable employment rates are as high as 90 percent, and with <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">women</span> more affected than <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">men</span>. In <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">higher-income</span> countries, vulnerable employment is less common, and the share of <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">men</span> in vulnerable employment tends to be higher than among <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">women</span>. ",
+  "y_axis_title": "Vulnerable employment (% of labor force) by gender",
+  "y_axis_title_mobile": "Vulnerable employment (%)",
+  "y_axis_units": "",
+  "male_rate": "Male vulnerable employment rate",
+  "female_rate": "Female vulnerable employment rate",
+  "source": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO). Retrieved from Gender Data Portal (<a href=\"https://genderdata.worldbank.org/en/indicator/sl-emp-vuln-zs\" target=\"_blank\" rel=\"external\">SL.EMP.VULN.FE.ZS; SL.EMP.VULN.MA.ZS</a>)",
+  "visdescription": "This is a range chart with two dots for men and women for every country. The x-axis shows the country’s income and is classified by its income group and the y-axis shows the rate of vulnerable employment for women and men.",
+  "visSize": "fullScreen",
+  "theme": "light (alternatively: dark)",
+  "data_download": "05_data_vulnerable_employment.csv",
+  "data": "1UGJFyH-_LgLeqOe2XSaZWHwmj2AaVzOKodi0r0fIHWE",
+  "keyFact": "In 3 of 4",
+  "keyFactLabel": "Low and middle-income countries, vulnerable employment was higher among women than men",
+  "indicator_360": "WB_WDI_SL_EMP_VULN_FE_ZS",
+  "translationPrefix": "goal_05.content.#34",
+  "_meta": {
+    "index": 36,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/06-gender-gap-informal-gdp",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

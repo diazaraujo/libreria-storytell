@@ -1,0 +1,32 @@
+{
+  "slug": "internet-access",
+  "code": "17.8.1",
+  "kicker": "Internet Access",
+  "title": "Connecting the World: The Race for Internet Access",
+  "lede": "Internet access has grown at remarkable speed since the early 2000s, yet large gaps remain between and within countries.",
+  "caption": "Individuals using the Internet (% of population), progress window",
+  "yLabel": "% of population",
+  "invert": false,
+  "stick": "#34a7f2",
+  "original": "https://data360.worldbank.org/en/atlas/internet-access/",
+  "facts": [
+    {
+      "num": "1 in 4",
+      "text": "key fact from the internet access story."
+    },
+    {
+      "num": "Mobile first",
+      "text": "mobile broadband far surpasses fixed broadband globally."
+    },
+    {
+      "num": "Gender gaps",
+      "text": "remain wide in low- and lower-middle-income countries."
+    }
+  ],
+  "resolved_code": "17.8.1",
+  "n": 213,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

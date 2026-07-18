@@ -1,0 +1,26 @@
+{
+  "type": "vis",
+  "graphic": "nitrogen_phosphorus",
+  "title": "Increase in anthropogenic inputs of nitrogen and phosphorus",
+  "y_axis_title": "Anthropogenic N and P inputs to the biosphere",
+  "y_axis_units": "Tg/year",
+  "nitrogen": "Nitrogen",
+  "phosphorus": "Phosphorus",
+  "subtitle": "The visualisation shows the development of anthropogenic nitrogen (N) and phosphorus (P) inputs to the biosphere (mean, Tg per year) since the industrial revolution (1860).",
+  "source": "<span style=\"color: rgb(34,34,34);\">Peñuelas, J., Poulter, B., Sardans, J., Ciais, P., Van der Velde, M., Bopp, L., ... & Janssens, I. A. (2013). Human-induced nitrogen–phosphorus imbalances alter natural and managed ecosystems across the globe. Nature communications, 4(1), 2934. </span><a href=\"https://doi.org/10.1038/ncomms3934\" target=\"_blank\" rel=\"external\">https://doi.org/10.1038/ncomms3934</a>",
+  "visdescription": "The visualisation shows the development of anthropogenic nitrogen (N) and phosphorus (P) inputs to the biosphere (mean, Tg per year) since the industrial revolution (1860).",
+  "data_download": "14_data_nitrogen_phosphorus.csv",
+  "data": "1vRHTflG8CaE3U0Gh-0z2_MMAnjJ6pIRb6HA9W8M3IHk",
+  "translationPrefix": "goal_14.content.#31",
+  "_meta": {
+    "index": 118,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/08-nitrogen-phosphorus",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

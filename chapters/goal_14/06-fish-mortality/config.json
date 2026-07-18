@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "fish_mortality",
+  "title": "Plastic ingestion makes fish more vulnerable to disease",
+  "subtitle": "Fish mortality, by type of plastic exposure",
+  "no_particles": "No particles, no virus",
+  "microplastics_only": "Microplastics only",
+  "virus_only": "Virus only",
+  "spartina": "Spartina natural microplastics and virus",
+  "polystyrene": "Polystyrene microplastics and virus",
+  "nylon": "Nylon microfibers and virus",
+  "x_axis_title": "Mortality",
+  "x_axis_units": "%",
+  "source": "Seeley, M. E., Hale, R. C., Zwollo, P., Vogelbein, W. K., & Wargo, A. R. (2023). Microplastics exacerbate virus‑mediated mortality in fish. Science of the Total Environment, 866, 161191. <a href=\"https://doi.org/10.1016/j.scitotenv.2022.161191\" target=\"_blank\" rel=\"external\">https://doi.org/10.1016/j.scitotenv.2022.161191</a>",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_plastic_mortality.csv",
+  "data": "1oQgvJwwmrOTwK9K47HgoGZxZGmuIoirqzKIYjmZILkM",
+  "translationPrefix": "goal_14.content.#21",
+  "_meta": {
+    "index": 116,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/06-fish-mortality",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

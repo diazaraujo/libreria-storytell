@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "access_electricity_urban_rural",
+  "title": "Access to electricity is lower in rural areas ",
+  "subtitle": "People with access to electricity, by place of residence (% of population)",
+  "source": "World Bank Group. “<a href=\"https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS\" target=\"_blank\" rel=\"external\">Access to electricity, rural (% of rural population)</a>,” “<a href=\"https://data.worldbank.org/indicator/EG.ELC.ACCS.UR.ZS\" target=\"_blank\" rel=\"external\">Access to electricity, urban (% of urban population</a>).” SDG 7.1.1 Electrification Dataset.",
+  "urban": "Urban areas",
+  "rural": "Rural areas",
+  "visdescription": "Line charts showing the difference in access to electricity between urban and rural areas in different regions and the world.",
+  "indicator_360": "WB_WDI_EG_ELC_ACCS_RU_ZS",
+  "visSize": "default",
+  "data_download": "07_data_access_electricity_urban_rural.csv",
+  "data": "1kx_csJJz33c7bUInxIYVersbmyL68MqVj-KkYKbwqxY",
+  "translationPrefix": "goal_07.content.#13",
+  "_meta": {
+    "index": 53,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/02-access-electricity-urban-rural",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  },
+  "scenes": []
+}

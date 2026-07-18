@@ -1,0 +1,63 @@
+{
+  "type": "scroller",
+  "graphic": "poverty_projections",
+  "title": "Global poverty could increase if current trends continue",
+  "subtitle": "",
+  "visSize": "small",
+  "skip": "If all countries progress at Korea’s pace, global extreme poverty would be reduced to 1 percent by 2050. But copying Korea's trajectory will be difficult. If countries progress at the pace of Brazil or Türkiye, there will be modest declines, and if they progress at the typical speed observed since 1950, global extreme poverty will stand at 8.5 percent poverty by 2050. Unfortunately, the speed of global poverty reduction has slowed down over the past years, and if countries continue on their current paths, global poverty will start to increase.[footnote: See the <a href=\"https://data360.worldbank.org/en/atlas/measuring-progress\" target=\"_blank\" rel=\"external\">Explainer</a> for how these projections are constructed]",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook April 2026</a>, <a href=\"https://doi.org/10.1596/1813-9450-11350\" target=\"_blank\" rel=\"external\">Mahler et al. 2026</a>, and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. 2025</a>",
+  "y_axis_title": "Poverty rate",
+  "y_axis_units": "%",
+  "rate4": "Korea’s path",
+  "rate2": "Brazil's path",
+  "rate1": "Typical path",
+  "rateH": "Current path",
+  "global_poverty_rate": "Global poverty rate",
+  "visdescription": "Global poverty projections to 2050 under various scenarios",
+  "theme": "light (alternatively: dark)",
+  "data_download": "01_data_global_projections.zip",
+  "data": "1bUEYFUXwRG3-UGPMvGajgceJAJ_a6TMP7bkOUQmIROg",
+  "keyFact": "600 million",
+  "keyFactLabel": "more people will live in extreme poverty in 2050 if countries’ current trajectories continue",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "rate4",
+      "text": "If all countries progress at Korea’s historical pace, global extreme poverty would be reduced to 1.2 percent by 2050.",
+      "translationPrefix": "goal_01.content.#17.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "rate2",
+      "text": "But copying Korea's trajectory will be difficult. If countries progress at the pace of Brazil or Türkiye, there will be modest declines.",
+      "translationPrefix": "goal_01.content.#17.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "typical",
+      "text": "If countries manage to progress at the typical speed observed since 1950, global extreme poverty will stand  at around 8.5 percent poverty by 2050. ",
+      "translationPrefix": "goal_01.content.#17.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "rateH",
+      "text": "Unfortunately, the speed of global poverty reduction has slowed down over the past years, and if countries continue on their current paths, global poverty will start to increase.[footnote: See the explainer “<a href=\"https://data360.worldbank.org/en/atlas/measuring-progress\" target=\"_blank\" rel=\"external\">Measuring Progress</a>” for details on how these paths are constructed. ",
+      "translationPrefix": "goal_01.content.#17.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_01.content.#17",
+  "_meta": {
+    "index": 3,
+    "chapterId": "01",
+    "chapterTitle": "Extreme Poverty",
+    "dir": "chapters/goal_01/03-poverty-projections",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "interactive draw + scroller choreography + venn + scatter"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "type": "scroller",
+  "graphic": "income_classification_scroller",
+  "title": "Income group classification",
+  "subtitle": "Developments since 1990",
+  "source": "WB Country and Lending Groups",
+  "no_income_classification": "No income classification",
+  "income_classification": "Income classification",
+  "in_1990": "In 1990",
+  "in_2024": "In 2024",
+  "legend_title": "Average GDP/capita growth, 2015-2024",
+  "inx_90": "No classification in 1990",
+  "hic_24": "High income in 2024",
+  "lmc_90": "Lower middle income in 1990",
+  "umc_24": "Upper middle income 2024",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "08_data_income_levels.csv",
+  "data": "1ud7kIIHA8R-QIU0WCPHDXT0izj4yor0dYi7D2ZXR0Oc",
+  "skip ssf": ".",
+  "skip income_left_behind": ".",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "income_1990",
+      "text": "The threshold for being a low income country was 610 USD in 1990. Countries with GDP per capita below this level were classified as low income. 49 countries belonged to the group of <span data-color-id=\"LIC\" class=\"LIC\">low-income countries</span>. That corresponded to 3 out of every 10 countries.",
+      "translationPrefix": "goal_08.content.#16.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "income_2024",
+      "text": "The threshold for being a low income country is updated annually for inflation. By 2024 the threshold stood at 1,135 USD.",
+      "translationPrefix": "goal_08.content.#16.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "income_change",
+      "text": "Compared to 1990, many countries managed to move to a higher income class by 2024.",
+      "translationPrefix": "goal_08.content.#16.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "escapees",
+      "text": "28 countries managed to escape <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low income</span> - Guyana even making it to <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">high income</span>.",
+      "translationPrefix": "goal_08.content.#16.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "fallen",
+      "text": "However, five additional countries have since been classified as low income.",
+      "translationPrefix": "goal_08.content.#16.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "gdp_growth",
+      "text": "The countries currently classified as low income have had average GDP per capita growth rates of 0.47 percent per year since 1981. A recent Global Economic Prospects report by the World Bank (January 2025) finds that their outlook is bleak. Based on 2010-2019 growth rates only six of the current 25 LICs are on a path of becoming middle-income even by 2050.",
+      "translationPrefix": "goal_08.content.#16.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_08.content.#16",
+  "_meta": {
+    "index": 63,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/05-income-classification-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

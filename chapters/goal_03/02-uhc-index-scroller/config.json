@@ -1,0 +1,35 @@
+{
+  "type": "scroller",
+  "graphic": "uhc_index_scroller",
+  "title": "Global UHC Service Coverage Index, 2023",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_uhc_countries.csv",
+  "data": "1-a89ebZR0jYf5UHSdJ5_ycZwrpN8ksNBWjo5v7RMxl4",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "Beneath the global averages also lie [emphasis: wide disparities] in service coverage, with SCI in 2023 ranging from 26 in Chad to 92 in Canada. Much of <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span> and parts of <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span> continue to record lower coverage, while most countries in Europe, North America, and East Asia have achieved high levels of access. ",
+      "translationPrefix": "goal_03.content.#10.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "These patterns are closely mirrored by income level. Most high-income countries score above 75–80 on the UHC Service Coverage Index, while many <span data-color-id=\"LIC\" class=\"LIC\">low- </span>and <span data-color-id=\"LMC\" class=\"LMC\">lower-middle-income</span> countries remain in the 50–65 range. Several <span data-color-id=\"LIC\" class=\"LIC\">low-income </span>countries score below 50, highlighting persistent gaps in access to essential health services.",
+      "translationPrefix": "goal_03.content.#10.scenes.#1"
+    }
+  ],
+  "translationPrefix": "goal_03.content.#10",
+  "_meta": {
+    "index": 15,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/02-uhc-index-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

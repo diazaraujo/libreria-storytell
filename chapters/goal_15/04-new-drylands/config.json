@@ -1,0 +1,23 @@
+{
+  "type": "vis",
+  "graphic": "new_drylands",
+  "title": "4.3 million km2 humid areas turned to drylands since 30 years ago",
+  "subtitle": "Areas that were humid during the 1960-1990 period that are now classified as drylands.",
+  "source": "[reference: aridityreport]",
+  "visdescription": "A world map showing the areas that converted to drylands in the 1990 - 2020 period compared to the 1960-1990 period",
+  "visSize": "fullScreen",
+  "keyFact": "4.3 million",
+  "keyFactLabel": "km2 of humid areas turned to drylands since 30 years ago.",
+  "translationPrefix": "goal_15.content.#23",
+  "_meta": {
+    "index": 129,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/04-new-drylands",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

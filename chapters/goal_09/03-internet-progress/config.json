@@ -1,0 +1,41 @@
+{
+  "type": "scroller",
+  "graphic": "internet_progress",
+  "title": "Almost all economies have increased their Internet access since 2015",
+  "subtitle": "Individuals using the Internet (% of population)",
+  "select_country": "Select economies to highlight",
+  "typical_progress": "Typical progress",
+  "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a> and World Bank staff calculations, based on <a href=\"https://openknowledge.worldbank.org/entities/publication/c97258fc-bf8f-4bd7-b56f-347b8349368d\" target=\"_blank\" rel=\"external\">Mahler et al. 2026</a>",
+  "visdescription": "This chart uses arrows to show Internet access levels by economy in 2015 and 2024. It also shows where the economies would have been, had they followed the typical pace of progress since 2015.",
+  "visSize": "fullScreen",
+  "data_download": "09_data_internet_usage_progress.csv",
+  "data": "1F96uP1Br1y4yel27IpE-YbumBGnTUkmKy5rXnUs4tL0",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "progress1 ",
+      "text": "By 2024, in 54 countries, more than 90 percent of the population was using the Internet. ",
+      "translationPrefix": "goal_09.content.#19.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "progress2 ",
+      "text": "Countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>]and the[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]had made much more progress by 2024 than expected based on their access levels in 2015. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>], Internet access levels rose from less than 7 percent to close to 70 percent of the population. The [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]also made remarkable progress, from 30 percent of the population in 2015 to over 90 percent by 2024.",
+      "translationPrefix": "goal_09.content.#19.scenes.#1"
+    }
+  ],
+  "translationPrefix": "goal_09.content.#19",
+  "_meta": {
+    "index": 69,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/03-internet-progress",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  }
+}

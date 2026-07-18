@@ -1,0 +1,53 @@
+{
+  "type": "scroller",
+  "graphic": "shared_prosperity_scatter",
+  "title": "In three out of four economies, income growth of the poorest 40 percent was faster than the population’s average between 2016 and 2021",
+  "subtitle": "Progress is equitable when the income of the poorest 40 percent grows faster than the average income",
+  "source": "<a href=\"https://www.worldbank.org/en/topic/poverty/brief/global-database-of-shared-prosperity\" target=\"_blank\" rel=\"external\">Global Database on Shared Prosperity</a> (October 2024). <a href=\"https://data360.worldbank.org/en/int/indicator/WB_WDI_SI_SPR_PC40_ZG\" target=\"_blank\" rel=\"external\">https://data360.worldbank.org/en/int/indicator/WB_WDI_SI_SPR_PC40_ZG</a>. ",
+  "fasterlabel": "Faster growth for the poorest 40 percent",
+  "slowerlabel": "Slower growth for the poorest 40 percent",
+  "xaxistitle": "Income growth of the poorest 40 percent (%)",
+  "yaxistitle": "Growth of national average income (%)",
+  "visdescription": "The figure compares the growth rates of average national income and average income of the poorest 40 percent of the population. In three out of four economies, income growth  for the poorest 40 percent was better than the average income.",
+  "data_download": "10_data_shared_prosperity.csv",
+  "data": "1Xc3ceq3jZck-SqU6nNrKFRgpsu0oirNFDNi4zv2xiJ0",
+  "keyFact": "3 in 4 economies",
+  "keyFactLabel": "experienced faster income growth of the poorest 40 percent compared to average income growth.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "all_countries",
+      "text": "Each dot in the chart corresponds to the income growth of a particular economy, colored by region. The 45-degree line, also known as the [emphasis: line of equality], reflects equal growth rates in the incomes of the poorest 40 percent and the entire population. Data points located to the right of this line indicate that income among the poorest 40 percent increased more rapidly than the national average income.",
+      "translationPrefix": "goal_10.content.#13.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "bol_jam",
+      "text": "Between 2016 and 2021, the income of the poorest 40 percent in [emphasis: Bolivia ]increased by more than four percent, whereas the average income grew by less than one percent. In contrast, the poorest 40 percent in [emphasis: Jamaica ]experienced a decline in their income while the average income rose by over two percent. Although both nations saw overall economic growth, income gains in [emphasis: Bolivia ]were more evenly distributed, benefiting lower-income groups, while [emphasis: Jamaica ]observed a relative decrease in prosperity among the poorer segments of its population.",
+      "translationPrefix": "goal_10.content.#13.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "lcn",
+      "text": "However, although measuring income growth within the poorest 40 percent offers a practical means to assess shared prosperity, it does not capture all aspects of inequality and presents certain limitations. For example, although we can compare income growth of the poorest 40 percent across <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Latin American & the Caribbean </span>economies, it is hard to see which economy has improved the most given their starting positions.",
+      "translationPrefix": "goal_10.content.#13.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "mex_per",
+      "text": "For example, income growth among Brazil’s poorest 40 percent is lower than Mexico’s, but the average Brazilian is still richer than the average Mexican. The growth of the poorest 40 percent measure does not capture this difference.",
+      "translationPrefix": "goal_10.content.#13.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_10.content.#13",
+  "_meta": {
+    "index": 78,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/02-shared-prosperity-scatter",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

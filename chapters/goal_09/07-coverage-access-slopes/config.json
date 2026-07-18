@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "coverage_access_slopes",
+  "title": "Mobile networks now reach most of the population, but many people remain offline",
+  "subtitle": "",
+  "coverage_3g": "covered by 3G",
+  "usage": "using the Internet",
+  "y_axis_title": "Share of people",
+  "y_axis_units": "%",
+  "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a>. Retrieved from Data360 <a href=\"https://data360.worldbank.org/en/int/indicator/MOB_COV_3G\" target=\"_blank\" rel=\"external\">(MOB_COV_3G</a>, <a href=\"https://data360.worldbank.org/en/int/indicator/WB_WDI_IT_NET_USER_ZS\" target=\"_blank\" rel=\"external\">WB_WDI_IT_NET_USER_ZS</a>). Data for 2024.",
+  "visdescription": "A set of four slope charts showing 3G network coverage and Internet access levels for countries, by income group: low, lower-middle, upper-middle, and high-income ",
+  "visSize": "default",
+  "data_download": "09_data_coverage_access_gaps.csv",
+  "data": "1HqMlBHCqTJcctRP2E-X6UHD7rBzckjAsOTzacd8xUzo",
+  "indicator_360": "WB_WDI_IT_NET_USER_ZS",
+  "translationPrefix": "goal_09.content.#45",
+  "_meta": {
+    "index": 73,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/07-coverage-access-slopes",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  },
+  "scenes": []
+}

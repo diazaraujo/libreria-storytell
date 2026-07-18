@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electricity Access — Chapter scroll (Atlas replica)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/chapter-scroll.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #fff; }
+    body.ch-story-page { --ch-sticky-top: 0px; }
+    /* Topbar scrolls away — does not compete with sticky charts */
+    .ch-topbar {
+      position: relative;
+      z-index: 5;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 8px 16px;
+      background: #fff;
+      border-bottom: 1px solid #e8eaef;
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif;
+      color: #6a7781;
+    }
+    .ch-topbar a { color: #0071bc; text-decoration: none; }
+    .ch-topbar .tag {
+      background: #eef2ff; color: #3730a3;
+      padding: 3px 8px; border-radius: 999px; font-size: 11px;
+    }
+    .ch-end {
+      max-width: 640px; margin: 0 auto; padding: 48px 24px 96px;
+      color: #6a7781; font-size: 14px; line-height: 1.5;
+    }
+  </style>
+</head>
+<body class="ch-story-page">
+  <div class="ch-topbar">
+    <div>
+      <a href="../../gallery.html">← Replicas</a>
+      · <span class="tag">chapter scroll v0.1</span>
+      · full chapter 7/7 library
+    </div>
+    <div>
+      <a href="http://127.0.0.1:8765/en/atlas/electricity-access/" target="_blank">Origen :8765</a>
+      ·
+      <a href="https://data360.worldbank.org/en/atlas/electricity-access/" target="_blank">Live</a>
+    </div>
+  </div>
+
+  <div id="story"></div>
+
+  <div class="ch-end">
+    <p>
+      <strong>Story electricity 7/7</strong> — regions · population · progress · urban–rural ·
+      countries dual-line · hexmap Nigeria · hexmap Ethiopia.
+    </p>
+  </div>
+
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../library/regions-small-multiples/regions-small-multiples.js"></script>
+  <script src="../../library/population-access/population-access.js"></script>
+  <script src="../../library/progress-race/progress-race.js"></script>
+  <script src="../../library/dual-line-urban-rural/dual-line-urban-rural.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js"></script>
+  <script src="../../library/nightlights-hexmap/mapbox-config.js"></script>
+  <script src="../../library/nightlights-hexmap/nightlights-hexmap.js"></script>
+  <script>
+    (async function () {
+      const story = await (await fetch("./story.json")).json();
+
+      for (const b of story.blocks) {
+        if (b.type === "prose" && b.proseFile) {
+          b.html = await (await fetch(b.proseFile)).text();
+        }
+      }
+
+      const regionsRows = await AtlasLoad.csv("./data/07_data_access_electricity.csv");
+      const regionsSeries = AtlasRegionsSmallMultiples.seriesFromRows(regionsRows, {
+        valueField: "access_electricity",
+      });
+
+      const [
+        aggregates,
+        worldPop,
+        countries,
+        progressRows,
+        urbanRuralRows,
+        urbanRuralCountries,
+        nigeriaZones,
+      ] = await Promise.all([
+        AtlasLoad.csv("./data/access_electricity_population_aggregates.csv"),
+        AtlasLoad.csv("./data/population_world.csv"),
+        AtlasLoad.csv("./data/access_electricity_population_countries.csv"),
+        AtlasLoad.csv("./data/07_data_access_electricity_countries.csv"),
+        AtlasLoad.csv("./data/07_data_access_electricity_urban_rural.csv"),
+        AtlasLoad.csv("./data/07_data_access_electricity_rural_urban_countries.csv"),
+        AtlasLoad.csv("./data/hex/07_data_access_electricity_nigeria_zones.csv"),
+      ]);
+
+      const wait2 = () =>
+        new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      for (const b of story.blocks) {
+        if (b.id === "regions") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(520, Math.max(440, chartEl.clientHeight || 500));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasRegionsSmallMultiples.mount(chartEl, {
+              series: regionsSeries,
+              sceneIndex: ctx.sceneIndex || 0,
+              particles: true,
+              animateIntro: true,
+              heightDesktop: h,
+              heightMobile: Math.max(h, 560),
+              forceHighlight: (key, idx) =>
+                idx === 2 && (key === "SAS" || key === "SSF"),
+              forceRemount: true,
+            });
+          };
+        }
+        if (b.id === "population") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(560, Math.max(420, chartEl.clientHeight || 500));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasPopulationAccess.mount(chartEl, {
+              aggregates,
+              worldPop,
+              countries,
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              labels: {
+                without_access: "Population without electricity",
+                with_access: "Population with electricity",
+                population: "Population",
+                y_axis_units: "millions of people",
+                y_axis_title_right: "Global share in 2023",
+                million: "million",
+              },
+            });
+          };
+        }
+        if (b.id === "progress") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasProgressRace.mount(chartEl, {
+              rows: progressRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              names: window.ATLAS_COUNTRY_NAMES || {},
+              forceRemount: true,
+              height: h,
+              labels: {
+                progress_speed: "Speed of progress",
+                regression: "regression",
+                standstill: "standstill",
+                slow: "slow",
+                typical: "typical",
+                fast: "fast",
+                very_fast: "very fast",
+                select_country: "Select countries to highlight",
+              },
+            });
+          };
+        }
+        if (b.id === "urban-rural") {
+          b.mount = async (chartEl) => {
+            await wait2();
+            const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasDualLineUrbanRural.mount(chartEl, {
+              rows: urbanRuralRows,
+              variant: "regions",
+              forceRemount: true,
+              height: h,
+              labels: {
+                urban: "Urban areas",
+                rural: "Rural areas",
+                y_axis_units: "% of population",
+              },
+            });
+          };
+        }
+        if (b.id === "urban-rural-countries") {
+          b.mount = async (chartEl) => {
+            await wait2();
+            const h = Math.min(340, Math.max(280, chartEl.clientHeight || 300));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasDualLineUrbanRural.mount(chartEl, {
+              rows: urbanRuralCountries,
+              variant: "countries",
+              forceRemount: true,
+              height: h,
+              labels: {
+                urban: "Urban areas",
+                rural: "Rural areas",
+                y_axis_units: "%",
+              },
+            });
+          };
+        }
+        if (b.id === "hexmap-nigeria") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasNightlightsHexmap.mount(chartEl, {
+              country: "nigeria",
+              hexUrl: "../../library/nightlights-hexmap/data/nigeria_h3.geojson",
+              zonesUrl: "../../library/nightlights-hexmap/data/nigeria_zones.geojson",
+              citiesUrl: "../../library/nightlights-hexmap/data/nigeria_cities.geojson",
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
+        if (b.id === "hexmap-ethiopia") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasNightlightsHexmap.mount(chartEl, {
+              country: "ethiopia",
+              hexUrl: "../../library/nightlights-hexmap/data/ethiopia_h3.geojson",
+              gridUrl: "../../library/nightlights-hexmap/data/ethiopia_grid.geojson",
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
+      }
+
+      window.__chapter = AtlasChapterScroll.mount(
+        document.getElementById("story"),
+        story
+      );
+    })().catch((err) => {
+      console.error(err);
+      document.getElementById("story").innerHTML =
+        `<div style="padding:40px;color:#aa0000"><strong>Story load error</strong><pre>${err}</pre></div>`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "type": "scroller",
+  "graphic": "prevalence_undernourishment_regions",
+  "title": "Global hunger is on the rise",
+  "subtitle": "",
+  "source": "Retrieved from World Development Indicators (<a href=\"http://SN.ITK.DEFC.ZS\" target=\"_blank\" rel=\"external\">SN.ITK.DEFC.ZS</a>). Food and Agriculture Organization of the United Nations ( FAO ), uri: <a href=\"http://fao.org/faostat/en/#home\" target=\"_blank\" rel=\"external\">fao.org/faostat/en/#home</a> ",
+  "visdescription": "Describe what the visualization shows",
+  "indicator_360": "<span style=\"background-color: rgb(255,229,153);\">WB_WDI_SN_ITK_DEFC_ZS</span>",
+  "y_axis_title": "Prevalence of undernourishment",
+  "y_axis_units": "%",
+  "data_download": "02_data_prevalence_undernourishment_regions.csv",
+  "data": "1EJwFXk2VfNuwjtcf_yiUzJDCqWzMQLX34MN3J4b86dE",
+  "keyFact": "120 million ",
+  "keyFactLabel": "more people faced hunger in 2023, compared to 2015.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "global15",
+      "text": "Between 2001 and 2015, global hunger fell impressively, nearly halving from 13 percent to 7.5 percent.",
+      "translationPrefix": "goal_02.content.#7.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "global_full",
+      "text": "Since then, however, progress has stalled and even reversed. By 2023, nearly one in eleven people faced undernourishment.",
+      "translationPrefix": "goal_02.content.#7.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "regions15",
+      "text": "This pattern is true for nearly all regions. <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span>, <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span>, and <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Latin America & the Caribbean</span> all saw significant improvements in the first decade since 2000...",
+      "translationPrefix": "goal_02.content.#7.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "regions_full",
+      "text": "…only for gains to slow or reverse.",
+      "translationPrefix": "goal_02.content.#7.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "risen",
+      "text": "In <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span>, and <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Latin America & the Caribbean</span>, hunger rates have risen again…",
+      "translationPrefix": "goal_02.content.#7.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "stalled",
+      "text": "…while progress in <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span> has largely stalled.",
+      "translationPrefix": "goal_02.content.#7.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "mea",
+      "text": "The most concerning trend is in the <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Middle East & North Africa, Afghanistan & Pakistan</span> and <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span> where hunger has been on a continuous rise for more than a decade—from 2012 to 2023. In 2023, over 250 million people faced hunger in Sub-Saharan Africa and another 100 million people in the Middle East, North Africa, Afghanistan and Pakistan region.",
+      "translationPrefix": "goal_02.content.#7.scenes.#6"
+    }
+  ],
+  "translationPrefix": "goal_02.content.#7",
+  "_meta": {
+    "index": 6,
+    "chapterId": "02",
+    "chapterTitle": "Global hunger",
+    "dir": "chapters/goal_02/00-prevalence-undernourishment-regions",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

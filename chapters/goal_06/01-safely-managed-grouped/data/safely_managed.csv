@@ -1,0 +1,376 @@
+year,Global,level,value
+2000,Total,Safely managed,61.24826
+2001,Total,Safely managed,61.48111
+2002,Total,Safely managed,61.80238
+2003,Total,Safely managed,62.12813
+2004,Total,Safely managed,62.45578
+2005,Total,Safely managed,62.80723
+2006,Total,Safely managed,63.13166
+2007,Total,Safely managed,63.44926
+2008,Total,Safely managed,63.76205
+2009,Total,Safely managed,64.29065
+2010,Total,Safely managed,64.81646
+2011,Total,Safely managed,65.32277
+2012,Total,Safely managed,65.88699
+2013,Total,Safely managed,66.4713
+2014,Total,Safely managed,67.0612
+2015,Total,Safely managed,67.65044
+2016,Total,Safely managed,68.24117
+2017,Total,Safely managed,68.81892
+2018,Total,Safely managed,69.39036
+2019,Total,Safely managed,69.94604
+2020,Total,Safely managed,70.47846
+2021,Total,Safely managed,70.99528
+2022,Total,Safely managed,71.508
+2023,Total,Safely managed,71.99074
+2024,Total,Safely managed,73.66861
+2000,Total,Basic,20.35382
+2001,Total,Basic,20.43825
+2002,Total,Basic,20.70381
+2003,Total,Basic,20.84914
+2004,Total,Basic,20.98812
+2005,Total,Basic,21.07194
+2006,Total,Basic,21.21154
+2007,Total,Basic,21.352
+2008,Total,Basic,21.50531
+2009,Total,Basic,21.42467
+2010,Total,Basic,21.33939
+2011,Total,Basic,21.19036
+2012,Total,Basic,21.04048
+2013,Total,Basic,20.86834
+2014,Total,Basic,20.68754
+2015,Total,Basic,20.5045
+2016,Total,Basic,20.31312
+2017,Total,Basic,20.11443
+2018,Total,Basic,19.93541
+2019,Total,Basic,19.75994
+2020,Total,Basic,19.59746
+2021,Total,Basic,19.48797
+2022,Total,Basic,19.37025
+2023,Total,Basic,19.24817
+2024,Total,Basic,17.80605
+2000,Total,Limited,2.623908
+2001,Total,Limited,2.673294
+2002,Total,Limited,2.706065
+2003,Total,Limited,2.74247
+2004,Total,Limited,2.782403
+2005,Total,Limited,2.830656
+2006,Total,Limited,2.868979
+2007,Total,Limited,2.90755
+2008,Total,Limited,2.942162
+2009,Total,Limited,2.978864
+2010,Total,Limited,3.018277
+2011,Total,Limited,3.094935
+2012,Total,Limited,3.143268
+2013,Total,Limited,3.188417
+2014,Total,Limited,3.233366
+2015,Total,Limited,3.278486
+2016,Total,Limited,3.323404
+2017,Total,Limited,3.369902
+2018,Total,Limited,3.410208
+2019,Total,Limited,3.458151
+2020,Total,Limited,3.505318
+2021,Total,Limited,3.504996
+2022,Total,Limited,3.490631
+2023,Total,Limited,3.475669
+2024,Total,Limited,3.520139
+2000,Total,Unimproved,11.76287
+2001,Total,Unimproved,11.46743
+2002,Total,Unimproved,10.9521
+2003,Total,Unimproved,10.5378
+2004,Total,Unimproved,10.12758
+2005,Total,Unimproved,9.777397
+2006,Total,Unimproved,9.388122
+2007,Total,Unimproved,9.021578
+2008,Total,Unimproved,8.655917
+2009,Total,Unimproved,8.300689
+2010,Total,Unimproved,7.949758
+2011,Total,Unimproved,7.617674
+2012,Total,Unimproved,7.282163
+2013,Total,Unimproved,6.955943
+2014,Total,Unimproved,6.630819
+2015,Total,Unimproved,6.323149
+2016,Total,Unimproved,6.007756
+2017,Total,Unimproved,5.666802
+2018,Total,Unimproved,5.34899
+2019,Total,Unimproved,5.052951
+2020,Total,Unimproved,4.760447
+2021,Total,Unimproved,4.456495
+2022,Total,Unimproved,4.170716
+2023,Total,Unimproved,3.908312
+2024,Total,Unimproved,3.702632
+2000,Total,Surface,4.011142
+2001,Total,Surface,3.939912
+2002,Total,Surface,3.835644
+2003,Total,Surface,3.742459
+2004,Total,Surface,3.646109
+2005,Total,Surface,3.512779
+2006,Total,Surface,3.399703
+2007,Total,Surface,3.269608
+2008,Total,Surface,3.134557
+2009,Total,Surface,3.005127
+2010,Total,Surface,2.876123
+2011,Total,Surface,2.774263
+2012,Total,Surface,2.647101
+2013,Total,Surface,2.515995
+2014,Total,Surface,2.387071
+2015,Total,Surface,2.243423
+2016,Total,Surface,2.114553
+2017,Total,Surface,2.029945
+2018,Total,Surface,1.915025
+2019,Total,Surface,1.782919
+2020,Total,Surface,1.658313
+2021,Total,Surface,1.555264
+2022,Total,Surface,1.460405
+2023,Total,Surface,1.377108
+2024,Total,Surface,1.302567
+2000,Urban,Safely managed,83.43839
+2001,Urban,Safely managed,83.34951
+2002,Urban,Safely managed,83.25644
+2003,Urban,Safely managed,83.16772
+2004,Urban,Safely managed,83.0866
+2005,Urban,Safely managed,83.04654
+2006,Urban,Safely managed,82.97613
+2007,Urban,Safely managed,82.91183
+2008,Urban,Safely managed,82.83301
+2009,Urban,Safely managed,82.75094
+2010,Urban,Safely managed,82.67028
+2011,Urban,Safely managed,82.675
+2012,Urban,Safely managed,82.71246
+2013,Urban,Safely managed,82.78972
+2014,Urban,Safely managed,82.87407
+2015,Urban,Safely managed,82.96012
+2016,Urban,Safely managed,83.05462
+2017,Urban,Safely managed,83.13922
+2018,Urban,Safely managed,83.22379
+2019,Urban,Safely managed,83.29917
+2020,Urban,Safely managed,83.35742
+2021,Urban,Safely managed,83.40465
+2022,Urban,Safely managed,83.43924
+2023,Urban,Safely managed,83.45783
+2024,Urban,Safely managed,83.40723
+2000,Urban,Basic,11.85535
+2001,Urban,Basic,11.97577
+2002,Urban,Basic,12.1141
+2003,Urban,Basic,12.2543
+2004,Urban,Basic,12.38161
+2005,Urban,Basic,12.45016
+2006,Urban,Basic,12.56923
+2007,Urban,Basic,12.68607
+2008,Urban,Basic,12.81418
+2009,Urban,Basic,12.94762
+2010,Urban,Basic,13.07333
+2011,Urban,Basic,13.09394
+2012,Urban,Basic,13.10542
+2013,Urban,Basic,13.0794
+2014,Urban,Basic,13.04933
+2015,Urban,Basic,13.02526
+2016,Urban,Basic,12.99244
+2017,Urban,Basic,12.96946
+2018,Urban,Basic,12.95519
+2019,Urban,Basic,12.94268
+2020,Urban,Basic,12.94159
+2021,Urban,Basic,12.94499
+2022,Urban,Basic,12.94793
+2023,Urban,Basic,12.97932
+2024,Urban,Basic,13.06286
+2000,Urban,Limited,1.529796
+2001,Urban,Limited,1.553399
+2002,Urban,Limited,1.557302
+2003,Urban,Limited,1.559048
+2004,Urban,Limited,1.568753
+2005,Urban,Limited,1.601559
+2006,Urban,Limited,1.612343
+2007,Urban,Limited,1.623618
+2008,Urban,Limited,1.636092
+2009,Urban,Limited,1.646747
+2010,Urban,Limited,1.664869
+2011,Urban,Limited,1.693341
+2012,Urban,Limited,1.710463
+2013,Urban,Limited,1.726963
+2014,Urban,Limited,1.742576
+2015,Urban,Limited,1.753907
+2016,Urban,Limited,1.766173
+2017,Urban,Limited,1.778153
+2018,Urban,Limited,1.786856
+2019,Urban,Limited,1.802902
+2020,Urban,Limited,1.822934
+2021,Urban,Limited,1.847158
+2022,Urban,Limited,1.87813
+2023,Urban,Limited,1.88329
+2024,Urban,Limited,1.907542
+2000,Urban,Unimproved,2.609463
+2001,Urban,Unimproved,2.556527
+2002,Urban,Unimproved,2.515047
+2003,Urban,Unimproved,2.471798
+2004,Urban,Unimproved,2.426693
+2005,Urban,Unimproved,2.377758
+2006,Urban,Unimproved,2.330316
+2007,Urban,Unimproved,2.282087
+2008,Urban,Unimproved,2.235523
+2009,Urban,Unimproved,2.188895
+2010,Urban,Unimproved,2.141543
+2011,Urban,Unimproved,2.097749
+2012,Urban,Unimproved,2.049
+2013,Urban,Unimproved,1.998658
+2014,Urban,Unimproved,1.946896
+2015,Urban,Unimproved,1.892765
+2016,Urban,Unimproved,1.838053
+2017,Urban,Unimproved,1.783088
+2018,Urban,Unimproved,1.723306
+2019,Urban,Unimproved,1.664212
+2020,Urban,Unimproved,1.606392
+2021,Urban,Unimproved,1.550051
+2022,Urban,Unimproved,1.498036
+2023,Urban,Unimproved,1.466381
+2024,Urban,Unimproved,1.422832
+2000,Urban,Surface,0.566994
+2001,Urban,Surface,0.564791
+2002,Urban,Surface,0.557112
+2003,Urban,Surface,0.547139
+2004,Urban,Surface,0.536343
+2005,Urban,Surface,0.523984
+2006,Urban,Surface,0.511973
+2007,Urban,Surface,0.496394
+2008,Urban,Surface,0.481195
+2009,Urban,Surface,0.465801
+2010,Urban,Surface,0.44997
+2011,Urban,Surface,0.439971
+2012,Urban,Surface,0.422658
+2013,Urban,Surface,0.405253
+2014,Urban,Surface,0.387123
+2015,Urban,Surface,0.367952
+2016,Urban,Surface,0.34871
+2017,Urban,Surface,0.330079
+2018,Urban,Surface,0.310859
+2019,Urban,Surface,0.291034
+2020,Urban,Surface,0.271664
+2021,Urban,Surface,0.253155
+2022,Urban,Surface,0.236662
+2023,Urban,Surface,0.213171
+2024,Urban,Surface,0.199537
+2000,Rural,Safely managed,41.96545
+2001,Rural,Safely managed,42.13116
+2002,Rural,Safely managed,42.43639
+2003,Rural,Safely managed,42.74817
+2004,Rural,Safely managed,43.06209
+2005,Rural,Safely managed,43.38787
+2006,Rural,Safely managed,43.70546
+2007,Rural,Safely managed,44.0184
+2008,Rural,Safely managed,44.33456
+2009,Rural,Safely managed,45.10732
+2010,Rural,Safely managed,45.89301
+2011,Rural,Safely managed,46.62527
+2012,Rural,Safely managed,47.42918
+2013,Rural,Safely managed,48.24063
+2014,Rural,Safely managed,49.06373
+2015,Rural,Safely managed,49.8918
+2016,Rural,Safely managed,50.73134
+2017,Rural,Safely managed,51.57489
+2018,Rural,Safely managed,52.4258
+2019,Rural,Safely managed,53.27334
+2020,Rural,Safely managed,54.11487
+2021,Rural,Safely managed,54.95401
+2022,Rural,Safely managed,55.81031
+2023,Rural,Safely managed,56.63629
+2024,Rural,Safely managed,60.40175
+2000,Rural,Basic,27.56963
+2001,Rural,Basic,27.76988
+2002,Rural,Basic,28.1041
+2003,Rural,Basic,28.43929
+2004,Rural,Basic,28.77635
+2005,Rural,Basic,29.08069
+2006,Rural,Basic,29.42261
+2007,Rural,Basic,29.76981
+2008,Rural,Basic,30.12183
+2009,Rural,Basic,30.00925
+2010,Rural,Basic,29.88773
+2011,Rural,Basic,29.70928
+2012,Rural,Basic,29.54606
+2013,Rural,Basic,29.37589
+2014,Rural,Basic,29.19182
+2015,Rural,Basic,28.99618
+2016,Rural,Basic,28.78716
+2017,Rural,Basic,28.57446
+2018,Rural,Basic,28.36039
+2019,Rural,Basic,28.14015
+2020,Rural,Basic,27.92796
+2021,Rural,Basic,27.82737
+2022,Rural,Basic,27.72502
+2023,Rural,Basic,27.55362
+2024,Rural,Basic,24.1805
+2000,Rural,Limited,3.626239
+2001,Rural,Limited,3.715759
+2002,Rural,Limited,3.79993
+2003,Rural,Limited,3.889506
+2004,Rural,Limited,3.980148
+2005,Rural,Limited,4.065011
+2006,Rural,Limited,4.154278
+2007,Rural,Limited,4.243771
+2008,Rural,Limited,4.330759
+2009,Rural,Limited,4.42081
+2010,Rural,Limited,4.509896
+2011,Rural,Limited,4.661621
+2012,Rural,Limited,4.770804
+2013,Rural,Limited,4.875899
+2014,Rural,Limited,4.983894
+2015,Rural,Limited,5.100183
+2016,Rural,Limited,5.21714
+2017,Rural,Limited,5.333313
+2018,Rural,Limited,5.447723
+2019,Rural,Limited,5.571383
+2020,Rural,Limited,5.688383
+2021,Rural,Limited,5.689164
+2022,Rural,Limited,5.648571
+2023,Rural,Limited,5.63986
+2024,Rural,Limited,5.74713
+2000,Rural,Unimproved,19.80465
+2001,Rural,Unimproved,19.42823
+2002,Rural,Unimproved,18.80448
+2003,Rural,Unimproved,18.17945
+2004,Rural,Unimproved,17.55576
+2005,Rural,Unimproved,17.03489
+2006,Rural,Unimproved,16.4461
+2007,Rural,Unimproved,15.88807
+2008,Rural,Unimproved,15.34439
+2009,Rural,Unimproved,14.78987
+2010,Rural,Unimproved,14.23562
+2011,Rural,Unimproved,13.69034
+2012,Rural,Unimproved,13.1446
+2013,Rural,Unimproved,12.61229
+2014,Rural,Unimproved,12.0784
+2015,Rural,Unimproved,11.57486
+2016,Rural,Unimproved,11.04719
+2017,Rural,Unimproved,10.50116
+2018,Rural,Unimproved,9.981416
+2019,Rural,Unimproved,9.462255
+2020,Rural,Unimproved,8.937034
+2021,Rural,Unimproved,8.371519
+2022,Rural,Unimproved,7.824776
+2023,Rural,Unimproved,7.317862
+2024,Rural,Unimproved,6.936844
+2000,Rural,Surface,7.034024
+2001,Rural,Surface,6.954968
+2002,Rural,Surface,6.855102
+2003,Rural,Surface,6.743586
+2004,Rural,Surface,6.625647
+2005,Rural,Surface,6.431536
+2006,Rural,Surface,6.271554
+2007,Rural,Surface,6.079942
+2008,Rural,Surface,5.868457
+2009,Rural,Surface,5.67275
+2010,Rural,Surface,5.473744
+2011,Rural,Surface,5.313485
+2012,Rural,Surface,5.109351
+2013,Rural,Surface,4.895287
+2014,Rural,Surface,4.682161
+2015,Rural,Surface,4.436977
+2016,Rural,Surface,4.217168
+2017,Rural,Surface,4.016181
+2018,Rural,Surface,3.784666
+2019,Rural,Surface,3.552875
+2020,Rural,Surface,3.331751
+2021,Rural,Surface,3.157936
+2022,Rural,Surface,2.991323
+2023,Rural,Surface,2.85236
+2024,Rural,Surface,2.733771

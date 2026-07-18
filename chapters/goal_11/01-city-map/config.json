@@ -1,0 +1,53 @@
+{
+  "type": "scroller",
+  "graphic": "city_map",
+  "title": "The number of cities worldwide is projected to nearly double between 2000 and 2050",
+  "subtitle": "Number of cities by population size",
+  "source": "United Nations, Department of Economic and Social Affairs, Population Division (2025). <a href=\"https://population.un.org/wup/\" target=\"_blank\" rel=\"external\">World Urbanization Prospects</a>.",
+  "visdescription": "This is a waffle chart. Each dot represents a city in the world and the cities are colored by their size category: very small (50,000 to 250,000 residents), small (250,000 to 1 million residents), medium (1 million to 5 million residents), large (5 million to 10 million residents), very large (over 10 million residents) cities. ",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "theme": "light",
+  "y_title": "City grow",
+  "y_units": "%",
+  "search_placeholder": "Search your city",
+  "data_download": "11_data_city_map.zip",
+  "data": "1kDgVr0xlnjNtyhYzv-toU807gtvLTIUw7lPRDWfZJLk",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "In 2000, there were just over 9,000 cities in the world. ",
+      "translationPrefix": "goal_11.content.#6.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "By 2025, the world had over 12,000 cities. <span style=\"background-color: rgb(135,177,71);\">Small</span> and <span style=\"background-color: rgb(236,182,58);\">very small</span> cities (50,000–1 million residents) drove some of this growth, expanding from roughly 8,700 to 11,600. Meanwhile, <span data-color-id=\"cat6\" class=\"cat6\">megacities</span>, those exceeding 10 million people, also grew significantly, from 20 in 2000 to 33 in 2025.",
+      "translationPrefix": "goal_11.content.#6.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "But this growth in megacities is expected to slow down over the next 25 years, with projections suggesting that there will only be four more <span style=\"color: rgb(255,255,255); background-color: rgb(8,16,121);\">megacities</span> by 2050, bringing the total to 37.",
+      "translationPrefix": "goal_11.content.#6.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "4",
+      "text": "Instead, urban growth will be driven by an increase in the number of <span style=\"background-color: rgb(135,177,71);\">small</span> and <span style=\"background-color: rgb(236,182,58);\">very small</span> cities, nearing 15,000 by 2050.",
+      "translationPrefix": "goal_11.content.#6.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_11.content.#6",
+  "_meta": {
+    "index": 86,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/01-city-map",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

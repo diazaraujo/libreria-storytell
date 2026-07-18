@@ -1,0 +1,21 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Consequences of increased aridity on ecosystems and land degradation",
+  "subtitle": "",
+  "source": "[reference: berdugo]",
+  "visdescription": "An illustration showing the sequence of the vegetation decline phase, the soil disruption phase and the systemic breakdown at certain aridity thresholds.",
+  "filename": "sdg15/aridification-ecosystems.png",
+  "translationPrefix": "goal_15.content.#38",
+  "_meta": {
+    "index": 130,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/05-image",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

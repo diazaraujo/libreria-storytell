@@ -1,0 +1,33 @@
+{
+  "type": "vis",
+  "graphic": "venn_diagram",
+  "title": "Most of the world’s poor live in countries that suffer from conflict, poor economic management, and/or high corruption",
+  "subtitle": "Countries not on track to reduce poverty to 10 percent by 2050",
+  "source": "<a href=\"https://www.worldbank.org/en/topic/fragilityconflictviolence/brief/classification-of-fragile-and-conflict-affected-situations\" target=\"_blank\" rel=\"external\">Classification of fragile and conflict-affected situations</a>  and <a href=\"https://databank.worldbank.org/source/country-policy-and-institutional-assessment\" target=\"_blank\" rel=\"external\">Country Policy and Institutional Assessment</a>.",
+  "visdescription": "The overlap between acute insecurity, poor economic management, and high corruption and low accountability",
+  "theme": "light (alternatively: dark)",
+  "data_download": "01_data_causes.csv",
+  "data": "1jC5pRzXTmymEYl5aOP3oMwNEy_pBQSE6cW6KvLaGsaU",
+  "cpia_econ": "Poor economic management",
+  "cpia_tran": "Corruption and low accountability ",
+  "conflict": "Acute insecurity",
+  "not_affected_title": "Less affected countries",
+  "not_taking_off": "Country with little or no progress",
+  "number_poor": "Number of poor",
+  "million": "(millions)",
+  "translationPrefix": "goal_01.content.#30",
+  "_meta": {
+    "index": 4,
+    "chapterId": "01",
+    "chapterTitle": "Extreme Poverty",
+    "dir": "chapters/goal_01/04-venn-diagram",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "interactive draw + scroller choreography + venn + scatter"
+  },
+  "scenes": []
+}

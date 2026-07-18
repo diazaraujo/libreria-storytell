@@ -1,0 +1,41 @@
+{
+  "type": "scroller",
+  "graphic": "income_world_map",
+  "title": "Countries by income group",
+  "subtitle": "Income classification in 1990",
+  "source": "WB Country and Lending Groups",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "08_data_income_levels.csv",
+  "data": "1ud7kIIHA8R-QIU0WCPHDXT0izj4yor0dYi7D2ZXR0Oc",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "normal_map",
+      "text": "This map shows how countries were classified according to their income level in 1990. ",
+      "translationPrefix": "goal_08.content.#15.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "shifted_countries",
+      "text": "Let us transition into a map, where all countries are equally visible.",
+      "translationPrefix": "goal_08.content.#15.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "tiles",
+      "text": "Now, each tile represents a country with the color showing their income group as of 1990. ",
+      "translationPrefix": "goal_08.content.#15.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_08.content.#15",
+  "_meta": {
+    "index": 62,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/04-income-world-map",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

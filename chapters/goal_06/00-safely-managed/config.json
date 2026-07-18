@@ -1,0 +1,55 @@
+{
+  "type": "scroller",
+  "graphic": "safely_managed",
+  "title": "A quarter of the world’s population lacks access to safe drinking water",
+  "subtitle": "Five levels of drinking water services (% of population)",
+  "source": "WHO/UNICEF JMP for Water Supply, Sanitation and Hygiene. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS\" target=\"_blank\" rel=\"external\">SH.H2O.SMDW.ZS</a><span style=\"color: rgb(112,111,125);\">)</span>",
+  "visdescription": "Line chart showing the distribution of the global population across drinking water service levels from 2000 to 2024. Each line represents a service level—safely managed, basic, limited, unimproved, and surface water—and together they sum to 100 percent in each year. The chart illustrates how the composition of service levels has changed over time.",
+  "indicator_360": "WB_WDI_SH_H2O_SMDW_ZS",
+  "visSize": "small",
+  "data_download": "Safely managed.zip",
+  "data": "1JqbaHQXEjhErDipoCf8b3-YZXKFCfIvrzCfyR69d1gE",
+  "keyFact": "2.1 billion",
+  "keyFactLabel": "people lacked access to safely managed drinking water in 2024.",
+  "legendSafelyManaged": "Safely managed",
+  "legendBasic": "Basic",
+  "legendLimited": "Limited",
+  "legendUnimproved": "Unimproved",
+  "legendSurfaceWater": "Surface water",
+  "yAxisTitle": "Access to drinking water, by service level",
+  "yAxisUnits": "% of global population",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1_Id",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,128,198);\">Safely managed</span>]: The highest service level, this is water from an[emphasis:  improved source] that is [emphasis: available on premises [reference: premises]],[emphasis:  when needed, ]and [emphasis: free from fecal and priority chemical contamination such as arsenic and fluoride]. Global access rose from 61 percent (3.8 billion people) in 2000 to 74 percent (6 billion) in 2024. This means  2.1 billion people still lack access to safe drinking water.",
+      "translationPrefix": "goal_06.content.#8.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2_Id",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,184,236);\">Basic</span>][emphasis: : From an improved source, often off-premises but within a 30-minute round trip and without guaranteed water quality. ]In 2024, about 18 percent of the world’s population (1.4 billion people) had access to this level of drinking water. ",
+      "translationPrefix": "goal_06.content.#8.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3_Id",
+      "text": "In 2024, one-tenth of the global population lacked even basic drinking water: 4 percent had access to an improved source but with a collection time of over 30 minutes ([emphasis: <span style=\"background-color: rgb(206,212,222);\">limited</span>] services) and another 4 percent relied on [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(227,167,99);\">unimproved</span>]sources. The final 1 percent were at high risk of contamination, depending on [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(189,97,38);\">surface</span>] water accessed directly from rivers, dams, and lakes.",
+      "translationPrefix": "goal_06.content.#8.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#8",
+  "_meta": {
+    "index": 40,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/00-safely-managed",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

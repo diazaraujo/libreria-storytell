@@ -1,0 +1,26 @@
+{
+  "type": "vis",
+  "graphic": "uhc_chart",
+  "title": "UCH Service Coverage Index by regions, 2000-2023",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_uhc_chart.csv",
+  "data": "1TF7nwhhbF5Bo3Yk6WmZYav611Gv-Bmjq7lAuF25zSy4",
+  "x_title": "",
+  "x_unit": "",
+  "y_title": "Index score",
+  "y_unit": "",
+  "translationPrefix": "goal_03.content.#7",
+  "_meta": {
+    "index": 13,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/00-uhc-chart",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

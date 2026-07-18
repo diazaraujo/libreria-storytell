@@ -1,0 +1,52 @@
+{
+  "type": "scroller",
+  "graphic": "projection_country",
+  "title": "Possible poverty targets for Côte d'Ivoire",
+  "country_rate": "Côte d'Ivoire's poverty rate (%)",
+  "rate1": "Typical speed",
+  "rate2": "Continuing its own speed from 2015–25 (2x typical speed)",
+  "rate4": "Accelerated speed (4x typical speed)",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook October 2025</a>, <a href=\"https://doi.org/10.1596/1813-9450-11350\" target=\"_blank\" rel=\"external\">Mahler et al. (2026)</a>, and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. (2025)</a>.<span style=\"background-color: rgb(255,255,0);\"></span>",
+  "visdescription": "The visualization shows poverty rates Côte d'Ivoire could target by 2050. ",
+  "visSize": "default",
+  "data_download": "progress_data_poverty_projection_country.zip",
+  "data": "1RQA8Xku_eDlTuTjllU9Se84_m6VzJ6o_QisB5AXdks8",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "past_decade",
+      "text": "In 2025, Côte d’Ivoire’s poverty rate was 16.1 percent.",
+      "translationPrefix": "goal_progress.content.#15.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "speed_double",
+      "text": "At the typical speed of progress, poverty will be driven down to 6.3 percent in 2050. This is one possible 2050 target for Côte d’Ivoire.",
+      "translationPrefix": "goal_progress.content.#15.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "speed_typical",
+      "text": "But Côte d’Ivoire moved almost twice as fast as the typical speed in the past decade. If it continues at a speed of two, it would reach a poverty rate of 2.1 percent by 2050.",
+      "translationPrefix": "goal_progress.content.#15.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "speed_4x",
+      "text": "It could also choose an even more ambitious target, such as moving at four times the typical speed. This would reflect some of the fastest movers we have seen. Under such a scenario, it should target a 0.3 percent poverty rate by 2050.",
+      "translationPrefix": "goal_progress.content.#15.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_progress.content.#15",
+  "_meta": {
+    "index": 163,
+    "chapterId": "progress",
+    "chapterTitle": "Measuring Progress",
+    "dir": "chapters/goal_progress/02-projection-country",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

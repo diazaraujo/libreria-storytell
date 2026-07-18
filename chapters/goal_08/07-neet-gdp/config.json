@@ -1,0 +1,84 @@
+{
+  "type": "scroller",
+  "graphic": "neet_gdp",
+  "title": "The wealthier the country, the lower the NEET",
+  "subtitle": "Comparing NEET rates with GDP per capita",
+  "source": "WB, World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SL.UEM.NEET.ZS\" target=\"_blank\" rel=\"external\">SL.UEM.NEET.ZS</a>)",
+  "x_title": "GDP/capita",
+  "x_units": "$/year",
+  "y_title": "Share of youth not in education, employment or training",
+  "y_units": "%",
+  "female_neet_rate": "Female NEET rate",
+  "male_neet_rate": "Male NEET rate",
+  "total_neet_rate": "Total NEET rate",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "08_data_neet_gdp.csv",
+  "data": "1Ae7caE6nwzn2poda6CbglNTv1fp53N6x-80_SxWGoeM",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "countries",
+      "text": "The share of youth (15-24 years of age) not currently in employment, education or training (NEET) is correlated with the income level of the country in which they live. NEET differs greatly across regions with the highest rates observed in <span data-color-id=\"MEA\" class=\"MEA\">Middle East & North Africa</span>, <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span> and <span data-color-id=\"cat4\" class=\"cat4\">South Asia</span>. [This regional pattern mimics that of labor force participation.]",
+      "translationPrefix": "goal_08.content.#24.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "SAS",
+      "text": "In <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span> levels are on average quite high.",
+      "translationPrefix": "goal_08.content.#24.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "MEA",
+      "text": "In the <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Middle East & North Africa</span> levels are on average quite high, but there is a strong negative correlation between NEET and GDP even within the region. ",
+      "translationPrefix": "goal_08.content.#24.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "SSF",
+      "text": "<span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span> has the highest levels of NEET on average of any region, without any clear relationship with a country’s income level.",
+      "translationPrefix": "goal_08.content.#24.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "all_countries",
+      "text": "<span style=\"color: rgb(4,1,16);\">Similar to the trends observed regarding labor force participation in </span>[goal: 5]<span style=\"color: rgb(4,1,16);\"> these regional differences tell a striking story related to gender differences.</span>",
+      "translationPrefix": "goal_08.content.#24.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "gender",
+      "text": "Generally, women are more likely to be outside employment, education or training. And in some regions, these differences across genders are substantial. Here, each orange line connecting an orange and purple dot shows the NEET for an individual country. The longer the line, the greater the difference between NEET rates across gender. Generally, countries with a lower income level tend to have a greater divergence in NEET rates across gender, although regional differences are substantial.",
+      "translationPrefix": "goal_08.content.#24.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "gender_SAS",
+      "text": "In <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span>, for instance, India stands out by having NEET rates for women almost 4 times the NEET rate for men. ",
+      "translationPrefix": "goal_08.content.#24.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "gender_MEA",
+      "text": "In the <span data-color-id=\"MEA\" class=\"MEA\">Middle East, North Africa, Afghanistan and Pakistan region</span>, approximately 1 in 3 youth are not in employment, education or training and the share of females in NEET is almost twice that of men. These significant differences in NEET rates across gender persist across different income levels. ",
+      "translationPrefix": "goal_08.content.#24.scenes.#7"
+    },
+    {
+      "type": "scene",
+      "id": "gender_SSF",
+      "text": "While <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa </span>has the highest level of NEET across regions, gender differences are less profound although a few countries exhibit significant differences in NEET across men and women.",
+      "translationPrefix": "goal_08.content.#24.scenes.#8"
+    }
+  ],
+  "translationPrefix": "goal_08.content.#24",
+  "_meta": {
+    "index": 65,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/07-neet-gdp",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

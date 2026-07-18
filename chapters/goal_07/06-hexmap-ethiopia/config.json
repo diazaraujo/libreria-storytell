@@ -1,0 +1,57 @@
+{
+  "type": "scroller",
+  "graphic": "hexmap_ethiopia",
+  "title": "Ethiopia: progress in rural areas",
+  "subtitle": "Solar electricity is a key factor of progress in rural areas",
+  "source": "World Bank, Development Data Group . <a href=\"https://worldbank.github.io/DECAT_Space2Stats/readme.html\" target=\"_blank\" rel=\"external\">Space2Stats</a> (accessed: February 20, 2026). <span style=\"background-color: rgb(255,255,0);\"></span>",
+  "visdescription": "Map of nighttime lights in Ethiopia as a proxy for electricity access. It focused on access progress in rural areas.",
+  "population": "Population",
+  "access_electricity": "Access to electricity",
+  "some_light": "Some level of night lights",
+  "dark": "Dark",
+  "newly_lit_2023": "Dark areas in 2012 that had some night lights in 2023",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "nightlights_12": "Night lights in 2012",
+  "nightlights_23": "Night lights in 2023",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "nightlights12",
+      "text": "Let’s focus on Ethiopia’s [emphasis: rural areas only][footnote: Urban areas are left blank to focus on the nighttime lights view in rural areas.]and take a look at the nighttime lights view of 2012. The areas where at least <span style=\"color: rgb(255,255,255); background-color: rgb(129,176,225);\">some light</span> (weak or strong) was detected are shown in light blue, and areas where no nighttime light was detected, in <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark blue</span>. While western parts of rural Ethiopia had some nighttime lights coverage in 2012, eastern and southern rural Ethiopia remained largely in the dark.",
+      "translationPrefix": "goal_07.content.#27.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "nightlights12_powerlines",
+      "text": "The <span style=\"color: rgb(255,255,255); background-color: rgb(235,87,87);\">power grid lines</span> reached only a few rural areas in 2012. So how did the illuminated rural areas have access to electricity? About 75 percent of the [emphasis: rural population] in Ethiopia with access consumed electricity through[emphasis:  solar power.][reference: ethiopia_survey]",
+      "translationPrefix": "goal_07.content.#27.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "nightlights12_se",
+      "text": "Let’s focus on the [emphasis: south-east,] which is more sparsely populated and remained mostly in <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">the dark in 2012</span>[emphasis: .]",
+      "translationPrefix": "goal_07.content.#27.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "nightlights23",
+      "text": "By 2023, a lot more nighttime lights could be detected in the southeast. Much of this is due to the [emphasis: rapid uptake of solar electricity,][reference: ethiopia_survey] which helped reduce the persistent gap in access to electricity in rural areas.",
+      "translationPrefix": "goal_07.content.#27.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_07.content.#27",
+  "_meta": {
+    "index": 57,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/06-hexmap-ethiopia",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  }
+}

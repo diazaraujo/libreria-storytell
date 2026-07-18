@@ -1,0 +1,58 @@
+{
+  "type": "scroller",
+  "graphic": "arable_land_degradation",
+  "title": "Four processes degrading arable land",
+  "subtitle": "",
+  "source": "[reference: pravalie2021]",
+  "salinization": "Share of arable land affected by salinization",
+  "carbon_decline": "Share of arable land affected by carbon decline",
+  "erosion": "Share of arable land affected by erosion",
+  "aridity": "Share of arable land affected by aridity",
+  "visdescription": "World map showing the distribution of arable lands, and of the salinization, loss of organic carbon, erosion and aridity degradation processes.",
+  "visSize": "fullScreen",
+  "data_download": "15_data_arable_land_degradation.csv",
+  "data": "1cMRTFjgImsFIZi6Uv1MzuxK2pSHo1x4Ru3lkmctejLM",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "arable_land",
+      "text": "Global <span style=\"background-color: rgb(191,194,10);\">arable lands</span> cover 14.2 million square kilometers, 1.5 times the land area of the United States or China. This land is used for the production of food for human consumption, of animal feed and of non-food crops like biofuels.",
+      "translationPrefix": "goal_15.content.#11.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "salinization",
+      "text": "[emphasis: Salinization] is the process of accumulation of salts in the soil. It reduces plant growth, and can even make land unsuitable for agriculture. It is mostly caused by irrigation practices with insufficient drainage. Salinization affects almost 2 percent of arable lands, mostly in drier and coastal areas.",
+      "translationPrefix": "goal_15.content.#11.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "carbon_decline",
+      "text": "Organic carbon in the soil makes it fertile: it retains nutrients and water for plants, and makes it structurally stable. Agricultural practices like heavy tilling and the removal or burning of crop residues leads to a [emphasis: decline in soil organic carbon]. This is affecting 3.3 percent of arable land.",
+      "translationPrefix": "goal_15.content.#11.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "erosion",
+      "text": "A more important factor in the degradation of arable land is [emphasis: soil erosion]. Soil erosion happens when rainfall or water runoff detaches and carries the top soil. Natural factors determining the risk of soil erosion are the amount and intensity of rainfall, topography and soil characteristics. Human factors are excessive or poorly timed tillage, monocropping and providing inadequate cover crops. Soil erosion affects 30 percent of all arable land.",
+      "translationPrefix": "goal_15.content.#11.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "aridity",
+      "text": "But by far the largest pressure for these agricultural systems is<span style=\"color: rgb(255,255,255);\"> </span>[emphasis: aridity]. Water resources are a subsystem of land, and under arid conditions they put constraints on soils and vegetation, the two other components of land. This causes land degradation, defined as a reduction in the agro-ecological productivity of land. 55% of arable land is situated in drylands, which have expanded and become more arid over the last decades.",
+      "translationPrefix": "goal_15.content.#11.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_15.content.#11",
+  "_meta": {
+    "index": 126,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/01-arable-land-degradation",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

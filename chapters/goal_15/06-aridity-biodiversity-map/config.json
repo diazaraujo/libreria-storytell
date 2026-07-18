@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "aridity_biodiversity_map",
+  "title": "Where species are projected to lose their local habitat due to rising aridity",
+  "subtitle": "Hotspots with the highest shares of terrestrial animals losing local habitats include the west coast of Africa, west Australia and the Iberian Peninsula, but also humid regions such as southern Mexico and the northern Amazon rainforest",
+  "scenarios": "Greenhouse gas emissions scenario",
+  "ssp126": "Low",
+  "ssp245": "Intermediate",
+  "ssp585": "Very high",
+  "share_species": "Share of vertebrate species losing local habitat",
+  "source": "[reference: liu]",
+  "visdescription": "A world map showing where vertebrate species can lose their local habitat due to rising aridity under 3 greenhouse gas emission scenarios.",
+  "visSize": "fullScreen",
+  "filename": "sdg15/aridity-biodiversity.png",
+  "keyFact": "25%",
+  "keyFactLabel": "of vertebrate species could lose local habitats because of rising aridity by 2100.",
+  "translationPrefix": "goal_15.content.#41",
+  "_meta": {
+    "index": 131,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/06-aridity-biodiversity-map",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

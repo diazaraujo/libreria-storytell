@@ -1,0 +1,33 @@
+{
+  "type": "vis",
+  "graphic": "ecoli_table",
+  "title": "Levels of fecal contamination risk",
+  "subtitle": "<i>E.coli</i> colony-forming units (CFU)/100mL",
+  "source": "WHO and UNICEF. 2020.<a href=\"https://washdata.org/reports/jmp-2020-water-quality-testing-household-surveys\" target=\"_blank\" rel=\"external\"> Integrating Water Quality Testing into Household Surveys: Thematic Report on Drinking Water.</a> New York: World Health Organization and the United Nations Children’s Fund.",
+  "note": "CFU measures the number of viable E. coli bacteria in a water sample, expressed as  colony-forming units (CFU) per 100 mL.",
+  "visdescription": "Table showing <i>E. coli</i> risk levels based on the number of CFU per 100 mL of water. Risk levels are classified as low (fewer than 1 CFU per 100 mL), moderate (1 to 10), high (11 to 100), and very high (more than 100).",
+  "visSize": "small",
+  "data_download": "E-coli Table.csv",
+  "data": "13g6UiprsJF83hmkagPcHQdzRRqzym7cWY99bg91vU8Q",
+  "riskLevelHeaderLabel": "<i>E. Coli </i> risk level",
+  "countHeaderLabel": "Count in 100mL water",
+  "lowRiskLabel": "Low risk",
+  "mediumRiskLabel": "Medium risk",
+  "highRiskLabel": "High risk",
+  "veryHighRiskLabel": "Very high risk",
+  "translationPrefix": "goal_06.content.#33",
+  "_meta": {
+    "index": 46,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/06-ecoli-table",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  },
+  "scenes": []
+}

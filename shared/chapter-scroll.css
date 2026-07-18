@@ -1,0 +1,365 @@
+/* Chapter scroll — layout matched to Atlas electricity-access sticky scroller
+ *
+ * Atlas composition (desktop ~1440):
+ *   [ left gutter + annotation card ] [ title + red rule + chart + source ]
+ * Title sits over the chart column only (not full bleed).
+ */
+
+:root {
+  --ch-text: #100e2b;
+  --ch-subtle: #6a7781;
+  --ch-line: #e8eaef;
+  --ch-bg: #ffffff;
+  --ch-blue: #0071bc;
+  --ch-red: #e31c3d;
+  --ch-sticky-top: 0px;
+  --ch-note-w: 320px;
+  --ch-gap: 28px;
+  --ch-pad-x: 48px;
+  --ch-chart-max-h: 520px;
+}
+
+.ch-story {
+  background: var(--ch-bg);
+  color: var(--ch-text);
+  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+}
+
+/* Hero */
+.ch-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px var(--ch-pad-x) 56px;
+}
+.ch-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ch-subtle);
+  margin: 0 0 8px;
+}
+.ch-hero h1 {
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+  font-weight: 700;
+  color: var(--ch-text);
+}
+.ch-lead {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ch-subtle);
+  margin: 0;
+}
+
+/* Prose bridge */
+.ch-prose {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 72px var(--ch-pad-x) 88px;
+  min-height: auto !important;
+}
+.ch-prose-inner {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ch-text);
+}
+.ch-prose-inner p { margin: 0 0 1.15em; }
+.ch-prose-inner p:last-child { margin-bottom: 0; }
+.ch-prose-inner strong { color: var(--ch-text); font-weight: 700; }
+
+/* Scroller runway */
+.ch-block--scroller,
+.ch-block--vis {
+  position: relative;
+  width: 100%;
+}
+
+/* Sticky = full viewport, Atlas-like two-column content */
+.ch-sticky {
+  position: sticky;
+  top: var(--ch-sticky-top);
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--ch-bg);
+  box-sizing: border-box;
+  z-index: 2;
+  padding: 24px 0 16px;
+}
+
+/* Inner frame mirrors Atlas content width */
+.ch-sticky-inner {
+  display: grid;
+  grid-template-columns: var(--ch-note-w) minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  column-gap: var(--ch-gap);
+  row-gap: 0;
+  width: min(1200px, calc(100% - 2 * var(--ch-pad-x)));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--ch-pad-x);
+  box-sizing: border-box;
+  min-height: 0;
+  flex: 1 1 auto;
+  align-content: center;
+}
+
+/* Title block — chart column only + red rule (Atlas signature) */
+.ch-sticky-head {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0 8px 0 0;
+  margin-bottom: 10px;
+}
+.ch-title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ch-text);
+  letter-spacing: -0.01em;
+}
+.ch-subtitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ch-subtle);
+}
+.ch-rule {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ch-red);
+  border: 0;
+  margin: 0;
+}
+
+/* Annotation — left column, vertically centered to chart */
+.ch-note {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  margin: 0;
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid #e6e8ee;
+  border-left: 4px solid var(--ch-red);
+  border-radius: 2px;
+  box-shadow: 0 2px 12px rgba(16, 14, 43, 0.07);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ch-text);
+  z-index: 3;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+.ch-note.is-leaving {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.ch-note.is-entering {
+  opacity: 0;
+  transform: translateY(6px);
+}
+.ch-note.is-entered {
+  opacity: 1;
+  transform: none;
+}
+
+/* Atlas-style text chips */
+.ch-note-text [data-color-id="WLD"],
+.ch-note-text .WLD {
+  color: #fff;
+  background: #081079;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="SAS"],
+.ch-note-text .SAS {
+  color: #fff;
+  background: #4ec2c0;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="SSF"],
+.ch-note-text .SSF {
+  color: #1a1000;
+  background: #ff9800;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="EAS"],
+.ch-note-text .EAS {
+  color: #fff;
+  background: #f3578e;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="LCN"],
+.ch-note-text .LCN {
+  color: #fff;
+  background: #0c7c68;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="MEA"],
+.ch-note-text .MEA {
+  color: #fff;
+  background: #664ab6;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="NAC"],
+.ch-note-text .NAC {
+  color: #fff;
+  background: #34a7f2;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text [data-color-id="ECS"],
+.ch-note-text .ECS {
+  color: #fff;
+  background: #aa0000;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ch-note-text .emphasis { font-weight: 700; }
+
+/* Chart column */
+.ch-chart-wrap {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ch-chart {
+  position: relative;
+  width: 100%;
+  height: min(var(--ch-chart-max-h), calc(100dvh - 200px));
+  min-height: 420px;
+}
+.ch-chart .atlas-rsm,
+.ch-chart .atlas-chart-root,
+.ch-chart .atlas-pop {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Scene dots — subtle, Atlas-adjacent (not primary UX) */
+.ch-dots {
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  z-index: 4;
+  opacity: 0.85;
+}
+.ch-dots button {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #ced4de;
+  cursor: pointer;
+  transition: background 0.35s ease, transform 0.35s ease;
+}
+.ch-dots button.active {
+  background: #100e2b;
+  transform: scale(1.25);
+}
+
+/* Source under chart column */
+.ch-source {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 10px 0 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--ch-subtle);
+  border-top: 1px solid #e8eaef;
+  margin-top: 8px;
+}
+.ch-source a {
+  color: var(--ch-red);
+  text-decoration: none;
+}
+.ch-source a:hover { text-decoration: underline; }
+
+.ch-sensor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ch-error {
+  padding: 24px;
+  color: #aa0000;
+  font-size: 14px;
+}
+
+/* Hide chrome topbar competition */
+body.ch-story-page .ch-topbar {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 960px) {
+  :root {
+    --ch-note-w: 1fr;
+    --ch-pad-x: 16px;
+    --ch-chart-max-h: 400px;
+  }
+  .ch-sticky-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    width: 100%;
+  }
+  .ch-sticky-head {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .ch-note {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 8px;
+  }
+  .ch-chart-wrap {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .ch-source {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .ch-dots {
+    right: 4px;
+    top: auto;
+    bottom: 8px;
+    transform: none;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "urban-development",
+  "code": "11.0.0",
+  "code_alt": "43.0.0",
+  "kicker": "Urban Development",
+  "title": "Urban Development: Cities as Engines of Growth",
+  "lede": "Cities drive global economic growth, but urbanization is uneven and service delivery lags in many fast-growing urban areas.",
+  "caption": "Urban progress series",
+  "yLabel": "Index",
+  "invert": false,
+  "stick": "#0c7c68",
+  "original": "https://data360.worldbank.org/en/atlas/urban-development/",
+  "facts": [
+    {
+      "num": "1 in 4",
+      "text": "key fact from the urban development story."
+    },
+    {
+      "num": "Slums",
+      "text": "absolute numbers of people in slums remain high."
+    },
+    {
+      "num": "Skills",
+      "text": "urban labor markets offer wider skill distributions."
+    }
+  ],
+  "resolved_code": "43.0.0",
+  "n": 218,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

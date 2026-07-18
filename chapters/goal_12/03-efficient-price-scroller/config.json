@@ -1,0 +1,58 @@
+{
+  "type": "vis",
+  "graphic": "efficient_price_scroller",
+  "title": "Retail price versus Efficient Price, by country",
+  "subtitle": "",
+  "source": "Black, Liu, Parry, and Vernon (2023) [reference: black1]",
+  "visdescription": "Bar charts depicting the same data with country-level granularity follow.",
+  "theme": "light (alternatively: dark)",
+  "data_download": "fossil_fuel_subsidy_20250920.zip",
+  "data": "1ocsqKO4Kz4tKxE3p94rdzkTJVPEb4rZlHGkfY12i3WA",
+  "text_hic_gasoline": "[emphasis: High-income countries & gasoline: ]In 2022, the international price of gasoline has been roughly around $0.8 per liter (2021 prices) in most countries. In high-income countries, the environmental and social costs of using gasoline are estimated to outweigh the supply price. However, in these countries, the retail price is high enough to cover some of the external costs, if not all. Iceland, Norway, Finland, Portugal, and Barbados, fully internalize external costs in their pricing of gasoline. On the other hand, oil-producing, high-income countries, such as Qatar, Saudi Arabia, Bahrain, Oman, Brunei Darussalam, and Kuwait, set retail prices below the supply price.",
+  "text_umic_gasoline": "[emphasis: Upper-middle-income countries & gasoline: ]Similarly, environmental and social costs of gasoline are often larger than the supply price in upper-middle-income countries. In most of these countries, the retail price often is high enough to cover some of the external costs, if not all. Fewer countries fully internalize all costs, including Albania, Bosnia and Herzegovina, and Belize. Oil-producing countries typically set prices below the supply cost.",
+  "text_lmic_gasoline": "[emphasis: Low-middle-income countries & gasoline: ]Similar pattern holds for lower-middle-income countries. Most countries barely set a retail price for gasoline that internalizes all supply, environmental, and social costs.",
+  "text_lic_gasoline": "[emphasis: Low-income countries & gasoline: ]Due to limited consumption of gasoline in low-income countries, the estimated cost of environmental damage is lower than the supply cost in about half of the countries. Road accidents are important sources of external costs, due to poor infrastructure in these countries.",
+  "text_lic_coal": "[emphasis: Low-income countries & coal: ]The retail price of coal varies across low-income countries and is usually set as a mark-up on the supply price. However, retail prices remain below efficient levels. Coal is a major source of carbon emissions, resulting in significant global warming costs as a share of external costs.",
+  "text_lmic_coal": "[emphasis: Low-middle-income countries & coal: ]Similarly, the retail price of coal varies across lower-middle-income countries and is usually set at a mark-up on the supply price. Global warming costs are also significant shares of the external costs. High estimates of local air pollution are observed in a few countries, such as Uzbekistan, Bolivia, Moldova, Georgia, and Nicaragua. Retail prices fall short of efficient prices in all countries.",
+  "text_umic_coal": "[emphasis: Upper-middle-income countries & coal: ]In upper-income countries, too, the retail price of coal falls short of the efficient price by a substantial margin. External costs are typically global warming costs and local air pollution.",
+  "text_hic_coal": "[emphasis: High-income countries & coal: ]The retail price of coal also varies greatly across high-income countries, typically set at a mark-up on the supply costs. External costs are often split between local air pollution and global warming, with the latter being more. Only a few high-income countries charge retail prices high enough to internalize some of the external costs, if not all. These include Switzerland, Cyprus, Denmark, Finland, and Estonia.",
+  "text_hic_diesel": "[emphasis: High-income countries & diesel: ]A liter of diesel costs slightly below $1.00 (2021 prices). High-income countries typically set retail prices that cover a sizable portion of the efficient price, which internalizes all costs, except for the oil-producing ones. Diesel use is associated with different types of external costs, such as local air pollution, road accidents, congestion, road damage, and global warming.",
+  "text_umic_diesel": "[emphasis: Upper-middle-income countries & diesel: ]Upper-middle-income countries typically set retail prices that cover a sizable portion of the efficient price, which internalizes all costs, except the oil-producing ones. However, the retail price is, on average, 37 percent of the efficient price in upper-middle-income, compared to 57 percent in high-income countries.",
+  "text_lmic_diesel": "[emphasis: Low-middle-income countries & diesel: ]Compared to richer countries, the consumption of diesel is limited in lower-middle-income countries. Therefore, the external costs are also limited. However, the retail price as a percentage of the efficient price is significantly lower than in richer countries.",
+  "text_lic_diesel": "[emphasis: Low-income countries & diesel: ]In low-income countries, the external costs are much lower than the supply cost in most countries. Due to the limited consumption of diesel per capita, the external costs are quite minimal. Yet, in nearly all countries, the retail price is lower than the efficient price.",
+  "text_hic_naturalgas": "[emphasis: High-income countries & natural gas: ]There is high variability in the retail price, supply price, and efficient price of natural gas across high-income countries. The external cost mainly consists of global warming and foregone VAT revenue for countries with high consumption of natural gas per capita. Unlike coal and diesel, the global warming costs of natural gas consist of a limited share of the efficient price.",
+  "text_umic_naturalgas": "[emphasis: Upper-middle-income countries & natural gas: ]There is also high variability in the retail price, supply price, and efficient price of natural gas across upper-middle-income countries. The global warming costs of natural gas consist of a limited share of the efficient price. The retail price is not high enough to cover all the global warming costs.",
+  "text_lmic_naturalgas": "[emphasis: Lower-middle-income countries & natural gas: ]The retail price is not high enough to cover all the supply and external costs. In a few countries, the retail price is so low it cannot even cover the supply costs (for example, Ukraine which is a net exporter of natural gas). Djibouti is the only countries that has fully internalized all costs of natural gas.",
+  "text_lic_naturalgas": "[emphasis: Lower-income countries & natural gas: ]Low-income countries typically set retail prices covering just about the supply cost of natural gas. Global warming is the main external cost of natural gas in low-income countries, but it consists of a limited share of the total efficient price. Comoros fully internalizes the cost of natural gas, while Rwanda sets a retail price significantly lower than the supply costs.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "case_1",
+      "text": "[emphasis: High-income countries & diesel: ]A liter of diesel costs slightly below $1.00 (2021 prices). High-income countries typically set retail prices that cover a sizeable portion of the efficient price, which internalizes all costs, except for the oil-producing ones. Diesel use is associated with different types of external costs, such as local air pollution, road accidents, congestion, road damage, and global warming.",
+      "translationPrefix": "goal_12.content.#22.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "case_2",
+      "text": "[emphasis: High-income countries & gasoline: ]In 2022, the international price of gasoline has been roughly around $0.8 per liter (2021 prices) in most countries. In high-income countries, the environmental and social costs of using gasoline are estimated to outweigh the supply price. However, in these countries, the retail price is high enough to cover some of the external costs, if not all. Iceland, Norway, Finland, Portugal, and Barbados, fully internalize external costs in their pricing of gasoline. On the other hand, oil-producing, high-income countries, such as Qatar, Saudi Arabia, Bahrain, Oman, Brunei Darussalam, and Kuwait, set retail prices below the supply price.",
+      "translationPrefix": "goal_12.content.#22.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "explore",
+      "text": "[emphasis: Explore the data for different fuels and income groups]",
+      "translationPrefix": "goal_12.content.#22.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_12.content.#22",
+  "_meta": {
+    "index": 98,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/03-efficient-price-scroller",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

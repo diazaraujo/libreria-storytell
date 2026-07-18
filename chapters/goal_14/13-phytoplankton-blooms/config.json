@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "phytoplankton_blooms",
+  "title": "Average yearly phytoplankton bloom count, 2002-2023",
+  "subtitle": "Global distribution of average annual phytoplankton bloom occurrences, 2002–2023",
+  "legend_title": "Phytoplankton blooms count",
+  "legend_unit_label": "number/year",
+  "legend_units": "",
+  "source": "Dai, Y., Yang, S., Zhao, D., Hu, C., Xu, W., Anderson, D. M., ... & Feng, L. (2023). Coastal phytoplankton blooms expand and intensify in the 21st century. Nature, 615(7951), 280-284. <a href=\"https://doi.org/10.1038/s41586-023-05760-y\" target=\"_blank\" rel=\"external\">https://doi.org/10.1038/s41586-023-05760-y</a> ",
+  "visdescription": "Describe what the visualization shows",
+  "texture": "sdg14/textures/bloom_count.jpg",
+  "translationPrefix": "goal_14.content.#45",
+  "_meta": {
+    "index": 123,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/13-phytoplankton-blooms",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

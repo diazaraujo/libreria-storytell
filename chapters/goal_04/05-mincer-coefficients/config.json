@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "mincer_coefficients",
+  "title": "On average, each year of schooling raises earnings by 10%",
+  "subtitle": "",
+  "x_title": "GDP per capita",
+  "x_units": "$",
+  "y_title": "Returns to each additional year of schooling",
+  "y_units": "%",
+  "population": "Population (million)",
+  "visSize": "fullScreen",
+  "source": "Patrinos, H. 2024. <a href=\"https://doi.org/10.15185/izawol.278.v2\" target=\"_blank\" rel=\"external\">Estimating the return to schooling using the Mincer equation</a>. IZA World of Labor 2024: 278. The graphic shows estimates of the returns to education.",
+  "visdescription": "The graphic shows a scatterplot of estimates of the returns to education on log GDP per capita.",
+  "data_download": "04_data_mincer_coefficients.csv",
+  "data": "14O2xDakRI4TsbijqiCwaDAQuW0cFTOhRVCJ5KvIriCA",
+  "keyFact": "10%",
+  "keyFactLabel": "Increase in earnings for each additional year of schooling globally.",
+  "translationPrefix": "goal_04.content.#31",
+  "_meta": {
+    "index": 28,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/05-mincer-coefficients",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

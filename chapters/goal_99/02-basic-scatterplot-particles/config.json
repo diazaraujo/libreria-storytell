@@ -1,0 +1,41 @@
+{
+  "type": "scroller",
+  "graphic": "basic_scatterplot_particles",
+  "title": "Affordability of a diet depends on cost and income",
+  "subtitle": "Cost (PPP $) for energy sufficient, nutrient-adequate and healthy diets",
+  "visdescription": "Description of the vis",
+  "data_download": "Test Data 01.csv",
+  "data": "1W6Sb8eKhaFPuPG6GAPtQq3o4U7TAkNp_vqU9mthTlGM",
+  "source": "this is a source",
+  "note": "This is a note",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "firstID",
+      "text": "In 1990, nearly [emphasis: 2 billion people] <a href=\"https://www.worldbank.org\" target=\"_blank\" rel=\"external\">worldwide</a> lived in extreme poverty – in other words, on less than $2.15 per day.",
+      "translationPrefix": "goal_99.content.#42.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "secondID",
+      "text": "",
+      "translationPrefix": "goal_99.content.#42.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "thirdID",
+      "text": "Over the same period, the world’s <span data-color-id=\"cat3\" class=\"cat3\">population increased</span> by around 2.4 billion people and the number of people with incomes above the international poverty line [emphasis: increased from 3.3 billion to 7 billion]. As a result, the share of the global population living in extreme poverty was reduced from about 38 percent to 8.5 percent.",
+      "translationPrefix": "goal_99.content.#42.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_99.content.#42",
+  "_meta": {
+    "index": 146,
+    "chapterId": "99",
+    "chapterTitle": "Story Topic",
+    "dir": "chapters/goal_99/02-basic-scatterplot-particles",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null
+  }
+}

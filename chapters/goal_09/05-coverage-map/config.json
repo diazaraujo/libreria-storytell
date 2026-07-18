@@ -1,0 +1,55 @@
+{
+  "type": "scroller",
+  "graphic": "coverage_map",
+  "title": "Most of the world is covered by 3G and 4G networks. Sub-Saharan Africa is the least connected region",
+  "subtitle": "Percentage of inhabitants within range of at least a 3G, 4G, or 5G mobile-cellular signal, irrespective of whether they are subscribers",
+  "g3": "3G Network",
+  "g4": "4G Network",
+  "g5": "5G Network",
+  "legend_title": "Share of people covered",
+  "no_data": "No data",
+  "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a>. Retrieved from Data360 (<a href=\"https://data360.worldbank.org/en/int/indicator/MOB_COV_3G\" target=\"_blank\" rel=\"external\">MOB_COV_3G</a>, <a href=\"https://data360.worldbank.org/en/int/indicator/MOB_COV_4G\" target=\"_blank\" rel=\"external\">MOB_COV_4G</a>,\u000b<a href=\"https://data360.worldbank.org/en/int/indicator/MOB_COV_5G\" target=\"_blank\" rel=\"external\">MOB_COV_5G</a>)",
+  "visdescription": "Three choropleth world maps showing levels of country coverage for at least 3G, 4G, and 5G networks",
+  "visSize": "fullScreen",
+  "data_download": "09_data_network_coverages.csv",
+  "data": "1USKTFa0rwEekfOuqWWCmLTBqRJW3qlcbbfkNJimxD5Q",
+  "keyFact": "9 in 10 people",
+  "keyFactLabel": "in Sub-Saharan Africa are not covered by a 5G network",
+  "indicator_360": "MOB_COV_5G",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "coverage_3G",
+      "text": "96 percent of the global population lives within reach of at least a  3G network.",
+      "translationPrefix": "goal_09.content.#34.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "coverage_4G",
+      "text": "Although 4G networks cover over 93 percent of the people in the world, [emphasis: there are large gaps in] [emphasis: low-income economies, mostly in Sub-Saharan Africa, ]particularly in rural areas. ",
+      "translationPrefix": "goal_09.content.#34.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "coverage_5G",
+      "text": "5G is widely available in many high-income economies. In some upper- and lower-middle-income countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">China</span>], [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">India</span>], and [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">Thailand</span>][emphasis: , ]over 80 percent of people are covered by 5G networks.",
+      "translationPrefix": "goal_09.content.#34.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "coverage_5G",
+      "text": "In Sub-Saharan Africa, the deployment of 5G remains largely confined to a few high-density urban areas, and only [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">Mauritius</span>]and [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">South Africa</span>]have over 50 percent coverage.",
+      "translationPrefix": "goal_09.content.#34.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_09.content.#34",
+  "_meta": {
+    "index": 71,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/05-coverage-map",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null
+  }
+}

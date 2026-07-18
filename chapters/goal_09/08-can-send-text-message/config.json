@@ -1,0 +1,26 @@
+{
+  "type": "vis",
+  "graphic": "can_send_text_message",
+  "title": "In 27 countries, more than 50% of people have never sent a text message",
+  "subtitle": "Share of respondents who have never sent a text message through a mobile phone (SMS, text message or through a messaging app)",
+  "source": "<a href=\"https://www.worldbank.org/en/publication/globalfindex/download-data\" target=\"_blank\" rel=\"external\">The Global Findex Database</a> (2025), indicator: [con16] \"Can send a text message on a mobile phone (%, age 15+)\". ",
+  "visdescription": "Horizontal pictogram/heatmap showing the 27 countries where more than 50% of people report to have never sent a text message: Chad, Niger, Guinea, India, Benin, Ethiopia, Bangladesh, Burkina Faso, Mali, Pakistan, Madagascar, Sierra Leone, Republic of Congo, Nepal, Comoros, Liberia, Mozambique, Democratic Republic of Congo, Philippines, Cambodia, Malawi, The Gambia, Togo, Lao PDR, Sri Lanka, Egypt, Tajikistan.",
+  "theme": "light",
+  "data_download": "09_data_can_send_text_message.csv",
+  "data": "1-l--CcpPxm-NjaZ3qVBTN8776Nr9uOXvgelAKecclWs",
+  "translationPrefix": "goal_09.content.#48",
+  "_meta": {
+    "index": 74,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/08-can-send-text-message",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  },
+  "scenes": []
+}

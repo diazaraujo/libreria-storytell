@@ -1,0 +1,54 @@
+{
+  "type": "scroller",
+  "graphic": "sdg5_wage_gap_beeswarm",
+  "title": "In most countries, men’s wages are higher, on average, than women’s",
+  "subtitle": "A wage ratio higher than one signals higher wages for women and lower than one signals lower wages for women",
+  "source": "ILO. ILOSTAT, <a href=\"https://ilostat.ilo.org/topics/wages/#data-catalogue\" target=\"_blank\" rel=\"external\">Wages and Working Time Statistics (COND)</a><span style=\"background-color: rgb(255,255,255);\">.</span><span style=\"background-color: rgb(255,255,255);\"></span>",
+  "women_lower": "Lower wages for women",
+  "women_higher": "Higher wages for women",
+  "wage_ratio": "Hourly wage ratio (Ratio of women’s to men’s hourly wages), most recent value (2015-2024)",
+  "wage_ratio_month": "Monthly wage ratio (Ratio of women’s to men’s monthly wages), most recent value (2015-2024)",
+  "wage_ratio_mobile": "Hourly wage ratio",
+  "wage_ratio_month_mobile": "Monthly wage ratio",
+  "visdescription": "This is a beeswarm where the x-axis shows World Bank regions and each dot represents the ratio of women’s average wages to men’s average wages in a country. The y-axis shows this ratio. ",
+  "disableScreenshot": "true",
+  "data_download": "wage_month.csv",
+  "data": "11xTcc7eM3HUKOmEgw6-iIRzmMO8OPWGjes9_0tEJd6M",
+  "keyFact": "82 cents",
+  "keyFactLabel": "earned by women for every $1 earned by men in a month",
+  "labels__per_month": "more per month",
+  "labels__per_hour": "more per hour",
+  "labels__men": "Men earn",
+  "labels__women": "Women earn",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "wage_ratio",
+      "text": "These dynamics are reflected in women’s earnings: in the average country or economy and looking at hourly pay, they earn 91 cents for every $1 earned by men. ",
+      "translationPrefix": "goal_05.content.#43.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "wage_ratio",
+      "text": "Of the 131 countries or economies with data, men are paid a higher hourly wage, on average, than women in <span data-color-id=\"MEA\" class=\"MEA\">93 countries</span>.",
+      "translationPrefix": "goal_05.content.#43.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "wage_ratio_month",
+      "text": "When measured in monthly earnings, the gap widens. As care and household responsibilities fall disproportionately on women, they are more likely to require flexible arrangements, working part-time or taking on fewer hours. So, in the average country or economy,[footnote: Using the median country as the average country] women earn just 82 cents for every dollar earned by men per month.",
+      "translationPrefix": "goal_05.content.#43.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_05.content.#43",
+  "_meta": {
+    "index": 37,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/07-sdg5-wage-gap-beeswarm",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

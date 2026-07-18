@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "phosphorus_increase",
+  "title": "Increase in total phosphorus concentration in rivers and streams due to human activities",
+  "subtitle": "Relative increase in phosphorus concentrations in rivers and streams from human activity, compared to natural baseline conditions",
+  "legend_title": "Relative difference in phosphorus concentration",
+  "legend_unit_label": "% of current conditions",
+  "legend_units": "%",
+  "source": "McDowell, R. W., Luo, D., Pletnyakov, P., Upsdell, M., & Dodds, W. K. (2025). Anthropogenic nutrient inputs cause excessive algal growth for nearly half the world’s population. Nature Communications, 16(1), 1830. <a href=\"https://doi.org/10.1038/s41467-025-57054-8\" target=\"_blank\" rel=\"external\">https://doi.org/10.1038/s41467-025-57054-8</a> <span style=\"color: rgb(37,37,37);\"></span>",
+  "visdescription": "Describe what the visualization shows",
+  "texture": "sdg14/textures/total_p_0-75.jpg",
+  "translationPrefix": "goal_14.content.#36",
+  "_meta": {
+    "index": 119,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/09-phosphorus-increase",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "uhc_small_multiple",
+  "title": "UCH Service Coverage Index by sub-components, 2000-2023",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_uhc_small_multiple.csv",
+  "data": "1t5DmOFCUgveLaSk4ustdj-HDhyjb_EfiNaCl0jj9Fuk",
+  "x_title": "",
+  "x_unit": "",
+  "y_title": "Index score",
+  "y_unit": "",
+  "label_UHC_SCI_RMNCH": "RMNCH",
+  "label_UHC_SCI_NCD": "Noncommunicable disease",
+  "label_UHC_SCI_CAPACITY": "Service capacity and access",
+  "label_UHC_SCI_INFECT": "Infectious disease",
+  "label_UHC_INDEX_REPORTED": "UHC SCI",
+  "translationPrefix": "goal_03.content.#9",
+  "_meta": {
+    "index": 14,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/01-uhc-small-multiple",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

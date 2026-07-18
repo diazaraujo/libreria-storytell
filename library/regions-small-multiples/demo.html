@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · Regions Small Multiples v0.4</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #111; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 4px; font-size: 18px; }
+    .sub { color: #6a7781; font-size: 13px; }
+    .stage {
+      height: 520px; margin: 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb; position: relative; overflow: hidden;
+    }
+    .nav { display: flex; gap: 8px; padding: 0 20px 16px; align-items: center; flex-wrap: wrap; }
+    button {
+      font: 600 13px system-ui; padding: 8px 12px; border-radius: 8px;
+      border: 1px solid #cbd5e1; background: #fff; cursor: pointer;
+    }
+    button.active { background: #081079; color: #fff; border-color: #081079; }
+    .links { font-size: 12px; padding: 0 20px 20px; color: #6a7781; }
+    a { color: #2563eb; }
+    .hint {
+      margin: 0 20px 12px; padding: 10px 12px; background: #eef2ff; border-radius: 8px;
+      font-size: 12px; color: #3730a3; max-width: 720px;
+    }
+    .story {
+      margin: 0 16px 16px; padding: 14px 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb; border-left: 3px solid #081079;
+      min-height: 64px; transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .story.out { opacity: 0; transform: translateY(6px); }
+    .story.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasLibrary.RegionsSmallMultiples <small style="color:#6a7781;font-weight:500">v0.5 · pixel transitions</small></h1>
+    <p class="sub">AccessElectricityRegions — mount once, 1s opacity + particle flight, no remount</p>
+  </header>
+  <p class="hint">
+    Cambia de escena con los botones o ← →. Deberías ver <strong>crossfade 1s</strong> de paneles y
+    <strong>partículas</strong> moviéndose del panel World a cada región (como en el Atlas).
+    Origen: <code>http://127.0.0.1:8765/en/atlas/electricity-access/</code>
+  </p>
+  <div class="nav" id="nav"></div>
+  <div class="stage" id="chart"></div>
+  <div class="story in" id="story"></div>
+  <p class="links">
+    Origin: <a href="http://127.0.0.1:8765/en/atlas/electricity-access/" target="_blank">:8765/en/atlas/electricity-access</a> ·
+    Chapter: <a href="../../chapters/goal_07/00-access-electricity-regions/index.html?clean=1">goal_07/00</a> ·
+    Live: <a href="https://data360.worldbank.org/en/atlas/electricity-access/" target="_blank">Data360</a>
+  </p>
+
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./regions-small-multiples.js"></script>
+  <script>
+    const scenes = [
+      { id: "global", label: "0 · World",
+        text: "Global access to electricity has expanded steadily. By 2023, more than 90% had access — up from 78% in 2000." },
+      { id: "all", label: "1 · High regions",
+        text: "Most regions already had very high levels of access in 2000, and near-universal access by 2023." },
+      { id: "sas_ssf", label: "2 · SAS + SSF",
+        text: "Two regions — South Asia and Sub-Saharan Africa — lagged noticeably in 2000." },
+      { id: "sas", label: "3 · South Asia",
+        text: "South Asia made dramatic progress, from under 60% in 2000 to near-universal access by 2021." },
+      { id: "ssf", label: "4 · SSA",
+        text: "Sub-Saharan Africa started lower (~26% in 2000). Access doubled, but only half the region had electricity by 2023." },
+    ];
+    let sceneIndex = 0;
+    let chart = null;
+    let series = [];
+
+    const nav = document.getElementById("nav");
+    const story = document.getElementById("story");
+    scenes.forEach((s, i) => {
+      const b = document.createElement("button");
+      b.textContent = s.label;
+      b.onclick = () => go(i);
+      nav.appendChild(b);
+    });
+
+    function go(i, { animate = true } = {}) {
+      sceneIndex = i;
+      [...nav.children].forEach((b, j) => b.classList.toggle("active", j === sceneIndex));
+      story.classList.remove("in");
+      story.classList.add("out");
+      setTimeout(() => {
+        story.textContent = scenes[sceneIndex].text;
+        story.classList.remove("out");
+        story.classList.add("in");
+      }, animate ? 180 : 0);
+
+      if (!chart) {
+        chart = AtlasRegionsSmallMultiples.mount(document.getElementById("chart"), {
+          series,
+          sceneIndex,
+          particles: true,
+          animateIntro: true,
+          forceHighlight: (key, idx) => idx === 2 && (key === "SAS" || key === "SSF"),
+        });
+      } else {
+        chart.updateScene(sceneIndex);
+      }
+    }
+
+    (async () => {
+      const rows = await AtlasLoad.csv("../../chapters/goal_07/00-access-electricity-regions/data/07_data_access_electricity.csv");
+      series = AtlasRegionsSmallMultiples.seriesFromRows(rows, {
+        valueField: "access_electricity",
+      });
+      go(0, { animate: false });
+      window.addEventListener("resize", () => {
+        chart?.destroy?.();
+        chart = null;
+        go(sceneIndex, { animate: false });
+      });
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") go(Math.min(scenes.length - 1, sceneIndex + 1));
+        if (e.key === "ArrowLeft") go(Math.max(0, sceneIndex - 1));
+      });
+    })();
+  </script>
+</body>
+</html>

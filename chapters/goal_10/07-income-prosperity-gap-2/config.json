@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "income_prosperity_gap",
+  "title": "Raise everyone’s income by $10",
+  "simulation": "dollar_for_everyone",
+  "subtitle": "",
+  "textParagraph": "If everyone earns an extra $10, the average income increases from $20 to $30, and the Prosperity Gap falls from 4.5 to just over 1. One-third of this change in the Prosperity Gap is driven by an increase in average income; the rest is driven by the reduction in inequality.",
+  "source": "Authors’ calculation, <a href=\"https://pip.worldbank.org/key-inequality-indicators\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). ",
+  "income": "Income",
+  "prosperity_gap": "Prosperity Gap",
+  "average_income": "Average income:",
+  "average_income_units": "/day",
+  "average_prosperity_gap": "Prosperity Gap",
+  "reality": "Initial level of income and Prosperity Gap",
+  "visdescription": "This chart reports the changes in average income and Prosperity Gap for a scenario where everyone’s income is raised by $10.",
+  "data_download": "10_data_prosperity_gap.csv",
+  "data": "1vTsQfDAnOv96GgSkuLpe8W32uiwYPmGw2JpAyuQKQmI",
+  "translationPrefix": "goal_10.content.#40",
+  "_meta": {
+    "index": 83,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/07-income-prosperity-gap-2",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

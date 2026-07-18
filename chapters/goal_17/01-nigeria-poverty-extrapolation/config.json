@@ -1,0 +1,59 @@
+{
+  "type": "scroller",
+  "graphic": "nigeria_poverty_extrapolation",
+  "title": "Nigeria’s rate of extreme poverty",
+  "subtitle": "Survey vs extrapolation estimates",
+  "survey_2018": "2018 survey",
+  "survey_2022": "Actual 2022 survey",
+  "extrapolated_2022": "Extrapolated",
+  "difference": "7 percentage point difference ",
+  "difference_pop": "17 million people",
+  "y_axis_title": "Extreme poverty rate",
+  "y_axis_units": "%",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>",
+  "visdescription": "Comparison of extrapolated versus actual survey-based poverty estimates for Nigeria (2018–22), showing how national accounts-based projections underestimated the true poverty rate revealed by the 2022 household survey.",
+  "visSize": "small",
+  "data_download": "17_data_nigeria_poverty.csv",
+  "data": "1SP4MvouZobM8FY_9SVL-_n96P-X_7DiMZ4AwDi9mag0",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "initial_survey",
+      "text": "In 2018, <span style=\"color: rgb(255,255,255); background-color: rgb(0,113,188);\">survey estimates</span> revealed that around 34 percent of Nigerians (71 million people) were living in extreme poverty.",
+      "translationPrefix": "goal_17.content.#10.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "extapolation",
+      "text": "Without updated survey data, poverty monitoring between 2018 and 2022 relied on <span data-color-id=\"cat8\" class=\"cat8\">model-based projections</span>, which estimated that the poverty rate had remained broadly stable, at 34.8 percent.",
+      "translationPrefix": "goal_17.content.#10.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "new_survey",
+      "text": "The 2022 survey data revealed that the poverty rate was actually <span style=\"color: rgb(255,255,255); background-color: rgb(0,113,188);\">41.8 percent</span>, substantially higher than the projected <span data-color-id=\"cat8\" class=\"cat8\">34.8 percent</span>.",
+      "translationPrefix": "goal_17.content.#10.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "difference",
+      "text": "The seven percentage point discrepancy corresponds roughly to [emphasis: an additional 17 million additional Nigerians living in extreme poverty], underscoring the limitations of modeling as a substitute for timely household survey data.",
+      "translationPrefix": "goal_17.content.#10.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_17.content.#10",
+  "_meta": {
+    "index": 140,
+    "chapterId": "17",
+    "chapterTitle": "Data for Development",
+    "dir": "chapters/goal_17/01-nigeria-poverty-extrapolation",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "survey strip, Nigeria dual-line, waffles, SPI, SPI–GDP"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_effects_of_climate_change_scroller",
+  "title": "775 million people are exposed to floods globally",
+  "subtitle": "Area and share of population exposed to floods with inundation depth over 50cm[footnote:  An area is exposed to floods if there is more than a 1 percent annual probability of  experiencing flooding with inundation depth of more than  50 centimeters.]",
+  "source": "<a href=\"https://planetarycomputer.microsoft.com/dataset/deltares-floods\" target=\"_blank\" rel=\"external\">Deltares</a>, <a href=\"https://www.fathom.global/product/global-flood-map/\" target=\"_blank\" rel=\"external\">Fathom</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "Share of population exposed to floods and location of areas exposed to flood risk",
+  "textParagraph": "",
+  "weatherEventToggleText": "Exposed areas",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "data_download": "20260130_hazard_data_prepared.csv",
+  "data": "1b0tjeAlBqbSgpOKmVE4xMafDRNvsUWG7_C_jDMsorFI",
+  "legend_title": "Population exposed",
+  "legend_units": "%",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "floods__sat__wld",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">Floods</span>] can severely damage infrastructure and homes, disrupt the economy, and destroy crops and livestock. Impacts become particularly severe when inundation depth exceeds 50 centimeters.[reference: Rentschler] The areas in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">blue</span>] indicate exposure above this level.",
+      "translationPrefix": "goal_13.content.#10.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "floods__sat__bbox1",
+      "text": "The [emphasis: population exposed to ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] live near rivers, in areas with low elevation, and near the coast. In The Netherlands, more than one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] due to the country’s  many rivers and low elevation.",
+      "translationPrefix": "goal_13.content.#10.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "floods__vec__wld",
+      "text": "Globally, [emphasis: 775 million people are exposed to] [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods.</span>] Half of them live in three populous countries: China, India, and Bangladesh. In Bangladesh, one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>].",
+      "translationPrefix": "goal_13.content.#10.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#10",
+  "_meta": {
+    "index": 102,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/00-sdg13-effects-of-climate-change-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

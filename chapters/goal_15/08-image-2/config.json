@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Protected areas remain productive under increasingly dry conditions",
+  "subtitle": "",
+  "source": "[reference: wang]",
+  "visdescription": "A schematic line chart, with increasing aridity on the x axis and ecosystem productivity on the y axis. One line represents unprotected areas and one line represents areas under high protection. With increasing aridity, the line for highly protected areas remains well above the ecosystem productivity of the unprotected areas.",
+  "visSize": "default",
+  "filename": "sdg15/protected_areas_aridity.png",
+  "translationPrefix": "goal_15.content.#48",
+  "_meta": {
+    "index": 133,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/08-image-2",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

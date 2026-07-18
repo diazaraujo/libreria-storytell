@@ -1,0 +1,62 @@
+{
+  "type": "scroller",
+  "graphic": "access_electricity_regions",
+  "title": "Electricity access is advancing globally and across all regions",
+  "subtitle": "People with access to electricity, by region (% of population)",
+  "y_axis_title": "Share of people with access to electricity",
+  "y_axis_units": "%",
+  "source": "World Bank Group. “<a href=\"https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS\" target=\"_blank\" rel=\"external\">Access to electricity (% of population</a>).” SDG 7.1.1 Electrification Dataset.",
+  "visdescription": "Line charts describing time series trendlines of electricity access by region and the world.",
+  "indicator_360": "WB_WDI_EG_ELC_ACCS_ZS",
+  "visSize": "default",
+  "data_download": "07_data_access_electricity.csv",
+  "data": "1bIe4dXEwjeZmnmzX5xP_s2qfg_4WLuU9Ac489xKmYGg",
+  "keyFact": "92%",
+  "keyFactLabel": "of the world’s population had access to electricity in 2023.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "global",
+      "text": "<span data-color-id=\"WLD\" class=\"WLD\">Global access</span> to electricity has expanded steadily over the past two decades. By 2023, more than 90 percent of the world’s population had access to electricity—up from 78 percent in 2000. ",
+      "translationPrefix": "goal_07.content.#6.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "all",
+      "text": "Most regions already had very high levels of access in 2000, and had achieved near-universal access to electricity by 2023.",
+      "translationPrefix": "goal_07.content.#6.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "sas_ssf",
+      "text": "Two regions, <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span> and <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan</span><span style=\"color: rgb(4,1,16);\"> Africa</span> lagged noticeably in 2000.",
+      "translationPrefix": "goal_07.content.#6.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "sas",
+      "text": "<span style=\"color: rgb(4,1,16);\">But </span><span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span><span style=\"color: rgb(4,1,16);\"> has since made dramatic progress, from</span> less than 60 percent of the population in 2000 to  near universal access by 2021.",
+      "translationPrefix": "goal_07.content.#6.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "ssf",
+      "text": "<span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span><span data-color-id=\"SSF\" class=\"SSF\"> </span>started from an even lower base (around 26 percent in 2000). Although the share<span style=\"color: rgb(68,71,70);\"> </span>of people with access doubled over the next two decades, only half of the region’s population had electricity by 2023. ",
+      "translationPrefix": "goal_07.content.#6.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_07.content.#6",
+  "_meta": {
+    "index": 51,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/00-access-electricity-regions",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · H3 Nightlights (Uber H3 res 6)</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #eef1f5; color: #111; }
+    header { padding: 14px 18px; background: #fff; border-bottom: 1px solid #e2e8f0; }
+    h1 { margin: 0 0 6px; font-size: 17px; }
+    .sub { color: #64748b; font-size: 12px; line-height: 1.45; max-width: 920px; }
+    .sub code { background: #f1f5f9; padding: 1px 5px; border-radius: 3px; font-size: 11px; }
+    .nav { display: flex; gap: 6px; padding: 10px 16px; flex-wrap: wrap; }
+    button {
+      font: 600 12px system-ui; padding: 6px 10px; border-radius: 6px;
+      border: 1px solid #cbd5e1; background: #fff; cursor: pointer;
+    }
+    button.active { background: #081079; color: #fff; border-color: #081079; }
+    .stage {
+      height: 560px; margin: 0 12px 20px; border-radius: 10px; overflow: hidden;
+      border: 1px solid #e2e8f0; background: #fff;
+    }
+    h2 { font-size: 13px; margin: 8px 16px 0; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasNightlightsHexmap v0.9 · origin Mapbox tiles · residual</h1>
+    <p class="sub">
+      Primary: Atlas tilesets <code>mlambrechts.*</code> via local proxy
+      (<code>python3 mapbox-proxy.py</code> :8790) + Mapbox Standard monochrome.
+      Fallback: H3 geojson. Badge shows mode.
+    </p>
+  </header>
+  <h2>Nigeria · 8 scenes · ~46k H3 cells</h2>
+  <div class="nav" id="nav-ng"></div>
+  <div class="stage" id="ng"></div>
+  <h2>Ethiopia · 4 scenes · ~63k H3 cells</h2>
+  <div class="nav" id="nav-et"></div>
+  <div class="stage" id="et"></div>
+  <script src="./mapbox-config.js"></script>
+  <script src="./nightlights-hexmap.js"></script>
+  <script>
+    const base = "./data/";
+    const ng = AtlasNightlightsHexmap.mount(document.getElementById("ng"), {
+      country: "nigeria",
+      hexUrl: base + "nigeria_h3.geojson",
+      zonesUrl: base + "nigeria_zones.geojson",
+      citiesUrl: base + "nigeria_cities.geojson",
+      sceneIndex: 0,
+      height: 560,
+    });
+    const et = AtlasNightlightsHexmap.mount(document.getElementById("et"), {
+      country: "ethiopia",
+      hexUrl: base + "ethiopia_h3.geojson",
+      gridUrl: base + "ethiopia_grid.geojson",
+      sceneIndex: 0,
+      height: 560,
+    });
+    function wire(navId, chart, labels) {
+      const nav = document.getElementById(navId);
+      labels.forEach((lab, i) => {
+        const b = document.createElement("button");
+        b.textContent = lab;
+        b.onclick = () => {
+          [...nav.children].forEach((x, j) => x.classList.toggle("active", j === i));
+          chart.updateScene(i);
+        };
+        nav.appendChild(b);
+      });
+      nav.children[0]?.classList.add("active");
+    }
+    wire("nav-ng", ng, ["0 zones","1 lights","2 cities","3 urban","4 kano","5 dark","6 pop","7 cell"]);
+    wire("nav-et", et, ["0 · 2012","1 · grid","2 · SE","3 · 2023"]);
+  </script>
+</body>
+</html>

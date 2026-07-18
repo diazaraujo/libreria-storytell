@@ -1,0 +1,23 @@
+{
+  "type": "vis",
+  "graphic": "sdg12_challenges_scroller",
+  "title": "Fuel-related protests",
+  "subtitle": "2021-2024",
+  "source": "ACLED [reference: acled1]",
+  "visdescription": "",
+  "theme": "light (alternatively: dark)",
+  "data_download": "12_20_fueldemonstrations_simpler.csv",
+  "data": "1fDSzrpi3toqe3O4yCuJrq6A0yFE5_DypTAXUGx1s6sw",
+  "translationPrefix": "goal_12.content.#32",
+  "_meta": {
+    "index": 100,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/05-sdg12-challenges-scroller",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

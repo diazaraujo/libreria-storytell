@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "urban_gdp_scatterplot",
+  "visSize": "small",
+  "title": "Urbanization is associated with economic growth",
+  "subtitle": "",
+  "source": "World Bank staff estimates based on the <a href=\"http://population.un.org/wup\" target=\"_blank\" rel=\"external\">United Nations Population Division's World Urbanization Prospects</a>, National definitions. Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SP.URB.TOTL\" target=\"_blank\" rel=\"external\">SP.URB.TOTL</a>, <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.CD\" target=\"_blank\" rel=\"external\">NY.GDP.PCAP.CD</a>).",
+  "visdescription": "This chart shows a scatter plot between urbanization rate and GDP per capita. Each dot is a country and a trend line shows that with higher urbanization rates, GDP per capita is also higher.",
+  "textParagraph": "Countries and economies with higher urbanization rates also have higher gross domestic product (GDP) per capita. Hover on countries to see how their urbanization rate and GDP capita has changed from 2000 to 2024.",
+  "theme": "light",
+  "data_download": "11_data_urban_gdp_scatterplot.csv",
+  "data": "1gpwt8NyG-x93ZIsEpexbEKVhlEEO0ujLFjG-qxwP34c",
+  "x_title": "GDP per capita",
+  "x_units": "current US$",
+  "y_title": "Urban population, 2024",
+  "y_units": "% of total population",
+  "indicator_360": "WB_WDI_SP_URB_TOTL_IN_ZS",
+  "translationPrefix": "goal_11.content.#9",
+  "_meta": {
+    "index": 87,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/02-urban-gdp-scatterplot",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,61 @@
+{
+  "type": "scroller",
+  "graphic": "missing_children_data_waffles",
+  "title": "Key data are missing for millions of children ",
+  "subtitle": "",
+  "visSize": "small",
+  "source": "<a href=\"https://datacatalog.worldbank.org/int/search/dataset/0064204/global-dataset-of-country-learning-outcome\" target=\"_blank\" rel=\"external\">World Bank’s Learning Poverty and Country Learning Outcomes database (learning assessment)</a>; <a href=\"https://data.unicef.org/resources/jme/\" target=\"_blank\" rel=\"external\">UNICEF/WHO/The World Bank: Joint child malnutrition estimates (JME) database (stunting)</a>; <a href=\"https://unstats.un.org/unsd/demographic-social/products/vitstats/#overview\" target=\"_blank\" rel=\"external\">UNSD Population and Vital Statistics Report (birth registration)</a>",
+  "square_represents": "1 million children",
+  "birth_reg": "Birth registration, children under five",
+  "stunting": "Stunting, children under five",
+  "learn_assess": "Learning assessment, children age 5–14",
+  "without_data": "Without data",
+  "with_data": "With data",
+  "region_legend_title": "Children without data living in:",
+  "note": "Availability of data between 2019 and 2024 for the following indicators: births registered with a civil authority (% of children under five); ",
+  "visdescription": "Chart showing that key data are missing for children. Many children are living in economies lacking coverage in birth registries, learning assessments, nutrition data, etc.",
+  "data_download": "17_data_missing_children_data.zip",
+  "data": "16LO3tJWmK2Uwznl1-PxydYvqen5-rgn6zhUY2cygRfs",
+  "keyFact": "778 million",
+  "keyFactLabel": "children live in an economy with no recent internationally comparable learning assessment.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "birth_registration",
+      "text": "Around [emphasis: 195 million children] under five are <span data-color-id=\"cat8\" class=\"cat8\">unaccounted for in birth registries</span>, making up about 30 percent of all children in this age group, globally.",
+      "translationPrefix": "goal_17.content.#17.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "birth_registration_regions",
+      "text": "These gaps are concentrated in specific regions. In [emphasis: <span data-color-id=\"cat2\" class=\"cat2\">Sub-Saharan Africa</span>], around half of all children under five were never registered at birth.",
+      "translationPrefix": "goal_17.content.#17.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "stunting",
+      "text": "Around [emphasis: 207 million children] live in economies with no recent data on child growth, which are needed to measure malnutrition. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span>] and in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], stunting data—the primary measure of whether young children are adequately nourished—are missing for more than half of all children under five.",
+      "translationPrefix": "goal_17.content.#17.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "learn_assess",
+      "text": "Around [emphasis: 778 million children] aged 5–14—roughly half of all children that age—live in economies with no comparable learning assessment in the past five years. In[emphasis: <span data-color-id=\"EAS\" class=\"EAS\">East Asia & Pacific</span>], [emphasis: <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span>], and [emphasis: <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span>], there are no comparable data on whether more than half of these children can read or understand basic math at age-appropriate levels.",
+      "translationPrefix": "goal_17.content.#17.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_17.content.#17",
+  "_meta": {
+    "index": 141,
+    "chapterId": "17",
+    "chapterTitle": "Data for Development",
+    "dir": "chapters/goal_17/02-missing-children-data-waffles",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "survey strip, Nigeria dual-line, waffles, SPI, SPI–GDP"
+  }
+}

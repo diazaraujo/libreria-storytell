@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "financial_hardship_chart",
+  "title": "Proportion of population facing financial hardship due to out-of-pocket health expenditure (%), by income, 2022",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_financial_hardship_chart.csv",
+  "data": "1daP_FhCix0RmD8GFxsnOD1nEZVD3pHCHhT92gbHkKtQ",
+  "translationPrefix": "goal_03.content.#35",
+  "_meta": {
+    "index": 21,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/08-financial-hardship-chart",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

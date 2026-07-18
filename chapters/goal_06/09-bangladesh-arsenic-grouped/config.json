@@ -1,0 +1,46 @@
+{
+  "type": "scroller",
+  "graphic": "bangladesh_arsenic_grouped",
+  "title": "In Bangladesh, rural dwellers and poorer people are more exposed to arsenic-contaminated water",
+  "subtitle": "Arsenic contamination levels, by residence and selected wealth quintiles (% of population) ",
+  "source": "Bangladesh Bureau of Statistics, UNICEF Bangladesh. <a href=\"https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dphe/2024/12/d2bbec066b814750aae7f0373046ebf1.pdf\" target=\"_blank\" rel=\"external\">Bangladesh MICS 2019 Water Quality Thematic Report</a>. Dhaka, Bangladesh: 2021.",
+  "note": "Selected income quintiles are shown for clarity; second and fourth quintiles follow similar patterns to adjacent groups.",
+  "visdescription": "Three bar charts showing the share of Bangladesh’s population exposed to arsenic contamination in drinking water, grouped by concentration levels of 10–50 ppb and above 50 ppb. The left column shows rural populations; the middle column, urban populations; and the right column, the total population. In the next scene, the same data are presented by wealth quintiles, with the poorest on the left, the middle in the center, and the richest on the right.",
+  "visSize": "small",
+  "data_download": "Bangladesh_arsenic_by_group.csv",
+  "data": "1xkV7EjXu81i_l6ng7tjSdVHXpkRBet5uTGlemMqtG6E",
+  "legendUrban": "Urban",
+  "legendRural": "Rural",
+  "legendTotal": "Total",
+  "legendPoorest": "Poorest",
+  "legendMiddle": "Middle",
+  "legendRichest": "Richest",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1",
+      "text": "Rural dwellers in Bangladesh are more exposed to arsenic-contaminated water than their urban counterparts. About 12 percent of people in rural areas are exposed to arsenic levels exceeding 50 ppb, compared with 5 percent in urban areas.",
+      "translationPrefix": "goal_06.content.#49.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2",
+      "text": "Looking at arsenic contamination by wealth quintiles, people in the poorer and middle wealth quintiles face greater exposure than those in the wealthiest. ",
+      "translationPrefix": "goal_06.content.#49.scenes.#1"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#49",
+  "_meta": {
+    "index": 49,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/09-bangladesh-arsenic-grouped",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

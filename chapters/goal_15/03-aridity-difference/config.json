@@ -1,0 +1,23 @@
+{
+  "type": "vis",
+  "graphic": "aridity_difference",
+  "title": "Most regions are getting more arid",
+  "subtitle": "Change in aridity between 1960-1990 and 1990-2020",
+  "source": "[reference: aridityreport]",
+  "visdescription": "World map showing where aridity increased in brown and where aridity decreased in green. Brown is dominating the map.",
+  "visSize": "fullScreen",
+  "keyFact": "77%",
+  "keyFactLabel": "of all land experienced a more arid climate than 30 years ago.",
+  "translationPrefix": "goal_15.content.#20",
+  "_meta": {
+    "index": 128,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/03-aridity-difference",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

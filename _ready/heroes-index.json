@@ -1,0 +1,343 @@
+[
+  {
+    "slug": "water-access",
+    "code": "61.2.0",
+    "kicker": "Water Access",
+    "title": "Water Quality: A Foundation for Health and Development",
+    "lede": "Access to safe drinking water is essential for health and development, yet over 2 billion people, mostly in low- and middle-income countries, still lack it. Many remain exposed to contaminated water, which threatens health, livelihoods, and economic progress.",
+    "caption": "Access to water from improved sources that is free from contamination (% of population), 2015\u201324",
+    "yLabel": "% of population",
+    "invert": false,
+    "stick": "#3ecfbf",
+    "original": "https://data360.worldbank.org/en/atlas/water-access/",
+    "facts": [
+      {
+        "num": "2.1 billion",
+        "text": "people lacked access to safely managed drinking water in 2024."
+      },
+      {
+        "num": "Around 50%",
+        "text": "of countries with data (48 out of 94) face water quality challenges."
+      },
+      {
+        "num": "In 26 countries",
+        "text": "more than half of the population is exposed to high or very high E. coli contamination."
+      }
+    ],
+    "resolved_code": "61.2.0",
+    "n": 163
+  },
+  {
+    "slug": "electricity-access",
+    "code": "7.1.1",
+    "kicker": "Electricity Access",
+    "title": "Powering Progress: The Uneven Path to Electricity Access",
+    "lede": "Although global electricity access has expanded steadily over the past two decades, millions remain without power\u2014especially in Sub-Saharan Africa\u2014and progress is deeply uneven.",
+    "caption": "Access to electricity (% of population), ~2015\u201323",
+    "yLabel": "% of population",
+    "invert": false,
+    "stick": "#f7b841",
+    "original": "https://data360.worldbank.org/en/atlas/electricity-access/",
+    "facts": [
+      {
+        "num": "1 in 2",
+        "text": "key fact from the electricity access story (see full chapter)."
+      },
+      {
+        "num": "581 million",
+        "text": "of people without electricity live in Sub-Saharan Africa."
+      },
+      {
+        "num": "Near universal",
+        "text": "access in most regions outside Sub-Saharan Africa."
+      }
+    ],
+    "resolved_code": "7.1.1",
+    "n": 216
+  },
+  {
+    "slug": "extreme-poverty",
+    "code": "1.1.1",
+    "kicker": "Extreme Poverty",
+    "title": "Past, Present, and Future: 100 Years of Challenges in Tackling Extreme Poverty",
+    "lede": "After decades of historic poverty reduction, progress has slowed. Understanding who is left behind is essential for the next phase of the fight against extreme poverty.",
+    "caption": "Extreme poverty rate (% of population), progress evaluation window",
+    "yLabel": "% in extreme poverty",
+    "invert": true,
+    "stick": "#be62d0",
+    "original": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+    "facts": [
+      {
+        "num": "1 in 2",
+        "text": "key fact from the extreme poverty story."
+      },
+      {
+        "num": "Slower pace",
+        "text": "poverty reduction is at its weakest pace in decades."
+      },
+      {
+        "num": "FCV",
+        "text": "poverty is increasingly concentrated in fragile settings."
+      }
+    ],
+    "resolved_code": "1.1.1",
+    "n": 172
+  },
+  {
+    "slug": "internet-access",
+    "code": "17.8.1",
+    "kicker": "Internet Access",
+    "title": "Connecting the World: The Race for Internet Access",
+    "lede": "Internet access has grown at remarkable speed since the early 2000s, yet large gaps remain between and within countries.",
+    "caption": "Individuals using the Internet (% of population), progress window",
+    "yLabel": "% of population",
+    "invert": false,
+    "stick": "#34a7f2",
+    "original": "https://data360.worldbank.org/en/atlas/internet-access/",
+    "facts": [
+      {
+        "num": "1 in 4",
+        "text": "key fact from the internet access story."
+      },
+      {
+        "num": "Mobile first",
+        "text": "mobile broadband far surpasses fixed broadband globally."
+      },
+      {
+        "num": "Gender gaps",
+        "text": "remain wide in low- and lower-middle-income countries."
+      }
+    ],
+    "resolved_code": "17.8.1",
+    "n": 213
+  },
+  {
+    "slug": "learning-and-work",
+    "code": "4.1.2",
+    "kicker": "Learning and Work",
+    "title": "Learning and Work: Building Skills for Prosperity",
+    "lede": "Each year of schooling improves earnings\u2014but learning outcomes and years of schooling still vary widely across the world.",
+    "caption": "Education progress indicator (Atlas progress series 4.1.2)",
+    "yLabel": "Index / rate",
+    "invert": false,
+    "stick": "#73af48",
+    "original": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+    "facts": [
+      {
+        "num": "In 1 in 3",
+        "text": "key fact from the learning and work story."
+      },
+      {
+        "num": "~10%",
+        "text": "average private return to an extra year of schooling."
+      },
+      {
+        "num": "Learning gaps",
+        "text": "learning-adjusted years of schooling lag years of schooling."
+      }
+    ],
+    "resolved_code": "4.1.2",
+    "n": 201
+  },
+  {
+    "slug": "inequality",
+    "code": "10.1.1",
+    "kicker": "Inequality",
+    "title": "Closing the Prosperity Gap",
+    "lede": "The Prosperity Gap tracks how far economies are from a prosperity standard\u2014and how that gap is distributed across the world.",
+    "caption": "Inequality / shared prosperity progress series (10.1.1)",
+    "yLabel": "Index",
+    "invert": false,
+    "stick": "#aa0000",
+    "original": "https://data360.worldbank.org/en/atlas/inequality/",
+    "facts": [
+      {
+        "num": "4 in 5",
+        "text": "key fact from the inequality story."
+      },
+      {
+        "num": "SSA",
+        "text": "Sub-Saharan Africa\u2019s Prosperity Gap remains among the highest."
+      },
+      {
+        "num": "Halved",
+        "text": "the global Prosperity Gap has fallen over recent decades."
+      }
+    ],
+    "resolved_code": "10.1.1",
+    "n": 171
+  },
+  {
+    "slug": "artificial-intelligence",
+    "code": "17.8.1",
+    "code_alt": "45.0.0",
+    "kicker": "Artificial Intelligence",
+    "title": "AI Divides: Who Benefits from the Next Technology Wave?",
+    "lede": "While high-income nations rapidly integrate AI, structural barriers\u2014skills, connectivity, language data\u2014shape who can benefit.",
+    "caption": "Digital readiness proxy used for AI chapter progress sticks",
+    "yLabel": "% / index",
+    "invert": false,
+    "stick": "#8963c1",
+    "original": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+    "facts": [
+      {
+        "num": "Only 5%",
+        "text": "of people in low-income countries have advanced digital skills."
+      },
+      {
+        "num": "50\u00d7",
+        "text": "ChatGPT usage gap between high- and low-income countries."
+      },
+      {
+        "num": "Language",
+        "text": "languages of poorer countries are underrepresented in training data."
+      }
+    ],
+    "resolved_code": "17.8.1",
+    "n": 213
+  },
+  {
+    "slug": "gender-and-jobs",
+    "code": "8.5.1",
+    "kicker": "Gender and Jobs",
+    "title": "Gender and Jobs: Closing Persistent Gaps",
+    "lede": "Women face persistent barriers to work and are more often in vulnerable employment\u2014despite progress in education and services.",
+    "caption": "Labor / wage progress series (8.5.1)",
+    "yLabel": "Index / rate",
+    "invert": false,
+    "stick": "#f3578e",
+    "original": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+    "facts": [
+      {
+        "num": "Only 1 in 2",
+        "text": "key fact from the gender and jobs story."
+      },
+      {
+        "num": "350 years",
+        "text": "at current pace, parity in labor force participation is centuries away."
+      },
+      {
+        "num": "Wage gaps",
+        "text": "persist in most countries."
+      }
+    ],
+    "resolved_code": "8.5.1",
+    "n": 187
+  },
+  {
+    "slug": "urban-development",
+    "code": "11.0.0",
+    "code_alt": "43.0.0",
+    "kicker": "Urban Development",
+    "title": "Urban Development: Cities as Engines of Growth",
+    "lede": "Cities drive global economic growth, but urbanization is uneven and service delivery lags in many fast-growing urban areas.",
+    "caption": "Urban progress series",
+    "yLabel": "Index",
+    "invert": false,
+    "stick": "#0c7c68",
+    "original": "https://data360.worldbank.org/en/atlas/urban-development/",
+    "facts": [
+      {
+        "num": "1 in 4",
+        "text": "key fact from the urban development story."
+      },
+      {
+        "num": "Slums",
+        "text": "absolute numbers of people in slums remain high."
+      },
+      {
+        "num": "Skills",
+        "text": "urban labor markets offer wider skill distributions."
+      }
+    ],
+    "resolved_code": "43.0.0",
+    "n": 218
+  },
+  {
+    "slug": "climate",
+    "code": "13.2.2",
+    "code_alt": "42.0.0",
+    "kicker": "Climate",
+    "title": "Climate Risk: Exposure Meets Vulnerability",
+    "lede": "Climate change intensifies extreme weather. Exposure is widespread, but risks concentrate where vulnerability is high.",
+    "caption": "Climate / emissions-related progress series",
+    "yLabel": "Index",
+    "invert": false,
+    "stick": "#099f8e",
+    "original": "https://data360.worldbank.org/en/atlas/climate/",
+    "facts": [
+      {
+        "num": "1 in 5",
+        "text": "key fact from the climate story."
+      },
+      {
+        "num": "775 million",
+        "text": "people exposed to floods globally (Atlas)."
+      },
+      {
+        "num": "Heat",
+        "text": "large shares of the population face heatwave exposure."
+      }
+    ],
+    "resolved_code": "42.0.0",
+    "n": 189
+  },
+  {
+    "slug": "data-for-development",
+    "code": "17.18.1",
+    "code_alt": "16.0.0",
+    "kicker": "Data for Development",
+    "title": "The State of Development Data",
+    "lede": "Without reliable data, poverty and learning gaps stay hidden. Some economies still build strong statistical systems with limited resources.",
+    "caption": "Statistical capacity / data progress series",
+    "yLabel": "SPI / index",
+    "invert": false,
+    "stick": "#0071bc",
+    "original": "https://data360.worldbank.org/en/atlas/data-for-development/",
+    "facts": [
+      {
+        "num": "In 60%",
+        "text": "of LMICs the latest poverty survey is more than five years old."
+      },
+      {
+        "num": "34 points",
+        "text": "SPI gap between high- and low-income economies."
+      },
+      {
+        "num": "Not destiny",
+        "text": "some low-income economies outperform on SPI."
+      }
+    ],
+    "resolved_code": "17.18.1",
+    "n": 188
+  },
+  {
+    "slug": "global-progress",
+    "code": "47.0.0",
+    "code_alt": "45.0.0",
+    "kicker": "Global Progress",
+    "title": "Global Progress is Grinding to a Halt",
+    "lede": "After decades of gains, progress on many development indicators is at its slowest pace in generations.",
+    "caption": "Cross-cutting progress speed series",
+    "yLabel": "Speed / index",
+    "invert": false,
+    "stick": "#7dd3fc",
+    "original": "https://data360.worldbank.org/en/atlas/global-progress/",
+    "facts": [
+      {
+        "num": "15 of 26",
+        "text": "domains show falling speed of progress (Atlas)."
+      },
+      {
+        "num": "Slowest",
+        "text": "in decades for several core human development metrics."
+      },
+      {
+        "num": "Possible",
+        "text": "countries can still outpace typical historical paths."
+      }
+    ],
+    "resolved_code": "47.0.0",
+    "n": 213
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Digital ID issued",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "filename": "id4d/eid-issued.png",
+  "translationPrefix": "goal_id4d.content.#23",
+  "_meta": {
+    "index": 157,
+    "chapterId": "id4d",
+    "chapterTitle": "ID4D",
+    "dir": "chapters/goal_id4d/08-image-9",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

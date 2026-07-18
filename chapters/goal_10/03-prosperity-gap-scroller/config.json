@@ -1,0 +1,76 @@
+{
+  "type": "scroller",
+  "graphic": "prosperity_gap_scroller",
+  "title": "The Prosperity Gap tracks both income level and its distribution",
+  "subtitle": "Prosperity Gaps for all individuals  in Peru and Colombia, grouped into percentiles",
+  "source": "Authors’ calculation using <a href=\"https://pip.worldbank.org/\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). ",
+  "income_title": "Income ($/day)",
+  "prosperity_gap_title": "Prosperity Gap",
+  "average_prosperity_gap": "Prosperity Gap",
+  "x_axis_title": "← Poorer | Richer →",
+  "prosperity_standard": "Prosperity standard",
+  "visdescription": "This chart shows the Prosperity Gap for each percentile of the income distributions in Peru and Colombia. ",
+  "data_download": "10_data_prosperity_gap.csv",
+  "data": "1vTsQfDAnOv96GgSkuLpe8W32uiwYPmGw2JpAyuQKQmI",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "prosperity_gap_intro",
+      "text": "Suppose that there are 100 people in each economy ranked from poorest on the left to richest on the right. The height of each bar represents the income of each individual in 2026.",
+      "translationPrefix": "goal_10.content.#23.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "prosperity_gap_threshold",
+      "text": "The Prosperity Gap measures the income multiple necessary to reach the global prosperity standard of $28 per day. The smaller the level of income, the larger the increase necessary to close the gap.",
+      "translationPrefix": "goal_10.content.#23.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "percentiles20",
+      "text": "For example, the income of the 10th poorest person in Peru is close to $4 and in Colombia, it is close to $3.50.",
+      "translationPrefix": "goal_10.content.#23.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "percentiles20",
+      "text": "The Peruvian with a $4 income needs to increase their income [emphasis: seven times] to reach the prosperity standard, whereas the Colombian with a $3.50 income needs to increase their income [emphasis: eight times]. ",
+      "translationPrefix": "goal_10.content.#23.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "all_gaps",
+      "text": "Each brick represents the person's level of income. The number of bricks represents how many times their income needs to increase. Individuals with lower incomes require a substantially greater increase in income to reach the prosperity standard. ",
+      "translationPrefix": "goal_10.content.#23.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "colombia_10_20",
+      "text": "For example, the [emphasis: 10th poorest ]Colombian would need to increase their income [emphasis: eight times] while the [emphasis: 20th poorest] would need to increase it just over [emphasis: five times] (both are highlighted in the chart).",
+      "translationPrefix": "goal_10.content.#23.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "poorest_col_vs_per",
+      "text": "It is important to note that individuals with lower income in Colombia face greater challenges in achieving the prosperity standard compared to similar individuals in Peru. The Prosperity Gaps of the poorest 10 people are much higher in Colombia than in Peru.",
+      "translationPrefix": "goal_10.content.#23.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "prosperity_gap_averages",
+      "text": "A nation’s Prosperity Gap is the average gap of all individuals in that nation. The Prosperity Gap is higher in Colombia (4.5) than in Peru (3.5), reflecting the larger gaps among the poor in Colombia.",
+      "translationPrefix": "goal_10.content.#23.scenes.#7"
+    }
+  ],
+  "translationPrefix": "goal_10.content.#23",
+  "_meta": {
+    "index": 79,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/03-prosperity-gap-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

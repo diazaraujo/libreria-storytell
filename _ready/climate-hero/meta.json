@@ -1,0 +1,33 @@
+{
+  "slug": "climate",
+  "code": "13.2.2",
+  "code_alt": "42.0.0",
+  "kicker": "Climate",
+  "title": "Climate Risk: Exposure Meets Vulnerability",
+  "lede": "Climate change intensifies extreme weather. Exposure is widespread, but risks concentrate where vulnerability is high.",
+  "caption": "Climate / emissions-related progress series",
+  "yLabel": "Index",
+  "invert": false,
+  "stick": "#099f8e",
+  "original": "https://data360.worldbank.org/en/atlas/climate/",
+  "facts": [
+    {
+      "num": "1 in 5",
+      "text": "key fact from the climate story."
+    },
+    {
+      "num": "775 million",
+      "text": "people exposed to floods globally (Atlas)."
+    },
+    {
+      "num": "Heat",
+      "text": "large shares of the population face heatwave exposure."
+    }
+  ],
+  "resolved_code": "42.0.0",
+  "n": 189,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

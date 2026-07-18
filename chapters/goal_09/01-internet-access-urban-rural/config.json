@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "internet_access_urban_rural",
+  "title": "The urban-rural digital divide",
+  "subtitle": "Individuals using the Internet (2025)",
+  "source": "International Telecommunications Union (ITU). <a href=\"https://www.itu.int/en/ITU-D/Statistics/pages/stat/default.aspx\" target=\"_blank\" rel=\"external\">Statistics</a>. ",
+  "visdescription": "A panel of four line charts, each showing the level of Internet access for urban and rural areas between 2022 and 2025, for each income region. The gap is represented by a shaded area between each pair of lines. ",
+  "urban": "Urban",
+  "rural": "Rural",
+  "visSize": "default",
+  "data_download": "09_data_internet_access_urban_rural.csv",
+  "data": "1Ms21MBusSuxea8fb176o-5rfzLt_CodNi8K48I7U0kU",
+  "translationPrefix": "goal_09.content.#9",
+  "_meta": {
+    "index": 67,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/01-internet-access-urban-rural",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  },
+  "scenes": []
+}

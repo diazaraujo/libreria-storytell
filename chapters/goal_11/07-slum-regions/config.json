@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "slum_regions",
+  "title": "The decline in slum population has slowed in recent years",
+  "subtitle": "",
+  "visSize": "small",
+  "source": "<a href=\"https://data.unhabitat.org/\" target=\"_blank\" rel=\"external\">Urban Indicators Database</a>, UN Human Settlements Programme (UN-Habitat). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS\" target=\"_blank\" rel=\"external\">EN.POP.SLUM.UR.ZS</a>).",
+  "visdescription": "This is a line chart with years on the x-axis and the share of the population living in slums on y-axis. Each line is a world bank region.",
+  "data_download": "11_data_slum_regions.csv",
+  "data": "1cpnu2-yQ39-r0GCLWe9UJ_adonGq4EjuXQS6r62qPaI",
+  "x_title": "",
+  "x_unit": "",
+  "y_title": "Population living in slums (% of urban population), 2000–22",
+  "y_unit": "",
+  "indicator_360": "WB_WDI_EN_POP_SLUM_UR_ZS",
+  "translationPrefix": "goal_11.content.#38",
+  "_meta": {
+    "index": 92,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/07-slum-regions",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

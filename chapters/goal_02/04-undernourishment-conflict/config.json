@@ -1,0 +1,27 @@
+{
+  "type": "vis",
+  "graphic": "undernourishment_conflict",
+  "title": "Hunger is rising rapidly in fragile and conflict affected economies",
+  "subtitle": "",
+  "textParagraph": "During the first decade of the twenty-first century, undernourishment in these regions fell from 24 percent in 2001 to 16 percent in 2011, mirroring global trends. However, since then, hunger has risen faster in the fragile and conflict affected economies than the global average, and by 2022 around 22 percent of people in these countries faced hunger, a striking 11 percentage points higher than the global rate of 9 percent.[reference: wdi-undernourishment] ",
+  "y_axis_title": "Prevalence of undernourishment",
+  "y_axis_units": "% of population",
+  "fcs": "Fragile and conflict affected economies",
+  "non_fcs": "Other economies",
+  "source": "[reference: wdi-undernourishment]",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "02_data_undernourishment_conflict.csv",
+  "data": "1VbUWrxrJxMBUYx3uaxbb93rnCWT486kgh93A9108--k",
+  "translationPrefix": "goal_02.content.#23",
+  "_meta": {
+    "index": 10,
+    "chapterId": "02",
+    "chapterTitle": "Global hunger",
+    "dir": "chapters/goal_02/04-undernourishment-conflict",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

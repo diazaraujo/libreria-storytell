@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Indicators of lacking ID",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "filename": "id4d/id4d-indicators-lack-of-id.png",
+  "translationPrefix": "goal_id4d.content.#11",
+  "_meta": {
+    "index": 153,
+    "chapterId": "id4d",
+    "chapterTitle": "ID4D",
+    "dir": "chapters/goal_id4d/04-image-5",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

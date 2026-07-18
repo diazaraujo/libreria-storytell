@@ -1,0 +1,32 @@
+{
+  "slug": "water-access",
+  "code": "61.2.0",
+  "kicker": "Water Access",
+  "title": "Water Quality: A Foundation for Health and Development",
+  "lede": "Access to safe drinking water is essential for health and development, yet over 2 billion people, mostly in low- and middle-income countries, still lack it. Many remain exposed to contaminated water, which threatens health, livelihoods, and economic progress.",
+  "caption": "Access to water from improved sources that is free from contamination (% of population), 2015–24",
+  "yLabel": "% of population",
+  "invert": false,
+  "stick": "#3ecfbf",
+  "original": "https://data360.worldbank.org/en/atlas/water-access/",
+  "facts": [
+    {
+      "num": "2.1 billion",
+      "text": "people lacked access to safely managed drinking water in 2024."
+    },
+    {
+      "num": "Around 50%",
+      "text": "of countries with data (48 out of 94) face water quality challenges."
+    },
+    {
+      "num": "In 26 countries",
+      "text": "more than half of the population is exposed to high or very high E. coli contamination."
+    }
+  ],
+  "resolved_code": "61.2.0",
+  "n": 163,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

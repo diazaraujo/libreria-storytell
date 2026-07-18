@@ -1,0 +1,21 @@
+{
+  "type": "vis",
+  "graphic": "aridity_classes",
+  "title": "Global distribution of aridity classes",
+  "subtitle": "",
+  "source": "[reference: aridityreport]",
+  "visdescription": "World map showing the distribution of humid, dry subhumid, semi-arid, arid and hyperarid regions around the world.",
+  "visSize": "fullScreen",
+  "translationPrefix": "goal_15.content.#18",
+  "_meta": {
+    "index": 127,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/02-aridity-classes",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

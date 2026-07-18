@@ -1,0 +1,32 @@
+{
+  "slug": "gender-and-jobs",
+  "code": "8.5.1",
+  "kicker": "Gender and Jobs",
+  "title": "Gender and Jobs: Closing Persistent Gaps",
+  "lede": "Women face persistent barriers to work and are more often in vulnerable employment—despite progress in education and services.",
+  "caption": "Labor / wage progress series (8.5.1)",
+  "yLabel": "Index / rate",
+  "invert": false,
+  "stick": "#f3578e",
+  "original": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+  "facts": [
+    {
+      "num": "Only 1 in 2",
+      "text": "key fact from the gender and jobs story."
+    },
+    {
+      "num": "350 years",
+      "text": "at current pace, parity in labor force participation is centuries away."
+    },
+    {
+      "num": "Wage gaps",
+      "text": "persist in most countries."
+    }
+  ],
+  "resolved_code": "8.5.1",
+  "n": 187,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

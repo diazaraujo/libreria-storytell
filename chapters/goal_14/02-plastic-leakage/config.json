@@ -1,0 +1,76 @@
+{
+  "type": "scroller",
+  "graphic": "plastic_leakage",
+  "title": "Plastic leakage into aquatic environments is projected to double ",
+  "subtitle": "2019 - 2060",
+  "label19": "2019",
+  "label60": "2060",
+  "units": "Mt",
+  "aquatic_leakage": "Macroplastic leakage to aquatic environments",
+  "sinking_land": "Sinking to river and lake beds",
+  "floating_rivers": "Floating in rivers",
+  "rivers_to_oceans": "River transport to oceans",
+  "coasts_to_oceans": "Coastal leakage",
+  "transport_to_oceans": "Transport to oceans",
+  "stock_land": "Accumulated in rivers and lakes since 1950",
+  "stock_oceans": "Accumulated in oceans since 1950",
+  "source": "OECD (2022), <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">Global Plastics Outlook: Policy Scenarios to 2060</a>, OECD Publishing, Paris, <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">doi.org/10.1787/aa1edf33-en</a>.",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_plastic_leakage.csv",
+  "data": "1fxdcBvdm52lXrVAgEw0CHCkEr39r_aLOkMYXKkiVj2c",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "leakage19",
+      "text": "Leakage in 2019",
+      "translationPrefix": "goal_14.content.#11.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "sinking",
+      "text": "Sinking to lake and river beds",
+      "translationPrefix": "goal_14.content.#11.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "in_rivers",
+      "text": "In rivers",
+      "translationPrefix": "goal_14.content.#11.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "coastal",
+      "text": "Coastal leakage",
+      "translationPrefix": "goal_14.content.#11.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "to_oceans",
+      "text": "To oceans",
+      "translationPrefix": "goal_14.content.#11.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "in_oceans",
+      "text": "In oceans",
+      "translationPrefix": "goal_14.content.#11.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "projection_2060",
+      "text": "2060 projection",
+      "translationPrefix": "goal_14.content.#11.scenes.#6"
+    }
+  ],
+  "translationPrefix": "goal_14.content.#11",
+  "_meta": {
+    "index": 112,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/02-plastic-leakage",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

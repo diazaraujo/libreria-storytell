@@ -1,0 +1,87 @@
+{
+  "type": "scroller",
+  "graphic": "poverty_scroller",
+  "title": "Several countries have eliminated poverty since 1950",
+  "subtitle": "",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook April 2026</a>, <a href=\"https://doi.org/10.1596/1813-9450-11350\" target=\"_blank\" rel=\"external\">Mahler et al. 2026</a>, and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. 2025</a>.",
+  "visdescription": "Poverty trends across selected countries from 1950-2025 as well as projections to 2050 for selected countries that still have high poverty rates. ",
+  "theme": "light (alternatively: dark)",
+  "data_download": "01_data_country_poverty.zip",
+  "data": "1W-0JLU1wkyV-G2Z0xmSxJVKLFV1dE1mnfiH1Ns4xQ54",
+  "yAxisTitle": "Extreme poverty rate",
+  "xAxisTitle": "Years since reaching 50%",
+  "skip typical_path": "All these countries moved faster than the typical speed of progress, which was around 70 years to go from 50 percent to 10 percent poverty. <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">Korea</span>, which achieved the feat in 11 years,  moved at six times the typical speed.",
+  "keyFact": "43 countries",
+  "keyFactLabel": "with high poverty are making little progress or reversing past gains",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "korea",
+      "text": "Since the aftermath of the Korean War, <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">Korea</span> evolved from being heavily burdened by extreme poverty to having virtually eliminated it. In [emphasis: little more than a decade], extreme poverty fell [emphasis: from 50 percent to 10 percent]. ",
+      "translationPrefix": "goal_01.content.#9.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "other_reducers",
+      "text": "<span style=\"background-color: rgb(248,168,223);\">Japan</span>, <span style=\"color: rgb(255,255,255); background-color: rgb(187,59,100);\">China</span>, <span style=\"color: rgb(255,255,255); background-color: rgb(128,30,55);\">Thailand</span>, and <span data-color-id=\"cat7\" class=\"cat7\">Bangladesh</span> have embarked on similarly impressive journeys.",
+      "translationPrefix": "goal_01.content.#9.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "highlight_80",
+      "text": "These countries all had moments—at different points in time— where [emphasis: half the population] was living in extreme poverty…",
+      "translationPrefix": "goal_01.content.#9.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "shifted",
+      "text": "…and they all managed to reduce the share of people living in extreme poverty to [emphasis: 1 in 10 ]over a span of 10–30 years.",
+      "translationPrefix": "goal_01.content.#9.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "shifted_nonasia",
+      "text": "<span style=\"color: rgb(68,71,70);\">It is not just countries in Asia that have undergone such declines; others</span>—including <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Brazil</span><span style=\"color: rgb(68,71,70);\"> and </span><span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Türkiye</span>—<span style=\"color: rgb(68,71,70);\">have experienced similar, albeit slightly less rapid, change.</span>",
+      "translationPrefix": "goal_01.content.#9.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "on_track",
+      "text": "Some countries have yet to achieve low poverty rates, but are on a promising path. <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Rwanda</span>, for example, is estimated to have reduced extreme poverty from 90 percent in the aftermath of the civil war in 1994 to less than 40 percent today, though data limitations complicate precise comparisons.[footnote: Poverty rates for Rwanda are not comparable between 2016/17 and 2023/24. The trend noted here bridges this gap using growth from national accounts, but ongoing empirical work may suggest different rates of progress over this period.] ",
+      "translationPrefix": "goal_01.content.#9.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "on_track_projections",
+      "text": "If  it  continues this pace of progress,  <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Rwanda</span> will reduce extreme poverty to less than 10 percent by 2050.",
+      "translationPrefix": "goal_01.content.#9.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "like_rwanda",
+      "text": "And Rwanda is not alone. It is one of 10 countries, mostly in <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span>, that are on a pathway to reducing poverty to less than 10 percent by 2050.",
+      "translationPrefix": "goal_01.content.#9.scenes.#7"
+    },
+    {
+      "type": "scene",
+      "id": "left_behind",
+      "text": "But another 43 countries are on a less encouraging trend. With their current speed of progress—or lack of it—they will continue to suffer from high levels of poverty in the coming decades.",
+      "translationPrefix": "goal_01.content.#9.scenes.#8"
+    }
+  ],
+  "translationPrefix": "goal_01.content.#9",
+  "_meta": {
+    "index": 2,
+    "chapterId": "01",
+    "chapterTitle": "Extreme Poverty",
+    "dir": "chapters/goal_01/02-poverty-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "interactive draw + scroller choreography + venn + scatter"
+  }
+}

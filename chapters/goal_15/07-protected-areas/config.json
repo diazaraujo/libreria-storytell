@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "protected_areas",
+  "title": "The share of global protected lands needs to double to reach the 30% goal",
+  "subtitle": "",
+  "y_axis_title": "Share of land that is protected",
+  "source": "Retrieved from World Development Indicators (<a href=\"http://ER.LND.PTLD.ZS\" target=\"_blank\" rel=\"external\">ER.LND.PTLD.ZS</a>)",
+  "visdescription": "A line chart showing the global terrestrial protected areas as share of the total land area. Compared the the 30% target, the line is mostly flat.",
+  "visSize": "default",
+  "data_download": "15_data_protected_areas.csv",
+  "data": "1pMY2CRzmKnK3OoRr_QcRUBc0wBX86Bha47iP0LFN_M0",
+  "translationPrefix": "goal_15.content.#46",
+  "_meta": {
+    "index": 132,
+    "chapterId": "15",
+    "chapterTitle": "Life on land",
+    "dir": "chapters/goal_15/07-protected-areas",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

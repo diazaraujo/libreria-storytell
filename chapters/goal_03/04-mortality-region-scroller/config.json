@@ -1,0 +1,49 @@
+{
+  "type": "scroller",
+  "graphic": "mortality_region_scroller",
+  "title": "Levels and trends in maternal and child mortality",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_mortality_region_scroller.zip",
+  "data": "1p7e61R9f_HoAQN8G4jC8vPgjyRQ62dgWZXzIhmO6Rjw",
+  "x_title": "",
+  "x_unit": "",
+  "y_title_mmr": "Maternal deaths per 100,000 live births",
+  "y_title_mr": "Death per 1,000 live births",
+  "y_unit": "",
+  "title_scene_1": "Maternal Mortality​ Ratio",
+  "title_scene_2": "Under-5 Mortality Rate",
+  "title_scene_3": "Neonatal Mortality Rate ",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "Global [emphasis: maternal mortality] has declined steadily since 2000, but the pace of [emphasis: improvement has stagnated]. In 2023, the global maternal mortality ratio (MMR, number of maternal deaths per 100 000 live births) stood at [emphasis: 197]. While this is a substantial improvement compared to the early 2000s, progress slowed after 2015, with a temporary uptick during the COVID-19 pandemic before returning to pre-pandemic trends.",
+      "translationPrefix": "goal_03.content.#19.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "Globally, the [emphasis: under-five mortality rate] fell by half, from[emphasis:  77] deaths per 1,000 live births in [emphasis: 2000 ]to [emphasis: 37 ]in [emphasis: 2023], reflecting millions of lives saved. Yet disparities remain stark: in <span data-color-id=\"HIC\" class=\"HIC\">high-income countries</span>, just [emphasis: 5] children per 1,000 die before age five, compared to [emphasis: 68] in <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span>.",
+      "translationPrefix": "goal_03.content.#19.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "[emphasis: Neonatal mortalit]y has also declined substantially, from [emphasis: 37] deaths per 1,000 live births in [emphasis: 1990 ]to [emphasis: 17 ]in [emphasis: 2023]. Rates remain highest in <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span> and <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span>, which together account for more than [emphasis: 80%] of global newborn deaths. Although both regions have recorded steady improvements, progress has been uneven and levels remain substantially higher than elsewhere.",
+      "translationPrefix": "goal_03.content.#19.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_03.content.#19",
+  "_meta": {
+    "index": 17,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/04-mortality-region-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

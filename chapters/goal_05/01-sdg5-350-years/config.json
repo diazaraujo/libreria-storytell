@@ -1,0 +1,86 @@
+{
+  "type": "scroller",
+  "graphic": "sdg5_350_years",
+  "title": "Women’s labor force participation is over 350 years away from equality",
+  "subtitle": "<span style=\"background-color: rgb(255,255,0);\"></span>",
+  "source": "Mahler, D G, Serajuddin, U, Wadhwa, D and Yonzan, N. 2026.<a href=\"https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099455004132637249\" target=\"_blank\" rel=\"external\"> </a><a href=\"https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099455004132637249\" target=\"_blank\" rel=\"external\">The World Is Developing at Its Slowest Pace in 75 Years</a>. Washington DC: World Bank Group",
+  "visdescription": "This is a line chart with the number of years before reaching equality on the x-axis and the rate of female labor force participation on the y-axis. The line shows the typical path and how much progress has been made by individual countries from 2015.",
+  "x_axis_title": "Number of years to equality",
+  "y_axis_title": "Female labor force participation (% of female population ages 15-64)",
+  "y_axis_title_mobile": "Female labor force participation (%)",
+  "male_rate": "Global male labor force participation",
+  "years": "years",
+  "years_to_equality": "years to equality",
+  "in_2015": "in 2015",
+  "slower_progress": "Slower than typical progress",
+  "faster_progress": "Faster than typical progress",
+  "pp": "pp",
+  "visSize": "default",
+  "publish_progress": "true",
+  "data_download": "05_data_typical_path_speeds.zip",
+  "data": "1o5yF32I0XmxlazXO2NtB3QEvmoQH1RnobwgZLAnAXUg",
+  "keyFact": "Over 350 years",
+  "keyFactLabel": "away from equality in labor force participation between women and men",
+  "indicator_360": "WB_WDI_SL_TLF_ACTI_FE_ZS",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "intro_drawTypical",
+      "text": "Imagine a country with nearly no women in the labor force.",
+      "translationPrefix": "goal_05.content.#8.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "example850",
+      "text": "If this country took the typical path of progress, it would take 825 years for women’s labor force participation to reach 80 percent, which is today’s global average for men.",
+      "translationPrefix": "goal_05.content.#8.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "example850_draw2024",
+      "text": "With the global average at 55 percent in 2024, this means women are still over 350 years away from reaching parity with men. So, are there any countries where  women’s participation in the labor force is increasing at a faster rate?",
+      "translationPrefix": "goal_05.content.#8.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "exampleTurkiye_1",
+      "text": "Türkiye is one example. In 2015, women’s labor force participation stood at 34 percent.",
+      "translationPrefix": "goal_05.content.#8.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "exampleTurkiye_2",
+      "text": "By 2024, it had risen to nearly 42 percent—an increase of 7.8 percentage points.",
+      "translationPrefix": "goal_05.content.#8.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "exampleTurkiye_3",
+      "text": "But for a typical country or economy, this increase would take 36 years.",
+      "translationPrefix": "goal_05.content.#8.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "exampleTurkiye_4",
+      "text": "Türkiye has made notable gains in women’s participation, progressing four times faster than a typical country or economy.",
+      "translationPrefix": "goal_05.content.#8.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "explore",
+      "text": "Use the drop-down menu to explore where different countries and economies  stand today, how fast they have progressed since 2015, and how far they are from parity. Positive values indicate increase and negative values indicate a decrease in female labor force participation.",
+      "translationPrefix": "goal_05.content.#8.scenes.#7"
+    }
+  ],
+  "translationPrefix": "goal_05.content.#8",
+  "_meta": {
+    "index": 31,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/01-sdg5-350-years",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

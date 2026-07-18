@@ -1,0 +1,47 @@
+{
+  "type": "scroller",
+  "graphic": "poverty_progress_comparison",
+  "title": "Which country made the most progress?",
+  "subtitle": "Extreme poverty rate (%)",
+  "visSize": "small",
+  "country_left": "CIV",
+  "country_right": "GEO",
+  "percentage_points": "pp",
+  "target": "2030 target",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook April 2026</a>, and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. 2025</a>.",
+  "visdescription": "Compares progress in poverty reduction in Côte d’Ivoire and Georgia from 2015 to 2025 using different common metrics of progress.<span style=\"background-color: rgb(255,255,0);\"></span>",
+  "data_download": "progress_data_poverty_slopecharts.csv",
+  "data": "1U7w6yGILXAxwpQ15FWtQmbxjDdhyAFjhfSyLwyUpyN8",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "simple",
+      "text": "Between 2015 and 2025, both countries made impressive reductions in poverty, with Côte d’Ivoire reducing poverty from 26.3 percent to 16.1 percent and Georgia from 10.6 percent to 3.5 percent. ",
+      "translationPrefix": "goal_progress.content.#7.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "percentage_points",
+      "text": "If we compare this in [emphasis: percentage points], Côte d’Ivoire has made the most progress, with 10.2 percent of its population escaping poverty over the 10-year period, compared to around 7.1 percent of Georgia’s population.",
+      "translationPrefix": "goal_progress.content.#7.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "percentages",
+      "text": "Yet Georgia could hardly have matched Côte d’Ivoire’s feat, as only 10.6 percent of the population was in poverty at the start of the period. If we look instead at the decline in [emphasis: percent] (reflecting the share of the poor population that escaped poverty), then Georgia made the most progress, as 67 percent of its poor population escaped poverty, compared to 39 percent in Côte d’Ivoire.",
+      "translationPrefix": "goal_progress.content.#7.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_progress.content.#7",
+  "_meta": {
+    "index": 161,
+    "chapterId": "progress",
+    "chapterTitle": "Measuring Progress",
+    "dir": "chapters/goal_progress/00-poverty-progress-comparison",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

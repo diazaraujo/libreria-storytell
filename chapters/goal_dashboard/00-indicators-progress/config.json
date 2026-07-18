@@ -1,0 +1,75 @@
+{
+  "type": "scroller",
+  "graphic": "indicators_progress",
+  "title": "The global speed of progress is falling in many domains",
+  "subtitle": "Global average speed of progress, 1950–2024",
+  "source": "<a href=\"https://hdl.handle.net/10986/44655\" target=\"_blank\" rel=\"external\">Mahler et al. 2026</a>",
+  "lifeexpectancy": "Life expectancy",
+  "education": "Years of schooling",
+  "gender": "Women political empowerment index",
+  "ghggdp": "Tons CO2 equivalent/$ GDP",
+  "electricity": "Electricity supply (mWh/capita)",
+  "poverty300": "Extreme poverty rate",
+  "typical_progress": "Typical progress",
+  "fast_progress": "Fast progress",
+  "standstill": "Standstill",
+  "regression": "Reversal",
+  "slow_progress": "Slow progress",
+  "progress_in": "Progress in",
+  "average": "Average",
+  "average_progress_speed": "Average progress speed",
+  "six_indicators": "six indicators",
+  "visdescription": "Line charts showing  the speed of progress across six development indicators from 1950 to 2025 . The y-axes reflect the speed of development and are annotated with values to make the values more comprehensible.",
+  "visSize": "fullScreen",
+  "data_download": "dashboard_data_progress_speeds.zip",
+  "data": "1V4JWANmBNf9VWrsXeahBdfuR1z1wbhnYJhXgFDAVm2s",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "values",
+      "text": "Looking at  extreme poverty rates, where a year’s speed of progress refers to changes over the previous five years, progress in reducing poverty was at its slowest in the 1980s and early 1990s, with countries seeing, on average, an increase in poverty. This was followed by a golden era of poverty reduction in the later 1990s and early 2000s. That has since stalled, and today poverty reduction is at its lowest speed in more than three decades. ",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "smooth",
+      "text": "Looking at other indicators, we can see that the pace of progress changes annually and smoothing the data helps distinguish patterns from noise.",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "2010",
+      "text": "For life expectancy and electricity supply, the pace of progress today is the slowest it has been in 75 years. For schooling, it is the slowest since the 1960s, while in women’s political empowerment, progress is reversing for the first time since the 1950s. The only indicator where  progress is faster today than in past decades is CO2 emissions per gross domestic product (GDP). ",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "overlay",
+      "text": "Overlaying the six indicators, allows us to compare them against each other, confirming that only CO2 emissions per GDP has a higher-than-typical speed today.",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "average_of_averages",
+      "text": "Calculating the average speed across indicators provides a picture of how the pace of global development has changed over the last 75 years. After peaking just before 2010, the global speed of progress has declined steadily. It is now at its lowest point since 1950. ",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "region_progress",
+      "text": "This slowdown is widespread across regions, with the pace of progress across all regions except South Asia now at its slowest since 1950.",
+      "translationPrefix": "goal_dashboard.content.#5.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_dashboard.content.#5",
+  "_meta": {
+    "index": 147,
+    "chapterId": "dashboard",
+    "chapterTitle": "Global Progress",
+    "dir": "chapters/goal_dashboard/00-indicators-progress",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "vis",
+  "graphic": "gdp_growth_global_countries",
+  "title": "The global economy keeps growing despite shocks",
+  "subtitle": "Global average per capita GDP growth rates, 1960-2027",
+  "textParagraph": "Over the past 65 years, the global economy has grown at remarkably steady rates, despite sustaining several shocks. On average, the world recovered swiftly after the substantial shock from COVID-19 in 2020. By 2021, average global GDP per capita surpassed that of 2019, and by the end of 2025, global GDP per capita had increased by 10 percent compared to 2019 [reference: WB26]. Looking ahead, solid growth is projected to continue, despite continued uncertainties from e.g. global trade.",
+  "y_axis_title": "Per capita GDP growth",
+  "y_axis_units": "annual %",
+  "source": "WB, World Development Indicators (NY.GDP.PCAP.KD.ZG)",
+  "visdescription": "",
+  "data_download": "08_data_gdp_growth.zip",
+  "data": "1qzVDPMLYFEucHzDtf8h1dTtEb9LKmKeNfRGbkO_irSE",
+  "translationPrefix": "goal_08.content.#4",
+  "_meta": {
+    "index": 58,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/00-gdp-growth-global-countries",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

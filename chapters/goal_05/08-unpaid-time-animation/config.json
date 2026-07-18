@@ -1,0 +1,63 @@
+{
+  "type": "scroller",
+  "graphic": "unpaid_time_animation",
+  "title": "Women spend more time in unpaid work and men spend more time in paid work",
+  "subtitle": "Hours spent in a day in paid and unpaid work, by gender (latest data available 2001-2020)",
+  "time_worked": "Time worked:",
+  "hours": "hours",
+  "minutes": "minutes",
+  "paid_work": "Paid work",
+  "unpaid_work": "Unpaid work",
+  "men": "Men",
+  "women": "Women",
+  "y_axis_title": "Labor force participation (% of population, ages 15-64) by gender",
+  "y_axis_title_mobile": "Labor force participation (%) ",
+  "y_axis_units": "",
+  "x_axis_title": "Time spent working in a day",
+  "x_axis_units": "hours",
+  "high_lfp": "High labor force participation",
+  "source": "United Nations, Department of Economic and Social Affairs (UNDESA), Statistics Division. <a href=\"https://unstats.un.org/UNSDWebsite/demographic-social/time-use/data-and-metadata\" target=\"_blank\" rel=\"external\">Minimum Set of Gender Statistics.</a> Data retrieved in 2026",
+  "visdescription": "This chart first shows the distribution of the average number of hours spent by men and women in unpaid work and in paid work. There are four dots for each country. In the last scene we see the correlation between unpaid care work for men and women with their labor force participation rates.",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "data_download": "unpaid-work.zip",
+  "data": "1FEkl6WKMlGhZNhWAXT705dWVr_Sdg4bdWmYOtht53h8",
+  "indicator_360": "WB_GS_SG_TIM_UWRK",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "beeswarm__unpaid",
+      "text": "Across all countries and economies, <span data-color-id=\"cat2\" class=\"cat2\">women</span> do the majority of unpaid work…",
+      "translationPrefix": "goal_05.content.#49.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "beeswarm__paid_unpaid",
+      "text": "…While <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">men</span> spend more time in paid work.",
+      "translationPrefix": "goal_05.content.#49.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scatter_f",
+      "text": "The burden of unpaid work has implications for women’s ability to take up paid work opportunities. Female labor force participation is especially low in countries where women spend many hours on unpaid work.Worldwide, more than 708 million women are outside of the labor force due to care responsibilities.[reference: care-tradeoff]",
+      "translationPrefix": "goal_05.content.#49.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "scatter_mf",
+      "text": "Even when women have a paid job, they continue performing most of their household’s unpaid work. In countries with high levels of female labor force participation, women face a “second [unpaid] shift” when they finish their paid shift.[reference: second-shift]",
+      "translationPrefix": "goal_05.content.#49.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_05.content.#49",
+  "_meta": {
+    "index": 38,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/08-unpaid-time-animation",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

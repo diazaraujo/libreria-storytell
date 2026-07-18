@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "national_poverty_comparison",
+  "title": "Countries with low extreme poverty rates often suffer from other forms of poverty",
+  "subtitle": "",
+  "source": "<a href=\"https://data.worldbank.org/indicator/SI.POV.NAHC\" target=\"_blank\" rel=\"external\">World Development Indicators</a> and <a href=\"https://unstats.un.org/sdgs/dataportal\" target=\"_blank\" rel=\"external\">United Nations SDG Database</a>.",
+  "visdescription": "Comparison between multidimensional and monetary poverty rates across selected countries.",
+  "international_poverty_rate": "International poverty rate",
+  "multidimensional": "National multidimensional poverty rate",
+  "gap": "Gap",
+  "data_download": "01_data_national_poverty_comparison.csv",
+  "data": "1Vwbp7eBIOi_195OteLJ6w5_FTpO2nKAuH4K_MSx37E8",
+  "indicator_360": "WB_WDI_SI_POV_MPUN",
+  "translationPrefix": "goal_01.content.#36",
+  "_meta": {
+    "index": 5,
+    "chapterId": "01",
+    "chapterTitle": "Extreme Poverty",
+    "dir": "chapters/goal_01/05-national-poverty-comparison",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "interactive draw + scroller choreography + venn + scatter"
+  },
+  "scenes": []
+}

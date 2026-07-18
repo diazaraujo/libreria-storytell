@@ -1,0 +1,21 @@
+{
+  "type": "vis",
+  "graphic": "north_pacific_garbage_patch",
+  "title": "The North Pacific Garbage Patch",
+  "subtitle": "",
+  "source": "<a href=\"https://iopscience.iop.org/article/10.1088/1748-9326/ad78ed\" target=\"_blank\" rel=\"external\">Laurent Lebreton et al 2024 Environ. Res. Lett. 19 124054</a>",
+  "visdescription": "Describe what the visualization shows",
+  "texture": "sdg14/textures/ocean_floor_rivers.jpg",
+  "translationPrefix": "goal_14.content.#18",
+  "_meta": {
+    "index": 115,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/05-north-pacific-garbage-patch",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

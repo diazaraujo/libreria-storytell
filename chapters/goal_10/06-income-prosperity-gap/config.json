@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "income_prosperity_gap",
+  "title": "Raise everyone’s income by 10 percent",
+  "simulation": "percent_for_everyone",
+  "subtitle": "",
+  "textParagraph": "A 10 percent increase in everyone’s income will [emphasis: increase ]the average income by $2 from $20 to $22. As a result, the Prosperity Gap [emphasis: decreases] by 10 percent from 4.5 to 4.0.",
+  "source": "Authors’ calculation, <a href=\"https://pip.worldbank.org/key-inequality-indicators\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). ",
+  "income": "Income",
+  "prosperity_gap": "Prosperity Gap",
+  "average_income": "Average income:",
+  "average_income_units": "/day",
+  "average_prosperity_gap": "Prosperity Gap:",
+  "reality": "Initial level of income and Prosperity Gap",
+  "visdescription": "This chart reports the changes in average income and Prosperity Gap for a scenario where everyone’s income is raised by 10 percent.",
+  "data_download": "10_data_prosperity_gap.csv",
+  "data": "1vTsQfDAnOv96GgSkuLpe8W32uiwYPmGw2JpAyuQKQmI",
+  "translationPrefix": "goal_10.content.#37",
+  "_meta": {
+    "index": 82,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/06-income-prosperity-gap",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

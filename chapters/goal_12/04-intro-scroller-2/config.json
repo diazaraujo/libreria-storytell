@@ -1,0 +1,43 @@
+{
+  "type": "scroller",
+  "graphic": "intro_scroller",
+  "title": "Fossil fuel subsidies",
+  "subtitle": "Including external costs",
+  "source": "Black, Liu, Parry, and Vernon (2023) [reference: black1]",
+  "visdescription": "Describe what the visualization shows",
+  "visSize": "fullScreen",
+  "theme": "light (alternatively: dark)",
+  "data_download": "12_1_global.zip",
+  "data": "1pMPXVMzsZfnsMZFRk2m76TRDI5xBb_vhVe0pUTmi27g",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "column_total",
+      "text": "Let’s return to the first chart of this chapter depicting how governments globally spent $1.3 trillion on fossil fuel subsidies from 2015-2022. ",
+      "translationPrefix": "goal_12.content.#24.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "column_total_externalities",
+      "text": "Fossil fuel subsidies (i.e., undercharging for the supply costs of fossil fuel) do not include environmental and social costs of using fossil fuel, such as air pollution and global warming. These additional, external costs have also increased between 2015 and 2022 by about $1.7 trillion to $5.7 trillion.",
+      "translationPrefix": "goal_12.content.#24.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "column_pct_externalities",
+      "text": "In fact, the external costs account for more than 80% of the estimated overall damages associated with fossil fuel consumption (i.e., fossil fuel subsidies borne by the government as well as external costs). ",
+      "translationPrefix": "goal_12.content.#24.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_12.content.#24",
+  "_meta": {
+    "index": 99,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/04-intro-scroller-2",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electricity Access — storytelling + componentes</title>
+  <style>
+    :root { font-family: "Open Sans", system-ui, sans-serif; color: #100e2b; }
+    body { margin: 0; background: #f4f6f8; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 48px; }
+    h1 { font-size: 1.5rem; margin: 0 0 8px; }
+    .lead { color: #6a7781; line-height: 1.5; margin: 0 0 24px; }
+    .hero {
+      background: linear-gradient(135deg, #081079 0%, #062958 100%);
+      color: #fff; border-radius: 14px; padding: 22px 24px; margin-bottom: 28px;
+    }
+    .hero h2 { margin: 0 0 8px; font-size: 1.2rem; }
+    .hero p { margin: 0 0 14px; opacity: 0.9; font-size: 14px; line-height: 1.45; }
+    .hero a.cta {
+      display: inline-block; background: #ffd554; color: #081079;
+      font-weight: 700; text-decoration: none; padding: 10px 16px; border-radius: 8px;
+    }
+    .section { margin-bottom: 28px; }
+    .section h3 {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+      color: #6a7781; margin: 0 0 10px;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    a.card {
+      display: block; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px;
+      padding: 14px 16px; text-decoration: none; color: inherit;
+      transition: box-shadow .15s, border-color .15s;
+    }
+    a.card:hover { border-color: #ff9800; box-shadow: 0 8px 24px rgba(6,41,88,.1); }
+    .tag {
+      display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px;
+      border-radius: 999px; margin-bottom: 6px; margin-right: 4px;
+    }
+    .tag.anim { background: #eef2ff; color: #3730a3; }
+    .tag.story { background: #ffedd5; color: #9a3412; }
+    .tag.library { background: #dcfce7; color: #166534; }
+    .tag.pending { background: #f1f5f9; color: #64748b; }
+    strong { font-size: 14px; display: block; margin-bottom: 4px; }
+    .desc { font-size: 12px; color: #6a7781; line-height: 1.4; }
+    .nav { font-size: 13px; margin-bottom: 16px; }
+    .nav a { color: #0071bc; margin-right: 12px; }
+    code { font-size: 11px; background: #f1f5f9; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="nav">
+      <a href="../gallery.html">← Gallery</a>
+      <a href="heroes.html">Heroes</a>
+      <a href="http://127.0.0.1:8765/en/atlas/electricity-access/">Origen :8765</a>
+      <a href="../docs/LEARNINGS_ATLAS_STORYTELLING.md">Learnings</a>
+    </p>
+
+    <h1>Electricity Access</h1>
+    <p class="lead">
+      Storytelling con scroll sticky (como el Atlas) + componentes de librería con
+      <strong style="display:inline;font-weight:600">animaciones de escena</strong>
+      (<code>updateScene</code>, sin remount).
+    </p>
+
+    <div class="hero">
+      <h2>Story scroll — la pieza principal</h2>
+      <p>
+        regions → population → progress-race → <strong>urban–rural dual line</strong>.
+        Scroll nativo = narrativa. Montaje una vez por bloque.
+      </p>
+      <a class="cta" href="../stories/electricity-access/">Abrir storytelling →</a>
+    </div>
+
+    <div class="section">
+      <h3>Librería — patrones animados</h3>
+      <div class="grid">
+        <a class="card" href="../library/regions-small-multiples/demo.html">
+          <span class="tag library">library</span>
+          <span class="tag anim">opacity 1s · particles</span>
+          <strong>regions-small-multiples v0.5</strong>
+          <div class="desc">DNnJZ53u · 4×2 · Catmull/natural · highlight por escena · demo con botones</div>
+        </a>
+        <a class="card" href="../library/population-access/demo.html">
+          <span class="tag library">library</span>
+          <span class="tag anim">opacity 2s · stack</span>
+          <strong>population-access v0.2</strong>
+          <div class="desc">BcrOvn12 · pop → without → region stack → SSF → countries → NGA/COD/ETH</div>
+        </a>
+        <a class="card" href="../library/progress-race/demo.html">
+          <span class="tag library">library</span>
+          <span class="tag anim">accessTween 2s</span>
+          <strong>progress-race v0.2</strong>
+          <div class="desc">Brmmsw6q · race arrows · speed colors · 2015→2023 · focus ETH/NGA/COD</div>
+        </a>
+        <a class="card" href="../library/dual-line-urban-rural/demo.html">
+          <span class="tag library">library</span>
+          <span class="tag anim">hatch gap</span>
+          <strong>dual-line-urban-rural v0.1</strong>
+          <div class="desc">Bktvr1TG · 4×2 · urban/rural · diagonal hatch · curveNatural</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Capítulos unitarios (shell scroller + animación)</h3>
+      <div class="grid">
+        <a class="card" href="../chapters/goal_07/00-access-electricity-regions/index.html?clean=1">
+          <span class="tag anim">animated</span>
+          <strong>00 · regions</strong>
+          <div class="desc">scroller · 5 scenes · library RSM</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/01-access-electricity-population/index.html?clean=1">
+          <span class="tag anim">animated</span>
+          <strong>01 · population</strong>
+          <div class="desc">scroller · 6 scenes · library population-access</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/02-access-electricity-urban-rural/index.html?clean=1">
+          <span class="tag anim">animated</span>
+          <strong>02 · urban–rural</strong>
+          <div class="desc">vis · library dual-line hatch gap</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/03-access-electricity-progress/index.html?clean=1">
+          <span class="tag anim">animated</span>
+          <strong>03 · progress ETH/NGA/COD</strong>
+          <div class="desc">scroller · 4 scenes · library progress-race</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/04-access-electricity-urban-rural-countries/index.html?clean=1">
+          <span class="tag pending">pending</span>
+          <strong>04 · urban–rural countries</strong>
+          <div class="desc">vis</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/05-hexmap-nigeria/index.html?clean=1">
+          <span class="tag pending">mapbox</span>
+          <strong>05 · hexmap Nigeria</strong>
+          <div class="desc">scroller · 8 scenes</div>
+        </a>
+        <a class="card" href="../chapters/goal_07/06-hexmap-ethiopia/index.html?clean=1">
+          <span class="tag pending">mapbox</span>
+          <strong>06 · hexmap Ethiopia</strong>
+          <div class="desc">scroller · 4 scenes</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Hero del capítulo</h3>
+      <div class="grid">
+        <a class="card" href="electricity-access-hero/">
+          <span class="tag">hero</span>
+          <strong>electricity-access-hero</strong>
+          <div class="desc">Portada / key facts del Atlas</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

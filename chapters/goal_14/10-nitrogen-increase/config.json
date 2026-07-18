@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "nitrogen_increase",
+  "title": "Increase in total nitrogen concentration in rivers and streams due to human activities",
+  "subtitle": "Relative increase in nitrogen concentrations in rivers and streams from human activity, compared to natural baseline conditions",
+  "legend_title": "Relative difference in nitrogen concentration",
+  "legend_unit_label": "% of current conditions",
+  "legend_units": "%",
+  "source": "McDowell, R. W., Luo, D., Pletnyakov, P., Upsdell, M., & Dodds, W. K. (2025). Anthropogenic nutrient inputs cause excessive algal growth for nearly half the world’s population. Nature Communications, 16(1), 1830. <a href=\"https://doi.org/10.1038/s41467-025-57054-8\" target=\"_blank\" rel=\"external\">https://doi.org/10.1038/s41467-025-57054-8</a> ",
+  "visdescription": "Describe what the visualization shows",
+  "texture": "sdg14/textures/total_n_0-75.jpg",
+  "translationPrefix": "goal_14.content.#37",
+  "_meta": {
+    "index": 120,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/10-nitrogen-increase",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

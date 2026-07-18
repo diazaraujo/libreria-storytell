@@ -1,0 +1,44 @@
+{
+  "type": "scroller",
+  "graphic": "rmnch_progress_scroller",
+  "title": "RMNCH Service Coverage Change in High-Improvement Countries ",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_rmnch_progress_scroller.zip",
+  "data": "1Z48ap9utYIR6P45cgxV0l1bhyF25vZboMptPSBz8uYg",
+  "title_scene_1": "Countries with the Largest Declines in Maternal Mortality (RMNCH Service Index, 2000 and 2023)",
+  "title_scene_2": "Countries with the Largest Declines in Under-Five Mortality (RMNCH Service Index, 2000 and 2023)",
+  "title_scene_3": "Countries with the Largest Declines in Neonatal Mortality (RMNCH Service Index, 2000 and 2023)",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "Countries such as Bangladesh, Sierra Leone, and Timor-Leste combined rapid declines in [emphasis: maternal mortality] with steady increases in [emphasis: RMNCH service coverage], supported by expanded skilled birth attendance —delivery assisted by trained midwives, nurses, or doctors— and improved maternal care, including more regular antenatal visits, basic health checks such as blood pressure monitoring, and timely referral for complications.",
+      "translationPrefix": "goal_03.content.#29.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "Rwanda, Malawi, and Cambodia achieved some of the fastest reductions in [emphasis: under-five mortality] alongside substantial improvements in [emphasis: RMNCH service delivery]. This progress reflects strong investments in primary care and community-level services delivered by trained health workers who provide basic care, health education, and referral support close to where families live.",
+      "translationPrefix": "goal_03.content.#29.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "China, India, Cambodia, and Mongolia recorded rapid declines in[emphasis:  neonatal mortality] while expanding coverage of essential maternal and newborn interventions, including facility-based delivery and postnatal care.",
+      "translationPrefix": "goal_03.content.#29.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_03.content.#29",
+  "_meta": {
+    "index": 20,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/07-rmnch-progress-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

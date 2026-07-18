@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · Dual-line Countries ETH/NGA/COD</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #111; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 4px; font-size: 18px; }
+    .sub { color: #6a7781; font-size: 13px; }
+    .stage {
+      height: 320px; margin: 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+    .links { font-size: 12px; padding: 0 20px 20px; color: #6a7781; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasLibrary.DualLineUrbanRural <small style="color:#6a7781">countries · v0.2</small></h1>
+    <p class="sub">DnvCGyY_ — ETH / NGA / COD · hatch gap · Urban/Rural labels on Ethiopia</p>
+  </header>
+  <div class="stage" id="chart"></div>
+  <p class="links">
+    Regions: <a href="./demo.html">dual-line regions</a> ·
+    Chapter: <a href="../../chapters/goal_07/04-access-electricity-urban-rural-countries/index.html?clean=1">goal_07/04</a>
+  </p>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./dual-line-urban-rural.js"></script>
+  <script>
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_07/04-access-electricity-urban-rural-countries/data/07_data_access_electricity_rural_urban_countries.csv"
+      );
+      AtlasDualLineUrbanRural.mount(document.getElementById("chart"), {
+        rows,
+        variant: "countries",
+        height: 300,
+        labels: {
+          urban: "Urban areas",
+          rural: "Rural areas",
+          y_axis_units: "%",
+        },
+      });
+    })();
+  </script>
+</body>
+</html>

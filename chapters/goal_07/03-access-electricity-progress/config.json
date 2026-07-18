@@ -1,0 +1,59 @@
+{
+  "type": "scroller",
+  "graphic": "access_electricity_progress",
+  "title": "Ethiopia’s progress towards universal electrification outpaced Nigeria and the Democratic Republic of Congo ",
+  "subtitle": "People with access to electricity (% of population)",
+  "select_country": "Select countries to highlight",
+  "regression": "regression",
+  "standstill": "standstill",
+  "slow": "slow",
+  "typical": "typical",
+  "fast": "fast",
+  "very_fast": "very fast",
+  "progress_speed": "Speed of progress",
+  "source": "World Bank staff calculations, based on Mahler, D G, Serajuddin, U, Wadhwa, D and Yonzan, N. 2026. <a href=\"https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099455004132637249\" target=\"_blank\" rel=\"external\">The World Is Developing at Its Slowest Pace in 75 Years</a>. Washington DC: World Bank Group",
+  "visdescription": "Chart showing how the speed of progress in achieving electricity access varies between countries. It focuses on Ethiopia, the Democratic Republic of Congo, and Nigeria.",
+  "visSize": "fullScreen",
+  "data_download": "07_data_access_electricity_countries.csv",
+  "data": "1KfsfMwHprikcb5BU31bNgMErEGV3wj9SbvwRE0Da0Ko",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "access_15",
+      "text": "In 2015, both Ethiopia and the Democratic Republic of Congo lagged Nigeria in electricity access.",
+      "translationPrefix": "goal_07.content.#19.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "access_23",
+      "text": "By 2023, the share of Democratic Republic of Congo’s population with access to electricity had increased only slightly, while Ethiopia had almost caught up with Nigeria.",
+      "translationPrefix": "goal_07.content.#19.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "progress",
+      "text": "Ethiopia is one of the countries that <span style=\"color: rgb(255,255,255); background-color: rgb(0,161,196);\">progressed the fastest</span> over the 2015–2023 period. Nigeria and the Democratic Republic of Congo, on the other hand, <span style=\"color: rgb(255,255,255); background-color: rgb(197,186,153);\">lagged </span>comparable countries.",
+      "translationPrefix": "goal_07.content.#19.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "all_countries",
+      "text": "Now, explore all countries by hovering over the arrow heads or searching for a country in the drop-down menu.",
+      "translationPrefix": "goal_07.content.#19.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_07.content.#19",
+  "_meta": {
+    "index": 54,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/03-access-electricity-progress",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "vis",
+  "graphic": "sdg12_efficient_price_dotplot",
+  "title": "What percentage of the efficient price is reflected in the retail price of fuel?",
+  "subtitle": "By income group and fuel type",
+  "textParagraph": "In high-income countries, retail prices constitute a relatively large share of efficient prices, reflecting higher taxation and stronger regulatory frameworks. Natural gas is relatively less harmful to the environment, so a significant share of the efficient price is covered by the retail price, even in low-income settings. By contrast, diesel is mostly harmful to the environment, so that retail prices largely fall short of efficient prices, especially in upper-middle-income countries.",
+  "source": "Black, Liu, Parry, and Vernon (2023) [reference: black1]",
+  "visdescription": "Across all income groups, the retail price of fuel is often a fraction of the efficient price. The gap is substantial in middle-income countries, especially upper-middle-income countries. The highest gap is observed for coal, followed by diesel. These are important sources of external costs, such as air pollution and global warming. In middle-income countries, the retail prices of coal and diesel should more than double to internalize all social costs.",
+  "visSize": "default",
+  "data_download": "fossil_fuel_subsidy_20250920.zip",
+  "data": "1ocsqKO4Kz4tKxE3p94rdzkTJVPEb4rZlHGkfY12i3WA",
+  "publish_progress": "true",
+  "description": "Across all income groups, the retail price of fuel is often a fraction of the efficient price. ",
+  "translationPrefix": "goal_12.content.#18",
+  "_meta": {
+    "index": 97,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/02-sdg12-efficient-price-dotplot",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

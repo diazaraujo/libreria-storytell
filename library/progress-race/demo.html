@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · Progress Race v0.1</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #111; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 4px; font-size: 18px; }
+    .sub { color: #6a7781; font-size: 13px; }
+    .stage {
+      height: 560px; margin: 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb; position: relative; overflow: hidden;
+    }
+    .nav { display: flex; gap: 8px; padding: 0 20px 16px; flex-wrap: wrap; }
+    button {
+      font: 600 13px system-ui; padding: 8px 12px; border-radius: 8px;
+      border: 1px solid #cbd5e1; background: #fff; cursor: pointer;
+    }
+    button.active { background: #081079; color: #fff; border-color: #081079; }
+    .story {
+      margin: 0 16px 16px; padding: 14px 16px; background: #fff;
+      border-radius: 8px; border-left: 4px solid #e31c3d;
+      min-height: 56px; font-size: 14px; line-height: 1.45;
+      transition: opacity 0.4s ease;
+    }
+    .links { font-size: 12px; padding: 0 20px 20px; color: #6a7781; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasLibrary.ProgressRace <small style="color:#6a7781;font-weight:500">v0.2 · pixel</small></h1>
+    <p class="sub">Brmmsw6q — dots 2015 · stems focus/all · gradient legend · chips · accessTween 2s</p>
+  </header>
+  <div class="nav" id="nav"></div>
+  <div class="stage" id="chart"></div>
+  <div class="story" id="story"></div>
+  <p class="links">
+    Story: <a href="../../stories/electricity-access/">electricity-access scroll</a> ·
+    Chapter: <a href="../../chapters/goal_07/03-access-electricity-progress/index.html?clean=1">goal_07/03</a> ·
+    Origin: <a href="http://127.0.0.1:8765/en/atlas/electricity-access/">:8765</a>
+  </p>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="./progress-race.js"></script>
+  <script>
+    const scenes = [
+      {
+        label: "0 · 2015",
+        text: "In 2015, both Ethiopia and the Democratic Republic of Congo lagged Nigeria in electricity access.",
+      },
+      {
+        label: "1 · 2023",
+        text: "By 2023, the share of Democratic Republic of Congo’s population with access had increased only slightly, while Ethiopia had almost caught up with Nigeria.",
+      },
+      {
+        label: "2 · Speed",
+        text: "Ethiopia is one of the countries that progressed the fastest over 2015–2023. Nigeria and DRC lagged comparable countries.",
+      },
+      {
+        label: "3 · Explore",
+        text: "Now, explore all countries by hovering over the arrow heads or searching for a country in the drop-down menu.",
+      },
+    ];
+    let chart = null, sceneIndex = 0;
+    const nav = document.getElementById("nav");
+    const story = document.getElementById("story");
+    scenes.forEach((s, i) => {
+      const b = document.createElement("button");
+      b.textContent = s.label;
+      b.onclick = () => go(i);
+      nav.appendChild(b);
+    });
+    function go(i) {
+      sceneIndex = i;
+      [...nav.children].forEach((b, j) => b.classList.toggle("active", j === i));
+      story.style.opacity = 0;
+      setTimeout(() => {
+        story.textContent = scenes[i].text;
+        story.style.opacity = 1;
+      }, 200);
+      if (!chart) return;
+      chart.updateScene(i);
+    }
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_07/03-access-electricity-progress/data/07_data_access_electricity_countries.csv"
+      );
+      chart = AtlasProgressRace.mount(document.getElementById("chart"), {
+        rows,
+        sceneIndex: 0,
+        names: window.ATLAS_COUNTRY_NAMES || {},
+      });
+      go(0);
+    })();
+  </script>
+</body>
+</html>

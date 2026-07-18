@@ -1,0 +1,58 @@
+{
+  "type": "scroller",
+  "graphic": "limiting_factors",
+  "title": "Countries face different challenges in achieving access to safely managed drinking water ",
+  "subtitle": "People with access to: <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water free from contamination</span>, or <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">water accessible on premises</span>, or <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">water available when needed</span> (% of people using improved water sources)",
+  "source": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, <a href=\"https://washdata.org/data/downloads#WLD\" target=\"_blank\" rel=\"external\">JMP Global Database</a>.",
+  "visdescription": "Three-column charts showing the components of safely managed drinking water among people using improved water sources. The left column represents water that is free from contamination, the middle column, water that is accessible on premises, and the right column, water that is available when needed. The first scene shows charts for six countries where water quality is the limiting factor. The second scene shows charts for five countries where accessibility is the limiting factor. The third scene shows charts for four countries where availability is the limiting factor. In the final scene, a grid map shows countries as equally sized tiles, each displaying a level of access to safely managed drinking water and its three components: accessibility, availability, and water quality. Within each tile, bars represent the level of each component, allowing comparison of limiting factors across countries.",
+  "visSize": "fullScreen",
+  "data_download": "Limiting Factors.csv",
+  "data": "1Nu8h2IW9nBy55RO2s0ld8dL-jyM7FOQLN8NZ1mPDNIk",
+  "keyFact": "Around 50%",
+  "keyFactLabel": "of countries with data (48 out of 94) face water quality challenges.",
+  "legendLabelQuality": "Water quality",
+  "legendLabelAccessibility": "Accessibility",
+  "legendLabelAvailability": "Availability",
+  "noDataLabel": "No data available",
+  "isTheLimitingFactorLabel": "is the limiting factor",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1",
+      "text": "In several Pacific Island nations, including Tuvalu, Nauru, and Tonga, the share of people with water[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">free from contamination</span>]is extremely low, while the share of people with water <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">readily available</span> and <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">accessible on premises</span> is less of a concern. As many small atoll islands have no rivers or large lakes, most of their drinking water comes from rainwater harvesting, and these systems are easily contaminated or diluted by saltwater, while water treatment capacity is limited.[reference: waterq1][reference: waterq2] Some Southeast Asian countries also face significant water quality challenges including Cambodia, Indonesia, and Lao PDR where inadequate wastewater treatment contributes to contamination.[reference: UNEP]",
+      "translationPrefix": "goal_06.content.#18.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">Accessibility</span>] is a major challenge in many Sub-Saharan African countries, such as Democratic Republic of the Congo, Malawi, Guinea-Bissau, Lesotho, and São Tomé and Príncipe, where access to water on premises remains limited. These countries often lack adequate infrastructure,[reference: wateracc1] particularly in rural areas, where communities are widely dispersed.[reference: wateracc2] ",
+      "translationPrefix": "goal_06.content.#18.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3",
+      "text": "Water is considered <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">available when needed</span> if households report having sufficient water or access to it most of the day.[footnote:  For example, at least 12 hours per day or four days per week, depending on the survey.] In countries such as South Africa and Algeria, chronic water scarcity can disrupt supply systems.[reference: ZAF][reference: DZA]  However, availability depends not only on water scarcity but also on infrastructure and water management. For example, Bhutan faces localized and seasonal shortages despite abundant water resources, while Trinidad and Tobago experiences periodic shortages mainly due to drought and climate variability.[reference: BTN1][reference: BTN2][reference: TTO]  Some water-scarce countries maintain reliable access through desalination or well-managed distribution systems.[reference: CCC]",
+      "translationPrefix": "goal_06.content.#18.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "scene4",
+      "text": "The map presents the limiting factor for safely managed drinking water access in 148 countries. Please note that countries shaded gray have no data for safely managed drinking water. Some countries lack availability data, but safely managed drinking water is still estimated when water quality and accessibility data are available. Countries that have achieved universal access are also included.",
+      "translationPrefix": "goal_06.content.#18.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#18",
+  "_meta": {
+    "index": 44,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/04-limiting-factors",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

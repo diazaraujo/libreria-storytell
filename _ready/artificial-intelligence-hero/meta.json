@@ -1,0 +1,33 @@
+{
+  "slug": "artificial-intelligence",
+  "code": "17.8.1",
+  "code_alt": "45.0.0",
+  "kicker": "Artificial Intelligence",
+  "title": "AI Divides: Who Benefits from the Next Technology Wave?",
+  "lede": "While high-income nations rapidly integrate AI, structural barriers—skills, connectivity, language data—shape who can benefit.",
+  "caption": "Digital readiness proxy used for AI chapter progress sticks",
+  "yLabel": "% / index",
+  "invert": false,
+  "stick": "#8963c1",
+  "original": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+  "facts": [
+    {
+      "num": "Only 5%",
+      "text": "of people in low-income countries have advanced digital skills."
+    },
+    {
+      "num": "50×",
+      "text": "ChatGPT usage gap between high- and low-income countries."
+    },
+    {
+      "num": "Language",
+      "text": "languages of poorer countries are underrepresented in training data."
+    }
+  ],
+  "resolved_code": "17.8.1",
+  "n": 213,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

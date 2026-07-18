@@ -1,0 +1,32 @@
+{
+  "type": "vis",
+  "graphic": "access_electricity_urban_rural_countries",
+  "title": "Rapid rural progress in Ethiopia has reduced the urban–rural gap, while the Democratic Republic of Congo and Nigeria have made limited progress",
+  "subtitle": "People with access to electricity, by place of residence (% of population)",
+  "source": "World Bank Group. “<a href=\"https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS\" target=\"_blank\" rel=\"external\">Access to electricity, rural (% of rural population)</a>,” “<a href=\"https://data.worldbank.org/indicator/EG.ELC.ACCS.UR.ZS\" target=\"_blank\" rel=\"external\">Access to electricity, urban (% of urban population</a>).” SDG 7.1.1 Electrification Dataset. ",
+  "urban": "Urban areas",
+  "rural": "Rural areas",
+  "y_axis_units": "%",
+  "visdescription": "Three line charts showing electricity access between urban and rural areas in Ethiopia, Nigeria, and the Democratic Republic of Congo.",
+  "indicator_360": "WB_WDI_EG_ELC_ACCS_RU_ZS",
+  "visSize": "default",
+  "data_download": "07_data_access_electricity_rural_urban_countries.csv",
+  "data": "1FCHgcDNE4aKOtQFAiwgcPd9PD7BNbUXyx7CDFvfS4_g",
+  "keyFact": "44%",
+  "keyFactLabel": "of rural dwellers in Ethiopia had access to electricity in 2023, up from just 2 percent in 2000.",
+  "translationPrefix": "goal_07.content.#21",
+  "_meta": {
+    "index": 55,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/04-access-electricity-urban-rural-countries",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  },
+  "scenes": []
+}

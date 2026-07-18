@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "e_coli_urban_rural",
+  "title": "Exposure to <i>E. coli</i> contamination is higher among rural than urban residents",
+  "subtitle": "The 10 countries with the largest urban–rural gap in exposure to high or very high contamination risk at point of collection (% of population)",
+  "source": "Multiple Indicator Cluster Survey (MICS) program. <a href=\"https://mics.unicef.org/surveys\" target=\"_blank\" rel=\"external\">MICS Surveys.</a> UNICEF; <a href=\"https://washdata.org/reports/drinking-water-quality-ethiopia-ess-2016\" target=\"_blank\" rel=\"external\">Drinking Water Quality in Ethiopia Results from the 2016 Ethiopia Socioeconomic Survey</a>, Central Statistical Agency of Ethiopia; 2017.",
+  "note": "The data are compiled from country-level survey reports, including MICS and the Ethiopian Socioeconomic Survey.",
+  "visdescription": "Bar chart showing selected countries with the largest shares of population exposed to high or very high E. coli contamination risk in drinking water. The chart allows comparison of contamination risk between rural (top bar) and urban (bottom bar) populations.",
+  "visSize": "default",
+  "data_download": "E-coli urban rural.csv",
+  "data": "1tX2nJM2-L9VPg9-Pjt-10GwVI_VX0DhvmsK4TjgG9HQ",
+  "legendUrban": "Urban",
+  "legendRural": "Rural",
+  "gapLabel": "gap",
+  "translationPrefix": "goal_06.content.#43",
+  "_meta": {
+    "index": 48,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/08-e-coli-urban-rural",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  },
+  "scenes": []
+}

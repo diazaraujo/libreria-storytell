@@ -1,0 +1,43 @@
+{
+  "type": "scroller",
+  "graphic": "smartphone_ownership",
+  "title": "Few people in low-income countries own a smartphone",
+  "subtitle": "Share of people who report that their main mobile phone is a smartphone",
+  "source": "<a href=\"https://www.worldbank.org/en/publication/globalfindex\" target=\"_blank\" rel=\"external\">The Global Findex Database</a> (2025), indicators: [con9a] “Main mobile phone is a smartphone (%, age 15+)”",
+  "visdescription": "Vertical dot plot showing the share of people who report that their main mobile phone is a smartphone, by country and income group",
+  "mobile_not_main": "<span style=\"background-color: rgb(217,217,217);\">Share of people not owning a smartphone </span>",
+  "lack_of_money": "<span style=\"background-color: rgb(217,217,217);\">Lack of money as a reason for having no smartphone</span>",
+  "data_download": "09_data_lack_of_money.csv",
+  "data": "1uvmwqlLOt867y1S_0Hr4ZT46wXg0ilxE2OJS5DTj6V4",
+  "publish_progress": "true",
+  "keyFact": "22%",
+  "keyFactLabel": "of people in low-income countries own a smartphone",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "smartphone_regions",
+      "text": "The share of people who[emphasis:  do not own a smartphone ]is high in poorer countries, reaching nearly[emphasis: <span style=\"color: rgb(255,255,255);\"> </span>][emphasis: 80 percent] in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low-income economies</span>] and about[emphasis: 50 percent] in[emphasis: <span style=\"background-color: rgb(219,149,215);\"> </span>][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">lower-middle-income economies</span>]<span style=\"background-color: rgb(219,149,215);\">.</span><span style=\"background-color: rgb(219,149,215);\"></span>",
+      "translationPrefix": "goal_09.content.#51.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "smartphone_countries",
+      "text": "In several low-income countries—including [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">Malawi</span>][emphasis: , ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">Madagascar</span>][emphasis: , and ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">Chad</span>][emphasis: —less than 14 percent of adults own a smartphone]. This highlights the strong association between income levels and smartphone ownership, and points to the persistent barriers faced by the poorest in accessing more advanced mobile technologies. ",
+      "translationPrefix": "goal_09.content.#51.scenes.#1"
+    }
+  ],
+  "translationPrefix": "goal_09.content.#51",
+  "_meta": {
+    "index": 75,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/09-smartphone-ownership",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  }
+}

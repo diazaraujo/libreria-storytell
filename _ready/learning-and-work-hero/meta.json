@@ -1,0 +1,32 @@
+{
+  "slug": "learning-and-work",
+  "code": "4.1.2",
+  "kicker": "Learning and Work",
+  "title": "Learning and Work: Building Skills for Prosperity",
+  "lede": "Each year of schooling improves earnings—but learning outcomes and years of schooling still vary widely across the world.",
+  "caption": "Education progress indicator (Atlas progress series 4.1.2)",
+  "yLabel": "Index / rate",
+  "invert": false,
+  "stick": "#73af48",
+  "original": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+  "facts": [
+    {
+      "num": "In 1 in 3",
+      "text": "key fact from the learning and work story."
+    },
+    {
+      "num": "~10%",
+      "text": "average private return to an extra year of schooling."
+    },
+    {
+      "num": "Learning gaps",
+      "text": "learning-adjusted years of schooling lag years of schooling."
+    }
+  ],
+  "resolved_code": "4.1.2",
+  "n": 201,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

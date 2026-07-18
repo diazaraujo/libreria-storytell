@@ -1,0 +1,8 @@
+category,area,cumarea
+agriculture,48,0
+forest,40,48
+shrub,14,88
+urban,1,102
+water,3,103
+glaciers,14,106
+barren,20,120

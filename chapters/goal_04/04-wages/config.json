@@ -1,0 +1,27 @@
+{
+  "type": "vis",
+  "graphic": "wages",
+  "title": "More schooling leads to higher earnings in the labor market",
+  "subtitle": "Typical wage premiums by education level ",
+  "x_title": "Earnings Relative to Non-Completers",
+  "x_unit": "%",
+  "pri_title": "Completed primary education",
+  "sec_title": "Completed secondary education",
+  "ter_title": "Completed tertiary education",
+  "source": "Wages expressed in PPP adjusted US dollars. World Bank staff calculations, based on data of <a href=\"https://worldbank.github.io/gld/README.html\" target=\"_blank\" rel=\"external\">GLD</a> (Global Labor Database Repository); I2D2 (International Income Distribution Database) (internal database), World Bank",
+  "visdescription": "Bar graph showing increase in earnings of workers with different education levels compared to those with less than primary schooling.",
+  "data_download": "04_data_wages.csv",
+  "data": "1Qqe_u2Np3tXVcoXSyyD7RVRXk4BQMQyEydtTZWIRiOk",
+  "translationPrefix": "goal_04.content.#26",
+  "_meta": {
+    "index": 27,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/04-wages",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

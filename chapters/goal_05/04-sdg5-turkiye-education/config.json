@@ -1,0 +1,32 @@
+{
+  "type": "vis",
+  "graphic": "sdg5_turkiye_education",
+  "title": "The gender gap in Türkiye’s labor force participation is narrowest in the highest level of education",
+  "subtitle": "Labor force participation, by gender and level of education (% of population ages 15-64), 2024",
+  "textParagraph": "At all levels of education in Türkiye, <span data-color-id=\"female\" class=\"female\">women</span> are less likely than <span data-color-id=\"male\" class=\"male\">men</span> to work. But the gap is narrowest among those who have completed tertiary education.",
+  "male": "Male",
+  "female": "Female",
+  "pp": "pp",
+  "source": "International Labour Organization (ILO), <a href=\"https://ilostat.ilo.org/data/bulk/\" target=\"_blank\" rel=\"external\">Education and Mismatch Indicators database (EMI)</a> ",
+  "visdescription": "This chart shows the participation rates of women and men in the labor force in the x-axis categorized by level of education on the y-axis. ",
+  "visSize": "default",
+  "data_download": "05_data_flfp_drivers_education.csv",
+  "data": "1wv1ALjkR9I4wBHn7AiIimyJ7fbxLsM0LFKs1YGCxY2M",
+  "labels__Advanced": "Completed tertiary education",
+  "labels__Intermediate": "Completed secondary education",
+  "labels__Basic": "Completed primary education",
+  "labels__Lessthanbasic": "Did not complete primary education",
+  "labels__Total": "Total",
+  "translationPrefix": "goal_05.content.#22",
+  "_meta": {
+    "index": 34,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/04-sdg5-turkiye-education",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Adults with ID by region",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "filename": "id4d/id4d-adults-with-id-regions.png",
+  "translationPrefix": "goal_id4d.content.#7",
+  "_meta": {
+    "index": 150,
+    "chapterId": "id4d",
+    "chapterTitle": "ID4D",
+    "dir": "chapters/goal_id4d/01-image-2",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

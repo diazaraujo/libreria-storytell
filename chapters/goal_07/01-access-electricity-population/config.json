@@ -1,0 +1,74 @@
+{
+  "type": "scroller",
+  "graphic": "access_electricity_population",
+  "title": "There are fewer people without electricity, even as the global population grows",
+  "population_without_access": "Population without access to electricity",
+  "population_without_access_short": "Without access",
+  "population": "Population",
+  "y_axis_units": "millions of people",
+  "y_axis_units_short": "million people",
+  "y_axis_title_right": "Global share in 2023",
+  "without_access": "Population without electricity",
+  "with_access": "Population with electricity",
+  "source": "Energy Sector Management Assistance Program (ESMAP). <a href=\"https://trackingsdg7.esmap.org/downloads\" target=\"_blank\" rel=\"external\">SDG 7.1.1 Electrification Dataset</a>.",
+  "note": "Regional estimates of population without access to electricity are calculated by World Bank staff. ",
+  "million": "million",
+  "visdescription": "Chart decomposing global access to electricity by regions, then zooming in on Sub-Saharan Africa, which it decomposes by country.",
+  "visSize": "default",
+  "data_download": "07_data_access_electricity_population.zip",
+  "data": "1bJryfa5e-tYKOv0f8EBGl4MMBjX-A8prQ_4GxmFb434",
+  "keyFact": "581 million",
+  "keyFactLabel": "of the 666 million people without access to electricity live in Sub-Saharan Africa.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "global_population",
+      "text": "While the global population has increased by almost 2 billion people since 2000…",
+      "translationPrefix": "goal_07.content.#9.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "global",
+      "text": "… the number of people without electricity halved, falling from 1.3 billion in 2000 to 666 million in 2023.",
+      "translationPrefix": "goal_07.content.#9.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "regions",
+      "text": "All regions, except <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, contributed to this rapid decline, particularly <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span>. In 2000, both South Asia and Sub-Saharan Africa accounted for roughly the same share of the global population without electricity. But by 2023, South Asia achieved near-universal access, while the number of people without electricity in Sub-Saharan Africa increased. Despite significant progress in access in the region, it was not enough to keep up with population growth.",
+      "translationPrefix": "goal_07.content.#9.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "saf",
+      "text": "In 2023, <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span> was home to 581 million people without electricity. This translates to nearly 9 in 10 of the world’s people living without electricity.",
+      "translationPrefix": "goal_07.content.#9.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "ssf_countries",
+      "text": "And just eight countries account for half the world’s people who still lack access to electricity.",
+      "translationPrefix": "goal_07.content.#9.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "countries_highlight",
+      "text": "Over one-third of the global population without electricity live in <span style=\"background-color: rgb(255,255,255);\">the region’s most populous nations: </span>[emphasis: Nigeria], the [emphasis: Democratic Republic of Congo], and [emphasis: Ethiopia]<span style=\"background-color: rgb(255,255,255);\">.</span>",
+      "translationPrefix": "goal_07.content.#9.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_07.content.#9",
+  "_meta": {
+    "index": 52,
+    "chapterId": "07",
+    "chapterTitle": "Electricity Access",
+    "dir": "chapters/goal_07/01-access-electricity-population",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "layouts from minified AccessElectricity* chunks"
+  }
+}

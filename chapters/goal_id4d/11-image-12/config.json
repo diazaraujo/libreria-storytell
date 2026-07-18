@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Digital ID ownership and usage",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "filename": "id4d/eid-ownership-use.png",
+  "translationPrefix": "goal_id4d.content.#28",
+  "_meta": {
+    "index": 160,
+    "chapterId": "id4d",
+    "chapterTitle": "ID4D",
+    "dir": "chapters/goal_id4d/11-image-12",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "data-for-development",
+  "code": "17.18.1",
+  "code_alt": "16.0.0",
+  "kicker": "Data for Development",
+  "title": "The State of Development Data",
+  "lede": "Without reliable data, poverty and learning gaps stay hidden. Some economies still build strong statistical systems with limited resources.",
+  "caption": "Statistical capacity / data progress series",
+  "yLabel": "SPI / index",
+  "invert": false,
+  "stick": "#0071bc",
+  "original": "https://data360.worldbank.org/en/atlas/data-for-development/",
+  "facts": [
+    {
+      "num": "In 60%",
+      "text": "of LMICs the latest poverty survey is more than five years old."
+    },
+    {
+      "num": "34 points",
+      "text": "SPI gap between high- and low-income economies."
+    },
+    {
+      "num": "Not destiny",
+      "text": "some low-income economies outperform on SPI."
+    }
+  ],
+  "resolved_code": "17.18.1",
+  "n": 188,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

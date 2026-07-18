@@ -1,0 +1,22 @@
+{
+  "type": "vis",
+  "graphic": "image",
+  "title": "Gender gap",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "filename": "id4d/id4d-gender-gap.png",
+  "translationPrefix": "goal_id4d.content.#13",
+  "_meta": {
+    "index": 154,
+    "chapterId": "id4d",
+    "chapterTitle": "ID4D",
+    "dir": "chapters/goal_id4d/05-image-6",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

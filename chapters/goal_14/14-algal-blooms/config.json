@@ -1,0 +1,23 @@
+{
+  "type": "vis",
+  "graphic": "algal_blooms",
+  "title": "Algal blooms",
+  "subtitle": "Algal blooms with humans affected, 2016-2025",
+  "source": "IOC-UNESCO Harmful Algae Information System. Harmful algae information system, accessible via <a href=\"https://data.hais.ioc-unesco.org/\" target=\"_blank\" rel=\"external\">data.hais.ioc-unesco.org</a>",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_algal_blooms.csv",
+  "data": "1L5LJ1GUFWspxmZ-5g5gGToeGJsTvqMUUKxwmW_1VIOM",
+  "texture": "sdg14/textures/ocean_floor_rivers.jpg",
+  "translationPrefix": "goal_14.content.#49",
+  "_meta": {
+    "index": 124,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/14-algal-blooms",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

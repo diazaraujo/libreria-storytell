@@ -1,0 +1,55 @@
+{
+  "type": "scroller",
+  "graphic": "wage_scroller",
+  "title": "Earnings for those with tertiary are higher and grow faster",
+  "subtitle": "Wage profiles by worker experience",
+  "source": "World Bank staff calculations, based on data of <a href=\"https://worldbank.github.io/gld/README.html\" target=\"_blank\" rel=\"external\">GLD</a> (Global Labor Database Repository), World Bank. Wages in PPP adjusted US dollars.",
+  "visdescription": "Line charts showing wage profiles for workers with differing levels of education for India and Brazil.",
+  "visSize": "default",
+  "data_download": "04_data_wage_scroller.csv",
+  "data": "1hCHnJalQJWn65UYrfzVWKaADB_CIebDUxqfbzarSS_s",
+  "publish_progress": "true",
+  "x_title": "Years of potential experience",
+  "x_unit": "",
+  "y_title": "Wage earnings",
+  "y_units": "$/hour",
+  "bsc_title": "Did not complete primary education",
+  "adv_title": "Tertiary degree",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "india_1",
+      "text": "To see how learning (as measured through on-the-job productivity) evolves over a career, let us take a look at workers in [emphasis: India]. For workers at the beginning of their career, those who <span data-color-id=\"cat2\" class=\"cat2\">did not complete primary education</span> earned around $1.70 per hour in 2019. These wages are higher for those with more experience, roughly doubling to $3.27 per hour by the end of the career.",
+      "translationPrefix": "goal_04.content.#39.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "india_2",
+      "text": "In comparison, workers at the start of their careers with a <span data-color-id=\"cat8\" class=\"cat8\">tertiary degree</span> are already earning around 75% more than their counterparts who <span data-color-id=\"cat2\" class=\"cat2\">did not complete primary education</span>. ",
+      "translationPrefix": "goal_04.content.#39.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "india_3",
+      "text": "Over time, this wage gap continues to grow. By the end of their careers, workers with a <span data-color-id=\"cat8\" class=\"cat8\">tertiary degree</span> have more than triple the wages as workers at the beginning, and earn roughly three times more than those who <span data-color-id=\"cat2\" class=\"cat2\">did not complete primary education</span>.",
+      "translationPrefix": "goal_04.content.#39.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "brazil",
+      "text": "[emphasis: Brazil ]shows a similar, but even more pronounced, divergence. Entry hourly wages for those who <span data-color-id=\"cat2\" class=\"cat2\">did not complete </span><span data-color-id=\"cat2\" class=\"cat2\">primary education</span><span style=\"color: rgb(255,255,255);\"> </span>are $2.43, while those with a <span data-color-id=\"cat8\" class=\"cat8\">tertiary degree</span> start at $6.03. After a 35-year career, tertiary graduate workers earn about $24.32 per hour, which is around six times the $4 earned by those who did not complete primary education.",
+      "translationPrefix": "goal_04.content.#39.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_04.content.#39",
+  "_meta": {
+    "index": 29,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/06-wage-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

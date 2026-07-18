@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "sdg5_turkiye_lfp_drivers",
+  "title": "Türkiye’s shift from agriculture to services reshaped women’s work",
+  "subtitle": "Women’s and men’s share of workforce by economic sector (% of population in the workforce, by gender)",
+  "textParagraph": "Between 1990 and 2020, women in Türkiye increasingly moved out of <span data-color-id=\"SSF\" class=\"SSF\">agriculture</span> as the growing <span data-color-id=\"WLD\" class=\"WLD\">industry</span> and <span data-color-id=\"NAC\" class=\"NAC\">service</span> sectors opened up new work opportunities.",
+  "agriculture": "Agriculture",
+  "service": "Services",
+  "industry": "Industry",
+  "source": "<a href=\"https://ilostat.ilo.org/methods/concepts-and-definitions/ilo-modelled-estimates/\" target=\"_blank\" rel=\"external\">ILO Modelled Estimates database</a> (ILOEST), International Labour Organization (ILO). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SL.AGR.EMPL.FE.ZS\" target=\"_blank\" rel=\"external\">SL.AGR.EMPL.FE.ZS</a>; <a href=\"https://data.worldbank.org/indicator/SL.AGR.EMPL.MA.ZS\" target=\"_blank\" rel=\"external\">SL.AGR.EMPL.MA.ZS</a>; <a href=\"https://data.worldbank.org/indicator/SL.IND.EMPL.FE.ZS\" target=\"_blank\" rel=\"external\">SL.IND.EMPL.FE.ZS</a>; <a href=\"https://data.worldbank.org/indicator/SL.IND.EMPL.MA.ZS\" target=\"_blank\" rel=\"external\">SL.AGR.EMPL.MA.ZS</a>; <a href=\"https://data.worldbank.org/indicator/SL.SRV.EMPL.FE.ZS\" target=\"_blank\" rel=\"external\">SL.SRV.EMPL.FE.ZS</a>; <a href=\"https://data.worldbank.org/indicator/SL.SRV.EMPL.MA.ZS\" target=\"_blank\" rel=\"external\">SL.SRV.EMPL.MA.ZS</a>)",
+  "visdescription": "This chart has two stacked area charts - one for women and one for men. They range from 1991 to 2023 on the x-axis and from 0 to 100 percent on the y-axis. They show the distribution of workforce by economic sector. In the case of both women and men, the agricultural sector shrunk, but for women this decline was steeper. In turn there was a significant increase in the share of service sector jobs for women.",
+  "visSize": "default",
+  "data_download": "05_data_flfp_drivers_sectors.csv",
+  "data": "1vPvS5ZuzaDZvBjnk9mMs_CnB2auLQsE_Ey39rvZ6LYI",
+  "indicator_360": "WB_GS_SL_EMPL_ZS",
+  "translationPrefix": "goal_05.content.#16",
+  "_meta": {
+    "index": 32,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/02-sdg5-turkiye-lfp-drivers",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

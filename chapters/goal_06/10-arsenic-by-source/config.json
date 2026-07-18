@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "arsenic_by_source",
+  "title": "Arsenic contamination levels are highest in wells—including tubewells—in Bangladesh",
+  "subtitle": "Exposure to arsenic contamination, by water source (% of population) ",
+  "source": "Bangladesh Bureau of Statistics, UNICEF Bangladesh. <a href=\"https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dphe/2024/12/d2bbec066b814750aae7f0373046ebf1.pdf\" target=\"_blank\" rel=\"external\">Bangladesh MICS 2019 Water Quality Thematic Report</a>. Dhaka, Bangladesh: 2021.",
+  "note": "Tubewells are narrow, drilled groundwater wells fitted with a pump to draw water from underground aquifers. All other sources include protected and unprotected springs, rainwater, surface water, bottled water, carts with small tanks, and water kiosks.",
+  "visdescription": "Three charts presenting the proportion of people exposed to arsenic-contaminated drinking water by source: water wells at the top, piped water in the middle, and other sources at the bottom. Each chart represents the population using icons (one person = 1 percent), shaded according to their exposure level, with dark green indicating exposure above 10 ppb, and light green, above 50 ppb.",
+  "visSize": "small",
+  "data_download": "ArsenicBySource.csv",
+  "data": "12pkK1snw_3BeO_THJvZnJq50WYdKN2Xth4puWrHWuPw",
+  "pipedWater": "Piped water",
+  "waterWells": "Water wells",
+  "allOtherSources": "All other sources",
+  "exposedTo": "exposed to",
+  "translationPrefix": "goal_06.content.#52",
+  "_meta": {
+    "index": 50,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/10-arsenic-by-source",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  },
+  "scenes": []
+}

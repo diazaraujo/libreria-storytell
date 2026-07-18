@@ -1,0 +1,65 @@
+{
+  "type": "scroller",
+  "graphic": "exposure",
+  "title": "Workers in low-income countries are less exposed to AI",
+  "subtitle": "Index of occupational exposure to AI from 0 (no exposure) to 100 (full exposure)",
+  "source": "Author's calculations based on <a href=\"https://openknowledge.worldbank.org/handle/10986/42765\" target=\"_blank\" rel=\"external\">Demombynes, </a><a href=\"https://openknowledge.worldbank.org/handle/10986/42765\" target=\"_blank\" rel=\"external\">Langbein, and Weber (2025)</a><span style=\"color: rgb(33,37,41);\">. Note: The occupational icons are AI generated.</span>",
+  "visdescription": "Chart showing the occupational exposure to AI, by occupation type and income group",
+  "visSize": "default",
+  "disableScreenshot": "true",
+  "data_download": "beeswarm_updated.csv",
+  "data": "1dq70G2RjgkId9PDqQY2bO1DKUdy-8bjAgBnn0bAnmQ4",
+  "keyFact": "Less than 1 in 5",
+  "keyFactLabel": "workers in low-income countries are highly exposed to AI.",
+  "xAxisLabel": "Artificial Intelligence Occupational Exposure",
+  "exposureLabel": "Exposure",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1_id",
+      "text": "Some occupations, such as <span data-color-id=\"LCN\" class=\"LCN\">information and communications technology (ICT) professionals</span>, are exposed to AI in most facets of their work, with an exposure score of 93.",
+      "translationPrefix": "goal_16.content.#39.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2_id",
+      "text": "Others, such as <span data-color-id=\"cat1\" class=\"cat1\">subsistence farmers, fishers, hunters and gatherers</span>, are largely not exposed to AI in their work, with an exposure score of 20.[footnote: The tasks associated with an occupation differ in rich and poor countries. The <span style=\"background-color: rgb(255,255,255);\">AIOE Index is based on the tasks associated with occupations in the United States. In poorer countries, similar occupations are likely to have tasks that are less exposed by AI.</span>]",
+      "translationPrefix": "goal_16.content.#39.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3_id",
+      "text": "Most occupations fall somewhere in between.",
+      "translationPrefix": "goal_16.content.#39.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "scene4_id",
+      "text": "Countries are exposed differently to AI because occupation types differ by country. We can see this by scaling the occupations according to their prominence. Here, this is done for the United States. Defining high exposure as greater than 50, the majority of US workers are highly exposed, because occupations such as <span data-color-id=\"cat1\" class=\"cat1\">business and administration associate professionals</span> and <span data-color-id=\"cat1\" class=\"cat1\">teaching professionals</span><span data-color-id=\"cat1\" class=\"cat1\"> </span>are common.",
+      "translationPrefix": "goal_16.content.#39.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "scene5_id",
+      "text": "In middle-income countries, occupations such as <span style=\"background-color: rgb(150,168,172);\">market-oriented skilled agricultural workers</span> and <span style=\"background-color: rgb(131,167,205);\">sales workers</span> are common. These occupations are notably less exposed to AI than many of the occupations common in the US.  ",
+      "translationPrefix": "goal_16.content.#39.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "scene6_id",
+      "text": "In low-income countries, large populations of workers are engaged in <span style=\"color: rgb(255,255,255); background-color: rgb(160,168,156);\">subsistence farming</span>, and less than 20 percent of workers are highly exposed to AI.[footnote: These statistics depend on where the threshold for high exposure is set. Regardless of how it is defined, workers in low-income countries are notably less exposed to AI than their high-income country counterparts.]",
+      "translationPrefix": "goal_16.content.#39.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_16.content.#39",
+  "_meta": {
+    "index": 138,
+    "chapterId": "16",
+    "chapterTitle": "Artificial Intelligence (AI)",
+    "dir": "chapters/goal_16/04-exposure",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

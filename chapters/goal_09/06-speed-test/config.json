@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "speed_test",
+  "title": "High-income economies enjoy high-speed Internet",
+  "subtitle": "Median country download speeds (mbps)",
+  "fixed": "Fixed broadband",
+  "mobile": "Mobile broadband",
+  "mbps": "Megabits per second",
+  "restart": "Restart",
+  "source": "<a href=\"https://www.speedtest.net/global-index\" target=\"_blank\" rel=\"external\">Speedtest Global Index</a> (February 2026)",
+  "visdescription": "Dot chart race illustrating the median download speed by country for fixed and mobile broadband",
+  "theme": "light",
+  "data_download": "09_data_speedtest.csv",
+  "data": "1tqQOC36Nwv_wtwvqVYsawZwSiIKz31vZ6SWT9-pne4g",
+  "translationPrefix": "goal_09.content.#40",
+  "_meta": {
+    "index": 72,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/06-speed-test",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  },
+  "scenes": []
+}

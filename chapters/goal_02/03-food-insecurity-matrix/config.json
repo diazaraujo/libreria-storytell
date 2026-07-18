@@ -1,0 +1,32 @@
+{
+  "type": "vis",
+  "graphic": "food_insecurity_matrix",
+  "title": "Food insecurity hotspots are emerging due to conflict, climate change, and economic shocks",
+  "subtitle": "Drivers of food insecurity hotspots by country",
+  "textParagraph": "The primary drivers of food insecurity in these countries are often linked to <span style=\"color: rgb(255,255,255); background-color: rgb(8,155,212);\">conflict</span>, such as insecurity, displacement, and social instability, as well as <span style=\"color: rgb(255,255,255); background-color: rgb(229,98,69);\">climate change</span> factors, including droughts, flooding, and tropical cyclones. Additional contributing factors include the <span style=\"color: rgb(255,255,255); background-color: rgb(163,122,205);\">economic impacts</span> of the COVID-19 pandemic, which has left many countries struggling to recover from significant job losses.[reference: wdr22] Additionally, rising global food prices have hit hardest in areas reliant on imports due to their lack of local food production [reference: unctad-trade].",
+  "source": "[reference: hunger-hotspots25]",
+  "visdescription": "The primary drivers of food insecurity in these countries are often linked to <span style=\"color: rgb(255,255,255); background-color: rgb(8,155,212);\">conflict</span>, such as insecurity, displacement, and social instability, as well as <span style=\"color: rgb(255,255,255); background-color: rgb(229,98,69);\">climate change</span> factors, including droughts, flooding, and tropical cyclones.",
+  "conflict": "Conflict related",
+  "conflict_security": "Insecurity",
+  "displacement": "Displacement",
+  "social_instability": "Social instability",
+  "climate": "Climate related",
+  "dry_conditions": "Dry conditions",
+  "flood": "Flooding",
+  "tropical_cyclone": "Tropical cyclone",
+  "economic_shock": "Economic shock",
+  "data_download": "02_hunger_hotspots.csv",
+  "data": "1TBxw1KeuooU3EiPEiB7PAqCTITAV_Obq5CXA8yV6CU0",
+  "translationPrefix": "goal_02.content.#18",
+  "_meta": {
+    "index": 9,
+    "chapterId": "02",
+    "chapterTitle": "Global hunger",
+    "dir": "chapters/goal_02/03-food-insecurity-matrix",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

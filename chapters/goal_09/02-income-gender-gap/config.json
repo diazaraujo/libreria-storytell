@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "income_gender_gap",
+  "title": "Gender gaps in Internet access are wide in low- and lower-middle-income economies",
+  "subtitle": "Individuals using the Internet (% of population), by gender and income level, 2025",
+  "visSize": "small",
+  "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a>. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/IT.NET.USER.MA.ZS\" target=\"_blank\" rel=\"external\">IT.NET.USER.MA.ZS</a>, <a href=\"https://data.worldbank.org/indicator/IT.NET.USER.FE.ZS\" target=\"_blank\" rel=\"external\">IT.NET.USER.FE.ZS</a>)",
+  "visdescription": "Column chart showing Internet access levels for men and women, by income group",
+  "male": "Male",
+  "female": "Female",
+  "gap": "Gap",
+  "no_internet_access": "No Internet access",
+  "theme": "light",
+  "data_download": "09_data_income_gender_gap.csv",
+  "data": "1B_ljLFoVYyRYgGgjwESR2tAHUpmxWP-0u6DRAOYBgdI",
+  "translationPrefix": "goal_09.content.#14",
+  "_meta": {
+    "index": 68,
+    "chapterId": "09",
+    "chapterTitle": "Internet Access",
+    "dir": "chapters/goal_09/02-income-gender-gap",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand layouts; coverage_map is ranked-bars proxy not Mapbox"
+  },
+  "scenes": []
+}

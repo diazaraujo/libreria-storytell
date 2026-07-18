@@ -1,0 +1,59 @@
+{
+  "type": "scroller",
+  "graphic": "ndvi_map_scroller",
+  "title": "Extreme floods damaged more than half of Sindh’s cropland",
+  "subtitle": "",
+  "no_damage": "No damage",
+  "moderate_damage": "Moderate damage",
+  "extreme_damage": "Extreme damage",
+  "ndvi": "NDVI",
+  "damage_level": "Level of damage",
+  "source": "Source of the data",
+  "visdescription": "Describe what the visualization shows",
+  "visSize": "default",
+  "keyFact": "57 percent",
+  "keyFactLabel": "Of cropland in Sindh, Pakistan was damaged due to extreme floods",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "intro",
+      "text": "This is the Sindh province in southeastern Pakistan.",
+      "translationPrefix": "goal_02.content.#38.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "cultivated",
+      "text": "One-third of the province is <span style=\"color: rgb(255,255,255); background-color: rgb(100,198,134);\">agricultural land</span>, and is central to Pakistan's food supply. The region produces staple cereals such as wheat and rice, industrial crops including cotton and sugarcane, as well as fruit (mango and guava) and horticultural crops (chili, tomato and sunflower).",
+      "translationPrefix": "goal_02.content.#38.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "ndvi_before",
+      "text": "In August 2021, much of the Sindh area was green. <span style=\"color: rgb(255,255,255); background-color: rgb(1,133,113);\">Positive values in NDVI</span> reflect normal vegetation conditions, while <span style=\"color: rgb(255,255,255); background-color: rgb(166,97,26);\">negative values</span> correspond to flood-induced damage and reduced greenness.",
+      "translationPrefix": "goal_02.content.#38.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "ndvi_after",
+      "text": "During the floods in August 2022, an analysis projected severe production losses, including 88 percent (3.1 million bales) of cotton, 80 percent (1.8 million tons) of rice, and 61 percent (10.5 million tons) of sugarcane.[reference: naturesr23]",
+      "translationPrefix": "goal_02.content.#38.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "ndvi_difference",
+      "text": "As a result, [emphasis: the floods affected an estimated 33 million people], or roughly 13 percent of Pakistan’s population[reference: naturesr23] and approximately 57 percent of Sindh’s cropland (<span style=\"color: rgb(255,255,255); background-color: rgb(234,100,63);\">large negative NDVI difference compared to 2021</span>), that is 2.8 million out of 4.9 million hectares.",
+      "translationPrefix": "goal_02.content.#38.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_02.content.#38",
+  "_meta": {
+    "index": 12,
+    "chapterId": "02",
+    "chapterTitle": "Global hunger",
+    "dir": "chapters/goal_02/06-ndvi-map-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

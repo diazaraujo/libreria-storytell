@@ -1,0 +1,163 @@
+{
+  "type": "scroller",
+  "graphic": "poverty_rate_change_scroller",
+  "title": "The relationship between changes in poverty and levels of poverty",
+  "subtitle": "<span style=\"background-color: rgb(229,36,59);\"></span>",
+  "best_half": "50% best changes",
+  "worst_half": "50% worst changes",
+  "faster_progress": "Faster than typical progress",
+  "slower_progress": "Slower than typical progress",
+  "axis_title_y_left": "Change in poverty rate",
+  "axis_units_y_left": "5 year, annualized",
+  "axis_title_x_left": "Baseline poverty rate",
+  "axis_units_x_left": "%",
+  "axis_title_y_right": "Poverty rate",
+  "axis_units_y_right": "%",
+  "axis_title_x_right": "Years since full poverty",
+  "in_2015": "in 2015",
+  "percentage_points": "pp",
+  "years": "years",
+  "country_1": "CIV",
+  "country_2": "GEO",
+  "country_standstill": "SLE",
+  "country_regress": "MWI",
+  "visSize": "fullScreen",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook April 2026</a>, <a href=\"https://doi.org/10.1596/1813-9450-11350\" target=\"_blank\" rel=\"external\">Mahler et al. (2026)</a>, and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. (2025)</a>.",
+  "visdescription": "Shows the typical changes in poverty rates as a function of initial changes in poverty rates, and how this predicts typical trajectories of poverty rates.",
+  "data_download": "progress_data_poverty_rate_change.zip",
+  "data": "1z6pnQuuVZ65e1v_6fa1PcrpktWHD7qdpVa8ekuV6Ku8",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "all",
+      "text": "First, we use all poverty data around the world since 1950 to plot changes in poverty rates over five years as a function of the poverty rate at the start of the five-year period (baseline poverty rate).",
+      "translationPrefix": "goal_progress.content.#10.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "median",
+      "text": "Next, we estimate the typical change in poverty as a function of the level of poverty. That is, we divide the observed changes so that at every baseline poverty rate, approximately <span style=\"color: rgb(255,255,255); background-color: rgb(177,67,199);\">half are above the line</span> and <span style=\"color: rgb(255,255,255); background-color: rgb(0,113,188);\">half are below it</span>.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "median_explanation1",
+      "text": "Changes in poverty are typically smallest (in absolute terms) for very low and very high poverty rates and largest for poverty rates around 50 percent.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "median_explanation2",
+      "text": "A country with a 50 percent poverty rate typically decreases poverty by 0.72 percentage points the following year…",
+      "translationPrefix": "goal_progress.content.#10.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "median_explanation3",
+      "text": "…while a country with a 5 percent poverty rate typically decreases poverty by 0.22 percentage points the following year.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "country1_15",
+      "text": "From this, we can trace out a typical trajectory from any starting point. If we look at Côte d’Ivoire’s 2015 poverty rate of 26.3 percent, the typical change is -0.65.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#5"
+    },
+    {
+      "type": "scene",
+      "id": "country1_16",
+      "text": "So, if Côte d’Ivoire had followed the typical pattern, in 2016, its poverty rate would have been 25.6 percent.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#6"
+    },
+    {
+      "type": "scene",
+      "id": "country1_25",
+      "text": "Following this method iteratively, we can trace the typical path a country with Côte d’Ivoire’s starting point would have followed over 10 years.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#7"
+    },
+    {
+      "type": "scene",
+      "id": "country1_actual",
+      "text": "Next, we compare that with Côte d’Ivoire’s actual trend from 2015 to 2025.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#8"
+    },
+    {
+      "type": "scene",
+      "id": "country1_end",
+      "text": "The progress Côte d’Ivoire achieved between 2015 and 2025 would have typically taken until 2033. In other words, Côte d’Ivoire achieved in 10 years what would typically take 18 years. We denote this a speed of 1.8, reflecting that Côte d’Ivoire developed nearly twice as fast as the typical experience.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#9"
+    },
+    {
+      "type": "scene",
+      "id": "country2",
+      "text": "If we do the same for Georgia, we can see that its progress over 10 years was equivalent to what typically takes 26 years, giving us a speed of 2.6 suggesting that Georgia made faster progress than Côte d’Ivoire.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#10"
+    },
+    {
+      "type": "scene",
+      "id": "start_s_curve",
+      "text": "Let us now take a look at the pathway for a country that starts entrenched in extreme poverty.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#11"
+    },
+    {
+      "type": "scene",
+      "id": "s_curve",
+      "text": "At the typical speed of progress, ending poverty would take two and a half centuries.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#12"
+    },
+    {
+      "type": "scene",
+      "id": "s_curve_countries",
+      "text": "We can compare how far countries moved on this trajectory from 2015 and 2025.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#13"
+    },
+    {
+      "type": "scene",
+      "id": "s_curve_annotation1",
+      "text": "The black circle denotes Côte d'Ivoire’s position in 2015.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#14"
+    },
+    {
+      "type": "scene",
+      "id": "s_curve_annotation2",
+      "text": "Over the next 10 years, Côte d'Ivoire reduced poverty by 10.2 percentage points, moving almost twice as fast as the typical rate of countries at a similar level of development.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#15"
+    },
+    {
+      "type": "scene",
+      "id": "s_curve_country2",
+      "text": "Over the same 10 years, Georgia reduced its poverty rate by 7.1 percentage points, a reduction typically seen over a period of 26 years. So Georgia moved almost at a speed of three.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#16"
+    },
+    {
+      "type": "scene",
+      "id": "country_no_progress",
+      "text": "Sierra Leone, by contrast, made no progress and it moved at a speed of zero.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#17"
+    },
+    {
+      "type": "scene",
+      "id": "country_regression",
+      "text": "In Malawi, progress reversed, and it moved at a speed of minus one, undoing about one year of typical progress every year.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#18"
+    },
+    {
+      "type": "scene",
+      "id": "all_countries",
+      "text": "If we add all countries, we can see that those that made large positive headways on the path had a high speed of progress, and vice versa.",
+      "translationPrefix": "goal_progress.content.#10.scenes.#19"
+    }
+  ],
+  "translationPrefix": "goal_progress.content.#10",
+  "_meta": {
+    "index": 162,
+    "chapterId": "progress",
+    "chapterTitle": "Measuring Progress",
+    "dir": "chapters/goal_progress/01-poverty-rate-change-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

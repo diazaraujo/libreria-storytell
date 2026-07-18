@@ -1,0 +1,56 @@
+{
+  "type": "scroller",
+  "graphic": "urban_rural_pop_scroller",
+  "title": "The world is urbanizing, but growth is concentrated in some regions",
+  "subtitle": "Urban and rural population, by region (millions)",
+  "source": "World Bank staff estimates based on the <a href=\"http://population.un.org/wup\" target=\"_blank\" rel=\"external\">United Nations Population Division's World Urbanization Prospects</a>, National definitions. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SP.RUR.TOTL\" target=\"_blank\" rel=\"external\">SP.RUR.TOTL</a>, <a href=\"https://data.worldbank.org/indicator/SP.URB.TOTL\" target=\"_blank\" rel=\"external\">SP.URB.TOTL</a>).",
+  "visdescription": "This chart shows how the global population has evolved from 1960 to 2025 with an area chart.",
+  "label_urban": "Urban",
+  "label_rural": "Rural",
+  "data_download": "11_data_urban_rural_pop.csv",
+  "data": "1zAXd0QAWWd2VBTMKeh9ACIOO8uR_l5p_OMPvkXbzyRA",
+  "keyFact": "Nearly 60%",
+  "keyFactLabel": "of the world’s population lives in urban areas today.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "Although urbanization is a global phenomenon, it has not unfolded evenly across regions. The stacked view of urban and rural populations shows how the world's total population has grown over time.",
+      "translationPrefix": "goal_11.content.#2.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "Unstacking these two groups reveals how each has changed individually. Over the past 25 years, [emphasis: Europe] [emphasis: and Central Asia] have seen little overall population growth, with some growth in urban populations and a modest decline in rural populations.",
+      "translationPrefix": "goal_11.content.#2.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "In [emphasis: North America, Latin America, and the Caribbean], rural populations have plateaued while cities have expanded steadily.",
+      "translationPrefix": "goal_11.content.#2.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "4",
+      "text": "In [emphasis: East Asia & Pacific], urbanization has been particularly dramatic, with urban populations growing rapidly as rural populations declined. The urban population overtook the rural population in 2008, a shift driven not only by migration or population growth, but also by the reclassification of rural areas and expansion of city boundaries, which absorbed once-rural areas into urban zones.",
+      "translationPrefix": "goal_11.content.#2.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "5",
+      "text": "Meanwhile, in [emphasis: Sub-Saharan Africa], [emphasis: the Middle East, North Africa, Afghanistan, Pakistan], and [emphasis: South Asia], both rural and urban populations have grown. In Sub-Saharan Africa, the Middle East, North Africa, Afghanistan and Pakistan, urban populations have expanded at a much faster pace than their rural counterparts.",
+      "translationPrefix": "goal_11.content.#2.scenes.#4"
+    }
+  ],
+  "translationPrefix": "goal_11.content.#2",
+  "_meta": {
+    "index": 85,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/00-urban-rural-pop-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null
+  }
+}

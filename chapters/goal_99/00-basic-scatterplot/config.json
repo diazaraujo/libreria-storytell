@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "basic_scatterplot",
+  "title": "Global poverty could increase if current trends continue",
+  "subtitle": "Past values and projections",
+  "textParagraph": "If all countries make progress at Korea’s pace, global extreme poverty would be reduced to 1.5% by 2050. Yet copying Korea's trajectory will be difficult. If countries manage to make progress at the pace of Brazil, Tunisia, or Turkey, there will still be modest declines, while if they make progress at the speed typically observed since 1950, there will still be around 8% poverty by 2050. Unfortunately, over the past years the speed of global poverty reduction has slowed down. If countries follow their current speed of progress, global poverty will soon start to increase.[footnote: See the <a href=\"https://worldbank.github.io/sdgatlas-preview/measuring-progress\" target=\"_blank\" rel=\"external\">Explainer</a> for how these projections are constructed.]",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook October 2025</a>, Mahler et al. (2025a), and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. (2025b)</a>. ",
+  "note": "This is for small notes or disclaimers",
+  "visdescription": "Describe what the visualization shows",
+  "y_axis_title": "Poverty rate",
+  "y_axis_units": "%",
+  "rate4": "Korea’s path",
+  "rate2": "Brazil's path",
+  "rate1": "Typical path",
+  "rateH": "Current path",
+  "global_poverty_rate": "Global poverty rate",
+  "data_download": "01_data_global_projections.zip",
+  "data": "1bUEYFUXwRG3-UGPMvGajgceJAJ_a6TMP7bkOUQmIROg",
+  "translationPrefix": "goal_99.content.#36",
+  "_meta": {
+    "index": 144,
+    "chapterId": "99",
+    "chapterTitle": "Story Topic",
+    "dir": "chapters/goal_99/00-basic-scatterplot",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

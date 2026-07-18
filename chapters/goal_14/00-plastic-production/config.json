@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "plastic_production",
+  "title": "Plastic use projected to triple by 2060",
+  "subtitle": "Baseline scenario (no policy change)",
+  "y_axis_title": "Plastics use ",
+  "y_axis_units": "million tonnes",
+  "source": "OECD (2022), <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">Global Plastics Outlook: Policy Scenarios to 2060</a>, OECD Publishing, Paris, <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">doi.org/10.1787/aa1edf33-en</a>.",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_plastic_production.csv",
+  "data": "1gAhYCLl9lgWJ91oHviSXld3bwOf-eALwXML0KNHDaMQ",
+  "translationPrefix": "goal_14.content.#5",
+  "_meta": {
+    "index": 110,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/00-plastic-production",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

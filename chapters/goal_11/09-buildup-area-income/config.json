@@ -1,0 +1,30 @@
+{
+  "type": "vis",
+  "graphic": "buildup_area_income",
+  "title": "Built-up area will expand by more than 50 percent over the next 25 years",
+  "subtitle": "",
+  "visSize": "small",
+  "source": "Pesaresi et al. 2024. <a href=\"https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2390454\" target=\"_blank\" rel=\"external\">\"Advances on the Global Human Settlement Layer by Joint Assessment of Earth Observation and Population Survey Data.\" </a>, International Journal of Digital Earth 17(1).",
+  "visdescription": "This is a stacked area chart showing total built-up area over time - from 2000 to 2025 (actual) and from 2025 to 2050 (estimated). Each stack represents an income group.",
+  "data_download": "11_data_buildup_area_income.csv",
+  "data": "1uzT7By-2G_YWiwvWBUavileK4Ug7ozPUImz7SgS4UHM",
+  "x_title": "",
+  "x_unit": "",
+  "y_title": "Total built-up area (km2)",
+  "y_unit": "",
+  "projection_label": "",
+  "keyFact": "Over 50%",
+  "keyFactLabel": "increase in urban built-up area is expected in the next 25 years.",
+  "translationPrefix": "goal_11.content.#44",
+  "_meta": {
+    "index": 94,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/09-buildup-area-income",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

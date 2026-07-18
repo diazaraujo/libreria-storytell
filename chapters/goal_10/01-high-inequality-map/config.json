@@ -1,0 +1,27 @@
+{
+  "type": "vis",
+  "graphic": "high_inequality_map",
+  "title": "Economies with high inequality are concentrated in Latin America and Sub-Saharan Africa",
+  "subtitle": "The map shows the Gini index of each economy using the most recent household survey data",
+  "high": "High (Gini > 40)",
+  "moderate": "Moderate (Gini 30–40)",
+  "low": "Low (Gini < 30)",
+  "nodata": "No data",
+  "source": "<a href=\"https://pip.worldbank.org/key-inequality-indicators\" target=\"_blank\" rel=\"external\">Key Inequality Indicators, Poverty and Inequality Platform</a> (version March 2026).  ",
+  "visdescription": "The map shows the levels of inequality across the world.  Today, economies with high inequality (Gini index > 40) are concentrated in Latin America & the Caribbean and Sub-Saharan Africa.",
+  "visSize": "fullScreen",
+  "data_download": "10_data_high_inequality_countries.csv",
+  "data": "1EcXKhasvLrhy7IM4mVV2c2DNisBhojrllHZcQv6znrA",
+  "translationPrefix": "goal_10.content.#8",
+  "_meta": {
+    "index": 77,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/01-high-inequality-map",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

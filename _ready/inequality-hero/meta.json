@@ -1,0 +1,32 @@
+{
+  "slug": "inequality",
+  "code": "10.1.1",
+  "kicker": "Inequality",
+  "title": "Closing the Prosperity Gap",
+  "lede": "The Prosperity Gap tracks how far economies are from a prosperity standard—and how that gap is distributed across the world.",
+  "caption": "Inequality / shared prosperity progress series (10.1.1)",
+  "yLabel": "Index",
+  "invert": false,
+  "stick": "#aa0000",
+  "original": "https://data360.worldbank.org/en/atlas/inequality/",
+  "facts": [
+    {
+      "num": "4 in 5",
+      "text": "key fact from the inequality story."
+    },
+    {
+      "num": "SSA",
+      "text": "Sub-Saharan Africa’s Prosperity Gap remains among the highest."
+    },
+    {
+      "num": "Halved",
+      "text": "the global Prosperity Gap has fallen over recent decades."
+    }
+  ],
+  "resolved_code": "10.1.1",
+  "n": 171,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

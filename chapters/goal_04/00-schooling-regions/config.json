@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "schooling_regions",
+  "title": "Schooling is rising in most regions",
+  "subtitle": "Expected years of schooling by region",
+  "source": "World Bank. 2026. <a href=\"https://data360.worldbank.org/en/int/indicator/HD_HCIP_EYRS\" target=\"_blank\" rel=\"external\">Human Capital Index Plus</a>. ",
+  "y_axis_title": "Expected years of school",
+  "y_axis_units": "Years",
+  "visdescription": "Line chart showing the rise in expected years of schooling between 2001 and 2025.",
+  "textParagraph": "Since 2001, global access to education has expanded significantly, particularly in low- and middle-income economies. <span data-color-id=\"SAS\" class=\"SAS\">South Asia</span> has recorded the largest gain, with expected years of schooling  increasing from eight to eleven years. There has also been significant growth in <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa</span>, where expected years of schooling rose from seven to almost nine years. The <span data-color-id=\"MEA\" class=\"MEA\">Middle East, North Africa, Afghanistan & Pakistan</span>, <span data-color-id=\"EAS\" class=\"EAS\">East Asia & Pacific</span>, and <span data-color-id=\"LCN\" class=\"LCN\">Latin America & the Caribbean</span> all saw an increase of roughly one year over the period. In higher-income regions, like <span data-color-id=\"ECS\" class=\"ECS\">Europe & Central Asia</span> and <span data-color-id=\"NAC\" class=\"NAC\">North America</span>, where these systems reached close to universal completion in primary and secondary education, figures have remained relatively stable.",
+  "theme": "light (alternatively: dark)",
+  "data_download": "04_data_schooling_regions.csv",
+  "data": "1gF2DQBShE1IBI2nNgAKTlmc1hv3OfMnOY-gMQhYaU8U",
+  "keyFact": "11 years",
+  "keyFactLabel": "of schooling for the average child globally in 2024.",
+  "indicator_360": "HD_HCIP_EYRS",
+  "translationPrefix": "goal_04.content.#6",
+  "_meta": {
+    "index": 23,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/00-schooling-regions",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

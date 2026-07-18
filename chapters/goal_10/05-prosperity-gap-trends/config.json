@@ -1,0 +1,62 @@
+{
+  "type": "scroller",
+  "graphic": "prosperity_gap_trends",
+  "title": "Global Prosperity Gap has halved in the last four decades",
+  "prosperity_gap": "Prosperity Gap",
+  "subtitle": "While the global Prosperity Gap has decreased over the last four decades, regional and national differences are substantial",
+  "source": "Authors’ calculation using <a href=\"https://pip.worldbank.org/\" target=\"_blank\" rel=\"external\">Poverty and Inequality Platform</a> (version March 2026). <a href=\"https://data360.worldbank.org/en/int/indicator/WB_WDI_SI_SPR_PGAP\" target=\"_blank\" rel=\"external\">https://data360.worldbank.org/en/int/indicator/WB_WDI_SI_SPR_PGAP</a>.  ",
+  "visdescription": "This chart reports the trend in Prosperity Gap from 1981 to 2026. It reports the trends for the world, regions, and select countries.",
+  "data_download": "10_data_prosperity_gap_timeseries.csv",
+  "data": "1ZZvJlpIh4hGGvvrdjPxmvzLt9o9HbYPc0RXeK6Jkq8k",
+  "keyFact": "4 decades",
+  "keyFactLabel": "behind the rest of the world, Sub-Saharan Africa continues to face a significant gap in prosperity.",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "world",
+      "text": "The Global Prosperity Gap has more than halved from over [emphasis: 13 ]in [emphasis: 1981 ]to  less than [emphasis: five ]in [emphasis: 2026]. This substantial progress reflects the poorer nations and people catching up to the richer nations and people.",
+      "translationPrefix": "goal_10.content.#33.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "regions_eas",
+      "text": "All regions have made significant progress since 1981, with <span data-color-id=\"EAS\" class=\"EAS\">East Asia and Pacific</span> standing out, having the largest (21) to the third lowest gap (2.5).",
+      "translationPrefix": "goal_10.content.#33.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "regions_ssf",
+      "text": "But  the most recent decade has seen stagnation in the Prosperity Gaps in two regions: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Middle East, North Africa, Afghanistan & Pakistan</span> and <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, with the latter’s Prosperity Gap today close to the global gap in the 1980s. By this metric, the region is around 40 years behind global progress.",
+      "translationPrefix": "goal_10.content.#33.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "countries_percol",
+      "text": "Colombia’s and Peru’s Prosperity Gaps have experienced similar developments in recent decades, including periods of increasing gaps, most notably during the COVID-19 pandemic.",
+      "translationPrefix": "goal_10.content.#33.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "countries_eth",
+      "text": "In Ethiopia, the level today is half what it was in the 1980s, although this hides faster progress in the 1990s and early 2000s, and a stagnation in recent decades.",
+      "translationPrefix": "goal_10.content.#33.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "countries_moz",
+      "text": "Worryingly, in some Sub-Saharan African economies, such as <span data-color-id=\"SSF\" class=\"SSF\">Mozambique</span>, improvements in the Prosperity Gap have stalled over the last two decades, and recently worsened.",
+      "translationPrefix": "goal_10.content.#33.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_10.content.#33",
+  "_meta": {
+    "index": 81,
+    "chapterId": "10",
+    "chapterTitle": "Inequality",
+    "dir": "chapters/goal_10/05-prosperity-gap-trends",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

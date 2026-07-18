@@ -1,0 +1,50 @@
+{
+  "type": "scroller",
+  "graphic": "uhc_outcomes_scroller",
+  "title": "UHC Service Coverage and RMNCH Mortality Outcomes",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "data_download": "03_data_uhc_outcomes_scroller.zip",
+  "data": "1YwwHj2p4H3XtiZSI5K0v56DOfuEvD8pWQLLdbKQojvk",
+  "x_title": "Universal Health Coverage Index (0-100)",
+  "x_unit": "",
+  "y_title_1": "Maternal Mortality Ratio (per 100,000 live births)",
+  "y_title_2": "Under-5 Mortality Rate (per 1,000 live births)",
+  "y_title_3": "Neonatal Mortality Rate (per 1,000 live births)",
+  "y_unit": "",
+  "title_scene_1": "Maternal Mortality​ Rate vs UHC Index",
+  "title_scene_2": "Under-5 Mortality Rate vs UHC Index",
+  "title_scene_3": "Neonatal Mortality Rate vs UHC Index",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "1",
+      "text": "[emphasis: Sierra Leone] and [emphasis: Ethiopia ]achieved rapid declines in [emphasis: maternal mortality] alongside steady improvements in [emphasis: service coverage], highlighting the role of expanded maternal care — including increased use of antenatal and delivery services with skilled health personnel and strengthened primary health care outreach through community health workers.",
+      "translationPrefix": "goal_03.content.#26.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "2",
+      "text": "[emphasis: Rwanda ]and [emphasis: Malawi ]combined strong investments in primary health care and child health programs with [emphasis: rising UHC] scores, contributing to sharp reductions in [emphasis: under-five mortality].",
+      "translationPrefix": "goal_03.content.#26.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "3",
+      "text": "[emphasis: Cambodia], [emphasis: India], and [emphasis: China ]strengthened maternal and newborn services while expanding coverage, supporting sustained improvements in [emphasis: neonatal survival].",
+      "translationPrefix": "goal_03.content.#26.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_03.content.#26",
+  "_meta": {
+    "index": 19,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/06-uhc-outcomes-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

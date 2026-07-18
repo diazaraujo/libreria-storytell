@@ -1,0 +1,32 @@
+{
+  "type": "vis",
+  "graphic": "lays_change",
+  "title": "Learning-adjusted years of schooling have decreased in around 1/3rd of low or lower-middle-income economies",
+  "subtitle": "",
+  "visSize": "small",
+  "x_title": "Learning-adjusted years of schooling in 2010",
+  "x_units": "",
+  "y_title": "Learning-adjusted years of schooling in 2025",
+  "y_units": "",
+  "decreasing": "Decreasing",
+  "increasing": "Increasing",
+  "source": "World Bank. 2026. <a href=\"https://humancapital.worldbank.org/hciplus/\" target=\"_blank\" rel=\"external\">Human Capital Index Plus</a>. ",
+  "visdescription": "The graphic shows a scatterplot of Learning-adjusted years of schooling in 2010 versus 2025",
+  "data_download": "04_data_lays_scatter.csv",
+  "data": "1esEqT9Zx2CTlF788bpNp6lyMYEuRoSP4lELpb9LJyGU",
+  "keyFact": "In 1 in 3",
+  "keyFactLabel": "low- and lower-middle-income economies, learning-adjusted years of schooling fell between 2010 and 2025.",
+  "indicator_360": "HD_HCIP_LAYS",
+  "translationPrefix": "goal_04.content.#19",
+  "_meta": {
+    "index": 26,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/03-lays-change",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

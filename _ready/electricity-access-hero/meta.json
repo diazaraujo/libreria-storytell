@@ -1,0 +1,32 @@
+{
+  "slug": "electricity-access",
+  "code": "7.1.1",
+  "kicker": "Electricity Access",
+  "title": "Powering Progress: The Uneven Path to Electricity Access",
+  "lede": "Although global electricity access has expanded steadily over the past two decades, millions remain without power—especially in Sub-Saharan Africa—and progress is deeply uneven.",
+  "caption": "Access to electricity (% of population), ~2015–23",
+  "yLabel": "% of population",
+  "invert": false,
+  "stick": "#f7b841",
+  "original": "https://data360.worldbank.org/en/atlas/electricity-access/",
+  "facts": [
+    {
+      "num": "1 in 2",
+      "text": "key fact from the electricity access story (see full chapter)."
+    },
+    {
+      "num": "581 million",
+      "text": "of people without electricity live in Sub-Saharan Africa."
+    },
+    {
+      "num": "Near universal",
+      "text": "access in most regions outside Sub-Saharan Africa."
+    }
+  ],
+  "resolved_code": "7.1.1",
+  "n": 216,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

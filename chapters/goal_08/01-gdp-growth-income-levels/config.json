@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "gdp_growth_income_levels",
+  "title": "Economic growth by income group",
+  "subtitle": "Average growth in GDP per capita by income classification",
+  "textParagraph": "On average, poorer countries have experienced higher GDP per capita growth rates compared to countries in richer income classification groups.",
+  "mode": "income_levels",
+  "source": "WB, World Development Indicators (<span style=\"background-color: rgb(255,255,255);\">NY.GDP.PCAP.KD.ZG</span>)",
+  "visdescription": "",
+  "data_download": "08_data_gdp_growth.zip",
+  "data": "1qzVDPMLYFEucHzDtf8h1dTtEb9LKmKeNfRGbkO_irSE",
+  "translationPrefix": "goal_08.content.#6",
+  "_meta": {
+    "index": 59,
+    "chapterId": "08",
+    "chapterTitle": "Economic growth",
+    "dir": "chapters/goal_08/01-gdp-growth-income-levels",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

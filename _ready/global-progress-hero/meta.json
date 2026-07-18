@@ -1,0 +1,33 @@
+{
+  "slug": "global-progress",
+  "code": "47.0.0",
+  "code_alt": "45.0.0",
+  "kicker": "Global Progress",
+  "title": "Global Progress is Grinding to a Halt",
+  "lede": "After decades of gains, progress on many development indicators is at its slowest pace in generations.",
+  "caption": "Cross-cutting progress speed series",
+  "yLabel": "Speed / index",
+  "invert": false,
+  "stick": "#7dd3fc",
+  "original": "https://data360.worldbank.org/en/atlas/global-progress/",
+  "facts": [
+    {
+      "num": "15 of 26",
+      "text": "domains show falling speed of progress (Atlas)."
+    },
+    {
+      "num": "Slowest",
+      "text": "in decades for several core human development metrics."
+    },
+    {
+      "num": "Possible",
+      "text": "countries can still outpace typical historical paths."
+    }
+  ],
+  "resolved_code": "47.0.0",
+  "n": 213,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

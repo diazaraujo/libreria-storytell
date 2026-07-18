@@ -1,0 +1,58 @@
+{
+  "type": "scroller",
+  "graphic": "sdg5_better_jobs_for_women",
+  "title": "A tale of two countries: similar labor force participation, different types of employment",
+  "subtitle": "People in the labor force by gender and employment status, 2024",
+  "source": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO). Retrieved from Gender Data Portal (<a href=\"https://genderdata.worldbank.org/en/indicator/sl-emp-vuln-zs\" target=\"_blank\" rel=\"external\">SL.EMP.VULN.FE.ZS; SL.EMP.VULN.MA.ZS</a>; <a href=\"https://genderdata.worldbank.org/en/indicator/sl-emp-work-zs\" target=\"_blank\" rel=\"external\">SL.EMP.WORK.FE.ZS; SL.EMP.WORK.MA.ZS</a>; <a href=\"https://genderdata.worldbank.org/en/indicator/sl-uem-zs\" target=\"_blank\" rel=\"external\">SL.UEM.TOTL.FE.ZS; SL.UEM.TOTL.MA.ZS</a>)",
+  "visdescription": "This is a stacked bar chart. There are four bars: one for women in Tanzania, one for men in Tanzania, one for women in Switzerland and one for men in Switzerland. The stacks show the distribution of employment status.",
+  "unemployed": "Unemployed",
+  "vulnerable": "Vulnerable",
+  "wage": "Waged",
+  "employer": "Employer",
+  "male": "Men",
+  "female": "Women",
+  "x_axis_title": "Employment status (% of population in the labor force)",
+  "x_axis_title_mobile": "% of labor force",
+  "x_axis_units": "",
+  "visSize": "default",
+  "data_download": "05_data_types_employment_gender.csv",
+  "data": "18cDq2Bwm7zmviWFr4YgTuYFIejiRycLv8F65l7M_ez4",
+  "indicator_360": "WB_WDI_SL_EMP_VULN_FE_ZS",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "tza_che",
+      "text": "Among the employed, some are wage and salaried workers, while others are in more precarious forms of work, categorized as vulnerable employment.",
+      "translationPrefix": "goal_05.content.#31.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "che",
+      "text": "In Switzerland, over 80 percent of men and women are <span data-color-id=\"cat4\" class=\"cat4\">waged or salaried</span>—over 8 in 10 men and women and only 1 in 10 employees fall into the <span data-color-id=\"cat2\" class=\"cat2\">vulnerable employment</span> category.",
+      "translationPrefix": "goal_05.content.#31.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "tza__vulnerable",
+      "text": "In Tanzania, the pattern is entirely flipped: the labor market is dominated by workers in <span data-color-id=\"cat8\" class=\"cat8\">vulnerable employment</span>, with about 9 in 10 women and 8 in 10 men working in such conditions.",
+      "translationPrefix": "goal_05.content.#31.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "tza__wage",
+      "text": "This means that only 1 in 10 women hold <span data-color-id=\"cat4\" class=\"cat4\">waged or salaried</span> jobs, that is half the rate for men, 2 in 10 of whom are in waged and salaried work. ",
+      "translationPrefix": "goal_05.content.#31.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_05.content.#31",
+  "_meta": {
+    "index": 35,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/05-sdg5-better-jobs-for-women",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

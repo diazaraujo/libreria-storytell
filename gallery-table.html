@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atlas replicas — gallery</title>
+<style>
+  :root { font-family: system-ui, sans-serif; color: #111; }
+  body { margin: 24px; background: #f5f6f8; }
+  h1 { margin: 0 0 6px; font-size: 1.4rem; }
+  .meta { color: #6a7781; margin-bottom: 16px; }
+  input { padding: 8px 12px; width: min(420px, 100%); border: 1px solid #d0d5de; border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; margin-top: 14px; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e8eaef; vertical-align: top; }
+  th { position: sticky; top: 0; background: #fafbfc; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #6a7781; }
+  code { font-size: 11px; background: #eef2f7; padding: 1px 5px; border-radius: 3px; }
+  .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef2f7; }
+  tr.status-ready .pill { background: #e5f6ea; color: #1b7a3a; }
+  tr.status-scaffold .pill { background: #f0f1f4; color: #5a6270; }
+  a { color: #0071bc; }
+  tr.hidden { display: none; }
+</style>
+</head>
+<body>
+  <h1>Atlas of Global Development — replicas</h1>
+  <p class="meta">164 visualizations · 72 scrollers · 92 vis · status {'ready': 164}</p>
+  <input id="q" type="search" placeholder="Filter by chapter, graphic, title…" />
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Ch</th><th>Chapter</th><th>Type</th><th>Graphic</th><th>Scenes</th><th>Status</th><th></th><th>Title</th>
+      </tr>
+    </thead>
+    <tbody id="tb">
+      <tr class="status-ready">
+  <td>0</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>vis</code></td>
+  <td><code>draw_your_chart</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/00-draw-your-chart/index.html">open</a></td>
+  <td>How has global extreme poverty evolved since 1950?</td>
+</tr><tr class="status-ready">
+  <td>1</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>vis</code></td>
+  <td><code>poverty_regions</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/01-poverty-regions/index.html">open</a></td>
+  <td>Extreme poverty has fallen in most regions since 1950</td>
+</tr><tr class="status-ready">
+  <td>2</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>scroller</code></td>
+  <td><code>poverty_scroller</code></td>
+  <td>9</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/02-poverty-scroller/index.html">open</a></td>
+  <td>Several countries have eliminated poverty since 1950</td>
+</tr><tr class="status-ready">
+  <td>3</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>scroller</code></td>
+  <td><code>poverty_projections</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/03-poverty-projections/index.html">open</a></td>
+  <td>Global poverty could increase if current trends continue</td>
+</tr><tr class="status-ready">
+  <td>4</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>vis</code></td>
+  <td><code>venn_diagram</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/04-venn-diagram/index.html">open</a></td>
+  <td>Most of the world’s poor live in countries that suffer from conflict, poor econo</td>
+</tr><tr class="status-ready">
+  <td>5</td>
+  <td>01</td>
+  <td>Extreme Poverty</td>
+  <td><code>vis</code></td>
+  <td><code>national_poverty_comparison</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_01/05-national-poverty-comparison/index.html">open</a></td>
+  <td>Countries with low extreme poverty rates often suffer from other forms of povert</td>
+</tr><tr class="status-ready">
+  <td>6</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>scroller</code></td>
+  <td><code>prevalence_undernourishment_regions</code></td>
+  <td>7</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/00-prevalence-undernourishment-regions/index.html">open</a></td>
+  <td>Global hunger is on the rise</td>
+</tr><tr class="status-ready">
+  <td>7</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>scroller</code></td>
+  <td><code>prevalence_undernourishment_gridmap</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/01-prevalence-undernourishment-gridmap/index.html">open</a></td>
+  <td>Over 60 countries are moving further away from ending hunger</td>
+</tr><tr class="status-ready">
+  <td>8</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>vis</code></td>
+  <td><code>food_insecurity_hotspots</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/02-food-insecurity-hotspots/index.html">open</a></td>
+  <td>In the last five years, 26 countries have been food insecurity hotspots mostly c</td>
+</tr><tr class="status-ready">
+  <td>9</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>vis</code></td>
+  <td><code>food_insecurity_matrix</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/03-food-insecurity-matrix/index.html">open</a></td>
+  <td>Food insecurity hotspots are emerging due to conflict, climate change, and econo</td>
+</tr><tr class="status-ready">
+  <td>10</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>vis</code></td>
+  <td><code>undernourishment_conflict</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/04-undernourishment-conflict/index.html">open</a></td>
+  <td>Hunger is rising rapidly in fragile and conflict affected economies</td>
+</tr><tr class="status-ready">
+  <td>11</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>scroller</code></td>
+  <td><code>myanmar_foodprices_conflict</code></td>
+  <td>1</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/05-myanmar-foodprices-conflict/index.html">open</a></td>
+  <td>Local violence triggered nationwide food price spikes in Myanmar</td>
+</tr><tr class="status-ready">
+  <td>12</td>
+  <td>02</td>
+  <td>Global hunger</td>
+  <td><code>scroller</code></td>
+  <td><code>ndvi_map_scroller</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_02/06-ndvi-map-scroller/index.html">open</a></td>
+  <td>Extreme floods damaged more than half of Sindh’s cropland</td>
+</tr><tr class="status-ready">
+  <td>13</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>vis</code></td>
+  <td><code>uhc_chart</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/00-uhc-chart/index.html">open</a></td>
+  <td>UCH Service Coverage Index by regions, 2000-2023</td>
+</tr><tr class="status-ready">
+  <td>14</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>vis</code></td>
+  <td><code>uhc_small_multiple</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/01-uhc-small-multiple/index.html">open</a></td>
+  <td>UCH Service Coverage Index by sub-components, 2000-2023</td>
+</tr><tr class="status-ready">
+  <td>15</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>scroller</code></td>
+  <td><code>uhc_index_scroller</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/02-uhc-index-scroller/index.html">open</a></td>
+  <td>Global UHC Service Coverage Index, 2023</td>
+</tr><tr class="status-ready">
+  <td>16</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>vis</code></td>
+  <td><code>mortality_plot</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/03-mortality-plot/index.html">open</a></td>
+  <td>Maternal Mortality vs Neonatal Mortality (2023)</td>
+</tr><tr class="status-ready">
+  <td>17</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>scroller</code></td>
+  <td><code>mortality_region_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/04-mortality-region-scroller/index.html">open</a></td>
+  <td>Levels and trends in maternal and child mortality</td>
+</tr><tr class="status-ready">
+  <td>18</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>scroller</code></td>
+  <td><code>uhc_speed_scores_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/05-uhc-speed-scores-scroller/index.html">open</a></td>
+  <td>Speed of Progress in RMNCH Mortality (2015–2030)</td>
+</tr><tr class="status-ready">
+  <td>19</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>scroller</code></td>
+  <td><code>uhc_outcomes_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/06-uhc-outcomes-scroller/index.html">open</a></td>
+  <td>UHC Service Coverage and RMNCH Mortality Outcomes</td>
+</tr><tr class="status-ready">
+  <td>20</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>scroller</code></td>
+  <td><code>rmnch_progress_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/07-rmnch-progress-scroller/index.html">open</a></td>
+  <td>RMNCH Service Coverage Change in High-Improvement Countries </td>
+</tr><tr class="status-ready">
+  <td>21</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>vis</code></td>
+  <td><code>financial_hardship_chart</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/08-financial-hardship-chart/index.html">open</a></td>
+  <td>Proportion of population facing financial hardship due to out-of-pocket health e</td>
+</tr><tr class="status-ready">
+  <td>22</td>
+  <td>03</td>
+  <td>Health</td>
+  <td><code>vis</code></td>
+  <td><code>medical_cost_chart</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_03/09-medical-cost-chart/index.html">open</a></td>
+  <td>Exposure to Health-Related Financial Risk, by income, 2024</td>
+</tr><tr class="status-ready">
+  <td>23</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>vis</code></td>
+  <td><code>schooling_regions</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/00-schooling-regions/index.html">open</a></td>
+  <td>Schooling is rising in most regions</td>
+</tr><tr class="status-ready">
+  <td>24</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>scroller</code></td>
+  <td><code>schooling_scroller</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/01-schooling-scroller/index.html">open</a></td>
+  <td>Years of schooling have improved significantly over time</td>
+</tr><tr class="status-ready">
+  <td>25</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>vis</code></td>
+  <td><code>education_quality_details</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/02-education-quality-details/index.html">open</a></td>
+  <td>Learning-adjusted years of schooling are,  on average, only two-thirds as high a</td>
+</tr><tr class="status-ready">
+  <td>26</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>vis</code></td>
+  <td><code>lays_change</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/03-lays-change/index.html">open</a></td>
+  <td>Learning-adjusted years of schooling have decreased in around 1/3rd of low or lo</td>
+</tr><tr class="status-ready">
+  <td>27</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>vis</code></td>
+  <td><code>wages</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/04-wages/index.html">open</a></td>
+  <td>More schooling leads to higher earnings in the labor market</td>
+</tr><tr class="status-ready">
+  <td>28</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>vis</code></td>
+  <td><code>mincer_coefficients</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/05-mincer-coefficients/index.html">open</a></td>
+  <td>On average, each year of schooling raises earnings by 10%</td>
+</tr><tr class="status-ready">
+  <td>29</td>
+  <td>04</td>
+  <td>Learning and Work</td>
+  <td><code>scroller</code></td>
+  <td><code>wage_scroller</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_04/06-wage-scroller/index.html">open</a></td>
+  <td>Earnings for those with tertiary are higher and grow faster</td>
+</tr><tr class="status-ready">
+  <td>30</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>global_labor_force_participation</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/00-global-labor-force-participation/index.html">open</a></td>
+  <td>How has female labor force participation changed globally since 1990?</td>
+</tr><tr class="status-ready">
+  <td>31</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg5_350_years</code></td>
+  <td>8</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/01-sdg5-350-years/index.html">open</a></td>
+  <td>Women’s labor force participation is over 350 years away from equality</td>
+</tr><tr class="status-ready">
+  <td>32</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>sdg5_turkiye_lfp_drivers</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/02-sdg5-turkiye-lfp-drivers/index.html">open</a></td>
+  <td>Türkiye’s shift from agriculture to services reshaped women’s work</td>
+</tr><tr class="status-ready">
+  <td>33</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>sdg5_turkiye_fertility</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/03-sdg5-turkiye-fertility/index.html">open</a></td>
+  <td>Türkiye’s fertility rate fell faster than the global average</td>
+</tr><tr class="status-ready">
+  <td>34</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>sdg5_turkiye_education</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/04-sdg5-turkiye-education/index.html">open</a></td>
+  <td>The gender gap in Türkiye’s labor force participation is narrowest in the highes</td>
+</tr><tr class="status-ready">
+  <td>35</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg5_better_jobs_for_women</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/05-sdg5-better-jobs-for-women/index.html">open</a></td>
+  <td>A tale of two countries: similar labor force participation, different types of e</td>
+</tr><tr class="status-ready">
+  <td>36</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>gender_gap_informal_gdp</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/06-gender-gap-informal-gdp/index.html">open</a></td>
+  <td>Vulnerable employment is higher among women than men in lower-income countries a</td>
+</tr><tr class="status-ready">
+  <td>37</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg5_wage_gap_beeswarm</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/07-sdg5-wage-gap-beeswarm/index.html">open</a></td>
+  <td>In most countries, men’s wages are higher, on average, than women’s</td>
+</tr><tr class="status-ready">
+  <td>38</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>scroller</code></td>
+  <td><code>unpaid_time_animation</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/08-unpaid-time-animation/index.html">open</a></td>
+  <td>Women spend more time in unpaid work and men spend more time in paid work</td>
+</tr><tr class="status-ready">
+  <td>39</td>
+  <td>05</td>
+  <td>Gender and Jobs</td>
+  <td><code>vis</code></td>
+  <td><code>sdg5_ai_occupational_exposure_by_gender</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_05/09-sdg5-ai-occupational-exposure-by-gender/index.html">open</a></td>
+  <td>Occupational exposure to AI is highest among women in high- and upper-middle-inc</td>
+</tr><tr class="status-ready">
+  <td>40</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>safely_managed</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/00-safely-managed/index.html">open</a></td>
+  <td>A quarter of the world’s population lacks access to safe drinking water</td>
+</tr><tr class="status-ready">
+  <td>41</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>safely_managed_grouped</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/01-safely-managed-grouped/index.html">open</a></td>
+  <td>Access to safely managed drinking water remains much lower in rural areas</td>
+</tr><tr class="status-ready">
+  <td>42</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>safely_managed_country</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/02-safely-managed-country/index.html">open</a></td>
+  <td>Access to safely managed drinking water is low in Sub-Saharan Africa and small i</td>
+</tr><tr class="status-ready">
+  <td>43</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>estimating</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/03-estimating/index.html">open</a></td>
+  <td>Safely managed drinking water access is determined by the lowest value of the th</td>
+</tr><tr class="status-ready">
+  <td>44</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>limiting_factors</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/04-limiting-factors/index.html">open</a></td>
+  <td>Countries face different challenges in achieving access to safely managed drinki</td>
+</tr><tr class="status-ready">
+  <td>45</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>tanzania_typical_progress</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/05-tanzania-typical-progress/index.html">open</a></td>
+  <td>Progress in improving water quality lags progress in availability and accessibil</td>
+</tr><tr class="status-ready">
+  <td>46</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>vis</code></td>
+  <td><code>ecoli_table</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/06-ecoli-table/index.html">open</a></td>
+  <td>Levels of fecal contamination risk</td>
+</tr><tr class="status-ready">
+  <td>47</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>e_coli</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/07-e-coli/index.html">open</a></td>
+  <td><i>E. coli</i> contamination at point of use is worse than at point of water col</td>
+</tr><tr class="status-ready">
+  <td>48</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>vis</code></td>
+  <td><code>e_coli_urban_rural</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/08-e-coli-urban-rural/index.html">open</a></td>
+  <td>Exposure to <i>E. coli</i> contamination is higher among rural than urban reside</td>
+</tr><tr class="status-ready">
+  <td>49</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>scroller</code></td>
+  <td><code>bangladesh_arsenic_grouped</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/09-bangladesh-arsenic-grouped/index.html">open</a></td>
+  <td>In Bangladesh, rural dwellers and poorer people are more exposed to arsenic-cont</td>
+</tr><tr class="status-ready">
+  <td>50</td>
+  <td>06</td>
+  <td>Water Access</td>
+  <td><code>vis</code></td>
+  <td><code>arsenic_by_source</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_06/10-arsenic-by-source/index.html">open</a></td>
+  <td>Arsenic contamination levels are highest in wells—including tubewells—in Banglad</td>
+</tr><tr class="status-ready">
+  <td>51</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>scroller</code></td>
+  <td><code>access_electricity_regions</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/00-access-electricity-regions/index.html">open</a></td>
+  <td>Electricity access is advancing globally and across all regions</td>
+</tr><tr class="status-ready">
+  <td>52</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>scroller</code></td>
+  <td><code>access_electricity_population</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/01-access-electricity-population/index.html">open</a></td>
+  <td>There are fewer people without electricity, even as the global population grows</td>
+</tr><tr class="status-ready">
+  <td>53</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>vis</code></td>
+  <td><code>access_electricity_urban_rural</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/02-access-electricity-urban-rural/index.html">open</a></td>
+  <td>Access to electricity is lower in rural areas </td>
+</tr><tr class="status-ready">
+  <td>54</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>scroller</code></td>
+  <td><code>access_electricity_progress</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/03-access-electricity-progress/index.html">open</a></td>
+  <td>Ethiopia’s progress towards universal electrification outpaced Nigeria and the D</td>
+</tr><tr class="status-ready">
+  <td>55</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>vis</code></td>
+  <td><code>access_electricity_urban_rural_countries</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/04-access-electricity-urban-rural-countries/index.html">open</a></td>
+  <td>Rapid rural progress in Ethiopia has reduced the urban–rural gap, while the Demo</td>
+</tr><tr class="status-ready">
+  <td>56</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>scroller</code></td>
+  <td><code>hexmap_nigeria</code></td>
+  <td>8</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/05-hexmap-nigeria/index.html">open</a></td>
+  <td>Nigeria: uneven and unreliable access </td>
+</tr><tr class="status-ready">
+  <td>57</td>
+  <td>07</td>
+  <td>Electricity Access</td>
+  <td><code>scroller</code></td>
+  <td><code>hexmap_ethiopia</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_07/06-hexmap-ethiopia/index.html">open</a></td>
+  <td>Ethiopia: progress in rural areas</td>
+</tr><tr class="status-ready">
+  <td>58</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>vis</code></td>
+  <td><code>gdp_growth_global_countries</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/00-gdp-growth-global-countries/index.html">open</a></td>
+  <td>The global economy keeps growing despite shocks</td>
+</tr><tr class="status-ready">
+  <td>59</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>vis</code></td>
+  <td><code>gdp_growth_income_levels</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/01-gdp-growth-income-levels/index.html">open</a></td>
+  <td>Economic growth by income group</td>
+</tr><tr class="status-ready">
+  <td>60</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>growth_since_90</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/02-growth-since-90/index.html">open</a></td>
+  <td>Low income countries in 1990 have experienced markedly different growth paths</td>
+</tr><tr class="status-ready">
+  <td>61</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>gdp_progress_scroller</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/03-gdp-progress-scroller/index.html">open</a></td>
+  <td>Comparing economic growth across countries</td>
+</tr><tr class="status-ready">
+  <td>62</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>income_world_map</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/04-income-world-map/index.html">open</a></td>
+  <td>Countries by income group</td>
+</tr><tr class="status-ready">
+  <td>63</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>income_classification_scroller</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/05-income-classification-scroller/index.html">open</a></td>
+  <td>Income group classification</td>
+</tr><tr class="status-ready">
+  <td>64</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>unemployment_global</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/06-unemployment-global/index.html">open</a></td>
+  <td>Unemployment levels are at the lowest since global measurement started</td>
+</tr><tr class="status-ready">
+  <td>65</td>
+  <td>08</td>
+  <td>Economic growth</td>
+  <td><code>scroller</code></td>
+  <td><code>neet_gdp</code></td>
+  <td>9</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_08/07-neet-gdp/index.html">open</a></td>
+  <td>The wealthier the country, the lower the NEET</td>
+</tr><tr class="status-ready">
+  <td>66</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>scroller</code></td>
+  <td><code>internet_access_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/00-internet-access-scroller/index.html">open</a></td>
+  <td>Global Internet access: trends and divides</td>
+</tr><tr class="status-ready">
+  <td>67</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>vis</code></td>
+  <td><code>internet_access_urban_rural</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/01-internet-access-urban-rural/index.html">open</a></td>
+  <td>The urban-rural digital divide</td>
+</tr><tr class="status-ready">
+  <td>68</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>vis</code></td>
+  <td><code>income_gender_gap</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/02-income-gender-gap/index.html">open</a></td>
+  <td>Gender gaps in Internet access are wide in low- and lower-middle-income economie</td>
+</tr><tr class="status-ready">
+  <td>69</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>scroller</code></td>
+  <td><code>internet_progress</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/03-internet-progress/index.html">open</a></td>
+  <td>Almost all economies have increased their Internet access since 2015</td>
+</tr><tr class="status-ready">
+  <td>70</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>scroller</code></td>
+  <td><code>mobile_vs_fixed_broadband</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/04-mobile-vs-fixed-broadband/index.html">open</a></td>
+  <td>Worldwide, mobile broadband far surpasses fixed broadband adoption</td>
+</tr><tr class="status-ready">
+  <td>71</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>scroller</code></td>
+  <td><code>coverage_map</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/05-coverage-map/index.html">open</a></td>
+  <td>Most of the world is covered by 3G and 4G networks. Sub-Saharan Africa is the le</td>
+</tr><tr class="status-ready">
+  <td>72</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>vis</code></td>
+  <td><code>speed_test</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/06-speed-test/index.html">open</a></td>
+  <td>High-income economies enjoy high-speed Internet</td>
+</tr><tr class="status-ready">
+  <td>73</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>vis</code></td>
+  <td><code>coverage_access_slopes</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/07-coverage-access-slopes/index.html">open</a></td>
+  <td>Mobile networks now reach most of the population, but many people remain offline</td>
+</tr><tr class="status-ready">
+  <td>74</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>vis</code></td>
+  <td><code>can_send_text_message</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/08-can-send-text-message/index.html">open</a></td>
+  <td>In 27 countries, more than 50% of people have never sent a text message</td>
+</tr><tr class="status-ready">
+  <td>75</td>
+  <td>09</td>
+  <td>Internet Access</td>
+  <td><code>scroller</code></td>
+  <td><code>smartphone_ownership</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_09/09-smartphone-ownership/index.html">open</a></td>
+  <td>Few people in low-income countries own a smartphone</td>
+</tr><tr class="status-ready">
+  <td>76</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>scroller</code></td>
+  <td><code>high_inequality_trend</code></td>
+  <td>2</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/00-high-inequality-trend/index.html">open</a></td>
+  <td>The number of economies with high inequality has almost halved in the past three</td>
+</tr><tr class="status-ready">
+  <td>77</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>vis</code></td>
+  <td><code>high_inequality_map</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/01-high-inequality-map/index.html">open</a></td>
+  <td>Economies with high inequality are concentrated in Latin America and Sub-Saharan</td>
+</tr><tr class="status-ready">
+  <td>78</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>scroller</code></td>
+  <td><code>shared_prosperity_scatter</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/02-shared-prosperity-scatter/index.html">open</a></td>
+  <td>In three out of four economies, income growth of the poorest 40 percent was fast</td>
+</tr><tr class="status-ready">
+  <td>79</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>scroller</code></td>
+  <td><code>prosperity_gap_scroller</code></td>
+  <td>8</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/03-prosperity-gap-scroller/index.html">open</a></td>
+  <td>The Prosperity Gap tracks both income level and its distribution</td>
+</tr><tr class="status-ready">
+  <td>80</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>scroller</code></td>
+  <td><code>prosperity_gaps</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/04-prosperity-gaps/index.html">open</a></td>
+  <td>From national gaps to regional and global gaps</td>
+</tr><tr class="status-ready">
+  <td>81</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>scroller</code></td>
+  <td><code>prosperity_gap_trends</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/05-prosperity-gap-trends/index.html">open</a></td>
+  <td>Global Prosperity Gap has halved in the last four decades</td>
+</tr><tr class="status-ready">
+  <td>82</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>vis</code></td>
+  <td><code>income_prosperity_gap</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/06-income-prosperity-gap/index.html">open</a></td>
+  <td>Raise everyone’s income by 10 percent</td>
+</tr><tr class="status-ready">
+  <td>83</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>vis</code></td>
+  <td><code>income_prosperity_gap</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/07-income-prosperity-gap-2/index.html">open</a></td>
+  <td>Raise everyone’s income by $10</td>
+</tr><tr class="status-ready">
+  <td>84</td>
+  <td>10</td>
+  <td>Inequality</td>
+  <td><code>vis</code></td>
+  <td><code>prosperity_gap_playground</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_10/08-prosperity-gap-playground/index.html">open</a></td>
+  <td>Choose an economy to see the changes in their Prosperity Gap</td>
+</tr><tr class="status-ready">
+  <td>85</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>scroller</code></td>
+  <td><code>urban_rural_pop_scroller</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/00-urban-rural-pop-scroller/index.html">open</a></td>
+  <td>The world is urbanizing, but growth is concentrated in some regions</td>
+</tr><tr class="status-ready">
+  <td>86</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>scroller</code></td>
+  <td><code>city_map</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/01-city-map/index.html">open</a></td>
+  <td>The number of cities worldwide is projected to nearly double between 2000 and 20</td>
+</tr><tr class="status-ready">
+  <td>87</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>urban_gdp_scatterplot</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/02-urban-gdp-scatterplot/index.html">open</a></td>
+  <td>Urbanization is associated with economic growth</td>
+</tr><tr class="status-ready">
+  <td>88</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>scroller</code></td>
+  <td><code>skill_violin</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/03-skill-violin/index.html">open</a></td>
+  <td>Urban areas offer jobs of a variety of skills</td>
+</tr><tr class="status-ready">
+  <td>89</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>skill_violin_groups</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/04-skill-violin-groups/index.html">open</a></td>
+  <td>Urban areas offer a variety of occupations</td>
+</tr><tr class="status-ready">
+  <td>90</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>pay_beeswarm</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/05-pay-beeswarm/index.html">open</a></td>
+  <td>In most countries, hourly earnings are higher in urban than rural areas</td>
+</tr><tr class="status-ready">
+  <td>91</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>buildup_area_overtime</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/06-buildup-area-overtime/index.html">open</a></td>
+  <td>Built-up area in Addis Ababa has more than tripled in the last five decades</td>
+</tr><tr class="status-ready">
+  <td>92</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>slum_regions</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/07-slum-regions/index.html">open</a></td>
+  <td>The decline in slum population has slowed in recent years</td>
+</tr><tr class="status-ready">
+  <td>93</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>slum_waffle</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/08-slum-waffle/index.html">open</a></td>
+  <td>Globally, the number of people living in slums increased by 25% in just four yea</td>
+</tr><tr class="status-ready">
+  <td>94</td>
+  <td>11</td>
+  <td>Urban Development</td>
+  <td><code>vis</code></td>
+  <td><code>buildup_area_income</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_11/09-buildup-area-income/index.html">open</a></td>
+  <td>Built-up area will expand by more than 50 percent over the next 25 years</td>
+</tr><tr class="status-ready">
+  <td>95</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>scroller</code></td>
+  <td><code>intro_scroller</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/00-intro-scroller/index.html">open</a></td>
+  <td>Fossil fuel subsidies</td>
+</tr><tr class="status-ready">
+  <td>96</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>scroller</code></td>
+  <td><code>efficient_price_explanation</code></td>
+  <td>10</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/01-efficient-price-explanation/index.html">open</a></td>
+  <td>Efficient fuel price</td>
+</tr><tr class="status-ready">
+  <td>97</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>vis</code></td>
+  <td><code>sdg12_efficient_price_dotplot</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/02-sdg12-efficient-price-dotplot/index.html">open</a></td>
+  <td>What percentage of the efficient price is reflected in the retail price of fuel?</td>
+</tr><tr class="status-ready">
+  <td>98</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>vis</code></td>
+  <td><code>efficient_price_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/03-efficient-price-scroller/index.html">open</a></td>
+  <td>Retail price versus Efficient Price, by country</td>
+</tr><tr class="status-ready">
+  <td>99</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>scroller</code></td>
+  <td><code>intro_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/04-intro-scroller-2/index.html">open</a></td>
+  <td>Fossil fuel subsidies</td>
+</tr><tr class="status-ready">
+  <td>100</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>vis</code></td>
+  <td><code>sdg12_challenges_scroller</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/05-sdg12-challenges-scroller/index.html">open</a></td>
+  <td>Fuel-related protests</td>
+</tr><tr class="status-ready">
+  <td>101</td>
+  <td>12</td>
+  <td>Energy sources</td>
+  <td><code>scroller</code></td>
+  <td><code>ch12_reforms_scroller</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_12/06-ch12-reforms-scroller/index.html">open</a></td>
+  <td>Are reforms possible?</td>
+</tr><tr class="status-ready">
+  <td>102</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_effects_of_climate_change_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/00-sdg13-effects-of-climate-change-scroller/index.html">open</a></td>
+  <td>775 million people are exposed to floods globally</td>
+</tr><tr class="status-ready">
+  <td>103</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_effects_of_climate_change_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2/index.html">open</a></td>
+  <td>Globally, almost 1.4 billion people in rural areas are exposed to agricultural d</td>
+</tr><tr class="status-ready">
+  <td>104</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_effects_of_climate_change_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/index.html">open</a></td>
+  <td>Globally, almost 8 percent of the population is exposed to cyclones</td>
+</tr><tr class="status-ready">
+  <td>105</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_effects_of_climate_change_scroller</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4/index.html">open</a></td>
+  <td>40 percent of the global population is exposed to heatwaves</td>
+</tr><tr class="status-ready">
+  <td>106</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>vis</code></td>
+  <td><code>sdg13_effects_of_climate_change</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/04-sdg13-effects-of-climate-change/index.html">open</a></td>
+  <td>57 percent of the world’s population is exposed to climate-related hazards</td>
+</tr><tr class="status-ready">
+  <td>107</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_icon_matrix</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/05-sdg13-icon-matrix/index.html">open</a></td>
+  <td>People can be highly vulnerable for several different reasons</td>
+</tr><tr class="status-ready">
+  <td>108</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>vis</code></td>
+  <td><code>sdg13_regional_exposure_vuln</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/06-sdg13-regional-exposure-vuln/index.html">open</a></td>
+  <td>The number of people at high risk from climate-related hazards varies by region</td>
+</tr><tr class="status-ready">
+  <td>109</td>
+  <td>13</td>
+  <td>Climate</td>
+  <td><code>scroller</code></td>
+  <td><code>sdg13_icon_matrix</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_13/07-sdg13-icon-matrix-2/index.html">open</a></td>
+  <td>Population at high risk depends on both exposure and vulnerability</td>
+</tr><tr class="status-ready">
+  <td>110</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>plastic_production</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/00-plastic-production/index.html">open</a></td>
+  <td>Plastic use projected to triple by 2060</td>
+</tr><tr class="status-ready">
+  <td>111</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>plastic_waste</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/01-plastic-waste/index.html">open</a></td>
+  <td>Mismanaged plastic quantity set to grow</td>
+</tr><tr class="status-ready">
+  <td>112</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>scroller</code></td>
+  <td><code>plastic_leakage</code></td>
+  <td>7</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/02-plastic-leakage/index.html">open</a></td>
+  <td>Plastic leakage into aquatic environments is projected to double </td>
+</tr><tr class="status-ready">
+  <td>113</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>plastic_discharge</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/03-plastic-discharge/index.html">open</a></td>
+  <td>Hotspots of plastic discharge into the oceans </td>
+</tr><tr class="status-ready">
+  <td>114</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>plastic_concentration</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/04-plastic-concentration/index.html">open</a></td>
+  <td>Large plastic accumulations in the oceans (garbage patches)</td>
+</tr><tr class="status-ready">
+  <td>115</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>north_pacific_garbage_patch</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/05-north-pacific-garbage-patch/index.html">open</a></td>
+  <td>The North Pacific Garbage Patch</td>
+</tr><tr class="status-ready">
+  <td>116</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>fish_mortality</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/06-fish-mortality/index.html">open</a></td>
+  <td>Plastic ingestion makes fish more vulnerable to disease</td>
+</tr><tr class="status-ready">
+  <td>117</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>plastic_seafood</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/07-plastic-seafood/index.html">open</a></td>
+  <td>Fish and seafood sold in stores can contain microplastics </td>
+</tr><tr class="status-ready">
+  <td>118</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>nitrogen_phosphorus</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/08-nitrogen-phosphorus/index.html">open</a></td>
+  <td>Increase in anthropogenic inputs of nitrogen and phosphorus</td>
+</tr><tr class="status-ready">
+  <td>119</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>phosphorus_increase</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/09-phosphorus-increase/index.html">open</a></td>
+  <td>Increase in total phosphorus concentration in rivers and streams due to human ac</td>
+</tr><tr class="status-ready">
+  <td>120</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>nitrogen_increase</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/10-nitrogen-increase/index.html">open</a></td>
+  <td>Increase in total nitrogen concentration in rivers and streams due to human acti</td>
+</tr><tr class="status-ready">
+  <td>121</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>chlorophyll_a_trend</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/11-chlorophyll-a-trend/index.html">open</a></td>
+  <td>Chlorophyll-a trend, 1997-2021</td>
+</tr><tr class="status-ready">
+  <td>122</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>chlorophyll_deviation</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/12-chlorophyll-deviation/index.html">open</a></td>
+  <td>Chlorophyll-a deviation from the global average</td>
+</tr><tr class="status-ready">
+  <td>123</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>phytoplankton_blooms</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/13-phytoplankton-blooms/index.html">open</a></td>
+  <td>Average yearly phytoplankton bloom count, 2002-2023</td>
+</tr><tr class="status-ready">
+  <td>124</td>
+  <td>14</td>
+  <td>Ocean pollution</td>
+  <td><code>vis</code></td>
+  <td><code>algal_blooms</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_14/14-algal-blooms/index.html">open</a></td>
+  <td>Algal blooms</td>
+</tr><tr class="status-ready">
+  <td>125</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>land_use</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/00-land-use/index.html">open</a></td>
+  <td>Arable lands occupy 14 million square kilometers</td>
+</tr><tr class="status-ready">
+  <td>126</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>scroller</code></td>
+  <td><code>arable_land_degradation</code></td>
+  <td>5</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/01-arable-land-degradation/index.html">open</a></td>
+  <td>Four processes degrading arable land</td>
+</tr><tr class="status-ready">
+  <td>127</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>aridity_classes</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/02-aridity-classes/index.html">open</a></td>
+  <td>Global distribution of aridity classes</td>
+</tr><tr class="status-ready">
+  <td>128</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>aridity_difference</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/03-aridity-difference/index.html">open</a></td>
+  <td>Most regions are getting more arid</td>
+</tr><tr class="status-ready">
+  <td>129</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>new_drylands</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/04-new-drylands/index.html">open</a></td>
+  <td>4.3 million km2 humid areas turned to drylands since 30 years ago</td>
+</tr><tr class="status-ready">
+  <td>130</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/05-image/index.html">open</a></td>
+  <td>Consequences of increased aridity on ecosystems and land degradation</td>
+</tr><tr class="status-ready">
+  <td>131</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>aridity_biodiversity_map</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/06-aridity-biodiversity-map/index.html">open</a></td>
+  <td>Where species are projected to lose their local habitat due to rising aridity</td>
+</tr><tr class="status-ready">
+  <td>132</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>protected_areas</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/07-protected-areas/index.html">open</a></td>
+  <td>The share of global protected lands needs to double to reach the 30% goal</td>
+</tr><tr class="status-ready">
+  <td>133</td>
+  <td>15</td>
+  <td>Life on land</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_15/08-image-2/index.html">open</a></td>
+  <td>Protected areas remain productive under increasingly dry conditions</td>
+</tr><tr class="status-ready">
+  <td>134</td>
+  <td>16</td>
+  <td>Artificial Intelligence (AI)</td>
+  <td><code>vis</code></td>
+  <td><code>ai_adoption</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_16/00-ai-adoption/index.html">open</a></td>
+  <td>Use of ChatGPT is 50 times higher in rich countries than in poorer countries</td>
+</tr><tr class="status-ready">
+  <td>135</td>
+  <td>16</td>
+  <td>Artificial Intelligence (AI)</td>
+  <td><code>vis</code></td>
+  <td><code>affordability_barrier</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_16/01-affordability-barrier/index.html">open</a></td>
+  <td>Mobile data is prohibitively expensive in low-income countries</td>
+</tr><tr class="status-ready">
+  <td>136</td>
+  <td>16</td>
+  <td>Artificial Intelligence (AI)</td>
+  <td><code>vis</code></td>
+  <td><code>digital_language_divide</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_16/02-digital-language-divide/index.html">open</a></td>
+  <td>Languages spoken in poorer countries are underrepresented in AI training data</td>
+</tr><tr class="status-ready">
+  <td>137</td>
+  <td>16</td>
+  <td>Artificial Intelligence (AI)</td>
+  <td><code>vis</code></td>
+  <td><code>digital_skills</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_16/03-digital-skills/index.html">open</a></td>
+  <td>Less than 5% of the population of low-income countries have the digital skills t</td>
+</tr><tr class="status-ready">
+  <td>138</td>
+  <td>16</td>
+  <td>Artificial Intelligence (AI)</td>
+  <td><code>scroller</code></td>
+  <td><code>exposure</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_16/04-exposure/index.html">open</a></td>
+  <td>Workers in low-income countries are less exposed to AI</td>
+</tr><tr class="status-ready">
+  <td>139</td>
+  <td>17</td>
+  <td>Data for Development</td>
+  <td><code>vis</code></td>
+  <td><code>survey_age</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_17/00-survey-age/index.html">open</a></td>
+  <td>Many economies rely on survey data that are more than five years old</td>
+</tr><tr class="status-ready">
+  <td>140</td>
+  <td>17</td>
+  <td>Data for Development</td>
+  <td><code>scroller</code></td>
+  <td><code>nigeria_poverty_extrapolation</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_17/01-nigeria-poverty-extrapolation/index.html">open</a></td>
+  <td>Nigeria’s rate of extreme poverty</td>
+</tr><tr class="status-ready">
+  <td>141</td>
+  <td>17</td>
+  <td>Data for Development</td>
+  <td><code>scroller</code></td>
+  <td><code>missing_children_data_waffles</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_17/02-missing-children-data-waffles/index.html">open</a></td>
+  <td>Key data are missing for millions of children </td>
+</tr><tr class="status-ready">
+  <td>142</td>
+  <td>17</td>
+  <td>Data for Development</td>
+  <td><code>scroller</code></td>
+  <td><code>spi_scroller</code></td>
+  <td>9</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_17/03-spi-scroller/index.html">open</a></td>
+  <td>Statistical performance varies widely across economies</td>
+</tr><tr class="status-ready">
+  <td>143</td>
+  <td>17</td>
+  <td>Data for Development</td>
+  <td><code>vis</code></td>
+  <td><code>spi_gdp_scatter</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_17/04-spi-gdp-scatter/index.html">open</a></td>
+  <td>Income matters, but it is not destiny</td>
+</tr><tr class="status-ready">
+  <td>144</td>
+  <td>99</td>
+  <td>Story Topic</td>
+  <td><code>vis</code></td>
+  <td><code>basic_scatterplot</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_99/00-basic-scatterplot/index.html">open</a></td>
+  <td>Global poverty could increase if current trends continue</td>
+</tr><tr class="status-ready">
+  <td>145</td>
+  <td>99</td>
+  <td>Story Topic</td>
+  <td><code>scroller</code></td>
+  <td><code>poverty_projections</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_99/01-poverty-projections/index.html">open</a></td>
+  <td>Global poverty projections</td>
+</tr><tr class="status-ready">
+  <td>146</td>
+  <td>99</td>
+  <td>Story Topic</td>
+  <td><code>scroller</code></td>
+  <td><code>basic_scatterplot_particles</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_99/02-basic-scatterplot-particles/index.html">open</a></td>
+  <td>Affordability of a diet depends on cost and income</td>
+</tr><tr class="status-ready">
+  <td>147</td>
+  <td>dashboard</td>
+  <td>Global Progress</td>
+  <td><code>scroller</code></td>
+  <td><code>indicators_progress</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_dashboard/00-indicators-progress/index.html">open</a></td>
+  <td>The global speed of progress is falling in many domains</td>
+</tr><tr class="status-ready">
+  <td>148</td>
+  <td>dashboard</td>
+  <td>Global Progress</td>
+  <td><code>scroller</code></td>
+  <td><code>dashboard_scroller</code></td>
+  <td>6</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_dashboard/01-dashboard-scroller/index.html">open</a></td>
+  <td></td>
+</tr><tr class="status-ready">
+  <td>149</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/00-image/index.html">open</a></td>
+  <td>Types of credentials</td>
+</tr><tr class="status-ready">
+  <td>150</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/01-image-2/index.html">open</a></td>
+  <td>Adults with ID by region</td>
+</tr><tr class="status-ready">
+  <td>151</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/02-image-3/index.html">open</a></td>
+  <td>Foundational coverage</td>
+</tr><tr class="status-ready">
+  <td>152</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/03-image-4/index.html">open</a></td>
+  <td>Population with and without ID</td>
+</tr><tr class="status-ready">
+  <td>153</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/04-image-5/index.html">open</a></td>
+  <td>Indicators of lacking ID</td>
+</tr><tr class="status-ready">
+  <td>154</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/05-image-6/index.html">open</a></td>
+  <td>Gender gap</td>
+</tr><tr class="status-ready">
+  <td>155</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/06-image-7/index.html">open</a></td>
+  <td>Barriers of lacking ID</td>
+</tr><tr class="status-ready">
+  <td>156</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/07-image-8/index.html">open</a></td>
+  <td>Barriers experienced</td>
+</tr><tr class="status-ready">
+  <td>157</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/08-image-9/index.html">open</a></td>
+  <td>Digital ID issued</td>
+</tr><tr class="status-ready">
+  <td>158</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/09-image-10/index.html">open</a></td>
+  <td>Digital ID ownership</td>
+</tr><tr class="status-ready">
+  <td>159</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/10-image-11/index.html">open</a></td>
+  <td>Digital ID usage</td>
+</tr><tr class="status-ready">
+  <td>160</td>
+  <td>id4d</td>
+  <td>ID4D</td>
+  <td><code>vis</code></td>
+  <td><code>image</code></td>
+  <td>0</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_id4d/11-image-12/index.html">open</a></td>
+  <td>Digital ID ownership and usage</td>
+</tr><tr class="status-ready">
+  <td>161</td>
+  <td>progress</td>
+  <td>Measuring Progress</td>
+  <td><code>scroller</code></td>
+  <td><code>poverty_progress_comparison</code></td>
+  <td>3</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_progress/00-poverty-progress-comparison/index.html">open</a></td>
+  <td>Which country made the most progress?</td>
+</tr><tr class="status-ready">
+  <td>162</td>
+  <td>progress</td>
+  <td>Measuring Progress</td>
+  <td><code>scroller</code></td>
+  <td><code>poverty_rate_change_scroller</code></td>
+  <td>20</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_progress/01-poverty-rate-change-scroller/index.html">open</a></td>
+  <td>The relationship between changes in poverty and levels of poverty</td>
+</tr><tr class="status-ready">
+  <td>163</td>
+  <td>progress</td>
+  <td>Measuring Progress</td>
+  <td><code>scroller</code></td>
+  <td><code>projection_country</code></td>
+  <td>4</td>
+  <td><span class="pill">ready</span></td>
+  <td><a href="chapters/goal_progress/02-projection-country/index.html">open</a></td>
+  <td>Possible poverty targets for Côte d'Ivoire</td>
+</tr>
+    </tbody>
+  </table>
+  <script>
+    const q = document.getElementById('q');
+    const rows = [...document.querySelectorAll('#tb tr')];
+    q.addEventListener('input', () => {
+      const s = q.value.toLowerCase();
+      rows.forEach(r => {
+        r.classList.toggle('hidden', s && !r.textContent.toLowerCase().includes(s));
+      });
+    });
+  </script>
+</body>
+</html>

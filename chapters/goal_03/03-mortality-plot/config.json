@@ -1,0 +1,27 @@
+{
+  "type": "vis",
+  "graphic": "mortality_plot",
+  "title": "Maternal Mortality vs Neonatal Mortality (2023)",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "visSize": "default",
+  "x_title": "Neonatal Mortality Rate (per 1,000 live births)",
+  "x_unit": "",
+  "y_title": "Maternal Mortality Ratio (per 100,000 live births)",
+  "y_unit": "",
+  "data_download": "03_data_mortality_plot.csv",
+  "data": "1-TZbOllJkAX7Z_iNvx9IJVJfvuEbDv-LVUDZp4aPnfY",
+  "translationPrefix": "goal_03.content.#16",
+  "_meta": {
+    "index": 16,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/03-mortality-plot",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

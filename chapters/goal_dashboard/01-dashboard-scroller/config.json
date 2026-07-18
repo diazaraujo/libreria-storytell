@@ -1,0 +1,97 @@
+{
+  "type": "scroller",
+  "graphic": "dashboard_scroller",
+  "title": "",
+  "subtitle": "",
+  "disableFooter": "true",
+  "source": "Source of the data",
+  "visSize": "fullScreen",
+  "visdescription": "Interactive dashboard showing how much progress countries have made on development indicators over the last 10 years. It allows users to explore different options to compare progress. ",
+  "readstoryon": "Read Story on",
+  "readmore": "Read more on measuring progress",
+  "indicator": "indicator",
+  "include_countries": "Countries without speed",
+  "include_typical": "Typical progress",
+  "show": "Show",
+  "hide": "hide",
+  "speed": "Speed of progress",
+  "change": "Absolute change",
+  "regression": "reversal",
+  "standstill": "standstill",
+  "slow": "slow",
+  "typical": "typical",
+  "fast": "fast",
+  "veryfast": "very fast",
+  "view": "View",
+  "map": "Map",
+  "diff": "Difference Grid",
+  "ranking": "Ranking",
+  "rank": "Rank by",
+  "latest": "Latest value",
+  "start": "Start value",
+  "value": "value",
+  "progress": "progress",
+  "highlight": "Highlight",
+  "country": "country",
+  "choose": "Choose",
+  "each": "each ",
+  "explanation1": "= one data point",
+  "explanation2": "in one country in one year",
+  "since": "since",
+  "starting": "for countries with similar",
+  "in_label": "in",
+  "improvement": "↑ Improvement",
+  "fallback": "No progress speed data for this goal. Switch goal to see progress speed.",
+  "slowcountry": "slow progress",
+  "typicalcountry": "typical progress",
+  "fastcountry": "fastest progress",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "intro",
+      "text": "In the Atlas, each square represents a data point for a particular country, year, and development indicator. You can change the selected indicator in the dropdown in the top left of the screen. ↖️",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "indicator",
+      "text": "This shows the [emphasis: latest available values] for the [emphasis: {selectedDashboardIndicator}] across countries, with larger squares signifying higher values. ",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "progress_top",
+      "text": "Current outcomes do not reveal how much progress has been made. In this illustrative chart, a dark triangle represents the latest observed value, while a transparent triangle represents the level the country would have reached under the typical pace of progress between 2015 and the last year with data. When the dark triangle lies ahead of the transparent one, the country’s progress is faster than typical.",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "progress_comparison",
+      "text": "Let’s look at a [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(180,175,154);\">slow-</span>], a [emphasis: <span style=\"background-color: rgb(255,221,146);\">typical-</span>], and a [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,161,196);\">fast-</span>][emphasis: progressing country]. For the country with [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,161,196);\">fast</span>] progress, the dark triangle is ahead of the transparent triangle, so the country is outperforming the typical pattern. For the [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(180,175,154);\">slow</span>] country, outcomes are worse than they would have been under the typical pace of progress. ",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#3"
+    },
+    {
+      "type": "scene",
+      "id": "progress_all",
+      "text": "Now, let’s [emphasis: compare the speed of progress of all countries]. The countries on the left made the slowest progress, often reversing outcomes, while those on  the right made the fastest progress.",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#4"
+    },
+    {
+      "type": "scene",
+      "id": "explore",
+      "text": "Some countries that were far apart 10 years ago have similar outcomes today because they have progressed at different speeds. See how this carries through in other Atlas of Global Development Indicators by changing the selected indicator in the dropdown in the top left of the screen ↖️. You can bring up details by hovering over the countries or highlight individual countries in the dropdown in the top right of the screen<span style=\"color: rgb(68,71,70); background-color: rgb(255,255,255);\">.</span><span id=\"explore-scene\" />",
+      "translationPrefix": "goal_dashboard.content.#11.scenes.#5"
+    }
+  ],
+  "translationPrefix": "goal_dashboard.content.#11",
+  "_meta": {
+    "index": 148,
+    "chapterId": "dashboard",
+    "chapterTitle": "Global Progress",
+    "dir": "chapters/goal_dashboard/01-dashboard-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

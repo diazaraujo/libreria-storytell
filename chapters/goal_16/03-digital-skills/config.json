@@ -1,0 +1,32 @@
+{
+  "type": "vis",
+  "graphic": "digital_skills",
+  "title": "Less than 5% of the population of low-income countries have the digital skills to use AI",
+  "subtitle": "Population with digital skills, 2023",
+  "source": "<a href=\"https://doi.org/10.1596/978-1-4648-2264-3\" target=\"_blank\" rel=\"external\">World Bank (2025)</a>, based on data from the  <a href=\"https://www.itu.int/en/Pages/default.aspx\" target=\"_blank\" rel=\"external\">International Telecommunication Union (ITU</a>). Note: Basic digital skills refer to the basic use of digital devices, email communication, web search, and online transactions. Intermediate skills refer to the use of software and data management. Advanced skills refer to data analysis, software development, and high-level computing competences. ",
+  "visdescription": "Chart showing the share of population with basic, intermediate, and advanced digital skills, by income group.",
+  "visSize": "small",
+  "data_download": "digitalskills.csv",
+  "data": "16G0AKko7ZiyeaGZMz69lybOG_SMC-e2-gbLZSdLUWeA",
+  "prompt_text": "Does everyone have the skills to use AI?",
+  "legendLessThanBasic": "Less than basic digital skills",
+  "legendBasic": "Basic digital skills",
+  "legendIntermediate": "Intermediate digital skills",
+  "legendAdvanced": "Advanced digital skills",
+  "lessThanBasicSkillsTooltipText": "[emphasis: Basic digital skills] refers to the basic use of digital devices, email communication, web search, and online transactions.",
+  "basicSkillsTooltipText": "[emphasis: Basic digital skills] refers to the basic use of digital devices, email communication, web search, and online transactions.",
+  "intermediateSkillsTooltipText": "[emphasis: Intermediate skills] refers to use of software and data management.",
+  "advancedSkillsTooltipText": "[emphasis: Advanced skills] refers to data analysis, software development and high-level computing competences.",
+  "translationPrefix": "goal_16.content.#28",
+  "_meta": {
+    "index": 137,
+    "chapterId": "16",
+    "chapterTitle": "Artificial Intelligence (AI)",
+    "dir": "chapters/goal_16/03-digital-skills",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

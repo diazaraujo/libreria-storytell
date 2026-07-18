@@ -1,0 +1,51 @@
+{
+  "type": "scroller",
+  "graphic": "e_coli",
+  "title": "<i>E. coli</i> contamination at point of use is worse than at point of water collection",
+  "subtitle": "30 countries with the largest shares of population using drinking water sources with high or very high fecal contamination risk (% of population)",
+  "source": "<a href=\"https://washdata.org/reports/jmp-2025-wash-households\" target=\"_blank\" rel=\"external\">Progress on household drinking water,sanitation and hygiene 2000–2024: special focus on inequalities.</a> Geneva: World Health Organization (WHO) and the United Nations Children’s Fund (UNICEF), 2025.",
+  "visdescription": "Dumbbell chart comparing E. coli contamination levels at point of collection and point of use, showing contamination at source and after water is stored or handled in households in 30 countries. The difference between these two stages, highlights how contamination can change between collection and use.",
+  "visSize": "default",
+  "data_download": "Ecoli_PoC_PoU_Scatter (High+Very High).csv",
+  "data": "1gbR8q_t54y-HLl8OHW0pqmbbKHrQlWvm0u6V9j6_zS8",
+  "keyFact": "In 26 countries",
+  "keyFactLabel": "more than half of the population is exposed to drinking water contaminated with high or very high levels of E. coli.",
+  "pointOfCollectionLabel": "Point of collection",
+  "pointOfUseLabel": "Point of use",
+  "xAxisTitle": "Share of population at risk of contamination",
+  "xAxisTitleSmall": "At risk of contamination",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1",
+      "text": "Let’s look at the shares of people who use water with high and very high <i>E. coli </i> risk levels at[emphasis: <span style=\"background-color: rgb(236,182,59);\">point of collection</span>] (the household’s primary drinking water source, such as a tap or well).  In 15 countries, at least half the population collects drinking water that already has high or very high levels of <i>E. coli</i> contamination.  ",
+      "translationPrefix": "goal_06.content.#36.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2",
+      "text": "Contamination rates are even higher when measured at [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(141,65,23);\">point of use</span>] (the water actually consumed within the household). In 26 countries, more than half the population drinks water with high or very high risk of <i>E.coli</i> contamination, as shown by household-level tests.  ",
+      "translationPrefix": "goal_06.content.#36.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3",
+      "text": "In 28 countries, contamination levels [emphasis: at ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(141,65,23);\">point of use</span>] were higher than at [emphasis: <span style=\"background-color: rgb(236,182,59);\">point of collection</span>]. For example, in [emphasis: Malawi], 36 percent of the population are exposed to high or very high levels of contamination at [emphasis: <span style=\"background-color: rgb(236,182,59);\">point of collection</span>], rising to 81 percent at [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(141,65,23);\">point of use</span>].  ",
+      "translationPrefix": "goal_06.content.#36.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#36",
+  "_meta": {
+    "index": 47,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/07-e-coli",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

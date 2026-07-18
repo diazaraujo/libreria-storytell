@@ -1,0 +1,25 @@
+{
+  "type": "vis",
+  "graphic": "sdg5_turkiye_fertility",
+  "title": "Türkiye’s fertility rate fell faster than the global average",
+  "subtitle": "Fertility rate (births per woman)",
+  "textParagraph": "In 1960, <span data-color-id=\"cat8\" class=\"cat8\">Türkiye’s fertility</span> rate was above the <span data-color-id=\"cat6\" class=\"cat6\">global average</span>. This has since steadily declined, reaching the global average in the 1990s and dropping below it by 2000.",
+  "source": "<a href=\"https://population.un.org/wpp/\" target=\"_blank\" rel=\"external\">World Population Prospects</a>, UN Population Division; Statistical databases and publications from national statistical offices, National statistical offices; Demographic Statistics, Eurostat (ESTAT). Retrieved from World Development Indicators (<a href=\"https://www.google.com/url?q=https://data.worldbank.org/indicator/SP.DYN.TFRT.IN&sa=D&source=docs&ust=1775014570014952&usg=AOvVaw0zqleaamDFNRKEVv488l_i\" target=\"_blank\" rel=\"external\">SP.DYN.TFRT.IN</a>) ",
+  "visdescription": "This is a line chart with x-axis ranging from 1960 to 2023 and y-axis showing fertility rate, births per woman ranging from 0 to 7. There are two lines - one is the global average and the other is for Türkiye.",
+  "visSize": "default",
+  "data_download": "05_data_flfp_drivers_fertility.csv",
+  "data": "1irC1kkR0IeMj7kI_rXiCOk3G7Qa3txP6YSeUjlf7JeI",
+  "indicator_360": "WB_WDI_SP_DYN_TFRT_IN",
+  "translationPrefix": "goal_05.content.#19",
+  "_meta": {
+    "index": 33,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/03-sdg5-turkiye-fertility",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

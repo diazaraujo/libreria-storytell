@@ -1,0 +1,60 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_icon_matrix",
+  "title": "People can be highly vulnerable for several different reasons",
+  "subtitle": "Number and share of vulnerable people, by dimension, 2024",
+  "source": "<a href=\"https://scorecard.worldbank.org/en/data/indicator-detail/EN_CLM_VULN?orgCode=ALL&refareatype=REGION&refareacode=ACW&age=_T&disability=_T&sex=_T\" target=\"_blank\" rel=\"external\">World Bank Scorecard Indicator</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "Figure showing the number of vulnerable people globally as well as by region and country. The figure also breaks down the vulnerability by six of its dimensions, showing the share of the population classified as vulnerable due to lack of access to clean water, electricity or financial services or lack of income, education, or social protection.",
+  "visSize": "default",
+  "disableScreenshot": "true",
+  "data_download": "climate_vulnerability.zip",
+  "data": "1jnqFJhuylAsTw4s3XqgNSyLhIP4xF_nono5w93QKnSQ",
+  "keyFact": "2.8 billion",
+  "keyFactLabel": "people live in highly vulnerable conditions globally",
+  "label__x_axis": "Each group is 1000 squares",
+  "label__legend": "1 square =$x people",
+  "label__vul_atleastone": "Vulnerable population (in at least one dimension)",
+  "label__vul_inc": "Income vulnerability",
+  "label__vul_educ": "Education vulnerability",
+  "label__vul_fin": "Financial inclusion vulnerability",
+  "label__vul_sp": "Social protection vulnerability",
+  "label__vul_elec": "Electricity vulnerability",
+  "label__vul_water": "Water vulnerability",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "multi__grid__vuln__wld",
+      "text": "Each row has 1,000 squares, and each individual square represents 8 million people. More than one-third of the[emphasis: <span data-color-id=\"WLD\" class=\"WLD\">world’s population</span>]— 2.8 billion people—are vulnerable in at least one dimension, and almost half of these are vulnerable in two or more dimensions. [emphasis: Lack of social protection] is the most common source of vulnerability (20 percent of the world’s population). [emphasis: Lack of financial inclusion], [emphasis: lack of education], and living in [emphasis: extreme poverty due to low income] are the next leading causes of vulnerability. ",
+      "translationPrefix": "goal_13.content.#25.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "multi__grid__vuln__nac",
+      "text": "Levels of vulnerability range from 1.7–94 percent across regions. In [emphasis: <span data-color-id=\"NAC\" class=\"NAC\">North America</span>], only 1.7 percent of the population is vulnerable. These are people living in extreme poverty ([emphasis: lack of income]) or those who [emphasis: lack basic education].",
+      "translationPrefix": "goal_13.content.#25.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "multi__grid__vuln__ssf",
+      "text": "In [emphasis: <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa,</span>] a staggering 94 percent of the population is vulnerable. [emphasis: Lack of social protection] impacts almost 3 in 4 people and[emphasis:  lack of access to electricity ]or [emphasis: extreme poverty] affects almost half the population. ",
+      "translationPrefix": "goal_13.content.#25.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "multi__explore",
+      "text": "Select an economy or region to see the share of population and number of people that are vulnerable and the dimensions of vulnerability that are driving it.",
+      "translationPrefix": "goal_13.content.#25.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#25",
+  "_meta": {
+    "index": 107,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/05-sdg13-icon-matrix",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

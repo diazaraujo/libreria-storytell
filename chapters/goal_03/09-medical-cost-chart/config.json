@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "medical_cost_chart",
+  "title": "Exposure to Health-Related Financial Risk, by income, 2024",
+  "subtitle": "",
+  "source": "",
+  "visdescription": "",
+  "fin22d_title": "Most worrying financial issue: paying for medical costs in case of a serious illness or accident (% age 15+), by income, 2024",
+  "fin45c_title": "Borrowed for health or medical purposes (% age 15+), by income, 2024",
+  "data_download": "03_data_medical_cost_chart.csv",
+  "data": "1XSEldfi-NKJjAE4nXpr_BlSNsCZ3Bo_GJY4qSS0H4AA",
+  "translationPrefix": "goal_03.content.#37",
+  "_meta": {
+    "index": 22,
+    "chapterId": "03",
+    "chapterTitle": "Health",
+    "dir": "chapters/goal_03/09-medical-cost-chart",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

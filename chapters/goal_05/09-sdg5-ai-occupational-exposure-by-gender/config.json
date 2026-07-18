@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "sdg5_ai_occupational_exposure_by_gender",
+  "title": "Occupational exposure to AI is highest among women in high- and upper-middle-income countries",
+  "subtitle": "Occupational exposure to Artificial Intelligence, by gender and income group, 2025",
+  "gradient1": "Low exposure, high task variability",
+  "gradient2": "Moderate exposure, high task variability",
+  "gradient3": "Significant exposure, high task variability",
+  "gradient4": "Highest exposure, low task variability",
+  "y_axis_title": "Share of total employment",
+  "y_axis_units": "%",
+  "male": "Men",
+  "female": "Women",
+  "source": "Gmyrek et al. (2025). <a href=\"https://doi.org/10.54394/HETP0387\" target=\"_blank\" rel=\"external\">Generative AI and jobs: A refined global index of occupational exposure</a>. International Labour Organization. ",
+  "visdescription": "This is a stacked bar chart for the world and for the World Bank income groups by women and men showing the rate of exposure to AI by the level of risk.",
+  "visSize": "default",
+  "data_download": "ilo_ai_exposure_summary.csv",
+  "data": "1M43AbaYyQL6_Bdkemsog4a7gdHZqw9faSEUdKb6qag0",
+  "translationPrefix": "goal_05.content.#56",
+  "_meta": {
+    "index": 39,
+    "chapterId": "05",
+    "chapterTitle": "Gender and Jobs",
+    "dir": "chapters/goal_05/09-sdg5-ai-occupational-exposure-by-gender",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

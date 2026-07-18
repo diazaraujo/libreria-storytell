@@ -1,0 +1,49 @@
+{
+  "type": "scroller",
+  "graphic": "poverty_projections",
+  "title": "Global poverty projections",
+  "subtitle": "A fullScreen Scroller",
+  "visSize": "fullScreen",
+  "source": "Fullscreen scroller without particles (theme: light (alternatively: dark) <a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://www.worldbank.org/en/publication/macro-poverty-outlook\" target=\"_blank\" rel=\"external\">World Bank Macro and Poverty Outlook October 2025</a>, Mahler et al. (2025a), and <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. (2025b)</a>. ",
+  "y_axis_title": "Poverty rate",
+  "y_axis_units": "%",
+  "rate4": "Korea’s path of development",
+  "rate1": "Typical path",
+  "rateH": "Countries’ current path",
+  "global_poverty_rate": "Global poverty rate",
+  "visdescription": "Describe what the visualization shows",
+  "theme": "light (alternatively: dark)",
+  "data_download": "01_data_global_projections.zip",
+  "data": "1bUEYFUXwRG3-UGPMvGajgceJAJ_a6TMP7bkOUQmIROg",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "rate4",
+      "text": "You can use the colors from the sidebar or use the Highlight color from the Google Docs menu with the color picker to <span style=\"color: rgb(255,255,255); background-color: rgb(190,98,208);\">highlight parts of your text</span> and associate it with the visualization elements. If the color is too dark. make sure to change the text color to white too.",
+      "translationPrefix": "goal_99.content.#39.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "rate1",
+      "text": "Yet copying Korea’s trajectory will be difficult. If countries manage to make progress at the typical speed observed since 1950, there will still be around 8% poverty by 2050. ",
+      "translationPrefix": "goal_99.content.#39.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "rateH",
+      "text": "Unfortunately, over the past years the speed of global poverty reduction has slowed down. If countries follow their current speed of progress, global poverty will soon start to increase.",
+      "translationPrefix": "goal_99.content.#39.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_99.content.#39",
+  "_meta": {
+    "index": 145,
+    "chapterId": "99",
+    "chapterTitle": "Story Topic",
+    "dir": "chapters/goal_99/01-poverty-projections",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

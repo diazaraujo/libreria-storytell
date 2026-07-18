@@ -1,0 +1,29 @@
+{
+  "type": "vis",
+  "graphic": "pay_beeswarm",
+  "title": "In most countries, hourly earnings are higher in urban than rural areas",
+  "subtitle": "Share of hourly earnings of urban population above rural population[footnote: A score above 0 means urban pay is higher, below 0 means rural pay is higher.]",
+  "visSize": "small",
+  "source": "International Labour Organization. (2025). SDG Labour Market Indicators (ILOSDG), <a href=\"https://rshiny.ilo.org/dataexplorer49/?lang=en&segment=indicator&id=EAR_4HRL_SEX_GEO_CUR_NB_A&channel=ilostat\" target=\"_blank\" rel=\"external\">EAR_4HRL_SEX_GEO_CUR_NB_A</a>.",
+  "visdescription": "This is a beeswarm chart with each dot representing a country. The x-axis shows how much higher or lower are urban wages compared to rural wages.",
+  "textParagraph": "In 66 of the 79 countries for which we have data (80 percent), average hourly wages are higher in urban areas than in rural areas. For example, in <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Angola</span> and <span data-color-id=\"LCN\" class=\"LCN\">Peru</span>, average hourly wages in urban areas are 40 percent higher than rural areas.[reference: paydata]",
+  "theme": "light",
+  "data_download": "11_data_pay_beeswarm.csv",
+  "data": "1dkRx6AbILx1nI4m1sJ2EaQp45E3ajOxnxSmjfs7sjJk",
+  "x_title": "",
+  "x_units": "",
+  "label_urban": "More pay in [emphasis: urban] jobs",
+  "label_rural": "More pay in [emphasis: rural] jobs",
+  "translationPrefix": "goal_11.content.#26",
+  "_meta": {
+    "index": 90,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/05-pay-beeswarm",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

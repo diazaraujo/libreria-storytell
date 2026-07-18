@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statistical performance varies widely across economies — Atlas replica scaffold</title>
+  <link rel="stylesheet" href="../../../shared/shell.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="crumbs">
+        <a href="../../../gallery.html">Atlas replicas</a>
+        <span>/</span>
+        <a href="../../../dev/playground.html">Component kit</a>
+        <span>/</span>
+        <span>17 · Data for Development</span>
+        <span>/</span>
+        <code>spi_scroller</code>
+      </div>
+      <h1 id="title">Statistical performance varies widely across economies</h1>
+      <p class="sub" id="subtitle">The SPI measures the strength of statistical systems</p>
+      <div class="badges">
+        <span class="badge type">scroller</span>
+        <span class="badge status status-ready">ready</span>
+        <span class="badge">scenes: 9</span>
+        <span class="badge">family: beeswarm</span>
+      </div>
+    </header>
+
+    <div class="stage" id="stage">
+      <div id="chart" class="chart" aria-live="polite">
+        <div class="placeholder" id="placeholder">
+          <strong>Scaffold listo para desarrollar</strong>
+          <p>Edita <code>main.js</code> usando el kit en <code>shared/components/</code>.</p>
+          <p class="hint-sm">Guía: <code>docs/DEV.md</code> · Playground: <code>dev/playground.html</code></p>
+        </div>
+      </div>
+      <div class="story-card" id="story-card" hidden>
+        <div class="scene-meta" id="scene-meta"></div>
+        <div id="story-text"></div>
+      </div>
+      <div class="dots-progress" id="progress" hidden></div>
+    </div>
+
+    <footer class="bar">
+      <div class="source" id="source"></div>
+      <div class="nav" id="nav" hidden>
+        <button type="button" id="btn-prev">←</button>
+        <span class="counter" id="counter">1 / 1</span>
+        <button type="button" id="btn-next">→</button>
+      </div>
+    </footer>
+  </div>
+
+  <aside class="devtools" id="devtools">
+    <details>
+      <summary>Pipeline metadata · cómo implementar</summary>
+      <pre id="meta-pre"></pre>
+      <p style="font-size:12px;color:#6a7781;margin:8px 0 0">
+        Patrón: <code>window.AtlasReplica = { ready:true, async render(scene, ctx){…} }</code>
+        · Datos en <code>./data/</code> · Config en <code>config.json</code>
+      </p>
+    </details>
+  </aside>
+
+  <!-- Shared kit (order matters) -->
+  <script src="../../../shared/wb-colors.js"></script>
+  <script src="../../../shared/income-map.js"></script>
+  <script src="../../../shared/beeswarm.js"></script>
+  <script src="../../../shared/svg.js"></script>
+  <script src="../../../shared/load.js"></script>
+  <script src="../../../shared/components/Axis.js"></script>
+  <script src="../../../shared/components/LineChart.js"></script>
+  <script src="../../../shared/components/BeeswarmChart.js"></script>
+  <script src="../../../shared/components/Waffle.js"></script>
+  <script src="../../../shared/components/Scatter.js"></script>
+  <script src="../../../shared/components/index.js"></script>
+  <script src="../../../shared/auto-render.js"></script>
+  <script src="../../../shared/shell.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

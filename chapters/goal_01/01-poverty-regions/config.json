@@ -1,0 +1,31 @@
+{
+  "type": "vis",
+  "graphic": "poverty_regions",
+  "title": "Extreme poverty has fallen in most regions since 1950",
+  "subtitle": "Poverty rate by region (%)",
+  "source": "<a href=\"https://pip.worldbank.org/home\" target=\"_blank\" rel=\"external\">World Bank Poverty and Inequality Platform</a>, <a href=\"https://doi.org/10.1596/1813-9450-11350\" target=\"_blank\" rel=\"external\">Mahler et al. 2026</a>, <a href=\"https://hdl.handle.net/10986/43363\" target=\"_blank\" rel=\"external\">Mahler et al. 2025</a>.",
+  "y_axis_title": "Poverty rate",
+  "y_axis_units": "%",
+  "visdescription": "Global extreme poverty has fallen from about 60 percent in 1950 to about 10 percent in 2025",
+  "theme": "light (alternatively: dark)",
+  "data_download": "01_data_regional_poverty.csv",
+  "data": "1S9d3aNKSvPk0XMmqK9-SrWnlVUcmvhfXvVRYeM3LU54",
+  "keyFact": "10%",
+  "keyFactLabel": "of people worldwide live in extreme poverty today, compared to 60% in 1950",
+  "indicator_360": "WB_WDI_SI_POV_DDAY",
+  "translationPrefix": "goal_01.content.#7",
+  "_meta": {
+    "index": 1,
+    "chapterId": "01",
+    "chapterTitle": "Extreme Poverty",
+    "dir": "chapters/goal_01/01-poverty-regions",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "interactive draw + scroller choreography + venn + scatter"
+  },
+  "scenes": []
+}

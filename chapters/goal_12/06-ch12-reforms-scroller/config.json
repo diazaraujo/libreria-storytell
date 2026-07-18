@@ -1,0 +1,48 @@
+{
+  "type": "scroller",
+  "graphic": "ch12_reforms_scroller",
+  "title": "Are reforms possible?",
+  "subtitle": "",
+  "source": "Hoy et al. (2026) [reference: hoy]",
+  "visdescription": "Describe what the visualization shows",
+  "visSize": "default",
+  "data_download": "Fossil fuel subsidy reform.zip",
+  "data": "1qJZnfJZLr5MWLHtqvdkn3oaXuBsFOuFrXxFB13KFOhA",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "existence",
+      "text": "A recent study finds substantial knowledge gaps about energy subsidies from the responses of 37,000 people across 12 middle-income countries. About [emphasis: half] of the respondents did not know that energy subsidies existed in their respective countries",
+      "translationPrefix": "goal_12.content.#41.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "consequence",
+      "text": "[emphasis: Less than half] of the respondents knew that subsidies are inefficient (efficient argument), are regressive (equity argument), and worsen climate change air pollution (environment argument)",
+      "translationPrefix": "goal_12.content.#41.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "unconditional",
+      "text": "When informed about the negative consequences of fossil fuel subsidies, [emphasis: thirty percent] of the respondents were in support of reducing fossil fuel subsidies",
+      "translationPrefix": "goal_12.content.#41.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "conditional",
+      "text": "However, when subsidies removed would be invested into infrastructure, education, and healthcare, and other programs to support the poor, [emphasis: 95 percent] of respondents supported the reduction of fossil fuel subsidies and are willing to pay a higher energy prices",
+      "translationPrefix": "goal_12.content.#41.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_12.content.#41",
+  "_meta": {
+    "index": 101,
+    "chapterId": "12",
+    "chapterTitle": "Energy sources",
+    "dir": "chapters/goal_12/06-ch12-reforms-scroller",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

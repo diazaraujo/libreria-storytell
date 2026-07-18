@@ -1,0 +1,27 @@
+{
+  "type": "vis",
+  "graphic": "education_quality_details",
+  "title": "Learning-adjusted years of schooling are,  on average, only two-thirds as high as unadjusted years of schooling",
+  "subtitle": "",
+  "years_title": "Years of schooling",
+  "years_label": "years",
+  "lays_title": "Learning-adjusted years of schooling",
+  "textParagraph": "In <span data-color-id=\"SSF\" class=\"SSF\">Mali</span>, for example, the number of years of schooling a child born today can expect to achieve is low, at around 4.7 years. But these 4.7 years of schooling are equivalent to the learning that takes place in just 2.4 years in the highest-performing countries. In the <span data-color-id=\"EAS\" class=\"EAS\">Philippines</span> a child born today can expect to achieve around 11 years of schooling, but this amounts to only 6.4 in learning-adjusted years. In <span data-color-id=\"LCN\" class=\"LCN\">Brazil</span>, children’s expected years of schooling stand at 12.7 years, but this is only 8.3 in learning-adjusted years. In <span data-color-id=\"EAS\" class=\"EAS\">Korea</span>, the gap between actual years and learning-adjusted years of schooling is relatively small, indicating relatively high learning at school.",
+  "source": "World Bank. 2026. <a href=\"https://humancapital.worldbank.org/hciplus/\" target=\"_blank\" rel=\"external\">Human Capital Index Plus</a>. ",
+  "visdescription": "Bar graph showing expected years of schooling and learning-adjusted years of schooling for selected countries.",
+  "data_download": "04_data_education_quality_details.csv",
+  "data": "1K4YTrY9-VyFnwz9ArraOKtCM8jmYiTczREV4Lcu7dCc",
+  "indicator_360": "HD_HCIP_LAYS",
+  "translationPrefix": "goal_04.content.#14",
+  "_meta": {
+    "index": 25,
+    "chapterId": "04",
+    "chapterTitle": "Learning and Work",
+    "dir": "chapters/goal_04/02-education-quality-details",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

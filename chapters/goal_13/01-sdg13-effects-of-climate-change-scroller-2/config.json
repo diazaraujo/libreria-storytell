@@ -1,0 +1,47 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_effects_of_climate_change_scroller",
+  "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultural drought ",
+  "subtitle": "Areas and share of population exposed to agricultural drought events.[footnote:  An area is defined as exposed to agricultural drought if at least once in the last 39 years more than 30 percent of cropland or pasture is lost due to drought.]",
+  "source": "<a href=\"https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en\" target=\"_blank\" rel=\"external\">Food and Agriculture Organization of the United Nations</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "Share of population exposed to agricultural drought and location of areas exposed to agricultural drought.",
+  "textParagraph": "",
+  "weatherEventToggleText": "Exposed areas",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "data_download": "20260130_hazard_data_prepared.csv",
+  "data": "1b0tjeAlBqbSgpOKmVE4xMafDRNvsUWG7_C_jDMsorFI",
+  "legend_title": "Population exposed",
+  "legend_units": "%",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "drought__sat__wld",
+      "text": "An [emphasis: <span style=\"color: rgb(4,1,16);\">area</span>] is defined as exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">agricultural drought</span>] if more than 30 percent of cropland or pasture experienced severe drought in at least one year in the past 39 years.[footnote:  Measured using the FAO’s Agricultural Stress Index .[reference: FAO2] [reference: VanHoolst] ] When this threshold is exceeded, agricultural production losses are expected. [emphasis: Land affected by agricultural droughts has more than doubled in the last 40 years.]",
+      "translationPrefix": "goal_13.content.#12.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "drought__sat__bbox1",
+      "text": "[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Agricultural drought</span>] is most prevalent in arid and semi-arid regions. In Eswatini, Lesotho, Namibia, and Zimbabwe, more than half the population is exposed to drought.",
+      "translationPrefix": "goal_13.content.#12.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "drought__vec__wld",
+      "text": "Globally, almost 1.4 billion people are exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">agricultural drought</span>][reference: WB2], which can halt or reverse progress in poverty reduction and food security. Beyond agriculture, prolonged droughts also contribute to environmental degradation, forced migration, and heightened social tensions.",
+      "translationPrefix": "goal_13.content.#12.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#12",
+  "_meta": {
+    "index": 103,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

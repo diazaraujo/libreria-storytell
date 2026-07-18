@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "slum_waffle",
+  "title": "Globally, the number of people living in slums increased by 25% in just four years",
+  "subtitle": "Total number of people living in slums",
+  "visSize": "small",
+  "source": "<a href=\"https://data.unhabitat.org/\" target=\"_blank\" rel=\"external\">Urban Indicators Database</a>, UN Human Settlements Programme (UN-Habitat). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS\" target=\"_blank\" rel=\"external\">EN.POP.SLUM.UR.ZS</a>).",
+  "visdescription": "This is a waffle chart. It shows the number of people living in slums in 2018 and 2022 where each square of the waffles represents 1 million people.",
+  "square_represents": "Every square represents 1 million people living in slums",
+  "theme": "light",
+  "data_download": "11_data_slum_waffle.csv",
+  "data": "1EtgWA9Bb_PnYwNGkGNkL2fgBJXmfQ70oHJbVYHluZYo",
+  "keyFact": "Over 1 billion",
+  "keyFactLabel": "people live in slums today.",
+  "indicator_360": "WB_WDI_EN_POP_SLUM_UR_ZS",
+  "translationPrefix": "goal_11.content.#40",
+  "_meta": {
+    "index": 93,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/08-slum-waffle",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

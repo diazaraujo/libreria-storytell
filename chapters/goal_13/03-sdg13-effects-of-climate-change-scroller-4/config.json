@@ -1,0 +1,47 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_effects_of_climate_change_scroller",
+  "title": "40 percent of the global population is exposed to heatwaves",
+  "subtitle": "Areas and share of population exposed to heatwaves[footnote:   A heatwave occurs when the 5-day average maximum Wet-Bulb Globe Temperature (WBGT) exceeds 33 degrees. ]",
+  "source": "<a href=\"https://climateknowledgeportal.worldbank.org/\" target=\"_blank\" rel=\"external\">World Bank Climate Change Portal</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "Share of population exposed to heatwaves and location of areas exposed to heatwaves",
+  "textParagraph": "",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "data_download": "20260130_hazard_data_prepared.csv",
+  "data": "1b0tjeAlBqbSgpOKmVE4xMafDRNvsUWG7_C_jDMsorFI",
+  "weatherEventToggleText": "Exposed areas",
+  "legend_title": "Population exposed",
+  "legend_units": "%",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "heatwave__sat__wld",
+      "text": "The impact of [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>] on the human body depends on other factors, such as humidity and wind. So, instead of using a simple temperature measure, we use the Wet-Bulb Globe Temperature (WBGT), which better captures the effect of temperature on the human body. If the WBGT exceeds 33°C, it becomes difficult for healthy humans to maintain a normal body temperature, leading to increased mortality and hospitalizations. The capacity to undertake physical work is also halved.[reference: WB2] ",
+      "translationPrefix": "goal_13.content.#17.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "heatwave__sat__bbox",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Heatwaves</span>] are mostly prevalent in the tropics. More than three-quarters of the global population exposed to heatwaves live in four populous countries in Asia: India, China, Pakistan, and Bangladesh. ",
+      "translationPrefix": "goal_13.content.#17.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "heatwave__vec__wld",
+      "text": "Globally, 40 percent of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>]. The share of people exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>] is especially high in countries around the Equator in Africa, South-East Asia and the Arabian peninsula.",
+      "translationPrefix": "goal_13.content.#17.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#17",
+  "_meta": {
+    "index": 105,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

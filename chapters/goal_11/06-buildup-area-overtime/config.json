@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "buildup_area_overtime",
+  "title": "Built-up area in Addis Ababa has more than tripled in the last five decades",
+  "subtitle": "Built-up area (km²) and population of Addis Ababa, 1975–2025",
+  "visSize": "small",
+  "source": "Pesaresi et al. (2024). <a href=\"https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2390454\" target=\"_blank\" rel=\"external\">Advances on the Global Human Settlement Layer by joint assessment of Earth Observation and population survey data. International Journal of Digital Earth</a>, 17(1).",
+  "textParagraph": "In 1975, Addis Ababa had nearly 39 square kilometers of built-up area. By 2025, it had grown to 128 square kilometers.[reference: ghsl]",
+  "visdescription": "This chart has two parts. One part shows the map of Addis Ababa and the built-up area over time with a time slider. The other part of the chart shows the growth in population in this city over the same time period with a line chart. ",
+  "lable_legend": "Built-up surface per 100-meter cell",
+  "label_pop": "Total population",
+  "label_build_up": "Total built-up area",
+  "unit_build_up": "km²",
+  "data_download": "11_data_buildup_area_overtime.zip",
+  "data": "1_Z20p5irWqpsKg_7xZ7PKMrEZHstUYxe6fMlU6GhkAM",
+  "translationPrefix": "goal_11.content.#31",
+  "_meta": {
+    "index": 91,
+    "chapterId": "11",
+    "chapterTitle": "Urban Development",
+    "dir": "chapters/goal_11/06-buildup-area-overtime",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

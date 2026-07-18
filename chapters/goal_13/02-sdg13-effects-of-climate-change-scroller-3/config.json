@@ -1,0 +1,47 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_effects_of_climate_change_scroller",
+  "title": "Globally, almost 8 percent of the population is exposed to cyclones",
+  "subtitle": "Area and share of population exposed to cyclones of category 2 or higher[footnote:  The strength of a cyclone is assessed on a scale of 1–5 using the Saffir-Simpson Hurricane Wind Scale.[reference: NOAA1]. Cyclones with wind speeds over 154 km/h are Category 2+.]",
+  "source": "STORM[reference: Bloemendaal1], <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "Share of population exposed to cyclones and location of areas exposed to cyclones ",
+  "textParagraph": "",
+  "visSize": "fullScreen",
+  "disableScreenshot": "true",
+  "weatherEventToggleText": "Exposed areas",
+  "data_download": "20260130_hazard_data_prepared.csv",
+  "data": "1b0tjeAlBqbSgpOKmVE4xMafDRNvsUWG7_C_jDMsorFI",
+  "legend_title": "Population exposed",
+  "legend_units": "%",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "cyclones__sat__wld",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Cyclones</span>] of category 2 or above[footnote:  Cyclones are measured on the Saffir Simpson scale, which classifies them into five categories (1–5) based on their maximum sustained wind speed. Cyclones with wind speeds over 154 km/h are classified as Category 2 and above and can cause extensive damage.] are associated with extensive damage to buildings and infrastructure. ",
+      "translationPrefix": "goal_13.content.#15.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "cyclones__vec__bbox1",
+      "text": "Tropical [emphasis: <span data-color-id=\"cat3\" class=\"cat3\">cyclone</span>] Melissa made landfall in Jamaica on October 28,  2025. The third most intense [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">cyclone</span>] ever recorded in the Atlantic Ocean, it was classified as a category 5 and had wind speeds of up to 300 km/h.[reference: WMO4] Although it wreaked enormous  damage on infrastructure and houses, due to early warning systems, the number of casualties was limited at 50.",
+      "translationPrefix": "goal_13.content.#15.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "cyclones__vec__wld",
+      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Cyclones</span>] occur over warm tropical oceans, exposing people in their proximity. In many Small Island Developing States, the entire population is exposed: in 36  Caribbean and Pacific economies,[footnote:  Aruba, Anguilla, American Samoa, Antigua and Barbuda, Bonaire, Sint Eustatius and Saba, Bahamas, St. Barthélemy, Bermuda, Barbados, Cuba, Curaçao, Cayman Islands, Dominica, Dominican Republic, Grenada, Guam, Haiti, Jamaica, St, Kitts and Nevis, St. Lucia, St. Martin (French part), Northern Mariana Islands, Montserrat, Mauritius, Niue, Puerto Rico, Sint Maarten (Dutch part), Turks and Caicos Islands, Tonga, Taiwan, Saint Vincent and the Grenadines, British Virgin Islands, United States Virgin Islands, Vanuatu, Wallis and Futuna, and Samoa. In Fiji, more than 99 percent of the population is exposed.] 100 percent of the population is exposed. ",
+      "translationPrefix": "goal_13.content.#15.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#15",
+  "_meta": {
+    "index": 104,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "extreme-poverty",
+  "code": "1.1.1",
+  "kicker": "Extreme Poverty",
+  "title": "Past, Present, and Future: 100 Years of Challenges in Tackling Extreme Poverty",
+  "lede": "After decades of historic poverty reduction, progress has slowed. Understanding who is left behind is essential for the next phase of the fight against extreme poverty.",
+  "caption": "Extreme poverty rate (% of population), progress evaluation window",
+  "yLabel": "% in extreme poverty",
+  "invert": true,
+  "stick": "#be62d0",
+  "original": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+  "facts": [
+    {
+      "num": "1 in 2",
+      "text": "key fact from the extreme poverty story."
+    },
+    {
+      "num": "Slower pace",
+      "text": "poverty reduction is at its weakest pace in decades."
+    },
+    {
+      "num": "FCV",
+      "text": "poverty is increasingly concentrated in fragile settings."
+    }
+  ],
+  "resolved_code": "1.1.1",
+  "n": 172,
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-18",
+  "tier": "A"
+}

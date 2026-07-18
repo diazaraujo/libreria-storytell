@@ -1,0 +1,28 @@
+{
+  "type": "vis",
+  "graphic": "plastic_waste",
+  "title": "Mismanaged plastic quantity set to grow",
+  "subtitle": "Plastic waste (million tonnes), by waste management type",
+  "y_axis_title": "Plastic waste",
+  "y_axis_units": "million tonnes",
+  "recycled": "Recycled",
+  "incinerated": "Incinerated",
+  "landfilled": "Landfilled",
+  "mismanaged": "Mismanaged",
+  "source": "OECD (2022), <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">Global Plastics Outlook: Policy Scenarios to 2060</a>, OECD Publishing, Paris, <a href=\"https://doi.org/10.1787/aa1edf33-en\" target=\"_blank\" rel=\"external\">doi.org/10.1787/aa1edf33-en</a>.",
+  "visdescription": "Describe what the visualization shows",
+  "data_download": "14_data_plastic_waste.csv",
+  "data": "15m61nzVoT8m-xedo4Aq9WH0ajrBMzgrI8Nk9JrIwrCs",
+  "translationPrefix": "goal_14.content.#7",
+  "_meta": {
+    "index": 111,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/01-plastic-waste",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

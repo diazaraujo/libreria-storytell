@@ -1,0 +1,54 @@
+{
+  "type": "scroller",
+  "graphic": "safely_managed_grouped",
+  "title": "Access to safely managed drinking water remains much lower in rural areas",
+  "subtitle": "People using safely managed drinking water services, by residence (% of population)",
+  "visdescription": "Two line charts showing the distribution of the global population across drinking water service levels from 2000 to 2024, one for urban areas and one for rural areas. In the first scene, each line represents a service level—safely managed, basic, limited, unimproved, and surface water—and together they sum to 100 percent in each year. In the next scene, line charts are shown for eight regions, including the world. For each region, two line charts—urban and rural—show trends in safely managed drinking water access over the same period. In the final scene, South Asia and Sub-Saharan Africa are highlighted.",
+  "indicator_360": "WB_WDI_SH_H2O_SMDW_RU_ZS",
+  "theme": "light",
+  "data_download": "Safely managed.zip",
+  "data": "1JqbaHQXEjhErDipoCf8b3-YZXKFCfIvrzCfyR69d1gE",
+  "source": "WHO/UNICEF JMP for Water Supply, Sanitation and Hygiene. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.RU.ZS\" target=\"_blank\" rel=\"external\">SH.H2O.SMDW.RU.ZS</a><span style=\"color: rgb(112,111,125); background-color: rgb(255,255,255);\">, </span><a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.UR.ZS\" target=\"_blank\" rel=\"external\">SH.H2O.SMDW.UR.ZS</a><span style=\"color: rgb(112,111,125); background-color: rgb(255,255,255);\">).</span>",
+  "note": "Rural population data are unavailable for North America (2000–24) and East Asia & Pacific (2000–14).",
+  "legendSafelyManaged": "Safely Managed",
+  "legendBasic": "Basic",
+  "legendLimited": "Limited",
+  "legendUnimproved": "Unimproved",
+  "legendSurfaceWater": "Surface water",
+  "legendUrban": "Urban",
+  "legendRural": "Rural",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "scene1",
+      "text": "While the proportion of urban dwellers with [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,128,198);\">safely managed</span>] drinking water remained stable at just over 80 percent between 2000 and 2024, the share of rural dwellers increased substantially, from about 40 percent to 60 percent over the same period. ",
+      "translationPrefix": "goal_06.content.#10.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "scene2",
+      "text": "Despite this progress,  <span data-color-id=\"rural\" class=\"rural\">rural</span> access still lags <span data-color-id=\"urban\" class=\"urban\">urban</span> access in regions with available data, with a global gap of about 20 percentage points.",
+      "translationPrefix": "goal_06.content.#10.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "scene3",
+      "text": "[emphasis: <span style=\"color: rgb(4,1,16);\">South Asia</span>]<span style=\"color: rgb(4,1,16);\"> is an </span><span style=\"color: rgb(4,1,16);\">exception:</span> the　<span data-color-id=\"urban\" class=\"urban\">urban</span>–<span data-color-id=\"rural\" class=\"rural\">rural</span> gap narrowed sharply between 2000 and 2024 as access expanded in rural areas. [emphasis: <span style=\"color: rgb(4,1,16);\">Sub-Saharan Africa</span>] has also seen gains in <span data-color-id=\"rural\" class=\"rural\">rural</span> access, but coverage remains extremely low, at 17 percent in 2024. Low access to water services is often concentrated in poorer regions, where limited public resources and the high cost of extending infrastructure to dispersed rural populations constrain progress, leaving these groups particularly vulnerable. [reference: water_poverty]",
+      "translationPrefix": "goal_06.content.#10.scenes.#2"
+    }
+  ],
+  "translationPrefix": "goal_06.content.#10",
+  "_meta": {
+    "index": 41,
+    "chapterId": "06",
+    "chapterTitle": "Water Access",
+    "dir": "chapters/goal_06/01-safely-managed-grouped",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-18",
+    "approvalNote": "hand Tier B, QA 11/11"
+  }
+}

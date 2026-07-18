@@ -1,0 +1,24 @@
+{
+  "type": "vis",
+  "graphic": "chlorophyll_a_trend",
+  "title": "Chlorophyll-a trend, 1997-2021",
+  "subtitle": "Satellite-derived annual trends in surface chlorophyll-a concentrations, 1997–2021 (% per year)",
+  "legend_title": "Trend in Chlorophyll-a",
+  "legend_unit_label": "percent/year",
+  "legend_units": "%",
+  "source": "Jackson, T. (2020) OC-CCI Product User Guide (PUG). ESA/ESRIN Report. D4.2PUG, 2020-10-12. Issue:v4.2. <a href=\"https://docs.pml.space/share/s/okB2fOuPT7Cj2r4C5sppDg\" target=\"_blank\" rel=\"external\">https://docs.pml.space/share/s/okB2fOuPT7Cj2r4C5sppDg</a> and Sathyendranath, S., Pardo, S., Benincasa, M., Brando, V. E., Brewin, R. J.W., Mélin, F., Santoleri, R., 2018b, 1.5. Essential Variables: Ocean Colour in Copernicus Marine Service Ocean State Report - Issue 2, Journal of Operational Oceanography, 11:sup1, 1-142, <a href=\"https://doi.org/10.1080/1755876X.2018.1489208\" target=\"_blank\" rel=\"external\">https://doi.org/10.1080/1755876X.2018.1489208</a>. See also: <a href=\"https://doi.org/10.1080/1755876X.2018.1489208\" target=\"_blank\" rel=\"external\">https://</a><a href=\"https://marine.copernicus.eu/access-data/ocean-monitoring-indicators/global-ocean-chlorophyll-trend-map-observations\" target=\"_blank\" rel=\"external\">marine.copernicus.eu/access-data/ocean-monitoring-indicators/global-ocean-chlorophyll-trend-map-observations</a><span style=\"color: rgb(37,37,37);\"></span>",
+  "visdescription": "Describe what the visualization shows",
+  "texture": "sdg14/textures/chlorophyll-a-trend.jpeg",
+  "translationPrefix": "goal_14.content.#41",
+  "_meta": {
+    "index": 121,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/11-chlorophyll-a-trend",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

@@ -1,0 +1,25 @@
+{
+  "type": "vis",
+  "graphic": "plastic_discharge",
+  "title": "Hotspots of plastic discharge into the oceans ",
+  "subtitle": "",
+  "source": "<span style=\"color: rgb(37,37,37);\">Meijer, Lourens; van Emmerik, Tim; Ent, Ruud van der; Schmidt, Christian; Lebreton, Laurent (2021). Supplementary data for 'More than 1000 rivers account for 80% of global riverine plastic emissions into the ocean'. figshare. Dataset. </span><a href=\"https://doi.org/10.6084/m9.figshare.14515590.v1\" target=\"_blank\" rel=\"external\">Link</a>",
+  "visdescription": "Describe what the visualization shows",
+  "legend_title": "Plastic discharge",
+  "legend_units": "1000 tons of plastics/year",
+  "data_download": "data_14_plastic_discharge.csv",
+  "data": "1AuaI4YAk1CtM69PR_JDOW6ctuv00KSAdhfKov_fv8aA",
+  "texture": "sdg14/textures/ocean_floor_rivers.jpg",
+  "translationPrefix": "goal_14.content.#13",
+  "_meta": {
+    "index": 113,
+    "chapterId": "14",
+    "chapterTitle": "Ocean pollution",
+    "dir": "chapters/goal_14/03-plastic-discharge",
+    "status": "ready",
+    "template": "vis",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  },
+  "scenes": []
+}

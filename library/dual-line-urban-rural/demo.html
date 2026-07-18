@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · Dual-line Urban–Rural v0.1</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #111; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 4px; font-size: 18px; }
+    .sub { color: #6a7781; font-size: 13px; }
+    .stage {
+      height: 600px; margin: 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb; position: relative;
+    }
+    .links { font-size: 12px; padding: 0 20px 20px; color: #6a7781; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasLibrary.DualLineUrbanRural <small style="color:#6a7781;font-weight:500">v0.1 · pixel</small></h1>
+    <p class="sub">Bktvr1TG — 4×2 · urban/rural dual line · diagonal hatch gap · curveNatural</p>
+  </header>
+  <div class="stage" id="chart"></div>
+  <p class="links">
+    Story: <a href="../../stories/electricity-access/">electricity-access scroll</a> ·
+    Chapter: <a href="../../chapters/goal_07/02-access-electricity-urban-rural/index.html?clean=1">goal_07/02</a> ·
+    Origin: <a href="http://127.0.0.1:8765/en/atlas/electricity-access/">:8765</a>
+  </p>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./dual-line-urban-rural.js"></script>
+  <script>
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_07/02-access-electricity-urban-rural/data/07_data_access_electricity_urban_rural.csv"
+      );
+      AtlasDualLineUrbanRural.mount(document.getElementById("chart"), {
+        rows,
+        labels: {
+          urban: "Urban areas",
+          rural: "Rural areas",
+          y_axis_units: "% of population",
+        },
+      });
+    })();
+  </script>
+</body>
+</html>

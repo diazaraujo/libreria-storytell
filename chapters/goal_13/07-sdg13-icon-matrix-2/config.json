@@ -1,0 +1,58 @@
+{
+  "type": "scroller",
+  "graphic": "sdg13_icon_matrix",
+  "title": "Population at high risk depends on both exposure and vulnerability",
+  "subtitle": "Comparing countries with similar levels of exposure or vulnerability",
+  "source": "<a href=\"https://scorecard.worldbank.org/en/data/indicator-detail/EN_CLM_VULN?orgCode=ALL&refareatype=REGION&refareacode=ACW&age=_T&disability=_T&sex=_T\" target=\"_blank\" rel=\"external\">World Bank Scorecard Indicator</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+  "visdescription": "The figure shows comparisons between countries, where the share of people at high risk differs greatly, despite having similar levels of exposure or vulnerability. ",
+  "visSize": "default",
+  "disableScreenshot": "true",
+  "data_download": "climate_vulnerability.zip",
+  "data": "1jnqFJhuylAsTw4s3XqgNSyLhIP4xF_nono5w93QKnSQ",
+  "keyFact": "1.5 billion",
+  "keyFactLabel": "people are exposed to climate-related hazards and living in highly vulnerable conditions",
+  "label__x_axis": "Each group is 1,000 squares",
+  "label__legend": "1 square =$x people",
+  "label__highly_vulnerable": "Vulnerable in at least 1 dimension",
+  "label__at_risk": "At high risk",
+  "label__not_vulnerable": "Not vulnerable",
+  "label__exposed": "Exposed to climate-related hazards",
+  "label__not_exposed": "Not exposed",
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "mono__grid__vul__bfa_ken",
+      "text": "[emphasis: Burkina Faso ]and [emphasis: Kenya ]have similar levels of [emphasis: vulnerability]. In both countries, around 9 in 10 people  are identified as vulnerable in at least one dimension.",
+      "translationPrefix": "goal_13.content.#31.scenes.#0"
+    },
+    {
+      "type": "scene",
+      "id": "mono__diff__vul_exp__bfa_ken",
+      "text": "But [emphasis: exposure ]to climate hazards is three times higher in [emphasis: Burkina Faso]. Combining the number of vulnerable and exposed people, only 1 in 4 people in [emphasis: Kenya ]are at high risk from climate hazards, compared with 3 in 4 people in [emphasis: Burkina Faso]. ",
+      "translationPrefix": "goal_13.content.#31.scenes.#1"
+    },
+    {
+      "type": "scene",
+      "id": "mono__grid__exp__phl_vnm",
+      "text": "Similarly, in <span data-color-id=\"EAS\" class=\"EAS\">East Asia and Pacific</span>, almost 9 in 10 people in the [emphasis: Philippines ]and [emphasis: Vietnam] are [emphasis: exposed ]to climate hazards. ",
+      "translationPrefix": "goal_13.content.#31.scenes.#2"
+    },
+    {
+      "type": "scene",
+      "id": "mono__diff__exp_vul__phl_vnm",
+      "text": "But despite their similar [emphasis: exposure ]profiles, slightly more than half the population of the [emphasis: Philippines ]is at risk, compared to around 20 percent in [emphasis: Vietnam]. This is due to the differing levels of vulnerability. In the [emphasis: Philippines], 3 in 5 people are vulnerable, while  in [emphasis: Vietnam],it is 1 in 5 people.",
+      "translationPrefix": "goal_13.content.#31.scenes.#3"
+    }
+  ],
+  "translationPrefix": "goal_13.content.#31",
+  "_meta": {
+    "index": 109,
+    "chapterId": "13",
+    "chapterTitle": "Climate",
+    "dir": "chapters/goal_13/07-sdg13-icon-matrix-2",
+    "status": "ready",
+    "template": "scroller",
+    "reference": null,
+    "fidelity": "tier-B-bulk"
+  }
+}
