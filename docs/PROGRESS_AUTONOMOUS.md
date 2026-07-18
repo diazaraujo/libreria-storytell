@@ -40,6 +40,8 @@
 
 **14/14 OK**
 
+Story deep scroll: 6 SVG + 2 canvas · all libs · 0 errors.
+
 ## Cómo retomar
 
 ```bash
