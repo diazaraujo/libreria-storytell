@@ -332,12 +332,19 @@
     }
   }
 
-  function makeTransformRequest(proxyBase) {
+  function makeTransformRequest(proxyBase, dataToken) {
     const base = proxyBase.replace(/\/$/, "");
     return function transformRequest(url) {
       // Only private Atlas tilesets need Referer bypass — fonts/styles go direct
       if (typeof url === "string" && /mlambrechts\./i.test(url)) {
-        return { url: base + "/?u=" + encodeURIComponent(url) };
+        let u = url;
+        // Prefer data token on tileset requests (account that owns mlambrechts.*)
+        if (dataToken && /access_token=/.test(u)) {
+          u = u.replace(/access_token=[^&]+/, "access_token=" + encodeURIComponent(dataToken));
+        } else if (dataToken && !/access_token=/.test(u)) {
+          u += (u.includes("?") ? "&" : "?") + "access_token=" + encodeURIComponent(dataToken);
+        }
+        return { url: base + "/?u=" + encodeURIComponent(u) };
       }
       return { url };
     };
@@ -593,10 +600,13 @@
           ),
         };
 
-        const canStandard = !!(token && global.mapboxgl);
+        const canStandard = !!(
+          (basemapToken || token) &&
+          global.mapboxgl
+        );
         useSlot = canStandard;
-        // Data token for tilesets; basemap can use same (Atlas pk works for Standard)
-        global.mapboxgl.accessToken = token;
+        // Basemap uses user/public token; mlambrechts tiles get data token via transformRequest
+        global.mapboxgl.accessToken = basemapToken || token;
 
         const mapOpts = {
           container: mapEl,
@@ -606,7 +616,9 @@
           maxPitch: 0,
           projection: "mercator",
           transformRequest:
-            mode === "origin-tiles" ? makeTransformRequest(proxy) : undefined,
+            mode === "origin-tiles"
+              ? makeTransformRequest(proxy, token)
+              : undefined,
         };
 
         if (canStandard) {
@@ -1029,6 +1041,7 @@
           );
 
           ready = true;
+          status.textContent = "";
           status.style.display = "none";
           setScene(sceneIndex, { animate: false });
         };
@@ -1039,9 +1052,11 @@
         });
 
         map.on("error", (e) => {
-          console.error(e);
-          if (e?.error?.message) {
-            status.textContent = e.error.message;
+          // Non-fatal basemap/font noise (403) should not cover the chart
+          const msg = e?.error?.message || "";
+          console.warn("[hexmap]", msg || e);
+          if (!ready && msg && !/403|Unauthorized|Failed to fetch/i.test(msg)) {
+            status.textContent = msg;
             status.style.display = "block";
           }
         });

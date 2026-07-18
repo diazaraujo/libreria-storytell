@@ -19,7 +19,7 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`population-access/`](population-access/) | BcrOvn12 AccessElectricityPopulation | opacity **2s** + stack layers | **v0.2** · demo + story + chapter |
 | [`progress-race/`](progress-race/) | Brmmsw6q AccessElectricityProgress | dots 2015 · stems · gradient · chips · tween **2s** | **v0.2** · demo + story + chapter |
 | [`dual-line-urban-rural/`](dual-line-urban-rural/) | Bktvr1TG + DnvCGyY_ | hatch gap · regions 4×2 + countries 1×3 | **v0.2** · demos + story |
-| [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.8** · Mapbox Standard monochrome · origin layer order · demo + story + chapters |
+| [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.9** · origin Mapbox tiles (`mlambrechts.*` + proxy) · fallback H3 · demo + story + chapters |
 | heroes / beeswarm / waffle / scatter | shared/ | partial | |
 
 ## Demos (animaciones)
