@@ -20,7 +20,8 @@ python3 -m http.server 8787
 
 | URL | Qué es |
 |-----|--------|
-| http://localhost:8787/gallery.html | **Gallery con GIF animados** (preview loop) |
+| http://localhost:8787/gallery-atlas.html | **Gallery estilo Atlas** (como [data360 gallery](https://data360.worldbank.org/en/atlas/gallery)) |
+| http://localhost:8787/gallery.html | Gallery dev · 164 GIF + hub storytelling |
 | http://localhost:8787/_ready/heroes.html | Héroes de capítulo (progress sticks) |
 | http://localhost:8787/dev/playground.html | Kit de componentes |
 | http://localhost:8787/docs/DEV.md | Guía de desarrollo |

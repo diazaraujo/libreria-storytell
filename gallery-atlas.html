@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chart Gallery — Atlas replicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #57626a;
+      --line: #e2e6eb;
+      --wb-blue: #0071bc;
+      --max: 1240px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top bar */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .topbar-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 13px;
+      font-weight: 700;
+      color: #062958;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .brand span { color: var(--muted); font-weight: 600; }
+    .topbar nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+    .topbar a {
+      font-size: 12px;
+      color: var(--wb-blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* Page */
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 36px 24px 80px;
+    }
+    .page-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .seg {
+      display: inline-flex;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .seg button {
+      border: 0;
+      background: transparent;
+      font: 600 12px/1 "Open Sans", system-ui, sans-serif;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      color: var(--muted);
+    }
+    .seg button.on {
+      background: #062958;
+      color: #fff;
+    }
+    input[type="search"] {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 9px 14px;
+      font: 400 13px/1.2 "Open Sans", system-ui, sans-serif;
+      min-width: 200px;
+      outline: none;
+    }
+    input[type="search"]:focus {
+      border-color: var(--wb-blue);
+      box-shadow: 0 0 0 3px rgba(0, 113, 188, 0.12);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 24px;
+    }
+    .chips button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font: 600 11px/1 "Open Sans", system-ui, sans-serif;
+      color: var(--muted);
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .chips button.on {
+      color: #fff;
+      border-color: transparent;
+      background: var(--chip, #062958);
+    }
+
+    /* Grid — origin-like 3 columns */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    @media (max-width: 980px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      .page { padding: 24px 16px 64px; }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 2px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e8eaed;
+      border-top: 4px solid var(--theme, #0071bc);
+      box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+      transition: box-shadow 0.18s ease, transform 0.18s ease;
+      min-height: 100%;
+    }
+    .card:hover {
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.1);
+      transform: translateY(-2px);
+    }
+    .card.hidden { display: none; }
+
+    .media {
+      background: #fafbfc;
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #f0f2f5;
+    }
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .media img.contain {
+      object-fit: contain;
+      padding: 8px;
+    }
+    .media .ph {
+      font-size: 12px;
+      color: #94a3b8;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .meta {
+      padding: 16px 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+    .theme {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--theme, #0071bc);
+      line-height: 1.2;
+    }
+    .headline {
+      font-size: 15.5px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #111;
+      margin: 0;
+    }
+
+    .empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--muted);
+      padding: 48px 16px;
+      font-size: 14px;
+    }
+
+    .footer-note {
+      margin-top: 36px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .footer-note a { color: var(--wb-blue); }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="gallery-atlas.html">ATLAS REPLICAS <span>· Gallery</span></a>
+      <nav>
+        <a href="https://data360.worldbank.org/en/atlas/gallery" target="_blank" rel="noopener">Origin gallery</a>
+        <a href="gallery.html">Dev gallery (164)</a>
+        <a href="stories/electricity-access/">Electricity story</a>
+        <a href="library/nightlights-hexmap/demo.html">Hexmap demo</a>
+        <a href="docs/PROGRESS_AUTONOMOUS.md">Progress</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="page">
+    <div class="page-head">
+      <h1 id="countTitle">Charts</h1>
+      <div class="controls">
+        <div class="seg" id="modeSeg" role="tablist" aria-label="Gallery mode">
+          <button type="button" data-mode="featured" class="on">Featured</button>
+          <button type="button" data-mode="all">All replicas</button>
+        </div>
+        <input id="q" type="search" placeholder="Search charts…" autocomplete="off" />
+      </div>
+    </div>
+
+    <div class="chips" id="chips" aria-label="Filter by theme"></div>
+    <div class="grid" id="grid">
+      <div class="empty">Loading gallery…</div>
+    </div>
+
+    <p class="footer-note">
+      Layout inspired by
+      <a href="https://data360.worldbank.org/en/atlas/gallery" target="_blank" rel="noopener">Atlas of Global Development · Chart Gallery</a>.
+      Featured uses official gallery stills (34); All uses local GIF thumbs (164).
+      Data: <code>docs/gallery-atlas-data.json</code>.
+    </p>
+  </main>
+
+  <script>
+    /**
+     * Theme accent colors (border + label) — Atlas / WB chapter accents
+     */
+    const THEME_BY_CHAPTER = {
+      "01": "#7a3d96", // Extreme Poverty
+      "02": "#0c7c68", // Hunger
+      "03": "#aa0000", // Health
+      "04": "#664ab6", // Learning
+      "05": "#f3578e", // Gender
+      "06": "#00a1c4", // Water
+      "07": "#eb5757", // Electricity / Infrastructure
+      "08": "#ff9800", // Growth
+      "09": "#2f80ed", // Internet / Digital
+      "10": "#be62d0", // Inequality / Prosperity
+      "11": "#34a7f2", // Urban
+      "12": "#0c7c68", // Energy / responsible consumption
+      "13": "#081079", // Climate
+      "14": "#0071bc", // Ocean
+      "15": "#0c7c68", // Land
+      "16": "#2f80ed", // AI
+      "17": "#0071bc", // Data for development
+      "99": "#57626a",
+      dashboard: "#081079",
+      id4d: "#2f80ed",
+      progress: "#7a3d96",
+    };
+
+    const state = {
+      mode: "featured", // featured | all
+      chapter: "all",
+      query: "",
+      items: [],
+    };
+
+    function themeColor(chapterId) {
+      return THEME_BY_CHAPTER[String(chapterId)] || "#0071bc";
+    }
+
+    function themeLabel(title) {
+      return (title || "Chart").toUpperCase();
+    }
+
+    function matches(item) {
+      if (state.mode === "featured" && !item.featured) return false;
+      if (state.chapter !== "all" && String(item.chapterId) !== state.chapter) return false;
+      if (state.query) {
+        const hay = [
+          item.title,
+          item.chapterTitle,
+          item.graphic,
+          item.type,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+        if (!hay.includes(state.query)) return false;
+      }
+      return true;
+    }
+
+    function buildChips(items) {
+      const chips = document.getElementById("chips");
+      const seen = new Map();
+      items.forEach((it) => {
+        if (!it.chapterId || !it.chapterTitle) return;
+        if (state.mode === "featured" && !it.featured) return;
+        if (!seen.has(it.chapterId)) {
+          seen.set(it.chapterId, it.chapterTitle);
+        }
+      });
+      const entries = [...seen.entries()].sort((a, b) =>
+        a[1].localeCompare(b[1])
+      );
+      chips.innerHTML =
+        `<button type="button" data-ch="all" class="${
+          state.chapter === "all" ? "on" : ""
+        }">All themes</button>` +
+        entries
+          .map(([id, title]) => {
+            const c = themeColor(id);
+            const on = state.chapter === String(id) ? "on" : "";
+            return `<button type="button" data-ch="${id}" class="${on}" style="--chip:${c}">${title}</button>`;
+          })
+          .join("");
+    }
+
+    function render() {
+      const grid = document.getElementById("grid");
+      const visible = state.items.filter(matches);
+      const totalLabel =
+        state.mode === "featured"
+          ? state.items.filter((i) => i.featured).length
+          : state.items.length;
+
+      document.getElementById("countTitle").innerHTML =
+        visible.length === totalLabel
+          ? `${totalLabel} Charts`
+          : `${visible.length} <em>of ${totalLabel}</em> Charts`;
+
+      buildChips(state.items);
+
+      if (!visible.length) {
+        grid.innerHTML = `<div class="empty">No charts match this filter.</div>`;
+        return;
+      }
+
+      grid.innerHTML = visible
+        .map((it) => {
+          const color = themeColor(it.chapterId);
+          const src = it.originPng || it.gif;
+          const href = it.href || it.liveUrl || "#";
+          const imgClass = it.originPng ? "contain" : "";
+          const media = src
+            ? `<img src="${src}" alt="" loading="lazy" class="${imgClass}" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Preview'}))" />`
+            : `<div class="ph">Preview</div>`;
+          return `
+            <a class="card" href="${href}" style="--theme:${color}" data-ch="${it.chapterId || ""}">
+              <div class="media">${media}</div>
+              <div class="meta">
+                <div class="theme">${themeLabel(it.chapterTitle)}</div>
+                <p class="headline">${escapeHtml(it.title || it.graphic || "Untitled")}</p>
+              </div>
+            </a>`;
+        })
+        .join("");
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    async function boot() {
+      const res = await fetch("docs/gallery-atlas-data.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load gallery-atlas-data.json");
+      const data = await res.json();
+      state.items = data.items || [];
+      render();
+
+      document.getElementById("modeSeg").addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-mode]");
+        if (!b) return;
+        state.mode = b.dataset.mode;
+        state.chapter = "all";
+        document
+          .querySelectorAll("#modeSeg button")
+          .forEach((x) => x.classList.toggle("on", x === b));
+        render();
+      });
+
+      document.getElementById("chips").addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-ch]");
+        if (!b) return;
+        state.chapter = b.dataset.ch;
+        render();
+      });
+
+      document.getElementById("q").addEventListener("input", (e) => {
+        state.query = e.target.value.trim().toLowerCase();
+        render();
+      });
+    }
+
+    boot().catch((err) => {
+      document.getElementById("grid").innerHTML =
+        `<div class="empty">Could not load gallery: ${escapeHtml(err.message)}</div>`;
+    });
+  </script>
+</body>
+</html>
