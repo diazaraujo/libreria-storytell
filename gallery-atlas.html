@@ -390,7 +390,9 @@
 
     function render() {
       const grid = document.getElementById("grid");
-      const visible = state.items.filter(matches);
+      const visible = state.items
+        .filter(matches)
+        .sort((a, b) => (a.sort ?? a.index ?? 0) - (b.sort ?? b.index ?? 0));
       const totalLabel =
         state.mode === "featured"
           ? state.items.filter((i) => i.featured).length
