@@ -1,0 +1,24 @@
+name: smoke
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate gallery data JSON
+        run: python3 -c "import json; d=json.load(open('docs/gallery-atlas-data.json')); assert d['featuredCount']==34, d['featuredCount']; assert d['total']==164; print('gallery data OK', d['featuredCount'], d['total'])"
+      - name: Validate inventory
+        run: python3 -c "import json; d=json.load(open('docs/INVENTARIO_164.json')); assert d['total']==164; print('inventory OK', len(d['items']))"
+      - name: Hexmap syntax
+        run: node --check library/nightlights-hexmap/nightlights-hexmap.js
+      - name: Required files
+        run: |
+          test -f gallery-atlas.html
+          test -f scripts/dev-servers.sh
+          test -f library/nightlights-hexmap/mapbox-config.example.js
+          test -d assets/gallery_thumbnails
+          ls assets/gallery_thumbnails/*.png | wc -l | grep -q 34

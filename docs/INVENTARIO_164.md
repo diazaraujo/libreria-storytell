@@ -39,8 +39,8 @@
 | `progress-race` v0.2 | `access_electricity_progress` | dots 2015 + stems Se + gradient legend + chips + tween 2s |
 | `dual-line-urban-rural` v0.2 | `access_electricity_urban_rural` | intro fade + hatch gap + dual lines (vis) |
 | `dual-line-urban-rural` v0.2 | `access_electricity_urban_rural_countries` | countries ETH/NGA/COD hatch dual-line |
-| `nightlights-hexmap` v0.9 | `hexmap_nigeria` | Mapbox H3 vector tiles + scene layers/bounds |
-| `nightlights-hexmap` v0.9 | `hexmap_ethiopia` | Mapbox H3 vector tiles rural nightlights |
+| `nightlights-hexmap` v0.9 | `hexmap_nigeria` | Mapbox Standard + origin tiles (proxy) · H3 fallback |
+| `nightlights-hexmap` v0.9 | `hexmap_ethiopia` | Mapbox Standard + origin tiles rural NTL + grid |
 
 ## Orden por capítulo
 
