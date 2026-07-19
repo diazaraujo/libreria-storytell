@@ -390,6 +390,7 @@
       basemapToken = global.ATLAS_MAPBOX_TOKEN || token,
       proxy = global.ATLAS_MAPBOX_PROXY || "http://127.0.0.1:8790",
       originTiles = global.ATLAS_HEXMAP_ORIGIN_TILES !== false,
+      showBadge = options.showBadge === true, // demo only; hidden in chapters/story
       reuse = true,
       forceRemount = false,
       height: heightOpt = null,
@@ -479,6 +480,7 @@
     const badge = document.createElement("div");
     badge.className = "mode-badge";
     badge.textContent = "…";
+    badge.style.display = showBadge ? "block" : "none";
     root.appendChild(badge);
     const legend = document.createElement("div");
     legend.className = "legend-container";

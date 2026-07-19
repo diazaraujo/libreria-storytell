@@ -32,6 +32,11 @@ bash scripts/dev-servers.sh
 open http://127.0.0.1:8787/gallery-atlas.html
 ```
 
+### Compare electricity (2026-07-19)
+- [x] Frame capture origin vs replica (`docs/COMPARE_ELECTRICITY.md`)
+- [x] Hex badge hidden in chapters/story (demo-only)
+- Residual: origin particle field (chrome only)
+
 ## Siguiente
 - Compare visual origin vs story electricity (frame by frame)
 - Promover otros chapters a library patterns

@@ -51,6 +51,7 @@
       citiesUrl: base + "nigeria_cities.geojson",
       sceneIndex: 0,
       height: 560,
+      showBadge: true,
     });
     const et = AtlasNightlightsHexmap.mount(document.getElementById("et"), {
       country: "ethiopia",
@@ -58,6 +59,7 @@
       gridUrl: base + "ethiopia_grid.geojson",
       sceneIndex: 0,
       height: 560,
+      showBadge: true,
     });
     function wire(navId, chart, labels) {
       const nav = document.getElementById(navId);
