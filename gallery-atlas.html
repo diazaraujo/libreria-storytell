@@ -202,10 +202,15 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      transition: transform 0.35s ease;
+    }
+    .card:hover .media img {
+      transform: scale(1.03);
     }
     .media img.contain {
       object-fit: contain;
-      padding: 8px;
+      padding: 10px 12px;
+      background: #fff;
     }
     .media .ph {
       font-size: 12px;
@@ -289,8 +294,10 @@
     <p class="footer-note">
       Layout inspired by
       <a href="https://data360.worldbank.org/en/atlas/gallery" target="_blank" rel="noopener">Atlas of Global Development · Chart Gallery</a>.
-      Featured uses official gallery stills (34); All uses local GIF thumbs (164).
-      Data: <code>docs/gallery-atlas-data.json</code>.
+      <strong>Featured</strong> = official Atlas gallery stills (34).
+      <strong>All replicas</strong> = full 164 with local GIF thumbs.
+      Data: <code>docs/gallery-atlas-data.json</code> ·
+      repo <a href="https://github.com/diazaraujo/libreria-storytell">diazaraujo/libreria-storytell</a>.
     </p>
   </main>
 

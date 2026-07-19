@@ -15,6 +15,8 @@ Repo: [github.com/diazaraujo/libreria-storytell](https://github.com/diazaraujo/l
 
 ```bash
 cd ~/atlas-replicas
+bash scripts/dev-servers.sh   # :8787 réplicas · :8765 origin · :8790 mapbox-proxy
+# o solo estáticos:
 python3 -m http.server 8787
 ```
 

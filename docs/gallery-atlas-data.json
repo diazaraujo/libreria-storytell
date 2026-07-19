@@ -1,7 +1,7 @@
 {
-  "generated": "gallery-atlas",
+  "generated": "2026-07-19",
   "total": 164,
-  "featuredCount": 38,
+  "featuredCount": 34,
   "items": [
     {
       "index": 0,
@@ -14,8 +14,10 @@
       "href": "chapters/goal_01/00-draw-your-chart/index.html?clean=1",
       "gif": "thumbs/000_01_draw_your_chart.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 1,
@@ -28,8 +30,10 @@
       "href": "chapters/goal_01/01-poverty-regions/index.html?clean=1",
       "gif": "thumbs/001_01_poverty_regions.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 2,
@@ -42,8 +46,10 @@
       "href": "chapters/goal_01/02-poverty-scroller/index.html?clean=1",
       "gif": "thumbs/002_01_poverty_scroller.gif",
       "originPng": "assets/gallery_thumbnails/extreme-poverty_poverty_scroller.png",
+      "originKey": "extreme-poverty_poverty_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 3,
@@ -56,22 +62,26 @@
       "href": "chapters/goal_99/01-poverty-projections/index.html?clean=1",
       "gif": "thumbs/145_99_poverty_projections.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 4,
       "chapterId": "01",
       "chapterTitle": "Extreme Poverty",
       "graphic": "venn_diagram",
-      "title": "Most of the world\u2019s poor live in countries that suffer from conflict, poor economic management, and/or high corruption",
+      "title": "Most of the world’s poor live in countries that suffer from conflict, poor economic management, and/or high corruption",
       "type": "vis",
       "tier": "B-approved-static",
       "href": "chapters/goal_01/04-venn-diagram/index.html?clean=1",
       "gif": "thumbs/004_01_venn_diagram.gif",
       "originPng": "assets/gallery_thumbnails/extreme-poverty_venn_diagram.png",
+      "originKey": "extreme-poverty_venn_diagram.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 5,
@@ -84,8 +94,10 @@
       "href": "chapters/goal_01/05-national-poverty-comparison/index.html?clean=1",
       "gif": "thumbs/005_01_national_poverty_comparison.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
+      "library": null
     },
     {
       "index": 6,
@@ -98,8 +110,10 @@
       "href": "chapters/goal_02/00-prevalence-undernourishment-regions/index.html?clean=1",
       "gif": "thumbs/006_02_prevalence_undernourishment_regions.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 7,
@@ -112,8 +126,10 @@
       "href": "chapters/goal_02/01-prevalence-undernourishment-gridmap/index.html?clean=1",
       "gif": "thumbs/007_02_prevalence_undernourishment_gridmap.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 8,
@@ -126,8 +142,10 @@
       "href": "chapters/goal_02/02-food-insecurity-hotspots/index.html?clean=1",
       "gif": "thumbs/008_02_food_insecurity_hotspots.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 9,
@@ -140,8 +158,10 @@
       "href": "chapters/goal_02/03-food-insecurity-matrix/index.html?clean=1",
       "gif": "thumbs/009_02_food_insecurity_matrix.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 10,
@@ -154,8 +174,10 @@
       "href": "chapters/goal_02/04-undernourishment-conflict/index.html?clean=1",
       "gif": "thumbs/010_02_undernourishment_conflict.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 11,
@@ -168,22 +190,26 @@
       "href": "chapters/goal_02/05-myanmar-foodprices-conflict/index.html?clean=1",
       "gif": "thumbs/011_02_myanmar_foodprices_conflict.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 12,
       "chapterId": "02",
       "chapterTitle": "Global hunger",
       "graphic": "ndvi_map_scroller",
-      "title": "Extreme floods damaged more than half of Sindh\u2019s cropland",
+      "title": "Extreme floods damaged more than half of Sindh’s cropland",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_02/06-ndvi-map-scroller/index.html?clean=1",
       "gif": "thumbs/012_02_ndvi_map_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 13,
@@ -196,8 +222,10 @@
       "href": "chapters/goal_03/00-uhc-chart/index.html?clean=1",
       "gif": "thumbs/013_03_uhc_chart.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 14,
@@ -210,8 +238,10 @@
       "href": "chapters/goal_03/01-uhc-small-multiple/index.html?clean=1",
       "gif": "thumbs/014_03_uhc_small_multiple.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 15,
@@ -224,8 +254,10 @@
       "href": "chapters/goal_03/02-uhc-index-scroller/index.html?clean=1",
       "gif": "thumbs/015_03_uhc_index_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 16,
@@ -238,8 +270,10 @@
       "href": "chapters/goal_03/03-mortality-plot/index.html?clean=1",
       "gif": "thumbs/016_03_mortality_plot.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 17,
@@ -252,22 +286,26 @@
       "href": "chapters/goal_03/04-mortality-region-scroller/index.html?clean=1",
       "gif": "thumbs/017_03_mortality_region_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 18,
       "chapterId": "03",
       "chapterTitle": "Health",
       "graphic": "uhc_speed_scores_scroller",
-      "title": "Speed of Progress in RMNCH Mortality (2015\u20132030)",
+      "title": "Speed of Progress in RMNCH Mortality (2015–2030)",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_03/05-uhc-speed-scores-scroller/index.html?clean=1",
       "gif": "thumbs/018_03_uhc_speed_scores_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 19,
@@ -280,8 +318,10 @@
       "href": "chapters/goal_03/06-uhc-outcomes-scroller/index.html?clean=1",
       "gif": "thumbs/019_03_uhc_outcomes_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 20,
@@ -294,8 +334,10 @@
       "href": "chapters/goal_03/07-rmnch-progress-scroller/index.html?clean=1",
       "gif": "thumbs/020_03_rmnch_progress_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 21,
@@ -308,8 +350,10 @@
       "href": "chapters/goal_03/08-financial-hardship-chart/index.html?clean=1",
       "gif": "thumbs/021_03_financial_hardship_chart.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 22,
@@ -322,8 +366,10 @@
       "href": "chapters/goal_03/09-medical-cost-chart/index.html?clean=1",
       "gif": "thumbs/022_03_medical_cost_chart.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 23,
@@ -336,8 +382,10 @@
       "href": "chapters/goal_04/00-schooling-regions/index.html?clean=1",
       "gif": "thumbs/023_04_schooling_regions.gif",
       "originPng": "assets/gallery_thumbnails/learning-and-work_schooling_regions.png",
+      "originKey": "learning-and-work_schooling_regions.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 24,
@@ -350,8 +398,10 @@
       "href": "chapters/goal_04/01-schooling-scroller/index.html?clean=1",
       "gif": "thumbs/024_04_schooling_scroller.gif",
       "originPng": "assets/gallery_thumbnails/learning-and-work_schooling_scroller.png",
+      "originKey": "learning-and-work_schooling_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 25,
@@ -364,8 +414,10 @@
       "href": "chapters/goal_04/02-education-quality-details/index.html?clean=1",
       "gif": "thumbs/025_04_education_quality_details.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 26,
@@ -378,8 +430,10 @@
       "href": "chapters/goal_04/03-lays-change/index.html?clean=1",
       "gif": "thumbs/026_04_lays_change.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 27,
@@ -392,8 +446,10 @@
       "href": "chapters/goal_04/04-wages/index.html?clean=1",
       "gif": "thumbs/027_04_wages.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 28,
@@ -406,8 +462,10 @@
       "href": "chapters/goal_04/05-mincer-coefficients/index.html?clean=1",
       "gif": "thumbs/028_04_mincer_coefficients.gif",
       "originPng": "assets/gallery_thumbnails/learning-and-work_mincer_coefficients.png",
+      "originKey": "learning-and-work_mincer_coefficients.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 29,
@@ -420,8 +478,10 @@
       "href": "chapters/goal_04/06-wage-scroller/index.html?clean=1",
       "gif": "thumbs/029_04_wage_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+      "library": null
     },
     {
       "index": 30,
@@ -434,64 +494,74 @@
       "href": "chapters/goal_05/00-global-labor-force-participation/index.html?clean=1",
       "gif": "thumbs/030_05_global_labor_force_participation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 31,
       "chapterId": "05",
       "chapterTitle": "Gender and Jobs",
       "graphic": "sdg5_350_years",
-      "title": "Women\u2019s labor force participation is over 350 years away from equality",
+      "title": "Women’s labor force participation is over 350 years away from equality",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_05/01-sdg5-350-years/index.html?clean=1",
       "gif": "thumbs/031_05_sdg5_350_years.gif",
       "originPng": "assets/gallery_thumbnails/gender-and-jobs_sdg5_350_years.png",
+      "originKey": "gender-and-jobs_sdg5_350_years.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 32,
       "chapterId": "05",
       "chapterTitle": "Gender and Jobs",
       "graphic": "sdg5_turkiye_lfp_drivers",
-      "title": "T\u00fcrkiye\u2019s shift from agriculture to services reshaped women\u2019s work",
+      "title": "Türkiye’s shift from agriculture to services reshaped women’s work",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_05/02-sdg5-turkiye-lfp-drivers/index.html?clean=1",
       "gif": "thumbs/032_05_sdg5_turkiye_lfp_drivers.gif",
       "originPng": "assets/gallery_thumbnails/gender-and-jobs_sdg5_turkiye_lfp_drivers.png",
+      "originKey": "gender-and-jobs_sdg5_turkiye_lfp_drivers.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 33,
       "chapterId": "05",
       "chapterTitle": "Gender and Jobs",
       "graphic": "sdg5_turkiye_fertility",
-      "title": "T\u00fcrkiye\u2019s fertility rate fell faster than the global average",
+      "title": "Türkiye’s fertility rate fell faster than the global average",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_05/03-sdg5-turkiye-fertility/index.html?clean=1",
       "gif": "thumbs/033_05_sdg5_turkiye_fertility.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 34,
       "chapterId": "05",
       "chapterTitle": "Gender and Jobs",
       "graphic": "sdg5_turkiye_education",
-      "title": "The gender gap in T\u00fcrkiye\u2019s labor force participation is narrowest in the highest level of education",
+      "title": "The gender gap in Türkiye’s labor force participation is narrowest in the highest level of education",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_05/04-sdg5-turkiye-education/index.html?clean=1",
       "gif": "thumbs/034_05_sdg5_turkiye_education.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 35,
@@ -504,8 +574,10 @@
       "href": "chapters/goal_05/05-sdg5-better-jobs-for-women/index.html?clean=1",
       "gif": "thumbs/035_05_sdg5_better_jobs_for_women.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 36,
@@ -518,22 +590,26 @@
       "href": "chapters/goal_05/06-gender-gap-informal-gdp/index.html?clean=1",
       "gif": "thumbs/036_05_gender_gap_informal_gdp.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 37,
       "chapterId": "05",
       "chapterTitle": "Gender and Jobs",
       "graphic": "sdg5_wage_gap_beeswarm",
-      "title": "In most countries, men\u2019s wages are higher, on average, than women\u2019s",
+      "title": "In most countries, men’s wages are higher, on average, than women’s",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_05/07-sdg5-wage-gap-beeswarm/index.html?clean=1",
       "gif": "thumbs/037_05_sdg5_wage_gap_beeswarm.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 38,
@@ -546,8 +622,10 @@
       "href": "chapters/goal_05/08-unpaid-time-animation/index.html?clean=1",
       "gif": "thumbs/038_05_unpaid_time_animation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 39,
@@ -560,22 +638,26 @@
       "href": "chapters/goal_05/09-sdg5-ai-occupational-exposure-by-gender/index.html?clean=1",
       "gif": "thumbs/039_05_sdg5_ai_occupational_exposure_by_gender.gif",
       "originPng": "assets/gallery_thumbnails/gender-and-jobs_sdg5_ai_occupational_exposure_by_gender.png",
+      "originKey": "gender-and-jobs_sdg5_ai_occupational_exposure_by_gender.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+      "library": null
     },
     {
       "index": 40,
       "chapterId": "06",
       "chapterTitle": "Water Access",
       "graphic": "safely_managed",
-      "title": "A quarter of the world\u2019s population lacks access to safe drinking water",
+      "title": "A quarter of the world’s population lacks access to safe drinking water",
       "type": "scroller",
       "tier": "B-approved-static",
       "href": "chapters/goal_06/00-safely-managed/index.html?clean=1",
       "gif": "thumbs/040_06_safely_managed.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 41,
@@ -588,8 +670,10 @@
       "href": "chapters/goal_06/01-safely-managed-grouped/index.html?clean=1",
       "gif": "thumbs/041_06_safely_managed_grouped.gif",
       "originPng": "assets/gallery_thumbnails/water-access_safely_managed_grouped.png",
+      "originKey": "water-access_safely_managed_grouped.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 42,
@@ -602,8 +686,10 @@
       "href": "chapters/goal_06/02-safely-managed-country/index.html?clean=1",
       "gif": "thumbs/042_06_safely_managed_country.gif",
       "originPng": "assets/gallery_thumbnails/water-access_safely_managed_country.png",
+      "originKey": "water-access_safely_managed_country.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 43,
@@ -616,8 +702,10 @@
       "href": "chapters/goal_06/03-estimating/index.html?clean=1",
       "gif": "thumbs/043_06_estimating.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 44,
@@ -630,8 +718,10 @@
       "href": "chapters/goal_06/04-limiting-factors/index.html?clean=1",
       "gif": "thumbs/044_06_limiting_factors.gif",
       "originPng": "assets/gallery_thumbnails/water-access_limiting_factors.png",
+      "originKey": "water-access_limiting_factors.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 45,
@@ -644,8 +734,10 @@
       "href": "chapters/goal_06/05-tanzania-typical-progress/index.html?clean=1",
       "gif": "thumbs/045_06_tanzania_typical_progress.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 46,
@@ -658,8 +750,10 @@
       "href": "chapters/goal_06/06-ecoli-table/index.html?clean=1",
       "gif": "thumbs/046_06_ecoli_table.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 47,
@@ -672,8 +766,10 @@
       "href": "chapters/goal_06/07-e-coli/index.html?clean=1",
       "gif": "thumbs/047_06_e_coli.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 48,
@@ -686,8 +782,10 @@
       "href": "chapters/goal_06/08-e-coli-urban-rural/index.html?clean=1",
       "gif": "thumbs/048_06_e_coli_urban_rural.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 49,
@@ -700,22 +798,26 @@
       "href": "chapters/goal_06/09-bangladesh-arsenic-grouped/index.html?clean=1",
       "gif": "thumbs/049_06_bangladesh_arsenic_grouped.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 50,
       "chapterId": "06",
       "chapterTitle": "Water Access",
       "graphic": "arsenic_by_source",
-      "title": "Arsenic contamination levels are highest in wells\u2014including tubewells\u2014in Bangladesh",
+      "title": "Arsenic contamination levels are highest in wells—including tubewells—in Bangladesh",
       "type": "vis",
       "tier": "B-approved-static",
       "href": "chapters/goal_06/10-arsenic-by-source/index.html?clean=1",
       "gif": "thumbs/050_06_arsenic_by_source.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
+      "library": null
     },
     {
       "index": 51,
@@ -728,8 +830,17 @@
       "href": "chapters/goal_07/00-access-electricity-regions/index.html?clean=1",
       "gif": "thumbs/051_07_access_electricity_regions.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "regions-small-multiples",
+        "version": "0.5",
+        "motion": "opacity 1s + particles",
+        "demo": "library/regions-small-multiples/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 52,
@@ -742,8 +853,17 @@
       "href": "chapters/goal_07/01-access-electricity-population/index.html?clean=1",
       "gif": "thumbs/052_07_access_electricity_population.gif",
       "originPng": "assets/gallery_thumbnails/electricity-access_access_electricity_population.png",
+      "originKey": "electricity-access_access_electricity_population.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "population-access",
+        "version": "0.2",
+        "motion": "opacity 2s + stack layers",
+        "demo": "library/population-access/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 53,
@@ -756,36 +876,63 @@
       "href": "chapters/goal_07/02-access-electricity-urban-rural/index.html?clean=1",
       "gif": "thumbs/053_07_access_electricity_urban_rural.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "dual-line-urban-rural",
+        "version": "0.2",
+        "motion": "intro fade + hatch gap + dual lines (vis)",
+        "demo": "library/dual-line-urban-rural/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 54,
       "chapterId": "07",
       "chapterTitle": "Electricity Access",
       "graphic": "access_electricity_progress",
-      "title": "Ethiopia\u2019s progress towards universal electrification outpaced Nigeria and the Democratic Republic of Congo ",
+      "title": "Ethiopia’s progress towards universal electrification outpaced Nigeria and the Democratic Republic of Congo ",
       "type": "scroller",
       "tier": "A-animated",
       "href": "chapters/goal_07/03-access-electricity-progress/index.html?clean=1",
       "gif": "thumbs/054_07_access_electricity_progress.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "progress-race",
+        "version": "0.2",
+        "motion": "dots 2015 + stems Se + gradient legend + chips + tween 2s",
+        "demo": "library/progress-race/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 55,
       "chapterId": "07",
       "chapterTitle": "Electricity Access",
       "graphic": "access_electricity_urban_rural_countries",
-      "title": "Rapid rural progress in Ethiopia has reduced the urban\u2013rural gap, while the Democratic Republic of Congo and Nigeria have made limited progress",
+      "title": "Rapid rural progress in Ethiopia has reduced the urban–rural gap, while the Democratic Republic of Congo and Nigeria have made limited progress",
       "type": "vis",
       "tier": "A-animated",
       "href": "chapters/goal_07/04-access-electricity-urban-rural-countries/index.html?clean=1",
       "gif": "thumbs/055_07_access_electricity_urban_rural_countries.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "dual-line-urban-rural",
+        "version": "0.2",
+        "motion": "countries ETH/NGA/COD hatch dual-line",
+        "demo": "library/dual-line-urban-rural/demo-countries.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 56,
@@ -798,8 +945,17 @@
       "href": "chapters/goal_07/05-hexmap-nigeria/index.html?clean=1",
       "gif": "thumbs/056_07_hexmap_nigeria.gif",
       "originPng": "assets/gallery_thumbnails/electricity-access_hexmap_nigeria.png",
+      "originKey": "electricity-access_hexmap_nigeria.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "nightlights-hexmap",
+        "version": "0.9",
+        "motion": "Mapbox Standard + origin tiles mlambrechts.* via proxy",
+        "demo": "library/nightlights-hexmap/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 57,
@@ -812,8 +968,17 @@
       "href": "chapters/goal_07/06-hexmap-ethiopia/index.html?clean=1",
       "gif": "thumbs/057_07_hexmap_ethiopia.gif",
       "originPng": "assets/gallery_thumbnails/electricity-access_hexmap_ethiopia.png",
+      "originKey": "electricity-access_hexmap_ethiopia.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
+      "library": {
+        "pattern": "nightlights-hexmap",
+        "version": "0.9",
+        "motion": "Mapbox Standard + origin tiles mlambrechts.* via proxy",
+        "demo": "library/nightlights-hexmap/demo.html",
+        "story": "stories/electricity-access/",
+        "tier": "A-animated"
+      }
     },
     {
       "index": 58,
@@ -826,8 +991,10 @@
       "href": "chapters/goal_08/00-gdp-growth-global-countries/index.html?clean=1",
       "gif": "thumbs/058_08_gdp_growth_global_countries.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 59,
@@ -840,8 +1007,10 @@
       "href": "chapters/goal_08/01-gdp-growth-income-levels/index.html?clean=1",
       "gif": "thumbs/059_08_gdp_growth_income_levels.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 60,
@@ -854,8 +1023,10 @@
       "href": "chapters/goal_08/02-growth-since-90/index.html?clean=1",
       "gif": "thumbs/060_08_growth_since_90.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 61,
@@ -868,8 +1039,10 @@
       "href": "chapters/goal_08/03-gdp-progress-scroller/index.html?clean=1",
       "gif": "thumbs/061_08_gdp_progress_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 62,
@@ -882,8 +1055,10 @@
       "href": "chapters/goal_08/04-income-world-map/index.html?clean=1",
       "gif": "thumbs/062_08_income_world_map.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 63,
@@ -896,8 +1071,10 @@
       "href": "chapters/goal_08/05-income-classification-scroller/index.html?clean=1",
       "gif": "thumbs/063_08_income_classification_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 64,
@@ -910,8 +1087,10 @@
       "href": "chapters/goal_08/06-unemployment-global/index.html?clean=1",
       "gif": "thumbs/064_08_unemployment_global.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 65,
@@ -924,8 +1103,10 @@
       "href": "chapters/goal_08/07-neet-gdp/index.html?clean=1",
       "gif": "thumbs/065_08_neet_gdp.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 66,
@@ -938,8 +1119,10 @@
       "href": "chapters/goal_09/00-internet-access-scroller/index.html?clean=1",
       "gif": "thumbs/066_09_internet_access_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 67,
@@ -952,8 +1135,10 @@
       "href": "chapters/goal_09/01-internet-access-urban-rural/index.html?clean=1",
       "gif": "thumbs/067_09_internet_access_urban_rural.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 68,
@@ -966,8 +1151,10 @@
       "href": "chapters/goal_09/02-income-gender-gap/index.html?clean=1",
       "gif": "thumbs/068_09_income_gender_gap.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 69,
@@ -980,8 +1167,10 @@
       "href": "chapters/goal_09/03-internet-progress/index.html?clean=1",
       "gif": "thumbs/069_09_internet_progress.gif",
       "originPng": "assets/gallery_thumbnails/internet-access_internet_progress.png",
+      "originKey": "internet-access_internet_progress.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 70,
@@ -994,8 +1183,10 @@
       "href": "chapters/goal_09/04-mobile-vs-fixed-broadband/index.html?clean=1",
       "gif": "thumbs/070_09_mobile_vs_fixed_broadband.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 71,
@@ -1008,8 +1199,10 @@
       "href": "chapters/goal_09/05-coverage-map/index.html?clean=1",
       "gif": "thumbs/071_09_coverage_map.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 72,
@@ -1022,8 +1215,10 @@
       "href": "chapters/goal_09/06-speed-test/index.html?clean=1",
       "gif": "thumbs/072_09_speed_test.gif",
       "originPng": "assets/gallery_thumbnails/internet-access_speed_test.png",
+      "originKey": "internet-access_speed_test.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 73,
@@ -1036,8 +1231,10 @@
       "href": "chapters/goal_09/07-coverage-access-slopes/index.html?clean=1",
       "gif": "thumbs/073_09_coverage_access_slopes.gif",
       "originPng": "assets/gallery_thumbnails/internet-access_coverage_access_slopes.png",
+      "originKey": "internet-access_coverage_access_slopes.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 74,
@@ -1050,8 +1247,10 @@
       "href": "chapters/goal_09/08-can-send-text-message/index.html?clean=1",
       "gif": "thumbs/074_09_can_send_text_message.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 75,
@@ -1064,8 +1263,10 @@
       "href": "chapters/goal_09/09-smartphone-ownership/index.html?clean=1",
       "gif": "thumbs/075_09_smartphone_ownership.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
+      "library": null
     },
     {
       "index": 76,
@@ -1078,8 +1279,10 @@
       "href": "chapters/goal_10/00-high-inequality-trend/index.html?clean=1",
       "gif": "thumbs/076_10_high_inequality_trend.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 77,
@@ -1092,22 +1295,26 @@
       "href": "chapters/goal_10/01-high-inequality-map/index.html?clean=1",
       "gif": "thumbs/077_10_high_inequality_map.gif",
       "originPng": "assets/gallery_thumbnails/inequality_high_inequality_map.png",
+      "originKey": "inequality_high_inequality_map.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 78,
       "chapterId": "10",
       "chapterTitle": "Inequality",
       "graphic": "shared_prosperity_scatter",
-      "title": "In three out of four economies, income growth of the poorest 40 percent was faster than the population\u2019s average between 2016 and 2021",
+      "title": "In three out of four economies, income growth of the poorest 40 percent was faster than the population’s average between 2016 and 2021",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_10/02-shared-prosperity-scatter/index.html?clean=1",
       "gif": "thumbs/078_10_shared_prosperity_scatter.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 79,
@@ -1120,8 +1327,10 @@
       "href": "chapters/goal_10/03-prosperity-gap-scroller/index.html?clean=1",
       "gif": "thumbs/079_10_prosperity_gap_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 80,
@@ -1134,8 +1343,10 @@
       "href": "chapters/goal_10/04-prosperity-gaps/index.html?clean=1",
       "gif": "thumbs/080_10_prosperity_gaps.gif",
       "originPng": "assets/gallery_thumbnails/inequality_prosperity_gaps.png",
+      "originKey": "inequality_prosperity_gaps.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 81,
@@ -1148,36 +1359,42 @@
       "href": "chapters/goal_10/05-prosperity-gap-trends/index.html?clean=1",
       "gif": "thumbs/081_10_prosperity_gap_trends.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 82,
       "chapterId": "10",
       "chapterTitle": "Inequality",
       "graphic": "income_prosperity_gap",
-      "title": "Raise everyone\u2019s income by 10 percent",
+      "title": "Raise everyone’s income by 10 percent",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_10/07-income-prosperity-gap-2/index.html?clean=1",
       "gif": "thumbs/083_10_income_prosperity_gap.gif",
       "originPng": "assets/gallery_thumbnails/inequality_income_prosperity_gap.png",
+      "originKey": "inequality_income_prosperity_gap.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 83,
       "chapterId": "10",
       "chapterTitle": "Inequality",
       "graphic": "income_prosperity_gap",
-      "title": "Raise everyone\u2019s income by $10",
+      "title": "Raise everyone’s income by $10",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_10/07-income-prosperity-gap-2/index.html?clean=1",
       "gif": "thumbs/083_10_income_prosperity_gap.gif",
       "originPng": "assets/gallery_thumbnails/inequality_income_prosperity_gap.png",
-      "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "originKey": "inequality_income_prosperity_gap.png",
+      "featured": false,
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 84,
@@ -1190,8 +1407,10 @@
       "href": "chapters/goal_10/08-prosperity-gap-playground/index.html?clean=1",
       "gif": "thumbs/084_10_prosperity_gap_playground.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
+      "library": null
     },
     {
       "index": 85,
@@ -1204,8 +1423,10 @@
       "href": "chapters/goal_11/00-urban-rural-pop-scroller/index.html?clean=1",
       "gif": "thumbs/085_11_urban_rural_pop_scroller.gif",
       "originPng": "assets/gallery_thumbnails/urban-development_urban_rural_pop_scroller.png",
+      "originKey": "urban-development_urban_rural_pop_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 86,
@@ -1218,8 +1439,10 @@
       "href": "chapters/goal_11/01-city-map/index.html?clean=1",
       "gif": "thumbs/086_11_city_map.gif",
       "originPng": "assets/gallery_thumbnails/urban-development_city_map.png",
+      "originKey": "urban-development_city_map.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 87,
@@ -1232,8 +1455,10 @@
       "href": "chapters/goal_11/02-urban-gdp-scatterplot/index.html?clean=1",
       "gif": "thumbs/087_11_urban_gdp_scatterplot.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 88,
@@ -1246,8 +1471,10 @@
       "href": "chapters/goal_11/03-skill-violin/index.html?clean=1",
       "gif": "thumbs/088_11_skill_violin.gif",
       "originPng": "assets/gallery_thumbnails/urban-development_skill_violin.png",
+      "originKey": "urban-development_skill_violin.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 89,
@@ -1260,8 +1487,10 @@
       "href": "chapters/goal_11/04-skill-violin-groups/index.html?clean=1",
       "gif": "thumbs/089_11_skill_violin_groups.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 90,
@@ -1274,8 +1503,10 @@
       "href": "chapters/goal_11/05-pay-beeswarm/index.html?clean=1",
       "gif": "thumbs/090_11_pay_beeswarm.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 91,
@@ -1288,8 +1519,10 @@
       "href": "chapters/goal_11/06-buildup-area-overtime/index.html?clean=1",
       "gif": "thumbs/091_11_buildup_area_overtime.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 92,
@@ -1302,8 +1535,10 @@
       "href": "chapters/goal_11/07-slum-regions/index.html?clean=1",
       "gif": "thumbs/092_11_slum_regions.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 93,
@@ -1316,8 +1551,10 @@
       "href": "chapters/goal_11/08-slum-waffle/index.html?clean=1",
       "gif": "thumbs/093_11_slum_waffle.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 94,
@@ -1330,8 +1567,10 @@
       "href": "chapters/goal_11/09-buildup-area-income/index.html?clean=1",
       "gif": "thumbs/094_11_buildup_area_income.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
+      "library": null
     },
     {
       "index": 95,
@@ -1344,8 +1583,10 @@
       "href": "chapters/goal_12/04-intro-scroller-2/index.html?clean=1",
       "gif": "thumbs/099_12_intro_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 96,
@@ -1358,8 +1599,10 @@
       "href": "chapters/goal_12/01-efficient-price-explanation/index.html?clean=1",
       "gif": "thumbs/096_12_efficient_price_explanation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 97,
@@ -1372,8 +1615,10 @@
       "href": "chapters/goal_12/02-sdg12-efficient-price-dotplot/index.html?clean=1",
       "gif": "thumbs/097_12_sdg12_efficient_price_dotplot.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 98,
@@ -1386,8 +1631,10 @@
       "href": "chapters/goal_12/03-efficient-price-scroller/index.html?clean=1",
       "gif": "thumbs/098_12_efficient_price_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 99,
@@ -1400,8 +1647,10 @@
       "href": "chapters/goal_12/04-intro-scroller-2/index.html?clean=1",
       "gif": "thumbs/099_12_intro_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 100,
@@ -1414,8 +1663,10 @@
       "href": "chapters/goal_12/05-sdg12-challenges-scroller/index.html?clean=1",
       "gif": "thumbs/100_12_sdg12_challenges_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 101,
@@ -1428,8 +1679,10 @@
       "href": "chapters/goal_12/06-ch12-reforms-scroller/index.html?clean=1",
       "gif": "thumbs/101_12_ch12_reforms_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 102,
@@ -1442,8 +1695,10 @@
       "href": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/index.html?clean=1",
       "gif": "thumbs/104_13_sdg13_effects_of_climate_change_scroller.gif",
       "originPng": "assets/gallery_thumbnails/climate_sdg13_effects_of_climate_change_scroller.png",
+      "originKey": "climate_sdg13_effects_of_climate_change_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 103,
@@ -1455,9 +1710,11 @@
       "tier": "C-scroller-shell",
       "href": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/index.html?clean=1",
       "gif": "thumbs/104_13_sdg13_effects_of_climate_change_scroller.gif",
-      "originPng": "assets/gallery_thumbnails/climate_sdg13_effects_of_climate_change_scroller.png",
+      "originPng": "assets/gallery_thumbnails/climate_sdg13_effects_of_climate_change_scroller_heatwaves.png",
+      "originKey": "climate_sdg13_effects_of_climate_change_scroller_heatwaves.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 104,
@@ -1470,8 +1727,10 @@
       "href": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/index.html?clean=1",
       "gif": "thumbs/104_13_sdg13_effects_of_climate_change_scroller.gif",
       "originPng": "assets/gallery_thumbnails/climate_sdg13_effects_of_climate_change_scroller.png",
-      "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "originKey": "climate_sdg13_effects_of_climate_change_scroller.png",
+      "featured": false,
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 105,
@@ -1484,22 +1743,26 @@
       "href": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/index.html?clean=1",
       "gif": "thumbs/104_13_sdg13_effects_of_climate_change_scroller.gif",
       "originPng": "assets/gallery_thumbnails/climate_sdg13_effects_of_climate_change_scroller.png",
-      "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "originKey": "climate_sdg13_effects_of_climate_change_scroller.png",
+      "featured": false,
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 106,
       "chapterId": "13",
       "chapterTitle": "Climate",
       "graphic": "sdg13_effects_of_climate_change",
-      "title": "57 percent of the world\u2019s population is exposed to climate-related hazards",
+      "title": "57 percent of the world’s population is exposed to climate-related hazards",
       "type": "vis",
       "tier": "D-bulk",
       "href": "chapters/goal_13/04-sdg13-effects-of-climate-change/index.html?clean=1",
       "gif": "thumbs/106_13_sdg13_effects_of_climate_change.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 107,
@@ -1512,8 +1775,10 @@
       "href": "chapters/goal_13/05-sdg13-icon-matrix/index.html?clean=1",
       "gif": "thumbs/107_13_sdg13_icon_matrix.gif",
       "originPng": "assets/gallery_thumbnails/climate_sdg13_icon_matrix.png",
+      "originKey": "climate_sdg13_icon_matrix.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 108,
@@ -1526,8 +1791,10 @@
       "href": "chapters/goal_13/06-sdg13-regional-exposure-vuln/index.html?clean=1",
       "gif": "thumbs/108_13_sdg13_regional_exposure_vuln.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 109,
@@ -1540,8 +1807,10 @@
       "href": "chapters/goal_13/05-sdg13-icon-matrix/index.html?clean=1",
       "gif": "thumbs/107_13_sdg13_icon_matrix.gif",
       "originPng": "assets/gallery_thumbnails/climate_sdg13_icon_matrix.png",
-      "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/"
+      "originKey": "climate_sdg13_icon_matrix.png",
+      "featured": false,
+      "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
+      "library": null
     },
     {
       "index": 110,
@@ -1554,8 +1823,10 @@
       "href": "chapters/goal_14/00-plastic-production/index.html?clean=1",
       "gif": "thumbs/110_14_plastic_production.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 111,
@@ -1568,8 +1839,10 @@
       "href": "chapters/goal_14/01-plastic-waste/index.html?clean=1",
       "gif": "thumbs/111_14_plastic_waste.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 112,
@@ -1582,8 +1855,10 @@
       "href": "chapters/goal_14/02-plastic-leakage/index.html?clean=1",
       "gif": "thumbs/112_14_plastic_leakage.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 113,
@@ -1596,8 +1871,10 @@
       "href": "chapters/goal_14/03-plastic-discharge/index.html?clean=1",
       "gif": "thumbs/113_14_plastic_discharge.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 114,
@@ -1610,8 +1887,10 @@
       "href": "chapters/goal_14/04-plastic-concentration/index.html?clean=1",
       "gif": "thumbs/114_14_plastic_concentration.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 115,
@@ -1624,8 +1903,10 @@
       "href": "chapters/goal_14/05-north-pacific-garbage-patch/index.html?clean=1",
       "gif": "thumbs/115_14_north_pacific_garbage_patch.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 116,
@@ -1638,8 +1919,10 @@
       "href": "chapters/goal_14/06-fish-mortality/index.html?clean=1",
       "gif": "thumbs/116_14_fish_mortality.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 117,
@@ -1652,8 +1935,10 @@
       "href": "chapters/goal_14/07-plastic-seafood/index.html?clean=1",
       "gif": "thumbs/117_14_plastic_seafood.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 118,
@@ -1666,8 +1951,10 @@
       "href": "chapters/goal_14/08-nitrogen-phosphorus/index.html?clean=1",
       "gif": "thumbs/118_14_nitrogen_phosphorus.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 119,
@@ -1680,8 +1967,10 @@
       "href": "chapters/goal_14/09-phosphorus-increase/index.html?clean=1",
       "gif": "thumbs/119_14_phosphorus_increase.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 120,
@@ -1694,8 +1983,10 @@
       "href": "chapters/goal_14/10-nitrogen-increase/index.html?clean=1",
       "gif": "thumbs/120_14_nitrogen_increase.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 121,
@@ -1708,8 +1999,10 @@
       "href": "chapters/goal_14/11-chlorophyll-a-trend/index.html?clean=1",
       "gif": "thumbs/121_14_chlorophyll_a_trend.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 122,
@@ -1722,8 +2015,10 @@
       "href": "chapters/goal_14/12-chlorophyll-deviation/index.html?clean=1",
       "gif": "thumbs/122_14_chlorophyll_deviation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 123,
@@ -1736,8 +2031,10 @@
       "href": "chapters/goal_14/13-phytoplankton-blooms/index.html?clean=1",
       "gif": "thumbs/123_14_phytoplankton_blooms.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 124,
@@ -1750,8 +2047,10 @@
       "href": "chapters/goal_14/14-algal-blooms/index.html?clean=1",
       "gif": "thumbs/124_14_algal_blooms.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 125,
@@ -1764,8 +2063,10 @@
       "href": "chapters/goal_15/00-land-use/index.html?clean=1",
       "gif": "thumbs/125_15_land_use.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 126,
@@ -1778,8 +2079,10 @@
       "href": "chapters/goal_15/01-arable-land-degradation/index.html?clean=1",
       "gif": "thumbs/126_15_arable_land_degradation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 127,
@@ -1792,8 +2095,10 @@
       "href": "chapters/goal_15/02-aridity-classes/index.html?clean=1",
       "gif": "thumbs/127_15_aridity_classes.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 128,
@@ -1806,8 +2111,10 @@
       "href": "chapters/goal_15/03-aridity-difference/index.html?clean=1",
       "gif": "thumbs/128_15_aridity_difference.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 129,
@@ -1820,8 +2127,10 @@
       "href": "chapters/goal_15/04-new-drylands/index.html?clean=1",
       "gif": "thumbs/129_15_new_drylands.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 130,
@@ -1834,8 +2143,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 131,
@@ -1848,8 +2159,10 @@
       "href": "chapters/goal_15/06-aridity-biodiversity-map/index.html?clean=1",
       "gif": "thumbs/131_15_aridity_biodiversity_map.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 132,
@@ -1862,8 +2175,10 @@
       "href": "chapters/goal_15/07-protected-areas/index.html?clean=1",
       "gif": "thumbs/132_15_protected_areas.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 133,
@@ -1876,8 +2191,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 134,
@@ -1890,8 +2207,10 @@
       "href": "chapters/goal_16/00-ai-adoption/index.html?clean=1",
       "gif": "thumbs/134_16_ai_adoption.gif",
       "originPng": "assets/gallery_thumbnails/artificial-intelligence_ai_adoption.png",
+      "originKey": "artificial-intelligence_ai_adoption.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+      "library": null
     },
     {
       "index": 135,
@@ -1904,8 +2223,10 @@
       "href": "chapters/goal_16/01-affordability-barrier/index.html?clean=1",
       "gif": "thumbs/135_16_affordability_barrier.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+      "library": null
     },
     {
       "index": 136,
@@ -1918,8 +2239,10 @@
       "href": "chapters/goal_16/02-digital-language-divide/index.html?clean=1",
       "gif": "thumbs/136_16_digital_language_divide.gif",
       "originPng": "assets/gallery_thumbnails/artificial-intelligence_digital_language_divide.png",
+      "originKey": "artificial-intelligence_digital_language_divide.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+      "library": null
     },
     {
       "index": 137,
@@ -1932,8 +2255,10 @@
       "href": "chapters/goal_16/03-digital-skills/index.html?clean=1",
       "gif": "thumbs/137_16_digital_skills.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+      "library": null
     },
     {
       "index": 138,
@@ -1946,8 +2271,10 @@
       "href": "chapters/goal_16/04-exposure/index.html?clean=1",
       "gif": "thumbs/138_16_exposure.gif",
       "originPng": "assets/gallery_thumbnails/artificial-intelligence_exposure.png",
+      "originKey": "artificial-intelligence_exposure.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+      "library": null
     },
     {
       "index": 139,
@@ -1960,22 +2287,26 @@
       "href": "chapters/goal_17/00-survey-age/index.html?clean=1",
       "gif": "thumbs/139_17_survey_age.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
+      "library": null
     },
     {
       "index": 140,
       "chapterId": "17",
       "chapterTitle": "Data for Development",
       "graphic": "nigeria_poverty_extrapolation",
-      "title": "Nigeria\u2019s rate of extreme poverty",
+      "title": "Nigeria’s rate of extreme poverty",
       "type": "scroller",
       "tier": "B-approved-static",
       "href": "chapters/goal_17/01-nigeria-poverty-extrapolation/index.html?clean=1",
       "gif": "thumbs/140_17_nigeria_poverty_extrapolation.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
+      "library": null
     },
     {
       "index": 141,
@@ -1988,8 +2319,10 @@
       "href": "chapters/goal_17/02-missing-children-data-waffles/index.html?clean=1",
       "gif": "thumbs/141_17_missing_children_data_waffles.gif",
       "originPng": "assets/gallery_thumbnails/data-for-development_missing_children_data_waffles.png",
+      "originKey": "data-for-development_missing_children_data_waffles.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
+      "library": null
     },
     {
       "index": 142,
@@ -2002,8 +2335,10 @@
       "href": "chapters/goal_17/03-spi-scroller/index.html?clean=1",
       "gif": "thumbs/142_17_spi_scroller.gif",
       "originPng": "assets/gallery_thumbnails/data-for-development_spi_scroller.png",
+      "originKey": "data-for-development_spi_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
+      "library": null
     },
     {
       "index": 143,
@@ -2016,8 +2351,10 @@
       "href": "chapters/goal_17/04-spi-gdp-scatter/index.html?clean=1",
       "gif": "thumbs/143_17_spi_gdp_scatter.gif",
       "originPng": "assets/gallery_thumbnails/data-for-development_spi_gdp_scatter.png",
+      "originKey": "data-for-development_spi_gdp_scatter.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
+      "library": null
     },
     {
       "index": 144,
@@ -2030,8 +2367,10 @@
       "href": "chapters/goal_99/00-basic-scatterplot/index.html?clean=1",
       "gif": "thumbs/144_99_basic_scatterplot.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 145,
@@ -2044,8 +2383,10 @@
       "href": "chapters/goal_99/01-poverty-projections/index.html?clean=1",
       "gif": "thumbs/145_99_poverty_projections.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 146,
@@ -2058,8 +2399,10 @@
       "href": "chapters/goal_99/02-basic-scatterplot-particles/index.html?clean=1",
       "gif": "thumbs/146_99_basic_scatterplot_particles.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 147,
@@ -2072,8 +2415,10 @@
       "href": "chapters/goal_dashboard/00-indicators-progress/index.html?clean=1",
       "gif": "thumbs/147_dashboard_indicators_progress.gif",
       "originPng": "assets/gallery_thumbnails/global-progress_indicators_progress.png",
+      "originKey": "global-progress_indicators_progress.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/",
+      "library": null
     },
     {
       "index": 148,
@@ -2086,8 +2431,10 @@
       "href": "chapters/goal_dashboard/01-dashboard-scroller/index.html?clean=1",
       "gif": "thumbs/148_dashboard_dashboard_scroller.gif",
       "originPng": "assets/gallery_thumbnails/global-progress_dashboard_scroller.png",
+      "originKey": "global-progress_dashboard_scroller.png",
       "featured": true,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/",
+      "library": null
     },
     {
       "index": 149,
@@ -2100,8 +2447,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 150,
@@ -2114,8 +2463,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 151,
@@ -2128,8 +2479,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 152,
@@ -2142,8 +2495,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 153,
@@ -2156,8 +2511,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 154,
@@ -2170,8 +2527,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 155,
@@ -2184,8 +2543,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 156,
@@ -2198,8 +2559,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 157,
@@ -2212,8 +2575,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 158,
@@ -2226,8 +2591,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 159,
@@ -2240,8 +2607,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 160,
@@ -2254,8 +2623,10 @@
       "href": "chapters/goal_id4d/10-image-11/index.html?clean=1",
       "gif": "thumbs/159_id4d_image.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": null
+      "liveUrl": null,
+      "library": null
     },
     {
       "index": 161,
@@ -2268,8 +2639,10 @@
       "href": "chapters/goal_progress/00-poverty-progress-comparison/index.html?clean=1",
       "gif": "thumbs/161_progress_poverty_progress_comparison.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
+      "library": null
     },
     {
       "index": 162,
@@ -2282,22 +2655,26 @@
       "href": "chapters/goal_progress/01-poverty-rate-change-scroller/index.html?clean=1",
       "gif": "thumbs/162_progress_poverty_rate_change_scroller.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
+      "library": null
     },
     {
       "index": 163,
       "chapterId": "progress",
       "chapterTitle": "Measuring Progress",
       "graphic": "projection_country",
-      "title": "Possible poverty targets for C\u00f4te d'Ivoire",
+      "title": "Possible poverty targets for Côte d'Ivoire",
       "type": "scroller",
       "tier": "C-scroller-shell",
       "href": "chapters/goal_progress/02-projection-country/index.html?clean=1",
       "gif": "thumbs/163_progress_projection_country.gif",
       "originPng": null,
+      "originKey": null,
       "featured": false,
-      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/"
+      "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
+      "library": null
     }
   ]
 }

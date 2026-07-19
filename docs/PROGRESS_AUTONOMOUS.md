@@ -1,60 +1,38 @@
-# Avance autónomo (session)
+# Avance autónomo
 
 **Repo:** https://github.com/diazaraujo/libreria-storytell  
-**Última actualización:** 2026-07-18
+**Última actualización:** 2026-07-19
 
 ## Hecho
 
 ### Infra
-- [x] Repo GitHub `diazaraujo/libreria-storytell` · `main`
-- [x] Tokens Mapbox **no** en git (`mapbox-config.example.js` only)
-- [x] Servers :8787 · :8765 · :8790 mapbox-proxy
+- [x] Repo `diazaraujo/libreria-storytell`
+- [x] Tokens Mapbox fuera de git
+- [x] `scripts/dev-servers.sh` → :8787 · :8765 · :8790
 
-### Hexmap residual → **v0.9.0**
-- [x] Mapbox Standard monochrome
-- [x] Origin layer order + opacity scenes
-- [x] **Origin tiles** `mlambrechts.*` vía proxy + data token
-- [x] Dual token: basemap user · tiles data
-- [x] Fallback H3 geojson
-- [x] Urban GHSL real (tileset)
-- [x] Badge `origin tiles`
+### Gallery estilo Atlas
+- [x] `gallery-atlas.html` (layout data360)
+- [x] **Featured = 34** stills oficiales (1 card por PNG)
+- [x] **All = 164** con GIF locales
+- [x] Filtro por tema + búsqueda
+- [x] Thumbs en `assets/gallery_thumbnails/`
 
-### Electricity — QA Playwright (2026-07-18)
+### Hexmap v0.9 + Electricity
+- [x] Origin Mapbox tiles vía proxy
+- [x] Story electricity 7/7 · QA 14/14
 
-| Entry | HTTP | Render | Errors |
-|-------|------|--------|--------|
-| library hex demo | 200 | 2 canvas · origin tiles | 0 |
-| progress-race demo | 200 | svg | 0 |
-| dual-line regions | 200 | svg | 0 |
-| dual-line countries | 200 | svg | 0 |
-| regions-small-multiples | 200 | svg | 0 |
-| population-access | 200 | svg | 0 |
-| ch 00 regions | 200 | svg | 0 |
-| ch 01 population | 200 | svg | 0 |
-| ch 02 urban-rural | 200 | svg | 0 |
-| ch 03 progress | 200 | svg | 0 |
-| ch 04 ur countries | 200 | svg | 0 |
-| ch 05 hex NG | 200 | canvas · origin tiles | 0 |
-| ch 06 hex ET | 200 | canvas · origin tiles | 0 |
-| **story electricity-access** | 200 | all libs loaded | 0 |
-
-**14/14 OK**
-
-Story deep scroll: 6 SVG + 2 canvas · all libs · 0 errors.
-
-## Cómo retomar
+## Cómo arrancar
 
 ```bash
 cd ~/atlas-replicas
-python3 -m http.server 8787 &
-python3 library/nightlights-hexmap/mapbox-proxy.py &
-# mapbox-config.js local (gitignored)
-open http://127.0.0.1:8787/stories/electricity-access/
-open http://127.0.0.1:8787/docs/PROGRESS_AUTONOMOUS.md
-git log --oneline -8
+bash scripts/dev-servers.sh
+# mapbox-config.js local (gitignored):
+#   cp library/nightlights-hexmap/mapbox-config.example.js \
+#      library/nightlights-hexmap/mapbox-config.js
+open http://127.0.0.1:8787/gallery-atlas.html
 ```
 
-## Siguiente (opcional)
-- Compare visual frame-by-frame origin :8765 vs story
-- Expand library a otros goals (internet, poverty residual)
-- CI smoke Playwright en GitHub Actions
+## Siguiente
+- Compare visual origin vs story electricity (frame by frame)
+- Promover otros chapters a library patterns
+- CI smoke en GitHub Actions

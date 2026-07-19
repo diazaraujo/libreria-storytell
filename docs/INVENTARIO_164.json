@@ -1122,8 +1122,8 @@
       "tier": "A-animated",
       "library": {
         "pattern": "nightlights-hexmap",
-        "version": "0.2",
-        "motion": "Mapbox H3 vector tiles + scene layers/bounds",
+        "version": "0.9",
+        "motion": "Mapbox Standard monochrome + origin vector tiles (proxy)",
         "demo": "library/nightlights-hexmap/demo.html",
         "story": "stories/electricity-access/",
         "tier": "A-animated"
@@ -1146,8 +1146,8 @@
       "tier": "A-animated",
       "library": {
         "pattern": "nightlights-hexmap",
-        "version": "0.2",
-        "motion": "Mapbox H3 vector tiles rural nightlights",
+        "version": "0.9",
+        "motion": "Mapbox Standard monochrome + origin vector tiles (proxy)",
         "demo": "library/nightlights-hexmap/demo.html",
         "story": "stories/electricity-access/",
         "tier": "A-animated"
