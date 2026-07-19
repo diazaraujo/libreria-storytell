@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internet Access — Chapter scroll (Atlas replica)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/chapter-scroll.css" />
+  <style>
+    body { margin: 0; background: #fff; }
+    body.ch-story-page { --ch-sticky-top: 0px; }
+    .ch-topbar {
+      position: relative; z-index: 5;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 8px 16px;
+      background: #fff; border-bottom: 1px solid #e8eaef;
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif; color: #6a7781;
+    }
+    .ch-topbar a { color: #0071bc; text-decoration: none; }
+    .ch-topbar .tag {
+      background: #e0f2fe; color: #0369a1;
+      padding: 3px 8px; border-radius: 999px; font-size: 11px;
+    }
+    .ch-end {
+      max-width: 640px; margin: 0 auto; padding: 48px 24px 96px;
+      color: #6a7781; font-size: 14px; line-height: 1.5;
+    }
+  </style>
+</head>
+<body class="ch-story-page">
+  <div class="ch-topbar">
+    <div>
+      <a href="../../gallery-atlas.html">← Gallery</a>
+      · <a href="../../gallery.html">Dev</a>
+      · <span class="tag">internet · dual-line + progress</span>
+    </div>
+    <div>
+      <a href="http://127.0.0.1:8765/en/atlas/internet-access/" target="_blank">Origen</a>
+      ·
+      <a href="https://data360.worldbank.org/en/atlas/internet-access/" target="_blank">Live Atlas</a>
+    </div>
+  </div>
+
+  <div id="story"></div>
+
+  <div class="ch-end">
+    <p>
+      <strong>Internet story (MVP)</strong> — dual-line income urban/rural (library v0.3) ·
+      progress race 2015→2024 · particles hero.
+    </p>
+  </div>
+
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="../../shared/particles.js"></script>
+  <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../library/dual-line-urban-rural/dual-line-urban-rural.js"></script>
+  <script src="../../library/progress-race/progress-race.js"></script>
+  <script>
+    (async function () {
+      const story = await (await fetch("./story.json")).json();
+
+      const [urbanRuralRows, progressRaw] = await Promise.all([
+        AtlasLoad.csv("./data/09_data_internet_access_urban_rural.csv"),
+        AtlasLoad.csv(
+          "../../chapters/goal_09/03-internet-progress/data/09_data_internet_usage_progress.csv"
+        ),
+      ]);
+
+      // Map internet fields → progress-race expected columns
+      const progressRows = progressRaw.map((r) => ({
+        iso3c: r.iso3c,
+        access_2015: r.internet_2015,
+        access_2023: r.internet_2024,
+      }));
+
+      const wait2 = () =>
+        new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      for (const b of story.blocks) {
+        if (b.id === "urban-rural-income") {
+          b.mount = async (chartEl) => {
+            await wait2();
+            const h = Math.min(480, Math.max(360, chartEl.clientHeight || 420));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasDualLineUrbanRural.mount(chartEl, {
+              rows: urbanRuralRows,
+              variant: "income",
+              forceRemount: true,
+              height: h,
+              labels: {
+                urban: "Urban",
+                rural: "Rural",
+                y_axis_units: "% of population",
+              },
+            });
+          };
+        }
+        if (b.id === "progress") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasProgressRace.mount(chartEl, {
+              rows: progressRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              names: window.ATLAS_COUNTRY_NAMES || {},
+              // focus a few lower-access large countries if present
+              focus: ["ETH", "NGA", "IND", "BGD", "COD"].filter(Boolean),
+              forceRemount: true,
+              height: h,
+              labels: {
+                progress_speed: "Speed of progress",
+                regression: "regression",
+                standstill: "standstill",
+                slow: "slow",
+                typical: "typical",
+                fast: "fast",
+                very_fast: "very fast",
+                select_country: "Select countries to highlight",
+              },
+            });
+          };
+        }
+      }
+
+      window.__chapter = AtlasChapterScroll.mount(
+        document.getElementById("story"),
+        story
+      );
+    })().catch((err) => {
+      console.error(err);
+      document.getElementById("story").innerHTML =
+        `<div style="padding:40px;color:#aa0000"><strong>Story load error</strong><pre>${err}</pre></div>`;
+    });
+  </script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 **Canónico:** `access_electricity_urban_rural`  
 **Chunk:** `Bktvr1TG.js` · CSS `AccessElectricityUrbanRural.DByRSGQJ.css`  
 **Tipo:** **vis** (sin escenas)  
-**Estado:** **v0.1** — hatch gap + curveNatural + layout 4×2
+**Estado:** **v0.3** — + variant `income` (Internet Access) — hatch gap + curveNatural + layout 4×2
 
 ## Layout (Bktvr1TG)
 
@@ -39,5 +39,6 @@
 AtlasDualLineUrbanRural.mount(el, {
   rows, labels: { urban, rural, y_axis_units }, intro: true
 });
-// version: 0.1.0
+// version: 0.3.0
+// variant: "regions" | "countries" | "income"
 ```

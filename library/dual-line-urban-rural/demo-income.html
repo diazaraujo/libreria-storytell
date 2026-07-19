@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Library · Dual-line Income Urban–Rural v0.3</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #111; }
+    header { padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 4px; font-size: 18px; }
+    .sub { color: #6a7781; font-size: 13px; }
+    .stage {
+      height: 440px; margin: 16px; background: #fff; border-radius: 12px;
+      border: 1px solid #e5e7eb;
+    }
+    .links { font-size: 12px; padding: 0 20px 20px; color: #6a7781; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AtlasLibrary.DualLineUrbanRural <small style="color:#6a7781">income · v0.3</small></h1>
+    <p class="sub">Internet Access — WLD / LIC / LMC / UMC / HIC · urban vs rural · 2022–2025 · hatch gap</p>
+  </header>
+  <div class="stage" id="chart"></div>
+  <p class="links">
+    Regions: <a href="./demo.html">regions</a> ·
+    Countries: <a href="./demo-countries.html">ETH/NGA/COD</a> ·
+    Chapter: <a href="../../chapters/goal_09/01-internet-access-urban-rural/index.html?clean=1">goal_09/01</a>
+  </p>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./dual-line-urban-rural.js"></script>
+  <script>
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_09/01-internet-access-urban-rural/data/09_data_internet_access_urban_rural.csv"
+      );
+      AtlasDualLineUrbanRural.mount(document.getElementById("chart"), {
+        rows,
+        variant: "income",
+        height: 420,
+        labels: {
+          urban: "Urban",
+          rural: "Rural",
+          y_axis_units: "% of population",
+        },
+      });
+    })();
+  </script>
+</body>
+</html>

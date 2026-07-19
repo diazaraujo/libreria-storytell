@@ -1,9 +1,10 @@
 /**
- * AtlasDualLineUrbanRural v0.2 — pixel-matched
+ * AtlasDualLineUrbanRural v0.3 — pixel-matched + income variant
  *
  * Variants:
- *  - regions   (Bktvr1TG AccessElectricityUrbanRural)  4×2
+ *  - regions   (Bktvr1TG AccessElectricityUrbanRural)  4×2 · 2000–2023
  *  - countries (DnvCGyY_ AccessElectricityUrbanRuralCountries) 1×3 ETH/NGA/COD
+ *  - income    (Internet Access urban–rural) 1×5 WLD/LIC/LMC/UMC/HIC · 2022–2025
  *
  * Dual lines urban/rural · gap = diagonal hatch · curveNatural
  * Vis — mount once.
@@ -35,7 +36,15 @@
     COD: "Congo, Dem. Rep.",
   };
 
-  const X_DOMAIN = [2000, 2023];
+  const INCOME_ORDER = ["WLD", "LIC", "LMC", "UMC", "HIC"];
+  const INCOME_LABELS = {
+    WLD: "World",
+    LIC: "Low income",
+    LMC: "Lower middle",
+    UMC: "Upper middle",
+    HIC: "High income",
+  };
+
   const Y_DOMAIN = [0, 100];
   const INSTANCES = new WeakMap();
 
@@ -120,7 +129,8 @@
     rows.forEach((r) => {
       const iso = r.iso3c || r.iso;
       const year = +r.year;
-      const v = +r.access_electricity;
+      // electricity CSV: access_electricity · internet CSV: value
+      const v = +(r.access_electricity != null ? r.access_electricity : r.value);
       const area = (r.area || "").toLowerCase();
       if (!iso || !Number.isFinite(year) || !Number.isFinite(v)) return;
       if (area !== "urban" && area !== "rural") return;
@@ -155,7 +165,26 @@
         inlineUrbanY: 85,
         inlineRuralY: 13,
         labelTop: -16,
+        xDomain: [2000, 2023],
         xTicks: [2000, 2023],
+      };
+    }
+    if (variant === "income") {
+      // Internet Access · urban–rural by income group (2022–2025)
+      return {
+        margin: { top: 36, right: 16, bottom: 36, left: 40 },
+        gap: 20,
+        cols: mobile ? 1 : 5,
+        rowsN: mobile ? 5 : 1,
+        h: heightOpt || (mobile ? 900 : 420),
+        order: INCOME_ORDER,
+        labels: INCOME_LABELS,
+        yHead: 8,
+        yTicks: [0, 50, 100],
+        inlineLabelKey: null,
+        labelTop: -14,
+        xDomain: [2022, 2025],
+        xTicks: [2022, 2025],
       };
     }
     // regions Bktvr1TG
@@ -174,6 +203,7 @@
       inlineRuralY: 73,
       labelTop: -16,
       labelTopMEA: -32,
+      xDomain: [2000, 2023],
       xTicks: [2000, 2023],
     };
   }
@@ -182,12 +212,15 @@
     const SVG = ensureSVG();
     const {
       rows = [],
-      variant = "regions", // 'regions' | 'countries'
+      variant = "regions", // 'regions' | 'countries' | 'income'
       labels: labelOpts = {},
       reuse = true,
       forceRemount = false,
       height: heightOpt = null,
       intro = true,
+      xDomain: xDomainOpt = null,
+      order: orderOpt = null,
+      panelLabels: panelLabelsOpt = null,
     } = options;
 
     const L = {
@@ -217,15 +250,20 @@
       cols,
       rowsN,
       h,
-      order: ORDER,
-      labels: PANEL_LABELS,
+      order: orderCfg,
+      labels: labelsCfg,
       yHead,
       yTicks,
       inlineLabelKey,
       inlineUrbanY,
       inlineRuralY,
-      xTicks,
+      xDomain: xDomainCfg,
+      xTicks: xTicksCfg,
     } = cfg;
+    const ORDER = orderOpt || orderCfg;
+    const PANEL_LABELS = panelLabelsOpt || labelsCfg;
+    const X_DOMAIN = xDomainOpt || xDomainCfg || [2000, 2023];
+    const xTicks = xTicksCfg || X_DOMAIN;
 
     container.innerHTML = "";
     const root = document.createElement("div");
@@ -501,11 +539,13 @@
   global.AtlasDualLineUrbanRural = {
     mount,
     prepareByIso,
-    version: "0.2.0",
+    version: "0.3.0",
     REGION_ORDER,
     COUNTRY_ORDER,
+    INCOME_ORDER,
     URBAN,
     RURAL,
+    VARIANTS: ["regions", "countries", "income"],
   };
   global.AtlasLibrary = global.AtlasLibrary || {};
   global.AtlasLibrary.DualLineUrbanRural = global.AtlasDualLineUrbanRural;

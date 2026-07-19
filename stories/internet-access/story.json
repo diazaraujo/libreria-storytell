@@ -1,0 +1,70 @@
+{
+  "slug": "internet-access",
+  "title": "Connecting the World: The Race for Internet Access",
+  "hero": {
+    "kicker": "Internet Access",
+    "title": "Connecting the World: The Race for Internet Access",
+    "lead": "Internet use has soared, yet large gaps remain between cities and rural areas — and between income groups. Scroll to explore the urban–rural digital divide.",
+    "particles": {
+      "color": "#2f80ed",
+      "count": 520,
+      "opacity": 0.42
+    }
+  },
+  "blocks": [
+    {
+      "id": "urban-rural-income",
+      "type": "vis",
+      "graphic": "internet_access_urban_rural",
+      "library": "DualLineUrbanRural",
+      "title": "The urban–rural digital divide",
+      "subtitle": "Individuals using the Internet, by place of residence (% of population)",
+      "source": "International Telecommunications Union (ITU). Statistics.",
+      "vhPerScene": 1.1,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "intro",
+          "text": "Across every income group, <span style=\"color:#5071c8;font-weight:700\">urban</span> residents are more likely to use the Internet than people in <span style=\"color:#21865d;font-weight:700\">rural</span> areas. The gap is widest in low-income economies."
+        }
+      ]
+    },
+    {
+      "id": "bridge-1",
+      "type": "prose",
+      "html": "<p>Income shapes connectivity. High-income economies already show near-universal urban and rural use, while low-income countries still face double-digit gaps — and much lower absolute levels of access.</p>"
+    },
+    {
+      "id": "progress",
+      "type": "scroller",
+      "graphic": "internet_progress",
+      "library": "ProgressRace",
+      "title": "Internet use is rising — but not equally",
+      "subtitle": "Individuals using the Internet (% of population)",
+      "source": "International Telecommunications Union (ITU).",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "start",
+          "text": "In 2015, many countries still had low Internet use. Dots show each country’s starting point."
+        },
+        {
+          "type": "scene",
+          "id": "end",
+          "text": "By 2024 most countries moved right — higher access — but the distance covered varies widely."
+        },
+        {
+          "type": "scene",
+          "id": "speed",
+          "text": "Color shows the <strong>speed of progress</strong> between 2015 and 2024."
+        },
+        {
+          "type": "scene",
+          "id": "all",
+          "text": "Explore all countries. Highlight any economy to compare its path."
+        }
+      ]
+    }
+  ]
+}
