@@ -4,7 +4,12 @@
   "hero": {
     "kicker": "Electricity Access",
     "title": "Access to Electricity: Who Remains Without Power?",
-    "lead": "Global electricity access has expanded steadily over the past two decades, yet progress remains deeply uneven. Scroll to move through the story — charts stay sticky while annotations and highlights change with your position."
+    "lead": "Global electricity access has expanded steadily over the past two decades, yet progress remains deeply uneven. Scroll to move through the story — charts stay sticky while annotations and highlights change with your position.",
+    "particles": {
+      "color": "#e31c3d",
+      "count": 580,
+      "opacity": 0.48
+    }
   },
   "blocks": [
     {

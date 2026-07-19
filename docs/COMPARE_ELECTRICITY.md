@@ -20,7 +20,7 @@
 
 ## Residuals (honest)
 
-1. **Particle field** — origin full-page red particles (`particle-container`). Replica does not ship Atlas particle system (Svelte/Pixi chrome). Optional future: lightweight canvas particles on story hero only.
+1. **Particle field** — ✅ replica ships `shared/particles.js` (canvas field, theme red, reduced-motion safe). Origin uses Pixi ParticleContainer; visual parity is strong on intro, not byte-identical engine.
 2. **Story shell chrome** — origin has Atlas nav / theme tokens; replica has thin topbar + sticky charts (by design).
 3. **Private tilesets** — need `mapbox-proxy.py` + data token for origin hex fidelity; falls back to H3 geojson offline.
 4. **Scene nav on chapter pages** — clean mode uses scroller dots inside story; individual chapter `?clean=1` may not expose scene buttons (scroll-driven in story).
@@ -30,6 +30,7 @@
 - [x] Hide hexmap `origin tiles` badge by default (`showBadge` only in library demo)
 - [x] Story topbar → Gallery / Dev / Live links
 - [x] Document this compare matrix
+- [x] Hero/story particle field (`AtlasParticles`)
 
 ## How to re-run captures
 

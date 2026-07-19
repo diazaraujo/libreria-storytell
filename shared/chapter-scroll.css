@@ -27,9 +27,20 @@
 
 /* Hero */
 .ch-hero {
+  position: relative;
+  z-index: 2;
   max-width: 720px;
   margin: 0 auto;
   padding: 48px var(--ch-pad-x) 56px;
+}
+/* Particles sit under sticky white panels (z-index 2) */
+.ch-story--particles .ch-sticky {
+  z-index: 3;
+}
+.ch-story--particles .ch-prose {
+  position: relative;
+  z-index: 2;
+  background: transparent;
 }
 .ch-kicker {
   text-transform: uppercase;

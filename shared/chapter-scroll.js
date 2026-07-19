@@ -166,6 +166,7 @@
     root.classList.add("ch-story");
     root.innerHTML = "";
 
+    let particleCtl = null;
     if (story.hero) {
       const hero = document.createElement("header");
       hero.className = "ch-hero";
@@ -175,6 +176,23 @@
         <p class="ch-lead">${story.hero.lead || ""}</p>
       `;
       root.appendChild(hero);
+
+      // Full-viewport particle field (Atlas chrome) — enabled by default when hero present
+      const particlesOpt = story.hero.particles ?? story.particles;
+      if (particlesOpt !== false && global.AtlasParticles) {
+        const p =
+          typeof particlesOpt === "object" && particlesOpt
+            ? particlesOpt
+            : {};
+        particleCtl = global.AtlasParticles.mount({
+          color: p.color || "#e31c3d",
+          count: p.count || 560,
+          opacity: p.opacity ?? 0.5,
+          zIndex: p.zIndex ?? 1,
+          parent: document.body,
+        });
+        root.classList.add("ch-story--particles");
+      }
     }
 
     const runtime = [];
@@ -371,6 +389,8 @@
       destroy() {
         window.removeEventListener("scroll", onScroll);
         window.removeEventListener("resize", onScroll);
+        if (particleCtl && particleCtl.destroy) particleCtl.destroy();
+        particleCtl = null;
         controllers.forEach((c) => c.destroy && c.destroy());
         root.innerHTML = "";
       },
