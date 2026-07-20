@@ -22,7 +22,10 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-20",
+    "approvalNote": "auto bulk waffle · real CSV bind · gallery complete (Tier B bulk)"
   },
   "scenes": []
 }

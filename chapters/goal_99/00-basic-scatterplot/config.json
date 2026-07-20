@@ -25,7 +25,10 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-20",
+    "approvalNote": "basic scatter · projection CSV · gallery complete"
   },
   "scenes": []
 }

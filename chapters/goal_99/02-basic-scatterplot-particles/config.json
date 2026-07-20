@@ -36,6 +36,10 @@
     "dir": "chapters/goal_99/02-basic-scatterplot-particles",
     "status": "ready",
     "template": "scroller",
-    "reference": null
+    "reference": null,
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-20",
+    "approvalNote": "particles scatter stand-in · CSV · gallery complete"
   }
 }

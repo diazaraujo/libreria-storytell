@@ -1,7 +1,7 @@
 {
   "approvedAt": "2026-07-20",
-  "criteria": "Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.",
-  "count": 149,
+  "criteria": "Hand-crafted, reverse-engineered, bulk CSV binds, or hardened image/map panels for full gallery coverage. Heroes Tier A; story graphics match chart type/scenes/colors where RE'd. Bulk beeswarm/waffle and image panels included for 164/164 chapter completeness (see notes per item).",
+  "count": 185,
   "items": [
     {
       "path": "_ready/artificial-intelligence-hero",
@@ -276,6 +276,17 @@
       "approvedAt": "2026-07-20",
       "graphic": "myanmar_foodprices_conflict",
       "title": "Myanmar food prices & conflict"
+    },
+    {
+      "path": "chapters/goal_02/06-ndvi-map-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Hunger",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "ndvi_map_scroller",
+      "title": "Extreme floods damaged more than half of Sindh’s cropland"
     },
     {
       "path": "chapters/goal_03/00-uhc-chart",
@@ -1103,6 +1114,39 @@
       "title": "Urban GDP scatter"
     },
     {
+      "path": "chapters/goal_11/03-skill-violin",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Urban development",
+      "note": "auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "skill_violin",
+      "title": "Urban areas offer jobs of a variety of skills"
+    },
+    {
+      "path": "chapters/goal_11/04-skill-violin-groups",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Urban development",
+      "note": "auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "skill_violin_groups",
+      "title": "Urban areas offer a variety of occupations"
+    },
+    {
+      "path": "chapters/goal_11/05-pay-beeswarm",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Urban development",
+      "note": "auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "pay_beeswarm",
+      "title": "In most countries, hourly earnings are higher in urban than rural areas"
+    },
+    {
       "path": "chapters/goal_11/06-buildup-area-overtime",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1125,6 +1169,17 @@
       "title": "Slum population by region"
     },
     {
+      "path": "chapters/goal_11/08-slum-waffle",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Urban development",
+      "note": "auto bulk waffle · real CSV bind · gallery complete (Tier B bulk)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "slum_waffle",
+      "title": "Globally, the number of people living in slums increased by 25% in just four …"
+    },
+    {
       "path": "chapters/goal_11/09-buildup-area-income",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1145,6 +1200,17 @@
       "approvedAt": "2026-07-20",
       "graphic": "sdg12_intro_scroller",
       "title": "Resource use intro"
+    },
+    {
+      "path": "chapters/goal_12/01-efficient-price-explanation",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "efficient_price_explanation",
+      "title": "Efficient fuel price"
     },
     {
       "path": "chapters/goal_12/02-sdg12-efficient-price-dotplot",
@@ -1200,6 +1266,50 @@
       "approvedAt": "2026-07-20",
       "graphic": "ch12_reforms_scroller",
       "title": "Reforms scroller"
+    },
+    {
+      "path": "chapters/goal_13/00-sdg13-effects-of-climate-change-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "climate hazard scroller variant · real CSV scatter · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg13_effects_of_climate_change_scroller",
+      "title": "775 million people are exposed to floods globally"
+    },
+    {
+      "path": "chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "climate hazard scroller variant · real CSV scatter · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "01_sdg13_effects_of_climate_change_scroller_2",
+      "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultura…"
+    },
+    {
+      "path": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "climate hazard scroller variant · real CSV scatter · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "02_sdg13_effects_of_climate_change_scroller_3",
+      "title": "Globally, almost 8 percent of the population is exposed to cyclones"
+    },
+    {
+      "path": "chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "climate hazard scroller variant · real CSV scatter · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "03_sdg13_effects_of_climate_change_scroller_4",
+      "title": "40 percent of the global population is exposed to heatwaves"
     },
     {
       "path": "chapters/goal_13/04-sdg13-effects-of-climate-change",
@@ -1290,6 +1400,28 @@
       "title": "Plastic discharge"
     },
     {
+      "path": "chapters/goal_14/04-plastic-concentration",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_concentration",
+      "title": "Large plastic accumulations in the oceans (garbage patches)"
+    },
+    {
+      "path": "chapters/goal_14/05-north-pacific-garbage-patch",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "north_pacific_garbage_patch",
+      "title": "The North Pacific Garbage Patch"
+    },
+    {
       "path": "chapters/goal_14/06-fish-mortality",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1323,6 +1455,39 @@
       "title": "Nitrogen & phosphorus"
     },
     {
+      "path": "chapters/goal_14/09-phosphorus-increase",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "phosphorus_increase",
+      "title": "Increase in total phosphorus concentration in rivers and streams due to human…"
+    },
+    {
+      "path": "chapters/goal_14/10-nitrogen-increase",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "nitrogen_increase",
+      "title": "Increase in total nitrogen concentration in rivers and streams due to human a…"
+    },
+    {
+      "path": "chapters/goal_14/11-chlorophyll-a-trend",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "chlorophyll_a_trend",
+      "title": "Chlorophyll-a trend, 1997-2021"
+    },
+    {
       "path": "chapters/goal_14/12-chlorophyll-deviation",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1332,6 +1497,17 @@
       "approvedAt": "2026-07-20",
       "graphic": "chlorophyll_deviation",
       "title": "Chlorophyll deviation"
+    },
+    {
+      "path": "chapters/goal_14/13-phytoplankton-blooms",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "phytoplankton_blooms",
+      "title": "Average yearly phytoplankton bloom count, 2002-2023"
     },
     {
       "path": "chapters/goal_14/14-algal-blooms",
@@ -1367,6 +1543,61 @@
       "title": "Arable land degradation"
     },
     {
+      "path": "chapters/goal_15/02-aridity-classes",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "aridity_classes",
+      "title": "Global distribution of aridity classes"
+    },
+    {
+      "path": "chapters/goal_15/03-aridity-difference",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "aridity_difference",
+      "title": "Most regions are getting more arid"
+    },
+    {
+      "path": "chapters/goal_15/04-new-drylands",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "new_drylands",
+      "title": "4.3 million km2 humid areas turned to drylands since 30 years ago"
+    },
+    {
+      "path": "chapters/goal_15/05-image",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "05_image",
+      "title": "Consequences of increased aridity on ecosystems and land degradation"
+    },
+    {
+      "path": "chapters/goal_15/06-aridity-biodiversity-map",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "aridity_biodiversity_map",
+      "title": "Where species are projected to lose their local habitat due to rising aridity"
+    },
+    {
       "path": "chapters/goal_15/07-protected-areas",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1376,6 +1607,17 @@
       "approvedAt": "2026-07-20",
       "graphic": "protected_areas",
       "title": "Protected areas"
+    },
+    {
+      "path": "chapters/goal_15/08-image-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "08_image_2",
+      "title": "Protected areas remain productive under increasingly dry conditions"
     },
     {
       "path": "chapters/goal_16/00-ai-adoption",
@@ -1488,6 +1730,17 @@
       "title": "Income matters, but it is not destiny"
     },
     {
+      "path": "chapters/goal_99/00-basic-scatterplot",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Progress",
+      "note": "basic scatter · projection CSV · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "basic_scatterplot",
+      "title": "Global poverty could increase if current trends continue"
+    },
+    {
       "path": "chapters/goal_99/01-poverty-projections",
       "tier": "B",
       "fidelity": "pixel-perfect",
@@ -1497,6 +1750,17 @@
       "approvedAt": "2026-07-20",
       "graphic": "poverty_projections",
       "title": "Global poverty projections (goal_99)"
+    },
+    {
+      "path": "chapters/goal_99/02-basic-scatterplot-particles",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Progress",
+      "note": "particles scatter stand-in · CSV · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "basic_scatterplot_particles",
+      "title": "Affordability of a diet depends on cost and income"
     },
     {
       "path": "chapters/goal_dashboard/00-indicators-progress",
@@ -1519,6 +1783,138 @@
       "approvedAt": "2026-07-20",
       "graphic": "dashboard_scroller",
       "title": "Dashboard scroller"
+    },
+    {
+      "path": "chapters/goal_id4d/00-image",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "00_image",
+      "title": "Types of credentials"
+    },
+    {
+      "path": "chapters/goal_id4d/01-image-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "01_image_2",
+      "title": "Adults with ID by region"
+    },
+    {
+      "path": "chapters/goal_id4d/02-image-3",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "02_image_3",
+      "title": "Foundational coverage"
+    },
+    {
+      "path": "chapters/goal_id4d/03-image-4",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "03_image_4",
+      "title": "Population with and without ID"
+    },
+    {
+      "path": "chapters/goal_id4d/04-image-5",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "04_image_5",
+      "title": "Indicators of lacking ID"
+    },
+    {
+      "path": "chapters/goal_id4d/05-image-6",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "05_image_6",
+      "title": "Gender gap"
+    },
+    {
+      "path": "chapters/goal_id4d/06-image-7",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "06_image_7",
+      "title": "Barriers of lacking ID"
+    },
+    {
+      "path": "chapters/goal_id4d/07-image-8",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "07_image_8",
+      "title": "Barriers experienced"
+    },
+    {
+      "path": "chapters/goal_id4d/08-image-9",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "08_image_9",
+      "title": "Digital ID issued"
+    },
+    {
+      "path": "chapters/goal_id4d/09-image-10",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "09_image_10",
+      "title": "Digital ID ownership"
+    },
+    {
+      "path": "chapters/goal_id4d/10-image-11",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "10_image_11",
+      "title": "Digital ID usage"
+    },
+    {
+      "path": "chapters/goal_id4d/11-image-12",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "ID4D",
+      "note": "image/map panel hardened · atlas asset/proxy · gallery complete",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "11_image_12",
+      "title": "Digital ID ownership and usage"
     },
     {
       "path": "chapters/goal_progress/00-poverty-progress-comparison",

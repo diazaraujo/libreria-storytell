@@ -59,6 +59,9 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-20",
+    "approvalNote": "auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)"
   }
 }

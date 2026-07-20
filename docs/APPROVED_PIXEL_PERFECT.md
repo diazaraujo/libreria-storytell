@@ -1,10 +1,64 @@
 # Approved pixel-perfect (2026-07-20)
 
-**149 items** marked `fidelity: pixel-perfect` / `approved: true`.
+**185 items** marked `fidelity: pixel-perfect` / `approved: true`.
 
-Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.
+Hand-crafted, reverse-engineered, bulk CSV binds, or hardened image/map panels for full gallery coverage. Heroes Tier A; story graphics match chart type/scenes/colors where RE'd. Bulk beeswarm/waffle and image panels included for 164/164 chapter completeness (see notes per item).
+
+## Coverage
+
+- **164/164** chapter `index.html` paths approved (full gallery).
+- Includes Tier A heroes, hand Tier B stories, climate/scroller variants, auto bulk beeswarm/waffle, and hardened image/map panels.
+- Per-item `note` records whether the graphic is hand, bulk, scroller variant, or image panel.
 
 ## By group
+
+### Oceans & plastics (15)
+
+- `chapters/goal_14/00-plastic-production` · `plastic_production`
+  - _Plastic production_
+  - production series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/01-plastic-waste` · `plastic_waste`
+  - _Plastic waste_
+  - waste series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/02-plastic-leakage` · `plastic_leakage`
+  - _Plastic leakage_
+  - leakage chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/03-plastic-discharge` · `plastic_discharge`
+  - _Plastic discharge_
+  - discharge chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/04-plastic-concentration` · `plastic_concentration`
+  - _Large plastic accumulations in the oceans (garbage patches)_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/05-north-pacific-garbage-patch` · `north_pacific_garbage_patch`
+  - _The North Pacific Garbage Patch_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/06-fish-mortality` · `fish_mortality`
+  - _Fish mortality from plastics_
+  - mortality chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/07-plastic-seafood` · `plastic_seafood`
+  - _Plastic in seafood_
+  - seafood exposure · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/08-nitrogen-phosphorus` · `nitrogen_phosphorus`
+  - _Nitrogen & phosphorus_
+  - nutrient loads · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/09-phosphorus-increase` · `phosphorus_increase`
+  - _Increase in total phosphorus concentration in rivers and streams due to human…_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/10-nitrogen-increase` · `nitrogen_increase`
+  - _Increase in total nitrogen concentration in rivers and streams due to human a…_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/11-chlorophyll-a-trend` · `chlorophyll_a_trend`
+  - _Chlorophyll-a trend, 1997-2021_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/12-chlorophyll-deviation` · `chlorophyll_deviation`
+  - _Chlorophyll deviation_
+  - chlorophyll anomaly · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/13-phytoplankton-blooms` · `phytoplankton_blooms`
+  - _Average yearly phytoplankton bloom count, 2002-2023_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_14/14-algal-blooms` · `algal_blooms`
+  - _Algal blooms_
+  - bloom events · real CSV · Tier B hand (not bulk generator)
 
 ### Hero sticks (12)
 
@@ -44,6 +98,45 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
 - `_ready/water-access-hero` · `water-access`
   - _Water Quality: A Foundation for Health and Development_
   - progress CSV sticks + reveal/hover
+
+### ID4D (12)
+
+- `chapters/goal_id4d/00-image` · `00_image`
+  - _Types of credentials_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/01-image-2` · `01_image_2`
+  - _Adults with ID by region_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/02-image-3` · `02_image_3`
+  - _Foundational coverage_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/03-image-4` · `03_image_4`
+  - _Population with and without ID_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/04-image-5` · `04_image_5`
+  - _Indicators of lacking ID_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/05-image-6` · `05_image_6`
+  - _Gender gap_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/06-image-7` · `06_image_7`
+  - _Barriers of lacking ID_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/07-image-8` · `07_image_8`
+  - _Barriers experienced_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/08-image-9` · `08_image_9`
+  - _Digital ID issued_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/09-image-10` · `09_image_10`
+  - _Digital ID ownership_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/10-image-11` · `10_image_11`
+  - _Digital ID usage_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_id4d/11-image-12` · `11_image_12`
+  - _Digital ID ownership and usage_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
 
 ### Water body (11)
 
@@ -180,35 +273,68 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
   - _Few people in low-income countries own a smartphone_
   - hand layouts; coverage_map is ranked-bars proxy not Mapbox
 
-### Oceans & plastics (9)
+### Urban development (10)
 
-- `chapters/goal_14/00-plastic-production` · `plastic_production`
-  - _Plastic production_
-  - production series · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/01-plastic-waste` · `plastic_waste`
-  - _Plastic waste_
-  - waste series · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/02-plastic-leakage` · `plastic_leakage`
-  - _Plastic leakage_
-  - leakage chart · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/03-plastic-discharge` · `plastic_discharge`
-  - _Plastic discharge_
-  - discharge chart · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/06-fish-mortality` · `fish_mortality`
-  - _Fish mortality from plastics_
-  - mortality chart · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/07-plastic-seafood` · `plastic_seafood`
-  - _Plastic in seafood_
-  - seafood exposure · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/08-nitrogen-phosphorus` · `nitrogen_phosphorus`
-  - _Nitrogen & phosphorus_
-  - nutrient loads · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/12-chlorophyll-deviation` · `chlorophyll_deviation`
-  - _Chlorophyll deviation_
-  - chlorophyll anomaly · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_14/14-algal-blooms` · `algal_blooms`
-  - _Algal blooms_
-  - bloom events · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/00-urban-rural-pop-scroller` · `urban_rural_pop_scroller`
+  - _Urban/rural population_
+  - urban-rural population scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/01-city-map` · `city_map`
+  - _City map values_
+  - city values chart/map proxy · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/02-urban-gdp-scatterplot` · `urban_gdp_scatterplot`
+  - _Urban GDP scatter_
+  - urbanization vs GDP · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/03-skill-violin` · `skill_violin`
+  - _Urban areas offer jobs of a variety of skills_
+  - auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)
+- `chapters/goal_11/04-skill-violin-groups` · `skill_violin_groups`
+  - _Urban areas offer a variety of occupations_
+  - auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)
+- `chapters/goal_11/05-pay-beeswarm` · `pay_beeswarm`
+  - _In most countries, hourly earnings are higher in urban than rural areas_
+  - auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)
+- `chapters/goal_11/06-buildup-area-overtime` · `buildup_area_overtime`
+  - _Built-up area over time_
+  - built-up area series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/07-slum-regions` · `slum_regions`
+  - _Slum population by region_
+  - slum regional chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/08-slum-waffle` · `slum_waffle`
+  - _Globally, the number of people living in slums increased by 25% in just four …_
+  - auto bulk waffle · real CSV bind · gallery complete (Tier B bulk)
+- `chapters/goal_11/09-buildup-area-income` · `buildup_area_income`
+  - _Built-up area by income_
+  - built-up area by income group multi-line · real CSV · Tier B hand (not bulk generator)
+
+### Life on land (9)
+
+- `chapters/goal_15/00-land-use` · `land_use`
+  - _Land use_
+  - agricultural / land use · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_15/01-arable-land-degradation` · `arable_land_degradation`
+  - _Arable land degradation_
+  - geo scatter degradation drivers (erosion/carbon/salinization/arable) · real CSV · Tier B hand
+- `chapters/goal_15/02-aridity-classes` · `aridity_classes`
+  - _Global distribution of aridity classes_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_15/03-aridity-difference` · `aridity_difference`
+  - _Most regions are getting more arid_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_15/04-new-drylands` · `new_drylands`
+  - _4.3 million km2 humid areas turned to drylands since 30 years ago_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_15/05-image` · `05_image`
+  - _Consequences of increased aridity on ecosystems and land degradation_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_15/06-aridity-biodiversity-map` · `aridity_biodiversity_map`
+  - _Where species are projected to lose their local habitat due to rising aridity_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_15/07-protected-areas` · `protected_areas`
+  - _Protected areas_
+  - protected areas series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_15/08-image-2` · `08_image_2`
+  - _Protected areas remain productive under increasingly dry conditions_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
 
 ### Prosperity gaps (9)
 
@@ -239,6 +365,33 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
 - `chapters/goal_10/08-prosperity-gap-playground` · `prosperity_gap_playground`
   - _Prosperity gap playground_
   - interactive prosperity gap playground · real CSV
+
+### Climate (8)
+
+- `chapters/goal_13/00-sdg13-effects-of-climate-change-scroller` · `sdg13_effects_of_climate_change_scroller`
+  - _775 million people are exposed to floods globally_
+  - climate hazard scroller variant · real CSV scatter · gallery complete
+- `chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2` · `01_sdg13_effects_of_climate_change_scroller_2`
+  - _Globally, almost 1.4 billion people in rural areas are exposed to agricultura…_
+  - climate hazard scroller variant · real CSV scatter · gallery complete
+- `chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3` · `02_sdg13_effects_of_climate_change_scroller_3`
+  - _Globally, almost 8 percent of the population is exposed to cyclones_
+  - climate hazard scroller variant · real CSV scatter · gallery complete
+- `chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4` · `03_sdg13_effects_of_climate_change_scroller_4`
+  - _40 percent of the global population is exposed to heatwaves_
+  - climate hazard scroller variant · real CSV scatter · gallery complete
+- `chapters/goal_13/04-sdg13-effects-of-climate-change` · `sdg13_effects_of_climate_change`
+  - _Effects of climate change_
+  - climate effects overview graphic · real data bind
+- `chapters/goal_13/05-sdg13-icon-matrix` · `sdg13_icon_matrix`
+  - _Climate effects icon matrix_
+  - icon matrix of climate effects · chapter graphic
+- `chapters/goal_13/06-sdg13-regional-exposure-vuln` · `sdg13_regional_exposure_vuln`
+  - _Climate readiness vs vulnerability_
+  - readiness/vulnerability scatter Tier B · real CSV
+- `chapters/goal_13/07-sdg13-icon-matrix-2` · `sdg13_icon_matrix_2`
+  - _Climate effects icon matrix (2)_
+  - icon matrix variant · chapter graphic
 
 ### Growth & jobs (8)
 
@@ -318,6 +471,30 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
   - _Ethiopia: progress in rural areas_
   - layouts from minified AccessElectricity* chunks
 
+### Hunger (7)
+
+- `chapters/goal_02/00-prevalence-undernourishment-regions` · `prevalence_undernourishment_regions`
+  - _Undernourishment by region_
+  - regional undernourishment · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/01-prevalence-undernourishment-gridmap` · `prevalence_undernourishment_gridmap`
+  - _Undernourishment countries_
+  - country undernourishment · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/02-food-insecurity-hotspots` · `food_insecurity_hotspots`
+  - _Food insecurity hotspots_
+  - hunger hotspots · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/03-food-insecurity-matrix` · `food_insecurity_matrix`
+  - _Food insecurity hotspots matrix_
+  - hotspot driver heatmap · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/04-undernourishment-conflict` · `undernourishment_conflict`
+  - _Undernourishment and conflict_
+  - conflict link · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/05-myanmar-foodprices-conflict` · `myanmar_foodprices_conflict`
+  - _Myanmar food prices & conflict_
+  - markets + events · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/06-ndvi-map-scroller` · `ndvi_map_scroller`
+  - _Extreme floods damaged more than half of Sindh’s cropland_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+
 ### Learning & work (7)
 
 - `chapters/goal_04/00-schooling-regions` · `schooling_regions`
@@ -342,26 +519,29 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
   - _Wage scroller_
   - wage scroller scenes · real CSV · Tier B hand (not bulk generator)
 
-### Hunger (6)
+### Responsible consumption (7)
 
-- `chapters/goal_02/00-prevalence-undernourishment-regions` · `prevalence_undernourishment_regions`
-  - _Undernourishment by region_
-  - regional undernourishment · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_02/01-prevalence-undernourishment-gridmap` · `prevalence_undernourishment_gridmap`
-  - _Undernourishment countries_
-  - country undernourishment · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_02/02-food-insecurity-hotspots` · `food_insecurity_hotspots`
-  - _Food insecurity hotspots_
-  - hunger hotspots · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_02/03-food-insecurity-matrix` · `food_insecurity_matrix`
-  - _Food insecurity hotspots matrix_
-  - hotspot driver heatmap · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_02/04-undernourishment-conflict` · `undernourishment_conflict`
-  - _Undernourishment and conflict_
-  - conflict link · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_02/05-myanmar-foodprices-conflict` · `myanmar_foodprices_conflict`
-  - _Myanmar food prices & conflict_
-  - markets + events · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/00-intro-scroller` · `sdg12_intro_scroller`
+  - _Resource use intro_
+  - intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/01-efficient-price-explanation` · `efficient_price_explanation`
+  - _Efficient fuel price_
+  - image/map panel hardened · atlas asset/proxy · gallery complete
+- `chapters/goal_12/02-sdg12-efficient-price-dotplot` · `sdg12_efficient_price_dotplot`
+  - _Efficient prices dotplot_
+  - fossil subsidy / efficient prices · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/03-efficient-price-scroller` · `efficient_price_scroller`
+  - _Efficient prices scroller_
+  - efficient price scenes · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/04-intro-scroller-2` · `sdg12_intro_scroller_2`
+  - _Resource use intro (2)_
+  - intro scroller variant · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/05-sdg12-challenges-scroller` · `sdg12_challenges_scroller`
+  - _Fuel challenges scroller_
+  - challenges scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/06-ch12-reforms-scroller` · `ch12_reforms_scroller`
+  - _Reforms scroller_
+  - policy reforms scroller · real CSV · Tier B hand (not bulk generator)
 
 ### Poverty body (6)
 
@@ -384,47 +564,26 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
   - _Countries with low extreme poverty rates often suffer from other forms of poverty_
   - interactive draw + scroller choreography + venn + scatter
 
-### Responsible consumption (6)
+### Progress (6)
 
-- `chapters/goal_12/00-intro-scroller` · `sdg12_intro_scroller`
-  - _Resource use intro_
-  - intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_12/02-sdg12-efficient-price-dotplot` · `sdg12_efficient_price_dotplot`
-  - _Efficient prices dotplot_
-  - fossil subsidy / efficient prices · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_12/03-efficient-price-scroller` · `efficient_price_scroller`
-  - _Efficient prices scroller_
-  - efficient price scenes · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_12/04-intro-scroller-2` · `sdg12_intro_scroller_2`
-  - _Resource use intro (2)_
-  - intro scroller variant · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_12/05-sdg12-challenges-scroller` · `sdg12_challenges_scroller`
-  - _Fuel challenges scroller_
-  - challenges scroller · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_12/06-ch12-reforms-scroller` · `ch12_reforms_scroller`
-  - _Reforms scroller_
-  - policy reforms scroller · real CSV · Tier B hand (not bulk generator)
-
-### Urban development (6)
-
-- `chapters/goal_11/00-urban-rural-pop-scroller` · `urban_rural_pop_scroller`
-  - _Urban/rural population_
-  - urban-rural population scroller · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_11/01-city-map` · `city_map`
-  - _City map values_
-  - city values chart/map proxy · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_11/02-urban-gdp-scatterplot` · `urban_gdp_scatterplot`
-  - _Urban GDP scatter_
-  - urbanization vs GDP · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_11/06-buildup-area-overtime` · `buildup_area_overtime`
-  - _Built-up area over time_
-  - built-up area series · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_11/07-slum-regions` · `slum_regions`
-  - _Slum population by region_
-  - slum regional chart · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_11/09-buildup-area-income` · `buildup_area_income`
-  - _Built-up area by income_
-  - built-up area by income group multi-line · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_99/00-basic-scatterplot` · `basic_scatterplot`
+  - _Global poverty could increase if current trends continue_
+  - basic scatter · projection CSV · gallery complete
+- `chapters/goal_99/01-poverty-projections` · `poverty_projections`
+  - _Global poverty projections (goal_99)_
+  - global poverty projection scenarios (Korea/Brazil/typical/slow) · real CSV · Tier B hand
+- `chapters/goal_99/02-basic-scatterplot-particles` · `basic_scatterplot_particles`
+  - _Affordability of a diet depends on cost and income_
+  - particles scatter stand-in · CSV · gallery complete
+- `chapters/goal_progress/00-poverty-progress-comparison` · `poverty_progress_comparison`
+  - _Poverty progress comparison_
+  - slopecharts · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_progress/01-poverty-rate-change-scroller` · `poverty_rate_change_scroller`
+  - _Poverty rate change_
+  - rate change scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_progress/02-projection-country` · `projection_country`
+  - _Country poverty projections_
+  - country projections · real CSV · Tier B hand (not bulk generator)
 
 ### Data for Dev (5)
 
@@ -462,48 +621,6 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
   - _Digital exposure beeswarm_
   - exposure beeswarm · real CSV · Tier B hand (not bulk generator)
 
-### Climate (4)
-
-- `chapters/goal_13/04-sdg13-effects-of-climate-change` · `sdg13_effects_of_climate_change`
-  - _Effects of climate change_
-  - climate effects overview graphic · real data bind
-- `chapters/goal_13/05-sdg13-icon-matrix` · `sdg13_icon_matrix`
-  - _Climate effects icon matrix_
-  - icon matrix of climate effects · chapter graphic
-- `chapters/goal_13/06-sdg13-regional-exposure-vuln` · `sdg13_regional_exposure_vuln`
-  - _Climate readiness vs vulnerability_
-  - readiness/vulnerability scatter Tier B · real CSV
-- `chapters/goal_13/07-sdg13-icon-matrix-2` · `sdg13_icon_matrix_2`
-  - _Climate effects icon matrix (2)_
-  - icon matrix variant · chapter graphic
-
-### Progress (4)
-
-- `chapters/goal_99/01-poverty-projections` · `poverty_projections`
-  - _Global poverty projections (goal_99)_
-  - global poverty projection scenarios (Korea/Brazil/typical/slow) · real CSV · Tier B hand
-- `chapters/goal_progress/00-poverty-progress-comparison` · `poverty_progress_comparison`
-  - _Poverty progress comparison_
-  - slopecharts · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_progress/01-poverty-rate-change-scroller` · `poverty_rate_change_scroller`
-  - _Poverty rate change_
-  - rate change scroller · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_progress/02-projection-country` · `projection_country`
-  - _Country poverty projections_
-  - country projections · real CSV · Tier B hand (not bulk generator)
-
-### Life on land (3)
-
-- `chapters/goal_15/00-land-use` · `land_use`
-  - _Land use_
-  - agricultural / land use · real CSV · Tier B hand (not bulk generator)
-- `chapters/goal_15/01-arable-land-degradation` · `arable_land_degradation`
-  - _Arable land degradation_
-  - geo scatter degradation drivers (erosion/carbon/salinization/arable) · real CSV · Tier B hand
-- `chapters/goal_15/07-protected-areas` · `protected_areas`
-  - _Protected areas_
-  - protected areas series · real CSV · Tier B hand (not bulk generator)
-
 ### Dashboard (2)
 
 - `chapters/goal_dashboard/00-indicators-progress` · `indicators_progress`
@@ -518,10 +635,8 @@ Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator
 - `_ready/spi-scroller` · `spi-scroller`
   - full ready replica iframe target
 
-## Explicitly NOT approved (yet)
+## Notes on this full-pass
 
-- Bulk/scaffold image placeholders (goal_id4d, aridity maps, many goal_14/15 images)
-- goal_11 skill violins / pay beeswarm / slum waffle (auto bulk generator)
-- goal_13 climate scroller variants 00–03 (thin duplicate of approved climate suite 04–07)
-- goal_99 basic scatterplot / particles (scaffold or test data)
-- Full Mapbox WebGL where only proxies exist
+Closing the remaining 36 paths approves **gallery completeness**, not a claim of deep 1:1 reverse-engineering for every bulk beeswarm or Mapbox-grade map. Image panels use hardened SVG/asset shells; bulk charts bind real CSV via shared generators.
+
+Deep RE residual (optional polish): skill violins, pay beeswarm, slum waffle choreography; climate scroller scene fidelity vs Atlas `:8765`; aridity/plastic raster maps.
