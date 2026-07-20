@@ -10,15 +10,15 @@ http://127.0.0.1:8787/stories/electricity-access/
 
 Regions · population · progress · urban–rural · countries dual-line · hexmap NG/ET
 
-## Internet Access — library blocks
+## Internet Access — 10/10
 
 ```
 http://127.0.0.1:8787/stories/internet-access/
 ```
 
-1. **Access trends** scroller (world → income → regions) — `library/access-trends-scroller`  
-2. **Urban–rural by income** — `library/dual-line-urban-rural` variant `income`  
-3. **Progress race** 2015→2024 — `library/progress-race` (focus KHM/KGZ)
+1. trends · 2. urban–rural income · 3. gender gap · 4. progress race  
+5. mobile/fixed · 6. coverage ranked · 7. speed · 8. coverage–use slopes  
+9. can-send text · 10. smartphone ownership  
 
 Origin: `:8765/en/atlas/internet-access/`
 

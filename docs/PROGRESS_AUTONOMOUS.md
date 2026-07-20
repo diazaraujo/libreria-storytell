@@ -3,58 +3,50 @@
 **Repo:** https://github.com/diazaraujo/libreria-storytell  
 **Última actualización:** 2026-07-20
 
+## Stories (cerradas)
+
+| Story | Blocks | URL |
+|-------|--------|-----|
+| **Electricity** | **7/7** | `/stories/electricity-access/` |
+| **Internet** | **10/10** | `/stories/internet-access/` |
+| **Water** | **11/11** | `/stories/water-access/` |
+
 ## Hecho
 
 ### Infra
 - [x] Repo `diazaraujo/libreria-storytell`
 - [x] Tokens Mapbox fuera de git
 - [x] `scripts/dev-servers.sh` → :8787 · :8765 · :8790
+- [x] CI smoke: gallery JSON · story counts 7/10/11 · library `node --check`
 
 ### Gallery estilo Atlas
-- [x] `gallery-atlas.html` (layout data360)
-- [x] **Featured = 34** stills oficiales (1 card por PNG)
-- [x] **All = 164** con GIF locales
-- [x] Filtro por tema + búsqueda
-- [x] Thumbs en `assets/gallery_thumbnails/`
+- [x] `gallery-atlas.html` · Featured 34 · All 164
 
-### Hexmap v0.9 + Electricity
-- [x] Origin Mapbox tiles vía proxy
-- [x] Story electricity 7/7 · QA 14/14
+### Electricity 7/7
+- [x] regions · population · progress · urban–rural · countries · hex NG/ET
+- [x] Mapbox origin tiles vía proxy
 
-### Internet story
-- [x] Library `access-trends-scroller` v0.1 (world → income → regions)
-- [x] Dual-line urban–rural **income** variant
-- [x] Progress race (focus KHM / KGZ)
-- [x] Hero particles · origin prose
-- [x] Story URL: `/stories/internet-access/`
+### Internet 10/10
+- [x] trends · urban–rural income · gender gap · progress race  
+- [x] mobile/fixed · coverage ranked · speed · slopes · text · smartphone  
 
-### Water story (11/11)
-- [x] JMP ladder · dual-line urban–rural · country beeswarm
-- [x] Component min bars · limiting factors · Tanzania paths
-- [x] E. coli table · PoC/PoU · urban–rural E. coli
-- [x] Bangladesh arsenic groups · arsenic by source
-- [x] Story URL: `/stories/water-access/`
+### Water 11/11
+- [x] JMP ladder · dual-line · beeswarm · components · limiting · Tanzania  
+- [x] E. coli table/PoC-PoU/UR · arsenic groups/source  
 
 ## Cómo arrancar
 
 ```bash
 cd ~/atlas-replicas
 bash scripts/dev-servers.sh
-# mapbox-config.js local (gitignored):
-#   cp library/nightlights-hexmap/mapbox-config.example.js \
-#      library/nightlights-hexmap/mapbox-config.js
 open http://127.0.0.1:8787/gallery-atlas.html
 open http://127.0.0.1:8787/stories/internet-access/
 open http://127.0.0.1:8787/stories/water-access/
+open http://127.0.0.1:8787/stories/electricity-access/
 ```
 
-### Compare electricity (2026-07-19)
-- [x] Frame capture origin vs replica (`docs/COMPARE_ELECTRICITY.md`)
-- [x] Hex badge hidden in chapters/story (demo-only)
-- Residual: origin particle field (chrome only)
+## Residual (polish, no bloquea completeness)
 
-## Siguiente
-- Water: polish visual vs origin (pixel pass residual)
-- Internet: coverage / speed / smartphone (promover chapters → library)
-- Compare visual origin vs story electricity (frame by frame residual)
-- CI smoke en GitHub Actions
+- Pixel pass frame-a-frame vs origen  
+- Coverage map real Mapbox (hoy: ranked bars proxy)  
+- Plan: `docs/PLAN_REMAINING.md`

@@ -30,6 +30,12 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`urban-rural-bars/`](urban-rural-bars/) | e_coli_urban_rural | paired urban/rural bars | **v0.1** · water |
 | [`stacked-share-bars/`](stacked-share-bars/) | bangladesh_arsenic_grouped | 100% stacks · view switch | **v0.1** · water |
 | [`dual-threshold-bars/`](dual-threshold-bars/) | arsenic_by_source | dual threshold bars | **v0.1** · water |
+| [`gender-gap-bars/`](gender-gap-bars/) | income_gender_gap | male/female by income | **v0.1** · internet |
+| [`mobile-fixed-broadband/`](mobile-fixed-broadband/) | mobile_vs_fixed | dual line + scatter scenes | **v0.1** · internet |
+| [`coverage-ranked-bars/`](coverage-ranked-bars/) | coverage_map proxy | 3G/4G/5G ranked | **v0.1** · internet |
+| [`dual-speed-bars/`](dual-speed-bars/) | speed_test | fixed/mobile Mbps | **v0.1** · internet |
+| [`slope-gap-chart/`](slope-gap-chart/) | coverage_access_slopes | coverage→use slopes | **v0.1** · internet |
+| [`ranked-rate-bars/`](ranked-rate-bars/) | text + smartphone | ranked rates / strips | **v0.1** · internet |
 | [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.9** · origin Mapbox tiles (`mlambrechts.*` + proxy) · fallback H3 · demo + story + chapters |
 | heroes / beeswarm / waffle / scatter | shared/ | partial | |
 

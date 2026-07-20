@@ -33,7 +33,7 @@
     <div>
       <a href="../../gallery-atlas.html">← Gallery</a>
       · <a href="../../gallery.html">Dev</a>
-      · <span class="tag">internet · 3/10 library blocks</span>
+      · <span class="tag">internet · 10/10</span>
     </div>
     <div>
       <a href="http://127.0.0.1:8765/en/atlas/internet-access/" target="_blank">Origen</a>
@@ -46,8 +46,8 @@
 
   <div class="ch-end">
     <p>
-      <strong>Internet story</strong> — access trends (world / income / regions) ·
-      dual-line urban–rural by income · progress race 2015→2024 · particles hero.
+      <strong>Internet story 10/10</strong> — trends · urban–rural · gender · progress · mobile/fixed ·
+      coverage · speed · slopes · text · smartphone.
     </p>
   </div>
 
@@ -59,17 +59,43 @@
   <script src="../../library/access-trends-scroller/access-trends-scroller.js"></script>
   <script src="../../library/dual-line-urban-rural/dual-line-urban-rural.js"></script>
   <script src="../../library/progress-race/progress-race.js"></script>
+  <script src="../../library/gender-gap-bars/gender-gap-bars.js"></script>
+  <script src="../../library/mobile-fixed-broadband/mobile-fixed-broadband.js"></script>
+  <script src="../../library/coverage-ranked-bars/coverage-ranked-bars.js"></script>
+  <script src="../../library/dual-speed-bars/dual-speed-bars.js"></script>
+  <script src="../../library/slope-gap-chart/slope-gap-chart.js"></script>
+  <script src="../../library/ranked-rate-bars/ranked-rate-bars.js"></script>
   <script>
     (async function () {
       const story = await (await fetch("./story.json")).json();
+      const names = window.ATLAS_COUNTRY_NAMES || {};
 
-      const [trendRows, urbanRuralRows, progressRaw] = await Promise.all([
+      const [
+        trendRows,
+        urbanRuralRows,
+        progressRaw,
+        genderRows,
+        mfGlobal,
+        mfCountries,
+        coverageRows,
+        speedRows,
+        slopeRows,
+        textRows,
+        phoneRows,
+      ] = await Promise.all([
         AtlasLoad.csv("./data/09_data_internet_access.csv"),
         AtlasLoad.csv("./data/09_data_internet_access_urban_rural.csv"),
         AtlasLoad.csv("./data/09_data_internet_usage_progress.csv"),
+        AtlasLoad.csv("./data/09_data_income_gender_gap.csv"),
+        AtlasLoad.csv("./data/mobile_fixed_global.csv"),
+        AtlasLoad.csv("./data/mobile_fixed_broadband_subscriptions.csv"),
+        AtlasLoad.csv("./data/09_data_network_coverages.csv"),
+        AtlasLoad.csv("./data/09_data_speedtest.csv"),
+        AtlasLoad.csv("./data/09_data_coverage_access_gaps.csv"),
+        AtlasLoad.csv("./data/09_data_can_send_text_message.csv"),
+        AtlasLoad.csv("./data/09_data_lack_of_money.csv"),
       ]);
 
-      // Map internet fields → progress-race expected columns
       const progressRows = progressRaw.map((r) => ({
         iso3c: r.iso3c,
         access_2015: r.internet_2015,
@@ -79,64 +105,141 @@
       const wait2 = () =>
         new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 
+      const mounts = {
+        "access-trends": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasAccessTrendsScroller.mount(chartEl, {
+            rows: trendRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        "urban-rural-income": async (chartEl) => {
+          await wait2();
+          const h = Math.min(480, Math.max(360, chartEl.clientHeight || 420));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasDualLineUrbanRural.mount(chartEl, {
+            rows: urbanRuralRows,
+            variant: "income",
+            forceRemount: true,
+            height: h,
+            labels: {
+              urban: "Urban",
+              rural: "Rural",
+              y_axis_units: "% of population",
+            },
+          });
+        },
+        "gender-gap": async (chartEl) => {
+          await wait2();
+          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasGenderGapBars.mount(chartEl, {
+            rows: genderRows,
+            height: h,
+          });
+        },
+        progress: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasProgressRace.mount(chartEl, {
+            rows: progressRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            names,
+            focus: ["KHM", "KGZ", "ETH", "NGA", "IND"],
+            forceRemount: true,
+            height: h,
+            labels: {
+              progress_speed: "Speed of progress",
+              regression: "regression",
+              standstill: "standstill",
+              slow: "slow",
+              typical: "typical",
+              fast: "fast",
+              very_fast: "very fast",
+              select_country: "Select economies to highlight",
+            },
+          });
+        },
+        "mobile-fixed": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasMobileFixedBroadband.mount(chartEl, {
+            globalRows: mfGlobal,
+            countryRows: mfCountries,
+            sceneIndex: ctx.sceneIndex || 0,
+            names,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        coverage: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(560, Math.max(460, chartEl.clientHeight || 500));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasCoverageRankedBars.mount(chartEl, {
+            rows: coverageRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            names,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        speed: async (chartEl) => {
+          await wait2();
+          const h = Math.min(560, Math.max(460, chartEl.clientHeight || 500));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasDualSpeedBars.mount(chartEl, {
+            rows: speedRows,
+            names,
+            height: h,
+          });
+        },
+        slopes: async (chartEl) => {
+          await wait2();
+          const h = Math.min(520, Math.max(440, chartEl.clientHeight || 480));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasSlopeGapChart.mount(chartEl, {
+            rows: slopeRows,
+            names,
+            height: h,
+          });
+        },
+        "can-send-text": async (chartEl) => {
+          await wait2();
+          // tall chart for many countries
+          const h = Math.min(900, Math.max(520, chartEl.clientHeight || 600));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasRankedRateBars.mount(chartEl, {
+            rows: textRows,
+            mode: "can-send",
+            names,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        smartphone: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(520, Math.max(440, chartEl.clientHeight || 480));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasRankedRateBars.mount(chartEl, {
+            rows: phoneRows,
+            mode: "smartphone",
+            sceneIndex: ctx.sceneIndex || 0,
+            names,
+            forceRemount: true,
+            height: h,
+          });
+        },
+      };
+
       for (const b of story.blocks) {
-        if (b.id === "access-trends") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasAccessTrendsScroller.mount(chartEl, {
-              rows: trendRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              forceRemount: true,
-              height: h,
-            });
-          };
-        }
-        if (b.id === "urban-rural-income") {
-          b.mount = async (chartEl) => {
-            await wait2();
-            const h = Math.min(480, Math.max(360, chartEl.clientHeight || 420));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasDualLineUrbanRural.mount(chartEl, {
-              rows: urbanRuralRows,
-              variant: "income",
-              forceRemount: true,
-              height: h,
-              labels: {
-                urban: "Urban",
-                rural: "Rural",
-                y_axis_units: "% of population",
-              },
-            });
-          };
-        }
-        if (b.id === "progress") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasProgressRace.mount(chartEl, {
-              rows: progressRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              names: window.ATLAS_COUNTRY_NAMES || {},
-              // Origin highlights Cambodia + Kyrgyz Republic as fast movers
-              focus: ["KHM", "KGZ", "ETH", "NGA", "IND"].filter(Boolean),
-              forceRemount: true,
-              height: h,
-              labels: {
-                progress_speed: "Speed of progress",
-                regression: "regression",
-                standstill: "standstill",
-                slow: "slow",
-                typical: "typical",
-                fast: "fast",
-                very_fast: "very fast",
-                select_country: "Select economies to highlight",
-              },
-            });
-          };
-        }
+        if (mounts[b.id]) b.mount = mounts[b.id];
       }
 
       window.__chapter = AtlasChapterScroll.mount(

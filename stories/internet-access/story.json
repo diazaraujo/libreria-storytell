@@ -19,7 +19,7 @@
       "library": "AccessTrendsScroller",
       "title": "Global Internet access: trends and divides",
       "subtitle": "Individuals using the Internet (% of population)",
-      "source": "International Telecommunications Union (ITU). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/IT.NET.USER.ZS\" target=\"_blank\" rel=\"external\">IT.NET.USER.ZS</a>).",
+      "source": "International Telecommunications Union (ITU). WDI IT.NET.USER.ZS.",
       "vhPerScene": 0.95,
       "scenes": [
         {
@@ -51,7 +51,7 @@
       "library": "DualLineUrbanRural",
       "title": "The urban–rural digital divide",
       "subtitle": "Individuals using the Internet, by place of residence (% of population)",
-      "source": "International Telecommunications Union (ITU). Statistics.",
+      "source": "International Telecommunications Union (ITU).",
       "vhPerScene": 1.1,
       "scenes": [
         {
@@ -62,9 +62,31 @@
       ]
     },
     {
+      "id": "bridge-gender",
+      "type": "prose",
+      "html": "<p>Gender compounds the divide. In poorer economies, women are far less likely than men to use the Internet.</p>"
+    },
+    {
+      "id": "gender-gap",
+      "type": "vis",
+      "graphic": "income_gender_gap",
+      "library": "GenderGapBars",
+      "title": "Gender gaps in Internet access are wide in low- and lower-middle-income economies",
+      "subtitle": "Individuals using the Internet (% of population), by gender and income level",
+      "source": "ITU · WDI.",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "gap",
+          "text": "In low-income economies the gender gap exceeds 10 percentage points. In high-income economies male and female use are nearly equal — both near universal."
+        }
+      ]
+    },
+    {
       "id": "bridge-2",
       "type": "prose",
-      "html": "<p>Income shapes connectivity. High-income economies already show near-universal urban and rural use, while low-income countries still face double-digit gaps — and much lower absolute levels of access.</p><p>Since 2015, almost every economy has moved forward — but the <strong>speed of progress</strong> varies widely.</p>"
+      "html": "<p>Since 2015 almost every economy has moved forward — but the <strong>speed of progress</strong> varies widely.</p>"
     },
     {
       "id": "progress",
@@ -73,7 +95,7 @@
       "library": "ProgressRace",
       "title": "Almost all economies have increased their Internet access since 2015",
       "subtitle": "Individuals using the Internet (% of population)",
-      "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a> and World Bank staff calculations.",
+      "source": "ITU DataHub and World Bank staff calculations.",
       "vhPerScene": 0.95,
       "scenes": [
         {
@@ -89,7 +111,7 @@
         {
           "type": "scene",
           "id": "fast",
-          "text": "Countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>] and the [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>] made much more progress than expected from their 2015 levels. Cambodia rose from under 7 percent to close to 70 percent; the Kyrgyz Republic from about 30 percent to over 90 percent."
+          "text": "Countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>] and the [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>] made much more progress than expected from their 2015 levels."
         },
         {
           "type": "scene",
@@ -99,9 +121,176 @@
       ]
     },
     {
+      "id": "bridge-mobile",
+      "type": "prose",
+      "html": "<p>How people connect has shifted. <strong>Mobile broadband</strong> now dwarfs fixed lines almost everywhere outside the richest economies.</p>"
+    },
+    {
+      "id": "mobile-fixed",
+      "type": "scroller",
+      "graphic": "mobile_vs_fixed_broadband",
+      "library": "MobileFixedBroadband",
+      "title": "Worldwide, mobile broadband far surpasses fixed broadband adoption",
+      "subtitle": "Subscriptions per 100 people",
+      "source": "ITU · WDI.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "global",
+          "text": "Between 2015 and 2025, fixed broadband roughly doubled to about 20 subscriptions per 100 people, while [emphasis: mobile connectivity surged toward 99 active mobile broadband subscriptions per 100 people]."
+        },
+        {
+          "type": "scene",
+          "id": "hic",
+          "text": "[emphasis: Fixed broadband] is common in many high-income countries — for example Germany has roughly 46 fixed subscriptions per 100 people."
+        },
+        {
+          "type": "scene",
+          "id": "low-fixed",
+          "text": "Fixed broadband is nearly absent in many low and lower-middle-income economies. Highlighted countries sit near the bottom of the fixed axis."
+        },
+        {
+          "type": "scene",
+          "id": "mobile-africa",
+          "text": "Across much of the world, people connect primarily through mobile phones — including in Morocco, Côte d’Ivoire, Senegal, Nigeria, Kenya and Ghana."
+        }
+      ]
+    },
+    {
+      "id": "bridge-coverage",
+      "type": "prose",
+      "html": "<p>Network <strong>coverage</strong> is not the same as use. Most people now live within range of a mobile signal — but generations differ, and Sub-Saharan Africa lags on 5G.</p>"
+    },
+    {
+      "id": "coverage",
+      "type": "scroller",
+      "graphic": "coverage_map",
+      "library": "CoverageRankedBars",
+      "title": "Most of the world is covered by 3G and 4G networks. Sub-Saharan Africa is the least connected region",
+      "subtitle": "Percentage of inhabitants within range of at least a 3G, 4G, or 5G signal",
+      "source": "ITU network coverage statistics.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "3g",
+          "text": "96 percent of the global population lives within reach of at least a 3G network. Ranked bars show countries with the lowest coverage first."
+        },
+        {
+          "type": "scene",
+          "id": "4g",
+          "text": "Although 4G covers over 93 percent of people worldwide, large gaps remain in low-income economies — especially rural Sub-Saharan Africa."
+        },
+        {
+          "type": "scene",
+          "id": "5g",
+          "text": "5G is widely available in many high-income economies and some large middle-income countries such as China, but still uneven globally."
+        },
+        {
+          "type": "scene",
+          "id": "5g-ssf",
+          "text": "In Sub-Saharan Africa, 5G remains largely confined to a few high-density urban areas; only a handful of economies (e.g. Mauritius, South Africa) show meaningful coverage."
+        }
+      ]
+    },
+    {
+      "id": "bridge-speed",
+      "type": "prose",
+      "html": "<p>Even with coverage, <strong>speed</strong> determines what the Internet is good for — streaming, cloud work, education platforms.</p>"
+    },
+    {
+      "id": "speed",
+      "type": "vis",
+      "graphic": "speed_test",
+      "library": "DualSpeedBars",
+      "title": "High-income economies enjoy high-speed Internet",
+      "subtitle": "Median country download speeds (Mbps)",
+      "source": "Speedtest / Ookla public country medians (via Atlas data).",
+      "vhPerScene": 1.0,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "speeds",
+          "text": "Top fixed and mobile download speeds are concentrated in high-income and East Asian economies. The two panels rank the fastest countries for fixed broadband and mobile."
+        }
+      ]
+    },
+    {
+      "id": "bridge-slopes",
+      "type": "prose",
+      "html": "<p>Coverage without adoption leaves people offline. Where 3G reaches most of the population but Internet use stays low, the barrier is affordability, skills, devices — not towers alone.</p>"
+    },
+    {
+      "id": "slopes",
+      "type": "vis",
+      "graphic": "coverage_access_slopes",
+      "library": "SlopeGapChart",
+      "title": "Mobile networks now reach most of the population, but many people remain offline",
+      "subtitle": "3G coverage vs Internet use (% of population)",
+      "source": "ITU coverage and Internet use statistics.",
+      "vhPerScene": 1.0,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "gap",
+          "text": "Each slope links a country’s 3G coverage to its Internet use. Red slopes highlight the largest coverage–use gaps — networks exist, but people stay offline."
+        }
+      ]
+    },
+    {
+      "id": "bridge-skills",
+      "type": "prose",
+      "html": "<p>Basic digital skills still lag. In many countries a large share of people have <strong>never sent a text message</strong> — a proxy for very limited mobile literacy.</p>"
+    },
+    {
+      "id": "can-send-text",
+      "type": "vis",
+      "graphic": "can_send_text_message",
+      "library": "RankedRateBars",
+      "title": "In 27 countries, more than 50% of people have never sent a text message",
+      "subtitle": "Share of respondents who can send a text message through a mobile phone",
+      "source": "Gallup / World Bank digital skills surveys (Atlas data).",
+      "vhPerScene": 1.05,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "text",
+          "text": "Values show the share who <em>can</em> send a text. Red bars mark countries where more than half the population has never sent one (capability below 50%)."
+        }
+      ]
+    },
+    {
+      "id": "bridge-phone",
+      "type": "prose",
+      "html": "<p>Finally, devices. Without a <strong>smartphone</strong>, modern apps, banking, and learning platforms stay out of reach — especially in low-income countries.</p>"
+    },
+    {
+      "id": "smartphone",
+      "type": "scroller",
+      "graphic": "smartphone_ownership",
+      "library": "RankedRateBars",
+      "title": "Few people in low-income countries own a smartphone",
+      "subtitle": "Share of people who report that their main mobile phone is a smartphone",
+      "source": "Gallup World Poll / Atlas digital inclusion indicators.",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "income",
+          "text": "The share of people who do not own a smartphone is highest in poorer countries — approaching 80 percent in some low-income economies."
+        },
+        {
+          "type": "scene",
+          "id": "lic",
+          "text": "Among low-income countries, places such as Malawi, Burkina Faso, Chad, and the DRC show particularly high shares without a smartphone."
+        }
+      ]
+    },
+    {
       "id": "bridge-end",
       "type": "prose",
-      "html": "<p>Networks now reach much of the world, yet millions remain offline — especially in poorer countries. Closing the gap takes more than infrastructure: affordability, skills, and inclusive policy design all matter.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">More Atlas blocks (coverage map, speed, smartphone ownership) live as isolated chapters under <code>goal_09</code> and can be promoted into this story next.</p>"
+      "html": "<p>Networks now reach much of the world, yet millions remain offline. Closing the gap takes more than towers: affordability, skills, devices, and inclusive policy all matter.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">Internet story <strong>10/10</strong> — full origin goal_09 chapter set wired as library blocks.</p>"
     }
   ]
 }

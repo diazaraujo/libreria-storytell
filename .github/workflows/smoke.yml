@@ -13,12 +13,37 @@ jobs:
         run: python3 -c "import json; d=json.load(open('docs/gallery-atlas-data.json')); assert d['featuredCount']==34, d['featuredCount']; assert d['total']==164; print('gallery data OK', d['featuredCount'], d['total'])"
       - name: Validate inventory
         run: python3 -c "import json; d=json.load(open('docs/INVENTARIO_164.json')); assert d['total']==164; print('inventory OK', len(d['items']))"
-      - name: Hexmap syntax
-        run: node --check library/nightlights-hexmap/nightlights-hexmap.js
+      - name: Story block counts
+        run: |
+          python3 <<'PY'
+          import json
+          def libs(path):
+            return [b["id"] for b in json.load(open(path))["blocks"] if b.get("library")]
+          e = libs("stories/electricity-access/story.json")
+          i = libs("stories/internet-access/story.json")
+          w = libs("stories/water-access/story.json")
+          assert len(e) == 7, e
+          assert len(i) == 10, i
+          assert len(w) == 11, w
+          print("stories OK", f"electricity {len(e)}/7", f"internet {len(i)}/10", f"water {len(w)}/11")
+          PY
+      - name: Library JS syntax
+        run: |
+          set -e
+          for f in library/*/*.js; do
+            case "$f" in
+              *vendor*|*h3*) continue ;;
+            esac
+            node --check "$f"
+          done
+          echo "library JS syntax OK"
       - name: Required files
         run: |
           test -f gallery-atlas.html
           test -f scripts/dev-servers.sh
           test -f library/nightlights-hexmap/mapbox-config.example.js
+          test -f stories/electricity-access/index.html
+          test -f stories/internet-access/index.html
+          test -f stories/water-access/index.html
           test -d assets/gallery_thumbnails
           ls assets/gallery_thumbnails/*.png | wc -l | grep -q 34
