@@ -1,5 +1,5 @@
 /**
- * AtlasDualLineUrbanRural v0.3.1 — pixel-matched + income + end-year fix
+ * AtlasDualLineUrbanRural v0.3.2 — income x-ticks no-collide + Open Sans
  *
  * Variants:
  *  - regions   (Bktvr1TG AccessElectricityUrbanRural)  4×2 · 2000–2023
@@ -381,16 +381,27 @@
         }
       });
 
-      // x ticks on bottom row
+      // x ticks on bottom row — dense 1×N (income) only show start on col0 + end on all
+      // to avoid "20252022" collisions between adjacent panels
       if (row === rowsN - 1) {
-        xTicks.forEach((yr) => {
+        let ticks = xTicks;
+        if (cols >= 5 && xTicks.length >= 2) {
+          ticks =
+            col === 0
+              ? xTicks
+              : [xTicks[xTicks.length - 1]];
+        }
+        ticks.forEach((yr) => {
+          const isStart = yr === xTicks[0];
+          const isEnd = yr === xTicks[xTicks.length - 1];
           SVG.el(g, "text", {
             x: xScale(yr),
             y: cellH + 14,
-            "text-anchor": "middle",
+            "text-anchor": isStart ? "start" : isEnd ? "end" : "middle",
             fill: "#6a7781",
-            "font-size": 10,
+            "font-size": cols >= 5 ? 9 : 10,
             "font-weight": "600",
+            "font-family": "Open Sans, system-ui, sans-serif",
           }).textContent = String(yr);
         });
       }
@@ -547,7 +558,7 @@
   global.AtlasDualLineUrbanRural = {
     mount,
     prepareByIso,
-    version: "0.3.0",
+    version: "0.3.2",
     REGION_ORDER,
     COUNTRY_ORDER,
     INCOME_ORDER,

@@ -1,19 +1,17 @@
 /**
- * AtlasProgressRace v0.3.1 — beauty A: square 2015 marks, stems, speed colors, chips
+ * AtlasProgressRace v0.3.2 — beauty A + internet years (2015→2024)
  * Chunk: Brmmsw6q.js · CSS: AccessElectricityProgressScroller.DVNMGbcQ.css
  *
- * Origin behaviour (user-refs f_054–f_068 · origin_progress_s0–s3):
- *  0  access_15 — red square marks at 2015 for ALL; focus labels (16.6 / 29.0 / 52.5)
- *  1  access_23 — accessTween → 2023; grey stems+arrows ONLY for focus/selected
- *  2  progress  — speed colors on focus stems; continuous Speed-of-progress legend;
- *                 ALL 2015 dots stay fully opaque
- *  3  all       — stems+arrows for ALL (uniform width); chips multi-select; hover labels
+ * Origin behaviour (electricity f_054–f_068 · internet goal_09 progress):
+ *  0  start — red square marks at yearStart for ALL; focus labels
+ *  1  end   — accessTween → yearEnd; grey stems+arrows ONLY for focus/selected
+ *  2  speed — speed colors on focus stems; continuous Speed-of-progress legend
+ *  3  all   — stems+arrows for ALL; chips multi-select; hover labels
  *
- * SVG cells (line+path) when: scene===3 OR iso ∈ selected (Se in Brmmsw6q).
- * Start marks always on (Pixi-equivalent via SVG rects).
+ * Options: yearStart/yearEnd (default 2015/2023), focus (default ETH/NGA/COD)
+ * Internet: yearEnd 2024 · focus KHM/KGZ
  *
- * Mount once · accessTween 2s · path scale 2s · line stroke-width/opacity 2s
- * Depends: window.AtlasSVG
+ * Mount once · accessTween 2s · Depends: window.AtlasSVG
  */
 (function (global) {
   const SPEED_COLORS = {
@@ -37,6 +35,8 @@
     COD: "Congo, Dem. Rep.",
     ETH: "Ethiopia",
     NGA: "Nigeria",
+    KHM: "Cambodia",
+    KGZ: "Kyrgyz Republic",
   };
   // margin bottom reserves legend stack (year + speed gradient)
   const MARGIN = { top: 22, right: 24, bottom: 72, left: 18 };
@@ -107,12 +107,26 @@
     return `M${r},${-r} L${r},${r} L${-r},0 Z`;
   }
 
-  function prepareData(rows, names = {}) {
+  function prepareData(rows, names = {}, spanYears = 8) {
     const data = rows
       .map((r) => {
         const iso = r.iso3c || r.iso || r.ISO3 || r.code;
-        const a2015 = +(r.access_2015 != null ? r.access_2015 : r.a2015);
-        const a2023 = +(r.access_2023 != null ? r.access_2023 : r.a2023);
+        const a2015 = +(
+          r.access_2015 != null
+            ? r.access_2015
+            : r.a2015 != null
+              ? r.a2015
+              : r.internet_2015
+        );
+        const a2023 = +(
+          r.access_2023 != null
+            ? r.access_2023
+            : r.a2023 != null
+              ? r.a2023
+              : r.access_2024 != null
+                ? r.access_2024
+                : r.internet_2024
+        );
         return {
           iso,
           name: names[iso] || r.name || iso,
@@ -129,10 +143,11 @@
           d.a2023 !== 100
       );
 
+    // speed divisor ~ span*1.9 so domain [-1,0,1,2] still maps typical progress
+    const speedDiv = Math.max(8, spanYears * 1.9);
     data.forEach((d) => {
       d.delta = d.a2023 - d.a2015;
-      // RE: domain [-1,0,1,2] — annual-ish band; delta/15 matches focus colors
-      d.speed = Math.max(-1, Math.min(2, d.delta / 15));
+      d.speed = Math.max(-1, Math.min(2, d.delta / speedDiv));
       d.improved = d.a2023 > d.a2015;
       d.access = d.a2015;
     });
@@ -153,7 +168,11 @@
       reuse = true,
       forceRemount = false,
       height: heightOpt = null,
+      yearStart = 2015,
+      yearEnd = 2023,
     } = options;
+    const focusOrder = Array.isArray(focus) && focus.length ? focus : FOCUS_DEFAULT;
+    const spanYears = Math.max(1, (+yearEnd || 2023) - (+yearStart || 2015));
 
     const L = {
       progress_speed: labels.progress_speed || "Speed of progress",
@@ -181,8 +200,8 @@
     }
 
     const data = dataOpt
-      ? prepareData(dataOpt, names)
-      : prepareData(rows, names);
+      ? prepareData(dataOpt, names, spanYears)
+      : prepareData(rows, names, spanYears);
     if (!data.length) {
       container.innerHTML =
         '<div style="padding:24px;color:#aa0000">progress-race: no data</div>';
@@ -190,7 +209,7 @@
     }
 
     // selected = focus + user picks (origin G set)
-    let selected = new Set(focus);
+    let selected = new Set(focusOrder);
     let current = sceneIndex;
     let tweenRaf = null;
     const tweenFrom = new Map();
@@ -200,7 +219,7 @@
     const root = document.createElement("div");
     root.className = "atlas-progress-race atlas-chart-root";
     const w = Math.max(360, container.clientWidth || 900);
-    // Origin uses full sticky height — dense band of ~86 rows
+    // Origin uses full sticky height — dense band of ~86–180 rows
     const naturalH = Math.max(
       500,
       Math.min(720, MARGIN.top + MARGIN.bottom + data.length * ROW_H)
@@ -371,8 +390,8 @@
     miniYear.style.opacity = "0";
     miniYear.innerHTML = `
       <svg width="168" height="26" viewBox="0 0 168 26" aria-hidden="true">
-        <text x="0" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2015</text>
-        <text x="132" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2023</text>
+        <text x="0" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">${yearStart}</text>
+        <text x="132" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">${yearEnd}</text>
         <line x1="0" y1="18" x2="138" y2="18" stroke="${SPEED_COLORS.fast}" stroke-width="4.5" opacity="0.4" stroke-linecap="round"/>
         <path d="M134,13.5 L144,18 L134,22.5 Z" fill="${SPEED_COLORS.fast}"/>
       </svg>`;
@@ -531,8 +550,8 @@
       const order = [...selected].filter((iso) => data.some((d) => d.iso === iso));
       // keep focus order first then others
       order.sort((a, b) => {
-        const ia = FOCUS_DEFAULT.indexOf(a);
-        const ib = FOCUS_DEFAULT.indexOf(b);
+        const ia = focusOrder.indexOf(a);
+        const ib = focusOrder.indexOf(b);
         if (ia >= 0 && ib >= 0) return ia - ib;
         if (ia >= 0) return -1;
         if (ib >= 0) return 1;
@@ -815,7 +834,7 @@
   global.AtlasProgressRace = {
     mount,
     prepareData,
-    version: "0.3.1",
+    version: "0.3.2",
     SPEED_COLORS,
     FOCUS: FOCUS_DEFAULT,
   };

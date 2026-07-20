@@ -3,7 +3,7 @@
 **Canónico:** `access_electricity_progress`  
 **Chunk:** `Brmmsw6q.js` · CSS `AccessElectricityProgressScroller.DVNMGbcQ.css`  
 **Story:** `stories/electricity-access/` bloque `progress`  
-**Estado:** **v0.3.1** — beauty A: square 2015 marks, stems Se, speed gradient, chips, tween 2s
+**Estado:** **v0.3.2** — beauty A + `yearStart`/`yearEnd` (electricity 2015–23 · internet 2015–24)
 
 ## Escenas (Brmmsw6q)
 
@@ -53,13 +53,16 @@ accessTween    { duration: 2000, target 2015 ↔ 2023 }
 
 ```js
 AtlasProgressRace.mount(el, {
-  rows,              // CSV rows
+  rows,              // CSV rows (access_2015/access_2023 or internet_*)
   sceneIndex,
-  focus: ['ETH','NGA','COD'],
+  focus: ['ETH','NGA','COD'], // internet: ['KHM','KGZ']
+  yearStart: 2015,
+  yearEnd: 2023,     // internet: 2024
   names: ATLAS_COUNTRY_NAMES,
   labels: { progress_speed, regression, … },
-  forceRemount
+  forceRemount: false,
+  reuse: true
 });
 chart.updateScene(i);
-// version: 0.1.0
+// version: 0.3.2
 ```

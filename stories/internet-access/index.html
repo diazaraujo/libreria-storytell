@@ -118,7 +118,8 @@
           return AtlasAccessTrendsScroller.mount(chartEl, {
             rows: trendRows,
             sceneIndex: ctx.sceneIndex || 0,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },
@@ -128,7 +129,8 @@
           return AtlasDualLineUrbanRural.mount(chartEl, {
             rows: urbanRuralRows,
             variant: "income",
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
             labels: {
               urban: "Urban",
@@ -147,13 +149,21 @@
         },
         progress: async (chartEl, ctx) => {
           await wait2();
-          const h = AtlasChapterScroll.fitChartHeight(chartEl);
+          const h = AtlasChapterScroll.fitChartHeight(chartEl, {
+            min: 420,
+            max: 680,
+          });
+          // reuse → updateScene only (2s tween preserved)
           return AtlasProgressRace.mount(chartEl, {
             rows: progressRows,
             sceneIndex: ctx.sceneIndex || 0,
             names,
-            focus: ["KHM", "KGZ", "ETH", "NGA", "IND"],
-            forceRemount: true,
+            // origin story highlights Cambodia + Kyrgyz Republic
+            focus: ["KHM", "KGZ"],
+            yearStart: 2015,
+            yearEnd: 2024,
+            forceRemount: false,
+            reuse: true,
             height: h,
             labels: {
               progress_speed: "Speed of progress",
@@ -175,7 +185,8 @@
             countryRows: mfCountries,
             sceneIndex: ctx.sceneIndex || 0,
             names,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },
@@ -188,7 +199,8 @@
               return AtlasCoverageChoroplethMap.mount(chartEl, {
                 rows: coverageRows,
                 sceneIndex: ctx.sceneIndex || 0,
-                forceRemount: true,
+                forceRemount: false,
+                reuse: true,
                 height: h,
               });
             }
@@ -199,7 +211,8 @@
             rows: coverageRows,
             sceneIndex: ctx.sceneIndex || 0,
             names,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },
