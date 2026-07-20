@@ -85,3 +85,10 @@ cd ~/atlas-serve && python3 -m http.server 8765
 
 cd ~/atlas-replicas && python3 -m http.server 8787
 ```
+
+## Climate (goal_13)
+
+| Pattern | Path | Notes |
+|---------|------|-------|
+| hazard-exposure-map | `library/hazard-exposure-map/` | Mapbox sat/vec + country choropleth · RE BmkL22Hm |
+| climate-icon-matrix | `library/climate-icon-matrix/` | 1000-cell vulnerability matrix + country compare |

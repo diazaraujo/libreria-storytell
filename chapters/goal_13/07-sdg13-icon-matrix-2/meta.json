@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "icon matrix variant \u00b7 chapter graphic",
+  "note": "hand country compare matrix BFA/KEN PHL/VNM \u00b7 climate quality v1",
   "graphic": "sdg13_icon_matrix_2",
-  "title": "Climate effects icon matrix (2)"
+  "title": "Climate effects icon matrix (2)",
+  "qualityPass": "climate-v1"
 }

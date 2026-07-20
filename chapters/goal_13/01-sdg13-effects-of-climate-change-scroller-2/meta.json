@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "climate hazard scroller variant \u00b7 real CSV scatter \u00b7 gallery complete",
+  "note": "Mapbox hazard exposure map \u00b7 RE BmkL22Hm \u00b7 sat\u2192bbox\u2192vec choropleth \u00b7 library/hazard-exposure-map",
   "graphic": "01_sdg13_effects_of_climate_change_scroller_2",
-  "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultura\u2026"
+  "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultura\u2026",
+  "qualityPass": "climate-v1-map"
 }

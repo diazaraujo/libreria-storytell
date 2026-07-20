@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazard exposure map — demo</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; font-family: Open Sans, system-ui, sans-serif; background: #0b1220; color: #e2e8f0; }
+    header { padding: 12px 16px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    select, button { font: 13px Open Sans, system-ui; padding: 6px 10px; }
+    #chart { height: calc(100vh - 64px); }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>hazard-exposure-map</strong>
+    <label>Hazard <select id="hazard">
+      <option value="floods">floods</option>
+      <option value="drought">drought</option>
+      <option value="cyclones">cyclones</option>
+      <option value="heatwave">heatwave</option>
+    </select></label>
+    <label>Scene <select id="scene"></select></label>
+    <button type="button" id="prev">←</button>
+    <button type="button" id="next">→</button>
+  </header>
+  <div id="chart"></div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js"></script>
+  <script src="../nightlights-hexmap/mapbox-config.js"></script>
+  <script src="../../shared/wb-colors.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./hazard-exposure-map.js"></script>
+  <script>
+    const chart = document.getElementById("chart");
+    const hazardEl = document.getElementById("hazard");
+    const sceneEl = document.getElementById("scene");
+    let rows = [];
+    let api = null;
+
+    function fillScenes() {
+      const h = hazardEl.value;
+      const list = AtlasHazardExposureMap.DEFAULT_SCENES[h] || [];
+      sceneEl.innerHTML = list.map((id, i) => `<option value="${id}">${i}: ${id}</option>`).join("");
+    }
+
+    async function remount() {
+      const h = hazardEl.value;
+      fillScenes();
+      if (api) api.destroy();
+      api = AtlasHazardExposureMap.mount(chart, {
+        rows,
+        hazard: h,
+        sceneId: sceneEl.value,
+        forceRemount: true,
+      });
+    }
+
+    function apply() {
+      if (!api) return;
+      api.updateScene({ sceneId: sceneEl.value });
+    }
+
+    document.getElementById("prev").onclick = () => {
+      sceneEl.selectedIndex = Math.max(0, sceneEl.selectedIndex - 1);
+      apply();
+    };
+    document.getElementById("next").onclick = () => {
+      sceneEl.selectedIndex = Math.min(sceneEl.options.length - 1, sceneEl.selectedIndex + 1);
+      apply();
+    };
+    hazardEl.onchange = remount;
+    sceneEl.onchange = apply;
+
+    (async () => {
+      rows = await AtlasLoad.csv("../../chapters/goal_13/00-sdg13-effects-of-climate-change-scroller/data/20260130_hazard_data_prepared.csv");
+      fillScenes();
+      await remount();
+    })();
+  </script>
+</body>
+</html>

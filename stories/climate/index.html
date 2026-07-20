@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climate hazards — Chapter scroll (Atlas replica)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/chapter-scroll.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #fff; }
+    body.ch-story-page { --ch-sticky-top: 0px; }
+    .ch-topbar {
+      position: sticky; top: 0; z-index: 30;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 16px;
+      background: rgba(11, 18, 32, 0.92);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif;
+      color: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+    }
+    .ch-topbar a { color: rgba(255,255,255,0.92); text-decoration: none; }
+    .ch-topbar .tag {
+      background: rgba(52,167,242,0.25); color: #e0f2fe;
+      padding: 3px 8px; border-radius: 999px; font-size: 11px;
+    }
+    .ch-end {
+      max-width: 640px; margin: 0 auto; padding: 48px 24px 96px;
+      color: #6a7781; font-size: 14px; line-height: 1.5;
+    }
+    .mode-badge { display: none !important; }
+  </style>
+</head>
+<body class="ch-story-page">
+  <div class="ch-topbar">
+    <div>
+      <a href="../../gallery-atlas.html">← Gallery</a>
+      · <a href="../../gallery.html">Dev</a>
+      · <span class="tag">climate · quality v1</span>
+    </div>
+    <div>
+      <a href="http://127.0.0.1:8765/en/atlas/climate/" target="_blank" rel="noopener">Origen</a>
+      ·
+      <a href="../../library/hazard-exposure-map/demo.html" target="_blank" rel="noopener">Map demo</a>
+    </div>
+  </div>
+
+  <div id="story"></div>
+
+  <div class="ch-end">
+    <p>
+      <strong>Climate quality pass v1</strong> — hazard Mapbox scrollers (sat → bbox → vec choropleth),
+      multi-hazard overview, vulnerability icon matrix, exposure × vulnerability scatter,
+      country compare matrix. RE: <code>BmkL22Hm.js</code>. Optional hazard rasters still residual.
+    </p>
+    <p>
+      Chapters: <a href="../../chapters/goal_13/00-sdg13-effects-of-climate-change-scroller/?clean=1">floods</a> ·
+      <a href="../../chapters/goal_13/05-sdg13-icon-matrix/?clean=1">matrix</a> ·
+      <a href="../../chapters/goal_13/06-sdg13-regional-exposure-vuln/?clean=1">scatter</a>
+    </p>
+  </div>
+
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="../../shared/wb-colors.js"></script>
+  <script src="../../shared/chapter-scroll.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js"></script>
+  <script src="../../library/nightlights-hexmap/mapbox-config.js"></script>
+  <script src="../../library/hazard-exposure-map/hazard-exposure-map.js"></script>
+  <script src="../../library/climate-icon-matrix/climate-icon-matrix.js"></script>
+  <script>
+    (async function () {
+      const story = await (await fetch("./story.json")).json();
+      const [hazardRows, vulnRows] = await Promise.all([
+        AtlasLoad.csv("./data/20260130_hazard_data_prepared.csv"),
+        AtlasLoad.csv("./data/2024_noimp.csv").catch(() =>
+          AtlasLoad.csv("./data/2010.csv")
+        ),
+      ]);
+
+      function hazardMount(hazard, scenes) {
+        return async function mount(chartEl, ctx) {
+          const i0 = ctx.sceneIndex || 0;
+          const scene0 = (scenes && scenes[i0]) || null;
+          const api = AtlasHazardExposureMap.mount(chartEl, {
+            rows: hazardRows,
+            hazard,
+            sceneIndex: i0,
+            sceneId: scene0 && scene0.id,
+            height: Math.max(440, chartEl.clientHeight || 480),
+          });
+          // chapter-scroll contract: updateScene(sceneIndex, {animate})
+          return {
+            updateScene(i) {
+              const sc = (scenes && scenes[i]) || null;
+              api.updateScene({
+                sceneIndex: i,
+                sceneId: sc && sc.id,
+              });
+            },
+            destroy() {
+              api.destroy();
+            },
+          };
+        };
+      }
+
+      function matrixMount(mode, scenes) {
+        return async function mount(chartEl, ctx) {
+          const i0 = ctx.sceneIndex || 0;
+          const scene0 = (scenes && scenes[i0]) || null;
+          const api = AtlasClimateIconMatrix.mount(chartEl, {
+            rows: vulnRows,
+            mode,
+            sceneIndex: i0,
+            sceneId: scene0 && scene0.id,
+            height: Math.max(420, chartEl.clientHeight || 460),
+          });
+          return {
+            updateScene(i) {
+              const sc = (scenes && scenes[i]) || null;
+              api.setScene({
+                sceneIndex: i,
+                sceneId: sc && sc.id,
+                mode,
+              });
+            },
+            destroy() {
+              api.destroy();
+            },
+          };
+        };
+      }
+
+      // Overview ranked bars (inline, same logic as chapter 04)
+      async function mountOverview(chartEl, ctx) {
+        const NAMES = window.ATLAS_COUNTRY_NAMES || {};
+        const hazards = [
+          { key: "sha_flood", label: "Floods", color: "#089BD4", people: "775M" },
+          { key: "sha_drought", label: "Drought", color: "#BE792B", people: "1.4B" },
+          { key: "sha_cyclone", label: "Cyclones", color: "#A37ACD", people: "8%" },
+          { key: "sha_heatwave", label: "Heatwaves", color: "#C1261A", people: "40%" },
+          { key: "sha_all", label: "Any hazard", color: "#081079", people: "57%" },
+        ];
+        const focus = hazards[Math.min(ctx.sceneIndex || 4, hazards.length - 1)];
+        chartEl.innerHTML = "";
+        const root = document.createElement("div");
+        root.style.cssText =
+          "position:absolute;inset:0;display:flex;flex-direction:column;font-family:Open Sans,system-ui,sans-serif";
+        chartEl.appendChild(root);
+        const strip = document.createElement("div");
+        strip.style.cssText = "display:flex;flex-wrap:wrap;gap:8px;padding:8px 10px";
+        hazards.forEach((hz) => {
+          const active = hz.key === focus.key;
+          strip.innerHTML += `<div style="padding:8px 10px;border-radius:6px;border:1px solid ${
+            active ? hz.color : "#e2e8f0"
+          };background:${active ? hz.color + "14" : "#f8fafc"}">
+            <div style="font-size:11px;color:#6a7781;font-weight:600">${hz.label}</div>
+            <div style="font-size:18px;font-weight:700;color:${hz.color}">${hz.people}</div>
+          </div>`;
+        });
+        root.appendChild(strip);
+        const plot = document.createElement("div");
+        plot.style.cssText = "flex:1;min-height:0;position:relative";
+        root.appendChild(plot);
+        const data = hazardRows
+          .map((r) => ({
+            iso: r.code,
+            name: NAMES[r.code] || r.code,
+            v: +r[focus.key],
+          }))
+          .filter((d) => Number.isFinite(d.v))
+          .sort((a, b) => b.v - a.v)
+          .slice(0, 36);
+        const w = plot.clientWidth || 860;
+        const h = Math.max(plot.clientHeight || 400, 48 + data.length * 11);
+        const margin = { top: 18, right: 48, bottom: 14, left: 110 };
+        const svg = AtlasSVG.el(plot, "svg");
+        svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        svg.style.cssText = "width:100%;height:100%";
+        const xScale = AtlasSVG.scaleLinear([0, 100], [margin.left, w - margin.right]);
+        const yScale = AtlasSVG.scaleBand(
+          data.map((d) => d.iso),
+          [margin.top, h - margin.bottom],
+          0.14
+        );
+        data.forEach((d) => {
+          const y = yScale(d.iso);
+          const bh = yScale.bandwidth();
+          AtlasSVG.el(svg, "rect", {
+            x: margin.left,
+            y,
+            width: Math.max(xScale(d.v) - margin.left, 1),
+            height: bh,
+            fill: focus.color,
+            rx: 2,
+          });
+          AtlasSVG.el(svg, "text", {
+            x: margin.left - 6,
+            y: y + bh / 2,
+            "text-anchor": "end",
+            "dominant-baseline": "middle",
+            fill: "#111",
+            "font-size": 10,
+            "font-weight": "600",
+          }).textContent = String(d.name).slice(0, 15);
+        });
+        return { setScene() {}, destroy() { chartEl.innerHTML = ""; } };
+      }
+
+      async function mountScatter(chartEl) {
+        // reuse chapter logic via dynamic import pattern — inline essential
+        const NAMES = window.ATLAS_COUNTRY_NAMES || {};
+        const REG = (window.WB_COLORS && window.WB_COLORS.regions) || {};
+        const data = vulnRows
+          .map((r) => ({
+            iso: String(r.code || "").toUpperCase(),
+            name: NAMES[r.code] || r.code,
+            region: r.region_code || "WLD",
+            x: +r.sha_exp,
+            y: +r.sha_vuln,
+            pop: +r.totalpop || 1,
+          }))
+          .filter((d) => Number.isFinite(d.x) && Number.isFinite(d.y));
+        chartEl.innerHTML = "";
+        const root = document.createElement("div");
+        root.style.cssText = "position:absolute;inset:0;font-family:Open Sans,system-ui,sans-serif";
+        chartEl.appendChild(root);
+        const w = root.clientWidth || 900;
+        const h = root.clientHeight || 440;
+        const margin = { top: 28, right: 120, bottom: 44, left: 52 };
+        const svg = AtlasSVG.el(root, "svg");
+        svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+        svg.style.cssText = "width:100%;height:100%";
+        const xScale = AtlasSVG.scaleLinear([0, 1], [margin.left, w - margin.right]);
+        const yScale = AtlasSVG.scaleLinear([0, 1], [h - margin.bottom, margin.top]);
+        [0, 0.25, 0.5, 0.75, 1].forEach((t) => {
+          AtlasSVG.el(svg, "line", {
+            x1: xScale(t), x2: xScale(t), y1: margin.top, y2: h - margin.bottom, stroke: "#f1f5f9",
+          });
+          AtlasSVG.el(svg, "line", {
+            x1: margin.left, x2: w - margin.right, y1: yScale(t), y2: yScale(t), stroke: "#f1f5f9",
+          });
+        });
+        AtlasSVG.el(svg, "text", {
+          x: (margin.left + w - margin.right) / 2, y: h - 10, "text-anchor": "middle",
+          fill: "#111", "font-size": 12, "font-weight": "700",
+        }).textContent = "Share exposed →";
+        AtlasSVG.el(svg, "text", {
+          x: 14, y: h / 2, "text-anchor": "middle", fill: "#111", "font-size": 12, "font-weight": "700",
+          transform: `rotate(-90 14 ${h / 2})`,
+        }).textContent = "Share vulnerable →";
+        const maxPop = Math.max(...data.map((d) => d.pop), 1);
+        data.forEach((d) => {
+          const r = 3 + 9 * Math.sqrt(d.pop / maxPop);
+          AtlasSVG.el(svg, "circle", {
+            cx: xScale(d.x), cy: yScale(d.y), r,
+            fill: REG[d.region] || "#0071bc", opacity: 0.7, stroke: "#fff", "stroke-width": 0.7,
+          });
+        });
+        return { setScene() {}, destroy() { chartEl.innerHTML = ""; } };
+      }
+
+      for (const b of story.blocks) {
+        if (b.id === "floods") b.mount = hazardMount("floods", b.scenes);
+        if (b.id === "drought") b.mount = hazardMount("drought", b.scenes);
+        if (b.id === "cyclones") b.mount = hazardMount("cyclones", b.scenes);
+        if (b.id === "heatwave") b.mount = hazardMount("heatwave", b.scenes);
+        if (b.id === "overview") b.mount = mountOverview;
+        if (b.id === "vuln-matrix") b.mount = matrixMount("matrix", b.scenes);
+        if (b.id === "compare-matrix") b.mount = matrixMount("compare", b.scenes);
+        if (b.id === "exp-vuln") b.mount = mountScatter;
+      }
+
+      AtlasChapterScroll.mount(document.getElementById("story"), story);
+    })();
+  </script>
+</body>
+</html>

@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "icon matrix of climate effects \u00b7 chapter graphic",
+  "note": "hand icon matrix 1000 cells \u00b7 vuln by region \u00b7 climate quality v1",
   "graphic": "sdg13_icon_matrix",
-  "title": "Climate effects icon matrix"
+  "title": "Climate effects icon matrix",
+  "qualityPass": "climate-v1"
 }

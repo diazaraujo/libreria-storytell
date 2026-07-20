@@ -1,0 +1,182 @@
+{
+  "id": "climate",
+  "title": "Climate hazards: exposure and vulnerability",
+  "slug": "climate",
+  "origin": "http://127.0.0.1:8765/en/atlas/climate/",
+  "live": "https://datatopics.worldbank.org/sdgatlas/goal-13-climate-action/",
+  "qualityPass": "climate-v1",
+  "blocks": [
+    {
+      "id": "hero",
+      "type": "prose",
+      "title": "Climate risk: exposure meets vulnerability",
+      "html": "<p>Population exposure to floods, drought, cyclones and heatwaves — and the vulnerability that turns exposure into risk.</p>"
+    },
+    {
+      "id": "floods",
+      "type": "scroller",
+      "graphic": "sdg13_effects_of_climate_change_scroller",
+      "hazard": "floods",
+      "title": "775 million people are exposed to floods globally",
+      "subtitle": "Area and share of population exposed to floods with inundation depth over 50cm[footnote:  An area is exposed to floods if there is more than a 1 percent annual probability of  experiencing flooding with inundation depth of more than  50 centimeters.]",
+      "source": "<a href=\"https://planetarycomputer.microsoft.com/dataset/deltares-floods\" target=\"_blank\" rel=\"external\">Deltares</a>, <a href=\"https://www.fathom.global/product/global-flood-map/\" target=\"_blank\" rel=\"external\">Fathom</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "id": "floods__sat__wld",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">Floods</span>] can severely damage infrastructure and homes, disrupt the economy, and destroy crops and livestock. Impacts become particularly severe when inundation depth exceeds 50 centimeters.[reference: Rentschler] The areas in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">blue</span>] indicate exposure above this level."
+        },
+        {
+          "id": "floods__sat__bbox1",
+          "text": "The [emphasis: population exposed to ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] live near rivers, in areas with low elevation, and near the coast. In The Netherlands, more than one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] due to the country’s  many rivers and low elevation."
+        },
+        {
+          "id": "floods__vec__wld",
+          "text": "Globally, [emphasis: 775 million people are exposed to] [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods.</span>] Half of them live in three populous countries: China, India, and Bangladesh. In Bangladesh, one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>]."
+        }
+      ]
+    },
+    {
+      "id": "drought",
+      "type": "scroller",
+      "graphic": "sdg13_effects_of_climate_change_scroller",
+      "hazard": "drought",
+      "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultural drought ",
+      "subtitle": "Areas and share of population exposed to agricultural drought events.[footnote:  An area is defined as exposed to agricultural drought if at least once in the last 39 years more than 30 percent of cropland or pasture is lost due to drought.]",
+      "source": "<a href=\"https://www.fao.org/giews/earthobservation/asis/index_1.jsp?lang=en\" target=\"_blank\" rel=\"external\">Food and Agriculture Organization of the United Nations</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "id": "drought__sat__wld",
+          "text": "An [emphasis: <span style=\"color: rgb(4,1,16);\">area</span>] is defined as exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">agricultural drought</span>] if more than 30 percent of cropland or pasture experienced severe drought in at least one year in the past 39 years.[footnote:  Measured using the FAO’s Agricultural Stress Index .[reference: FAO2] [reference: VanHoolst] ] When this threshold is exceeded, agricultural production losses are expected. [emphasis: Land affected by agricultural droughts has more than doubled in the last 40 years.]"
+        },
+        {
+          "id": "drought__sat__bbox1",
+          "text": "[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Agricultural drought</span>] is most prevalent in arid and semi-arid regions. In Eswatini, Lesotho, Namibia, and Zimbabwe, more than half the population is exposed to drought."
+        },
+        {
+          "id": "drought__vec__wld",
+          "text": "Globally, almost 1.4 billion people are exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">agricultural drought</span>][reference: WB2], which can halt or reverse progress in poverty reduction and food security. Beyond agriculture, prolonged droughts also contribute to environmental degradation, forced migration, and heightened social tensions."
+        }
+      ]
+    },
+    {
+      "id": "cyclones",
+      "type": "scroller",
+      "graphic": "sdg13_effects_of_climate_change_scroller",
+      "hazard": "cyclones",
+      "title": "Globally, almost 8 percent of the population is exposed to cyclones",
+      "subtitle": "Area and share of population exposed to cyclones of category 2 or higher[footnote:  The strength of a cyclone is assessed on a scale of 1–5 using the Saffir-Simpson Hurricane Wind Scale.[reference: NOAA1]. Cyclones with wind speeds over 154 km/h are Category 2+.]",
+      "source": "STORM[reference: Bloemendaal1], <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "id": "cyclones__sat__wld",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Cyclones</span>] of category 2 or above[footnote:  Cyclones are measured on the Saffir Simpson scale, which classifies them into five categories (1–5) based on their maximum sustained wind speed. Cyclones with wind speeds over 154 km/h are classified as Category 2 and above and can cause extensive damage.] are associated with extensive damage to buildings and infrastructure. "
+        },
+        {
+          "id": "cyclones__vec__bbox1",
+          "text": "Tropical [emphasis: <span data-color-id=\"cat3\" class=\"cat3\">cyclone</span>] Melissa made landfall in Jamaica on October 28,  2025. The third most intense [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">cyclone</span>] ever recorded in the Atlantic Ocean, it was classified as a category 5 and had wind speeds of up to 300 km/h.[reference: WMO4] Although it wreaked enormous  damage on infrastructure and houses, due to early warning systems, the number of casualties was limited at 50."
+        },
+        {
+          "id": "cyclones__vec__wld",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">Cyclones</span>] occur over warm tropical oceans, exposing people in their proximity. In many Small Island Developing States, the entire population is exposed: in 36  Caribbean and Pacific economies,[footnote:  Aruba, Anguilla, American Samoa, Antigua and Barbuda, Bonaire, Sint Eustatius and Saba, Bahamas, St. Barthélemy, Bermuda, Barbados, Cuba, Curaçao, Cayman Islands, Dominica, Dominican Republic, Grenada, Guam, Haiti, Jamaica, St, Kitts and Nevis, St. Lucia, St. Martin (French part), Northern Mariana Islands, Montserrat, Mauritius, Niue, Puerto Rico, Sint Maarten (Dutch part), Turks and Caicos Islands, Tonga, Taiwan, Saint Vincent and the Grenadines, British Virgin Islands, United States Virgin Islands, Vanuatu, Wallis and Futuna, and Samoa. In Fiji, more than 99 percent of the population is exposed.] 100 percent of the population is exposed. "
+        }
+      ]
+    },
+    {
+      "id": "heatwave",
+      "type": "scroller",
+      "graphic": "sdg13_effects_of_climate_change_scroller",
+      "hazard": "heatwave",
+      "title": "40 percent of the global population is exposed to heatwaves",
+      "subtitle": "Areas and share of population exposed to heatwaves[footnote:   A heatwave occurs when the 5-day average maximum Wet-Bulb Globe Temperature (WBGT) exceeds 33 degrees. ]",
+      "source": "<a href=\"https://climateknowledgeportal.worldbank.org/\" target=\"_blank\" rel=\"external\">World Bank Climate Change Portal</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "id": "heatwave__sat__wld",
+          "text": "The impact of [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>] on the human body depends on other factors, such as humidity and wind. So, instead of using a simple temperature measure, we use the Wet-Bulb Globe Temperature (WBGT), which better captures the effect of temperature on the human body. If the WBGT exceeds 33°C, it becomes difficult for healthy humans to maintain a normal body temperature, leading to increased mortality and hospitalizations. The capacity to undertake physical work is also halved.[reference: WB2] "
+        },
+        {
+          "id": "heatwave__sat__bbox",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Heatwaves</span>] are mostly prevalent in the tropics. More than three-quarters of the global population exposed to heatwaves live in four populous countries in Asia: India, China, Pakistan, and Bangladesh. "
+        },
+        {
+          "id": "heatwave__vec__wld",
+          "text": "Globally, 40 percent of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>]. The share of people exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">heatwaves</span>] is especially high in countries around the Equator in Africa, South-East Asia and the Arabian peninsula."
+        }
+      ]
+    },
+    {
+      "id": "overview",
+      "type": "vis",
+      "graphic": "sdg13_effects_of_climate_change",
+      "title": "57 percent of the world’s population is exposed to climate-related hazards",
+      "subtitle": "Share of population exposed to at least one climate-related hazard",
+      "source": "<a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>"
+    },
+    {
+      "id": "vuln-matrix",
+      "type": "scroller",
+      "graphic": "sdg13_icon_matrix",
+      "title": "People can be highly vulnerable for several different reasons",
+      "subtitle": "Number and share of vulnerable people, by dimension, 2024",
+      "source": "<a href=\"https://scorecard.worldbank.org/en/data/indicator-detail/EN_CLM_VULN?orgCode=ALL&refareatype=REGION&refareacode=ACW&age=_T&disability=_T&sex=_T\" target=\"_blank\" rel=\"external\">World Bank Scorecard Indicator</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "id": "multi__grid__vuln__wld",
+          "text": "Each row has 1,000 squares, and each individual square represents 8 million people. More than one-third of the[emphasis: <span data-color-id=\"WLD\" class=\"WLD\">world’s population</span>]— 2.8 billion people—are vulnerable in at least one dimension, and almost half of these are vulnerable in two or more dimensions. [emphasis: Lack of social protection] is the most common source of vulnerability (20 percent of the world’s population). [emphasis: Lack of financial inclusion], [emphasis: lack of education], and living in [emphasis: extreme poverty due to low income] are the next leading causes of vulnerability. "
+        },
+        {
+          "id": "multi__grid__vuln__nac",
+          "text": "Levels of vulnerability range from 1.7–94 percent across regions. In [emphasis: <span data-color-id=\"NAC\" class=\"NAC\">North America</span>], only 1.7 percent of the population is vulnerable. These are people living in extreme poverty ([emphasis: lack of income]) or those who [emphasis: lack basic education]."
+        },
+        {
+          "id": "multi__grid__vuln__ssf",
+          "text": "In [emphasis: <span data-color-id=\"SSF\" class=\"SSF\">Sub-Saharan Africa,</span>] a staggering 94 percent of the population is vulnerable. [emphasis: Lack of social protection] impacts almost 3 in 4 people and[emphasis:  lack of access to electricity ]or [emphasis: extreme poverty] affects almost half the population. "
+        },
+        {
+          "id": "multi__explore",
+          "text": "Select an economy or region to see the share of population and number of people that are vulnerable and the dimensions of vulnerability that are driving it."
+        }
+      ]
+    },
+    {
+      "id": "exp-vuln",
+      "type": "vis",
+      "graphic": "sdg13_regional_exposure_vuln",
+      "title": "The number of people at high risk from climate-related hazards varies by region",
+      "subtitle": "Share of population at high risk from climate-related hazards in 2024",
+      "source": "<a href=\"https://scorecard.worldbank.org/en/data/indicator-detail/EN_CLM_VULN?orgCode=ALL&refareatype=REGION&refareacode=ACW&age=_T&disability=_T&sex=_T\" target=\"_blank\" rel=\"external\">World Bank Scorecard Indicator</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>"
+    },
+    {
+      "id": "compare-matrix",
+      "type": "scroller",
+      "graphic": "sdg13_icon_matrix",
+      "title": "Population at high risk depends on both exposure and vulnerability",
+      "subtitle": "Comparing countries with similar levels of exposure or vulnerability",
+      "source": "<a href=\"https://scorecard.worldbank.org/en/data/indicator-detail/EN_CLM_VULN?orgCode=ALL&refareatype=REGION&refareacode=ACW&age=_T&disability=_T&sex=_T\" target=\"_blank\" rel=\"external\">World Bank Scorecard Indicator</a>, <a href=\"https://www.researchsquare.com/article/rs-5302969/v2\" target=\"_blank\" rel=\"external\">Hill et al.</a>",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "id": "mono__grid__vul__bfa_ken",
+          "text": "[emphasis: Burkina Faso ]and [emphasis: Kenya ]have similar levels of [emphasis: vulnerability]. In both countries, around 9 in 10 people  are identified as vulnerable in at least one dimension."
+        },
+        {
+          "id": "mono__diff__vul_exp__bfa_ken",
+          "text": "But [emphasis: exposure ]to climate hazards is three times higher in [emphasis: Burkina Faso]. Combining the number of vulnerable and exposed people, only 1 in 4 people in [emphasis: Kenya ]are at high risk from climate hazards, compared with 3 in 4 people in [emphasis: Burkina Faso]. "
+        },
+        {
+          "id": "mono__grid__exp__phl_vnm",
+          "text": "Similarly, in <span data-color-id=\"EAS\" class=\"EAS\">East Asia and Pacific</span>, almost 9 in 10 people in the [emphasis: Philippines ]and [emphasis: Vietnam] are [emphasis: exposed ]to climate hazards. "
+        },
+        {
+          "id": "mono__diff__exp_vul__phl_vnm",
+          "text": "But despite their similar [emphasis: exposure ]profiles, slightly more than half the population of the [emphasis: Philippines ]is at risk, compared to around 20 percent in [emphasis: Vietnam]. This is due to the differing levels of vulnerability. In the [emphasis: Philippines], 3 in 5 people are vulnerable, while  in [emphasis: Vietnam],it is 1 in 5 people."
+        }
+      ]
+    }
+  ]
+}

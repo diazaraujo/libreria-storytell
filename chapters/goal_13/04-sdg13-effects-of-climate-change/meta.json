@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "climate effects overview graphic \u00b7 real data bind",
+  "note": "multi-hazard ranked bars + global callouts \u00b7 climate quality v1",
   "graphic": "sdg13_effects_of_climate_change",
-  "title": "Effects of climate change"
+  "title": "Effects of climate change",
+  "qualityPass": "climate-v1"
 }
