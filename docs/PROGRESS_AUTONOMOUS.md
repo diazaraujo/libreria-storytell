@@ -47,14 +47,17 @@ open http://127.0.0.1:8787/stories/electricity-access/
 
 ## Pixel-perfect (2026-07-20)
 
+### Pass 1 — heroes
 - [x] Dark navy heroes + origin lead/byline/key facts (3 stories)
-- [x] Particle plume bias · theme colors on navy
 - [x] Transparent topbar over hero
 - [x] Compare matrix: `docs/COMPARE_PP_STORIES.md`
-- Captures: `recordings/compare/pp-stories-2026-07-20/`
 
-## Residual
+### Pass 2 — residuals 1–4
+- [x] **Chart-level:** service-ladder year-clip + layer dim · dual-line end-year markers · progress dots always on
+- [x] **Key facts:** “Show details” → `#block-id` anchors
+- [x] **Particles v0.2:** world scatter via `library/particles-world/centroids.json`
+- [x] **Coverage Mapbox:** `coverage-choropleth-map` (country-boundaries-v1) + ranked fallback
 
-- Chart-level PP pass (ladder year-reveal, dual-line hatch parity, etc.)
-- Coverage map real Mapbox (ranked bars proxy)
+## Residual (optional)
+- Mobile breakpoint parity · Pixi density exact · mapbox feature-state edge cases
 - Plan: `docs/PLAN_REMAINING.md`

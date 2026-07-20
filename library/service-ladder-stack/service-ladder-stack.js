@@ -1,7 +1,7 @@
 /**
- * AtlasServiceLadderStack v0.1
- * Pattern: safely_managed (goal_06) — stacked area of service levels over time.
- * Scene-driven year reveal (start → mid → full).
+ * AtlasServiceLadderStack v0.2
+ * Pattern: safely_managed (goal_06) — stacked area JMP ladder.
+ * Scenes: progressive year reveal + layer emphasis (origin chapter logic).
  *
  * Depends: window.AtlasSVG
  */
@@ -13,7 +13,6 @@
     "Unimproved",
     "Surface",
   ];
-  // JMP palette matched to origin water-access (scene chips + areas)
   const DEFAULT_COLORS = {
     "Safely managed": "#0080c6",
     Basic: "#00b8ec",
@@ -21,9 +20,9 @@
     Unimproved: "#e3a763",
     Surface: "#bd6126",
   };
-  // Scene year caps: scene 0 = first year emphasis, 1 = through 2015, 2 = full
-  const DEFAULT_YEAR_CAPS = [null, 2015, Infinity];
-  const TRANSITION_MS = 800;
+  // year cap per scene: start strip · through 2015 · full
+  const DEFAULT_YEAR_CAPS = [2000, 2015, Infinity];
+  const TRANSITION_MS = 900;
   const INSTANCES = new WeakMap();
 
   function ensureSVG() {
@@ -31,20 +30,19 @@
     return global.AtlasSVG;
   }
 
-  function pivot(rows, order) {
+  function pivot(rows) {
     const byYear = new Map();
     rows.forEach((r) => {
       const y = +r.year;
       const v = +r.value;
       let lvl = r.level;
       if (!Number.isFinite(y) || !Number.isFinite(v) || !lvl) return;
-      // normalize Surface water label
       if (/^surface/i.test(lvl)) lvl = "Surface";
       if (!byYear.has(y)) byYear.set(y, {});
       byYear.get(y)[lvl] = v;
     });
     const years = [...byYear.keys()].sort((a, b) => a - b);
-    return { byYear, years, order };
+    return { byYear, years };
   }
 
   function mount(container, options = {}) {
@@ -62,7 +60,6 @@
     } = options;
 
     if (!container) throw new Error("container required");
-
     if (reuse && !forceRemount && INSTANCES.has(container)) {
       const inst = INSTANCES.get(container);
       inst.setScene(sceneIndex, { animate: options.animate !== false });
@@ -75,12 +72,14 @@
       INSTANCES.delete(container);
     }
 
-    const { byYear, years: allYears } = pivot(rows, order);
+    const { byYear, years: allYears } = pivot(rows);
     if (!allYears.length) {
       container.innerHTML =
         '<div style="padding:24px;color:#aa0000">service-ladder-stack: no data</div>';
       return { updateScene() {}, destroy() {}, sceneIndex: 0 };
     }
+
+    const xDomain = [allYears[0], allYears[allYears.length - 1]];
 
     container.innerHTML = "";
     const root = document.createElement("div");
@@ -100,9 +99,10 @@
       .atlas-service-ladder .legend span { display:inline-flex; align-items:center; gap:6px; }
       .atlas-service-ladder .legend i {
         width:12px; height:12px; border-radius:2px; display:inline-block;
+        transition: opacity ${TRANSITION_MS}ms ease;
       }
       .atlas-service-ladder path.band {
-        transition: opacity ${TRANSITION_MS}ms ease;
+        transition: opacity ${TRANSITION_MS}ms ease, d ${TRANSITION_MS}ms ease;
       }
     `;
     root.appendChild(style);
@@ -112,6 +112,7 @@
       leg.className = "legend";
       order.forEach((o) => {
         const span = document.createElement("span");
+        span.dataset.level = o;
         span.innerHTML = `<i style="background:${colors[o] || "#999"}"></i>${o}`;
         leg.appendChild(span);
       });
@@ -123,16 +124,14 @@
     root.appendChild(plot);
 
     const margin = { top: 16, right: 16, bottom: 36, left: 44 };
-    const plotH = Math.max(200, (plot.clientHeight || h - 40));
+    const plotH = Math.max(200, plot.clientHeight || h - 40);
     const svg = SVG.el(plot, "svg");
     svg.setAttribute("viewBox", `0 0 ${w} ${plotH}`);
     svg.style.cssText = "width:100%;height:100%;display:block";
 
-    const xDomain = [allYears[0], allYears[allYears.length - 1]];
     const xScale = SVG.scaleLinear(xDomain, [margin.left, w - margin.right]);
     const yScale = SVG.scaleLinear([0, 100], [plotH - margin.bottom, margin.top]);
 
-    // static grid
     [0, 25, 50, 75, 100].forEach((t) => {
       SVG.el(svg, "line", {
         x1: margin.left,
@@ -150,7 +149,12 @@
       }).textContent = t + "%";
     });
     allYears
-      .filter((y) => y % 5 === 0 || y === allYears[0] || y === allYears[allYears.length - 1])
+      .filter(
+        (y) =>
+          y % 5 === 0 ||
+          y === allYears[0] ||
+          y === allYears[allYears.length - 1]
+      )
       .forEach((yr) => {
         SVG.el(svg, "text", {
           x: xScale(yr),
@@ -162,96 +166,109 @@
         }).textContent = String(yr);
       });
 
-    const bandsG = SVG.el(svg, "g", { class: "bands" });
+    // clip rect for progressive year reveal
+    const defs = SVG.el(svg, "defs");
+    const clipId = "ladder-clip-" + Math.random().toString(36).slice(2, 8);
+    const clip = SVG.el(defs, "clipPath", { id: clipId });
+    const clipRect = SVG.el(clip, "rect", {
+      x: margin.left,
+      y: margin.top,
+      width: w - margin.left - margin.right,
+      height: plotH - margin.top - margin.bottom,
+    });
 
-    function yearsForScene(idx) {
-      const cap = yearCaps[Math.max(0, Math.min(idx, yearCaps.length - 1))];
-      if (cap == null) {
-        // scene 0: show only start year (thin strip) — use first two points for area
-        const y0 = allYears[0];
-        return allYears.filter((y) => y <= y0 + 0); // first year only → need 2 pts
-      }
-      if (!Number.isFinite(cap)) return allYears.slice();
-      return allYears.filter((y) => y <= cap);
-    }
+    const bandsG = SVG.el(svg, "g", {
+      class: "bands",
+      "clip-path": `url(#${clipId})`,
+    });
 
-    // For scene 0 with one year, duplicate so area has width
-    function renderYears(years) {
-      let ys = years.slice();
-      if (ys.length === 1) {
-        // invent a 1-year window for a visible strip
-        ys = [ys[0], ys[0] + 0.35];
-      }
-      bandsG.innerHTML = "";
-      const stacked = [];
-      ys.forEach((y) => {
-        const realY = Math.floor(y);
-        let acc = 0;
-        order.forEach((lvl) => {
-          const v = byYear.get(realY)?.[lvl] ?? 0;
-          stacked.push({ x: y, y0: acc, y1: acc + v, series: lvl });
-          acc += v;
-        });
-      });
+    // always render full stack (paths); animate clip width by year
+    const stacked = [];
+    allYears.forEach((y) => {
+      let acc = 0;
       order.forEach((lvl) => {
-        const pts = stacked.filter((d) => d.series === lvl);
-        if (pts.length < 2) return;
-        let d = pts
-          .map((p, i) => `${i ? "L" : "M"}${xScale(p.x)},${yScale(p.y1)}`)
-          .join(" ");
-        d +=
-          " " +
-          [...pts]
-            .reverse()
-            .map((p) => `L${xScale(p.x)},${yScale(p.y0)}`)
-            .join(" ") +
-          " Z";
-        SVG.el(bandsG, "path", {
-          class: "band",
-          d,
-          fill: colors[lvl] || "#999",
-          opacity: 0.92,
-          stroke: "none",
-        });
+        const v = byYear.get(y)?.[lvl] ?? 0;
+        stacked.push({ x: y, y0: acc, y1: acc + v, series: lvl });
+        acc += v;
       });
-    }
+    });
+
+    const bandEls = new Map();
+    order.forEach((lvl) => {
+      const pts = stacked.filter((d) => d.series === lvl);
+      if (pts.length < 2) return;
+      let d = pts
+        .map((p, i) => `${i ? "L" : "M"}${xScale(p.x)},${yScale(p.y1)}`)
+        .join(" ");
+      d +=
+        " " +
+        [...pts]
+          .reverse()
+          .map((p) => `L${xScale(p.x)},${yScale(p.y0)}`)
+          .join(" ") +
+        " Z";
+      const path = SVG.el(bandsG, "path", {
+        class: "band",
+        d,
+        fill: colors[lvl] || "#999",
+        opacity: 0.92,
+        stroke: "none",
+      });
+      bandEls.set(lvl, path);
+    });
 
     let current = sceneIndex;
-    // Better scene 0: show full chart but highlight only Safely managed via opacity
-    // Matching chapter progressive year reveal is ok for MVP
-    function applyScene(idx) {
-      current = idx;
-      if (idx === 0) {
-        // full series, dim non-safely-managed
-        renderYears(allYears);
-        const paths = bandsG.querySelectorAll("path.band");
-        paths.forEach((p, i) => {
-          p.style.opacity = order[i] === "Safely managed" ? "0.95" : "0.25";
-        });
-      } else if (idx === 1) {
-        renderYears(allYears);
-        const paths = bandsG.querySelectorAll("path.band");
-        paths.forEach((p, i) => {
-          const lvl = order[i];
-          p.style.opacity =
-            lvl === "Safely managed" || lvl === "Basic" ? "0.95" : "0.28";
-        });
-      } else {
-        renderYears(allYears);
-        bandsG.querySelectorAll("path.band").forEach((p) => {
-          p.style.opacity = "0.92";
-        });
-      }
+
+    function yearCapFor(idx) {
+      const c = yearCaps[Math.max(0, Math.min(idx, yearCaps.length - 1))];
+      if (c == null || !Number.isFinite(c)) return xDomain[1];
+      return Math.min(c, xDomain[1]);
     }
 
-    applyScene(sceneIndex);
+    function layersFor(idx) {
+      if (idx === 0) return new Set(["Safely managed"]);
+      if (idx === 1) return new Set(["Safely managed", "Basic"]);
+      return new Set(order);
+    }
+
+    function applyScene(idx, { animate = true } = {}) {
+      current = idx;
+      const capY = yearCapFor(idx);
+      // clip width from left to year
+      const x0 = margin.left;
+      const x1 = xScale(capY);
+      const fullW = w - margin.left - margin.right;
+      const clipW = Math.max(2, Math.min(fullW, x1 - x0));
+      if (!animate) {
+        clipRect.style.transition = "none";
+      } else {
+        clipRect.style.transition = `width ${TRANSITION_MS}ms ease`;
+      }
+      clipRect.setAttribute("width", String(clipW));
+
+      const active = layersFor(idx);
+      bandEls.forEach((path, lvl) => {
+        const on = active.has(lvl);
+        path.style.opacity = on ? "0.95" : idx >= 2 ? "0.92" : "0.22";
+      });
+      root.querySelectorAll(".legend span").forEach((span) => {
+        const lvl = span.dataset.level;
+        const on = active.has(lvl);
+        span.style.opacity = on || idx >= 2 ? "1" : "0.35";
+      });
+    }
+
+    applyScene(sceneIndex, { animate: false });
+    if (options.animate !== false) {
+      requestAnimationFrame(() => applyScene(sceneIndex, { animate: true }));
+    }
 
     const api = {
       updateScene(n) {
-        applyScene(n);
+        applyScene(n, { animate: true });
       },
-      setScene(n) {
-        applyScene(n);
+      setScene(n, opts = {}) {
+        applyScene(n, { animate: opts.animate !== false });
       },
       destroy() {
         try {
@@ -262,10 +279,9 @@
       get sceneIndex() {
         return current;
       },
-      version: "0.1.0",
+      version: "0.2.0",
     };
-
-    INSTANCES.set(container, { api, setScene: applyScene });
+    INSTANCES.set(container, { api, setScene: (n, o) => applyScene(n, o) });
     return api;
   }
 
@@ -273,7 +289,7 @@
     mount,
     DEFAULT_ORDER,
     DEFAULT_COLORS,
-    version: "0.1.0",
+    version: "0.2.0",
   };
   global.AtlasServiceLadderStack = api;
   global.AtlasLibrary = global.AtlasLibrary || {};

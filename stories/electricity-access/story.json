@@ -11,20 +11,24 @@
       "color": "#f06a5a",
       "count": 780,
       "opacity": 0.78,
-      "biasLeft": 0.62
+      "biasLeft": 0.62,
+      "mode": "world"
     },
     "keyFacts": [
       {
         "value": "92%",
-        "label": "of the world’s population had access to electricity in 2023."
+        "label": "of the world’s population had access to electricity in 2023.",
+        "detailsHref": "#regions"
       },
       {
         "value": "581 million",
-        "label": "of the 666 million people without access live in Sub-Saharan Africa."
+        "label": "of the 666 million people without access live in Sub-Saharan Africa.",
+        "detailsHref": "#population"
       },
       {
         "value": "44%",
-        "label": "of rural dwellers in Ethiopia had access in 2023, up from 2% in 2000."
+        "label": "of rural dwellers in Ethiopia had access in 2023, up from 2% in 2000.",
+        "detailsHref": "#urban-rural-countries"
       }
     ]
   },

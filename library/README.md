@@ -32,7 +32,9 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`dual-threshold-bars/`](dual-threshold-bars/) | arsenic_by_source | dual threshold bars | **v0.1** · water |
 | [`gender-gap-bars/`](gender-gap-bars/) | income_gender_gap | male/female by income | **v0.1** · internet |
 | [`mobile-fixed-broadband/`](mobile-fixed-broadband/) | mobile_vs_fixed | dual line + scatter scenes | **v0.1** · internet |
-| [`coverage-ranked-bars/`](coverage-ranked-bars/) | coverage_map proxy | 3G/4G/5G ranked | **v0.1** · internet |
+| [`coverage-ranked-bars/`](coverage-ranked-bars/) | coverage_map proxy | 3G/4G/5G ranked bars | **v0.1** · fallback |
+| [`coverage-choropleth-map/`](coverage-choropleth-map/) | coverage_map Mapbox | country-boundaries + feature-state | **v0.1** · internet |
+| [`particles-world/`](particles-world/) | hero scatter | centroids.json | **v0.2** · particles |
 | [`dual-speed-bars/`](dual-speed-bars/) | speed_test | fixed/mobile Mbps | **v0.1** · internet |
 | [`slope-gap-chart/`](slope-gap-chart/) | coverage_access_slopes | coverage→use slopes | **v0.1** · internet |
 | [`ranked-rate-bars/`](ranked-rate-bars/) | text + smartphone | ranked rates / strips | **v0.1** · internet |

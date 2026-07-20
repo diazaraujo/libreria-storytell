@@ -11,20 +11,24 @@
       "color": "#6eb8f5",
       "count": 720,
       "opacity": 0.78,
-      "biasLeft": 0.62
+      "biasLeft": 0.62,
+      "mode": "world"
     },
     "keyFacts": [
       {
         "value": "2.2 billion",
-        "label": "people worldwide do not use the Internet."
+        "label": "people worldwide do not use the Internet.",
+        "detailsHref": "#access-trends"
       },
       {
         "value": "9 in 10 people",
-        "label": "in Sub-Saharan Africa are not covered by a 5G network."
+        "label": "in Sub-Saharan Africa are not covered by a 5G network.",
+        "detailsHref": "#coverage"
       },
       {
         "value": "22%",
-        "label": "of people in low-income countries own a smartphone."
+        "label": "of people in low-income countries own a smartphone.",
+        "detailsHref": "#smartphone"
       }
     ]
   },
@@ -183,7 +187,7 @@
       "id": "coverage",
       "type": "scroller",
       "graphic": "coverage_map",
-      "library": "CoverageRankedBars",
+      "library": "CoverageChoroplethMap",
       "title": "Most of the world is covered by 3G and 4G networks. Sub-Saharan Africa is the least connected region",
       "subtitle": "Percentage of inhabitants within range of at least a 3G, 4G, or 5G signal",
       "source": "ITU network coverage statistics.",

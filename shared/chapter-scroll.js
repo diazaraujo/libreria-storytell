@@ -180,12 +180,20 @@
             <p class="ch-keyfacts-label">Key facts <span>from this story</span></p>
             <div class="ch-keyfacts-row">
               ${facts
-                .map(
-                  (f) => `<div class="ch-keyfact">
+                .map((f) => {
+                  const body = `
                 <div class="ch-keyfact-value">${f.value || ""}</div>
                 <div class="ch-keyfact-label">${f.label || ""}</div>
-              </div>`
-                )
+                ${
+                  f.detailsHref
+                    ? `<span class="ch-keyfact-details">Show details</span>`
+                    : ""
+                }`;
+                  if (f.detailsHref) {
+                    return `<a class="ch-keyfact ch-keyfact--link" href="${f.detailsHref}">${body}</a>`;
+                  }
+                  return `<div class="ch-keyfact">${body}</div>`;
+                })
                 .join("")}
             </div>
           </div>`
@@ -216,12 +224,15 @@
             : {};
         particleCtl = global.AtlasParticles.mount({
           color: p.color || "#e31c3d",
-          count: p.count || 640,
-          opacity: p.opacity ?? 0.7,
+          count: p.count || 720,
+          opacity: p.opacity ?? 0.72,
           zIndex: p.zIndex ?? 1,
           parent: document.body,
+          mode: p.mode || "world",
           biasLeft: p.biasLeft != null ? p.biasLeft : 0.58,
           biasY: p.biasY != null ? p.biasY : 0.42,
+          centroidsUrl:
+            p.centroidsUrl || "/library/particles-world/centroids.json",
         });
         root.classList.add("ch-story--particles");
       }
@@ -233,6 +244,7 @@
 
     blocks.forEach((block, index) => {
       const ui = buildBlockDOM(block, index);
+      if (block.id) ui.section.id = block.id;
       root.appendChild(ui.section);
 
       const state = {

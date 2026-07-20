@@ -47,9 +47,16 @@ bash scripts/dev-servers.sh
 # headless pair shots → recordings/compare/pp-stories-2026-07-20/
 ```
 
-## Residual (next PP iterations)
+## Pass 2 residuals (2026-07-20)
 
-1. Origin particle engine density map (country scatter) — synthetic plume only  
-2. Key-fact cards: exact origin padding / underline links “Show details”  
-3. Chart-level pixel pass per graphic (service ladder year-reveal, dual-line hatch, etc.)  
-4. Mobile breakpoint match vs Atlas  
+| # | Item | Status |
+|---|------|--------|
+| 1 | Chart-level: ladder year-clip + layer dim · dual-line end-year · progress dots always on | **done** |
+| 2 | Key facts “Show details” → `#block-id` anchors | **done** |
+| 3 | Particles world scatter (`centroids.json` equirectangular) | **done** |
+| 4 | Coverage **Mapbox** choropleth (`country-boundaries-v1`) + ranked fallback | **done** |
+
+### Still optional
+- Mobile breakpoint parity  
+- Origin Pixi particle densities exact  
+- Mapbox feature-state join polish (tile id edge cases)  

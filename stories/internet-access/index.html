@@ -51,6 +51,7 @@
     </p>
   </div>
 
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.css" rel="stylesheet" />
   <script src="../../shared/svg.js"></script>
   <script src="../../shared/load.js"></script>
   <script src="../../shared/country-names.js"></script>
@@ -62,6 +63,9 @@
   <script src="../../library/gender-gap-bars/gender-gap-bars.js"></script>
   <script src="../../library/mobile-fixed-broadband/mobile-fixed-broadband.js"></script>
   <script src="../../library/coverage-ranked-bars/coverage-ranked-bars.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.0/mapbox-gl.js"></script>
+  <script src="../../library/nightlights-hexmap/mapbox-config.js"></script>
+  <script src="../../library/coverage-choropleth-map/coverage-choropleth-map.js"></script>
   <script src="../../library/dual-speed-bars/dual-speed-bars.js"></script>
   <script src="../../library/slope-gap-chart/slope-gap-chart.js"></script>
   <script src="../../library/ranked-rate-bars/ranked-rate-bars.js"></script>
@@ -182,6 +186,19 @@
           await wait2();
           const h = Math.min(560, Math.max(460, chartEl.clientHeight || 500));
           chartEl.style.cssText = `width:100%;height:${h}px`;
+          // Prefer real Mapbox choropleth; fall back to ranked bars
+          try {
+            if (window.mapboxgl && window.AtlasCoverageChoroplethMap && window.ATLAS_MAPBOX_TOKEN) {
+              return AtlasCoverageChoroplethMap.mount(chartEl, {
+                rows: coverageRows,
+                sceneIndex: ctx.sceneIndex || 0,
+                forceRemount: true,
+                height: h,
+              });
+            }
+          } catch (err) {
+            console.warn("coverage map fallback", err);
+          }
           return AtlasCoverageRankedBars.mount(chartEl, {
             rows: coverageRows,
             sceneIndex: ctx.sceneIndex || 0,

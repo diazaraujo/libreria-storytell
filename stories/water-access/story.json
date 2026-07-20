@@ -11,20 +11,24 @@
       "color": "#5fd4cc",
       "count": 700,
       "opacity": 0.78,
-      "biasLeft": 0.62
+      "biasLeft": 0.62,
+      "mode": "world"
     },
     "keyFacts": [
       {
         "value": "2.1 billion",
-        "label": "people lacked access to safely managed drinking water in 2024."
+        "label": "people lacked access to safely managed drinking water in 2024.",
+        "detailsHref": "#safely-managed"
       },
       {
         "value": "Around 50%",
-        "label": "of countries with data face water quality challenges."
+        "label": "of countries with data face water quality challenges.",
+        "detailsHref": "#limiting"
       },
       {
         "value": "In 26 countries",
-        "label": "more than half the population is exposed to high or very high E. coli risk."
+        "label": "more than half the population is exposed to high or very high E. coli risk.",
+        "detailsHref": "#ecoli-poc-pou"
       }
     ]
   },

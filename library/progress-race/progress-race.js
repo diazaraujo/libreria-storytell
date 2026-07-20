@@ -565,30 +565,19 @@
         const visible = showCell(d.iso, idx);
         const isHi = selected.has(d.iso);
 
-        // Start dots: always at 2015. Slightly dim when stem is drawn on top.
+        // Start dots: ALWAYS visible at 2015 for every country (origin frame truth)
         el.dot.setAttribute("cx", String(x0));
         el.dot.setAttribute("cy", String(y));
         el.dot.setAttribute("fill", DOT);
-        if (idx === 0) {
-          el.dot.setAttribute("opacity", "1");
-          el.dot.setAttribute("r", String(DOT_R));
-        } else if (visible && idx > 0) {
-          // origin keeps red start marker on stems
-          el.dot.setAttribute("opacity", "1");
-          el.dot.setAttribute("r", String(DOT_R));
-        } else {
-          el.dot.setAttribute("opacity", "1");
-          el.dot.setAttribute("r", String(DOT_R));
-        }
+        el.dot.setAttribute("opacity", idx === 0 ? "0.95" : visible ? "1" : "0.55");
+        el.dot.setAttribute("r", String(idx === 0 ? DOT_R + 0.3 : DOT_R));
+        el.dot.style.display = "";
 
-        // Cell visibility
-        el.g.style.display = visible ? "" : "none";
-        // For scene 0, still show labels for focus via a lightweight label-only mode:
-        // we show the cell but with scale 0 arrow and no stem — labels need cell.
-        if (idx === 0 && isHi) {
-          el.g.style.display = "";
-        } else if (idx === 0 && !isHi) {
-          el.g.style.display = "none";
+        // Cell visibility: scene 0 = focus labels only (stems off); dots always drawn outside cells.
+        // Origin keeps ALL start dots visible; stems/labels only for focus until scene 3.
+        el.g.style.display = visible || (idx === 0 && isHi) ? "" : "none";
+        if (idx === 0) {
+          el.g.style.display = isHi ? "" : "none";
         }
 
         if (idx > 0 && visible) {

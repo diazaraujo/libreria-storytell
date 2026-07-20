@@ -132,6 +132,24 @@
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.72);
 }
+a.ch-keyfact--link {
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+a.ch-keyfact--link:hover {
+  background: rgba(20, 70, 130, 0.88);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.ch-keyfact-details {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(120, 190, 255, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .ch-scroll-cue {
   position: absolute;
   left: 50%;
@@ -144,6 +162,8 @@
   color: rgba(255, 255, 255, 0.55);
   text-transform: none;
 }
+/* smooth anchor jumps from key-fact “Show details” */
+html { scroll-behavior: smooth; }
 @media (max-width: 720px) {
   .ch-hero-inner { padding-left: 0; }
   .ch-hero h1 { max-width: none; }

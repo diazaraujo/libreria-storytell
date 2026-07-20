@@ -1,5 +1,5 @@
 /**
- * AtlasDualLineUrbanRural v0.3 — pixel-matched + income variant
+ * AtlasDualLineUrbanRural v0.3.1 — pixel-matched + income + end-year fix
  *
  * Variants:
  *  - regions   (Bktvr1TG AccessElectricityUrbanRural)  4×2 · 2000–2023
@@ -446,9 +446,16 @@
         });
       }
 
-      const endPts = [...urban, ...rural].filter((p) => p.year === 2023);
-      endPts.forEach((p) => {
-        const isU = p.area === "urban";
+      // End markers at last observed year per series (not hard-coded 2023)
+      const lastOf = (arr) =>
+        arr && arr.length
+          ? arr.reduce((a, b) => (b.year >= a.year ? b : a), arr[0])
+          : null;
+      [
+        [lastOf(urban), true],
+        [lastOf(rural), false],
+      ].forEach(([p, isU]) => {
+        if (!p || !Number.isFinite(p.value)) return;
         const col = isU ? URBAN : RURAL;
         SVG.el(g, "circle", {
           class: "end",
