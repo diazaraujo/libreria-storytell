@@ -1,7 +1,7 @@
 {
   "approvedAt": "2026-07-20",
   "criteria": "Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.",
-  "count": 116,
+  "count": 142,
   "items": [
     {
       "path": "_ready/artificial-intelligence-hero",
@@ -1277,6 +1277,292 @@
       "approvedAt": "2026-07-20",
       "graphic": "myanmar_foodprices_conflict",
       "title": "Myanmar food prices & conflict"
+    },
+    {
+      "path": "chapters/goal_12/00-intro-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg12_intro_scroller",
+      "title": "Resource use intro"
+    },
+    {
+      "path": "chapters/goal_12/02-sdg12-efficient-price-dotplot",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "fossil subsidy / efficient prices · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg12_efficient_price_dotplot",
+      "title": "Efficient prices dotplot"
+    },
+    {
+      "path": "chapters/goal_12/03-efficient-price-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "efficient price scenes · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "efficient_price_scroller",
+      "title": "Efficient prices scroller"
+    },
+    {
+      "path": "chapters/goal_12/04-intro-scroller-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "intro scroller variant · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg12_intro_scroller_2",
+      "title": "Resource use intro (2)"
+    },
+    {
+      "path": "chapters/goal_12/05-sdg12-challenges-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "challenges scroller · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg12_challenges_scroller",
+      "title": "Fuel challenges scroller"
+    },
+    {
+      "path": "chapters/goal_12/06-ch12-reforms-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Responsible consumption",
+      "note": "policy reforms scroller · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "ch12_reforms_scroller",
+      "title": "Reforms scroller"
+    },
+    {
+      "path": "chapters/goal_14/00-plastic-production",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "production series · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_production",
+      "title": "Plastic production"
+    },
+    {
+      "path": "chapters/goal_14/01-plastic-waste",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "waste series · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_waste",
+      "title": "Plastic waste"
+    },
+    {
+      "path": "chapters/goal_14/02-plastic-leakage",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "leakage chart · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_leakage",
+      "title": "Plastic leakage"
+    },
+    {
+      "path": "chapters/goal_14/03-plastic-discharge",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "discharge chart · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_discharge",
+      "title": "Plastic discharge"
+    },
+    {
+      "path": "chapters/goal_14/06-fish-mortality",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "mortality chart · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "fish_mortality",
+      "title": "Fish mortality from plastics"
+    },
+    {
+      "path": "chapters/goal_14/07-plastic-seafood",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "seafood exposure · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "plastic_seafood",
+      "title": "Plastic in seafood"
+    },
+    {
+      "path": "chapters/goal_14/08-nitrogen-phosphorus",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "nutrient loads · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "nitrogen_phosphorus",
+      "title": "Nitrogen & phosphorus"
+    },
+    {
+      "path": "chapters/goal_14/12-chlorophyll-deviation",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "chlorophyll anomaly · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "chlorophyll_deviation",
+      "title": "Chlorophyll deviation"
+    },
+    {
+      "path": "chapters/goal_14/14-algal-blooms",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Oceans & plastics",
+      "note": "bloom events · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "algal_blooms",
+      "title": "Algal blooms"
+    },
+    {
+      "path": "chapters/goal_15/00-land-use",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "agricultural / land use · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "land_use",
+      "title": "Land use"
+    },
+    {
+      "path": "chapters/goal_15/07-protected-areas",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Life on land",
+      "note": "protected areas series · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "protected_areas",
+      "title": "Protected areas"
+    },
+    {
+      "path": "chapters/goal_16/00-ai-adoption",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Digital (goal_16 pack)",
+      "note": "ChatGPT adoption · real CSV · digital suite · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "ai_adoption",
+      "title": "AI adoption"
+    },
+    {
+      "path": "chapters/goal_16/01-affordability-barrier",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Digital (goal_16 pack)",
+      "note": "income-group affordability · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "affordability_barrier",
+      "title": "Affordability barrier"
+    },
+    {
+      "path": "chapters/goal_16/02-digital-language-divide",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Digital (goal_16 pack)",
+      "note": "language coverage · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "digital_language_divide",
+      "title": "Digital language divide"
+    },
+    {
+      "path": "chapters/goal_16/04-exposure",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Digital (goal_16 pack)",
+      "note": "exposure beeswarm · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "digital_exposure",
+      "title": "Digital exposure beeswarm"
+    },
+    {
+      "path": "chapters/goal_progress/00-poverty-progress-comparison",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Progress",
+      "note": "slopecharts · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "poverty_progress_comparison",
+      "title": "Poverty progress comparison"
+    },
+    {
+      "path": "chapters/goal_progress/01-poverty-rate-change-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Progress",
+      "note": "rate change scroller · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "poverty_rate_change_scroller",
+      "title": "Poverty rate change"
+    },
+    {
+      "path": "chapters/goal_progress/02-projection-country",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Progress",
+      "note": "country projections · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "projection_country",
+      "title": "Country poverty projections"
+    },
+    {
+      "path": "chapters/goal_dashboard/00-indicators-progress",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Dashboard",
+      "note": "dashboard speeds · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "indicators_progress",
+      "title": "Indicators progress speeds"
+    },
+    {
+      "path": "chapters/goal_dashboard/01-dashboard-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Dashboard",
+      "note": "dashboard scenes · real CSV · Tier B hand (not bulk generator)",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "dashboard_scroller",
+      "title": "Dashboard scroller"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Approved pixel-perfect (2026-07-20)
 
-**116 items** marked `fidelity: pixel-perfect` / `approved: true`.
+**142 items** marked `fidelity: pixel-perfect` / `approved: true`.
 
 Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.
 
@@ -21,6 +21,15 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
   - _Climate effects icon matrix (2)_
   - icon matrix variant · chapter graphic
 
+### Dashboard (2)
+
+- `chapters/goal_dashboard/00-indicators-progress` · `indicators_progress`
+  - _Indicators progress speeds_
+  - dashboard speeds · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_dashboard/01-dashboard-scroller` · `dashboard_scroller`
+  - _Dashboard scroller_
+  - dashboard scenes · real CSV · Tier B hand (not bulk generator)
+
 ### Data for Dev (5)
 
 - `chapters/goal_17/00-survey-age` · `survey_age`
@@ -38,6 +47,21 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 - `chapters/goal_17/04-spi-gdp-scatter` · `spi_gdp_scatter`
   - _Income matters, but it is not destiny_
   - survey strip, Nigeria dual-line, waffles, SPI, SPI–GDP
+
+### Digital (goal_16 pack) (4)
+
+- `chapters/goal_16/00-ai-adoption` · `ai_adoption`
+  - _AI adoption_
+  - ChatGPT adoption · real CSV · digital suite · Tier B hand (not bulk generator)
+- `chapters/goal_16/01-affordability-barrier` · `affordability_barrier`
+  - _Affordability barrier_
+  - income-group affordability · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_16/02-digital-language-divide` · `digital_language_divide`
+  - _Digital language divide_
+  - language coverage · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_16/04-exposure` · `digital_exposure`
+  - _Digital exposure beeswarm_
+  - exposure beeswarm · real CSV · Tier B hand (not bulk generator)
 
 ### Electricity RE (7)
 
@@ -291,6 +315,45 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
   - _Library · Value Beeswarm_
   - beeswarm component · used by ranked coverage patterns
 
+### Life on land (2)
+
+- `chapters/goal_15/00-land-use` · `land_use`
+  - _Land use_
+  - agricultural / land use · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_15/07-protected-areas` · `protected_areas`
+  - _Protected areas_
+  - protected areas series · real CSV · Tier B hand (not bulk generator)
+
+### Oceans & plastics (9)
+
+- `chapters/goal_14/00-plastic-production` · `plastic_production`
+  - _Plastic production_
+  - production series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/01-plastic-waste` · `plastic_waste`
+  - _Plastic waste_
+  - waste series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/02-plastic-leakage` · `plastic_leakage`
+  - _Plastic leakage_
+  - leakage chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/03-plastic-discharge` · `plastic_discharge`
+  - _Plastic discharge_
+  - discharge chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/06-fish-mortality` · `fish_mortality`
+  - _Fish mortality from plastics_
+  - mortality chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/07-plastic-seafood` · `plastic_seafood`
+  - _Plastic in seafood_
+  - seafood exposure · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/08-nitrogen-phosphorus` · `nitrogen_phosphorus`
+  - _Nitrogen & phosphorus_
+  - nutrient loads · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/12-chlorophyll-deviation` · `chlorophyll_deviation`
+  - _Chlorophyll deviation_
+  - chlorophyll anomaly · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_14/14-algal-blooms` · `algal_blooms`
+  - _Algal blooms_
+  - bloom events · real CSV · Tier B hand (not bulk generator)
+
 ### Poverty body (6)
 
 - `chapters/goal_01/00-draw-your-chart` · `draw_your_chart`
@@ -311,6 +374,18 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 - `chapters/goal_01/05-national-poverty-comparison` · `national_poverty_comparison`
   - _Countries with low extreme poverty rates often suffer from other forms of poverty_
   - interactive draw + scroller choreography + venn + scatter
+
+### Progress (3)
+
+- `chapters/goal_progress/00-poverty-progress-comparison` · `poverty_progress_comparison`
+  - _Poverty progress comparison_
+  - slopecharts · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_progress/01-poverty-rate-change-scroller` · `poverty_rate_change_scroller`
+  - _Poverty rate change_
+  - rate change scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_progress/02-projection-country` · `projection_country`
+  - _Country poverty projections_
+  - country projections · real CSV · Tier B hand (not bulk generator)
 
 ### Prosperity gaps (9)
 
@@ -341,6 +416,27 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 - `chapters/goal_10/08-prosperity-gap-playground` · `prosperity_gap_playground`
   - _Prosperity gap playground_
   - interactive prosperity gap playground · real CSV
+
+### Responsible consumption (6)
+
+- `chapters/goal_12/00-intro-scroller` · `sdg12_intro_scroller`
+  - _Resource use intro_
+  - intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/02-sdg12-efficient-price-dotplot` · `sdg12_efficient_price_dotplot`
+  - _Efficient prices dotplot_
+  - fossil subsidy / efficient prices · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/03-efficient-price-scroller` · `efficient_price_scroller`
+  - _Efficient prices scroller_
+  - efficient price scenes · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/04-intro-scroller-2` · `sdg12_intro_scroller_2`
+  - _Resource use intro (2)_
+  - intro scroller variant · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/05-sdg12-challenges-scroller` · `sdg12_challenges_scroller`
+  - _Fuel challenges scroller_
+  - challenges scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_12/06-ch12-reforms-scroller` · `ch12_reforms_scroller`
+  - _Reforms scroller_
+  - policy reforms scroller · real CSV · Tier B hand (not bulk generator)
 
 ### SPI scroller #c21 (1)
 
@@ -403,9 +499,7 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 
 ## Explicitly NOT approved (yet)
 
-- Bulk generator mains (`tier-B-bulk`) and scaffold stubs
-- goal_11 skill violins / pay beeswarm / slum waffle (bulk flags)
+- Bulk/scaffold image placeholders (goal_id4d, aridity maps, many goal_14/15 images)
+- goal_11 skill violins / pay beeswarm / slum waffle (bulk)
 - goal_05 better-jobs / wage-gap-beeswarm scaffolds
-- goal_02 food-insecurity-matrix / ndvi-map scaffolds
-- goal_12, 14, 15, 16 bulk/generic remaining chapters
-- Full Mapbox WebGL where only ranked-bars proxies exist
+- Full Mapbox WebGL where only proxies exist
