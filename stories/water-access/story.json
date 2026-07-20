@@ -200,9 +200,134 @@
       ]
     },
     {
+      "id": "bridge-6",
+      "type": "prose",
+      "html": "<p>Beyond the JMP ladder, <strong>microbial safety</strong> is measured with <i>E. coli</i> — a marker of fecal contamination. Risk levels are defined by colony-forming units (CFU) in 100 mL of water.</p>"
+    },
+    {
+      "id": "ecoli-table",
+      "type": "vis",
+      "graphic": "ecoli_table",
+      "library": "RiskLevelTable",
+      "title": "Levels of fecal contamination risk",
+      "subtitle": "E. coli colony-forming units (CFU) per 100 mL",
+      "source": "WHO and UNICEF JMP water quality testing methods.",
+      "vhPerScene": 0.85,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "levels",
+          "text": "Risk is classified as <strong>low</strong> (&lt;1 CFU/100 mL), <strong>medium</strong> (1–10), <strong>high</strong> (11–100), and <strong>very high</strong> (&gt;100). Even “improved” sources can fail these tests."
+        }
+      ]
+    },
+    {
+      "id": "bridge-7",
+      "type": "prose",
+      "html": "<p>Contamination often worsens between the source and the cup. Comparing <strong>point of collection</strong> with <strong>point of use</strong> shows where household storage and handling add risk.</p>"
+    },
+    {
+      "id": "ecoli-poc-pou",
+      "type": "scroller",
+      "graphic": "e_coli",
+      "library": "PairedCompareBars",
+      "title": "E. coli contamination at point of use is worse than at point of collection",
+      "subtitle": "Share of population with high or very high fecal contamination risk (%)",
+      "source": "WHO/UNICEF JMP · Progress on household drinking water, sanitation and hygiene.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "poc",
+          "text": "Shares of people using water with high and very high <i>E. coli</i> risk at [emphasis: <span style=\"background-color: rgb(236,182,59);\">point of collection</span>] (the household’s primary source, such as a tap or well). In 15 countries, at least half the population collects water already at high or very high risk."
+        },
+        {
+          "type": "scene",
+          "id": "pou",
+          "text": "Contamination is often higher at [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(141,65,23);\">point of use</span>] — the water actually consumed. In 26 countries, more than half the population drinks water with high or very high risk."
+        },
+        {
+          "type": "scene",
+          "id": "worse",
+          "text": "In 28 countries, risk at point of use exceeds point of collection. Storage, dirty containers, and handling can recontaminate water that looked safer at the source."
+        }
+      ]
+    },
+    {
+      "id": "bridge-8",
+      "type": "prose",
+      "html": "<p>Within countries, rural households are often more exposed than urban ones — fewer treated networks, longer storage, and weaker monitoring.</p>"
+    },
+    {
+      "id": "ecoli-urban-rural",
+      "type": "vis",
+      "graphic": "e_coli_urban_rural",
+      "library": "UrbanRuralBars",
+      "title": "Exposure to E. coli contamination is higher among rural than urban residents",
+      "subtitle": "Very high risk at point of collection (% of population)",
+      "source": "Multiple Indicator Cluster Survey (MICS).",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "gap",
+          "text": "In the countries with the largest urban–rural gaps, rural residents face far higher rates of very high <i>E. coli</i> risk — often by tens of percentage points."
+        }
+      ]
+    },
+    {
+      "id": "bridge-9",
+      "type": "prose",
+      "html": "<p>Chemical contamination can be just as binding as microbes. In Bangladesh, <strong>arsenic</strong> in groundwater remains a major public-health challenge.</p>"
+    },
+    {
+      "id": "arsenic-grouped",
+      "type": "scroller",
+      "graphic": "bangladesh_arsenic_grouped",
+      "library": "StackedShareBars",
+      "title": "In Bangladesh, rural dwellers and poorer people are more exposed to arsenic-contaminated water",
+      "subtitle": "Arsenic contamination levels by residence and wealth (% of population)",
+      "source": "Bangladesh Bureau of Statistics · UNICEF Bangladesh.",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "rural",
+          "text": "Rural dwellers are more exposed than urban counterparts: about 12 percent in rural areas face arsenic above 50 ppb, compared with 5 percent in urban areas."
+        },
+        {
+          "type": "scene",
+          "id": "income",
+          "text": "By wealth quintile, people in poorer and middle groups face greater exposure than the richest — safe water is unevenly distributed within the same country."
+        }
+      ]
+    },
+    {
+      "id": "bridge-10",
+      "type": "prose",
+      "html": "<p>Where the water comes from matters. Wells and tubewells drive most arsenic exposure; piped systems are safer on average.</p>"
+    },
+    {
+      "id": "arsenic-source",
+      "type": "vis",
+      "graphic": "arsenic_by_source",
+      "library": "DualThresholdBars",
+      "title": "Arsenic contamination levels are highest in wells—including tubewells—in Bangladesh",
+      "subtitle": "Exposure to arsenic contamination, by water source (% of population)",
+      "source": "Bangladesh Bureau of Statistics · UNICEF Bangladesh.",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "wells",
+          "text": "Water wells show the highest shares above both 10 ppb and 50 ppb arsenic. Piped water and other sources have far lower exposure rates."
+        }
+      ]
+    },
+    {
       "id": "bridge-end",
       "type": "prose",
-      "html": "<p>Safe water is a foundation for health and development. Closing gaps means investing not only in pipes and pumps, but also in monitoring, treatment, and services that keep water clean from source to cup.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">Water story <strong>6/11</strong> library blocks. Remaining origin chapters: E. coli table/scatter, urban–rural E. coli, Bangladesh arsenic.</p>"
+      "html": "<p>Safe water is a foundation for health and development. Closing gaps means investing not only in pipes and pumps, but also in monitoring, treatment, household storage practices, and protection from chemical hazards such as arsenic.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">Water story <strong>11/11</strong> — full origin chapter set wired as library blocks.</p>"
     }
   ]
 }

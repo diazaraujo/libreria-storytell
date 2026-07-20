@@ -33,7 +33,7 @@
     <div>
       <a href="../../gallery-atlas.html">← Gallery</a>
       · <a href="../../gallery.html">Dev</a>
-      · <span class="tag">water · 6/11</span>
+      · <span class="tag">water · 11/11</span>
     </div>
     <div>
       <a href="http://127.0.0.1:8765/en/atlas/water-access/" target="_blank">Origen</a>
@@ -46,8 +46,8 @@
 
   <div class="ch-end">
     <p>
-      <strong>Water story 6/11</strong> — JMP ladder · urban–rural dual-line · country beeswarm ·
-      component min bars · limiting factors · Tanzania / typical paths.
+      <strong>Water story 11/11</strong> — JMP ladder · urban–rural · beeswarm · components ·
+      limiting factors · Tanzania · E. coli · arsenic.
     </p>
   </div>
 
@@ -63,6 +63,11 @@
   <script src="../../library/component-min-bars/component-min-bars.js"></script>
   <script src="../../library/limiting-factors-bars/limiting-factors-bars.js"></script>
   <script src="../../library/component-paths/component-paths.js"></script>
+  <script src="../../library/risk-level-table/risk-level-table.js"></script>
+  <script src="../../library/paired-compare-bars/paired-compare-bars.js"></script>
+  <script src="../../library/urban-rural-bars/urban-rural-bars.js"></script>
+  <script src="../../library/stacked-share-bars/stacked-share-bars.js"></script>
+  <script src="../../library/dual-threshold-bars/dual-threshold-bars.js"></script>
   <script>
     (async function () {
       const story = await (await fetch("./story.json")).json();
@@ -75,6 +80,11 @@
         limitingRows,
         tzRows,
         typicalRows,
+        ecoliTable,
+        ecoliPocPou,
+        ecoliUR,
+        arsenicGroup,
+        arsenicSource,
       ] = await Promise.all([
         AtlasLoad.csv("./data/safely_managed.csv"),
         AtlasLoad.csv("./data/region_urban_rural.csv"),
@@ -83,9 +93,13 @@
         AtlasLoad.csv("./data/limiting_factors.csv"),
         AtlasLoad.csv("./data/tanzania_drinking_water.csv"),
         AtlasLoad.csv("./data/drinking_water_typical_paths.csv"),
+        AtlasLoad.csv("./data/ecoli_table.csv"),
+        AtlasLoad.csv("./data/ecoli_poc_pou.csv"),
+        AtlasLoad.csv("./data/ecoli_urban_rural.csv"),
+        AtlasLoad.csv("./data/Bangladesh_arsenic_by_group.csv"),
+        AtlasLoad.csv("./data/ArsenicBySource.csv"),
       ]);
 
-      // dual-line expects iso3c, area (urban|rural), year, value
       const dualRows = regionUR
         .filter(
           (r) =>
@@ -101,104 +115,165 @@
           value: r.value,
         }));
 
+      // pivot PoC / PoU long form → wide
+      const pocPouBy = new Map();
+      ecoliPocPou.forEach((r) => {
+        if (!pocPouBy.has(r.country)) {
+          pocPouBy.set(r.country, { label: r.country, a: null, b: null });
+        }
+        const o = pocPouBy.get(r.country);
+        if (r.point === "PoC") o.a = +r.value;
+        if (r.point === "PoU") o.b = +r.value;
+      });
+      const pocPouRows = [...pocPouBy.values()].filter(
+        (d) => Number.isFinite(d.a) && Number.isFinite(d.b)
+      );
+
       const wait2 = () =>
         new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 
+      const mounts = {
+        "safely-managed": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(520, Math.max(420, chartEl.clientHeight || 460));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasServiceLadderStack.mount(chartEl, {
+            rows: ladderRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        "urban-rural": async (chartEl) => {
+          await wait2();
+          const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasDualLineUrbanRural.mount(chartEl, {
+            rows: dualRows,
+            variant: "regions",
+            forceRemount: true,
+            height: h,
+            xDomain: [2000, 2024],
+            xTicks: [2000, 2024],
+            labels: {
+              urban: "Urban",
+              rural: "Rural",
+              y_axis_units: "% of population",
+            },
+          });
+        },
+        "country-beeswarm": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasValueBeeswarm.mount(chartEl, {
+            rows: countryRows.map((r) => ({
+              iso3c: r.iso3,
+              name: r.country_name,
+              value: r.value,
+            })),
+            sceneIndex: ctx.sceneIndex || 0,
+            forceRemount: true,
+            height: h,
+            universalThreshold: 99,
+            lowThreshold: 50,
+          });
+        },
+        estimating: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasComponentMinBars.mount(chartEl, {
+            rows: componentRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            countries: ["Mongolia", "Nepal"],
+            forceRemount: true,
+            height: h,
+          });
+        },
+        limiting: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasLimitingFactorsBars.mount(chartEl, {
+            rows: limitingRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        tanzania: async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasComponentPaths.mount(chartEl, {
+            rows: tzRows,
+            typicalRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            showTypicalFromScene: 2,
+            forceRemount: true,
+            height: h,
+          });
+        },
+        "ecoli-table": async (chartEl) => {
+          await wait2();
+          const h = Math.min(420, Math.max(320, chartEl.clientHeight || 360));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasRiskLevelTable.mount(chartEl, {
+            rows: ecoliTable,
+            title: "E. coli risk levels (JMP)",
+          });
+        },
+        "ecoli-poc-pou": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasPairedCompareBars.mount(chartEl, {
+            rows: pocPouRows,
+            sceneIndex: ctx.sceneIndex || 0,
+            aColor: "#ecb63b",
+            bColor: "#8d4117",
+            aLabel: "Point of collection (PoC)",
+            bLabel: "Point of use (PoU)",
+            forceRemount: true,
+            height: h,
+          });
+        },
+        "ecoli-urban-rural": async (chartEl) => {
+          await wait2();
+          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasUrbanRuralBars.mount(chartEl, {
+            rows: ecoliUR,
+            height: h,
+            unitNote: "% with very high E. coli risk",
+          });
+        },
+        "arsenic-grouped": async (chartEl, ctx) => {
+          await wait2();
+          const h = Math.min(460, Math.max(380, chartEl.clientHeight || 420));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasStackedShareBars.mount(chartEl, {
+            rows: arsenicGroup,
+            sceneIndex: ctx.sceneIndex || 0,
+            views: ["urban_rural", "income"],
+            forceRemount: true,
+            height: h,
+          });
+        },
+        "arsenic-source": async (chartEl) => {
+          await wait2();
+          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
+          chartEl.style.cssText = `width:100%;height:${h}px`;
+          return AtlasDualThresholdBars.mount(chartEl, {
+            rows: arsenicSource,
+            height: h,
+          });
+        },
+      };
+
       for (const b of story.blocks) {
-        if (b.id === "safely-managed") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(520, Math.max(420, chartEl.clientHeight || 460));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasServiceLadderStack.mount(chartEl, {
-              rows: ladderRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              forceRemount: true,
-              height: h,
-            });
-          };
-        }
-        if (b.id === "urban-rural") {
-          b.mount = async (chartEl) => {
-            await wait2();
-            const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasDualLineUrbanRural.mount(chartEl, {
-              rows: dualRows,
-              variant: "regions",
-              forceRemount: true,
-              height: h,
-              xDomain: [2000, 2024],
-              xTicks: [2000, 2024],
-              labels: {
-                urban: "Urban",
-                rural: "Rural",
-                y_axis_units: "% of population",
-              },
-            });
-          };
-        }
-        if (b.id === "country-beeswarm") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasValueBeeswarm.mount(chartEl, {
-              rows: countryRows.map((r) => ({
-                iso3c: r.iso3,
-                name: r.country_name,
-                value: r.value,
-              })),
-              sceneIndex: ctx.sceneIndex || 0,
-              forceRemount: true,
-              height: h,
-              universalThreshold: 99,
-              lowThreshold: 50,
-            });
-          };
-        }
-        if (b.id === "estimating") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasComponentMinBars.mount(chartEl, {
-              rows: componentRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              countries: ["Mongolia", "Nepal"],
-              forceRemount: true,
-              height: h,
-            });
-          };
-        }
-        if (b.id === "limiting") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasLimitingFactorsBars.mount(chartEl, {
-              rows: limitingRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              forceRemount: true,
-              height: h,
-            });
-          };
-        }
-        if (b.id === "tanzania") {
-          b.mount = async (chartEl, ctx) => {
-            await wait2();
-            const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
-            return AtlasComponentPaths.mount(chartEl, {
-              rows: tzRows,
-              typicalRows,
-              sceneIndex: ctx.sceneIndex || 0,
-              showTypicalFromScene: 2,
-              forceRemount: true,
-              height: h,
-            });
-          };
-        }
+        if (mounts[b.id]) b.mount = mounts[b.id];
       }
 
       window.__chapter = AtlasChapterScroll.mount(

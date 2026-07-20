@@ -25,6 +25,11 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`component-min-bars/`](component-min-bars/) | estimating (Mongolia/Nepal) | min component highlight | **v0.1** · water |
 | [`limiting-factors-bars/`](limiting-factors-bars/) | limiting_factors | grouped bars · binding factor | **v0.1** · water |
 | [`component-paths/`](component-paths/) | tanzania_typical_progress | multi-series + typical dashed | **v0.1** · water |
+| [`risk-level-table/`](risk-level-table/) | ecoli_table | static risk legend table | **v0.1** · water |
+| [`paired-compare-bars/`](paired-compare-bars/) | e_coli PoC/PoU | paired bars · 3 scenes | **v0.1** · water |
+| [`urban-rural-bars/`](urban-rural-bars/) | e_coli_urban_rural | paired urban/rural bars | **v0.1** · water |
+| [`stacked-share-bars/`](stacked-share-bars/) | bangladesh_arsenic_grouped | 100% stacks · view switch | **v0.1** · water |
+| [`dual-threshold-bars/`](dual-threshold-bars/) | arsenic_by_source | dual threshold bars | **v0.1** · water |
 | [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.9** · origin Mapbox tiles (`mlambrechts.*` + proxy) · fallback H3 · demo + story + chapters |
 | heroes / beeswarm / waffle / scatter | shared/ | partial | |
 

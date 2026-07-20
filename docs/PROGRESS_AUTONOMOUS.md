@@ -28,13 +28,11 @@
 - [x] Hero particles · origin prose
 - [x] Story URL: `/stories/internet-access/`
 
-### Water story (6/11)
-- [x] Library `service-ladder-stack` v0.1 (JMP ladder)
-- [x] Dual-line urban–rural regions (water data 2000–2024)
-- [x] Library `value-beeswarm` · country 2024
-- [x] Library `component-min-bars` · Mongolia / Nepal
-- [x] Library `limiting-factors-bars`
-- [x] Library `component-paths` · Tanzania + typical
+### Water story (11/11)
+- [x] JMP ladder · dual-line urban–rural · country beeswarm
+- [x] Component min bars · limiting factors · Tanzania paths
+- [x] E. coli table · PoC/PoU · urban–rural E. coli
+- [x] Bangladesh arsenic groups · arsenic by source
 - [x] Story URL: `/stories/water-access/`
 
 ## Cómo arrancar
@@ -56,7 +54,7 @@ open http://127.0.0.1:8787/stories/water-access/
 - Residual: origin particle field (chrome only)
 
 ## Siguiente
-- Water: E. coli (table/scatter/urban–rural) + Bangladesh arsenic (→ 11/11)
+- Water: polish visual vs origin (pixel pass residual)
 - Internet: coverage / speed / smartphone (promover chapters → library)
 - Compare visual origin vs story electricity (frame by frame residual)
 - CI smoke en GitHub Actions
