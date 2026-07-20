@@ -24,6 +24,9 @@
       sizeMax = 2.4,
       speed = 0.12,
       parent = document.body,
+      // Atlas heroes cluster particles toward left mid-height (plume)
+      biasLeft = 0.55,
+      biasY = 0.45,
     } = options;
 
     if (
@@ -75,9 +78,17 @@
       particles.length = 0;
       const n = count;
       for (let i = 0; i < n; i++) {
+        // mixture: uniform scatter + left-plume density like Atlas heroes
+        const plume = Math.random() < biasLeft;
+        const x = plume
+          ? Math.pow(Math.random(), 1.35) * w * 0.55 + Math.random() * w * 0.08
+          : Math.random() * w;
+        const y = plume
+          ? h * (0.12 + Math.random() * 0.7) * (0.65 + biasY * 0.35)
+          : Math.random() * h;
         particles.push({
-          x: Math.random() * w,
-          y: Math.random() * h,
+          x,
+          y,
           r: sizeMin + Math.random() * (sizeMax - sizeMin),
           // origin-like random channels
           a: Math.random(),

@@ -11,20 +11,20 @@
     body { margin: 0; background: #fff; }
     body.ch-story-page { --ch-sticky-top: 0px; }
     .ch-topbar {
-      position: relative; z-index: 5;
+      position: absolute; top: 0; left: 0; right: 0; z-index: 20;
       display: flex; align-items: center; justify-content: space-between;
       gap: 12px; padding: 8px 16px;
-      background: #fff; border-bottom: 1px solid #e8eaef;
-      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif; color: #6a7781;
+      background: transparent; border-bottom: none;
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif; color: rgba(255,255,255,0.75);
     }
-    .ch-topbar a { color: #0071bc; text-decoration: none; }
+    .ch-topbar a { color: rgba(255,255,255,0.9); text-decoration: none; }
     .ch-topbar .tag {
-      background: #e0f2fe; color: #0369a1;
+      background: rgba(255,255,255,0.14); color: #fff;
       padding: 3px 8px; border-radius: 999px; font-size: 11px;
     }
     .ch-end {
       max-width: 640px; margin: 0 auto; padding: 48px 24px 96px;
-      color: #6a7781; font-size: 14px; line-height: 1.5;
+      color: rgba(255,255,255,0.75); font-size: 14px; line-height: 1.5;
     }
   </style>
 </head>

@@ -170,10 +170,40 @@
     if (story.hero) {
       const hero = document.createElement("header");
       hero.className = "ch-hero";
+      if (story.hero.bg) {
+        hero.style.setProperty("--ch-hero-bg", story.hero.bg);
+      }
+
+      const facts = Array.isArray(story.hero.keyFacts) ? story.hero.keyFacts : [];
+      const factsHtml = facts.length
+        ? `<div class="ch-keyfacts">
+            <p class="ch-keyfacts-label">Key facts <span>from this story</span></p>
+            <div class="ch-keyfacts-row">
+              ${facts
+                .map(
+                  (f) => `<div class="ch-keyfact">
+                <div class="ch-keyfact-value">${f.value || ""}</div>
+                <div class="ch-keyfact-label">${f.label || ""}</div>
+              </div>`
+                )
+                .join("")}
+            </div>
+          </div>`
+        : "";
+
       hero.innerHTML = `
-        <p class="ch-kicker">${story.hero.kicker || "Electricity Access"}</p>
-        <h1>${story.hero.title || story.title || ""}</h1>
-        <p class="ch-lead">${story.hero.lead || ""}</p>
+        <div class="ch-hero-inner">
+          <p class="ch-kicker">${story.hero.kicker || ""}</p>
+          <h1>${story.hero.title || story.title || ""}</h1>
+          <p class="ch-lead">${story.hero.lead || ""}</p>
+          ${
+            story.hero.byline
+              ? `<p class="ch-byline">${story.hero.byline}</p>`
+              : ""
+          }
+          ${factsHtml}
+        </div>
+        <div class="ch-scroll-cue">Scroll down</div>
       `;
       root.appendChild(hero);
 
@@ -186,10 +216,12 @@
             : {};
         particleCtl = global.AtlasParticles.mount({
           color: p.color || "#e31c3d",
-          count: p.count || 560,
-          opacity: p.opacity ?? 0.5,
+          count: p.count || 640,
+          opacity: p.opacity ?? 0.7,
           zIndex: p.zIndex ?? 1,
           parent: document.body,
+          biasLeft: p.biasLeft != null ? p.biasLeft : 0.58,
+          biasY: p.biasY != null ? p.biasY : 0.42,
         });
         root.classList.add("ch-story--particles");
       }

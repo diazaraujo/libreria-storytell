@@ -13,6 +13,7 @@
     "Unimproved",
     "Surface",
   ];
+  // JMP palette matched to origin water-access (scene chips + areas)
   const DEFAULT_COLORS = {
     "Safely managed": "#0080c6",
     Basic: "#00b8ec",

@@ -45,8 +45,16 @@ open http://127.0.0.1:8787/stories/water-access/
 open http://127.0.0.1:8787/stories/electricity-access/
 ```
 
-## Residual (polish, no bloquea completeness)
+## Pixel-perfect (2026-07-20)
 
-- Pixel pass frame-a-frame vs origen  
-- Coverage map real Mapbox (hoy: ranked bars proxy)  
+- [x] Dark navy heroes + origin lead/byline/key facts (3 stories)
+- [x] Particle plume bias · theme colors on navy
+- [x] Transparent topbar over hero
+- [x] Compare matrix: `docs/COMPARE_PP_STORIES.md`
+- Captures: `recordings/compare/pp-stories-2026-07-20/`
+
+## Residual
+
+- Chart-level PP pass (ladder year-reveal, dual-line hatch parity, etc.)
+- Coverage map real Mapbox (ranked bars proxy)
 - Plan: `docs/PLAN_REMAINING.md`

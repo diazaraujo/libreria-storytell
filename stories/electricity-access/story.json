@@ -4,12 +4,29 @@
   "hero": {
     "kicker": "Electricity Access",
     "title": "Access to Electricity: Who Remains Without Power?",
-    "lead": "Global electricity access has expanded steadily over the past two decades, yet progress remains deeply uneven. Scroll to move through the story — charts stay sticky while annotations and highlights change with your position.",
+    "lead": "Global electricity access has expanded steadily over the past two decades, yet progress remains deeply uneven. While most regions have achieved near-universal coverage, Sub-Saharan Africa continues to lag significantly, particularly its rural communities. Initiatives like Mission 300 aim to extend electricity to 300 million more people in Africa by 2030.",
+    "byline": "May 2026, Story by Tony Fujs & Haruna Kashiwase, Visuals by Maarten Lambrechts",
+    "bg": "#071a3d",
     "particles": {
-      "color": "#e31c3d",
-      "count": 580,
-      "opacity": 0.48
-    }
+      "color": "#f06a5a",
+      "count": 780,
+      "opacity": 0.78,
+      "biasLeft": 0.62
+    },
+    "keyFacts": [
+      {
+        "value": "92%",
+        "label": "of the world’s population had access to electricity in 2023."
+      },
+      {
+        "value": "581 million",
+        "label": "of the 666 million people without access live in Sub-Saharan Africa."
+      },
+      {
+        "value": "44%",
+        "label": "of rural dwellers in Ethiopia had access in 2023, up from 2% in 2000."
+      }
+    ]
   },
   "blocks": [
     {
@@ -207,14 +224,46 @@
       "source": "World Bank Space2Stats.",
       "vhPerScene": 0.85,
       "scenes": [
-        { "type": "scene", "id": "zones", "text": "[emphasis: Electricity access in Nigeria is highly uneven]. Southern zones enjoy relatively high coverage, while the north lags far behind." },
-        { "type": "scene", "id": "nightlights", "text": "[emphasis: Nighttime lights] provide a more granular view of electricity access and usage." },
-        { "type": "scene", "id": "nightlights_cities", "text": "The brightest clusters correspond to major cities such as Lagos, Abuja, and Port Harcourt." },
-        { "type": "scene", "id": "nightlights_urban", "text": "Let’s focus on Nigeria’s [emphasis: urban areas]…" },
-        { "type": "scene", "id": "zoom_kano", "text": "…and zoom in on Kano. Where bright lights are detected, neighborhoods are likely well served." },
-        { "type": "scene", "id": "urban_dark", "text": "Filtering out the brightest points shows large urban and suburban zones may remain underserved." },
-        { "type": "scene", "id": "urban_population_dark", "text": "Although these are densely populated suburban settlements, they still lack highly visible illumination." },
-        { "type": "scene", "id": "kano_cell_highlight", "text": "This 36 km² cell houses more than 100,000 people but remains largely in the dark — grid reliability is far from consistent." }
+        {
+          "type": "scene",
+          "id": "zones",
+          "text": "[emphasis: Electricity access in Nigeria is highly uneven]. Southern zones enjoy relatively high coverage, while the north lags far behind."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights",
+          "text": "[emphasis: Nighttime lights] provide a more granular view of electricity access and usage."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights_cities",
+          "text": "The brightest clusters correspond to major cities such as Lagos, Abuja, and Port Harcourt."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights_urban",
+          "text": "Let’s focus on Nigeria’s [emphasis: urban areas]…"
+        },
+        {
+          "type": "scene",
+          "id": "zoom_kano",
+          "text": "…and zoom in on Kano. Where bright lights are detected, neighborhoods are likely well served."
+        },
+        {
+          "type": "scene",
+          "id": "urban_dark",
+          "text": "Filtering out the brightest points shows large urban and suburban zones may remain underserved."
+        },
+        {
+          "type": "scene",
+          "id": "urban_population_dark",
+          "text": "Although these are densely populated suburban settlements, they still lack highly visible illumination."
+        },
+        {
+          "type": "scene",
+          "id": "kano_cell_highlight",
+          "text": "This 36 km² cell houses more than 100,000 people but remains largely in the dark — grid reliability is far from consistent."
+        }
       ]
     },
     {
@@ -227,10 +276,26 @@
       "source": "World Bank Space2Stats.",
       "vhPerScene": 0.9,
       "scenes": [
-        { "type": "scene", "id": "nightlights12", "text": "Let’s focus on Ethiopia’s [emphasis: rural areas only] and the nighttime lights view of 2012." },
-        { "type": "scene", "id": "nightlights12_powerlines", "text": "The power grid reached only a few rural areas in 2012 — much rural access came through [emphasis: solar power]." },
-        { "type": "scene", "id": "nightlights12_se", "text": "The [emphasis: south-east] remained mostly in the dark in 2012." },
-        { "type": "scene", "id": "nightlights23", "text": "By 2023, many more nighttime lights appear in the southeast — rapid uptake of solar electricity." }
+        {
+          "type": "scene",
+          "id": "nightlights12",
+          "text": "Let’s focus on Ethiopia’s [emphasis: rural areas only] and the nighttime lights view of 2012."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights12_powerlines",
+          "text": "The power grid reached only a few rural areas in 2012 — much rural access came through [emphasis: solar power]."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights12_se",
+          "text": "The [emphasis: south-east] remained mostly in the dark in 2012."
+        },
+        {
+          "type": "scene",
+          "id": "nightlights23",
+          "text": "By 2023, many more nighttime lights appear in the southeast — rapid uptake of solar electricity."
+        }
       ]
     }
   ]

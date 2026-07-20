@@ -25,13 +25,27 @@
   font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
 }
 
-/* Hero */
+/* Hero — full-bleed Atlas dark intro (navy + particles + key facts) */
 .ch-hero {
   position: relative;
   z-index: 2;
-  max-width: 720px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 72px var(--ch-pad-x) 56px;
+  background: var(--ch-hero-bg, #071a3d);
+  color: #fff;
+  overflow: hidden;
+}
+.ch-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(920px, 100%);
   margin: 0 auto;
-  padding: 48px var(--ch-pad-x) 56px;
+  padding-left: min(8vw, 96px);
 }
 /* Particles sit under sticky white panels (z-index 2) */
 .ch-story--particles .ch-sticky {
@@ -43,25 +57,97 @@
   background: transparent;
 }
 .ch-kicker {
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--ch-subtle);
-  margin: 0 0 8px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 14px;
 }
 .ch-hero h1 {
-  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
-  line-height: 1.15;
-  margin: 0 0 16px;
+  font-size: clamp(2rem, 4.2vw, 3.15rem);
+  line-height: 1.12;
+  margin: 0 0 28px;
   font-weight: 700;
-  color: var(--ch-text);
+  color: #fff;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
 }
 .ch-lead {
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: var(--ch-subtle);
-  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 18px;
+  max-width: 36em;
+}
+.ch-byline {
+  margin: 0 0 36px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 36em;
+}
+.ch-keyfacts {
+  margin-top: 8px;
+}
+.ch-keyfacts-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 12px;
+}
+.ch-keyfacts-label span {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.ch-keyfacts-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 720px;
+}
+.ch-keyfact {
+  background: rgba(12, 48, 96, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 16px 16px;
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.ch-keyfact-value {
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.ch-keyfact-label {
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.72);
+}
+.ch-scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: none;
+}
+@media (max-width: 720px) {
+  .ch-hero-inner { padding-left: 0; }
+  .ch-hero h1 { max-width: none; }
+  .ch-keyfacts-row { grid-template-columns: 1fr; }
 }
 
 /* Prose bridge */
@@ -332,10 +418,25 @@
   font-size: 14px;
 }
 
-/* Hide chrome topbar competition */
+/* Topbar over dark hero — translucent Atlas-adjacent chrome */
 body.ch-story-page .ch-topbar {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+  border-bottom: none;
+  color: rgba(255, 255, 255, 0.72);
+}
+body.ch-story-page .ch-topbar a { color: rgba(255, 255, 255, 0.88); }
+body.ch-story-page .ch-topbar .tag {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+/* Keep space so absolute topbar doesn't cover hero title */
+body.ch-story-page .ch-story > .ch-hero {
+  padding-top: 88px;
 }
 
 @media (max-width: 960px) {

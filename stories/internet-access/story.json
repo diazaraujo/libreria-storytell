@@ -4,12 +4,29 @@
   "hero": {
     "kicker": "Internet Access",
     "title": "The Unfinished Digital Revolution: Expanding Internet Access",
-    "lead": "Internet access has grown at remarkable speed, yet digital opportunity remains deeply unequal. Scroll to explore who is online — and who is still shut out.",
+    "lead": "Internet access has grown at remarkable speed, yet digital opportunity remains deeply unequal. While networks now reach much of the world, millions of people, especially in poorer countries, are still shut out of the digital economy. The reasons go beyond infrastructure, and reflect gaps in affordability, skills, and inclusive policy design.",
+    "byline": "May 2026, Story by Ana Florina Pirlea & Lorena Corso, Visuals by Jan Willem Tulp & Maarten Lambrechts, Illustrations: Drew Bardana",
+    "bg": "#071a3d",
     "particles": {
-      "color": "#2f80ed",
-      "count": 520,
-      "opacity": 0.42
-    }
+      "color": "#6eb8f5",
+      "count": 720,
+      "opacity": 0.78,
+      "biasLeft": 0.62
+    },
+    "keyFacts": [
+      {
+        "value": "2.2 billion",
+        "label": "people worldwide do not use the Internet."
+      },
+      {
+        "value": "9 in 10 people",
+        "label": "in Sub-Saharan Africa are not covered by a 5G network."
+      },
+      {
+        "value": "22%",
+        "label": "of people in low-income countries own a smartphone."
+      }
+    ]
   },
   "blocks": [
     {

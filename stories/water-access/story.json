@@ -4,12 +4,29 @@
   "hero": {
     "kicker": "Water Access",
     "title": "Water Quality: A Foundation for Health and Development",
-    "lead": "Access to safe drinking water is essential for health and development, yet over 2 billion people still lack it. Scroll to climb the service ladder — from surface water to safely managed.",
+    "lead": "Access to safe drinking water is essential for health and development, yet over 2 billion people, mostly in low- and middle-income countries, still lack it. Many remain exposed to contaminated water, which threatens health, livelihoods, and economic progress, underscoring the urgent need to ensure not only access, but also the safety of drinking water.",
+    "byline": "May 2026, Story by Haruna Kashiwase & Tony Fujs, Visuals by Jan Willem Tulp",
+    "bg": "#071a3d",
     "particles": {
-      "color": "#0080c6",
-      "count": 500,
-      "opacity": 0.4
-    }
+      "color": "#5fd4cc",
+      "count": 700,
+      "opacity": 0.78,
+      "biasLeft": 0.62
+    },
+    "keyFacts": [
+      {
+        "value": "2.1 billion",
+        "label": "people lacked access to safely managed drinking water in 2024."
+      },
+      {
+        "value": "Around 50%",
+        "label": "of countries with data face water quality challenges."
+      },
+      {
+        "value": "In 26 countries",
+        "label": "more than half the population is exposed to high or very high E. coli risk."
+      }
+    ]
   },
   "blocks": [
     {
