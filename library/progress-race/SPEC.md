@@ -3,7 +3,7 @@
 **Canónico:** `access_electricity_progress`  
 **Chunk:** `Brmmsw6q.js` · CSS `AccessElectricityProgressScroller.DVNMGbcQ.css`  
 **Story:** `stories/electricity-access/` bloque `progress`  
-**Estado:** **v0.2** — PP: start-dots 2015, stems Se (focus|scene3), gradient legend, chips
+**Estado:** **v0.3.1** — beauty A: square 2015 marks, stems Se, speed gradient, chips, tween 2s
 
 ## Escenas (Brmmsw6q)
 

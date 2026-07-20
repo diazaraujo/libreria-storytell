@@ -152,12 +152,17 @@
         if (b.id === "progress") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-          const h = AtlasChapterScroll.fitChartHeight(chartEl);
+            const h = AtlasChapterScroll.fitChartHeight(chartEl, {
+              min: 420,
+              max: 680,
+            });
+            // reuse instance → updateScene only (beauty: 2s tween preserved)
             return AtlasProgressRace.mount(chartEl, {
               rows: progressRows,
               sceneIndex: ctx.sceneIndex || 0,
               names: window.ATLAS_COUNTRY_NAMES || {},
-              forceRemount: true,
+              forceRemount: false,
+              reuse: true,
               height: h,
               labels: {
                 progress_speed: "Speed of progress",

@@ -1,7 +1,10 @@
 /**
- * AtlasServiceLadderStack v0.2
+ * AtlasServiceLadderStack v0.3 — beauty: Total-only pivot + Open Sans craft
  * Pattern: safely_managed (goal_06) — stacked area JMP ladder.
- * Scenes: progressive year reveal + layer emphasis (origin chapter logic).
+ * Scenes: full timeline + layer emphasis (dim inactive bands).
+ *
+ * Data: year, level, value · optional Global column (Total | Urban | Rural).
+ * Prefer Global=Total so stacked bands sum to ~100% (61%→74% safely managed).
  *
  * Depends: window.AtlasSVG
  */
@@ -20,8 +23,7 @@
     Unimproved: "#e3a763",
     Surface: "#bd6126",
   };
-  // Prefer full timeline + layer emphasis (matches narrative PP / mobile fill).
-  // Optional yearCaps still supported for progressive reveal demos.
+  // Full timeline + layer emphasis (yearCaps optional for progressive demos).
   const DEFAULT_YEAR_CAPS = [Infinity, Infinity, Infinity];
   const TRANSITION_MS = 900;
   const INSTANCES = new WeakMap();
@@ -31,9 +33,17 @@
     return global.AtlasSVG;
   }
 
+  function isTotalScope(r) {
+    // JMP CSVs ship Total / Urban / Rural. Prefer Total (global ladder).
+    const g = r.Global != null ? r.Global : r.global != null ? r.global : r.scope;
+    if (g == null || g === "") return true;
+    return /^total$/i.test(String(g).trim());
+  }
+
   function pivot(rows) {
     const byYear = new Map();
     rows.forEach((r) => {
+      if (!isTotalScope(r)) return;
       const y = +r.year;
       const v = +r.value;
       let lvl = r.level;
@@ -94,16 +104,17 @@
     style.textContent = `
       .atlas-service-ladder .plot { flex:1; min-height:0; position:relative; }
       .atlas-service-ladder .legend {
-        display:flex; flex-wrap:wrap; gap:10px 16px; padding:8px 4px 0;
-        font-size:12px; color:#3d4a54; font-weight:600;
+        display:flex; flex-wrap:wrap; gap:10px 18px; padding:6px 2px 4px;
+        font-size:12px; color:#100e2b; font-weight:600;
+        font-family:'Open Sans',system-ui,sans-serif;
       }
-      .atlas-service-ladder .legend span { display:inline-flex; align-items:center; gap:6px; }
+      .atlas-service-ladder .legend span { display:inline-flex; align-items:center; gap:6px; transition: opacity ${TRANSITION_MS}ms ease; }
       .atlas-service-ladder .legend i {
-        width:12px; height:12px; border-radius:2px; display:inline-block;
+        width:11px; height:11px; border-radius:2px; display:inline-block;
         transition: opacity ${TRANSITION_MS}ms ease;
       }
       .atlas-service-ladder path.band {
-        transition: opacity ${TRANSITION_MS}ms ease, d ${TRANSITION_MS}ms ease;
+        transition: opacity ${TRANSITION_MS}ms ease;
       }
     `;
     root.appendChild(style);
@@ -124,7 +135,7 @@
     plot.className = "plot";
     root.appendChild(plot);
 
-    const margin = { top: 16, right: 16, bottom: 36, left: 44 };
+    const margin = { top: 12, right: 14, bottom: 34, left: 42 };
     const plotH = Math.max(200, plot.clientHeight || h - 40);
     const svg = SVG.el(plot, "svg");
     svg.setAttribute("viewBox", `0 0 ${w} ${plotH}`);
@@ -139,7 +150,8 @@
         x2: w - margin.right,
         y1: yScale(t),
         y2: yScale(t),
-        stroke: "#f1f5f9",
+        stroke: t === 0 ? "#e8ecf0" : "#f1f5f9",
+        "stroke-width": 1,
       });
       SVG.el(svg, "text", {
         x: margin.left - 8,
@@ -147,6 +159,8 @@
         "text-anchor": "end",
         fill: "#6a7781",
         "font-size": 11,
+        "font-weight": "600",
+        "font-family": "Open Sans, system-ui, sans-serif",
       }).textContent = t + "%";
     });
     allYears
@@ -159,11 +173,12 @@
       .forEach((yr) => {
         SVG.el(svg, "text", {
           x: xScale(yr),
-          y: plotH - margin.bottom + 20,
+          y: plotH - margin.bottom + 18,
           "text-anchor": "middle",
           fill: "#6a7781",
           "font-size": 12,
           "font-weight": "600",
+          "font-family": "Open Sans, system-ui, sans-serif",
         }).textContent = String(yr);
       });
 
@@ -256,12 +271,12 @@
       bandEls.forEach((path, lvl) => {
         const on = active.has(lvl);
         // Scene 0/1: dim inactive layers; scene 2: all full
-        path.style.opacity = idx >= 2 ? "0.94" : on ? "0.96" : "0.18";
+        path.style.opacity = idx >= 2 ? "1" : on ? "1" : "0.14";
       });
       root.querySelectorAll(".legend span").forEach((span) => {
         const lvl = span.dataset.level;
         const on = active.has(lvl);
-        span.style.opacity = idx >= 2 || on ? "1" : "0.38";
+        span.style.opacity = idx >= 2 || on ? "1" : "0.35";
       });
     }
 
@@ -286,7 +301,7 @@
       get sceneIndex() {
         return current;
       },
-      version: "0.2.0",
+      version: "0.3.0",
     };
     INSTANCES.set(container, { api, setScene: (n, o) => applyScene(n, o) });
     return api;
@@ -296,7 +311,7 @@
     mount,
     DEFAULT_ORDER,
     DEFAULT_COLORS,
-    version: "0.2.0",
+    version: "0.3.0",
   };
   global.AtlasServiceLadderStack = api;
   global.AtlasLibrary = global.AtlasLibrary || {};

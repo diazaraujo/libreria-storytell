@@ -167,17 +167,23 @@ cd ~/atlas-replicas && python3 -m http.server 8787
 - Rebuild: `python3 scripts/build-inventory.py`  
 - Tiers: **A-animated** (3 hoy) → B approved static → C scroller shell → D bulk  
 
-Orden de trabajo: story electricity **3/7** (regions + population + **progress-race**); siguiente urban-rural / hexmaps.
+Orden de trabajo: story electricity progress **beauty A** + water ladder/dual; hexmaps ya en v0.9.
 
-### Progress-race (Brmmsw6q) — v0.2 PP
+### Progress-race (Brmmsw6q) — v0.3.1 beauty A
 
 - CSS origin: `line.progress` opacity+stroke-width **2s**; `path` transform **2s**; text opacity 2s (hover 0.5s).
 - `accessTween` JS 2s — **cancelar** tween al cambiar de escena.
-- **Dots 2015** siempre (Pixi-equivalent SVG circles `#c45a64`); stems+arrows solo si `scene===3 || selected` (Se).
-- Escena 0: solo dots + labels focus (16.6 / 29.0 / 52.5). Escena 2: 3 stems + gradient legend. Escena 3: race full + chips.
-- Legend: **barra continua** (no swatches). Mini 2015→2023 limpio.
-- Mount-once + `updateScene`; filter ambos años ≠100; focus ETH/NGA/COD; speed domain `[-1,0,1,2]`.
-- QA gallery: `recordings/compare/pp-electricity-2026-07-18/`
+- **Square marks 2015** siempre (Pixi-equivalent SVG rects `#d14b55`, ~3.6px); stems+arrows si `scene===3 || selected` (Se).
+- Escena 0: dots + labels focus (16.6 / 29.0 / 52.5). Escena 2: 3 stems speed-colored + gradient legend. Escena 3: race full + chips.
+- Legend stack: mini 2015→2023 **sobre** barra continua Speed of progress.
+- Stem uniform ~5px / op 0.32 (focus 0.42); mount-once + `forceRemount: false` en story electricity.
+- Filter ambos años ≠100; focus ETH/NGA/COD; speed domain `[-1,0,1,2]`.
+- QA: `recordings/compare/beauty-progress/` · origin Pixi hace ruidoso el pixel-byte SVG crop.
+
+### Service-ladder-stack — v0.3
+
+- Pivot **Global=Total** (CSV trae Total/Urban/Rural; last-write sin filtro = Rural ~42% en vez de 61%).
+- Stacked area 2000–2024 · layer dim por escena · mount-once en water story.
 
 ---
 

@@ -138,10 +138,12 @@
         "safely-managed": async (chartEl, ctx) => {
           await wait2();
           const h = AtlasChapterScroll.fitChartHeight(chartEl);
+          // reuse → updateScene only (layer dim tween preserved)
           return AtlasServiceLadderStack.mount(chartEl, {
             rows: ladderRows,
             sceneIndex: ctx.sceneIndex || 0,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },
@@ -151,7 +153,8 @@
           return AtlasDualLineUrbanRural.mount(chartEl, {
             rows: dualRows,
             variant: "regions",
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
             xDomain: [2000, 2024],
             xTicks: [2000, 2024],

@@ -1,16 +1,16 @@
 /**
- * AtlasProgressRace v0.2.1 — denser row band + origin-like start dots
+ * AtlasProgressRace v0.3.1 — beauty A: square 2015 marks, stems, speed colors, chips
  * Chunk: Brmmsw6q.js · CSS: AccessElectricityProgressScroller.DVNMGbcQ.css
  *
- * Origin behaviour (user-refs f_054–f_068):
- *  0  access_15 — red start-dots at 2015 for ALL countries; focus labels (16.6/29.0/52.5)
- *  1  access_23 — accessTween → 2023; progress stems + arrows ONLY for focus (or selected)
- *  2  progress  — speed colors on focus stems; continuous Speed-of-progress gradient;
- *                 all countries still show 2015 dots
- *  3  all       — stems+arrows for ALL; start dots remain; multi-select chips; hover labels
+ * Origin behaviour (user-refs f_054–f_068 · origin_progress_s0–s3):
+ *  0  access_15 — red square marks at 2015 for ALL; focus labels (16.6 / 29.0 / 52.5)
+ *  1  access_23 — accessTween → 2023; grey stems+arrows ONLY for focus/selected
+ *  2  progress  — speed colors on focus stems; continuous Speed-of-progress legend;
+ *                 ALL 2015 dots stay fully opaque
+ *  3  all       — stems+arrows for ALL (uniform width); chips multi-select; hover labels
  *
- * SVG cells (line+path) render when: scene===3 OR iso ∈ selected (Se in Brmmsw6q).
- * Start dots always render (Pixi-equivalent via SVG circles).
+ * SVG cells (line+path) when: scene===3 OR iso ∈ selected (Se in Brmmsw6q).
+ * Start marks always on (Pixi-equivalent via SVG rects).
  *
  * Mount once · accessTween 2s · path scale 2s · line stroke-width/opacity 2s
  * Depends: window.AtlasSVG
@@ -22,22 +22,30 @@
     typical: "#ffdd92",
     fast: "#00a1c4",
   };
-  // Sampled from origin frames (~dusty red start markers)
-  // Sampled from origin progress frames (dusty red 2015 markers)
-  const DOT = "#c45a64";
+  // Sampled from origin progress frames (dusty red 2015 square markers)
+  const DOT = "#d14b55";
   const GREY = {
     grey300: "#8a969f",
     grey400: "#57626a",
-    text: "#111111",
+    text: "#100e2b",
     tick: "#6a7781",
     grid: "#e8ecf0",
     rule: "#c41230",
   };
   const FOCUS_DEFAULT = ["ETH", "NGA", "COD"];
-  const MARGIN = { top: 24, right: 20, bottom: 64, left: 16 };
-  const TRI_R = 4.5;
-  const DOT_R = 2.15; // origin start markers are compact dusty-red dots
-  const ROW_H = 4.85; // denser band (~origin full sticky ~86 rows)
+  const NAME_OVERRIDE = {
+    COD: "Congo, Dem. Rep.",
+    ETH: "Ethiopia",
+    NGA: "Nigeria",
+  };
+  // margin bottom reserves legend stack (year + speed gradient)
+  const MARGIN = { top: 22, right: 24, bottom: 72, left: 18 };
+  const TRI_R = 5;
+  const DOT_SIZE = 3.6; // origin Pixi marks are compact squares (~3–4 px)
+  const ROW_H = 5.0;
+  const STEM_W = 5; // SPEC + origin line.progress stroke-width
+  const STEM_OP = 0.32;
+  const STEM_OP_HI = 0.42;
   const TRANSITION_MS = 2000;
   const INSTANCES = new WeakMap();
 
@@ -217,8 +225,8 @@
         transform-origin: center;
         transform-box: fill-box;
       }
-      .atlas-progress-race circle.start-dot {
-        transition: opacity 700ms ease, fill 700ms, r 700ms;
+      .atlas-progress-race .start-dot {
+        transition: opacity 700ms ease, fill 700ms;
       }
       .atlas-progress-race .cell.highlighted path.arrow,
       .atlas-progress-race .cell:hover path.arrow {
@@ -235,99 +243,112 @@
         opacity: 1 !important;
         transition: opacity 0.5s ease-out;
       }
-      .atlas-progress-race .speed-legend {
+      .atlas-progress-race .legend-stack {
         position: absolute;
-        bottom: 14px;
-        left: 20px;
+        bottom: 10px;
+        left: 16px;
         z-index: 2;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .atlas-progress-race .mini-year-legend {
+        transition: opacity 0.5s;
+      }
+      .atlas-progress-race .speed-legend {
         font-size: 11px;
         color: #111;
         transition: opacity 0.5s;
-        pointer-events: none;
       }
       .atlas-progress-race .speed-legend .title {
         font-weight: 700;
-        margin-bottom: 4px;
+        margin: 2px 0 3px;
         font-size: 12px;
+        color: #100e2b;
       }
       .atlas-progress-race .speed-legend .bar-wrap {
         position: relative;
-        width: min(360px, 48vw);
-        height: 12px;
+        width: min(340px, 46vw);
+        height: 10px;
       }
       .atlas-progress-race .speed-legend .bar {
         width: 100%;
-        height: 12px;
+        height: 10px;
         border-radius: 1px;
         background: linear-gradient(90deg,
           ${SPEED_COLORS.regressing} 0%,
-          ${SPEED_COLORS.standstill} 28%,
-          #c4b896 42%,
-          ${SPEED_COLORS.typical} 55%,
-          ${SPEED_COLORS.fast} 78%,
+          ${SPEED_COLORS.standstill} 22%,
+          #b8a882 38%,
+          ${SPEED_COLORS.typical} 52%,
+          #7ec4b8 68%,
+          ${SPEED_COLORS.fast} 82%,
           #0086a8 100%);
       }
       .atlas-progress-race .speed-legend .ticks {
         display: flex;
         justify-content: space-between;
-        margin-top: 4px;
+        margin-top: 3px;
         color: #57626a;
         font-size: 10px;
         font-weight: 600;
-        width: min(360px, 48vw);
+        width: min(340px, 46vw);
         letter-spacing: -0.01em;
       }
       .atlas-progress-race .speed-legend .ticks span {
         flex: 0 0 auto;
         white-space: nowrap;
       }
-      .atlas-progress-race .mini-year-legend {
-        position: absolute;
-        bottom: 52px;
-        left: 20px;
-        z-index: 2;
-        transition: opacity 0.5s;
-        pointer-events: none;
-      }
       .atlas-progress-race .chip-bar {
         position: absolute;
-        top: 4px;
-        left: 8px;
-        right: 8px;
+        top: 6px;
+        left: 10px;
         z-index: 4;
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 0;
         align-items: center;
         transition: opacity 0.4s;
+        background: #f4f6f8;
+        border: 1px solid #d5dbe3;
+        border-radius: 6px;
+        padding: 2px 4px 2px 6px;
+        max-width: calc(100% - 20px);
       }
       .atlas-progress-race .chip {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
-        background: #f1f5f9;
-        border: 1px solid #cbd5e1;
-        border-radius: 999px;
-        padding: 3px 10px 3px 12px;
+        gap: 4px;
+        background: transparent;
+        border: 0;
+        border-right: 1px solid #d5dbe3;
+        border-radius: 0;
+        padding: 3px 8px 3px 6px;
         font: 600 12px 'Open Sans', system-ui, sans-serif;
-        color: #111;
+        color: #100e2b;
+      }
+      .atlas-progress-race .chip:last-of-type {
+        border-right: 0;
       }
       .atlas-progress-race .chip button {
         border: 0; background: transparent; cursor: pointer;
-        font-size: 14px; line-height: 1; color: #64748b; padding: 0 0 0 2px;
+        font-size: 13px; line-height: 1; color: #64748b; padding: 0 0 0 2px;
       }
       .atlas-progress-race .chip-bar select {
         font: 12px 'Open Sans', system-ui, sans-serif;
-        padding: 4px 8px;
-        border: 1px solid #cbd5e1;
-        border-radius: 6px;
-        max-width: 220px;
-        background: #fff;
+        padding: 3px 6px;
+        border: 0;
+        border-left: 1px solid #d5dbe3;
+        border-radius: 0 4px 4px 0;
+        max-width: 160px;
+        background: transparent;
+        color: #57626a;
+        cursor: pointer;
       }
       .atlas-progress-race.no-anim line.progress,
       .atlas-progress-race.no-anim path.arrow,
       .atlas-progress-race.no-anim .cell text.country,
-      .atlas-progress-race.no-anim circle.start-dot {
+      .atlas-progress-race.no-anim .start-dot {
         transition: none !important;
       }
     `;
@@ -340,7 +361,23 @@
     chipBar.style.pointerEvents = "none";
     root.appendChild(chipBar);
 
-    // Continuous speed legend (scene ≥ 2)
+    // Legend stack (origin: year glyph above Speed-of-progress gradient)
+    const legendStack = document.createElement("div");
+    legendStack.className = "legend-stack";
+    root.appendChild(legendStack);
+
+    const miniYear = document.createElement("div");
+    miniYear.className = "mini-year-legend";
+    miniYear.style.opacity = "0";
+    miniYear.innerHTML = `
+      <svg width="168" height="26" viewBox="0 0 168 26" aria-hidden="true">
+        <text x="0" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2015</text>
+        <text x="132" y="10" fill="#100e2b" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2023</text>
+        <line x1="0" y1="18" x2="138" y2="18" stroke="${SPEED_COLORS.fast}" stroke-width="4.5" opacity="0.4" stroke-linecap="round"/>
+        <path d="M134,13.5 L144,18 L134,22.5 Z" fill="${SPEED_COLORS.fast}"/>
+      </svg>`;
+    legendStack.appendChild(miniYear);
+
     const speedLeg = document.createElement("div");
     speedLeg.className = "speed-legend";
     speedLeg.style.opacity = "0";
@@ -355,20 +392,7 @@
         <span>${L.fast}</span>
         <span>${L.very_fast}</span>
       </div>`;
-    root.appendChild(speedLeg);
-
-    // Mini 2015→2023 glyph (scene ≥ 1)
-    const miniYear = document.createElement("div");
-    miniYear.className = "mini-year-legend";
-    miniYear.style.opacity = "0";
-    miniYear.innerHTML = `
-      <svg width="180" height="28" viewBox="0 0 180 28" aria-hidden="true">
-        <text x="0" y="10" fill="#111" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2015</text>
-        <text x="148" y="10" fill="#111" font-size="11" font-weight="700" font-family="Open Sans,system-ui">2023</text>
-        <line x1="0" y1="20" x2="150" y2="20" stroke="${SPEED_COLORS.fast}" stroke-width="5" opacity="0.35" stroke-linecap="round"/>
-        <path d="M145,15 L155,20 L145,25 Z" fill="${SPEED_COLORS.fast}"/>
-      </svg>`;
-    root.appendChild(miniYear);
+    legendStack.appendChild(speedLeg);
 
     const svg = SVG.el(root, "svg");
     svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
@@ -378,17 +402,28 @@
     const plotH = h - MARGIN.top - MARGIN.bottom;
     const xScale = SVG.scaleLinear([0, 100], [0, plotW]);
     // d3 padding(1) ≈ points only; we use small padding for readable rows
+    // origin scaleBand padding ~0.05 — dense horizontal band of marks
     const yScale = SVG.scaleBand(
       data.map((d) => d.iso),
       [0, plotH],
-      0.15
+      0.05
     );
 
     const gRoot = SVG.el(svg, "g", {
       transform: `translate(${MARGIN.left},${MARGIN.top})`,
     });
 
-    // X grid + labels (origin: 0 25 50 75 100 — no % in ticks sometimes; we match live labels with bare numbers)
+    // Left axis line (origin has a subtle vertical rule)
+    SVG.el(gRoot, "line", {
+      x1: 0,
+      x2: 0,
+      y1: 0,
+      y2: plotH,
+      stroke: "#cfd6de",
+      "stroke-width": 1,
+    });
+
+    // X grid + labels (origin: 0 25 50 75 100 bare numbers at top)
     [0, 25, 50, 75, 100].forEach((t) => {
       const x = xScale(t);
       SVG.el(gRoot, "line", {
@@ -402,11 +437,12 @@
       });
       SVG.el(gRoot, "text", {
         x,
-        y: -8,
+        y: -10,
         "text-anchor": "middle",
         fill: GREY.tick,
-        "font-size": 11,
+        "font-size": 12,
         "font-weight": "600",
+        "font-family": "Open Sans, system-ui, sans-serif",
       }).textContent = String(t);
     });
 
@@ -414,17 +450,24 @@
     const gRows = SVG.el(gRoot, "g", { class: "rows" });
     const rowEls = new Map();
 
+    function displayName(d) {
+      return NAME_OVERRIDE[d.iso] || d.name || d.iso;
+    }
+
     data.forEach((d) => {
       const y = yScale(d.iso) + yScale.bandwidth() / 2;
+      const x0 = xScale(d.a2015);
 
-      // Always-on start marker at 2015 (Pixi-equivalent)
-      const dot = SVG.el(gDots, "circle", {
+      // Origin: filled squares (not circles) at 2015 access
+      const dot = SVG.el(gDots, "rect", {
         class: "start-dot",
-        cx: xScale(d.a2015),
-        cy: y,
-        r: DOT_R,
+        x: x0 - DOT_SIZE / 2,
+        y: y - DOT_SIZE / 2,
+        width: DOT_SIZE,
+        height: DOT_SIZE,
         fill: DOT,
-        opacity: "1",
+        opacity: "0.95",
+        rx: 0.5,
       });
 
       const g = SVG.el(gRows, "g", {
@@ -434,8 +477,8 @@
 
       const prog = SVG.el(g, "line", {
         class: "progress",
-        x1: xScale(d.a2015),
-        x2: xScale(d.a2015),
+        x1: x0,
+        x2: x0,
         y1: y,
         y2: y,
         stroke: GREY.grey300,
@@ -445,7 +488,7 @@
 
       const cell = SVG.el(g, "g", {
         class: "cell",
-        transform: `translate(${xScale(d.a2015)},${y})`,
+        transform: `translate(${x0},${y})`,
         style: "cursor:pointer",
       });
 
@@ -464,7 +507,7 @@
         y1: 0,
         y2: 0,
         stroke: "transparent",
-        "stroke-width": 10,
+        "stroke-width": 12,
         "pointer-events": "stroke",
       });
 
@@ -474,10 +517,11 @@
         y: 4,
         "text-anchor": "start",
         fill: GREY.text,
-        "font-size": 11,
-        "font-weight": "700",
+        "font-size": 12,
+        "font-weight": "600",
+        "font-family": "Open Sans, system-ui, sans-serif",
       });
-      lab.textContent = `${d.name} ${d.a2015.toFixed(1)}%`;
+      lab.textContent = `${displayName(d)} ${d.a2015.toFixed(1)}%`;
 
       rowEls.set(d.iso, { g, prog, cell, arrow, lab, dot, y, d });
     });
@@ -499,14 +543,15 @@
         if (!d) return;
         const chip = document.createElement("span");
         chip.className = "chip";
-        chip.innerHTML = `<span>${d.name}</span>`;
+        const nm = document.createElement("span");
+        nm.textContent = displayName(d);
+        chip.appendChild(nm);
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.setAttribute("aria-label", `Remove ${d.name}`);
+        btn.setAttribute("aria-label", `Remove ${displayName(d)}`);
         btn.textContent = "×";
         btn.addEventListener("click", () => {
           selected.delete(iso);
-          // keep at least empty set ok
           rebuildChips();
           paintAt(current);
         });
@@ -514,11 +559,12 @@
         chipBar.appendChild(chip);
       });
       const sel = document.createElement("select");
+      sel.setAttribute("aria-label", L.select_country);
       sel.innerHTML =
-        `<option value="">${L.select_country}</option>` +
+        `<option value="">+</option>` +
         data
           .filter((d) => !selected.has(d.iso))
-          .map((d) => `<option value="${d.iso}">${d.name}</option>`)
+          .map((d) => `<option value="${d.iso}">${displayName(d)}</option>`)
           .join("");
       sel.addEventListener("change", () => {
         if (sel.value) {
@@ -544,18 +590,24 @@
     function applyLabels(idx) {
       rowEls.forEach((el) => {
         const d = el.d;
-        const endVal = idx === 0 ? d.a2015 : d.a2023;
-        const showVal = endVal;
+        const endVal = idx === 0 ? d.a2015 : d.access;
         if (idx === 0) {
           el.lab.setAttribute("x", "8");
+          el.lab.setAttribute("y", "3.5");
           el.lab.setAttribute("text-anchor", "start");
         } else {
-          const left = endVal > 75;
-          el.lab.setAttribute("x", left ? "-8" : "8");
+          const left = endVal > 78;
+          el.lab.setAttribute("x", left ? "-10" : "10");
+          el.lab.setAttribute("y", "3.5");
           el.lab.setAttribute("text-anchor", left ? "end" : "start");
         }
-        el.lab.textContent = `${d.name} ${(+showVal).toFixed(1)}%`;
-        el.lab.setAttribute("fill", idx >= 2 ? colorFor(d, idx) : GREY.text);
+        // Origin label form: "Ethiopia 29.0%"
+        el.lab.textContent = `${displayName(d)} ${(+endVal).toFixed(1)}%`;
+        // speed-colored labels only for highlighted rows from scene 2+
+        el.lab.setAttribute(
+          "fill",
+          idx >= 2 && selected.has(d.iso) ? colorFor(d, idx) : GREY.text
+        );
       });
     }
 
@@ -564,34 +616,38 @@
         const d = el.d;
         const y = el.y;
         const x0 = xScale(d.a2015);
-        // head follows tweened access for focus stems; for scene 0 stays at 2015
         const xHead = xScale(d.access);
         const col = colorFor(d, idx);
         const visible = showCell(d.iso, idx);
         const isHi = selected.has(d.iso);
 
-        // Start dots: ALWAYS visible at 2015 for every country (origin frame truth)
-        el.dot.setAttribute("cx", String(x0));
-        el.dot.setAttribute("cy", String(y));
+        // Square start marks — always at 2015 x, always fully opaque (origin)
+        el.dot.setAttribute("x", String(x0 - DOT_SIZE / 2));
+        el.dot.setAttribute("y", String(y - DOT_SIZE / 2));
+        el.dot.setAttribute("width", String(DOT_SIZE));
+        el.dot.setAttribute("height", String(DOT_SIZE));
         el.dot.setAttribute("fill", DOT);
-        el.dot.setAttribute("opacity", idx === 0 ? "0.95" : visible ? "1" : "0.55");
-        el.dot.setAttribute("r", String(idx === 0 ? DOT_R + 0.3 : DOT_R));
+        el.dot.setAttribute("opacity", "1");
         el.dot.style.display = "";
 
-        // Cell visibility: scene 0 = focus labels only (stems off); dots always drawn outside cells.
-        // Origin keeps ALL start dots visible; stems/labels only for focus until scene 3.
-        el.g.style.display = visible || (idx === 0 && isHi) ? "" : "none";
+        // Labels/stems for focus until scene 3 shows all
         if (idx === 0) {
           el.g.style.display = isHi ? "" : "none";
+        } else {
+          el.g.style.display = visible ? "" : "none";
         }
 
         if (idx > 0 && visible) {
-          const xEnd = xHead + (d.improved ? -4 : 4);
+          // leave tip room for triangle head (origin stem ends just before arrow)
+          const tip = d.improved ? -TRI_R : TRI_R;
+          const xEnd = xHead + tip;
           el.prog.setAttribute("x1", String(x0));
           el.prog.setAttribute("x2", String(xEnd));
-          // Origin stems: soft wide band under arrow (beauty density)
-          el.prog.setAttribute("stroke-width", isHi ? "6" : "4.5");
-          el.prog.setAttribute("opacity", isHi ? "0.42" : "0.28");
+          // origin: nearly uniform stroke (~5); focus slightly more opaque
+          const sw = isHi ? STEM_W + 0.5 : STEM_W;
+          const op = isHi ? STEM_OP_HI : STEM_OP;
+          el.prog.setAttribute("stroke-width", String(sw));
+          el.prog.setAttribute("opacity", String(op));
           el.prog.setAttribute("stroke", idx >= 2 ? col : GREY.grey300);
         } else {
           el.prog.setAttribute("x1", String(x0));
@@ -600,7 +656,6 @@
           el.prog.setAttribute("opacity", "1");
         }
 
-        // Head position: scene 0 at 2015; later at tweened
         const headX = idx === 0 ? x0 : xHead;
         el.cell.setAttribute("transform", `translate(${headX},${y})`);
         el.cell.classList.toggle("highlighted", isHi);
@@ -623,11 +678,11 @@
       chipBar.style.opacity = idx === 3 ? "1" : "0";
       chipBar.style.pointerEvents = idx === 3 ? "auto" : "none";
 
-      // top padding for chips
+      // top padding for chips in explore scene
       if (idx === 3) {
         gRoot.setAttribute(
           "transform",
-          `translate(${MARGIN.left},${MARGIN.top + 18})`
+          `translate(${MARGIN.left},${MARGIN.top + 22})`
         );
       } else {
         gRoot.setAttribute(
@@ -760,7 +815,7 @@
   global.AtlasProgressRace = {
     mount,
     prepareData,
-    version: "0.2.0",
+    version: "0.3.1",
     SPEED_COLORS,
     FOCUS: FOCUS_DEFAULT,
   };

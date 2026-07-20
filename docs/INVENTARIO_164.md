@@ -36,9 +36,10 @@
 |--------|---------|--------|
 | `regions-small-multiples` v0.5 | `access_electricity_regions` | opacity 1s + particles |
 | `population-access` v0.2 | `access_electricity_population` | opacity 2s + stack layers |
-| `progress-race` v0.2 | `access_electricity_progress` | dots 2015 + stems Se + gradient legend + chips + tween 2s |
-| `dual-line-urban-rural` v0.2 | `access_electricity_urban_rural` | intro fade + hatch gap + dual lines (vis) |
-| `dual-line-urban-rural` v0.2 | `access_electricity_urban_rural_countries` | countries ETH/NGA/COD hatch dual-line |
+| `progress-race` v0.3.1 | `access_electricity_progress` | square 2015 marks + stems Se + speed gradient + chips + tween 2s |
+| `dual-line-urban-rural` v0.3 | `access_electricity_urban_rural` | intro fade + hatch gap + dual lines (vis) · score 92.5 |
+| `dual-line-urban-rural` v0.3 | `access_electricity_urban_rural_countries` | countries ETH/NGA/COD hatch dual-line |
+| `service-ladder-stack` v0.3 | `safely_managed` | Total-scope JMP stack + layer dim · water story |
 | `nightlights-hexmap` v0.9 | `hexmap_nigeria` | Mapbox Standard + origin tiles (proxy) · H3 fallback |
 | `nightlights-hexmap` v0.9 | `hexmap_ethiopia` | Mapbox Standard + origin tiles rural NTL + grid |
 
