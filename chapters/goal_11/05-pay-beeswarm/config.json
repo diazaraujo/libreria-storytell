@@ -1,5 +1,5 @@
 {
-  "type": "vis",
+  "type": "scroller",
   "graphic": "pay_beeswarm",
   "title": "In most countries, hourly earnings are higher in urban than rural areas",
   "subtitle": "Share of hourly earnings of urban population above rural population[footnote: A score above 0 means urban pay is higher, below 0 means rural pay is higher.]",
@@ -28,5 +28,21 @@
     "approvedAt": "2026-07-20",
     "approvalNote": "auto bulk beeswarm/violin · real CSV bind · gallery complete (Tier B bulk)"
   },
-  "scenes": []
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "all",
+      "text": "In most economies, [emphasis: hourly earnings are higher in urban areas] than in rural areas."
+    },
+    {
+      "type": "scene",
+      "id": "urban_premium",
+      "text": "Focusing on countries where [emphasis: urban workers earn more] than rural workers."
+    },
+    {
+      "type": "scene",
+      "id": "rural_higher",
+      "text": "In a smaller set of countries, [emphasis: rural hourly earnings exceed urban]."
+    }
+  ]
 }

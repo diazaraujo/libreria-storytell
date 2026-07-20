@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "auto bulk beeswarm/violin \u00b7 real CSV bind \u00b7 gallery complete (Tier B bulk)",
+  "note": "hand library rewrite \u00b7 urban quality v1 (not auto-bulk)",
   "graphic": "pay_beeswarm",
-  "title": "In most countries, hourly earnings are higher in urban than rural areas"
+  "title": "In most countries, hourly earnings are higher in urban than rural areas",
+  "qualityPass": "urban-v1"
 }

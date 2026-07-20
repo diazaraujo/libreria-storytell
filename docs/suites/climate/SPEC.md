@@ -2,7 +2,7 @@
 
 **Story:** Atlas `/climate/` · *Exposure, Vulnerability, and Adaptation to Climate Hazards*  
 **Local origin:** `http://127.0.0.1:8765/en/atlas/climate/`  
-**Status:** in progress (2026-07-20) — hazard scrollers upgraded; icon matrix + regional next
+**Status:** quality v1.1 (2026-07-20) — maps+rasters+matrix+story; residual = PNG captures only
 
 ---
 
@@ -89,6 +89,7 @@ Optional raster layers (Atlas production, may need data token + proxy):
 - [x] Regional exposure/vuln (06) true axes `sha_exp` × `sha_vuln`
 - [x] Overview (04) polish + global callout chips
 - [x] `stories/climate/` shell (quality v1)
-- [ ] Optional hazard rasters (`mlambrechts.*`) via `:8790` proxy
-- [ ] Side-by-side QA captures vs `:8765/en/atlas/climate/`
-- [ ] Pixel micro-pass (note scale, mobile sticky heights)
+- [x] Optional hazard rasters (`mlambrechts.*`) via `:8790` proxy (v1.1)
+- [x] Side-by-side QA checklist (`COMPARE.md`)
+- [x] Pixel micro-pass (note scale, mobile sticky heights on story)
+- [ ] Optional PNG captures in `recordings/compare/climate/`

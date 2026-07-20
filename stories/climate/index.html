@@ -31,9 +31,40 @@
       color: #6a7781; font-size: 14px; line-height: 1.5;
     }
     .mode-badge { display: none !important; }
+  
+    /* Climate micro-pass: sticky chart fill + note type Atlas-ish */
+    .ch-climate-micro .ch-block .ch-chart,
+    .ch-climate-micro .ch-sticky-chart {
+      min-height: min(70vh, 560px);
+    }
+    @media (max-width: 960px) {
+      .ch-climate-micro .ch-block .ch-chart { min-height: 52vh; }
+    }
+    @media (max-width: 560px) {
+      .ch-climate-micro .ch-note,
+      .ch-climate-micro .ch-annotation {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+      }
+      .ch-climate-micro .ch-block .ch-chart { min-height: 48vh; }
+    }
+    @media (min-width: 561px) and (max-width: 960px) {
+      .ch-climate-micro .ch-note,
+      .ch-climate-micro .ch-annotation {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+      }
+    }
+    @media (min-width: 961px) {
+      .ch-climate-micro .ch-note,
+      .ch-climate-micro .ch-annotation {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+    }
   </style>
 </head>
-<body class="ch-story-page">
+<body class="ch-story-page ch-climate-micro">
   <div class="ch-topbar">
     <div>
       <a href="../../gallery-atlas.html">← Gallery</a>

@@ -1,5 +1,5 @@
 {
-  "type": "vis",
+  "type": "scroller",
   "graphic": "slum_waffle",
   "title": "Globally, the number of people living in slums increased by 25% in just four years",
   "subtitle": "Total number of people living in slums",
@@ -27,5 +27,21 @@
     "approvedAt": "2026-07-20",
     "approvalNote": "auto bulk waffle · real CSV bind · gallery complete (Tier B bulk)"
   },
-  "scenes": []
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "y2018",
+      "text": "In [emphasis: 2018], hundreds of millions of people lived in slum conditions."
+    },
+    {
+      "type": "scene",
+      "id": "y2022",
+      "text": "By [emphasis: 2022], the number had risen sharply — about [emphasis: 25% more] people."
+    },
+    {
+      "type": "scene",
+      "id": "compare",
+      "text": "Side by side: the global increase in people living in slums over four years."
+    }
+  ]
 }

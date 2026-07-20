@@ -484,27 +484,45 @@
       const p0 = pts.find((p) => p.year === xDomain[0]) || pts[0];
       const p1 = pts.find((p) => p.year === xDomain[1]) || pts[pts.length - 1];
       const valueLabels = [];
-      [p0, p1].forEach((p) => {
+      const markerEls = [];
+
+      // Atlas beauty: when a panel is fully lit (esp. World), year squares
+      // run along the whole curve — not only endpoints.
+      const yearMarks = pts.filter((p, idx) => {
+        if (idx === 0 || idx === pts.length - 1) return true;
+        // intermediate: every year (dense trail like live World panel)
+        return true;
+      });
+      yearMarks.forEach((p, mi) => {
         if (!p) return;
         const cx = xScale(p.year);
         const cy = yScale(p.value);
-        SVG.el(g, "rect", {
+        const isEnd = mi === 0 || mi === yearMarks.length - 1;
+        const mk = SVG.el(g, "rect", {
           x: cx - mSize / 2,
           y: cy - mSize / 2,
           width: mSize,
           height: mSize,
           fill: color,
           stroke: "#ffffff",
-          "stroke-width": 1.5,
-          class: "marker",
+          "stroke-width": isEnd ? 1.5 : 1,
+          class: isEnd ? "marker marker-end" : "marker marker-year",
+          opacity: isEnd ? "1" : "0", // mid-year marks shown only when panel fully lit
         });
-        const vt = SVG.el(g, "text", {
-          x: cx, y: cy - LAYOUT.valueYOffset, "text-anchor": "middle",
-          fill: color, "font-size": 11, "font-weight": "700",
-          class: "value-label",
-        });
-        vt.textContent = String(Math.round(p.value));
-        valueLabels.push(vt);
+        markerEls.push({ el: mk, isEnd });
+        if (isEnd) {
+          const vt = SVG.el(g, "text", {
+            x: cx,
+            y: cy - LAYOUT.valueYOffset,
+            "text-anchor": "middle",
+            fill: color,
+            "font-size": 11,
+            "font-weight": "700",
+            class: "value-label",
+          });
+          vt.textContent = String(Math.round(p.value));
+          valueLabels.push(vt);
+        }
       });
 
       const lab = document.createElement("div");
@@ -520,7 +538,16 @@
       lab.textContent = s.label || s.key;
       labelsLayer.appendChild(lab);
 
-      regionNodes.push({ key: s.key, series: s, g, lab, valueLabels, areaEl, lineEl });
+      regionNodes.push({
+        key: s.key,
+        series: s,
+        g,
+        lab,
+        valueLabels,
+        markerEls,
+        areaEl,
+        lineEl,
+      });
     });
 
     // Particles layer (above regions so they fly between panels)

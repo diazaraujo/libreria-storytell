@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "auto bulk waffle \u00b7 real CSV bind \u00b7 gallery complete (Tier B bulk)",
+  "note": "hand library rewrite \u00b7 urban quality v1 (not auto-bulk)",
   "graphic": "slum_waffle",
-  "title": "Globally, the number of people living in slums increased by 25% in just four \u2026"
+  "title": "Globally, the number of people living in slums increased by 25% in just four \u2026",
+  "qualityPass": "urban-v1"
 }

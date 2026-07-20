@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban development — Chapter scroll (Atlas replica)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/chapter-scroll.css" />
+  <style>
+    body { margin: 0; background: #fff; }
+    body.ch-story-page { --ch-sticky-top: 0px; }
+    .ch-topbar {
+      position: sticky; top: 0; z-index: 30;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 16px;
+      background: rgba(11, 18, 32, 0.92);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif;
+      color: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+    }
+    .ch-topbar a { color: rgba(255,255,255,0.92); text-decoration: none; }
+    .ch-topbar .tag {
+      background: rgba(109,136,209,0.35); color: #e8eefc;
+      padding: 3px 8px; border-radius: 999px; font-size: 11px;
+    }
+    .ch-end {
+      max-width: 640px; margin: 0 auto; padding: 48px 24px 96px;
+      color: #6a7781; font-size: 14px; line-height: 1.5;
+    }
+    .mode-badge { display: none !important; }
+    .ch-urban-micro .ch-block .ch-chart { min-height: min(68vh, 540px); }
+    @media (max-width: 560px) {
+      .ch-urban-micro .ch-note, .ch-urban-micro .ch-annotation {
+        font-size: 14px !important; line-height: 1.45 !important;
+      }
+    }
+  </style>
+</head>
+<body class="ch-story-page ch-urban-micro">
+  <div class="ch-topbar">
+    <div>
+      <a href="../../gallery-atlas.html">← Gallery</a>
+      · <a href="../climate/">Climate</a>
+      · <span class="tag">urban · quality v1</span>
+    </div>
+    <div>
+      <a href="http://127.0.0.1:8765/en/atlas/urban-development/" target="_blank" rel="noopener">Origen</a>
+    </div>
+  </div>
+
+  <div id="story"></div>
+
+  <div class="ch-end">
+    <p>
+      <strong>Urban quality v1</strong> — skill specialization beeswarm (was bulk violin),
+      urban pay premium beeswarm, slum population waffle (+25% narrative), plus buildup / slum region hand charts.
+    </p>
+    <p>
+      Chapters:
+      <a href="../../chapters/goal_11/03-skill-violin/?clean=1">skill</a> ·
+      <a href="../../chapters/goal_11/05-pay-beeswarm/?clean=1">pay</a> ·
+      <a href="../../chapters/goal_11/08-slum-waffle/?clean=1">slums</a>
+    </p>
+  </div>
+
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="../../shared/wb-colors.js"></script>
+  <script src="../../shared/beeswarm.js"></script>
+  <script src="../../shared/components/Waffle.js"></script>
+  <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../library/urban-skill-swarm/urban-skill-swarm.js"></script>
+  <script src="../../library/urban-pay-beeswarm/urban-pay-beeswarm.js"></script>
+  <script src="../../library/slum-pop-waffle/slum-pop-waffle.js"></script>
+  <script>
+    (async function () {
+      const story = await (await fetch("./story.json")).json();
+      const [skillRows, payRows, slumRows, buildupRows, slumRegRows] =
+        await Promise.all([
+          AtlasLoad.csv("./data/skill_countries.csv"),
+          AtlasLoad.csv("./data/11_data_pay_beeswarm.csv"),
+          AtlasLoad.csv("./data/11_data_slum_waffle.csv"),
+          AtlasLoad.csv("./data/11_data_buildup_area_income.csv"),
+          AtlasLoad.csv("./data/11_data_slum_regions.csv"),
+        ]);
+
+      for (const b of story.blocks) {
+        if (b.id === "skill") {
+          b.mount = async (chartEl, ctx) => {
+            const api = AtlasUrbanSkillSwarm.mount(chartEl, {
+              rows: skillRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              highlightIso: "IDN",
+              mode: "skill",
+              height: Math.max(440, chartEl.clientHeight || 480),
+            });
+            return {
+              updateScene(i) {
+                api.setScene(i);
+              },
+              destroy() {
+                api.destroy();
+              },
+            };
+          };
+        }
+        if (b.id === "pay") {
+          b.mount = async (chartEl, ctx) => {
+            const api = AtlasUrbanPayBeeswarm.mount(chartEl, {
+              rows: payRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              height: Math.max(400, chartEl.clientHeight || 440),
+            });
+            return {
+              updateScene(i) {
+                api.setScene(i);
+              },
+              destroy() {
+                api.destroy();
+              },
+            };
+          };
+        }
+        if (b.id === "slum-waffle") {
+          b.mount = async (chartEl, ctx) => {
+            const api = AtlasSlumPopWaffle.mount(chartEl, {
+              rows: slumRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              height: Math.max(400, chartEl.clientHeight || 440),
+            });
+            return {
+              updateScene(i) {
+                api.setScene(i);
+              },
+              destroy() {
+                api.destroy();
+              },
+            };
+          };
+        }
+        if (b.id === "buildup-income") {
+          b.mount = async (chartEl) => {
+            // multi-line income groups
+            const COLORS = { HIC: "#016B6C", UMC: "#73AF48", LMC: "#DB95D7", LIC: "#3B4DA6" };
+            const LABELS = {
+              HIC: "High income",
+              UMC: "Upper middle",
+              LMC: "Lower middle",
+              LIC: "Low income",
+            };
+            const by = new Map();
+            buildupRows.forEach((r) => {
+              const y = +r.year,
+                v = +r.value,
+                s = r.income || r.iso3c;
+              if (!Number.isFinite(y) || !Number.isFinite(v)) return;
+              if (!by.has(s)) by.set(s, []);
+              by.get(s).push({ year: y, v });
+            });
+            by.forEach((p) => p.sort((a, b) => a.year - b.year));
+            const keys = ["LIC", "LMC", "UMC", "HIC"].filter((k) => by.has(k));
+            chartEl.innerHTML = "";
+            const root = document.createElement("div");
+            root.style.cssText =
+              "position:absolute;inset:0;font-family:Open Sans,system-ui,sans-serif";
+            chartEl.appendChild(root);
+            const w = root.clientWidth || 900,
+              h = root.clientHeight || 440;
+            const margin = { top: 24, right: 130, bottom: 40, left: 56 };
+            const svg = AtlasSVG.el(root, "svg");
+            svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+            svg.style.cssText = "width:100%;height:100%";
+            const all = keys.flatMap((k) => by.get(k) || []);
+            const xs = all.map((d) => d.year),
+              ys = all.map((d) => d.v);
+            const xScale = AtlasSVG.scaleLinear(
+              [Math.min(...xs), Math.max(...xs)],
+              [margin.left, w - margin.right]
+            );
+            const yScale = AtlasSVG.scaleLinear(
+              [0, Math.max(...ys) * 1.08],
+              [h - margin.bottom, margin.top]
+            );
+            keys.forEach((k) => {
+              const pts = by.get(k) || [];
+              if (pts.length < 2) return;
+              const col = COLORS[k] || "#0071bc";
+              AtlasSVG.el(svg, "path", {
+                d: pts
+                  .map(
+                    (p, i) =>
+                      `${i ? "L" : "M"}${xScale(p.year)},${yScale(p.v)}`
+                  )
+                  .join(" "),
+                fill: "none",
+                stroke: col,
+                "stroke-width": 2.6,
+              });
+              const last = pts.at(-1);
+              AtlasSVG.el(svg, "text", {
+                x: xScale(last.year) + 8,
+                y: yScale(last.v) + 4,
+                fill: col,
+                "font-size": 12,
+                "font-weight": "700",
+              }).textContent = LABELS[k] || k;
+            });
+            return { updateScene() {}, destroy() { chartEl.innerHTML = ""; } };
+          };
+        }
+        if (b.id === "slum-regions") {
+          b.mount = async (chartEl) => {
+            // simple multi-line or ranked by region from csv
+            const NAMES = window.ATLAS_COUNTRY_NAMES || {};
+            const REG = (window.WB_COLORS && window.WB_COLORS.regions) || {};
+            const rows = slumRegRows;
+            const headers = rows[0] ? Object.keys(rows[0]) : [];
+            const yearKey =
+              headers.find((h) => /year/i.test(h)) || headers[0];
+            const valKey =
+              headers.find((h) => /value|slum|share|rate/i.test(h) && h !== yearKey) ||
+              headers.find((h) => h !== yearKey && h !== "iso3c" && h !== "region");
+            const seriesKey =
+              headers.find((h) => /region|iso3c|code/i.test(h) && h !== yearKey) ||
+              "region";
+            const by = new Map();
+            rows.forEach((r) => {
+              const s = r[seriesKey] || r.region_code || r.iso3c;
+              const y = +r[yearKey];
+              const v = +r[valKey];
+              if (!Number.isFinite(y) || !Number.isFinite(v)) return;
+              if (!by.has(s)) by.set(s, []);
+              by.get(s).push({ year: y, v });
+            });
+            by.forEach((p) => p.sort((a, b) => a.year - b.year));
+            chartEl.innerHTML = "";
+            const root = document.createElement("div");
+            root.style.cssText =
+              "position:absolute;inset:0;font-family:Open Sans,system-ui,sans-serif";
+            chartEl.appendChild(root);
+            const w = root.clientWidth || 900,
+              h = root.clientHeight || 440;
+            const margin = { top: 24, right: 100, bottom: 40, left: 48 };
+            const svg = AtlasSVG.el(root, "svg");
+            svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+            svg.style.cssText = "width:100%;height:100%";
+            const all = [...by.values()].flat();
+            if (!all.length) {
+              root.textContent = "No series in slum regions CSV";
+              return { updateScene() {}, destroy() {} };
+            }
+            const xs = all.map((d) => d.year),
+              ys = all.map((d) => d.v);
+            const xScale = AtlasSVG.scaleLinear(
+              [Math.min(...xs), Math.max(...xs)],
+              [margin.left, w - margin.right]
+            );
+            const yScale = AtlasSVG.scaleLinear(
+              [0, Math.max(...ys) * 1.08],
+              [h - margin.bottom, margin.top]
+            );
+            let i = 0;
+            by.forEach((pts, key) => {
+              if (pts.length < 2) return;
+              const col =
+                REG[key] ||
+                ["#34A7F2", "#0C7C68", "#FF9800", "#F3578E", "#664AB6", "#AA0000"][
+                  i++ % 6
+                ];
+              AtlasSVG.el(svg, "path", {
+                d: pts
+                  .map(
+                    (p, j) =>
+                      `${j ? "L" : "M"}${xScale(p.year)},${yScale(p.v)}`
+                  )
+                  .join(" "),
+                fill: "none",
+                stroke: col,
+                "stroke-width": 2.4,
+              });
+              const last = pts.at(-1);
+              AtlasSVG.el(svg, "text", {
+                x: xScale(last.year) + 6,
+                y: yScale(last.v) + 4,
+                fill: col,
+                "font-size": 11,
+                "font-weight": "700",
+              }).textContent = key;
+            });
+            return { updateScene() {}, destroy() { chartEl.innerHTML = ""; } };
+          };
+        }
+      }
+
+      AtlasChapterScroll.mount(document.getElementById("story"), story);
+    })();
+  </script>
+</body>
+</html>

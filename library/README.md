@@ -92,3 +92,11 @@ cd ~/atlas-replicas && python3 -m http.server 8787
 |---------|------|-------|
 | hazard-exposure-map | `library/hazard-exposure-map/` | Mapbox sat/vec + country choropleth · RE BmkL22Hm |
 | climate-icon-matrix | `library/climate-icon-matrix/` | 1000-cell vulnerability matrix + country compare |
+
+## Urban (goal_11)
+
+| Pattern | Path | Notes |
+|---------|------|-------|
+| urban-skill-swarm | `library/urban-skill-swarm/` | Skill/occupation specialization beeswarm U×R |
+| urban-pay-beeswarm | `library/urban-pay-beeswarm/` | Urban pay premium % |
+| slum-pop-waffle | `library/slum-pop-waffle/` | Dual-year slum population unit chart |
