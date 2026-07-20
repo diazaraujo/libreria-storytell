@@ -1,9 +1,9 @@
 /**
- * AtlasCoverageChoroplethMap v0.2
+ * AtlasCoverageChoroplethMap v0.3
  * Mapbox choropleth for mobile network coverage (3G / 4G / 5G).
  *
- * Data join: paint expression `match` on iso_3166_1_alpha_3 (no feature-state).
- * More reliable across tiles / promoteId edge cases than setFeatureState.
+ * Data join: paint expression `match` on iso_3166_1_alpha_3.
+ * Basemap: dark-v11 + globe projection + fog (Atlas-like space chrome).
  *
  * Scenes: 0=3G · 1=4G · 2=5G · 3=5G SSF emphasis
  * Depends: mapboxgl + ATLAS_MAPBOX_TOKEN
@@ -163,18 +163,87 @@
     const map = new global.mapboxgl.Map({
       container: mapEl,
       style: styleUrl,
-      center: [15, 12],
-      zoom: isMobile ? 0.8 : 1.35,
+      center: [20, 8],
+      zoom: isMobile ? 0.55 : 1.15,
       attributionControl: true,
       cooperativeGestures: true,
-      dragRotate: false,
+      dragRotate: !isMobile,
       pitchWithRotate: false,
+      projection: "globe", // Atlas coverage map chrome
     });
     if (!isMobile) {
       map.addControl(
         new global.mapboxgl.NavigationControl({ showCompass: false }),
         "top-right"
       );
+    }
+
+    function styleBasemap() {
+      // Dark space / ocean — closer to Atlas digital maps
+      try {
+        map.setFog({
+          color: "rgb(8, 16, 36)",
+          "high-color": "rgb(18, 40, 78)",
+          "horizon-blend": 0.08,
+          "space-color": "rgb(4, 8, 18)",
+          "star-intensity": 0.22,
+        });
+      } catch (_) {}
+      // Mute noisy layers if present in dark-v11
+      const mute = [
+        "road-primary",
+        "road-secondary-tertiary",
+        "road-street",
+        "road-minor",
+        "road-label",
+        "road-number-shield",
+        "bridge-path",
+        "building",
+        "building-outline",
+        "aeroway-polygon",
+        "aeroway-line",
+        "poi-label",
+        "transit-label",
+      ];
+      mute.forEach((id) => {
+        if (!map.getLayer(id)) return;
+        try {
+          const t = map.getLayer(id).type;
+          if (t === "symbol") map.setLayoutProperty(id, "visibility", "none");
+          else if (t === "line" || t === "fill")
+            map.setPaintProperty(id, `${t}-opacity`, 0.05);
+        } catch (_) {}
+      });
+      // Water / land contrast
+      ["water", "waterway"].forEach((id) => {
+        if (!map.getLayer(id)) return;
+        try {
+          map.setPaintProperty(id, "fill-color", "#060d1c");
+        } catch (_) {
+          try {
+            map.setPaintProperty(id, "line-color", "#0a1428");
+          } catch (__) {}
+        }
+      });
+      if (map.getLayer("land")) {
+        try {
+          map.setPaintProperty("land", "background-color", "#0c1528");
+        } catch (_) {}
+      }
+      if (map.getLayer("landcover")) {
+        try {
+          map.setPaintProperty("landcover", "fill-opacity", 0.15);
+        } catch (_) {}
+      }
+      // Country labels: smaller, dimmer
+      ["country-label", "state-label", "settlement-major-label"].forEach((id) => {
+        if (!map.getLayer(id)) return;
+        try {
+          map.setPaintProperty(id, "text-color", "#8b9bb4");
+          map.setPaintProperty(id, "text-halo-color", "rgba(6,12,24,0.9)");
+          map.setPaintProperty(id, "text-halo-width", 1);
+        } catch (_) {}
+      });
     }
 
     let current = sceneIndex;
@@ -218,14 +287,14 @@
 
       if (idx === 3) {
         map.easeTo({
-          center: [20, 2],
-          zoom: isMobile ? 1.6 : 2.4,
+          center: [22, 0],
+          zoom: isMobile ? 1.35 : 2.1,
           duration: 900,
         });
       } else {
         map.easeTo({
-          center: [15, 12],
-          zoom: isMobile ? 0.8 : 1.35,
+          center: [20, 8],
+          zoom: isMobile ? 0.55 : 1.15,
           duration: 700,
         });
       }
@@ -236,34 +305,50 @@
       applyPaint(idx);
     }
 
+    map.on("style.load", () => {
+      styleBasemap();
+    });
+
     map.on("load", () => {
+      styleBasemap();
       map.addSource(sourceId, {
         type: "vector",
         url: "mapbox://mapbox.country-boundaries-v1",
       });
-      map.addLayer({
+      // Choropleth under labels
+      const beforeId = map.getStyle().layers?.find((l) =>
+        /label|place|country/i.test(l.id)
+      )?.id;
+      const fillSpec = {
         id: layerId,
         type: "fill",
         source: sourceId,
         "source-layer": "country_boundaries",
         filter: WORLDVIEW_FILTER,
         paint: {
-          "fill-color": "#1e293b",
-          "fill-opacity": 0.85,
+          "fill-color": "#1a2744",
+          "fill-opacity": 0.9,
         },
-      });
-      map.addLayer({
+      };
+      const lineSpec = {
         id: outlineId,
         type: "line",
         source: sourceId,
         "source-layer": "country_boundaries",
         filter: WORLDVIEW_FILTER,
         paint: {
-          "line-color": "#0b1220",
-          "line-width": 0.4,
-          "line-opacity": 0.65,
+          "line-color": "#050a14",
+          "line-width": 0.5,
+          "line-opacity": 0.75,
         },
-      });
+      };
+      if (beforeId) {
+        map.addLayer(fillSpec, beforeId);
+        map.addLayer(lineSpec, beforeId);
+      } else {
+        map.addLayer(fillSpec);
+        map.addLayer(lineSpec);
+      }
       ready = true;
       setScene(sceneIndex);
     });
@@ -335,7 +420,7 @@
     return api;
   }
 
-  const api = { mount, matchCoverage, version: "0.2.0" };
+  const api = { mount, matchCoverage, version: "0.3.0" };
   global.AtlasCoverageChoroplethMap = api;
   global.AtlasLibrary = global.AtlasLibrary || {};
   global.AtlasLibrary.CoverageChoroplethMap = api;

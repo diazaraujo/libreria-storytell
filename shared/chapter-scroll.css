@@ -258,25 +258,44 @@ html { scroll-behavior: smooth; }
   margin: 0;
 }
 
-/* Annotation — left column, vertically centered to chart */
+/* Annotation — left column, vertically centered to chart
+ * Type scale from Atlas tokens (0.prW2ebEu.css):
+ *   desktop L: --font-size-m ≈ 16px · tablet M: 15px · phone S: 14px
+ *   color --text #100e2b · Open Sans 400 · line ~1.5
+ */
 .ch-note {
   grid-column: 1;
   grid-row: 2;
   align-self: center;
   margin: 0;
-  padding: 16px 18px;
+  padding: 18px 20px;
   background: #fff;
   border: 1px solid #e6e8ee;
   border-left: 4px solid var(--ch-red);
   border-radius: 2px;
-  box-shadow: 0 2px 12px rgba(16, 14, 43, 0.07);
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--ch-text);
+  box-shadow: 0 2px 14px rgba(16, 14, 43, 0.08);
+  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+  font-size: 16px; /* --font-size-l-m */
+  font-weight: 400;
+  line-height: 1.5; /* 24px @ 16 */
+  letter-spacing: 0;
+  color: #100e2b;
   z-index: 3;
   transition:
     opacity 0.45s ease,
     transform 0.45s ease;
+}
+.ch-note-text {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.ch-note-text p {
+  margin: 0 0 0.65em;
+}
+.ch-note-text p:last-child {
+  margin-bottom: 0;
 }
 .ch-note.is-leaving {
   opacity: 0;
@@ -357,7 +376,18 @@ html { scroll-behavior: smooth; }
   padding: 0 4px;
   border-radius: 2px;
 }
-.ch-note-text .emphasis { font-weight: 700; }
+.ch-note-text .emphasis {
+  font-weight: 700;
+}
+/* Inline chips (origin: solid fill + white text) */
+.ch-note-text span[style*="background-color"],
+.ch-note-text span[style*="background"] {
+  padding: 0 0.2em;
+  border-radius: 2px;
+  font-weight: 700;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 
 /* Chart column — fills remaining sticky space (Atlas sticky viz) */
 .ch-chart-wrap {
@@ -416,20 +446,22 @@ html { scroll-behavior: smooth; }
   transform: scale(1.25);
 }
 
-/* Source under chart column */
+/* Source under chart column — Atlas muted footer */
 .ch-source {
   grid-column: 2;
   grid-row: 3;
   padding: 10px 0 0;
-  font-size: 11px;
-  line-height: 1.4;
-  color: var(--ch-subtle);
+  font-size: 12px; /* ~ font-size-s */
+  line-height: 1.45;
+  font-weight: 400;
+  color: #6a7781;
   border-top: 1px solid #e8eaef;
   margin-top: 8px;
 }
 .ch-source a {
-  color: var(--ch-red);
+  color: #c41230;
   text-decoration: none;
+  font-weight: 600;
 }
 .ch-source a:hover { text-decoration: underline; }
 
@@ -506,9 +538,9 @@ body.ch-story-page .ch-story > .ch-hero {
     grid-column: 1;
     grid-row: 2;
     margin-bottom: 0;
-    padding: 10px 12px;
-    font-size: 13.5px;
-    line-height: 1.4;
+    padding: 12px 14px;
+    font-size: 15px; /* --font-size-m-m */
+    line-height: 1.5;
     max-height: 18dvh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -595,9 +627,12 @@ body.ch-story-page .ch-story > .ch-hero {
     font-size: 15px;
   }
   .ch-note {
-    font-size: 12.5px;
-    max-height: 16dvh;
-    padding: 8px 10px;
+    /* --font-size-s-m = 14px — keep readable; never drop to 12.5 */
+    font-size: 14px;
+    line-height: 1.45;
+    max-height: 17dvh;
+    padding: 10px 12px;
+    box-shadow: 0 1px 8px rgba(16, 14, 43, 0.08);
   }
   .ch-chart {
     min-height: var(--ch-chart-min-h);

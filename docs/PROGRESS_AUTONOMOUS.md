@@ -69,6 +69,10 @@ open http://127.0.0.1:8787/stories/electricity-access/
 - [x] Ladder full timeline + layer dim
 - Docs: `docs/COMPARE_PP_FINO.md`
 
-## Residual (micro)
-- Origin phone note type scale · basemap style nuances
-- Plan: `docs/PLAN_REMAINING.md`
+### Pass 5 — micro
+- [x] Note type scale Atlas tokens (16 / 15 / 14)
+- [x] Coverage basemap globe + fog + muted roads (v0.3)
+- Docs: `docs/COMPARE_PP_MICRO.md`
+
+## Residual
+- Plan: `docs/PLAN_REMAINING.md` (stories 7/10/11 complete · PP passes 1–5)
