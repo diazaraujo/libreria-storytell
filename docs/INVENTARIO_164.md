@@ -39,6 +39,9 @@
 | `progress-race` v0.3.2 | `access_electricity_progress` / `internet_progress` | square marks + yearStart/End + stems + chips + tween 2s |
 | `dual-line-urban-rural` v0.3.2 | urban–rural regions / countries / **income** | hatch gap · income x-ticks no-collide · score 92.5 regions |
 | `service-ladder-stack` v0.3 | `safely_managed` | Total-scope JMP stack + layer dim · water story |
+| `mobile-fixed-broadband` v0.2 | `mobile_vs_fixed_broadband` | dual line global + scatter highlights (HIC / low-fixed / Africa) |
+| `coverage-ranked-bars` v0.2 | coverage fallback | lowest-first 3G/4G/5G bars · SSF scene |
+| `coverage-choropleth-map` v0.3.1 | `coverage_map` | Mapbox globe choropleth 3G/4G/5G |
 | `nightlights-hexmap` v0.9 | `hexmap_nigeria` | Mapbox Standard + origin tiles (proxy) · H3 fallback |
 | `nightlights-hexmap` v0.9 | `hexmap_ethiopia` | Mapbox Standard + origin tiles rural NTL + grid |
 

@@ -242,7 +242,8 @@
             rows: textRows,
             mode: "can-send",
             names,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },
@@ -254,7 +255,8 @@
             mode: "smartphone",
             sceneIndex: ctx.sceneIndex || 0,
             names,
-            forceRemount: true,
+            forceRemount: false,
+            reuse: true,
             height: h,
           });
         },

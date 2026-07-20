@@ -1,5 +1,5 @@
 /**
- * AtlasCoverageChoroplethMap v0.3
+ * AtlasCoverageChoroplethMap v0.3.1 — beauty chrome polish
  * Mapbox choropleth for mobile network coverage (3G / 4G / 5G).
  *
  * Data join: paint expression `match` on iso_3166_1_alpha_3.
@@ -136,8 +136,8 @@
     const header = document.createElement("div");
     header.className = "cm-header";
     header.style.cssText =
-      "position:absolute;z-index:2;left:12px;top:12px;padding:10px 12px;background:rgba(15,23,42,0.88);border-left:4px solid #34A7F2;color:#e2e8f0;max-width:min(360px,70%);pointer-events:none";
-    header.innerHTML = `<div class="cm-title" style="font-weight:700;font-size:14px">3G coverage</div>
+      "position:absolute;z-index:2;left:12px;top:12px;padding:10px 14px;background:rgba(15,23,42,0.9);border-left:4px solid #34A7F2;color:#e2e8f0;max-width:min(360px,70%);pointer-events:none;font-family:'Open Sans',system-ui,sans-serif;border-radius:0 6px 6px 0;box-shadow:0 4px 16px rgba(0,0,0,0.25)";
+    header.innerHTML = `<div class="cm-title" style="font-weight:700;font-size:14px;letter-spacing:-0.01em">3G coverage</div>
       <div class="cm-sub" style="font-size:12px;color:#94a3b8;margin-top:4px">% of population within range of signal</div>
       <div class="cm-meta" style="font-size:11px;color:#64748b;margin-top:6px"></div>`;
     root.appendChild(header);
@@ -145,7 +145,7 @@
     const legend = document.createElement("div");
     legend.className = "cm-legend";
     legend.style.cssText =
-      "position:absolute;z-index:2;right:12px;bottom:28px;padding:8px 10px;background:rgba(15,23,42,0.9);color:#cbd5e1;font-size:11px;font-weight:600";
+      "position:absolute;z-index:2;right:12px;bottom:28px;padding:8px 12px;background:rgba(15,23,42,0.92);color:#cbd5e1;font-size:11px;font-weight:600;font-family:'Open Sans',system-ui,sans-serif;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,0.2)";
     legend.innerHTML = `
       <div style="margin-bottom:6px">Coverage</div>
       <div style="display:flex;align-items:center;gap:6px">
@@ -414,13 +414,13 @@
         return current;
       },
       map,
-      version: "0.2.0",
+      version: "0.3.1",
     };
     INSTANCES.set(container, { api, setScene });
     return api;
   }
 
-  const api = { mount, matchCoverage, version: "0.3.0" };
+  const api = { mount, matchCoverage, version: "0.3.1" };
   global.AtlasCoverageChoroplethMap = api;
   global.AtlasLibrary = global.AtlasLibrary || {};
   global.AtlasLibrary.CoverageChoroplethMap = api;
