@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "GDP progress scenes \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "graphic": "gdp_progress_scroller",
+  "title": "GDP progress scroller"
+}

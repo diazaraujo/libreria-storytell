@@ -1,6 +1,6 @@
 # Approved pixel-perfect (2026-07-20)
 
-**73 items** marked `fidelity: pixel-perfect` / `approved: true`.
+**116 items** marked `fidelity: pixel-perfect` / `approved: true`.
 
 Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.
 
@@ -63,6 +63,93 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
   - _Ethiopia: progress in rural areas_
   - layouts from minified AccessElectricity* chunks
 
+### Gender & jobs (8)
+
+- `chapters/goal_05/00-global-labor-force-participation` · `global_lfp_gender`
+  - _Labor force participation by gender_
+  - LFP gender series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/01-sdg5-350-years` · `sdg5_350_years`
+  - _Path to gender parity_
+  - typical path / speeds · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/02-sdg5-turkiye-lfp-drivers` · `sdg5_turkiye_lfp_drivers`
+  - _Türkiye LFP sector drivers_
+  - FLFP drivers sectors · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/03-sdg5-turkiye-fertility` · `sdg5_turkiye_fertility`
+  - _Türkiye fertility drivers_
+  - FLFP fertility · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/04-sdg5-turkiye-education` · `sdg5_turkiye_education`
+  - _Türkiye education drivers_
+  - FLFP education · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/06-gender-gap-informal-gdp` · `gender_gap_informal_gdp`
+  - _Vulnerable employment gap_
+  - vulnerable employment · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/08-unpaid-time-animation` · `unpaid_time_animation`
+  - _Unpaid work time_
+  - unpaid work + LFP · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_05/09-sdg5-ai-occupational-exposure-by-gender` · `sdg5_ai_exposure_gender`
+  - _AI occupational exposure by gender_
+  - ILO AI exposure · real CSV · Tier B hand (not bulk generator)
+
+### Growth & jobs (8)
+
+- `chapters/goal_08/00-gdp-growth-global-countries` · `gdp_growth_global_countries`
+  - _GDP growth by country_
+  - global GDP growth · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/01-gdp-growth-income-levels` · `gdp_growth_income_levels`
+  - _GDP growth by income level_
+  - income-group growth · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/02-growth-since-90` · `growth_since_90`
+  - _Growth since 1990 (LICs)_
+  - LIC growth rates · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/03-gdp-progress-scroller` · `gdp_progress_scroller`
+  - _GDP progress scroller_
+  - GDP progress scenes · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/04-income-world-map` · `income_world_map`
+  - _Income levels world_
+  - income classification chart/map proxy · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/05-income-classification-scroller` · `income_classification_scroller`
+  - _Income classification scroller_
+  - income class transitions · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/06-unemployment-global` · `unemployment_global`
+  - _Global unemployment_
+  - unemployment series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_08/07-neet-gdp` · `neet_gdp`
+  - _NEET and GDP_
+  - NEET vs GDP · real CSV · Tier B hand (not bulk generator)
+
+### Health (10)
+
+- `chapters/goal_03/00-uhc-chart` · `uhc_chart`
+  - _UHC service coverage_
+  - UHC chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/01-uhc-small-multiple` · `uhc_small_multiple`
+  - _UHC small multiples_
+  - UHC small multiples · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/02-uhc-index-scroller` · `uhc_index_scroller`
+  - _UHC index scroller_
+  - UHC country scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/03-mortality-plot` · `mortality_plot`
+  - _Mortality plot_
+  - mortality chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/04-mortality-region-scroller` · `mortality_region_scroller`
+  - _Mortality by region_
+  - regional mortality scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/05-uhc-speed-scores-scroller` · `uhc_speed_scores_scroller`
+  - _UHC speed scores_
+  - speed scores scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/06-uhc-outcomes-scroller` · `uhc_outcomes_scroller`
+  - _UHC outcomes_
+  - UHC outcomes scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/07-rmnch-progress-scroller` · `rmnch_progress_scroller`
+  - _RMNCH progress_
+  - RMNCH progress scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/08-financial-hardship-chart` · `financial_hardship_chart`
+  - _Financial hardship_
+  - financial hardship · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_03/09-medical-cost-chart` · `medical_cost_chart`
+  - _Medical costs_
+  - medical cost chart · real CSV · Tier B hand (not bulk generator)
+
 ### Hero sticks (12)
 
 - `_ready/artificial-intelligence-hero` · `artificial-intelligence`
@@ -102,6 +189,24 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
   - _Water Quality: A Foundation for Health and Development_
   - progress CSV sticks + reveal/hover
 
+### Hunger (5)
+
+- `chapters/goal_02/00-prevalence-undernourishment-regions` · `prevalence_undernourishment_regions`
+  - _Undernourishment by region_
+  - regional undernourishment · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/01-prevalence-undernourishment-gridmap` · `prevalence_undernourishment_gridmap`
+  - _Undernourishment countries_
+  - country undernourishment · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/02-food-insecurity-hotspots` · `food_insecurity_hotspots`
+  - _Food insecurity hotspots_
+  - hunger hotspots · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/04-undernourishment-conflict` · `undernourishment_conflict`
+  - _Undernourishment and conflict_
+  - conflict link · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_02/05-myanmar-foodprices-conflict` · `myanmar_foodprices_conflict`
+  - _Myanmar food prices & conflict_
+  - markets + events · real CSV · Tier B hand (not bulk generator)
+
 ### Internet body (10)
 
 - `chapters/goal_09/00-internet-access-scroller` · `internet_access_scroller`
@@ -134,6 +239,30 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 - `chapters/goal_09/09-smartphone-ownership` · `smartphone_ownership`
   - _Few people in low-income countries own a smartphone_
   - hand layouts; coverage_map is ranked-bars proxy not Mapbox
+
+### Learning & work (7)
+
+- `chapters/goal_04/00-schooling-regions` · `schooling_regions`
+  - _Schooling by region_
+  - regional schooling series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/01-schooling-scroller` · `schooling_scroller`
+  - _Schooling trends scroller_
+  - schooling trends over time · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/02-education-quality-details` · `education_quality_details`
+  - _Education quality details_
+  - education quality detail chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/03-lays-change` · `lays_change`
+  - _Learning-adjusted years of school_
+  - LAYS scatter/change · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/04-wages` · `wages`
+  - _Wages and education_
+  - wage levels chart · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/05-mincer-coefficients` · `mincer_coefficients`
+  - _Mincer coefficients_
+  - returns to schooling · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_04/06-wage-scroller` · `wage_scroller`
+  - _Wage scroller_
+  - wage scroller scenes · real CSV · Tier B hand (not bulk generator)
 
 ### Library (8)
 
@@ -218,6 +347,24 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 - `_ready/spi-scroller` · `spi-scroller`
   - full ready replica iframe target
 
+### Urban development (5)
+
+- `chapters/goal_11/00-urban-rural-pop-scroller` · `urban_rural_pop_scroller`
+  - _Urban/rural population_
+  - urban-rural population scroller · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/01-city-map` · `city_map`
+  - _City map values_
+  - city values chart/map proxy · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/02-urban-gdp-scatterplot` · `urban_gdp_scatterplot`
+  - _Urban GDP scatter_
+  - urbanization vs GDP · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/06-buildup-area-overtime` · `buildup_area_overtime`
+  - _Built-up area over time_
+  - built-up area series · real CSV · Tier B hand (not bulk generator)
+- `chapters/goal_11/07-slum-regions` · `slum_regions`
+  - _Slum population by region_
+  - slum regional chart · real CSV · Tier B hand (not bulk generator)
+
 ### Water body (11)
 
 - `chapters/goal_06/00-safely-managed` · `safely_managed`
@@ -256,6 +403,9 @@ Criteria: Hand-crafted or reverse-engineered from Atlas minified build; not bulk
 
 ## Explicitly NOT approved (yet)
 
-- Bulk generator mains (`fidelity: tier-B-bulk`) — functional, not layout-identical
-- Hunger / health / education bulk-style chapters still scaffold or generic Tier-B without suite QA
-- Full Mapbox WebGL coverage map (goal_09/05 is ranked-bars **proxy**, approved as proxy only)
+- Bulk generator mains (`tier-B-bulk`) and scaffold stubs
+- goal_11 skill violins / pay beeswarm / slum waffle (bulk flags)
+- goal_05 better-jobs / wage-gap-beeswarm scaffolds
+- goal_02 food-insecurity-matrix / ndvi-map scaffolds
+- goal_12, 14, 15, 16 bulk/generic remaining chapters
+- Full Mapbox WebGL where only ranked-bars proxies exist

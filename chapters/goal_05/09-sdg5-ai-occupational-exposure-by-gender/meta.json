@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "ILO AI exposure \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "graphic": "sdg5_ai_exposure_gender",
+  "title": "AI occupational exposure by gender"
+}

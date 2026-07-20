@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "urban-rural population scroller \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "graphic": "urban_rural_pop_scroller",
+  "title": "Urban/rural population"
+}

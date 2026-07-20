@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "global GDP growth \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "graphic": "gdp_growth_global_countries",
+  "title": "GDP growth by country"
+}
