@@ -74,5 +74,11 @@ open http://127.0.0.1:8787/stories/electricity-access/
 - [x] Coverage basemap globe + fog + muted roads (v0.3)
 - Docs: `docs/COMPARE_PP_MICRO.md`
 
+### Pixel-byte pipeline
+- [x] `scripts/capture/pixel-diff.mjs` — chart-crop MAE / Δ% / score
+- [x] Story regions score **95.5** · chapter **90.2** · demos **83–87**
+- Docs: `docs/PIXEL_BYTE_COMPARE.md`
+
 ## Residual
-- Plan: `docs/PLAN_REMAINING.md` (stories 7/10/11 complete · PP passes 1–5)
+- Marker density / Pixi AA residual (score ceiling ~96 without origin engine)
+- Plan: `docs/PLAN_REMAINING.md` (stories 7/10/11 · PP 1–5 · pixel-byte A/B+)
