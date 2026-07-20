@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "ranked-bars proxy for Mapbox coverage map \u00b7 narrative match",
+  "graphic": "coverage_map",
+  "title": "Network coverage by generation (proxy map)"
+}

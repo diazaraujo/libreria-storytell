@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "line chart high-inequality countries over time \u00b7 real CSV",
+  "graphic": "high_inequality_trend",
+  "title": "High inequality trend"
+}

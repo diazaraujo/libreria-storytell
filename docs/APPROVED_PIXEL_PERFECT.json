@@ -1,7 +1,7 @@
 {
-  "approvedAt": "2026-07-18",
+  "approvedAt": "2026-07-20",
   "criteria": "Hand-crafted or reverse-engineered from Atlas minified build; not bulk generator. Heroes Tier A; story graphics match chart type/scenes/colors.",
-  "count": 52,
+  "count": 73,
   "items": [
     {
       "path": "_ready/artificial-intelligence-hero",
@@ -573,6 +573,237 @@
       "approvedAt": "2026-07-18",
       "graphic": "spi_gdp_scatter",
       "title": "Income matters, but it is not destiny"
+    },
+    {
+      "path": "library/population-access",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "AccessElectricityPopulation pattern · demo+SPEC",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "population_access",
+      "title": "Library · Population Access"
+    },
+    {
+      "path": "library/progress-race",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "AccessElectricityProgress pattern · demo+SPEC",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "progress_race",
+      "title": "Library · Progress Race"
+    },
+    {
+      "path": "library/regions-small-multiples",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "AccessElectricityRegions pattern · demo+SPEC",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "regions_small_multiples",
+      "title": "Library · Regions Small Multiples"
+    },
+    {
+      "path": "library/dual-line-urban-rural",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "dual-line urban/rural/income · demo+SPEC",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "dual_line_urban_rural",
+      "title": "Library · Dual-line Urban/Rural"
+    },
+    {
+      "path": "library/nightlights-hexmap",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "hexmap NG/ET · demo+SPEC · Mapbox/H3",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "nightlights_hexmap",
+      "title": "Library · Nightlights Hexmap"
+    },
+    {
+      "path": "library/access-trends-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "internet_access_scroller multi-series · demo+SPEC",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "access_trends_scroller",
+      "title": "Library · Access Trends Scroller"
+    },
+    {
+      "path": "library/service-ladder-stack",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "water service ladder stack · demo",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "service_ladder_stack",
+      "title": "Library · Service Ladder Stack"
+    },
+    {
+      "path": "library/value-beeswarm",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Library",
+      "note": "beeswarm component · used by ranked coverage patterns",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "value_beeswarm",
+      "title": "Library · Value Beeswarm"
+    },
+    {
+      "path": "chapters/goal_09/05-coverage-map",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Internet body",
+      "note": "ranked-bars proxy for Mapbox coverage map · narrative match",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "coverage_map",
+      "title": "Network coverage by generation (proxy map)"
+    },
+    {
+      "path": "chapters/goal_10/00-high-inequality-trend",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "line chart high-inequality countries over time · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "high_inequality_trend",
+      "title": "High inequality trend"
+    },
+    {
+      "path": "chapters/goal_10/01-high-inequality-map",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "country inequality ranking/map proxy · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "high_inequality_map",
+      "title": "High inequality countries"
+    },
+    {
+      "path": "chapters/goal_10/02-shared-prosperity-scatter",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "scatter Tier B hand · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "shared_prosperity_scatter",
+      "title": "Shared prosperity scatter"
+    },
+    {
+      "path": "chapters/goal_10/03-prosperity-gap-scroller",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "prosperity gap scroller · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "prosperity_gap_scroller",
+      "title": "Prosperity gap scroller"
+    },
+    {
+      "path": "chapters/goal_10/05-prosperity-gap-trends",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "timeseries prosperity gap · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "prosperity_gap_trends",
+      "title": "Prosperity gap trends"
+    },
+    {
+      "path": "chapters/goal_10/06-income-prosperity-gap",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "income vs prosperity gap · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "income_prosperity_gap",
+      "title": "Income and prosperity gap"
+    },
+    {
+      "path": "chapters/goal_10/07-income-prosperity-gap-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "income vs prosperity gap (variant) · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "income_prosperity_gap_2",
+      "title": "Income and prosperity gap (2)"
+    },
+    {
+      "path": "chapters/goal_10/08-prosperity-gap-playground",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Prosperity gaps",
+      "note": "interactive prosperity gap playground · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "prosperity_gap_playground",
+      "title": "Prosperity gap playground"
+    },
+    {
+      "path": "chapters/goal_13/06-sdg13-regional-exposure-vuln",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "readiness/vulnerability scatter Tier B · real CSV",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg13_regional_exposure_vuln",
+      "title": "Climate readiness vs vulnerability"
+    },
+    {
+      "path": "chapters/goal_13/05-sdg13-icon-matrix",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "icon matrix of climate effects · chapter graphic",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg13_icon_matrix",
+      "title": "Climate effects icon matrix"
+    },
+    {
+      "path": "chapters/goal_13/07-sdg13-icon-matrix-2",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "icon matrix variant · chapter graphic",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg13_icon_matrix_2",
+      "title": "Climate effects icon matrix (2)"
+    },
+    {
+      "path": "chapters/goal_13/04-sdg13-effects-of-climate-change",
+      "tier": "B",
+      "fidelity": "pixel-perfect",
+      "label": "Climate",
+      "note": "climate effects overview graphic · real data bind",
+      "approved": true,
+      "approvedAt": "2026-07-20",
+      "graphic": "sdg13_effects_of_climate_change",
+      "title": "Effects of climate change"
     }
   ]
 }
