@@ -14,7 +14,7 @@ The World Bank ships a **minified production build**, not source. True 1:1 for e
 
 **Source of truth:** [`docs/APPROVED_PIXEL_PERFECT.md`](./APPROVED_PIXEL_PERFECT.md) · [`docs/APPROVED_PIXEL_PERFECT.json`](./APPROVED_PIXEL_PERFECT.json)
 
-**52 items** marked `_meta.fidelity = "pixel-perfect"` + `_meta.approved = true`:
+**149 items** marked `_meta.fidelity = "pixel-perfect"` + `_meta.approved = true` (see `APPROVED_PIXEL_PERFECT.md`):
 
 | Group | Count | Notes |
 |-------|------:|-------|

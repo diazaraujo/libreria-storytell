@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "geo scatter degradation drivers (erosion/carbon/salinization/arable) \u00b7 real CSV \u00b7 Tier B hand",
+  "graphic": "arable_land_degradation",
+  "title": "Arable land degradation"
+}

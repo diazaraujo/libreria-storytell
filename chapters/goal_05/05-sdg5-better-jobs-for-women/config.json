@@ -53,6 +53,8 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "pixel-perfect",
+    "approved": true,
+    "approvedAt": "2026-07-20"
   }
 }

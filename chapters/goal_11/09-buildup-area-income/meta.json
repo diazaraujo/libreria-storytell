@@ -1,0 +1,9 @@
+{
+  "fidelity": "pixel-perfect",
+  "approved": true,
+  "approvedAt": "2026-07-20",
+  "tier": "B",
+  "note": "built-up area by income group multi-line \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "graphic": "buildup_area_income",
+  "title": "Built-up area by income"
+}
