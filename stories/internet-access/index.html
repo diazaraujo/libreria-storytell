@@ -33,7 +33,7 @@
     <div>
       <a href="../../gallery-atlas.html">← Gallery</a>
       · <a href="../../gallery.html">Dev</a>
-      · <span class="tag">internet · dual-line + progress</span>
+      · <span class="tag">internet · 3/10 library blocks</span>
     </div>
     <div>
       <a href="http://127.0.0.1:8765/en/atlas/internet-access/" target="_blank">Origen</a>
@@ -46,8 +46,8 @@
 
   <div class="ch-end">
     <p>
-      <strong>Internet story (MVP)</strong> — dual-line income urban/rural (library v0.3) ·
-      progress race 2015→2024 · particles hero.
+      <strong>Internet story</strong> — access trends (world / income / regions) ·
+      dual-line urban–rural by income · progress race 2015→2024 · particles hero.
     </p>
   </div>
 
@@ -56,17 +56,17 @@
   <script src="../../shared/country-names.js"></script>
   <script src="../../shared/particles.js"></script>
   <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../library/access-trends-scroller/access-trends-scroller.js"></script>
   <script src="../../library/dual-line-urban-rural/dual-line-urban-rural.js"></script>
   <script src="../../library/progress-race/progress-race.js"></script>
   <script>
     (async function () {
       const story = await (await fetch("./story.json")).json();
 
-      const [urbanRuralRows, progressRaw] = await Promise.all([
+      const [trendRows, urbanRuralRows, progressRaw] = await Promise.all([
+        AtlasLoad.csv("./data/09_data_internet_access.csv"),
         AtlasLoad.csv("./data/09_data_internet_access_urban_rural.csv"),
-        AtlasLoad.csv(
-          "../../chapters/goal_09/03-internet-progress/data/09_data_internet_usage_progress.csv"
-        ),
+        AtlasLoad.csv("./data/09_data_internet_usage_progress.csv"),
       ]);
 
       // Map internet fields → progress-race expected columns
@@ -80,6 +80,19 @@
         new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
 
       for (const b of story.blocks) {
+        if (b.id === "access-trends") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasAccessTrendsScroller.mount(chartEl, {
+              rows: trendRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
         if (b.id === "urban-rural-income") {
           b.mount = async (chartEl) => {
             await wait2();
@@ -107,8 +120,8 @@
               rows: progressRows,
               sceneIndex: ctx.sceneIndex || 0,
               names: window.ATLAS_COUNTRY_NAMES || {},
-              // focus a few lower-access large countries if present
-              focus: ["ETH", "NGA", "IND", "BGD", "COD"].filter(Boolean),
+              // Origin highlights Cambodia + Kyrgyz Republic as fast movers
+              focus: ["KHM", "KGZ", "ETH", "NGA", "IND"].filter(Boolean),
               forceRemount: true,
               height: h,
               labels: {
@@ -119,7 +132,7 @@
                 typical: "typical",
                 fast: "fast",
                 very_fast: "very fast",
-                select_country: "Select countries to highlight",
+                select_country: "Select economies to highlight",
               },
             });
           };

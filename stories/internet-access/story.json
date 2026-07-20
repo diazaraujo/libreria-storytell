@@ -1,10 +1,10 @@
 {
   "slug": "internet-access",
-  "title": "Connecting the World: The Race for Internet Access",
+  "title": "The Unfinished Digital Revolution: Expanding Internet Access",
   "hero": {
     "kicker": "Internet Access",
-    "title": "Connecting the World: The Race for Internet Access",
-    "lead": "Internet use has soared, yet large gaps remain between cities and rural areas — and between income groups. Scroll to explore the urban–rural digital divide.",
+    "title": "The Unfinished Digital Revolution: Expanding Internet Access",
+    "lead": "Internet access has grown at remarkable speed, yet digital opportunity remains deeply unequal. Scroll to explore who is online — and who is still shut out.",
     "particles": {
       "color": "#2f80ed",
       "count": 520,
@@ -12,6 +12,38 @@
     }
   },
   "blocks": [
+    {
+      "id": "access-trends",
+      "type": "scroller",
+      "graphic": "internet_access_scroller",
+      "library": "AccessTrendsScroller",
+      "title": "Global Internet access: trends and divides",
+      "subtitle": "Individuals using the Internet (% of population)",
+      "source": "International Telecommunications Union (ITU). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/IT.NET.USER.ZS\" target=\"_blank\" rel=\"external\">IT.NET.USER.ZS</a>).",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "world",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(8,16,121);\">Worldwide</span>], the share of people who access the Internet has increased from 16 percent only two decades ago to over 70 percent today. Still, over a quarter of the global population (2.2 billion) remains offline."
+        },
+        {
+          "type": "scene",
+          "id": "income_groups",
+          "text": "Internet adoption mirrors an economy’s level of development: it is nearly universal (94 percent) in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">high-income countries</span>] but less than a quarter (23 percent) in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low-income countries</span>]."
+        },
+        {
+          "type": "scene",
+          "id": "regions_groups",
+          "text": "Basic Internet access is lowest in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], where only around one-third of the population is online."
+        }
+      ]
+    },
+    {
+      "id": "bridge-1",
+      "type": "prose",
+      "html": "<p>Access is not only about national averages. <strong>Where people live</strong> — cities versus rural areas — still shapes whether they can get online, especially in lower-income economies.</p>"
+    },
     {
       "id": "urban-rural-income",
       "type": "vis",
@@ -30,41 +62,46 @@
       ]
     },
     {
-      "id": "bridge-1",
+      "id": "bridge-2",
       "type": "prose",
-      "html": "<p>Income shapes connectivity. High-income economies already show near-universal urban and rural use, while low-income countries still face double-digit gaps — and much lower absolute levels of access.</p>"
+      "html": "<p>Income shapes connectivity. High-income economies already show near-universal urban and rural use, while low-income countries still face double-digit gaps — and much lower absolute levels of access.</p><p>Since 2015, almost every economy has moved forward — but the <strong>speed of progress</strong> varies widely.</p>"
     },
     {
       "id": "progress",
       "type": "scroller",
       "graphic": "internet_progress",
       "library": "ProgressRace",
-      "title": "Internet use is rising — but not equally",
+      "title": "Almost all economies have increased their Internet access since 2015",
       "subtitle": "Individuals using the Internet (% of population)",
-      "source": "International Telecommunications Union (ITU).",
+      "source": "International Telecommunication Union, <a href=\"https://datahub.itu.int/\" target=\"_blank\" rel=\"external\">ITU DataHub</a> and World Bank staff calculations.",
       "vhPerScene": 0.95,
       "scenes": [
         {
           "type": "scene",
           "id": "start",
-          "text": "In 2015, many countries still had low Internet use. Dots show each country’s starting point."
+          "text": "In 2015, many countries still had low Internet use. Each dot shows a country’s starting point."
         },
         {
           "type": "scene",
           "id": "end",
-          "text": "By 2024 most countries moved right — higher access — but the distance covered varies widely."
+          "text": "By 2024, in 54 countries more than 90 percent of the population was using the Internet. Most economies moved right — higher access — but the distance covered varies widely."
         },
         {
           "type": "scene",
-          "id": "speed",
-          "text": "Color shows the <strong>speed of progress</strong> between 2015 and 2024."
+          "id": "fast",
+          "text": "Countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>] and the [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>] made much more progress than expected from their 2015 levels. Cambodia rose from under 7 percent to close to 70 percent; the Kyrgyz Republic from about 30 percent to over 90 percent."
         },
         {
           "type": "scene",
           "id": "all",
-          "text": "Explore all countries. Highlight any economy to compare its path."
+          "text": "Explore all countries. Highlight any economy to compare its path and the speed of progress between 2015 and 2024."
         }
       ]
+    },
+    {
+      "id": "bridge-end",
+      "type": "prose",
+      "html": "<p>Networks now reach much of the world, yet millions remain offline — especially in poorer countries. Closing the gap takes more than infrastructure: affordability, skills, and inclusive policy design all matter.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">More Atlas blocks (coverage map, speed, smartphone ownership) live as isolated chapters under <code>goal_09</code> and can be promoted into this story next.</p>"
     }
   ]
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>service-ladder-stack demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; font-family: "Open Sans", system-ui, sans-serif; background: #f4f6f8; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { color: #6a7781; font-size: 14px; }
+    .chart { background: #fff; border: 1px solid #e8eaef; border-radius: 10px; height: 480px; padding: 8px; }
+    .ctrls { display: flex; gap: 8px; margin: 16px 0; flex-wrap: wrap; }
+    button {
+      border: 1px solid #cfd6de; background: #fff; border-radius: 8px;
+      padding: 8px 12px; font: 600 13px "Open Sans", system-ui, sans-serif; cursor: pointer;
+    }
+    button.active { background: #0080c6; color: #fff; border-color: #0080c6; }
+    a { color: #0071bc; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="../../gallery.html">← Hub</a> · <a href="../../stories/water-access/">Water story</a></p>
+    <h1>service-ladder-stack v0.1</h1>
+    <p>JMP drinking-water ladder · highlight by scene.</p>
+    <div class="ctrls" id="ctrls">
+      <button data-s="0" class="active">0 · Safely managed</button>
+      <button data-s="1">1 · + Basic</button>
+      <button data-s="2">2 · Full ladder</button>
+    </div>
+    <div class="chart" id="chart"></div>
+  </div>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./service-ladder-stack.js"></script>
+  <script>
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_06/00-safely-managed/data/safely_managed.csv"
+      );
+      const chart = AtlasServiceLadderStack.mount(document.getElementById("chart"), {
+        rows,
+        sceneIndex: 0,
+        height: 460,
+      });
+      document.getElementById("ctrls").addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-s]");
+        if (!b) return;
+        document.querySelectorAll("#ctrls button").forEach((x) => x.classList.remove("active"));
+        b.classList.add("active");
+        chart.updateScene(+b.dataset.s);
+      });
+    })();
+  </script>
+</body>
+</html>

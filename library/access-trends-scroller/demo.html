@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>access-trends-scroller demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; font-family: "Open Sans", system-ui, sans-serif; background: #f4f6f8; color: #1a1a1a; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { color: #6a7781; font-size: 14px; margin: 0 0 16px; }
+    .chart { background: #fff; border: 1px solid #e8eaef; border-radius: 10px; height: 460px; }
+    .ctrls { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+    button {
+      border: 1px solid #cfd6de; background: #fff; border-radius: 8px;
+      padding: 8px 12px; font: 600 13px/1 "Open Sans", system-ui, sans-serif; cursor: pointer;
+    }
+    button.active { background: #081079; color: #fff; border-color: #081079; }
+    a { color: #0071bc; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="../../gallery.html">← Hub</a> · <a href="../../stories/internet-access/">Internet story</a></p>
+    <h1>access-trends-scroller v0.1</h1>
+    <p>World → income groups → regions. Opacity transitions on scene change.</p>
+    <div class="ctrls" id="ctrls">
+      <button data-s="0" class="active">0 · World</button>
+      <button data-s="1">1 · Income</button>
+      <button data-s="2">2 · Regions</button>
+    </div>
+    <div class="chart" id="chart"></div>
+  </div>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="./access-trends-scroller.js"></script>
+  <script>
+    (async () => {
+      const rows = await AtlasLoad.csv(
+        "../../chapters/goal_09/00-internet-access-scroller/data/09_data_internet_access.csv"
+      );
+      const chart = AtlasAccessTrendsScroller.mount(document.getElementById("chart"), {
+        rows,
+        sceneIndex: 0,
+        height: 460,
+      });
+      document.getElementById("ctrls").addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-s]");
+        if (!b) return;
+        document.querySelectorAll("#ctrls button").forEach((x) => x.classList.remove("active"));
+        b.classList.add("active");
+        chart.updateScene(+b.dataset.s);
+      });
+    })();
+  </script>
+</body>
+</html>

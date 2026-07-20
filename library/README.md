@@ -19,6 +19,8 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`population-access/`](population-access/) | BcrOvn12 AccessElectricityPopulation | opacity **2s** + stack layers | **v0.2** · demo + story + chapter |
 | [`progress-race/`](progress-race/) | Brmmsw6q AccessElectricityProgress | dots 2015 · stems · gradient · chips · tween **2s** | **v0.2** · demo + story + chapter |
 | [`dual-line-urban-rural/`](dual-line-urban-rural/) | Bktvr1TG + DnvCGyY_ + income | hatch gap · regions / countries / **income 1×5** | **v0.3** · electricity + internet |
+| [`access-trends-scroller/`](access-trends-scroller/) | internet_access_scroller | multi-series opacity · world / income / regions | **v0.1** · internet story |
+| [`service-ladder-stack/`](service-ladder-stack/) | safely_managed (JMP ladder) | stacked areas · scene highlight | **v0.1** · water story |
 | [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.9** · origin Mapbox tiles (`mlambrechts.*` + proxy) · fallback H3 · demo + story + chapters |
 | heroes / beeswarm / waffle / scatter | shared/ | partial | |
 
@@ -31,6 +33,8 @@ http://127.0.0.1:8787/library/progress-race/demo.html
 http://127.0.0.1:8787/library/dual-line-urban-rural/demo.html
 http://127.0.0.1:8787/library/dual-line-urban-rural/demo-countries.html
 http://127.0.0.1:8787/library/dual-line-urban-rural/demo-income.html
+http://127.0.0.1:8787/library/access-trends-scroller/demo.html
+http://127.0.0.1:8787/library/service-ladder-stack/demo.html
 http://127.0.0.1:8787/library/nightlights-hexmap/demo.html
 ```
 
@@ -39,6 +43,7 @@ http://127.0.0.1:8787/library/nightlights-hexmap/demo.html
 ```
 http://127.0.0.1:8787/stories/electricity-access/
 http://127.0.0.1:8787/stories/internet-access/
+http://127.0.0.1:8787/stories/water-access/
 
 ```
 
