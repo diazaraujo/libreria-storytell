@@ -20,8 +20,9 @@
     Unimproved: "#e3a763",
     Surface: "#bd6126",
   };
-  // year cap per scene: start strip · through 2015 · full
-  const DEFAULT_YEAR_CAPS = [2000, 2015, Infinity];
+  // year cap per scene: early strip (visible) · through 2015 · full
+  // Note: cap === domain start collapses clip to 0px — use ~2004 so scene 0 reads.
+  const DEFAULT_YEAR_CAPS = [2004, 2015, Infinity];
   const TRANSITION_MS = 900;
   const INSTANCES = new WeakMap();
 
@@ -222,7 +223,9 @@
     function yearCapFor(idx) {
       const c = yearCaps[Math.max(0, Math.min(idx, yearCaps.length - 1))];
       if (c == null || !Number.isFinite(c)) return xDomain[1];
-      return Math.min(c, xDomain[1]);
+      // never collapse clip: at least ~12% of domain width
+      const minY = xDomain[0] + (xDomain[1] - xDomain[0]) * 0.12;
+      return Math.min(Math.max(c, minY), xDomain[1]);
     }
 
     function layersFor(idx) {

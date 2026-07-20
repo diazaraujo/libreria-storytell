@@ -17,21 +17,24 @@
     "";
 
   function project(lon, lat, w, h) {
-    // equirectangular, crop poles slightly like Atlas hero framing
-    const x = ((lon + 180) / 360) * w;
-    const y = ((90 - lat) / 150) * h * 0.92 + h * 0.04;
+    // Equirectangular framed like Atlas heroes: map sits mid-viewport,
+    // slightly left-weighted, poles cropped.
+    const padX = w * 0.04;
+    const padY = h * 0.08;
+    const x = padX + ((lon + 180) / 360) * (w - padX * 2) * 0.96;
+    const y = padY + ((85 - lat) / 160) * (h - padY * 2);
     return [x, y];
   }
 
   function mount(options = {}) {
     const {
       color = "#e31c3d",
-      count = 640,
+      count = 820,
       zIndex = 1,
-      opacity = 0.7,
-      sizeMin = 1.0,
-      sizeMax = 2.6,
-      speed = 0.1,
+      opacity = 0.78,
+      sizeMin = 0.9,
+      sizeMax = 2.8,
+      speed = 0.08,
       parent = document.body,
       biasLeft = 0.55,
       biasY = 0.45,
@@ -117,21 +120,35 @@
         seedPlume();
         return;
       }
-      // place base scatter on projected countries
+      // Over-sample centroids with jitter → dense country scatter (Pixi-like)
       const base = worldPts;
-      for (let i = 0; i < count; i++) {
+      const n = Math.max(count, base.length);
+      for (let i = 0; i < n; i++) {
         const src = base[i % base.length];
-        const jitterLon = (Math.random() - 0.5) * 6;
-        const jitterLat = (Math.random() - 0.5) * 4;
+        // prefer heavier weights more often
+        if ((src.w || 0.5) < 0.35 && Math.random() < 0.4) continue;
+        const jitterLon = (Math.random() - 0.5) * (4.5 + (1 - (src.w || 0.5)) * 3);
+        const jitterLat = (Math.random() - 0.5) * (3.2 + (1 - (src.w || 0.5)) * 2);
         const [x, y] = project(src.lon + jitterLon, src.lat + jitterLat, w, h);
-        // slight extra noise particles for organic field
-        if (Math.random() < 0.12) {
+        if (x < -20 || x > w + 20 || y < -20 || y > h + 20) continue;
+        // faint ambient dust (origin has sparse field outside land)
+        if (Math.random() < 0.08) {
           particles.push(
-            makeP(Math.random() * w, Math.random() * h, 0.25 + Math.random() * 0.3)
+            makeP(Math.random() * w, Math.random() * h, 0.18 + Math.random() * 0.25)
           );
-        } else {
-          particles.push(makeP(x, y, src.w || 0.8));
         }
+        particles.push(makeP(x, y, src.w || 0.8));
+      }
+      // ensure we hit requested count
+      while (particles.length < count * 0.85 && base.length) {
+        const src = base[(Math.random() * base.length) | 0];
+        const [x, y] = project(
+          src.lon + (Math.random() - 0.5) * 5,
+          src.lat + (Math.random() - 0.5) * 3.5,
+          w,
+          h
+        );
+        particles.push(makeP(x, y, src.w || 0.7));
       }
     }
 
@@ -229,5 +246,5 @@
     };
   }
 
-  global.AtlasParticles = { mount, version: "0.2.0" };
+  global.AtlasParticles = { mount, version: "0.3.0" };
 })(typeof window !== "undefined" ? window : globalThis);

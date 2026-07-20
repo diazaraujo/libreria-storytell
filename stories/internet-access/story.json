@@ -9,10 +9,10 @@
     "bg": "#071a3d",
     "particles": {
       "color": "#6eb8f5",
-      "count": 720,
-      "opacity": 0.78,
-      "biasLeft": 0.62,
-      "mode": "world"
+      "count": 860,
+      "opacity": 0.82,
+      "mode": "world",
+      "centroidsUrl": "/library/particles-world/centroids.json"
     },
     "keyFacts": [
       {

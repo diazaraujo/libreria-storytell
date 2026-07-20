@@ -459,39 +459,145 @@ body.ch-story-page .ch-story > .ch-hero {
   padding-top: 88px;
 }
 
+/* Tablet / mobile — Atlas stacks note above chart */
 @media (max-width: 960px) {
   :root {
     --ch-note-w: 1fr;
     --ch-pad-x: 16px;
-    --ch-chart-max-h: 400px;
+    --ch-chart-max-h: 380px;
+    --ch-gap: 16px;
+  }
+  .ch-sticky {
+    padding: 12px 0 8px;
+    justify-content: flex-start;
   }
   .ch-sticky-inner {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto minmax(0, 1fr) auto;
     width: 100%;
+    max-width: 100%;
+    padding: 0 var(--ch-pad-x);
+    align-content: start;
   }
   .ch-sticky-head {
     grid-column: 1;
     grid-row: 1;
+    margin-bottom: 6px;
+  }
+  .ch-title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .ch-subtitle {
+    font-size: 13px;
+    margin-bottom: 6px;
   }
   .ch-note {
     grid-column: 1;
     grid-row: 2;
     margin-bottom: 8px;
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.45;
+    max-height: 28vh;
+    overflow: auto;
   }
   .ch-chart-wrap {
     grid-column: 1;
     grid-row: 3;
+    min-height: 280px;
+  }
+  .ch-chart {
+    min-height: 280px;
+    height: min(var(--ch-chart-max-h), calc(100dvh - 280px));
   }
   .ch-source {
     grid-column: 1;
     grid-row: 4;
+    font-size: 10px;
   }
   .ch-dots {
-    right: 4px;
+    right: 6px;
     top: auto;
-    bottom: 8px;
+    bottom: 10px;
     transform: none;
     flex-direction: row;
+    gap: 6px;
+  }
+  .ch-prose {
+    padding: 48px var(--ch-pad-x) 56px;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  :root {
+    --ch-pad-x: 12px;
+    --ch-chart-max-h: 320px;
+  }
+  .ch-hero {
+    min-height: 100dvh;
+    padding: 72px 16px 40px;
+  }
+  .ch-hero-inner {
+    padding-left: 0;
+  }
+  .ch-hero h1 {
+    font-size: clamp(1.65rem, 8vw, 2.1rem);
+    max-width: none;
+    margin-bottom: 18px;
+  }
+  .ch-lead {
+    font-size: 0.98rem;
+  }
+  .ch-byline {
+    font-size: 11.5px;
+    margin-bottom: 24px;
+  }
+  .ch-keyfacts-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .ch-keyfact {
+    min-height: 72px;
+    padding: 12px 14px;
+  }
+  .ch-keyfact-value {
+    font-size: 1.35rem;
+  }
+  .ch-scroll-cue {
+    bottom: 16px;
+    font-size: 11px;
+  }
+  body.ch-story-page .ch-topbar {
+    padding: 8px 10px;
+    font-size: 11px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .ch-title {
+    font-size: 15.5px;
+  }
+  .ch-note {
+    font-size: 13px;
+    max-height: 22vh;
+  }
+  .ch-chart {
+    min-height: 240px;
+  }
+  /* Mapbox chrome on small screens */
+  .atlas-coverage-map .mapboxgl-ctrl-top-right {
+    display: none;
+  }
+  .atlas-coverage-map .cm-header {
+    left: 8px !important;
+    top: 8px !important;
+    max-width: calc(100% - 16px) !important;
+    font-size: 12px;
+  }
+  .atlas-coverage-map .cm-legend {
+    right: 8px !important;
+    bottom: 8px !important;
+    font-size: 10px !important;
   }
 }

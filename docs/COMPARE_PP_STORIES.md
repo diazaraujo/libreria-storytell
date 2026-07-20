@@ -56,7 +56,12 @@ bash scripts/dev-servers.sh
 | 3 | Particles world scatter (`centroids.json` equirectangular) | **done** |
 | 4 | Coverage **Mapbox** choropleth (`country-boundaries-v1`) + ranked fallback | **done** |
 
-### Still optional
-- Mobile breakpoint parity  
-- Origin Pixi particle densities exact  
-- Mapbox feature-state join polish (tile id edge cases)  
+### Pass 3 residuals (2026-07-20)
+
+| # | Item | Status |
+|---|------|--------|
+| Mobile | Stacked sticky @≤960 · phone hero/keyfacts @≤560 | **done** |
+| Particles | denser centroids v2 (543) · count ~860 · better equirect frame | **done** |
+| Coverage join | `match` on `iso_3166_1_alpha_3` (no feature-state) · v0.2 | **done** |
+
+Captures: `recordings/compare/pp-residual-opt/` (gitignored)

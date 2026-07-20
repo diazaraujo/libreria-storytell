@@ -58,6 +58,11 @@ open http://127.0.0.1:8787/stories/electricity-access/
 - [x] **Particles v0.2:** world scatter via `library/particles-world/centroids.json`
 - [x] **Coverage Mapbox:** `coverage-choropleth-map` (country-boundaries-v1) + ranked fallback
 
-## Residual (optional)
-- Mobile breakpoint parity · Pixi density exact · mapbox feature-state edge cases
+### Pass 3 — residual opcional
+- [x] Mobile: stacked sticky ≤960 · phone hero/keyfacts ≤560
+- [x] Particles v0.3 denser world scatter (centroids v2)
+- [x] Coverage map v0.2: property `match` join (fiable)
+
+## Residual (fino)
+- Mobile chart heights fine-tune vs live Atlas phone
 - Plan: `docs/PLAN_REMAINING.md`
