@@ -1,5 +1,5 @@
 /**
- * AtlasProgressRace v0.2 — pixel-matched to AccessElectricityProgressScroller
+ * AtlasProgressRace v0.2.1 — denser row band + origin-like start dots
  * Chunk: Brmmsw6q.js · CSS: AccessElectricityProgressScroller.DVNMGbcQ.css
  *
  * Origin behaviour (user-refs f_054–f_068):
@@ -23,6 +23,7 @@
     fast: "#00a1c4",
   };
   // Sampled from origin frames (~dusty red start markers)
+  // Sampled from origin progress frames (dusty red 2015 markers)
   const DOT = "#c45a64";
   const GREY = {
     grey300: "#8a969f",
@@ -33,9 +34,10 @@
     rule: "#c41230",
   };
   const FOCUS_DEFAULT = ["ETH", "NGA", "COD"];
-  const MARGIN = { top: 28, right: 24, bottom: 72, left: 20 };
-  const TRI_R = 5;
-  const DOT_R = 2.4;
+  const MARGIN = { top: 24, right: 20, bottom: 64, left: 16 };
+  const TRI_R = 4.5;
+  const DOT_R = 2.15; // origin start markers are compact dusty-red dots
+  const ROW_H = 4.85; // denser band (~origin full sticky ~86 rows)
   const TRANSITION_MS = 2000;
   const INSTANCES = new WeakMap();
 
@@ -192,8 +194,8 @@
     const w = Math.max(360, container.clientWidth || 900);
     // Origin uses full sticky height — dense band of ~86 rows
     const naturalH = Math.max(
-      480,
-      Math.min(680, MARGIN.top + MARGIN.bottom + data.length * 5.6)
+      500,
+      Math.min(720, MARGIN.top + MARGIN.bottom + data.length * ROW_H)
     );
     const h = heightOpt || Math.max(container.clientHeight || 0, naturalH);
     root.style.cssText = `position:relative;width:100%;height:${h}px;font-family:'Open Sans',system-ui,sans-serif;background:#fff;overflow:hidden`;

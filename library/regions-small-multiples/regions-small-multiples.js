@@ -1,5 +1,5 @@
 /**
- * AtlasRegionsSmallMultiples v0.5
+ * AtlasRegionsSmallMultiples v0.5.1
  * Pattern: AccessElectricityRegions (DNnJZ53u.js)
  *
  * KEY: mount once, updateScene() only — never remount on scene change.
@@ -7,8 +7,9 @@
  * Motion pixel-matched to Atlas:
  *  - region/label: `transition: opacity 1s` (exact CSS from D8sNcrsm)
  *  - particles: transform+fill+opacity 1s (Pixi-equivalent via CSS)
- *  - particles clustered near series end (visual match live Atlas)
+ *  - denser country-dot cloud near series end (2014–2023)
  *  - dimmed particle opacity = panel dim (0.1)
+ *  - yDomain [0,100] (ticks flush with Atlas)
  *
  * Depends: window.AtlasSVG
  */
@@ -169,31 +170,43 @@
     const wld = series.find((s) => s.key === "WLD");
     const wldByYear = new Map((wld?.points || []).map((p) => [p.year, p.value]));
     const particles = [];
+    // How many synthetic country-dots per region×year (denser late years = Atlas look)
+    function copiesForYear(year) {
+      if (year >= 2020) return 4;
+      if (year >= 2017) return 3;
+      if (year >= 2014) return 2;
+      return 0;
+    }
     series.forEach((s) => {
       if (s.key === "WLD") return;
       const pts = (s.points || []).filter(
         (p) => p.year >= xDomain[0] && p.year <= xDomain[1]
       );
       pts.forEach((p, i) => {
-        // Atlas look: dense trail only on the upper-right of each series
-        if (p.year < 2014) return;
-        // slight year jitter so dots don't perfectly stack (like many countries)
-        const jy = ((i * 17) % 7) - 3; // -3..+3 year offset visual only for x
-        const yearX = Math.min(xDomain[1], Math.max(2014, p.year + jy * 0.15));
+        const n = copiesForYear(p.year);
+        if (!n) return;
         const worldValue = wldByYear.has(p.year)
           ? wldByYear.get(p.year)
           : p.value;
-        // stack noise on y so multiple countries at ~same access don't overlap
-        const yJitter = (((i * 13) % 11) - 5) * 0.35;
-        particles.push({
-          id: `${s.key}-${p.year}-${i}`,
-          region: s.key,
-          year: yearX,
-          regionValue: Math.max(0, Math.min(110, p.value + yJitter)),
-          worldValue: Math.max(0, Math.min(110, worldValue + yJitter * 0.5)),
-          color: s.color,
-          stagger: (i % 8) * 20, // ms delay for organic cascade
-        });
+        for (let k = 0; k < n; k++) {
+          // jitter so many countries at similar access look like a cloud
+          const jy = (((i * 17 + k * 9) % 11) - 5) * 0.12;
+          const yearX = Math.min(
+            xDomain[1],
+            Math.max(2014, p.year + jy)
+          );
+          const yJitter = (((i * 13 + k * 7) % 17) - 8) * 0.28;
+          const xJitter = (((i * 5 + k * 3) % 9) - 4) * 0.08;
+          particles.push({
+            id: `${s.key}-${p.year}-${i}-${k}`,
+            region: s.key,
+            year: yearX + xJitter,
+            regionValue: Math.max(0, Math.min(100, p.value + yJitter)),
+            worldValue: Math.max(0, Math.min(100, worldValue + yJitter * 0.45)),
+            color: s.color,
+            stagger: ((i + k) % 10) * 18,
+          });
+        }
       });
     });
     return particles;
@@ -250,7 +263,7 @@
       series = [],
       sceneIndex = 0,
       xDomain = [2000, 2023],
-      yDomain = [0, 110],
+      yDomain = [0, 100],
       yTicks = [0, 50, 100],
       xTickYears = null,
       marker = LAYOUT.marker,
@@ -382,6 +395,7 @@
 
     const xTicks = xTickYears || [xDomain[0], xDomain[1]];
     const anyHighlight = series.some((x) => (x.highlight || []).length);
+    // Atlas marker: g=6 → square g+2 with white stroke (DNnJZ53u)
     const mSize = marker + 2;
     const panelByKey = {};
     const regionNodes = []; // { key, g, label, valueLabels[] }

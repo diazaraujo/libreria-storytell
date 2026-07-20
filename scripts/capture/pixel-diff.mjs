@@ -176,11 +176,12 @@ const CASES = [
     id: "progress-demo",
     label: "progress-race demo",
     origin: `${ORIGIN}/en/atlas/electricity-access/`,
+    // Origin progress uses heavy canvas/Pixi — SVG crop is approximate
     originFind: (page) =>
       findOriginChart(page, {
-        textHint: "Ethiopia|Speed of progress|progressed",
-        minY: 1800,
-        maxY: 9000,
+        textHint: "Ethiopia|Speed of progress|progressed|Nigeria",
+        minY: 2000,
+        maxY: 10000,
       }),
     replica: `${REPLICA}/library/progress-race/demo.html`,
     replicaFind: (page) =>
