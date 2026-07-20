@@ -22,15 +22,20 @@ http://127.0.0.1:8787/stories/internet-access/
 
 Origin: `:8765/en/atlas/internet-access/`
 
-## Water Access — MVP 1/11
+## Water Access — 6/11
 
 ```
 http://127.0.0.1:8787/stories/water-access/
 ```
 
-1. **JMP service ladder** stack — `library/service-ladder-stack`
+1. **JMP service ladder** — `library/service-ladder-stack`  
+2. **Urban–rural by region** — `library/dual-line-urban-rural` (2000–2024)  
+3. **Country beeswarm** — `library/value-beeswarm`  
+4. **Component min bars** (Mongolia / Nepal) — `library/component-min-bars`  
+5. **Limiting factors** — `library/limiting-factors-bars`  
+6. **Tanzania + typical paths** — `library/component-paths`
 
-Next water: grouped income/region, country rates, limiting factors, Tanzania paths, E. coli, arsenic.
+Next water: E. coli table/scatter, urban–rural E. coli, Bangladesh arsenic.
 
 ### Scroll model
 

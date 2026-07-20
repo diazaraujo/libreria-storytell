@@ -28,9 +28,13 @@
 - [x] Hero particles · origin prose
 - [x] Story URL: `/stories/internet-access/`
 
-### Water story (MVP)
+### Water story (6/11)
 - [x] Library `service-ladder-stack` v0.1 (JMP ladder)
-- [x] Story block 1/11 · hero particles
+- [x] Dual-line urban–rural regions (water data 2000–2024)
+- [x] Library `value-beeswarm` · country 2024
+- [x] Library `component-min-bars` · Mongolia / Nepal
+- [x] Library `limiting-factors-bars`
+- [x] Library `component-paths` · Tanzania + typical
 - [x] Story URL: `/stories/water-access/`
 
 ## Cómo arrancar
@@ -52,7 +56,7 @@ open http://127.0.0.1:8787/stories/water-access/
 - Residual: origin particle field (chrome only)
 
 ## Siguiente
-- Water: más bloques goal_06 (grouped, country, limiting factors, Tanzania, E. coli)
+- Water: E. coli (table/scatter/urban–rural) + Bangladesh arsenic (→ 11/11)
 - Internet: coverage / speed / smartphone (promover chapters → library)
 - Compare visual origin vs story electricity (frame by frame residual)
 - CI smoke en GitHub Actions

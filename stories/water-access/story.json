@@ -42,7 +42,167 @@
     {
       "id": "bridge-1",
       "type": "prose",
-      "html": "<p>Climbing the ladder takes decades. Progress is uneven across regions and income groups — and <strong>quality</strong> matters as much as access. Contaminated water undermines health gains even where taps exist.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">MVP block 1/11 of the Water Atlas story. Next: income/region gaps, country rates, limiting factors, Tanzania progress paths, E. coli and arsenic.</p>"
+      "html": "<p>Climbing the ladder takes decades. Progress is uneven across regions — and <strong>where people live</strong> still shapes whether water is safely managed.</p>"
+    },
+    {
+      "id": "urban-rural",
+      "type": "vis",
+      "graphic": "safely_managed_grouped",
+      "library": "DualLineUrbanRural",
+      "title": "Access to safely managed drinking water remains much lower in rural areas",
+      "subtitle": "People using safely managed drinking water services, by residence (% of population)",
+      "source": "WHO/UNICEF JMP. WDI <a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.RU.ZS\" target=\"_blank\" rel=\"external\">rural</a> / <a href=\"https://data.worldbank.org/indicator/SH.H2O.SMDW.UR.ZS\" target=\"_blank\" rel=\"external\">urban</a>.",
+      "vhPerScene": 1.05,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "gap",
+          "text": "While urban access to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,128,198);\">safely managed</span>] water stayed just over 80 percent from 2000 to 2024, rural access rose from about 40 percent to 60 percent — yet a global urban–rural gap of roughly 20 percentage points remains. South Asia narrowed the gap; Sub-Saharan Africa rural coverage is still only about 17 percent."
+        }
+      ]
+    },
+    {
+      "id": "bridge-2",
+      "type": "prose",
+      "html": "<p>National averages hide another truth: many countries still have very low coverage — especially in Sub-Saharan Africa and some small island economies.</p>"
+    },
+    {
+      "id": "country-beeswarm",
+      "type": "scroller",
+      "graphic": "safely_managed_country",
+      "library": "ValueBeeswarm",
+      "title": "Access to safely managed drinking water is low in Sub-Saharan Africa and small island economies",
+      "subtitle": "People using safely managed drinking water services, 2024 (% of population)",
+      "source": "WHO/UNICEF JMP · WDI SH.H2O.SMDW.ZS.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "all",
+          "text": "Data are available for 148 countries for 2024. Roughly one-third of countries still lack sufficient water monitoring or testing systems for this indicator."
+        },
+        {
+          "type": "scene",
+          "id": "universal",
+          "text": "Among countries with data, only 29 have achieved universal access (99 percent or higher) to safely managed drinking water."
+        },
+        {
+          "type": "scene",
+          "id": "low",
+          "text": "Low access is concentrated in Sub-Saharan Africa, where less than half the population has safe drinking water in 22 of 25 countries with data. Some Pacific island economies also remain near the bottom of the distribution."
+        }
+      ]
+    },
+    {
+      "id": "bridge-3",
+      "type": "prose",
+      "html": "<p>Safely managed water is not a single pipe — it is the <strong>minimum</strong> of three components: water on premises, available when needed, and free from contamination.</p>"
+    },
+    {
+      "id": "estimating",
+      "type": "scroller",
+      "graphic": "estimating",
+      "library": "ComponentMinBars",
+      "title": "Safely managed access is determined by the lowest of three components",
+      "subtitle": "Share of people with improved water meeting each component (%)",
+      "source": "WHO/UNICEF JMP.",
+      "vhPerScene": 0.95,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "mongolia",
+          "text": "In [emphasis: Mongolia], accessibility on premises is the bottleneck: only 43 percent have water on premises, while availability (84%) and freedom from contamination (82%) are much higher. Safely managed equals the minimum — 43 percent."
+        },
+        {
+          "type": "scene",
+          "id": "nepal",
+          "text": "In [emphasis: Nepal], the limiting factor is quality: accessibility and availability are near 80 percent, but only 16 percent have water free from contamination — so safely managed access is 16 percent."
+        }
+      ]
+    },
+    {
+      "id": "bridge-4",
+      "type": "prose",
+      "html": "<p>Different countries hit different ceilings. Some struggle with <strong>quality</strong>, others with <strong>accessibility</strong> or <strong>availability when needed</strong>.</p>"
+    },
+    {
+      "id": "limiting",
+      "type": "scroller",
+      "graphic": "limiting_factors",
+      "library": "LimitingFactorsBars",
+      "title": "Countries face different challenges in achieving safely managed drinking water",
+      "subtitle": "Accessibility, availability, and quality components (% of population)",
+      "source": "WHO/UNICEF JMP · World Bank staff calculations.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "quality",
+          "text": "In several Pacific Island nations — including Tuvalu, Nauru, and Tonga — water [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">quality</span>] is the binding constraint even when accessibility looks high."
+        },
+        {
+          "type": "scene",
+          "id": "access",
+          "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">Accessibility</span>] (water on premises) is a major challenge in many Sub-Saharan African countries such as the Central African Republic and Chad."
+        },
+        {
+          "type": "scene",
+          "id": "avail",
+          "text": "Water is [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">available when needed</span>] if households report sufficient supply. For some economies this is the weakest of the three pillars."
+        },
+        {
+          "type": "scene",
+          "id": "overview",
+          "text": "Across 148 countries with data, the limiting factor varies. Highlighted bars show the binding component that sets safely managed access for each economy."
+        }
+      ]
+    },
+    {
+      "id": "bridge-5",
+      "type": "prose",
+      "html": "<p>Over time, countries often expand <strong>accessibility</strong> faster than they improve <strong>quality</strong>. Tanzania shows the pattern clearly — and it is not unique.</p>"
+    },
+    {
+      "id": "tanzania",
+      "type": "scroller",
+      "graphic": "tanzania_typical_progress",
+      "library": "ComponentPaths",
+      "title": "Progress in water quality lags availability and accessibility",
+      "subtitle": "People with access to each component of safely managed water (% of population)",
+      "source": "WHO/UNICEF JMP Global Database; World Bank staff calculations.",
+      "vhPerScene": 0.9,
+      "scenes": [
+        {
+          "type": "scene",
+          "id": "start",
+          "text": "In 2000, nearly 15 percent of people in [emphasis: Tanzania] had access to <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">uncontaminated water</span>, but only about 1 percent had water on premises."
+        },
+        {
+          "type": "scene",
+          "id": "progress",
+          "text": "Over the next two decades, <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">accessibility</span> improved dramatically, while gains in <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span> were more limited. By 2024 nearly half the population had water on premises, yet only about one-third had uncontaminated water."
+        },
+        {
+          "type": "scene",
+          "id": "typical",
+          "text": "Is this unique to Tanzania? Dashed lines show a “typical” trajectory of improvement estimated from historical country-level data for each component."
+        },
+        {
+          "type": "scene",
+          "id": "years-access",
+          "text": "On the typical path, raising water <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">accessibility</span> from 40 percent to 75 percent would take about 33 years."
+        },
+        {
+          "type": "scene",
+          "id": "years-quality",
+          "text": "Achieving the same scale of progress in <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span> would take about 101 years — roughly three times longer."
+        }
+      ]
+    },
+    {
+      "id": "bridge-end",
+      "type": "prose",
+      "html": "<p>Safe water is a foundation for health and development. Closing gaps means investing not only in pipes and pumps, but also in monitoring, treatment, and services that keep water clean from source to cup.</p><p class=\"note\" style=\"color:#6a7781;font-size:13px\">Water story <strong>6/11</strong> library blocks. Remaining origin chapters: E. coli table/scatter, urban–rural E. coli, Bangladesh arsenic.</p>"
     }
   ]
 }

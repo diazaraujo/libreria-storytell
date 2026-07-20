@@ -33,7 +33,7 @@
     <div>
       <a href="../../gallery-atlas.html">← Gallery</a>
       · <a href="../../gallery.html">Dev</a>
-      · <span class="tag">water · MVP 1/11</span>
+      · <span class="tag">water · 6/11</span>
     </div>
     <div>
       <a href="http://127.0.0.1:8765/en/atlas/water-access/" target="_blank">Origen</a>
@@ -46,20 +46,60 @@
 
   <div class="ch-end">
     <p>
-      <strong>Water story (MVP)</strong> — JMP service ladder stack · particles hero.
-      More goal_06 chapters available under <code>chapters/goal_06/</code>.
+      <strong>Water story 6/11</strong> — JMP ladder · urban–rural dual-line · country beeswarm ·
+      component min bars · limiting factors · Tanzania / typical paths.
     </p>
   </div>
 
   <script src="../../shared/svg.js"></script>
   <script src="../../shared/load.js"></script>
+  <script src="../../shared/beeswarm.js"></script>
+  <script src="../../shared/components/BeeswarmChart.js"></script>
   <script src="../../shared/particles.js"></script>
   <script src="../../shared/chapter-scroll.js"></script>
   <script src="../../library/service-ladder-stack/service-ladder-stack.js"></script>
+  <script src="../../library/dual-line-urban-rural/dual-line-urban-rural.js"></script>
+  <script src="../../library/value-beeswarm/value-beeswarm.js"></script>
+  <script src="../../library/component-min-bars/component-min-bars.js"></script>
+  <script src="../../library/limiting-factors-bars/limiting-factors-bars.js"></script>
+  <script src="../../library/component-paths/component-paths.js"></script>
   <script>
     (async function () {
       const story = await (await fetch("./story.json")).json();
-      const rows = await AtlasLoad.csv("./data/safely_managed.csv");
+
+      const [
+        ladderRows,
+        regionUR,
+        countryRows,
+        componentRows,
+        limitingRows,
+        tzRows,
+        typicalRows,
+      ] = await Promise.all([
+        AtlasLoad.csv("./data/safely_managed.csv"),
+        AtlasLoad.csv("./data/region_urban_rural.csv"),
+        AtlasLoad.csv("./data/Country_SafelyManaged_2024.csv"),
+        AtlasLoad.csv("./data/Indicator.csv"),
+        AtlasLoad.csv("./data/limiting_factors.csv"),
+        AtlasLoad.csv("./data/tanzania_drinking_water.csv"),
+        AtlasLoad.csv("./data/drinking_water_typical_paths.csv"),
+      ]);
+
+      // dual-line expects iso3c, area (urban|rural), year, value
+      const dualRows = regionUR
+        .filter(
+          (r) =>
+            r.level === "safely_managed" &&
+            (r.location === "urban" || r.location === "rural") &&
+            r.value !== "" &&
+            r.value != null
+        )
+        .map((r) => ({
+          iso3c: r.region,
+          area: r.location,
+          year: r.year,
+          value: r.value,
+        }));
 
       const wait2 = () =>
         new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
@@ -71,8 +111,89 @@
             const h = Math.min(520, Math.max(420, chartEl.clientHeight || 460));
             chartEl.style.cssText = `width:100%;height:${h}px`;
             return AtlasServiceLadderStack.mount(chartEl, {
-              rows,
+              rows: ladderRows,
               sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
+        if (b.id === "urban-rural") {
+          b.mount = async (chartEl) => {
+            await wait2();
+            const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasDualLineUrbanRural.mount(chartEl, {
+              rows: dualRows,
+              variant: "regions",
+              forceRemount: true,
+              height: h,
+              xDomain: [2000, 2024],
+              xTicks: [2000, 2024],
+              labels: {
+                urban: "Urban",
+                rural: "Rural",
+                y_axis_units: "% of population",
+              },
+            });
+          };
+        }
+        if (b.id === "country-beeswarm") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasValueBeeswarm.mount(chartEl, {
+              rows: countryRows.map((r) => ({
+                iso3c: r.iso3,
+                name: r.country_name,
+                value: r.value,
+              })),
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+              universalThreshold: 99,
+              lowThreshold: 50,
+            });
+          };
+        }
+        if (b.id === "estimating") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasComponentMinBars.mount(chartEl, {
+              rows: componentRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              countries: ["Mongolia", "Nepal"],
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
+        if (b.id === "limiting") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasLimitingFactorsBars.mount(chartEl, {
+              rows: limitingRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              forceRemount: true,
+              height: h,
+            });
+          };
+        }
+        if (b.id === "tanzania") {
+          b.mount = async (chartEl, ctx) => {
+            await wait2();
+            const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
+            chartEl.style.cssText = `width:100%;height:${h}px`;
+            return AtlasComponentPaths.mount(chartEl, {
+              rows: tzRows,
+              typicalRows,
+              sceneIndex: ctx.sceneIndex || 0,
+              showTypicalFromScene: 2,
               forceRemount: true,
               height: h,
             });

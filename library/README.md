@@ -21,6 +21,10 @@ Reusable chart patterns reverse-engineered from the World Bank Atlas build.
 | [`dual-line-urban-rural/`](dual-line-urban-rural/) | Bktvr1TG + DnvCGyY_ + income | hatch gap · regions / countries / **income 1×5** | **v0.3** · electricity + internet |
 | [`access-trends-scroller/`](access-trends-scroller/) | internet_access_scroller | multi-series opacity · world / income / regions | **v0.1** · internet story |
 | [`service-ladder-stack/`](service-ladder-stack/) | safely_managed (JMP ladder) | stacked areas · scene highlight | **v0.1** · water story |
+| [`value-beeswarm/`](value-beeswarm/) | safely_managed_country | scene all / universal / low | **v0.1** · water |
+| [`component-min-bars/`](component-min-bars/) | estimating (Mongolia/Nepal) | min component highlight | **v0.1** · water |
+| [`limiting-factors-bars/`](limiting-factors-bars/) | limiting_factors | grouped bars · binding factor | **v0.1** · water |
+| [`component-paths/`](component-paths/) | tanzania_typical_progress | multi-series + typical dashed | **v0.1** · water |
 | [`nightlights-hexmap/`](nightlights-hexmap/) | hexmap NG/ET | camera transform **0.85s** | **v0.9** · origin Mapbox tiles (`mlambrechts.*` + proxy) · fallback H3 · demo + story + chapters |
 | heroes / beeswarm / waffle / scatter | shared/ | partial | |
 

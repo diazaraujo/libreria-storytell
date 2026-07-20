@@ -219,6 +219,7 @@
       height: heightOpt = null,
       intro = true,
       xDomain: xDomainOpt = null,
+      xTicks: xTicksOpt = null,
       order: orderOpt = null,
       panelLabels: panelLabelsOpt = null,
     } = options;
@@ -263,7 +264,7 @@
     const ORDER = orderOpt || orderCfg;
     const PANEL_LABELS = panelLabelsOpt || labelsCfg;
     const X_DOMAIN = xDomainOpt || xDomainCfg || [2000, 2023];
-    const xTicks = xTicksCfg || X_DOMAIN;
+    const xTicks = xTicksOpt || (xDomainOpt ? X_DOMAIN : xTicksCfg) || X_DOMAIN;
 
     container.innerHTML = "";
     const root = document.createElement("div");
