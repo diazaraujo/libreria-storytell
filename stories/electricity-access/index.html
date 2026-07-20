@@ -111,8 +111,7 @@
         if (b.id === "regions") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-            const h = Math.min(520, Math.max(440, chartEl.clientHeight || 500));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasRegionsSmallMultiples.mount(chartEl, {
               series: regionsSeries,
               sceneIndex: ctx.sceneIndex || 0,
@@ -129,8 +128,7 @@
         if (b.id === "population") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-            const h = Math.min(560, Math.max(420, chartEl.clientHeight || 500));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasPopulationAccess.mount(chartEl, {
               aggregates,
               worldPop,
@@ -151,8 +149,7 @@
         if (b.id === "progress") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-            const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasProgressRace.mount(chartEl, {
               rows: progressRows,
               sceneIndex: ctx.sceneIndex || 0,
@@ -175,8 +172,7 @@
         if (b.id === "urban-rural") {
           b.mount = async (chartEl) => {
             await wait2();
-            const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasDualLineUrbanRural.mount(chartEl, {
               rows: urbanRuralRows,
               variant: "regions",
@@ -193,8 +189,7 @@
         if (b.id === "urban-rural-countries") {
           b.mount = async (chartEl) => {
             await wait2();
-            const h = Math.min(340, Math.max(280, chartEl.clientHeight || 300));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasDualLineUrbanRural.mount(chartEl, {
               rows: urbanRuralCountries,
               variant: "countries",
@@ -211,8 +206,7 @@
         if (b.id === "hexmap-nigeria") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasNightlightsHexmap.mount(chartEl, {
               country: "nigeria",
               hexUrl: "../../library/nightlights-hexmap/data/nigeria_h3.geojson",
@@ -227,8 +221,7 @@
         if (b.id === "hexmap-ethiopia") {
           b.mount = async (chartEl, ctx) => {
             await wait2();
-            const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
-            chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
             return AtlasNightlightsHexmap.mount(chartEl, {
               country: "ethiopia",
               hexUrl: "../../library/nightlights-hexmap/data/ethiopia_h3.geojson",

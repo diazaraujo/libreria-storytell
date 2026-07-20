@@ -20,9 +20,9 @@
     Unimproved: "#e3a763",
     Surface: "#bd6126",
   };
-  // year cap per scene: early strip (visible) · through 2015 · full
-  // Note: cap === domain start collapses clip to 0px — use ~2004 so scene 0 reads.
-  const DEFAULT_YEAR_CAPS = [2004, 2015, Infinity];
+  // Prefer full timeline + layer emphasis (matches narrative PP / mobile fill).
+  // Optional yearCaps still supported for progressive reveal demos.
+  const DEFAULT_YEAR_CAPS = [Infinity, Infinity, Infinity];
   const TRANSITION_MS = 900;
   const INSTANCES = new WeakMap();
 
@@ -237,11 +237,14 @@
     function applyScene(idx, { animate = true } = {}) {
       current = idx;
       const capY = yearCapFor(idx);
-      // clip width from left to year
       const x0 = margin.left;
       const x1 = xScale(capY);
       const fullW = w - margin.left - margin.right;
-      const clipW = Math.max(2, Math.min(fullW, x1 - x0));
+      // Full-timeline default; yearCaps only shrink when finite
+      let clipW = fullW;
+      if (Number.isFinite(yearCaps[Math.max(0, Math.min(idx, yearCaps.length - 1))])) {
+        clipW = Math.max(fullW * 0.12, Math.min(fullW, x1 - x0));
+      }
       if (!animate) {
         clipRect.style.transition = "none";
       } else {
@@ -252,12 +255,13 @@
       const active = layersFor(idx);
       bandEls.forEach((path, lvl) => {
         const on = active.has(lvl);
-        path.style.opacity = on ? "0.95" : idx >= 2 ? "0.92" : "0.22";
+        // Scene 0/1: dim inactive layers; scene 2: all full
+        path.style.opacity = idx >= 2 ? "0.94" : on ? "0.96" : "0.18";
       });
       root.querySelectorAll(".legend span").forEach((span) => {
         const lvl = span.dataset.level;
         const on = active.has(lvl);
-        span.style.opacity = on || idx >= 2 ? "1" : "0.35";
+        span.style.opacity = idx >= 2 || on ? "1" : "0.38";
       });
     }
 

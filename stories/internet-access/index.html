@@ -112,8 +112,7 @@
       const mounts = {
         "access-trends": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasAccessTrendsScroller.mount(chartEl, {
             rows: trendRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -123,8 +122,7 @@
         },
         "urban-rural-income": async (chartEl) => {
           await wait2();
-          const h = Math.min(480, Math.max(360, chartEl.clientHeight || 420));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasDualLineUrbanRural.mount(chartEl, {
             rows: urbanRuralRows,
             variant: "income",
@@ -139,8 +137,7 @@
         },
         "gender-gap": async (chartEl) => {
           await wait2();
-          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasGenderGapBars.mount(chartEl, {
             rows: genderRows,
             height: h,
@@ -148,8 +145,7 @@
         },
         progress: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(620, Math.max(480, chartEl.clientHeight || 560));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasProgressRace.mount(chartEl, {
             rows: progressRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -171,8 +167,7 @@
         },
         "mobile-fixed": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasMobileFixedBroadband.mount(chartEl, {
             globalRows: mfGlobal,
             countryRows: mfCountries,
@@ -184,8 +179,7 @@
         },
         coverage: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(560, Math.max(460, chartEl.clientHeight || 500));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           // Prefer real Mapbox choropleth; fall back to ranked bars
           try {
             if (window.mapboxgl && window.AtlasCoverageChoroplethMap && window.ATLAS_MAPBOX_TOKEN) {
@@ -209,8 +203,7 @@
         },
         speed: async (chartEl) => {
           await wait2();
-          const h = Math.min(560, Math.max(460, chartEl.clientHeight || 500));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasDualSpeedBars.mount(chartEl, {
             rows: speedRows,
             names,
@@ -219,8 +212,7 @@
         },
         slopes: async (chartEl) => {
           await wait2();
-          const h = Math.min(520, Math.max(440, chartEl.clientHeight || 480));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasSlopeGapChart.mount(chartEl, {
             rows: slopeRows,
             names,
@@ -230,8 +222,7 @@
         "can-send-text": async (chartEl) => {
           await wait2();
           // tall chart for many countries
-          const h = Math.min(900, Math.max(520, chartEl.clientHeight || 600));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasRankedRateBars.mount(chartEl, {
             rows: textRows,
             mode: "can-send",
@@ -242,8 +233,7 @@
         },
         smartphone: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(520, Math.max(440, chartEl.clientHeight || 480));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasRankedRateBars.mount(chartEl, {
             rows: phoneRows,
             mode: "smartphone",

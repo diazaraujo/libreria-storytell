@@ -160,6 +160,26 @@
     };
   }
 
+  /**
+   * Fit chart height to sticky .ch-chart box (avoids hard-coded desktop px on mobile).
+   * Call after layout: await rAF × 2, then fitChartHeight(chartEl).
+   */
+  function fitChartHeight(el, opts = {}) {
+    if (!el) return opts.fallback || 420;
+    const box = el.closest(".ch-chart") || el;
+    const avail = box.clientHeight || el.clientHeight || 0;
+    const vw = global.innerWidth || 1200;
+    const isPhone = vw < 560;
+    const isTablet = vw < 960;
+    const min = opts.min != null ? opts.min : isPhone ? 220 : isTablet ? 260 : 360;
+    const max =
+      opts.max != null ? opts.max : isPhone ? 520 : isTablet ? 560 : 620;
+    const h = avail >= min ? Math.min(max, avail) : Math.min(max, Math.max(min, avail || min + 40));
+    el.style.width = "100%";
+    el.style.height = `${h}px`;
+    return h;
+  }
+
   function mount(root, story) {
     if (!root) throw new Error("chapter-scroll: root required");
     const blocks = story.blocks || [];
@@ -447,8 +467,9 @@
 
   global.AtlasChapterScroll = {
     mount,
+    fitChartHeight,
     formatSceneHtml,
     sceneFromProgress,
-    version: "0.1.1",
+    version: "0.2.0",
   };
 })(typeof window !== "undefined" ? window : globalThis);

@@ -135,8 +135,7 @@
       const mounts = {
         "safely-managed": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(520, Math.max(420, chartEl.clientHeight || 460));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasServiceLadderStack.mount(chartEl, {
             rows: ladderRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -146,8 +145,7 @@
         },
         "urban-rural": async (chartEl) => {
           await wait2();
-          const h = Math.min(600, Math.max(520, chartEl.clientHeight || 560));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasDualLineUrbanRural.mount(chartEl, {
             rows: dualRows,
             variant: "regions",
@@ -164,8 +162,7 @@
         },
         "country-beeswarm": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(560, Math.max(440, chartEl.clientHeight || 500));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasValueBeeswarm.mount(chartEl, {
             rows: countryRows.map((r) => ({
               iso3c: r.iso3,
@@ -181,8 +178,7 @@
         },
         estimating: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasComponentMinBars.mount(chartEl, {
             rows: componentRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -193,8 +189,7 @@
         },
         limiting: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasLimitingFactorsBars.mount(chartEl, {
             rows: limitingRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -204,8 +199,7 @@
         },
         tanzania: async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasComponentPaths.mount(chartEl, {
             rows: tzRows,
             typicalRows,
@@ -217,8 +211,7 @@
         },
         "ecoli-table": async (chartEl) => {
           await wait2();
-          const h = Math.min(420, Math.max(320, chartEl.clientHeight || 360));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasRiskLevelTable.mount(chartEl, {
             rows: ecoliTable,
             title: "E. coli risk levels (JMP)",
@@ -226,8 +219,7 @@
         },
         "ecoli-poc-pou": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(500, Math.max(420, chartEl.clientHeight || 460));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasPairedCompareBars.mount(chartEl, {
             rows: pocPouRows,
             sceneIndex: ctx.sceneIndex || 0,
@@ -241,8 +233,7 @@
         },
         "ecoli-urban-rural": async (chartEl) => {
           await wait2();
-          const h = Math.min(480, Math.max(400, chartEl.clientHeight || 440));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasUrbanRuralBars.mount(chartEl, {
             rows: ecoliUR,
             height: h,
@@ -251,8 +242,7 @@
         },
         "arsenic-grouped": async (chartEl, ctx) => {
           await wait2();
-          const h = Math.min(460, Math.max(380, chartEl.clientHeight || 420));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasStackedShareBars.mount(chartEl, {
             rows: arsenicGroup,
             sceneIndex: ctx.sceneIndex || 0,
@@ -263,8 +253,7 @@
         },
         "arsenic-source": async (chartEl) => {
           await wait2();
-          const h = Math.min(440, Math.max(360, chartEl.clientHeight || 400));
-          chartEl.style.cssText = `width:100%;height:${h}px`;
+          const h = AtlasChapterScroll.fitChartHeight(chartEl);
           return AtlasDualThresholdBars.mount(chartEl, {
             rows: arsenicSource,
             height: h,

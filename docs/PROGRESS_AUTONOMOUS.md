@@ -63,6 +63,12 @@ open http://127.0.0.1:8787/stories/electricity-access/
 - [x] Particles v0.3 denser world scatter (centroids v2)
 - [x] Coverage map v0.2: property `match` join (fiable)
 
-## Residual (fino)
-- Mobile chart heights fine-tune vs live Atlas phone
+### Pass 4 — fino (mobile chart heights)
+- [x] `fitChartHeight()` · sticky flex fill · phone note 16dvh
+- [x] Desk chart 560 · phone chart ~600 (+40–60% vs pass 3)
+- [x] Ladder full timeline + layer dim
+- Docs: `docs/COMPARE_PP_FINO.md`
+
+## Residual (micro)
+- Origin phone note type scale · basemap style nuances
 - Plan: `docs/PLAN_REMAINING.md`

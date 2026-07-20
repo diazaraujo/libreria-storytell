@@ -16,7 +16,8 @@
   --ch-note-w: 320px;
   --ch-gap: 28px;
   --ch-pad-x: 48px;
-  --ch-chart-max-h: 520px;
+  --ch-chart-max-h: 560px;
+  --ch-chart-min-h: 360px;
 }
 
 .ch-story {
@@ -206,7 +207,7 @@ html { scroll-behavior: smooth; }
   background: var(--ch-bg);
   box-sizing: border-box;
   z-index: 2;
-  padding: 24px 0 16px;
+  padding: 20px 0 12px;
 }
 
 /* Inner frame mirrors Atlas content width */
@@ -223,7 +224,8 @@ html { scroll-behavior: smooth; }
   box-sizing: border-box;
   min-height: 0;
   flex: 1 1 auto;
-  align-content: center;
+  max-height: 100%;
+  align-content: stretch;
 }
 
 /* Title block — chart column only + red rule (Atlas signature) */
@@ -357,7 +359,7 @@ html { scroll-behavior: smooth; }
 }
 .ch-note-text .emphasis { font-weight: 700; }
 
-/* Chart column */
+/* Chart column — fills remaining sticky space (Atlas sticky viz) */
 .ch-chart-wrap {
   grid-column: 2;
   grid-row: 2;
@@ -366,19 +368,25 @@ html { scroll-behavior: smooth; }
   min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
+  height: 100%;
 }
 .ch-chart {
   position: relative;
   width: 100%;
+  flex: 1 1 auto;
   height: min(var(--ch-chart-max-h), calc(100dvh - 200px));
-  min-height: 420px;
+  min-height: var(--ch-chart-min-h);
+  max-height: var(--ch-chart-max-h);
 }
 .ch-chart .atlas-rsm,
 .ch-chart .atlas-chart-root,
-.ch-chart .atlas-pop {
+.ch-chart .atlas-pop,
+.ch-chart .atlas-coverage-map,
+.ch-chart .mapboxgl-map {
   width: 100% !important;
   height: 100% !important;
+  min-height: inherit;
 }
 
 /* Scene dots — subtle, Atlas-adjacent (not primary UX) */
@@ -464,11 +472,12 @@ body.ch-story-page .ch-story > .ch-hero {
   :root {
     --ch-note-w: 1fr;
     --ch-pad-x: 16px;
-    --ch-chart-max-h: 380px;
-    --ch-gap: 16px;
+    --ch-chart-max-h: 52dvh;
+    --ch-chart-min-h: 260px;
+    --ch-gap: 12px;
   }
   .ch-sticky {
-    padding: 12px 0 8px;
+    padding: 10px 0 8px;
     justify-content: flex-start;
   }
   .ch-sticky-inner {
@@ -477,44 +486,50 @@ body.ch-story-page .ch-story > .ch-hero {
     width: 100%;
     max-width: 100%;
     padding: 0 var(--ch-pad-x);
-    align-content: start;
+    align-content: stretch;
+    row-gap: 6px;
   }
   .ch-sticky-head {
     grid-column: 1;
     grid-row: 1;
-    margin-bottom: 6px;
+    margin-bottom: 2px;
   }
   .ch-title {
-    font-size: 17px;
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.28;
   }
   .ch-subtitle {
-    font-size: 13px;
-    margin-bottom: 6px;
+    font-size: 12.5px;
+    margin-bottom: 4px;
   }
   .ch-note {
     grid-column: 1;
     grid-row: 2;
-    margin-bottom: 8px;
-    padding: 12px 14px;
-    font-size: 14px;
-    line-height: 1.45;
-    max-height: 28vh;
+    margin-bottom: 0;
+    padding: 10px 12px;
+    font-size: 13.5px;
+    line-height: 1.4;
+    max-height: 18dvh;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .ch-chart-wrap {
     grid-column: 1;
     grid-row: 3;
-    min-height: 280px;
+    min-height: var(--ch-chart-min-h);
+    flex: 1 1 auto;
   }
   .ch-chart {
-    min-height: 280px;
-    height: min(var(--ch-chart-max-h), calc(100dvh - 280px));
+    min-height: var(--ch-chart-min-h);
+    height: min(var(--ch-chart-max-h), calc(100dvh - 32dvh));
+    max-height: none;
   }
   .ch-source {
     grid-column: 1;
     grid-row: 4;
     font-size: 10px;
+    padding-top: 6px;
+    margin-top: 4px;
   }
   .ch-dots {
     right: 6px;
@@ -533,7 +548,8 @@ body.ch-story-page .ch-story > .ch-hero {
 @media (max-width: 560px) {
   :root {
     --ch-pad-x: 12px;
-    --ch-chart-max-h: 320px;
+    --ch-chart-max-h: 48dvh;
+    --ch-chart-min-h: 240px;
   }
   .ch-hero {
     min-height: 100dvh;
@@ -576,14 +592,15 @@ body.ch-story-page .ch-story > .ch-hero {
     gap: 6px;
   }
   .ch-title {
-    font-size: 15.5px;
+    font-size: 15px;
   }
   .ch-note {
-    font-size: 13px;
-    max-height: 22vh;
+    font-size: 12.5px;
+    max-height: 16dvh;
+    padding: 8px 10px;
   }
   .ch-chart {
-    min-height: 240px;
+    min-height: var(--ch-chart-min-h);
   }
   /* Mapbox chrome on small screens */
   .atlas-coverage-map .mapboxgl-ctrl-top-right {
