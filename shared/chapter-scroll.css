@@ -175,17 +175,23 @@ html { scroll-behavior: smooth; }
 .ch-prose {
   max-width: 640px;
   margin: 0 auto;
-  padding: 72px var(--ch-pad-x) 88px;
+  padding: 80px var(--ch-pad-x) 96px;
   min-height: auto !important;
 }
 .ch-prose-inner {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--ch-text);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #1a1830;
+  letter-spacing: -0.005em;
 }
-.ch-prose-inner p { margin: 0 0 1.15em; }
+.ch-prose-inner p { margin: 0 0 1.2em; }
 .ch-prose-inner p:last-child { margin-bottom: 0; }
 .ch-prose-inner strong { color: var(--ch-text); font-weight: 700; }
+.ch-prose-inner .note,
+.ch-prose-inner code {
+  font-size: 0.88em;
+  color: var(--ch-subtle);
+}
 
 /* Scroller runway */
 .ch-block--scroller,
@@ -241,21 +247,24 @@ html { scroll-behavior: smooth; }
   font-weight: 700;
   line-height: 1.25;
   color: var(--ch-text);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
+  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
 }
 .ch-subtitle {
   margin: 0 0 10px;
   font-size: 14px;
-  line-height: 1.35;
+  line-height: 1.4;
   color: var(--ch-subtle);
+  font-weight: 400;
 }
 .ch-rule {
   display: block;
   height: 2px;
   width: 100%;
-  background: var(--ch-red);
+  background: linear-gradient(90deg, var(--ch-red) 0%, #e31c3d 70%, rgba(227, 28, 61, 0.15) 100%);
   border: 0;
   margin: 0;
+  border-radius: 1px;
 }
 
 /* Annotation — left column, vertically centered to chart

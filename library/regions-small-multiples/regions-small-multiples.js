@@ -347,6 +347,9 @@
       .atlas-rsm .value-label {
         transition: opacity ${transitionMs}ms;
       }
+      .atlas-rsm .marker {
+        transition: opacity ${transitionMs}ms;
+      }
       /* Pixi particle flight equivalent — same 1s window as panel opacity */
       .atlas-rsm .particle {
         transition:
@@ -582,11 +585,19 @@
       currentScene = idx;
       if (!animate) root.classList.add("no-anim");
 
-      regionNodes.forEach(({ series: s, g, lab, valueLabels }) => {
+      regionNodes.forEach(({ series: s, g, lab, valueLabels, markerEls }) => {
         const hi = isHighlighted(s, idx, forceHighlight, anyHighlight);
         const op = hi ? 1 : dimOpacity;
         g.setAttribute("opacity", String(op));
         lab.style.opacity = String(op);
+        // Atlas beauty: full year-marker trail only on lit panels (World s0, etc.)
+        (markerEls || []).forEach(({ el, isEnd }) => {
+          el.setAttribute("opacity", hi || isEnd ? "1" : "0");
+          // mid-year marks slightly smaller visual weight when shown
+          if (!isEnd) {
+            el.style.opacity = hi ? "0.95" : "0";
+          }
+        });
         // Atlas: value labels stay readable; still fade slightly with dim
         valueLabels.forEach((vt) => {
           vt.style.opacity = hi ? "1" : showValuesWhenDimmed ? "1" : "0";

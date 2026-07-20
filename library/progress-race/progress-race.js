@@ -205,17 +205,20 @@
     style.textContent = `
       .atlas-progress-race line.progress {
         stroke-linecap: round;
-        transition: opacity ${transitionMs}ms, stroke-width ${transitionMs}ms, stroke ${transitionMs}ms;
+        transition: opacity ${transitionMs}ms cubic-bezier(0.4, 0, 0.2, 1),
+          stroke-width ${transitionMs}ms cubic-bezier(0.4, 0, 0.2, 1),
+          stroke ${transitionMs}ms;
       }
       .atlas-progress-race path.arrow {
-        transition: transform ${transitionMs}ms, fill ${transitionMs}ms, opacity ${transitionMs}ms;
+        transition: transform ${transitionMs}ms cubic-bezier(0.34, 1.2, 0.64, 1),
+          fill ${transitionMs}ms, opacity ${transitionMs}ms;
         stroke: #fff;
         stroke-width: 1px;
         transform-origin: center;
         transform-box: fill-box;
       }
       .atlas-progress-race circle.start-dot {
-        transition: opacity 600ms, fill 600ms;
+        transition: opacity 700ms ease, fill 700ms, r 700ms;
       }
       .atlas-progress-race .cell.highlighted path.arrow,
       .atlas-progress-race .cell:hover path.arrow {
@@ -586,8 +589,9 @@
           const xEnd = xHead + (d.improved ? -4 : 4);
           el.prog.setAttribute("x1", String(x0));
           el.prog.setAttribute("x2", String(xEnd));
-          el.prog.setAttribute("stroke-width", "5");
-          el.prog.setAttribute("opacity", "0.3");
+          // Origin stems: soft wide band under arrow (beauty density)
+          el.prog.setAttribute("stroke-width", isHi ? "6" : "4.5");
+          el.prog.setAttribute("opacity", isHi ? "0.42" : "0.28");
           el.prog.setAttribute("stroke", idx >= 2 ? col : GREY.grey300);
         } else {
           el.prog.setAttribute("x1", String(x0));
