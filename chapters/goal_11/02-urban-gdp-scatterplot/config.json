@@ -1,5 +1,5 @@
 {
-  "type": "vis",
+  "type": "scroller",
   "graphic": "urban_gdp_scatterplot",
   "visSize": "small",
   "title": "Urbanization is associated with economic growth",
@@ -26,5 +26,21 @@
     "reference": null,
     "fidelity": "tier-B-bulk"
   },
-  "scenes": []
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "all",
+      "text": "Urbanization is associated with higher income levels across economies."
+    },
+    {
+      "type": "scene",
+      "id": "low_income",
+      "text": "Among lower-income economies, the relationship still holds with wide variation."
+    },
+    {
+      "type": "scene",
+      "id": "high_urban",
+      "text": "Highly urbanized economies span a range of income levels."
+    }
+  ]
 }

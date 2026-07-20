@@ -19,12 +19,27 @@
     "OCU_SKILL_L3-4": { label: "High skill", order: 2 },
   };
 
+  /** Atlas production labels (goal_11 config / Swcp17IY) */
+  const ISCO_LABELS = {
+    OCU_ISCO08_0: "Armed forces",
+    OCU_ISCO08_1: "Managers",
+    OCU_ISCO08_2: "Professionals",
+    OCU_ISCO08_3: "Technicians & associates",
+    OCU_ISCO08_4: "Clerical support",
+    OCU_ISCO08_5: "Service & sales",
+    OCU_ISCO08_6: "Skilled agriculture",
+    OCU_ISCO08_7: "Craft & trades",
+    OCU_ISCO08_8: "Plant & machine ops",
+    OCU_ISCO08_9: "Elementary occupations",
+  };
+
   const URBAN = (global.WB_COLORS && global.WB_COLORS.urban) || "#6D88D1";
   const RURAL = (global.WB_COLORS && global.WB_COLORS.rural) || "#54AE89";
 
-  function skillLabel(code) {
+  function skillLabel(code, labels) {
+    if (labels && labels[code]) return labels[code];
     if (SKILL_META[code]) return SKILL_META[code].label;
-    // occupation codes OCU_ISCO08_n
+    if (ISCO_LABELS[code]) return ISCO_LABELS[code];
     const m = String(code).match(/OCU_ISCO08_(\d+)/);
     if (m) return "ISCO " + m[1];
     return String(code).replace(/^OCU_/, "");
@@ -58,6 +73,7 @@
       sceneIndex = 0,
       highlightIso = "IDN",
       mode = "skill", // skill | occupation
+      labels = null, // map skill code → display label
       height: heightOpt = null,
       reuse = true,
       forceRemount = false,
@@ -94,9 +110,11 @@
           (SKILL_META[a]?.order ?? 99) - (SKILL_META[b]?.order ?? 99)
       );
     } else {
-      skills.sort();
-      // occupation: show a manageable subset if huge
-      if (skills.length > 8) skills = skills.slice(0, 8);
+      skills.sort((a, b) => {
+        const na = +(String(a).match(/(\d+)/) || [0, 99])[1];
+        const nb = +(String(b).match(/(\d+)/) || [0, 99])[1];
+        return na - nb;
+      });
     }
 
     container.innerHTML = "";
@@ -128,7 +146,7 @@
     note.textContent = "Specialization index · 1 = proportional to overall employment";
     root.appendChild(note);
 
-    const inst = { root, data, skills, highlightIso, mode, header, plot, note };
+    const inst = { root, data, skills, highlightIso, mode, labels, header, plot, note };
 
     function paint(idx) {
       const w = plot.clientWidth || 900;
@@ -139,7 +157,7 @@
       svg.style.cssText = "width:100%;height:100%";
       plot.appendChild(svg);
 
-      const margin = { top: 8, right: 16, bottom: 28, left: 100 };
+      const margin = { top: 8, right: 16, bottom: 28, left: inst.skills.length > 6 ? 128 : 100 };
       const xMin = 0;
       const xMax = Math.min(
         4,
@@ -151,19 +169,16 @@
             margin.left +
             ((v - xMin) / (xMax - xMin)) * (w - margin.left - margin.right);
 
-      // which skills visible
+      // which skills visible (skill mode only — occupation always shows full ISCO set)
       let showSkills = inst.skills.slice();
-      if (idx === 2) showSkills = inst.skills.filter((s) => /L2|_2$/.test(s) || s.includes("L2"));
-      if (idx === 3) showSkills = inst.skills.filter((s) => /L3|L3-4|_1$/.test(s) || s.includes("L3"));
-      // for skill mode high is L3-4
-      if (idx === 3 && inst.mode === "skill") {
-        showSkills = inst.skills.filter((s) => s.includes("L3"));
-      }
-      if (idx === 2 && inst.mode === "skill") {
-        showSkills = inst.skills.filter((s) => s.includes("L2"));
-      }
-      if (idx === 4 && inst.mode === "skill") {
-        showSkills = inst.skills.filter((s) => s.includes("L1") || s.includes("L2"));
+      if (inst.mode === "skill") {
+        if (idx === 2) showSkills = inst.skills.filter((s) => s.includes("L2"));
+        if (idx === 3) showSkills = inst.skills.filter((s) => s.includes("L3"));
+        if (idx === 4) {
+          showSkills = inst.skills.filter(
+            (s) => s.includes("L1") || s.includes("L2")
+          );
+        }
       }
       if (!showSkills.length) showSkills = inst.skills.slice();
 
@@ -202,7 +217,7 @@
         svg.appendChild(tx);
       });
 
-      const r = showSkills.length > 4 ? 2.6 : 3.2;
+      const r = showSkills.length > 6 ? 2.2 : showSkills.length > 4 ? 2.6 : 3.2;
       showSkills.forEach((sk, si) => {
         const y0 = margin.top + si * bandH;
         const yMid = y0 + bandH / 2;
@@ -212,9 +227,9 @@
         lab.setAttribute("y", yMid + 4);
         lab.setAttribute("text-anchor", "end");
         lab.setAttribute("fill", "#111");
-        lab.setAttribute("font-size", "12");
+        lab.setAttribute("font-size", showSkills.length > 6 ? "10" : "12");
         lab.setAttribute("font-weight", "700");
-        lab.textContent = skillLabel(sk);
+        lab.textContent = skillLabel(sk, inst.labels);
         svg.appendChild(lab);
 
         // subtle band

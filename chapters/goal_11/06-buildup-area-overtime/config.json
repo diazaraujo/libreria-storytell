@@ -1,5 +1,5 @@
 {
-  "type": "vis",
+  "type": "scroller",
   "graphic": "buildup_area_overtime",
   "title": "Built-up area in Addis Ababa has more than tripled in the last five decades",
   "subtitle": "Built-up area (km²) and population of Addis Ababa, 1975–2025",
@@ -24,5 +24,16 @@
     "reference": null,
     "fidelity": "tier-B-bulk"
   },
-  "scenes": []
+  "scenes": [
+    {
+      "type": "scene",
+      "id": "area",
+      "text": "Built-up area in Addis Ababa has more than tripled since the 1970s."
+    },
+    {
+      "type": "scene",
+      "id": "pop",
+      "text": "Population growth tracks the expansion of the built-up footprint."
+    }
+  ]
 }

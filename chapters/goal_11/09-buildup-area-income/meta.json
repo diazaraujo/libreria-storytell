@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "built-up area by income group multi-line \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "built-up by income \u00b7 urban v1",
   "graphic": "buildup_area_income",
-  "title": "Built-up area by income"
+  "title": "Built-up area by income",
+  "qualityPass": "urban-v2"
 }

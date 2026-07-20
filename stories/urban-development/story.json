@@ -1,23 +1,109 @@
 {
   "id": "urban-development",
-  "title": "Urban development — quality v1",
+  "title": "Urban development — quality v2",
   "slug": "urban-development",
   "origin": "http://127.0.0.1:8765/en/atlas/urban-development/",
-  "qualityPass": "urban-v1",
+  "qualityPass": "urban-v2",
   "blocks": [
     {
       "id": "hero",
       "type": "prose",
-      "title": "Building productive cities",
-      "html": "<p>Urbanization, skills, pay, and the growing number of people living in slums — quality pass v1 for goal_11.</p>"
+      "title": "Building productive cities for an urbanizing world",
+      "html": "<p>From regional urbanization paths to skills, pay, city networks, and slums — Urban suite quality v2.</p>"
+    },
+    {
+      "id": "pop",
+      "type": "scroller",
+      "chapter": "00-urban-rural-pop-scroller",
+      "graphic": "urban_rural_pop_scroller",
+      "title": "The world is urbanizing, but growth is concentrated in some regions",
+      "subtitle": "Urban and rural population, by region (millions)",
+      "source": "World Bank staff estimates based on the <a href=\"http://population.un.org/wup\" target=\"_blank\" rel=\"external\">United Nations Population Division's World Urbanization Prospects</a>, National definitions. Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SP.RUR.TOTL\" target=\"_blank\" rel=\"external\">SP.RUR.TOTL</a>, <a href=\"https://data.worldbank.org/indicator/SP.URB.TOTL\" target=\"_blank\" rel=\"external\">SP.URB.TOTL</a>).",
+      "vhPerScene": 0.92,
+      "scenes": [
+        {
+          "id": "1",
+          "text": "Although urbanization is a global phenomenon, it has not unfolded evenly across regions. The stacked view of urban and rural populations shows how the world's total population has grown over time."
+        },
+        {
+          "id": "2",
+          "text": "Unstacking these two groups reveals how each has changed individually. Over the past 25 years, [emphasis: Europe] [emphasis: and Central Asia] have seen little overall population growth, with some growth in urban populations and a modest decline in rural populations."
+        },
+        {
+          "id": "3",
+          "text": "In [emphasis: North America, Latin America, and the Caribbean], rural populations have plateaued while cities have expanded steadily."
+        },
+        {
+          "id": "4",
+          "text": "In [emphasis: East Asia & Pacific], urbanization has been particularly dramatic, with urban populations growing rapidly as rural populations declined. The urban population overtook the rural population in 2008, a shift driven not only by migration or population growth, but also by the reclassification of rural areas and expansion of city boundaries, which absorbed once-rural areas into urban zones."
+        },
+        {
+          "id": "5",
+          "text": "Meanwhile, in [emphasis: Sub-Saharan Africa], [emphasis: the Middle East, North Africa, Afghanistan, Pakistan], and [emphasis: South Asia], both rural and urban populations have grown. In Sub-Saharan Africa, the Middle East, North Africa, Afghanistan and Pakistan, urban populations have expanded at a much faster pace than their rural counterparts."
+        }
+      ]
+    },
+    {
+      "id": "cities",
+      "type": "scroller",
+      "chapter": "01-city-map",
+      "graphic": "city_map",
+      "title": "The number of cities worldwide is projected to nearly double between 2000 and 2050",
+      "subtitle": "Number of cities by population size",
+      "source": "United Nations, Department of Economic and Social Affairs, Population Division (2025). <a href=\"https://population.un.org/wup/\" target=\"_blank\" rel=\"external\">World Urbanization Prospects</a>.",
+      "vhPerScene": 0.92,
+      "scenes": [
+        {
+          "id": "1",
+          "text": "In 2000, there were just over 9,000 cities in the world. "
+        },
+        {
+          "id": "2",
+          "text": "By 2025, the world had over 12,000 cities. <span style=\"background-color: rgb(135,177,71);\">Small</span> and <span style=\"background-color: rgb(236,182,58);\">very small</span> cities (50,000–1 million residents) drove some of this growth, expanding from roughly 8,700 to 11,600. Meanwhile, <span data-color-id=\"cat6\" class=\"cat6\">megacities</span>, those exceeding 10 million people, also grew significantly, from 20 in 2000 to 33 in 2025."
+        },
+        {
+          "id": "3",
+          "text": "But this growth in megacities is expected to slow down over the next 25 years, with projections suggesting that there will only be four more <span style=\"color: rgb(255,255,255); background-color: rgb(8,16,121);\">megacities</span> by 2050, bringing the total to 37."
+        },
+        {
+          "id": "4",
+          "text": "Instead, urban growth will be driven by an increase in the number of <span style=\"background-color: rgb(135,177,71);\">small</span> and <span style=\"background-color: rgb(236,182,58);\">very small</span> cities, nearing 15,000 by 2050."
+        }
+      ]
+    },
+    {
+      "id": "gdp",
+      "type": "scroller",
+      "chapter": "02-urban-gdp-scatterplot",
+      "graphic": "urban_gdp_scatterplot",
+      "title": "Urbanization is associated with economic growth",
+      "subtitle": "",
+      "source": "World Bank staff estimates based on the <a href=\"http://population.un.org/wup\" target=\"_blank\" rel=\"external\">United Nations Population Division's World Urbanization Prospects</a>, National definitions. Country official statistics, National Statistical Organizations and/or Central Banks; National Accounts data files, Organisation for Economic Co-operation and Development (OECD). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/SP.URB.TOTL\" target=\"_blank\" rel=\"external\">SP.URB.TOTL</a>, <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.CD\" target=\"_blank\" rel=\"external\">NY.GDP.PCAP.CD</a>).",
+      "vhPerScene": 0.92,
+      "scenes": [
+        {
+          "id": "all",
+          "text": "Urbanization is associated with higher income levels across economies."
+        },
+        {
+          "id": "low_income",
+          "text": "Among lower-income economies, the relationship still holds with wide variation."
+        },
+        {
+          "id": "high_urban",
+          "text": "Highly urbanized economies span a range of income levels."
+        }
+      ]
     },
     {
       "id": "skill",
       "type": "scroller",
+      "chapter": "03-skill-violin",
+      "graphic": "skill_violin",
       "title": "Urban areas offer jobs of a variety of skills",
       "subtitle": "Specialization of jobs by skill level across rural and urban areas, latest year available (2008 - 2025)",
       "source": "International Labour Organization. (2025). ILOSTAT Rural and Urban Labour Markets (RURBAN), <a href=\"https://rshiny.ilo.org/dataexplorer49/?lang=en&segment=indicator&id=EMP_TEMP_SEX_OCU_GEO_NB_A&channel=ilostat\" target=\"_blank\" rel=\"external\">EMP_TEMP_SEX_OCU_GEO_NB_A</a>.",
-      "vhPerScene": 0.95,
+      "vhPerScene": 0.92,
       "scenes": [
         {
           "id": "all",
@@ -42,12 +128,25 @@
       ]
     },
     {
+      "id": "occupations",
+      "type": "vis",
+      "chapter": "04-skill-violin-groups",
+      "graphic": "skill_violin_groups",
+      "title": "Urban areas offer a variety of occupations",
+      "subtitle": "Specialization of jobs by occupation across rural and urban areas, latest year available (2009 - 2025)",
+      "source": "International Labour Organization. (2025). ILOSTAT Rural and Urban Labour Markets (RURBAN), <a href=\"https://rshiny.ilo.org/dataexplorer49/?lang=en&segment=indicator&id=EMP_TEMP_SEX_OCU_GEO_NB_A&channel=ilostat\" target=\"_blank\" rel=\"external\">EMP_TEMP_SEX_OCU_GEO_NB_A</a>.",
+      "vhPerScene": 1.0,
+      "scenes": []
+    },
+    {
       "id": "pay",
       "type": "scroller",
+      "chapter": "05-pay-beeswarm",
+      "graphic": "pay_beeswarm",
       "title": "In most countries, hourly earnings are higher in urban than rural areas",
       "subtitle": "Share of hourly earnings of urban population above rural population[footnote: A score above 0 means urban pay is higher, below 0 means rural pay is higher.]",
       "source": "International Labour Organization. (2025). SDG Labour Market Indicators (ILOSDG), <a href=\"https://rshiny.ilo.org/dataexplorer49/?lang=en&segment=indicator&id=EAR_4HRL_SEX_GEO_CUR_NB_A&channel=ilostat\" target=\"_blank\" rel=\"external\">EAR_4HRL_SEX_GEO_CUR_NB_A</a>.",
-      "vhPerScene": 0.9,
+      "vhPerScene": 0.92,
       "scenes": [
         {
           "id": "all",
@@ -64,12 +163,45 @@
       ]
     },
     {
+      "id": "addis",
+      "type": "scroller",
+      "chapter": "06-buildup-area-overtime",
+      "graphic": "buildup_area_overtime",
+      "title": "Built-up area in Addis Ababa has more than tripled in the last five decades",
+      "subtitle": "Built-up area (km²) and population of Addis Ababa, 1975–2025",
+      "source": "Pesaresi et al. (2024). <a href=\"https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2390454\" target=\"_blank\" rel=\"external\">Advances on the Global Human Settlement Layer by joint assessment of Earth Observation and population survey data. International Journal of Digital Earth</a>, 17(1).",
+      "vhPerScene": 0.92,
+      "scenes": [
+        {
+          "id": "area",
+          "text": "Built-up area in Addis Ababa has more than tripled since the 1970s."
+        },
+        {
+          "id": "pop",
+          "text": "Population growth tracks the expansion of the built-up footprint."
+        }
+      ]
+    },
+    {
+      "id": "slum-regions",
+      "type": "vis",
+      "chapter": "07-slum-regions",
+      "graphic": "slum_regions",
+      "title": "The decline in slum population has slowed in recent years",
+      "subtitle": "",
+      "source": "<a href=\"https://data.unhabitat.org/\" target=\"_blank\" rel=\"external\">Urban Indicators Database</a>, UN Human Settlements Programme (UN-Habitat). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS\" target=\"_blank\" rel=\"external\">EN.POP.SLUM.UR.ZS</a>).",
+      "vhPerScene": 1.0,
+      "scenes": []
+    },
+    {
       "id": "slum-waffle",
       "type": "scroller",
+      "chapter": "08-slum-waffle",
+      "graphic": "slum_waffle",
       "title": "Globally, the number of people living in slums increased by 25% in just four years",
       "subtitle": "Total number of people living in slums",
       "source": "<a href=\"https://data.unhabitat.org/\" target=\"_blank\" rel=\"external\">Urban Indicators Database</a>, UN Human Settlements Programme (UN-Habitat). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS\" target=\"_blank\" rel=\"external\">EN.POP.SLUM.UR.ZS</a>).",
-      "vhPerScene": 0.9,
+      "vhPerScene": 0.92,
       "scenes": [
         {
           "id": "y2018",
@@ -88,16 +220,13 @@
     {
       "id": "buildup-income",
       "type": "vis",
+      "chapter": "09-buildup-area-income",
+      "graphic": "buildup_area_income",
       "title": "Built-up area will expand by more than 50 percent over the next 25 years",
       "subtitle": "",
-      "source": "Pesaresi et al. 2024. <a href=\"https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2390454\" target=\"_blank\" rel=\"external\">\"Advances on the Global Human Settlement Layer by Joint Assessment of Earth Observation and Population Survey Data.\" </a>, International Journal of Digital Earth 17(1)."
-    },
-    {
-      "id": "slum-regions",
-      "type": "vis",
-      "title": "The decline in slum population has slowed in recent years",
-      "subtitle": "",
-      "source": "<a href=\"https://data.unhabitat.org/\" target=\"_blank\" rel=\"external\">Urban Indicators Database</a>, UN Human Settlements Programme (UN-Habitat). Retrieved from World Development Indicators (<a href=\"https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS\" target=\"_blank\" rel=\"external\">EN.POP.SLUM.UR.ZS</a>)."
+      "source": "Pesaresi et al. 2024. <a href=\"https://www.tandfonline.com/doi/full/10.1080/17538947.2024.2390454\" target=\"_blank\" rel=\"external\">\"Advances on the Global Human Settlement Layer by Joint Assessment of Earth Observation and Population Survey Data.\" </a>, International Journal of Digital Earth 17(1).",
+      "vhPerScene": 1.0,
+      "scenes": []
     }
   ]
 }

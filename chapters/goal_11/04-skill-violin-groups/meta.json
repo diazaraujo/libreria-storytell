@@ -3,8 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "hand library rewrite \u00b7 urban quality v1 (not auto-bulk)",
+  "note": "ISCO labels \u00b7 occupation swarm \u00b7 urban v2",
   "graphic": "skill_violin_groups",
   "title": "Urban areas offer a variety of occupations",
-  "qualityPass": "urban-v1"
+  "qualityPass": "urban-v2"
 }

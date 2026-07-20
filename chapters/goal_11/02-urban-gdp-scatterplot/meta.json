@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "urbanization vs GDP \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "urb% \u00d7 GDP scatter income bands \u00b7 urban v2",
   "graphic": "urban_gdp_scatterplot",
-  "title": "Urban GDP scatter"
+  "title": "Urban GDP scatter",
+  "qualityPass": "urban-v2"
 }

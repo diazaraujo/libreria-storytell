@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "slum regional chart \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "regional slum share multi-line \u00b7 urban v1",
   "graphic": "slum_regions",
-  "title": "Slum population by region"
+  "title": "Slum population by region",
+  "qualityPass": "urban-v2"
 }

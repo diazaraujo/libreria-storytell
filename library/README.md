@@ -100,3 +100,6 @@ cd ~/atlas-replicas && python3 -m http.server 8787
 | urban-skill-swarm | `library/urban-skill-swarm/` | Skill/occupation specialization beeswarm U×R |
 | urban-pay-beeswarm | `library/urban-pay-beeswarm/` | Urban pay premium % |
 | slum-pop-waffle | `library/slum-pop-waffle/` | Dual-year slum population unit chart |
+
+| urban-pop-scroller | `library/urban-pop-scroller/` | Regional urban/rural population scroller |
+| city-points-map | `library/city-points-map/` | Canvas city network by population year |

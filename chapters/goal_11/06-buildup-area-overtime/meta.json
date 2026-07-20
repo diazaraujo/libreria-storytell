@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "built-up area series \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "Addis dual area+pop \u00b7 urban v2",
   "graphic": "buildup_area_overtime",
-  "title": "Built-up area over time"
+  "title": "Built-up area over time",
+  "qualityPass": "urban-v2"
 }

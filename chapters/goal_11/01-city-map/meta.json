@@ -3,7 +3,8 @@
   "approved": true,
   "approvedAt": "2026-07-20",
   "tier": "B",
-  "note": "city values chart/map proxy \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "city-points-map canvas \u00b7 pop by year 2000/2025/2050 \u00b7 urban v2",
   "graphic": "city_map",
-  "title": "City map values"
+  "title": "City map values",
+  "qualityPass": "urban-v2"
 }
