@@ -2,8 +2,10 @@
 
 Driver: Playwright + headless Chromium against the single-port server
 (`sostenibilidad-data-code/scripts/serve.py`, library mounted at `/ar`).
-Full machine-readable results: `axe-results.json` here and `results.json`
-in the session workspace. Chromium only; Safari/Firefox not exercised.
+Machine-readable axe results: `axe-results-prefix.json` (the run that
+surfaced the findings, before any fix) and `axe-results-postfix.json`
+(verification after the fixes below). Chromium only; Safari/Firefox not
+exercised.
 
 ## Coverage
 
@@ -31,11 +33,17 @@ in the session workspace. Chromium only; Safari/Firefox not exercised.
    "fossil subsidy scrollers render every scene through the shared renderer"
    reproduces the original error against the unfixed file. Tests: 37/37.
 2. `gallery-table.html` — the 918px table forced body-level horizontal
-   scroll at 768/344px (598px overflow at 344px). Wrapped in
-   `.table-scroll { overflow-x: auto }`. Overflow now 0.
-3. Landmarks: `gallery.html` had no `<main>` and the hub section sat outside
-   any landmark; `gallery-table.html` had no `<main>` and an empty `<th>`.
-   Fixed. axe on gallery.html: no violations.
+   scroll at 768/344px (598px overflow at 344px). Wrapped in a
+   `.table-scroll` container whose `overflow-x: auto` applies only below
+   980px, because an always-on scroll wrapper silently broke the table's
+   sticky column headers on desktop (caught by code review). Verified
+   post-fix: overflow 0 at 344px AND `th` still pinned (top 0) after a
+   2500px desktop scroll.
+3. Landmarks and contrast: `gallery.html` had no `<main>` and the hub
+   section sat outside any landmark; `gallery-table.html` had no `<main>`,
+   an empty `<th>`, and 8 serious contrast nodes (`#6a7781` at 4.25–4.43:1
+   in `.meta` and `th`, darkened to `#5b6873`). All fixed; post-fix axe on
+   both galleries: no violations (`axe-results-postfix.json`).
 
 ## Non-findings
 
@@ -48,7 +56,9 @@ in the session workspace. Chromium only; Safari/Firefox not exercised.
 - Chapter-level color contrast: axe flags ~3 serious contrast nodes per
   chapter page (secondary gray text inherited from the Atlas replica
   styling). Changing colors trades off pixel-perfect fidelity against
-  WCAG AA; needs a product decision, then a template-level fix.
+  WCAG AA; needs a product decision, then a template-level fix. (The
+  gallery pages' own contrast debt is already fixed — this item covers
+  the 164 generated chapter pages only.)
 - Chapter templates lack `<main>` landmarks (164 generated pages) — fix in
   the scaffold template and regenerate, not page by page.
 - Browser-zoom (200%) and screen-reader passes not performed.

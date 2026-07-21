@@ -8,13 +8,17 @@
   :root { font-family: system-ui, sans-serif; color: #111; }
   body { margin: 24px; background: #f5f6f8; }
   h1 { margin: 0 0 6px; font-size: 1.4rem; }
-  .meta { color: #6a7781; margin-bottom: 16px; }
+  .meta { color: #5b6873; margin-bottom: 16px; }
   input { padding: 8px 12px; width: min(420px, 100%); border: 1px solid #d0d5de; border-radius: 8px; }
-  .table-scroll { overflow-x: auto; margin-top: 14px; }
+  .table-scroll { margin-top: 14px; }
+  /* Below the table's natural width, trade sticky headers for horizontal
+     scroll; on desktop the wrapper must NOT scroll so th{sticky} pins to
+     the viewport. */
+  @media (max-width: 980px) { .table-scroll { overflow-x: auto; } }
   .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   table { width: 100%; border-collapse: collapse; background: #fff; font-size: 13px; }
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e8eaef; vertical-align: top; }
-  th { position: sticky; top: 0; background: #fafbfc; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #6a7781; }
+  th { position: sticky; top: 0; background: #fafbfc; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #5b6873; }
   code { font-size: 11px; background: #eef2f7; padding: 1px 5px; border-radius: 3px; }
   .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef2f7; }
   tr.status-ready .pill { background: #e5f6ea; color: #1b7a3a; }

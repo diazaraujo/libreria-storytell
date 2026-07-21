@@ -143,28 +143,41 @@ async function smokeRenderer(directory, sceneIndexes, dimensions = {}) {
   };
   global.AtlasSVG = fakeSvg();
   global.AtlasLoad = {
+    ...AtlasLoad,
     async csv(url) {
       return rows(directory, url.replace(/^\.\/data\//, ""));
-    },
-    validateContract(dataset, contract, label) {
-      return AtlasLoad.validateContract(dataset, contract, label);
-    },
-    algalBloomPoints(dataset, contract) {
-      return AtlasLoad.algalBloomPoints(dataset, contract);
     },
   };
 
   const rendered = [];
+  const bridged = [];
   try {
+    if (dimensions.sharedScripts) {
+      for (const relative of dimensions.sharedScripts) {
+        const shared = path.join(ROOT, relative);
+        delete require.cache[require.resolve(shared)];
+        require(shared);
+      }
+      for (const name of Object.keys(global.window)) {
+        if (!(name in global)) {
+          global[name] = global.window[name];
+          bridged.push(name);
+        }
+      }
+    }
     delete require.cache[require.resolve(absolute)];
     require(absolute);
     const replica = global.window.AtlasReplica;
     assert.equal(replica.ready, true);
     assert.equal(replica.isStub, false);
     for (const sceneIndex of sceneIndexes) {
+      const scene = config.scenes?.[sceneIndex];
+      if (dimensions.requireScenes) {
+        assert.ok(scene && scene.id, `${directory} scene ${sceneIndex} must exist with an id`);
+      }
       const chartEl = new FakeElement("div", clientWidth, clientHeight);
       let hidden = false;
-      await replica.render(config.scenes?.[sceneIndex] || null, {
+      await replica.render(scene || null, {
         chartEl,
         config,
         sceneIndex,
@@ -177,12 +190,23 @@ async function smokeRenderer(directory, sceneIndexes, dimensions = {}) {
       rendered.push(chartEl);
     }
   } finally {
+    bridged.forEach((name) => delete global[name]);
     for (const [name, value] of Object.entries(previous)) {
       if (value === undefined) delete global[name];
       else global[name] = value;
     }
   }
   return rendered;
+}
+
+function drawableNodes(node, tags = ["rect", "circle", "path"], found = []) {
+  for (const child of node.children || []) {
+    if (tags.includes(String(child.tagName).toLowerCase())) {
+      found.push(child);
+    }
+    drawableNodes(child, tags, found);
+  }
+  return found;
 }
 
 test("plastic discharge uses all valid longitude, latitude, and magnitude roles", () => {
@@ -746,60 +770,22 @@ test("semantic renderers execute every distinct scene branch with their real CSV
 
 test("fossil subsidy scrollers render every scene through the shared renderer", async () => {
   const cases = [
-    ["chapters/goal_12/00-intro-scroller", [0, 1, 2, 3, 4, 5]],
-    ["chapters/goal_12/04-intro-scroller-2", [0, 1, 2]],
+    ["chapters/goal_12/00-intro-scroller", 6],
+    ["chapters/goal_12/04-intro-scroller-2", 3],
   ];
-  const previous = {
-    window: global.window,
-    document: global.document,
-    AtlasLoad: global.AtlasLoad,
-    AtlasSVG: global.AtlasSVG,
-  };
-  try {
-    for (const [directory, sceneIndexes] of cases) {
-      const config = json(`${directory}/config.json`);
-      global.window = {};
-      global.document = {
-        createElement(tag) {
-          return new FakeElement(tag, 900, 440);
-        },
-      };
-      global.AtlasSVG = fakeSvg();
-      global.AtlasLoad = {
-        async csv(url) {
-          return rows(directory, url.replace(/^\.\/data\//, ""));
-        },
-        validateContract(dataset, contract, label) {
-          return AtlasLoad.validateContract(dataset, contract, label);
-        },
-        fossilSubsidies(dataset, contract) {
-          return AtlasLoad.fossilSubsidies(dataset, contract);
-        },
-      };
-      const sharedPath = path.join(ROOT, "shared/fossil-subsidies.js");
-      delete require.cache[require.resolve(sharedPath)];
-      require(sharedPath);
-      const shared = global.window.AtlasFossilSubsidies;
-      assert.ok(shared, "shared renderer must register on window");
-      for (const sceneIndex of sceneIndexes) {
-        const chartEl = new FakeElement("div", 900, 440);
-        let hidden = false;
-        await shared.render(config.scenes[sceneIndex], {
-          chartEl,
-          config,
-          sceneIndex,
-          hidePlaceholder() {
-            hidden = true;
-          },
-        });
-        assert.equal(hidden, true, `${directory} scene ${sceneIndex} should render`);
-        assert.ok(chartEl.children.length > 0, `${directory} scene ${sceneIndex} needs output`);
-      }
-    }
-  } finally {
-    for (const [name, value] of Object.entries(previous)) {
-      if (value === undefined) delete global[name];
-      else global[name] = value;
-    }
+  for (const [directory, expectedScenes] of cases) {
+    const config = json(`${directory}/config.json`);
+    assert.equal(config.scenes.length, expectedScenes,
+      `${directory} must keep its scene count; update this test when scenes change`);
+    const rendered = await smokeRenderer(
+      directory,
+      config.scenes.map((scene, index) => index),
+      { sharedScripts: ["shared/fossil-subsidies.js"], requireScenes: true }
+    );
+    rendered.forEach((chartEl, index) => {
+      const marks = drawableNodes(chartEl);
+      assert.ok(marks.length > 0,
+        `${directory} scene ${config.scenes[index].id} must draw at least one mark`);
+    });
   }
 });
