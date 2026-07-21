@@ -23,7 +23,7 @@
     {
       "type": "scene",
       "id": "cultivated",
-      "text": "One-third of the province is <span style=\"color: rgb(255,255,255); background-color: rgb(100,198,134);\">agricultural land</span>, and is central to Pakistan's food supply. The region produces staple cereals such as wheat and rice, industrial crops including cotton and sugarcane, as well as fruit (mango and guava) and horticultural crops (chili, tomato and sunflower).",
+      "text": "One-third of the province is <span style=\"color: rgb(4,1,16); background-color: rgb(100,198,134);\">agricultural land</span>, and is central to Pakistan's food supply. The region produces staple cereals such as wheat and rice, industrial crops including cotton and sugarcane, as well as fruit (mango and guava) and horticultural crops (chili, tomato and sunflower).",
       "translationPrefix": "goal_02.content.#38.scenes.#1"
     },
     {
@@ -41,7 +41,7 @@
     {
       "type": "scene",
       "id": "ndvi_difference",
-      "text": "As a result, [emphasis: the floods affected an estimated 33 million people], or roughly 13 percent of Pakistan’s population[reference: naturesr23] and approximately 57 percent of Sindh’s cropland (<span style=\"color: rgb(255,255,255); background-color: rgb(234,100,63);\">large negative NDVI difference compared to 2021</span>), that is 2.8 million out of 4.9 million hectares.",
+      "text": "As a result, [emphasis: the floods affected an estimated 33 million people], or roughly 13 percent of Pakistan’s population[reference: naturesr23] and approximately 57 percent of Sindh’s cropland (<span style=\"color: rgb(4,1,16); background-color: rgb(234,100,63);\">large negative NDVI difference compared to 2021</span>), that is 2.8 million out of 4.9 million hectares.",
       "translationPrefix": "goal_02.content.#38.scenes.#4"
     }
   ],

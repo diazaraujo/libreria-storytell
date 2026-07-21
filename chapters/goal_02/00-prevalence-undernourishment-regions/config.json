@@ -28,7 +28,7 @@
     {
       "type": "scene",
       "id": "regions15",
-      "text": "This pattern is true for nearly all regions. <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span>, <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span>, and <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Latin America & the Caribbean</span> all saw significant improvements in the first decade since 2000...",
+      "text": "This pattern is true for nearly all regions. <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>, <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">South Asia</span>, <span style=\"color: rgb(4,1,16); background-color: rgb(243,87,142);\">East Asia & Pacific</span>, and <span style=\"color: rgb(255,255,255); background-color: rgb(12,124,104);\">Latin America & the Caribbean</span> all saw significant improvements in the first decade since 2000...",
       "translationPrefix": "goal_02.content.#7.scenes.#2"
     },
     {
@@ -46,7 +46,7 @@
     {
       "type": "scene",
       "id": "stalled",
-      "text": "…while progress in <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span> has largely stalled.",
+      "text": "…while progress in <span style=\"color: rgb(4,1,16); background-color: rgb(243,87,142);\">East Asia & Pacific</span> has largely stalled.",
       "translationPrefix": "goal_02.content.#7.scenes.#5"
     },
     {

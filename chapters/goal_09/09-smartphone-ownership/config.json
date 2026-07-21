@@ -16,7 +16,7 @@
     {
       "type": "scene",
       "id": "smartphone_regions",
-      "text": "The share of people who[emphasis:  do not own a smartphone ]is high in poorer countries, reaching nearly[emphasis: <span style=\"color: rgb(255,255,255);\"> </span>][emphasis: 80 percent] in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low-income economies</span>] and about[emphasis: 50 percent] in[emphasis: <span style=\"background-color: rgb(219,149,215);\"> </span>][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">lower-middle-income economies</span>]<span style=\"background-color: rgb(219,149,215);\">.</span><span style=\"background-color: rgb(219,149,215);\"></span>",
+      "text": "The share of people who[emphasis:  do not own a smartphone ]is high in poorer countries, reaching nearly[emphasis: <span style=\"color: rgb(255,255,255);\"> </span>][emphasis: 80 percent] in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low-income economies</span>] and about[emphasis: 50 percent] in[emphasis: <span style=\"background-color: rgb(219,149,215);\"> </span>][emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">lower-middle-income economies</span>]<span style=\"background-color: rgb(219,149,215);\">.</span><span style=\"background-color: rgb(219,149,215);\"></span>",
       "translationPrefix": "goal_09.content.#51.scenes.#0"
     },
     {

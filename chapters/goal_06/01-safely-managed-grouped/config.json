@@ -21,7 +21,7 @@
     {
       "type": "scene",
       "id": "scene1",
-      "text": "While the proportion of urban dwellers with [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,128,198);\">safely managed</span>] drinking water remained stable at just over 80 percent between 2000 and 2024, the share of rural dwellers increased substantially, from about 40 percent to 60 percent over the same period. ",
+      "text": "While the proportion of urban dwellers with [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(0,128,198);\">safely managed</span>] drinking water remained stable at just over 80 percent between 2000 and 2024, the share of rural dwellers increased substantially, from about 40 percent to 60 percent over the same period. ",
       "translationPrefix": "goal_06.content.#10.scenes.#0"
     },
     {

@@ -31,7 +31,7 @@
     {
       "type": "scene",
       "id": "nightlights_cities",
-      "text": "The<span style=\"background-color: rgb(255,248,74);\">brightest clusters</span> correspond to major cities, such as Lagos, Abuja, and Port Harcourt, where grid access is widespread and power consumption relatively high. Vast rural and peri-urban areas show as <span style=\"color: rgb(255,255,255); background-color: rgb(147,131,90);\">weak</span> or <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark</span>, signaling either a lack of access or unreliable supply.",
+      "text": "The<span style=\"background-color: rgb(255,248,74);\">brightest clusters</span> correspond to major cities, such as Lagos, Abuja, and Port Harcourt, where grid access is widespread and power consumption relatively high. Vast rural and peri-urban areas show as <span style=\"color: rgb(4,1,16); background-color: rgb(147,131,90);\">weak</span> or <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark</span>, signaling either a lack of access or unreliable supply.",
       "translationPrefix": "goal_07.content.#24.scenes.#2"
     },
     {
@@ -49,7 +49,7 @@
     {
       "type": "scene",
       "id": "urban_dark",
-      "text": "Filtering out the brightest data points highlights that, even when connected to the grid, [emphasis: large urban and suburban zones may remain underserved, as nighttime lights appear ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(147,131,90);\">weak</span>][emphasis:  or ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark</span>][emphasis: .]",
+      "text": "Filtering out the brightest data points highlights that, even when connected to the grid, [emphasis: large urban and suburban zones may remain underserved, as nighttime lights appear ][emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(147,131,90);\">weak</span>][emphasis:  or ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark</span>][emphasis: .]",
       "translationPrefix": "goal_07.content.#24.scenes.#5"
     },
     {

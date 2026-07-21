@@ -47,7 +47,7 @@
     {
       "type": "scene",
       "id": "scene6_id",
-      "text": "In low-income countries, large populations of workers are engaged in <span style=\"color: rgb(255,255,255); background-color: rgb(160,168,156);\">subsistence farming</span>, and less than 20 percent of workers are highly exposed to AI.[footnote: These statistics depend on where the threshold for high exposure is set. Regardless of how it is defined, workers in low-income countries are notably less exposed to AI than their high-income country counterparts.]",
+      "text": "In low-income countries, large populations of workers are engaged in <span style=\"color: rgb(4,1,16); background-color: rgb(160,168,156);\">subsistence farming</span>, and less than 20 percent of workers are highly exposed to AI.[footnote: These statistics depend on where the threshold for high exposure is set. Regardless of how it is defined, workers in low-income countries are notably less exposed to AI than their high-income country counterparts.]",
       "translationPrefix": "goal_16.content.#39.scenes.#5"
     }
   ],

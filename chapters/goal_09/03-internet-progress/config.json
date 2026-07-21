@@ -20,7 +20,7 @@
     {
       "type": "scene",
       "id": "progress2 ",
-      "text": "Countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>]and the[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]had made much more progress by 2024 than expected based on their access levels in 2015. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Cambodia</span>], Internet access levels rose from less than 7 percent to close to 70 percent of the population. The [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]also made remarkable progress, from 30 percent of the population in 2015 to over 90 percent by 2024.",
+      "text": "Countries like [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Cambodia</span>]and the[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]had made much more progress by 2024 than expected based on their access levels in 2015. In [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Cambodia</span>], Internet access levels rose from less than 7 percent to close to 70 percent of the population. The [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Kyrgyz Republic</span>]also made remarkable progress, from 30 percent of the population in 2015 to over 90 percent by 2024.",
       "translationPrefix": "goal_09.content.#19.scenes.#1"
     }
   ],

@@ -32,13 +32,13 @@
     {
       "type": "scene",
       "id": "coverage_5G",
-      "text": "5G is widely available in many high-income economies. In some upper- and lower-middle-income countries like [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">China</span>], [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">India</span>], and [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">Thailand</span>][emphasis: , ]over 80 percent of people are covered by 5G networks.",
+      "text": "5G is widely available in many high-income economies. In some upper- and lower-middle-income countries like [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(115,175,72);\">China</span>], [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">India</span>], and [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(115,175,72);\">Thailand</span>][emphasis: , ]over 80 percent of people are covered by 5G networks.",
       "translationPrefix": "goal_09.content.#34.scenes.#2"
     },
     {
       "type": "scene",
       "id": "coverage_5G",
-      "text": "In Sub-Saharan Africa, the deployment of 5G remains largely confined to a few high-density urban areas, and only [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">Mauritius</span>]and [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">South Africa</span>]have over 50 percent coverage.",
+      "text": "In Sub-Saharan Africa, the deployment of 5G remains largely confined to a few high-density urban areas, and only [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(115,175,72);\">Mauritius</span>]and [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(115,175,72);\">South Africa</span>]have over 50 percent coverage.",
       "translationPrefix": "goal_09.content.#34.scenes.#3"
     }
   ],

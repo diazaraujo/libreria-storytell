@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Re-apply templates/shell.html to every chapter scaffold (keeps main.js + data)."""
+"""Re-apply templates/shell.html to every chapter scaffold (keeps main.js + data).
+
+WARNING: this OVERWRITES every chapter's index.html with a fresh render of
+the template. As of 2026-07-21 all 164 shells carry per-chapter
+customizations (extra stylesheets, mapbox includes, source lines) that a
+blanket refresh destroys. Before running, diff a rendered shell against the
+existing one; for template-wide tweaks prefer a surgical patch across
+chapters instead of a full re-render."""
 
 from __future__ import annotations
 

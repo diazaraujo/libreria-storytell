@@ -34,7 +34,7 @@
     {
       "type": "scene",
       "id": "stunting",
-      "text": "Around [emphasis: 207 million children] live in economies with no recent data on child growth, which are needed to measure malnutrition. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">East Asia & Pacific</span>] and in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], stunting data—the primary measure of whether young children are adequately nourished—are missing for more than half of all children under five.",
+      "text": "Around [emphasis: 207 million children] live in economies with no recent data on child growth, which are needed to measure malnutrition. In [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(243,87,142);\">East Asia & Pacific</span>] and in [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], stunting data—the primary measure of whether young children are adequately nourished—are missing for more than half of all children under five.",
       "translationPrefix": "goal_17.content.#17.scenes.#2"
     },
     {

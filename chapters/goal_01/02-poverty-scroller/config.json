@@ -10,7 +10,7 @@
   "data": "1W-0JLU1wkyV-G2Z0xmSxJVKLFV1dE1mnfiH1Ns4xQ54",
   "yAxisTitle": "Extreme poverty rate",
   "xAxisTitle": "Years since reaching 50%",
-  "skip typical_path": "All these countries moved faster than the typical speed of progress, which was around 70 years to go from 50 percent to 10 percent poverty. <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">Korea</span>, which achieved the feat in 11 years,  moved at six times the typical speed.",
+  "skip typical_path": "All these countries moved faster than the typical speed of progress, which was around 70 years to go from 50 percent to 10 percent poverty. <span style=\"color: rgb(4,1,16); background-color: rgb(243,87,142);\">Korea</span>, which achieved the feat in 11 years,  moved at six times the typical speed.",
   "keyFact": "43 countries",
   "keyFactLabel": "with high poverty are making little progress or reversing past gains",
   "indicator_360": "WB_WDI_SI_POV_DDAY",
@@ -18,7 +18,7 @@
     {
       "type": "scene",
       "id": "korea",
-      "text": "Since the aftermath of the Korean War, <span style=\"color: rgb(255,255,255); background-color: rgb(243,87,142);\">Korea</span> evolved from being heavily burdened by extreme poverty to having virtually eliminated it. In [emphasis: little more than a decade], extreme poverty fell [emphasis: from 50 percent to 10 percent]. ",
+      "text": "Since the aftermath of the Korean War, <span style=\"color: rgb(4,1,16); background-color: rgb(243,87,142);\">Korea</span> evolved from being heavily burdened by extreme poverty to having virtually eliminated it. In [emphasis: little more than a decade], extreme poverty fell [emphasis: from 50 percent to 10 percent]. ",
       "translationPrefix": "goal_01.content.#9.scenes.#0"
     },
     {
@@ -48,13 +48,13 @@
     {
       "type": "scene",
       "id": "on_track",
-      "text": "Some countries have yet to achieve low poverty rates, but are on a promising path. <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Rwanda</span>, for example, is estimated to have reduced extreme poverty from 90 percent in the aftermath of the civil war in 1994 to less than 40 percent today, though data limitations complicate precise comparisons.[footnote: Poverty rates for Rwanda are not comparable between 2016/17 and 2023/24. The trend noted here bridges this gap using growth from national accounts, but ongoing empirical work may suggest different rates of progress over this period.] ",
+      "text": "Some countries have yet to achieve low poverty rates, but are on a promising path. <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Rwanda</span>, for example, is estimated to have reduced extreme poverty from 90 percent in the aftermath of the civil war in 1994 to less than 40 percent today, though data limitations complicate precise comparisons.[footnote: Poverty rates for Rwanda are not comparable between 2016/17 and 2023/24. The trend noted here bridges this gap using growth from national accounts, but ongoing empirical work may suggest different rates of progress over this period.] ",
       "translationPrefix": "goal_01.content.#9.scenes.#5"
     },
     {
       "type": "scene",
       "id": "on_track_projections",
-      "text": "If  it  continues this pace of progress,  <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Rwanda</span> will reduce extreme poverty to less than 10 percent by 2050.",
+      "text": "If  it  continues this pace of progress,  <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Rwanda</span> will reduce extreme poverty to less than 10 percent by 2050.",
       "translationPrefix": "goal_01.content.#9.scenes.#6"
     },
     {

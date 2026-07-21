@@ -23,13 +23,13 @@
     {
       "type": "scene",
       "id": "tile_map",
-      "text": "These success stories are concentrated in <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">North America</span> and <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Europe & Central Asia</span>, where food insecurity is rare.",
+      "text": "These success stories are concentrated in <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">North America</span> and <span style=\"color: rgb(255,255,255); background-color: rgb(170,0,0);\">Europe & Central Asia</span>, where food insecurity is rare.",
       "translationPrefix": "goal_02.content.#12.scenes.#1"
     },
     {
       "type": "scene",
       "id": "tile_map",
-      "text": "In contrast, the countries facing the steepest challenges in reaching the target are largely in <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>.",
+      "text": "In contrast, the countries facing the steepest challenges in reaching the target are largely in <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>.",
       "translationPrefix": "goal_02.content.#12.scenes.#2"
     },
     {

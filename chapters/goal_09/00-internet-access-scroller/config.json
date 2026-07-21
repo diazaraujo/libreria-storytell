@@ -29,7 +29,7 @@
     {
       "type": "scene",
       "id": "regions_groups",
-      "text": "Basic Internet access is lowest in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], where only around  one-third  of the population is online.",
+      "text": "Basic Internet access is lowest in [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(255,152,0);\">Sub-Saharan Africa</span>], where only around  one-third  of the population is online.",
       "translationPrefix": "goal_09.content.#6.scenes.#2"
     }
   ],
