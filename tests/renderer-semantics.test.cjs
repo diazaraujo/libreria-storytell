@@ -743,3 +743,63 @@ test("semantic renderers execute every distinct scene branch with their real CSV
     await smokeRenderer(directory, sceneIndexes);
   }
 });
+
+test("fossil subsidy scrollers render every scene through the shared renderer", async () => {
+  const cases = [
+    ["chapters/goal_12/00-intro-scroller", [0, 1, 2, 3, 4, 5]],
+    ["chapters/goal_12/04-intro-scroller-2", [0, 1, 2]],
+  ];
+  const previous = {
+    window: global.window,
+    document: global.document,
+    AtlasLoad: global.AtlasLoad,
+    AtlasSVG: global.AtlasSVG,
+  };
+  try {
+    for (const [directory, sceneIndexes] of cases) {
+      const config = json(`${directory}/config.json`);
+      global.window = {};
+      global.document = {
+        createElement(tag) {
+          return new FakeElement(tag, 900, 440);
+        },
+      };
+      global.AtlasSVG = fakeSvg();
+      global.AtlasLoad = {
+        async csv(url) {
+          return rows(directory, url.replace(/^\.\/data\//, ""));
+        },
+        validateContract(dataset, contract, label) {
+          return AtlasLoad.validateContract(dataset, contract, label);
+        },
+        fossilSubsidies(dataset, contract) {
+          return AtlasLoad.fossilSubsidies(dataset, contract);
+        },
+      };
+      const sharedPath = path.join(ROOT, "shared/fossil-subsidies.js");
+      delete require.cache[require.resolve(sharedPath)];
+      require(sharedPath);
+      const shared = global.window.AtlasFossilSubsidies;
+      assert.ok(shared, "shared renderer must register on window");
+      for (const sceneIndex of sceneIndexes) {
+        const chartEl = new FakeElement("div", 900, 440);
+        let hidden = false;
+        await shared.render(config.scenes[sceneIndex], {
+          chartEl,
+          config,
+          sceneIndex,
+          hidePlaceholder() {
+            hidden = true;
+          },
+        });
+        assert.equal(hidden, true, `${directory} scene ${sceneIndex} should render`);
+        assert.ok(chartEl.children.length > 0, `${directory} scene ${sceneIndex} needs output`);
+      }
+    }
+  } finally {
+    for (const [name, value] of Object.entries(previous)) {
+      if (value === undefined) delete global[name];
+      else global[name] = value;
+    }
+  }
+});

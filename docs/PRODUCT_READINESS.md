@@ -35,13 +35,21 @@ a real browser.
 
 ## Open release gates
 
-1. Rotate the credential identified in the companion data repository and
-   decide how to sanitize its Git history. This was intentionally excluded
-   from the current implementation.
-2. Complete real-browser QA at desktop, tablet, and mobile sizes, including
-   keyboard navigation, focus visibility, landmarks, contrast, zoom, reduced
-   motion, loading, empty, and error states. Save screenshots and findings.
-3. Run CI from clean clones and deploy a reproducible staging environment.
+1. Decide history sanitization for the credential in the companion data
+   repository (`sostenibilidad-data-code`). Resolved 2026-07-21 at `HEAD`:
+   it was a third-party Global Forest Watch `x-api-key` embedded in an
+   upstream CSV's download URLs; it has been stripped there and is not ours
+   to rotate. Only the history-rewrite decision remains, in that repository.
+2. Real-browser QA: done 2026-07-21 in headless Chromium (58 renders at
+   1440/768/344px, keyboard, reduced motion, blocked-CSV error states,
+   axe-core). Three defects found and fixed with in-browser verification —
+   see `docs/qa/2026-07-21/QA_VISUAL.md` and screenshots. Still open:
+   chapter-level color contrast (needs a fidelity-vs-WCAG product
+   decision), `<main>` landmarks in the chapter template, browser-zoom and
+   screen-reader passes, Safari/Firefox.
+3. CI from clean clones: verified 2026-07-21 (fresh GitHub clones of both
+   repos pass every documented check; see the QA report). Still open:
+   a reproducible staging environment.
 4. Add production observability: client errors, availability, performance
    budgets, and alert ownership.
 5. Complete editorial/source review for catalog entries still marked unknown

@@ -25,22 +25,26 @@
 
   function renderColumns(chartEl, rows, contract, sceneId) {
     const fields = AtlasLoad.validateContract(rows, contract, "fossil subsidy time series");
+    let unit = "USD billions";
+    let color = COLORS.subsidy;
+    if (sceneId === "column_pct_gdp") {
+      unit = "% of GDP";
+    } else if (sceneId === "column_total_externalities") {
+      color = COLORS.external;
+    } else if (sceneId === "column_pct_externalities") {
+      unit = "% of total damages";
+      color = COLORS.external;
+    }
     const data = rows.map((row) => {
       const subsidy = Number(row[fields.subsidy]);
       const implicit = Number(row[fields.implicit]);
       let value = subsidy;
-      let unit = "USD billions";
-      let color = COLORS.subsidy;
       if (sceneId === "column_pct_gdp") {
         value = Number(row[fields.percentGdp]);
-        unit = "% of GDP";
       } else if (sceneId === "column_total_externalities") {
         value = implicit;
-        color = COLORS.external;
       } else if (sceneId === "column_pct_externalities") {
         value = 100 * implicit / (implicit + subsidy);
-        unit = "% of total damages";
-        color = COLORS.external;
       }
       return { year: Number(row[fields.year]), value };
     }).filter((row) => Number.isFinite(row.year) && Number.isFinite(row.value));
