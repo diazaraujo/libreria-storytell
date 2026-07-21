@@ -20,7 +20,8 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   },
   "scenes": []
 }

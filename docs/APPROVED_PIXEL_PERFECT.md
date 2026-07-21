@@ -1,12 +1,12 @@
 # Approved pixel-perfect (2026-07-20)
 
-**185 items** marked `fidelity: pixel-perfect` / `approved: true`.
+**185 registros** en el registry; **103 aprobados pixel-perfect**.
 
-Hand-crafted, reverse-engineered, bulk CSV binds, or hardened image/map panels for full gallery coverage. Heroes Tier A; story graphics match chart type/scenes/colors where RE'd. Bulk beeswarm/waffle and image panels included for 164/164 chapter completeness (see notes per item).
+Para capítulos, `chapters/**/config.json#_meta` es la fuente canónica: 82 están aprobados pixel-perfect, 79 son `tier-B-bulk` no aprobados y 3 permanecen `unverified`. Los otros 21 aprobados son heroes/librerías/artefactos no-capítulo. Las secciones inferiores conservan todos los candidatos del registry; consulta `approved` y `fidelity` en el JSON para el estado vigente de cada uno.
 
 ## Coverage
 
-- **164/164** chapter `index.html` paths approved (full gallery).
+- **164/164** rutas de capítulo registradas; **164/164** tienen `status: ready` y **82/164** aprobación explícita.
 - Includes Tier A heroes, hand Tier B stories, climate/scroller variants, auto bulk beeswarm/waffle, and hardened image/map panels.
 - Per-item `note` records whether the graphic is hand, bulk, scroller variant, or image panel.
 

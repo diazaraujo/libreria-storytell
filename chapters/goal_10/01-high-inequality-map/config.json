@@ -1,18 +1,31 @@
 {
   "type": "vis",
   "graphic": "high_inequality_map",
-  "title": "Economies with high inequality are concentrated in Latin America and Sub-Saharan Africa",
-  "subtitle": "The map shows the Gini index of each economy using the most recent household survey data",
+  "title": "Economies with high inequality appear first in this ranked tile view",
+  "subtitle": "Latest Gini category and value for each economy; equal-area tiles are not a geographic map",
   "high": "High (Gini > 40)",
   "moderate": "Moderate (Gini 30–40)",
   "low": "Low (Gini < 30)",
   "nodata": "No data",
   "source": "<a href=\"https://pip.worldbank.org/key-inequality-indicators\" target=\"_blank\" rel=\"external\">Key Inequality Indicators, Poverty and Inequality Platform</a> (version March 2026).  ",
-  "visdescription": "The map shows the levels of inequality across the world.  Today, economies with high inequality (Gini index > 40) are concentrated in Latin America & the Caribbean and Sub-Saharan Africa.",
+  "visdescription": "A ranked equal-area tile grid groups economies into high, moderate, and low Gini categories. It does not encode geographic location or regional concentration.",
   "visSize": "fullScreen",
   "data_download": "10_data_high_inequality_countries.csv",
   "data": "1EcXKhasvLrhy7IM4mVV2c2DNisBhojrllHZcQv6znrA",
   "translationPrefix": "goal_10.content.#8",
+  "scenes": [],
+  "dataContract": {
+    "kind": "categorical-map",
+    "file": "10_data_high_inequality_countries.csv",
+    "columns": {
+      "code": "iso3c",
+      "value": "gini",
+      "category": "inequality"
+    }
+  },
+  "limitations": {
+    "geometry": "The bundled CSV has ISO codes, Gini values, and categories but no country geometry or region field. The renderer is a ranked tile grid and cannot substantiate the title's geographic-concentration claim on its own."
+  },
   "_meta": {
     "index": 77,
     "chapterId": "10",
@@ -21,7 +34,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

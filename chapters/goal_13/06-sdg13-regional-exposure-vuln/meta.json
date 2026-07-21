@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "exposure\u00d7vulnerability scatter \u00b7 region colors \u00b7 climate quality v1",
+  "note": "exposure×vulnerability scatter · region colors · climate quality v1",
   "graphic": "sdg13_regional_exposure_vuln",
   "title": "Climate readiness vs vulnerability",
   "qualityPass": "climate-v1"

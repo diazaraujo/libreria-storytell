@@ -12,6 +12,23 @@
   "data_download": "14_data_nitrogen_phosphorus.csv",
   "data": "1vRHTflG8CaE3U0Gh-0z2_MMAnjJ6pIRb6HA9W8M3IHk",
   "translationPrefix": "goal_14.content.#31",
+  "scenes": [],
+  "dataContract": {
+    "kind": "multi-series",
+    "file": "14_data_nitrogen_phosphorus.csv",
+    "columns": {
+      "category": "period",
+      "nitrogen": "nitrogen",
+      "phosphorus": "phosphorus"
+    },
+    "projection": {
+      "observedThrough": 2010,
+      "year": 2050
+    }
+  },
+  "limitations": {
+    "projection": "The 2050 values in the 2013 source are projections, not observations. The renderer separates the 2010–2050 segment with a dashed line and hollow markers."
+  },
   "_meta": {
     "index": 118,
     "chapterId": "14",
@@ -20,7 +37,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

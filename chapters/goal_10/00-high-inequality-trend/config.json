@@ -36,6 +36,8 @@
     "dir": "chapters/goal_10/00-high-inequality-trend",
     "status": "ready",
     "template": "scroller",
-    "reference": null
+    "reference": null,
+    "fidelity": "unverified",
+    "approved": false
   }
 }

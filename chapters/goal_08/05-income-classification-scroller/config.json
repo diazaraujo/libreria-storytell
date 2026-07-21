@@ -22,7 +22,7 @@
     {
       "type": "scene",
       "id": "income_1990",
-      "text": "The threshold for being a low income country was 610 USD in 1990. Countries with GDP per capita below this level were classified as low income. 49 countries belonged to the group of <span data-color-id=\"LIC\" class=\"LIC\">low-income countries</span>. That corresponded to 3 out of every 10 countries.",
+      "text": "The threshold for being a low income country was 610 USD in 1990. In the bundled classification snapshot, 51 countries belonged to the group of <span data-color-id=\"LIC\" class=\"LIC\">low-income countries</span>.",
       "translationPrefix": "goal_08.content.#16.scenes.#0"
     },
     {
@@ -40,7 +40,7 @@
     {
       "type": "scene",
       "id": "escapees",
-      "text": "28 countries managed to escape <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low income</span> - Guyana even making it to <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">high income</span>.",
+      "text": "The bundled snapshot shows 30 countries moving from <span style=\"color: rgb(255,255,255); background-color: rgb(59,77,166);\">low income</span> to a classified higher-income group; Guyana reaches <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">high income</span>. Ethiopia's change to INX is not counted as an escape because INX means no classification.",
       "translationPrefix": "goal_08.content.#16.scenes.#3"
     },
     {
@@ -52,11 +52,26 @@
     {
       "type": "scene",
       "id": "gdp_growth",
-      "text": "The countries currently classified as low income have had average GDP per capita growth rates of 0.47 percent per year since 1981. A recent Global Economic Prospects report by the World Bank (January 2025) finds that their outlook is bleak. Based on 2010-2019 growth rates only six of the current 25 LICs are on a path of becoming middle-income even by 2050.",
+      "text": "The bundled file contains average GDP per capita growth for 2015–2024 for 19 of the 25 countries currently classified as low income. The chart omits the six missing growth values and does not reproduce a since-1981 average or a 2050 projection.",
       "translationPrefix": "goal_08.content.#16.scenes.#5"
     }
   ],
   "translationPrefix": "goal_08.content.#16",
+  "dataContract": {
+    "kind": "category-transition",
+    "file": "08_data_income_levels.csv",
+    "columns": {
+      "code": "iso3c",
+      "currentGroup": "income_level_iso3c_25",
+      "pastGroup": "income_level_iso3c_90",
+      "growth": "average_gdp_growth_15_24"
+    }
+  },
+  "limitations": {
+    "snapshot_counts": "The bundled snapshot yields 51 low-income classifications in 1990 and 30 classified moves from LIC to LMC, UMC, or HIC. Earlier upstream copy cited 49 and 28; this chapter copy and renderer use the bundled snapshot instead of forcing those historical counts.",
+    "unclassified_transition": "Ethiopia changes from LIC to INX in the bundled fields. INX means no classification, so it is not counted as having escaped low income.",
+    "growth_period": "The bundled growth field covers 2015–2024 and is available for 19 of the 25 current LIC entries; it cannot reproduce the prose's since-1981 average or 2050 projection."
+  },
   "_meta": {
     "index": 63,
     "chapterId": "08",
@@ -65,6 +80,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

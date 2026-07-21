@@ -63,6 +63,29 @@
     }
   ],
   "translationPrefix": "goal_14.content.#11",
+  "dataContract": {
+    "kind": "paired-bars",
+    "file": "14_data_plastic_leakage.csv",
+    "columns": {
+      "category": "category",
+      "startValue": "value19",
+      "endValue": "value60"
+    },
+    "aggregates": {
+      "aquatic_leakage": [
+        "sinking_land",
+        "floating_rivers",
+        "coasts_to_oceans"
+      ],
+      "transport_to_oceans": [
+        "rivers_to_oceans",
+        "coasts_to_oceans"
+      ]
+    }
+  },
+  "limitations": {
+    "hierarchy": "River transport is a downstream subset of floating river leakage. Aquatic leakage therefore sums sinking, floating-river, and direct coastal leakage; transport to oceans separately sums river transport and coastal leakage."
+  },
   "_meta": {
     "index": 112,
     "chapterId": "14",
@@ -71,6 +94,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

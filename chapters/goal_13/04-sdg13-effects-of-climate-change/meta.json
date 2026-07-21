@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "multi-hazard ranked bars + global callouts \u00b7 climate quality v1",
+  "note": "multi-hazard ranked bars + global callouts · climate quality v1",
   "graphic": "sdg13_effects_of_climate_change",
   "title": "Effects of climate change",
   "qualityPass": "climate-v1"

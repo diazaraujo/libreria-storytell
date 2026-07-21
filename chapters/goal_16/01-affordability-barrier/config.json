@@ -16,6 +16,23 @@
   "legendLabelCostOfData": "Cost of data-only 5GB mobile package",
   "legendLabelRemainingBudget": "Remaining household budget,  after food consumption",
   "translationPrefix": "goal_16.content.#14",
+  "scenes": [],
+  "dataContract": {
+    "kind": "derived-bars",
+    "file": "affordability_incgroup.csv",
+    "columns": {
+      "category": "incgroup",
+      "dataShare": "datashare",
+      "foodShare": "foodshare"
+    },
+    "derivations": {
+      "remainingBudgetShare": "100 - foodShare",
+      "dataAsNonFoodShare": "dataShare / remainingBudgetShare * 100"
+    }
+  },
+  "limitations": {
+    "denominators": "datashare and foodshare are shares of the total household budget. The headline measure is derived as datashare divided by the budget remaining after food; the renderer labels both denominators explicitly."
+  },
   "_meta": {
     "index": 135,
     "chapterId": "16",
@@ -24,7 +41,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

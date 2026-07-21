@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "scatter Tier B hand \u00b7 real CSV",
+  "note": "scatter Tier B hand · real CSV",
   "graphic": "shared_prosperity_scatter",
   "title": "Shared prosperity scatter"
 }

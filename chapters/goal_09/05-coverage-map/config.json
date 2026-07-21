@@ -50,6 +50,8 @@
     "dir": "chapters/goal_09/05-coverage-map",
     "status": "ready",
     "template": "scroller",
-    "reference": null
+    "reference": null,
+    "fidelity": "unverified",
+    "approved": false
   }
 }

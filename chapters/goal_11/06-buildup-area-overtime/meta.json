@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "Addis dual area+pop \u00b7 urban v2",
+  "note": "Addis dual area+pop · urban v2",
   "graphic": "buildup_area_overtime",
   "title": "Built-up area over time",
   "qualityPass": "urban-v2"

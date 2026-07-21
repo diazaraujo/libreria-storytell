@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "ChatGPT adoption \u00b7 real CSV \u00b7 digital suite \u00b7 Tier B hand (not bulk generator)",
+  "note": "ChatGPT adoption · real CSV · digital suite · Tier B hand (not bulk generator)",
   "graphic": "ai_adoption",
   "title": "AI adoption"
 }

@@ -52,6 +52,31 @@
     }
   ],
   "translationPrefix": "goal_16.content.#39",
+  "dataContract": {
+    "kind": "weighted-beeswarm",
+    "file": "beeswarm_updated.csv",
+    "limitations": {
+      "scene4": "The bundled file has no United States employment-share column; the renderer discloses and uses the high-income aggregate as a proxy."
+    },
+    "columns": {
+      "code": "isco08",
+      "occupation": "isco08_name",
+      "definition": "isco08_definition",
+      "scores": {
+        "glo": "AIOE_glo",
+        "hic": "AIOE_hic",
+        "mic": "AIOE_mic",
+        "lic": "AIOE_lic"
+      },
+      "shares": {
+        "glo": "share_glo",
+        "hic": "share_hic",
+        "mic": "share_mic",
+        "lic": "share_lic"
+      },
+      "icon": "icon"
+    }
+  },
   "_meta": {
     "index": 138,
     "chapterId": "16",
@@ -60,6 +85,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

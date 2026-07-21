@@ -6,11 +6,14 @@ window.AtlasReplica = {
   async render(scene, ctx) {
     const { chartEl, hidePlaceholder, sceneIndex, config } = ctx;
     hidePlaceholder();
-    const rows = await AtlasLoad.csv("./data/conditional.csv");
+    const datasetKey = scene?.id || config.scenes?.[sceneIndex]?.id || "existence";
+    const dataset = config.dataContract.datasets[datasetKey];
+    if (!dataset) throw new Error(`Unknown reforms scene: ${datasetKey}`);
+    const rows = await AtlasLoad.csv(`./data/${dataset.file}`);
     const NAMES = window.ATLAS_COUNTRY_NAMES || {};
-    const headers = rows[0] ? Object.keys(rows[0]) : [];
-    const catKey = headers.find(h => /iso3c|country|name|region|label|group|code/i.test(h)) || headers[0];
-    const valKey = headers.find(h => h !== catKey && rows.some(r => Number.isFinite(+r[h]))) || headers[1];
+    const fields = AtlasLoad.validateContract(rows, dataset, config.graphic);
+    const catKey = fields.category;
+    const valKey = fields.value;
     let data = rows.map(r => ({
       cat: NAMES[r[catKey]] || r[catKey],
       raw: r[catKey],

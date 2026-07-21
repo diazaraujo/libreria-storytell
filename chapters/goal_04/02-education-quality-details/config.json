@@ -13,6 +13,20 @@
   "data": "1K4YTrY9-VyFnwz9ArraOKtCM8jmYiTczREV4Lcu7dCc",
   "indicator_360": "HD_HCIP_LAYS",
   "translationPrefix": "goal_04.content.#14",
+  "scenes": [],
+  "dataContract": {
+    "kind": "grouped-bars",
+    "file": "04_data_education_quality_details.csv",
+    "columns": {
+      "code": "iso3c",
+      "category": "country",
+      "region": "region",
+      "income": "income",
+      "gender": "gender",
+      "measure": "type",
+      "value": "value"
+    }
+  },
   "_meta": {
     "index": 25,
     "chapterId": "04",
@@ -21,7 +35,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

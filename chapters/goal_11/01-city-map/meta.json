@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "city-points-map canvas \u00b7 pop by year 2000/2025/2050 \u00b7 urban v2",
+  "note": "city-points-map canvas · pop by year 2000/2025/2050 · urban v2",
   "graphic": "city_map",
   "title": "City map values",
   "qualityPass": "urban-v2"

@@ -10,6 +10,11 @@
 | Total | **164** |
 | Scroller | 72 |
 | Vis | 92 |
+| Status ready | **164** |
+| Fidelity pixel-perfect | **82** |
+| Fidelity tier-B-bulk | **79** |
+| Fidelity unverified | **3** |
+| Approved | **82** |
 | **A — animated** | **7** |
 | B — approved static | 31 |
 | C — scroller shell | 50 |
@@ -23,6 +28,8 @@
 | B-approved-static | Meta PP; re-QA |
 | C-scroller-shell | Scroller genérico |
 | D-bulk | Scaffold / vis simple |
+
+Los tiers editoriales de este documento no sustituyen los campos de calidad. La fuente canónica de `status`, `fidelity` y `approved` es `chapters/**/config.json#_meta`; `python3 scripts/sync_quality.py --write` actualiza los inventarios derivados.
 
 ## Story en curso
 
@@ -323,4 +330,3 @@
 ```bash
 python3 scripts/build-inventory.py
 ```
-

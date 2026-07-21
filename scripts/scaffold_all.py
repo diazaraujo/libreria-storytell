@@ -10,8 +10,8 @@ For each item:
     data/        — copied CSVs when data_download matches
     README.md    — short notes
 
-Idempotent: re-running updates config/index shell but does not overwrite
-custom main.js unless --force-main.
+Safe by default: existing config, shell, README, data, and main.js files are
+preserved. Explicit --write-* / --force-* flags opt into replacement.
 """
 
 from __future__ import annotations
@@ -86,6 +86,23 @@ def strip_html_tags_light(s: str) -> str:
     return s.replace("&nbsp;", " ").strip()
 
 
+def family_of(graphic: str, typ: str) -> str:
+    name = (graphic or "").lower()
+    if "beeswarm" in name or name == "spi_scroller":
+        return "beeswarm"
+    if "waffle" in name:
+        return "waffle"
+    if "scatter" in name:
+        return "scatter"
+    if "map" in name or "hexmap" in name:
+        return "map"
+    if name == "image" or name.startswith("image"):
+        return "image"
+    if "line" in name or "trend" in name or "draw_your" in name:
+        return "line"
+    return "scroller" if typ == "scroller" else "vis"
+
+
 def fill_shell(item: dict) -> str:
     return (
         TEMPLATE.replace("{{TITLE}}", item.get("title") or item["graphic"])
@@ -95,10 +112,13 @@ def fill_shell(item: dict) -> str:
         .replace("{{TYPE}}", item.get("type") or "")
         .replace("{{STATUS}}", item.get("status") or "scaffold")
         .replace("{{SCENE_COUNT}}", str(item.get("sceneCount") or 0))
+        .replace("{{FAMILY}}", family_of(item.get("graphic"), item.get("type")))
     )
 
 
-def copy_data_files(atlas: Path, item: dict, dest_data: Path) -> list[str]:
+def copy_data_files(
+    atlas: Path, item: dict, dest_data: Path, force_data: bool = False
+) -> list[str]:
     copied = []
     dd = item.get("data_download")
     data_root = atlas / "data"
@@ -110,7 +130,8 @@ def copy_data_files(atlas: Path, item: dict, dest_data: Path) -> list[str]:
             for p in data_root.rglob(f"{ref}.json"):
                 dest_data.mkdir(parents=True, exist_ok=True)
                 target = dest_data / p.name
-                shutil.copy2(p, target)
+                if force_data or not target.exists():
+                    shutil.copy2(p, target)
                 copied.append(p.name)
         return copied
 
@@ -124,7 +145,8 @@ def copy_data_files(atlas: Path, item: dict, dest_data: Path) -> list[str]:
         if found:
             dest_data.mkdir(parents=True, exist_ok=True)
             target = dest_data / found[0].name
-            shutil.copy2(found[0], target)
+            if force_data or not target.exists():
+                shutil.copy2(found[0], target)
             copied.append(found[0].name)
     return copied
 
@@ -168,10 +190,34 @@ def write_readme(item: dict, copied: list[str]) -> str:
 """
 
 
+def merge_existing_config(config_path: Path, generated: dict) -> dict:
+    """Refresh upstream fields while preserving repository-local extensions.
+
+    ``dataContract`` and future local top-level keys do not exist in the source
+    inventory.  An explicit metadata refresh must not silently delete them.
+    Source-backed keys and canonical ``_meta`` still come from *generated*.
+    """
+
+    if not config_path.exists():
+        return generated
+    try:
+        existing = json.loads(config_path.read_text())
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            f"Refusing to replace invalid existing config: {config_path}: {exc}"
+        ) from exc
+    if not isinstance(existing, dict):
+        raise RuntimeError(f"Refusing to replace non-object config: {config_path}")
+    return {**existing, **generated, "_meta": generated["_meta"]}
+
+
 def scaffold_item(
     atlas: Path,
     item: dict,
     force_main: bool = False,
+    force_data: bool = False,
+    write_metadata: bool = False,
+    write_shells: bool = False,
 ) -> Path:
     dest = ROOT / item["dir"]
     dest.mkdir(parents=True, exist_ok=True)
@@ -184,17 +230,24 @@ def scaffold_item(
         "chapterTitle": item["chapterTitle"],
         "dir": item["dir"],
         "status": item["status"],
+        "fidelity": item.get("fidelity", "unverified"),
+        "approved": item.get("approved") is True,
         "template": item["template"],
         "reference": item.get("reference"),
     }
     # ensure scenes present
     if "scenes" not in cfg:
         cfg["scenes"] = item.get("scenes") or []
-    (dest / "config.json").write_text(
-        json.dumps(cfg, indent=2, ensure_ascii=False)
-    )
+    config_path = dest / "config.json"
+    if write_metadata or not config_path.exists():
+        output_config = merge_existing_config(config_path, cfg) if write_metadata else cfg
+        config_path.write_text(
+            json.dumps(output_config, indent=2, ensure_ascii=False) + "\n"
+        )
 
-    (dest / "index.html").write_text(fill_shell(item))
+    shell_path = dest / "index.html"
+    if write_shells or not shell_path.exists():
+        shell_path.write_text(fill_shell(item))
 
     main_path = dest / "main.js"
     if force_main or not main_path.exists():
@@ -210,8 +263,10 @@ def scaffold_item(
                 )
             )
 
-    copied = copy_data_files(atlas, item, dest / "data")
-    (dest / "README.md").write_text(write_readme(item, copied))
+    copied = copy_data_files(atlas, item, dest / "data", force_data=force_data)
+    readme_path = dest / "README.md"
+    if write_metadata or not readme_path.exists():
+        readme_path.write_text(write_readme(item, copied))
     return dest
 
 
@@ -313,6 +368,26 @@ def main():
     )
     ap.add_argument("--force-main", action="store_true")
     ap.add_argument(
+        "--force-data",
+        action="store_true",
+        help="replace existing copied data files",
+    )
+    ap.add_argument(
+        "--write-metadata",
+        action="store_true",
+        help="replace existing config.json and README.md files",
+    )
+    ap.add_argument(
+        "--write-shells",
+        action="store_true",
+        help="replace existing index.html files from the shell template",
+    )
+    ap.add_argument(
+        "--sync-ready",
+        action="store_true",
+        help="replace files in _ready/spi-scroller from --c21",
+    )
+    ap.add_argument(
         "--only",
         help="Only scaffold graphic name or chapter id (e.g. spi_scroller or 17)",
     )
@@ -343,12 +418,20 @@ def main():
         if not items:
             raise SystemExit(f"No items matched --only {key}")
 
-    link_ready_spi(args.c21)
+    if args.sync_ready:
+        link_ready_spi(args.c21)
 
     n = 0
     for item in items:
         # refresh status from inventory item
-        scaffold_item(args.atlas, item, force_main=args.force_main)
+        scaffold_item(
+            args.atlas,
+            item,
+            force_main=args.force_main,
+            force_data=args.force_data,
+            write_metadata=args.write_metadata,
+            write_shells=args.write_shells,
+        )
         n += 1
 
     build_gallery(inv)

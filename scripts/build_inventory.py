@@ -53,7 +53,27 @@ def scene_summary(scenes: list) -> list[dict]:
     return out
 
 
-def build(atlas_root: Path) -> dict:
+def existing_quality(repo_root: Path) -> dict[str, dict]:
+    """Read canonical quality without guessing implementation state."""
+    quality = {}
+    for path in repo_root.glob("chapters/*/*/config.json"):
+        try:
+            config = json.loads(path.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        meta = config.get("_meta") or {}
+        directory = path.parent.relative_to(repo_root).as_posix()
+        if meta.get("dir") != directory:
+            continue
+        quality[directory] = {
+            "status": meta.get("status", "scaffold"),
+            "fidelity": meta.get("fidelity", "unverified"),
+            "approved": meta.get("approved") is True,
+        }
+    return quality
+
+
+def build(atlas_root: Path, repo_root: Path) -> dict:
     data_root = atlas_root / "data"
     viz = json.loads((data_root / "all_visualizations.json").read_text())
     cfg = json.loads((data_root / "chapter_configs.json").read_text())
@@ -71,6 +91,7 @@ def build(atlas_root: Path) -> dict:
             rel = str(p.relative_to(data_root))
             data_files[p.parent.name].append(rel)
 
+    quality = existing_quality(repo_root)
     chapters = []
     items = []
     idx = 0
@@ -133,6 +154,11 @@ def build(atlas_root: Path) -> dict:
                 else:
                     config[k] = val
 
+            directory = f"chapters/{folder}/{dir_name}"
+            item_quality = quality.get(
+                directory,
+                {"status": "scaffold", "fidelity": "unverified", "approved": False},
+            )
             item = {
                 "index": idx,
                 "chapterId": ch,
@@ -149,8 +175,8 @@ def build(atlas_root: Path) -> dict:
                 "visSize": v.get("visSize"),
                 "source": v.get("source"),
                 "visdescription": v.get("visdescription"),
-                "dir": f"chapters/{folder}/{dir_name}",
-                "status": "ready" if g == "spi_scroller" else "scaffold",
+                "dir": directory,
+                **item_quality,
                 "template": "scroller" if v.get("type") == "scroller" else "vis",
                 "reference": "atlas-c21-spi-scroller" if g == "spi_scroller" else None,
                 "config": config,
@@ -184,6 +210,8 @@ def build(atlas_root: Path) -> dict:
             "vis": sum(1 for i in items if i["type"] == "vis"),
         },
         "statusCounts": dict(Counter(i["status"] for i in items)),
+        "fidelityCounts": dict(Counter(i["fidelity"] for i in items)),
+        "approvedCount": sum(i["approved"] for i in items),
         "chapters": chapters,
         "items": items,
         "byGraphic": dict(by_graphic),
@@ -198,6 +226,8 @@ def to_markdown(inv: dict) -> str:
         f"- **Scrollers:** {inv['byType']['scroller']}",
         f"- **Vis (static/interactive single):** {inv['byType']['vis']}",
         f"- **Status:** `{inv['statusCounts']}`",
+        f"- **Fidelity:** `{inv['fidelityCounts']}`",
+        f"- **Approved:** {inv['approvedCount']}",
         f"- **Source clone:** `{inv.get('atlasPath','')}`",
         "",
         "Statuses: `scaffold` (stub ready to implement) · `partial` · `ready` (working replica).",
@@ -208,11 +238,11 @@ def to_markdown(inv: dict) -> str:
         if ch.get("title"):
             lines.append(f"*{ch['title']}*")
         lines.append("")
-        lines.append("| # | Type | Graphic | Scenes | Status | Dir |")
-        lines.append("|---|------|---------|--------|--------|-----|")
+        lines.append("| # | Type | Graphic | Scenes | Status | Fidelity | Approved | Dir |")
+        lines.append("|---|------|---------|--------|--------|----------|----------|-----|")
         for v in ch["visuals"]:
             lines.append(
-                f"| {v['ordinal']} | `{v['type']}` | `{v['graphic']}` | {v['sceneCount']} | {v['status']} | `{v['dir']}` |"
+                f"| {v['ordinal']} | `{v['type']}` | `{v['graphic']}` | {v['sceneCount']} | {v['status']} | {v['fidelity']} | {'yes' if v['approved'] else 'no'} | `{v['dir']}` |"
             )
         lines.append("")
     return "\n".join(lines)
@@ -240,7 +270,8 @@ def main():
             "  git clone --depth 1 https://github.com/worldbank/atlas-global-development.git"
         )
 
-    inv = build(args.atlas)
+    repo_root = Path(__file__).resolve().parents[1]
+    inv = build(args.atlas, repo_root)
     args.out.mkdir(parents=True, exist_ok=True)
 
     # Slim inventory for chapters (without full config bloat in MD)
@@ -262,6 +293,8 @@ def main():
             "title": i["title"],
             "sceneCount": i["sceneCount"],
             "status": i["status"],
+            "fidelity": i["fidelity"],
+            "approved": i["approved"],
             "dir": i["dir"],
         }
         for i in inv["items"]

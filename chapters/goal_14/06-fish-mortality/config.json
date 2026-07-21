@@ -16,6 +16,15 @@
   "data_download": "14_data_plastic_mortality.csv",
   "data": "1oQgvJwwmrOTwK9K47HgoGZxZGmuIoirqzKIYjmZILkM",
   "translationPrefix": "goal_14.content.#21",
+  "scenes": [],
+  "dataContract": {
+    "kind": "bars",
+    "file": "14_data_plastic_mortality.csv",
+    "columns": {
+      "category": "treatment",
+      "value": "mortality"
+    }
+  },
   "_meta": {
     "index": 116,
     "chapterId": "14",
@@ -24,7 +33,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

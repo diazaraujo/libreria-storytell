@@ -48,6 +48,47 @@
     }
   ],
   "translationPrefix": "goal_12.content.#6",
+  "dataContract": {
+    "kind": "multi-scene",
+    "datasets": {
+      "column": {
+        "file": "column.csv",
+        "columns": {
+          "year": "Year",
+          "subsidy": "Fossil fuel subsidy (2021 USD billions)",
+          "gdp": "GDP (2021 USD billions)",
+          "percentGdp": "Fossil fuel subsidy (% of GDP)",
+          "implicit": "implicit"
+        }
+      },
+      "map": {
+        "file": "map.csv",
+        "columns": {
+          "start": "2015",
+          "end": "2022",
+          "code": "iso3c",
+          "country": "countryname",
+          "region": "region",
+          "incomeGroup": "incomelevel",
+          "change": "Change in fossil fuel subsidy, % of GDP (percentage points)"
+        }
+      },
+      "bubble": {
+        "file": "bubble.csv",
+        "columns": {
+          "country": "Country",
+          "code": "countrycode",
+          "region": "Region",
+          "year": "Year",
+          "population": "Population (millions)",
+          "percentGdp": "Fossil fuel subsidy (% of GDP)",
+          "perCapita": "Fossil fuel subsidy ($ per capita)",
+          "gdpPerCapita": "GDP per capita (2021 USD)",
+          "incomeGroup": "Income group"
+        }
+      }
+    }
+  },
   "_meta": {
     "index": 95,
     "chapterId": "12",
@@ -56,6 +97,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

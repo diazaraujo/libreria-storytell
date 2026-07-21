@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "medical cost chart \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "medical cost chart · real CSV · Tier B hand (not bulk generator)",
   "graphic": "medical_cost_chart",
   "title": "Medical costs"
 }

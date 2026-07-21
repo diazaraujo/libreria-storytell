@@ -32,6 +32,19 @@
     }
   ],
   "translationPrefix": "goal_03.content.#22",
+  "dataContract": {
+    "kind": "ranked-bars",
+    "files": [
+      "score_mmr.csv",
+      "score_u5mr.csv",
+      "score_nmr.csv"
+    ],
+    "columns": {
+      "category": "iso3c",
+      "value": "value",
+      "period": "evalperiod"
+    }
+  },
   "_meta": {
     "index": 18,
     "chapterId": "03",
@@ -40,6 +53,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

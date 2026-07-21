@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "urb% \u00d7 GDP scatter income bands \u00b7 urban v2",
+  "note": "urb% × GDP scatter income bands · urban v2",
   "graphic": "urban_gdp_scatterplot",
   "title": "Urban GDP scatter",
   "qualityPass": "urban-v2"

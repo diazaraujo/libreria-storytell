@@ -1,0 +1,28 @@
+# No repository-wide line-ending rules: preserve sourced and vendored bytes.
+# Opaque formats should never produce textual diffs.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tgz binary
+*.mp4 binary
+*.mov binary
+*.webm binary
+
+# Generated or bulky artifacts: keep normal Git storage, but reduce diff noise.
+*.map -diff linguist-generated=true
+thumbs/** -diff linguist-generated=true
+assets/gallery_thumbnails/** -diff linguist-generated=true
+library/nightlights-hexmap/data/*.geojson -diff linguist-generated=true
+library/nightlights-hexmap/vendor-h3/** -text -diff linguist-vendored=true
+
+# Intentionally no Git LFS filter is configured. See docs/STORAGE_POLICY.md.

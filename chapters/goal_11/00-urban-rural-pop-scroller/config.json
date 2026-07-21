@@ -51,6 +51,8 @@
     "dir": "chapters/goal_11/00-urban-rural-pop-scroller",
     "status": "ready",
     "template": "scroller",
-    "reference": null
+    "reference": null,
+    "fidelity": "unverified",
+    "approved": false
   }
 }

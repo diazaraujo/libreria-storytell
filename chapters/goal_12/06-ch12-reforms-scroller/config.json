@@ -35,6 +35,39 @@
     }
   ],
   "translationPrefix": "goal_12.content.#41",
+  "dataContract": {
+    "kind": "ranked-bars",
+    "datasets": {
+      "conditional": {
+        "file": "conditional.csv",
+        "columns": {
+          "category": "Country",
+          "value": "Percent of respondents who unconditionally and conditionally support subsidy reduction"
+        }
+      },
+      "consequence": {
+        "file": "consequence.csv",
+        "columns": {
+          "category": "Country",
+          "value": "Percent of respondents who knew that energy subsidies are inefficient, are regressive, or damage the environment"
+        }
+      },
+      "existence": {
+        "file": "existence.csv",
+        "columns": {
+          "category": "Country",
+          "value": "Percent of respondents who did not know that energy subsidies existed in their country"
+        }
+      },
+      "unconditional": {
+        "file": "unconditional.csv",
+        "columns": {
+          "category": "Country",
+          "value": "Percent of respondents who unconditionally support subsidy reduction"
+        }
+      }
+    }
+  },
   "_meta": {
     "index": 101,
     "chapterId": "12",
@@ -43,6 +76,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

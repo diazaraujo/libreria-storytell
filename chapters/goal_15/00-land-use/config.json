@@ -22,6 +22,30 @@
   "for_humans": "for humans",
   "arable": "Arable land",
   "translationPrefix": "goal_15.content.#9",
+  "scenes": [],
+  "dataContract": {
+    "kind": "area-segments",
+    "files": [
+      "land_use.csv",
+      "agricultural_land_use.csv"
+    ],
+    "columns": {
+      "category": "category",
+      "value": "area",
+      "cumulative": "cumarea"
+    },
+    "derivations": {
+      "arableCategories": [
+        "for_animals",
+        "for_humans"
+      ],
+      "globalLandSurface": 149
+    }
+  },
+  "limitations": {
+    "coverage": "The top-level land-use segments total 140 million km², not the 149 million km² denominator implied by the 9.4 percent headline. The renderer uses them to validate the agricultural detail and keeps both totals explicit without labeling 140 million km² as global surface.",
+    "arable": "The agricultural detail file represents 14 million km² of annual/arable crops as the contiguous for_animals (6) and for_humans (8) segments."
+  },
   "_meta": {
     "index": 125,
     "chapterId": "15",
@@ -30,7 +54,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }
