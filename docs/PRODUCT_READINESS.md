@@ -42,11 +42,13 @@ a real browser.
    to rotate. Only the history-rewrite decision remains, in that repository.
 2. Real-browser QA: done 2026-07-21 in headless Chromium (58 renders at
    1440/768/344px, keyboard, reduced motion, blocked-CSV error states,
-   axe-core). Three defects found and fixed with in-browser verification —
-   see `docs/qa/2026-07-21/QA_VISUAL.md` and screenshots. Still open:
-   chapter-level color contrast (needs a fidelity-vs-WCAG product
-   decision), `<main>` landmarks in the chapter template, browser-zoom and
-   screen-reader passes, Safari/Firefox.
+   axe-core), then extended the same day: all 164 chapter shells carry
+   `<main>` landmarks and telemetry, the chapter contrast debt is resolved
+   (darker --subtle token, 93 prose chips moved to the corpus's dark-text
+   convention, AA text variants for sdg13 stat chips — sampled axe runs
+   report zero violations), WebKit and Firefox pass the same harness
+   (one hexmap legend overflow found and fixed cross-engine), and 320px
+   reflow passes on key pages. Still open: a human screen-reader pass.
 3. CI from clean clones: verified 2026-07-21 (fresh GitHub clones of both
    repos pass every documented check; see the QA report). Staging: the
    companion repo's `scripts/build-staging.py` builds the combined site

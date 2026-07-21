@@ -423,7 +423,7 @@
     style.textContent = `
       .atlas-hexmap .map-el { position:absolute; inset:0; }
       .atlas-hexmap .legend-container {
-        min-width: 350px; max-width: 480px;
+        min-width: min(350px, calc(100vw - 16px)); max-width: 480px;
         position: absolute; bottom: 20px; right: 50%;
         transform: translate(50%);
         background: #fffffff2; padding: 10px 20px;
