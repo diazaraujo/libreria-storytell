@@ -57,8 +57,14 @@ a real browser.
    repo (see its `docs/OBSERVABILITY.md`). Still open: telemetry in the
    generated chapter template, a real error tracker, and performance
    budgets.
-5. Complete editorial/source review for catalog entries still marked unknown
-   and record the final storage decision before any Git LFS migration.
+5. Catalog provenance: resolved 2026-07-21 for all 30 collections — the
+   Atlas of Global Development 2026 (CC BY 3.0 IGO at publication level,
+   verified against data360.worldbank.org) anchors chapters, stories,
+   heroes, and derived assets; the reusable library is component-verified
+   (h3-js Apache-2.0, Africa grid CC BY 4.0). Open residuals: per-graphic
+   provider terms (ITU, ILO, ACLED, Ookla, papers) are unverified,
+   chapter-goal-03/id4d lack internal source fields, and Space2Stats data
+   terms are unconfirmed. The Git LFS storage decision remains pending.
 
 Production readiness requires every gate above to have an owner, evidence, and
 an explicit sign-off. Passing unit and HTTP tests alone does not grant that
