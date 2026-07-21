@@ -48,10 +48,15 @@ a real browser.
    decision), `<main>` landmarks in the chapter template, browser-zoom and
    screen-reader passes, Safari/Firefox.
 3. CI from clean clones: verified 2026-07-21 (fresh GitHub clones of both
-   repos pass every documented check; see the QA report). Still open:
-   a reproducible staging environment.
-4. Add production observability: client errors, availability, performance
-   budgets, and alert ownership.
+   repos pass every documented check; see the QA report). Staging: the
+   companion repo's `scripts/build-staging.py` builds the combined site
+   (this library mounted at `/ar`) into a deployable `dist/`, verified by
+   smoke and headless page drives; first deploy pending there.
+4. Observability: gallery pages beacon client errors via
+   `shared/telemetry.js`; availability and alerting run from the companion
+   repo (see its `docs/OBSERVABILITY.md`). Still open: telemetry in the
+   generated chapter template, a real error tracker, and performance
+   budgets.
 5. Complete editorial/source review for catalog entries still marked unknown
    and record the final storage decision before any Git LFS migration.
 
