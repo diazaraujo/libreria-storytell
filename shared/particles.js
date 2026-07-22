@@ -206,11 +206,12 @@
               centroidsUrl.replace(/^\.\.\/\.\.\//, "/"),
               global.location.origin
             ).href;
-        // stories load from /stories/x/ so prefer absolute path
+        // the caller-supplied URL resolves correctly wherever the site is
+        // mounted (e.g. under /ar); root-absolute paths are fallbacks only
         const tryUrls = [
-          "/library/particles-world/centroids.json",
-          url,
           centroidsUrl,
+          url,
+          "/library/particles-world/centroids.json",
         ];
         for (const u of tryUrls) {
           try {

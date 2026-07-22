@@ -12,7 +12,7 @@
       "count": 900,
       "opacity": 0.82,
       "mode": "world",
-      "centroidsUrl": "/library/particles-world/centroids.json"
+      "centroidsUrl": "../../library/particles-world/centroids.json"
     },
     "keyFacts": [
       {
