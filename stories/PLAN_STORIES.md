@@ -18,7 +18,7 @@ Queue (chapterTitle → chapter dirs from inventory/inventory.json):
 6. data-for-development — Data for Development → goal_17/* (5)
 
 Per story, mark here when done:
-- [ ] measuring-progress
+- [x] measuring-progress (9faddd0)
 - [ ] inequality
 - [ ] gender-and-jobs
 - [ ] learning-and-work
@@ -27,3 +27,19 @@ Per story, mark here when done:
 
 After all six: run full suites, rebuild dist, Antonio redeploys, update
 gallery links if stories should be listed, delete this file.
+
+## Estado 2026-07-21 (continuación)
+- Hechas: extreme-poverty (911e25d), global-progress (35a6e21), measuring-progress (9faddd0).
+- Extracciones verbatim listas en stories/<slug>/EXTRACTION.md para: inequality
+  (9 gráficos ↔ goal_10/00..08 1:1), gender-and-jobs (10 ↔ goal_05/00..09 1:1),
+  learning-and-work (7 ↔ goal_04/00..06 1:1; side facts como ch-callout),
+  data-for-development (5 ↔ goal_17/00..04 1:1).
+- artificial-intelligence: agente de extracción aún corriendo; su reporte se
+  persiste igual (extraer del task output con el patrón usado antes).
+- GOTCHA key facts: los "Key facts" SSR de los mirrors traen data de OTRAS
+  stories (bug del origen) — omitirlos, salvo que calcen temáticamente.
+- Ensamblaje: clonar stories/global-progress/index.html (reemplazar título,
+  tag, URL origen, About con referencias del EXTRACTION.md) + story.json con
+  prosa del EXTRACTION.md; scrollers con scenesFromChapter; vis sin escenas
+  igual usan chapterDir. QA browser (cero errs/fails/overflow) + registrar
+  story-<slug> en docs/data-catalog.json (git add antes del check) + commit.
