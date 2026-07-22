@@ -21,7 +21,7 @@ Per story, mark here when done:
 - [x] measuring-progress (9faddd0)
 - [x] inequality
 - [ ] gender-and-jobs
-- [ ] learning-and-work
+- [x] learning-and-work
 - [ ] artificial-intelligence
 - [x] data-for-development
 
