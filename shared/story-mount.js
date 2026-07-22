@@ -63,10 +63,12 @@
       const replica = global.AtlasReplica;
       b.mount = async (chartEl, ctx) => {
         AtlasChapterScroll.fitChartHeight(chartEl);
-        const sceneIndex = ctx.sceneIndex || 0;
-        await replica.render(b.scenes?.[sceneIndex] || null, {
+        const draw = (sceneIndex) => replica.render(b.scenes?.[sceneIndex] || null, {
           chartEl, config: b, sceneIndex, hidePlaceholder() {},
         });
+        await draw(ctx.sceneIndex || 0);
+        // Controller so scene changes re-render the chart (not just the note).
+        return { updateScene: (sceneIndex) => draw(sceneIndex) };
       };
       b.forceRemount = true;
     }
