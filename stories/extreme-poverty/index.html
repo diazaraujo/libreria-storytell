@@ -87,76 +87,24 @@
     </ol>
   </div>
 
+  <script src="../../shared/wb-colors.js"></script>
   <script src="../../shared/svg.js"></script>
   <script src="../../shared/load.js"></script>
   <script src="../../shared/country-names.js"></script>
   <script src="../../shared/particles.js"></script>
+  <script src="../../shared/components/Axis.js"></script>
+  <script src="../../shared/components/LineChart.js"></script>
+  <script src="../../shared/components/BeeswarmChart.js"></script>
+  <script src="../../shared/components/Waffle.js"></script>
+  <script src="../../shared/components/Scatter.js"></script>
+  <script src="../../shared/components/index.js"></script>
   <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../shared/story-mount.js"></script>
   <script src="../../shared/telemetry.js" defer></script>
   <script>
-    (async function () {
-      const story = await (await fetch("./story.json")).json();
-
-      // Load each chapter's AtlasReplica renderer sequentially, capturing
-      // the global each main.js registers before loading the next one.
-      const replicas = {};
-      const configs = {};
-      const loadScript = (src) => new Promise((resolve, reject) => {
-        const s = document.createElement("script");
-        s.src = src;
-        s.onload = resolve;
-        s.onerror = () => reject(new Error(`failed to load ${src}`));
-        document.head.appendChild(s);
-      });
-
-      const chapterBlocks = story.blocks.filter((b) => b.chapterDir);
-      for (const b of chapterBlocks) {
-        const base = `../../chapters/${b.chapterDir}`;
-        configs[b.chapterDir] = await (await fetch(`${base}/config.json`)).json();
-        window.AtlasReplica = undefined;
-        await loadScript(`${base}/main.js`);
-        replicas[b.chapterDir] = window.AtlasReplica;
-        const cfg = configs[b.chapterDir];
-        b.title = b.title || cfg.title;
-        b.subtitle = b.subtitle || cfg.subtitle || "";
-        b.source = b.source || cfg.source || "";
-        if (b.scenesFromChapter && Array.isArray(cfg.scenes)) {
-          b.scenes = cfg.scenes.map((s) => ({ type: "scene", id: s.id, text: s.text }));
-        }
-      }
-
-      // Chapter renderers fetch "./data/…" relative to their own folder;
-      // rewrite those URLs to the active chapter, serializing renders so a
-      // scroll handoff can't cross bases mid-flight.
-      const realCsv = AtlasLoad.csv.bind(AtlasLoad);
-      let activeBase = "";
-      AtlasLoad.csv = (url, ...rest) =>
-        realCsv(url.replace(/^\.\//, `${activeBase}/`), ...rest);
-      let chain = Promise.resolve();
-      const serialized = (fn) => (chain = chain.then(fn, fn));
-
-      for (const b of chapterBlocks) {
-        const dir = b.chapterDir;
-        b.mount = (chartEl, ctx) => serialized(async () => {
-          activeBase = `../../chapters/${dir}`;
-          AtlasChapterScroll.fitChartHeight(chartEl);
-          const cfg = configs[dir];
-          const sceneIndex = ctx.sceneIndex || 0;
-          await replicas[dir].render(cfg.scenes?.[sceneIndex] || null, {
-            chartEl,
-            config: cfg,
-            sceneIndex,
-            hidePlaceholder() {},
-          });
-        });
-        b.forceRemount = true;
-      }
-
-      window.__chapter = AtlasChapterScroll.mount(
-        document.getElementById("story"),
-        story
-      );
-    })().catch((err) => {
+    AtlasStoryMount.mount(document.getElementById("story")).then((c) => {
+      window.__chapter = c;
+    }).catch((err) => {
       console.error(err);
       document.getElementById("story").innerHTML =
         `<div style="padding:40px;color:#aa0000"><strong>Story load error</strong><pre>${err}</pre></div>`;

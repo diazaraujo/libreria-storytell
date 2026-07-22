@@ -23,7 +23,7 @@ Per story, mark here when done:
 - [ ] gender-and-jobs
 - [ ] learning-and-work
 - [ ] artificial-intelligence
-- [ ] data-for-development
+- [x] data-for-development
 
 After all six: run full suites, rebuild dist, Antonio redeploys, update
 gallery links if stories should be listed, delete this file.
