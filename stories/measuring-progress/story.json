@@ -1,0 +1,76 @@
+{
+ "slug": "measuring-progress",
+ "title": "A New Framework for Measuring Progress",
+ "origin": "https://data360.worldbank.org/en/atlas/measuring-progress/",
+ "hero": {
+  "kicker": "Measuring Progress",
+  "title": "A New Framework for Measuring Progress",
+  "lead": "Measuring progress in development is complex, and simple metrics often paint different pictures. This explainer introduces a measure that compares a country's progress against other countries at a similar stage of development. The approach offers a contextualized way to evaluate performance, set realistic targets, and understand the scale of development challenges.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Daniel Gerszon Mahler</span>, Visuals by <span class=\"font-semibold\">Maarten Lambrechts</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  },
+  "keyFacts": [
+   {
+    "value": "In 60%",
+    "label": "of low- and middle-income economies, the most recent poverty survey is more than five years old."
+   },
+   {
+    "value": "778 million",
+    "label": "children live in an economy with no recent internationally comparable learning assessment."
+   },
+   {
+    "value": "34 points",
+    "label": "High-income economies score 34 points higher than low-income economies on the World Bank’s Statistical Performance Indicators."
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "id": "not-easy",
+   "type": "prose",
+   "html": "<h3>Measuring progress is not easy</h3><p>Tracking progress toward development goals is crucial for countries to identify areas to prioritize and learn from their own—and other countries’— successes and failures.</p><p>India’s open defecation challenge is a good example<strong>. </strong>Lagging behind its peers and its own target for ending open defecation, in 2014 the government launched the <a href=\"https://swachhbharatmission.ddws.gov.in/index.php/about\">Swachh Bharat Mission</a> to build toilets and change behavior regarding sanitation practices. During the first five years, the mission built over 100 million toilets and the proportion of the population practicing open defecation fell from 33 percent to 20 percent—a 40 percent drop.<sup><a href=\"#ref-1\">1</a></sup> Progress has since continued, and in 2024, only around 7 percent of the population practiced open defecation.</p><p>Cases like this illustrate how understanding a country's progress, or lack of it, can drive policy change. Although India’s achievements are impressive, how can we quantify how well it did over this time span? It is not as trivial as it may sound.</p><p>When measuring progress toward a development indicator, a common first step is to track whether a country has met a specific target, such as a Sustainable Development Goal (SDG) target. But tracking in this way overlooks that, despite making significant progress, a country can still fall short of a target.<sup><a href=\"#ref-2\">2</a></sup><sup><a href=\"#ref-3\">3</a></sup> In this case, despite the massive headways made by the Swachh Bharat Mission, India’s 7 percent open defecation rate of 2024 is above SDG target 6.2, which calls for an end to open defecation.</p><p>Another way of measuring progress is to compare across countries the changes they have experienced. In this case, we could compare the decline in the proportion of people practicing open defecation over five years using percent (which for India was 40 percent) or percentage points (13 percentage points, from 33 percent to 20 percent).</p><p>These two simple and frequently used measures of progress can paint very different pictures. To see this difference, let us take a look at Côte d’Ivoire and Georgia, and their recent progress in reducing extreme poverty.</p>"
+  },
+  {
+   "id": "comparison",
+   "type": "scroller",
+   "chapterDir": "goal_progress/00-poverty-progress-comparison",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "speed",
+   "type": "prose",
+   "html": "<h3>The speed of development</h3><p>It is unclear which country has made more progress because standard measures provide conflicting answers. This is because these common measures inherently favor or disadvantage specific stages of development.<sup><a href=\"#ref-4\">4</a></sup> To accurately gauge a country's progress, we need to account for the fact that large changes are more likely during certain phases of development than others.<sup><a href=\"#ref-5\">5</a></sup><sup><a href=\"#ref-6\">6</a></sup> Let us take a look now at how we can apply this for extreme poverty rates.</p>"
+  },
+  {
+   "id": "methodology",
+   "type": "scroller",
+   "chapterDir": "goal_progress/01-poverty-rate-change-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "targets-intro",
+   "type": "prose",
+   "html": "<h3>The future and setting targets beyond 2030</h3><p>At the typical speed of development, going from very high poverty rates to a society free of extreme poverty can take centuries. This also applies to other domains of development.<sup><a href=\"#ref-7\">7</a></sup> Even if countries move drastically faster than the typical speed of development—like Singapore and the Republic of Korea have done since the 1950s—transitioning from the worst-observed outcomes to some of the best easily takes 75 years.</p><p>The long road to development suggests that some SDG targets—such as complete access to services or elimination of deprivations—were plausible for some countries but virtually impossible for others, which are generations away from reaching these levels. Globally ambitious targets are harder to achieve for poorer countries, which need much faster speeds of progress to obtain the same level as countries starting from better positions. Yet perceived success and failure has been closely associated with the outcome of these targets.<sup><a href=\"#ref-8\">8</a></sup></p><p>So, how should countries set realistic and aspirational targets? We can use the speed scores explained above to create targets at varying levels of ambition and with various comparator countries.</p>"
+  },
+  {
+   "id": "targets",
+   "type": "scroller",
+   "chapterDir": "goal_progress/02-projection-country",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "challenges",
+   "type": "prose",
+   "html": "<p>Countries should not necessarily consider such high speeds of development for their targets. Those with less capacity to develop—for example, due to high debt levels or conflict—may prefer to choose a target based on their own, slower historical pace of progress. Others could choose to define their target by following the speed of an aspirational set of countries—say, the best performers in their region.</p><p>In many situations, historical development paths are unlikely to be appropriate; technological change may make expected future progress faster while climate change or geopolitical uncertainties may make it slower. Ultimately, target setting is a complex and multifaceted process.</p><h3>Challenges when measuring progress</h3><p>The method presented here and most other measures of progress face limitations that are important to consider.</p><p><strong>First, this method cannot be applied to all indicators. </strong>The speed method does not work for indicators where countries on expectation have not made historical progress, such as forest cover. For such cases, we have developed a complementary way of measuring progress that gives all countries a score from 0–100 that reflects the share of historical experiences they are outperforming.<sup><a href=\"#ref-7\">7</a></sup> For example, a score of 80 means that a country is progressing faster than 80 percent of all the cases observed historically.</p><p><strong>Second, measuring progress is difficult when indicators change drastically from year to year, such as when measuring deaths from natural disasters</strong>. Even if a country is making fast progress on its emergency preparedness and adaptation to climate change, one rare natural disaster could suggest a lack of progress.</p><p><strong>Third, the speed method requires indicators with a large amount of data to estimate expected changes with enough accuracy. </strong>As a result, indicators that lack data over a long time period or a large set of countries will involve greater uncertainty.</p><p><strong>Finally, the speed method is limited because we do not observe all countries at all stages of development. </strong>For example, to estimate how countries typically progress at high levels of development, we can only rely on information from countries that have achieved such standards. Conversely, we do not have data at low levels of development for most of the countries that are currently highly developed.</p>"
+  }
+ ]
+}
