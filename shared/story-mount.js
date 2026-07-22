@@ -14,7 +14,7 @@
 (function initStoryMount(global) {
   "use strict";
 
-  const CHAPTERS_ROOT = "../../chapters/";
+  const DEFAULT_CHAPTERS_ROOT = "../../chapters/";
 
   function loadScript(src) {
     return new Promise((resolve, reject) => {
@@ -34,13 +34,64 @@
       && !url.startsWith("blob:");
   }
 
-  async function prepare(story) {
+  function columnAccessors(options) {
+    // Declarative blocks name columns in JSON; components expect accessors.
+    const out = {};
+    for (const [key, value] of Object.entries(options || {})) {
+      out[key] = typeof value === "string" && !["title", "subtitle", "unit"].includes(key)
+        ? (row) => {
+            const v = row[value];
+            const n = Number(v);
+            return v !== "" && Number.isFinite(n) ? n : v;
+          }
+        : value;
+    }
+    return out;
+  }
+
+  async function prepare(story, opts) {
+    const chaptersRoot = (opts && opts.chaptersRoot) || DEFAULT_CHAPTERS_ROOT;
     const replicas = {};
     const configs = {};
     const chapterBlocks = story.blocks.filter((b) => b.chapterDir);
 
+    // Standalone renderer blocks: a script that registers window.AtlasReplica,
+    // with scenes carried by the story block itself — no chapter layout needed.
+    for (const b of story.blocks.filter((x) => x.rendererUrl)) {
+      global.AtlasReplica = undefined;
+      await loadScript(b.rendererUrl);
+      const replica = global.AtlasReplica;
+      b.mount = async (chartEl, ctx) => {
+        AtlasChapterScroll.fitChartHeight(chartEl);
+        const sceneIndex = ctx.sceneIndex || 0;
+        await replica.render(b.scenes?.[sceneIndex] || null, {
+          chartEl, config: b, sceneIndex, hidePlaceholder() {},
+        });
+      };
+      b.forceRemount = true;
+    }
+
+    // Declarative component blocks: {"component": "LineChart",
+    // "data": "./data/x.csv", "options": {"x": "col", "y": "col"}} —
+    // any CSV, no renderer code at all.
+    for (const b of story.blocks.filter((x) => x.component)) {
+      const rows = await AtlasLoad.csv(b.data);
+      const componentGlobal = global[`Atlas${b.component}`]
+        || (global.AtlasComponents && global.AtlasComponents[b.component]);
+      if (!componentGlobal || !componentGlobal.mount) {
+        throw new Error(`unknown story component: ${b.component}`);
+      }
+      b.mount = async (chartEl) => {
+        AtlasChapterScroll.fitChartHeight(chartEl);
+        return componentGlobal.mount(chartEl, {
+          data: rows, ...columnAccessors(b.options),
+        });
+      };
+      b.forceRemount = true;
+    }
+
     for (const b of chapterBlocks) {
-      const base = CHAPTERS_ROOT + b.chapterDir;
+      const base = chaptersRoot + b.chapterDir;
       configs[b.chapterDir] = await (await fetch(`${base}/config.json`)).json();
       global.AtlasReplica = undefined;
       await loadScript(`${base}/main.js`);
@@ -83,7 +134,7 @@
     for (const b of chapterBlocks) {
       const dir = b.chapterDir;
       b.mount = (chartEl, ctx) => serialized(async () => {
-        activeBase = CHAPTERS_ROOT + dir;
+        activeBase = chaptersRoot + dir;
         AtlasChapterScroll.fitChartHeight(chartEl);
         const cfg = configs[dir];
         const sceneIndex = ctx.sceneIndex || 0;
@@ -103,9 +154,11 @@
   }
 
   global.AtlasStoryMount = {
-    async mount(container) {
-      const story = await (await fetch("./story.json")).json();
-      await prepare(story);
+    async mount(container, opts) {
+      const storyUrl = (opts && opts.storyUrl) || "./story.json";
+      const story = (opts && opts.story)
+        || await (await fetch(storyUrl)).json();
+      await prepare(story, opts || {});
       return AtlasChapterScroll.mount(container, story);
     },
   };
