@@ -1,0 +1,134 @@
+{
+ "slug": "gender-and-jobs",
+ "title": "Shaping the Future of Women in the Workplace",
+ "origin": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
+ "hero": {
+  "kicker": "Gender and Jobs",
+  "title": "Shaping the Future of Women in the Workplace",
+  "lead": "Women face persistent barriers when it comes to participating in the labor force. And those who do work are more likely to be in vulnerable employment, earn lower wages, and shoulder the majority of domestic and care responsibilities, highlighting slow and uneven progress toward gender equality at work.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Divyanshi Wadhwa &amp; Anna Tabitha Bonfert</span>, Visuals by <span class=\"font-semibold\">Ændra Rininsland &amp; Maarten Lambrechts</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "participation",
+   "type": "prose",
+   "html": "<h3>Women's participation in the labor force</h3><p>Historically, there have been many barriers to women's full participation in labor markets and jobs. Social norms have prioritized women's role in unpaid care and household responsibilities, limiting their access to income-generating work. Restricted access to finance has also prevented many women from starting their own business, while restricted access to education and skills have kept them out of available jobs.<sup><a href=\"#ref-1\">1</a></sup> Such barriers have shaped women's participation in the labor force for decades, with lasting consequences for economic growth, household well-being, and gender equality.</p><p>In simple terms, the labor force includes everyone who works or is actively seeking work.<sup><a href=\"#ref-2\">2</a></sup> Globally, around 8 in 10 men aged 15–64 are part of the labor force.<sup><a href=\"#ref-3\">3</a></sup> But what about women? Take a guess in the chart below and see how close you come to the actual share.</p>"
+  },
+  {
+   "id": "lfp-guess",
+   "type": "vis",
+   "chapterDir": "goal_05/00-global-labor-force-participation"
+  },
+  {
+   "id": "equality-350",
+   "type": "prose",
+   "html": "<blockquote class=\"ch-callout\"><p>Since 1990, women's participation in the labor force has remained largely unchanged, with <strong>only half of women aged 15</strong>–<strong>64 engaged in income-generating work.</strong></p></blockquote><p>Roughly 30 percentage points lower than men, this represents a substantial gap.<sup><a href=\"#ref-3\">3</a></sup></p><h3>Equality could still be 350 years away</h3><p>There has been little progress in increasing women's participation in the labor force. And this has varied widely across countries and economies, depending on their stage of development. To put this into perspective, we use historical country-level data from 1990 to 2024 to calculate a 'typical' path of progress.<sup><a href=\"#ref-i\">i</a></sup><sup><a href=\"#ref-4\">4</a></sup></p>"
+  },
+  {
+   "id": "typical-path",
+   "type": "scroller",
+   "chapterDir": "goal_05/01-sdg5-350-years",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "turkiye-drivers",
+   "type": "prose",
+   "html": "<p>Despite sluggish global progress, countries like Türkiye have achieved substantial gains through targeted policy shifts that enable women's employment. Let us take a look at what has contributed to the increase in women's participation in Türkiye's labor force.</p><h3>Drivers for increasing women's labor force participation</h3><p>Several factors came together to shape women's work in Türkiye, including a shift toward the industry and services sectors, a fall in the fertility rate, an increase in education levels, and a shift in social and cultural norms.</p><h4>Shift toward industry and services</h4><p>From the 1990s, the Turkish economy underwent a structural transformation, shifting away from agriculture toward industry and services. Many women had worked in agriculture, especially on family farms, but as these shrank, families migrated to cities.<sup><a href=\"#ref-5\">5</a></sup></p><p>Opportunities in urban labor markets often demanded new skills and formal training, and childcare support was limited. As is common in the early stages of industrialization, men were more likely to acquire the new skills needed, while women—faced with lower levels of education and a lack of childcare—were excluded from these opportunities. With few jobs available to them, many women withdrew from the workforce,<sup><a href=\"#ref-5\">5</a></sup> and between 1990 and 2004, their labor force participation fell from 36 percent to 25 percent.<sup><a href=\"#ref-3\">3</a></sup></p><p>As education levels rose, younger generations of women began to join the labor market in greater numbers, finding opportunities in industry and services.<sup><a href=\"#ref-6\">6</a></sup></p>"
+  },
+  {
+   "id": "turkiye-sectors",
+   "type": "vis",
+   "chapterDir": "goal_05/02-sdg5-turkiye-lfp-drivers"
+  },
+  {
+   "id": "smaller-families",
+   "type": "prose",
+   "html": "<h4>Smaller families</h4><p>Social norms and family dynamics were also evolving at this time.<sup><a href=\"#ref-7\">7</a></sup> Türkiye's fertility rate—the number of children born per woman—declined faster than the global average, falling to 1.5 by 2023 (compared with 2.2 globally).<sup><a href=\"#ref-8\">8</a></sup> With fewer children, the childcare barrier lessened, allowing women to pursue jobs.</p>"
+  },
+  {
+   "id": "turkiye-fertility",
+   "type": "vis",
+   "chapterDir": "goal_05/03-sdg5-turkiye-fertility"
+  },
+  {
+   "id": "gains-education",
+   "type": "prose",
+   "html": "<h4>Gains in education</h4><p>Education played an equally important role: while women's participation in Türkiye's labor force has historically been lower than men's, the gap is widest among those with little or no education, and narrowest among those with tertiary degrees.<sup><a href=\"#ref-9\">9</a></sup> As more women gained access to higher levels of schooling, their opportunities in the labor market expanded.</p>"
+  },
+  {
+   "id": "turkiye-education",
+   "type": "vis",
+   "chapterDir": "goal_05/04-sdg5-turkiye-education"
+  },
+  {
+   "id": "challenges",
+   "type": "prose",
+   "html": "<p>Starting in the 2000s, falling fertility, rising education levels, and the gradual change in social norms, combined with economic growth, have helped create more jobs for women.<sup><a href=\"#ref-7\">7</a></sup> As these changes took hold, female labor force participation began to recover, reaching 41 percent by 2024.<sup><a href=\"#ref-3\">3</a></sup></p><p>This progress shows that narrowing the gap in labor force participation between women and men is possible within a generation when the right social and economic conditions align.<sup><a href=\"#ref-1\">1</a></sup></p><h3>Challenges beyond joining the workforce</h3><p>Simply entering the labor force does not guarantee equal opportunity.<sup><a href=\"#ref-10\">10</a></sup> Social, legal, and institutional barriers limit women's access to the most productive jobs, shaping the kind of work they do, how it is valued, and how much they are paid. When women's skills are unused or underused, economies produce less than they could. In many countries, removing such barriers could increase output by 15 to 20 percent.<sup><a href=\"#ref-10\">10</a></sup></p><p>Let's have a closer look at some of the challenges women face in the workforce—from vulnerable employment to unequal pay and juggling domestic and care work alongside paid work.</p><h4>Vulnerable employment</h4><p>To explore women's vulnerability in employment, let's take a look at the labor force in two very different settings: Switzerland, one of the world's richest countries, and Tanzania, a lower-middle-income country.</p><p>Both countries' female labor force participation rates are among the world's highest, at nearly 80 percent, and their male participation rates are slightly higher, nearing 90 percent. But, the composition of the labor force differs enormously.<sup><a href=\"#ref-11\">11</a></sup></p>"
+  },
+  {
+   "id": "swiss-tanzania",
+   "type": "scroller",
+   "chapterDir": "goal_05/05-sdg5-better-jobs-for-women",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "vulnerable-employment",
+   "type": "prose",
+   "html": "<p>Vulnerable employment includes jobs that typically lack contracts, social protection, and income security. It includes contributing family workers—who may help on a family farm with no direct pay—and self-employed workers, such as street vendors. Vulnerable and informal work are two concepts that are frequently discussed together. But while vulnerable work overlaps with informal work, the distinction matters: informal employment is about the informality of working arrangements, while vulnerable employment captures economic insecurity and exposure to risk.<sup><a href=\"#ref-12\">12</a></sup></p><p>It is not only in Tanzania that vulnerable employment rates among women are high. In many low-income countries and economies, vulnerable employment rates can reach 90 percent, with women more likely than men to work in vulnerable jobs, particularly those with greater care responsibilities.<sup><a href=\"#ref-13\">13</a></sup></p>"
+  },
+  {
+   "id": "vulnerable-income",
+   "type": "vis",
+   "chapterDir": "goal_05/06-gender-gap-informal-gdp"
+  },
+  {
+   "id": "wage-gap-intro",
+   "type": "prose",
+   "html": "<p>Vulnerable employment is far less common in high-income countries or economies, where higher education levels and stronger legal protections open the door to more stable jobs. Men are more likely than women to be in vulnerable employment in these countries. The drivers of this pattern are not well established. It may be that, women in high-income countries are less likely to participate in the labor market when work is vulnerable, and in some cases, measurement may classify certain self‑employed professionals (such as  accountants or attorneys) as \"vulnerable\", which can raise men's rates without reflecting economic precarity.</p><h4>Gender wage gap</h4><p>Disadvantages for women persist in the way their work is valued. This is evident in enduring wage gaps, driven by a range of factors.</p><p>Women are often concentrated in lower-paying sectors, such as domestic work, clerical services, and contributing farmwork, while men are more likely to hold jobs in higher-paying fields like industry, technology, or formal wage employment. And, although women have made significant progress in closing education gaps,<sup><a href=\"#ref-14\">14</a></sup> a combination of skills mismatches, limited access to professional networks and information, and restrictive social norms continue to channel them into lower-productivity occupations.</p><p>Even within the same sector, women are less likely to occupy supervisory or leadership positions, limiting their earning potential.<sup><a href=\"#ref-15\">15</a></sup></p>"
+  },
+  {
+   "id": "wage-gap",
+   "type": "scroller",
+   "chapterDir": "goal_05/07-sdg5-wage-gap-beeswarm",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "unpaid-intro",
+   "type": "prose",
+   "html": "<p>Although this measure has its limitations, it shows a basic average across all jobs, so it doesn't tease out pay differences within the same role. Studies indicate that women can be compensated less than men for the same job. For example, firms might offer greater incentives, sometimes in the form of higher pay, for working longer and fixed hours. This strongly disadvantages women, who often bear greater household responsibilities, and require more flexible work arrangements.<sup><a href=\"#ref-16\">16</a></sup></p><p>Narrowing the gender wage gap benefits not only individual women and their economic well-being, but also society as a whole. On average, countries could see a 14 percent increase in wealth by closing the gap in lifetime earnings between men and women.<sup><a href=\"#ref-17\">17</a></sup></p><h4>Unpaid domestic and care work</h4><p>Employment discussions usually focus on paid work outside the household. But a substantial share of productive activity is unpaid domestic and care work carried out within households.</p><p>Domestic and care work includes cooking, cleaning, the upkeep of a dwelling, shopping, and caring for children and sick, elderly, or disabled household members.<sup><a href=\"#ref-18\">18</a></sup> This vital everyday work contributes to human capital development and productivity; but it is not equally divided between women and men.</p>"
+  },
+  {
+   "id": "unpaid-time",
+   "type": "scroller",
+   "chapterDir": "goal_05/08-unpaid-time-animation",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "ai-intro",
+   "type": "prose",
+   "html": "<p>Care arrangements differ across societies, but in most countries and economies with available data, women's total workload—encompassing both paid and unpaid work— exceeds that of men. A conservative estimate of the total value of care work provided by women is $11 trillion, or 9 percent of global gross domestic product.<sup><a href=\"#ref-21\">21</a></sup></p><p>So, women are typically more time-poor than men, and this has negative implications for their well-being.<sup><a href=\"#ref-22\">22</a></sup> But why is it that women shoulder a disproportionate share of unpaid work? Although reasons vary by family, they often include social attitudes and cultural traditions that dictate gendered division of labor, economic inequalities such as the gender pay gap, and a lack of social provision, such as childcare. When access to childcare services is expanded, more women can join the labor force and those who are already in employment can work more hours.<sup><a href=\"#ref-23\">23</a></sup></p><h3>Artificial intelligence and the future of jobs</h3><p>Artificial intelligence (AI) is reshaping labor markets globally, and the future of work is rapidly evolving. AI exposure can have different effects, displacing, enhancing or creating new jobs. While the full impact remains uncertain, two things are clear: AI will automate certain routine tasks, making some jobs redundant; but it will also increase demand for higher-skilled, technology-enabled roles.</p><p>This is disruptive for all workers, especially in high- and upper-middle-income countries where AI adoption is more advanced. Based on current technologies, it is estimated that over one-third of all jobs in high- and upper-middle-income countries could be affected by generative-AI technologies.<sup><a href=\"#ref-24\">24</a></sup></p><p>And in these countries, AI-induced disruption in the workplace will be greater for women than for men. This is because women are concentrated in clerical and administrative support roles and similar occupations that face high automation risk, raising both the likelihood of job losses and the need for reskilling to transition into new opportunities. In high-income economies, nearly 10 percent of employed women work in jobs that are at the highest risk of AI-driven task automation, compared with about 3.5 percent of men.<sup><a href=\"#ref-24\">24</a></sup><sup><a href=\"#ref-i2\">i</a></sup></p>"
+  },
+  {
+   "id": "ai-exposure",
+   "type": "vis",
+   "chapterDir": "goal_05/09-sdg5-ai-occupational-exposure-by-gender"
+  },
+  {
+   "id": "way-forward",
+   "type": "prose",
+   "html": "<p>The diffusion of AI-enabled technologies in the workplace can also benefit both men and women. New opportunities for high-skilled labor are rising. One study of 16 European countries found that increased exposure to AI benefits women twice as much as the overall labor force, with the largest positive impact on female employment from AI adoption seen in countries where women have made greater educational progress and already participate more in the labor market.<sup><a href=\"#ref-26\">26</a></sup></p><p>In low-income countries, AI exposure remains limited for both men and women due to gaps in internet access and reliable electricity.<sup><a href=\"#ref-27\">27</a></sup> But as digitalization deepens, existing jobs may be displaced towards jobs that require a different, and perhaps higher technical skillset. This displacement risk may be particularly faced in the services sector, and rise for both women and men unless proactive measures are taken. Women in low-income countries also have lower digital literacy and less access to digital services,<sup><a href=\"#ref-28\">28</a></sup> which could prevent them from adopting AI.</p><h3>The way forward</h3><p>AI is already changing the way we work. To meet shifting demand, countries at all income levels must expand their efforts to equip young people for emerging roles and reskill their existing workforce in AI-related competencies.<sup><a href=\"#ref-29\">29</a></sup> But skills enhancements alone will not bring more women into the workforce. Countries must also fix discriminatory laws—especially those that affect childcare and parental leave—sustain improvements in access to quality education and training for girls and women, and bring about shifts in social norms that truly support women's work.<sup><a href=\"#ref-30\">30</a></sup> It is only through these complementary legal, educational, and societal changes that more women will be prepared, and empowered, for the future of work.</p>"
+  }
+ ]
+}

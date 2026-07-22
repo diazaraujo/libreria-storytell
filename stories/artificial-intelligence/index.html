@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artificial Intelligence — Chapter scroll (Atlas replica)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../shared/chapter-scroll.css" />
+  <style>
+    body { margin: 0; background: #fff; }
+    body.ch-story-page { --ch-sticky-top: 0px; }
+    .ch-topbar {
+      position: absolute; top: 0; left: 0; right: 0; z-index: 20;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 16px; background: transparent; border-bottom: none;
+      font: 600 12px/1.2 "Open Sans", system-ui, sans-serif;
+      color: rgba(255,255,255,0.75);
+    }
+    .ch-topbar a { color: rgba(255,255,255,0.9); text-decoration: none; }
+    .ch-topbar .tag {
+      background: rgba(255,255,255,0.14); color: #fff;
+      padding: 3px 8px; border-radius: 999px; font-size: 11px;
+    }
+    .mode-badge { display: none !important; }
+    .ch-callout {
+      margin: 28px 0; padding: 14px 20px; border-left: 7px solid #f3578e;
+      font-family: "Open Sans", system-ui, sans-serif;
+      font-size: 19px; line-height: 1.35; color: #100e2b;
+    }
+    .ch-callout p { margin: 0 0 4px; }
+    .ch-callout-number .num-xl { font-size: 46px; font-weight: 700; }
+    .ch-callout-number .num-md { font-size: 20px; font-weight: 600; }
+    .ch-about {
+      max-width: 640px; margin: 0 auto; padding: 56px 24px 120px;
+      color: #5b6873; font-size: 13px; line-height: 1.6;
+      font-family: "Open Sans", system-ui, sans-serif;
+    }
+    .ch-about h2 { color: #100e2b; font-size: 18px; }
+    .ch-about ol { padding-left: 20px; }
+    .ch-about li { margin-bottom: 6px; }
+    .ch-about a { color: #1f5fc9; }
+  </style>
+</head>
+<body class="ch-story-page">
+  <div class="ch-topbar">
+    <div>
+      <a href="../../gallery-atlas.html">← Gallery</a>
+      · <a href="../../gallery.html">Dev</a>
+      · <span class="tag">artificial intelligence · 5/5</span>
+    </div>
+    <div>
+      <a href="https://data360.worldbank.org/en/atlas/artificial-intelligence/" target="_blank" rel="external">Live Atlas</a>
+    </div>
+  </div>
+
+  <div id="story"></div>
+
+  <div class="ch-about" id="about">
+    <h2>About this story</h2>
+    <p>Replica of "Inequalities in Use of and Exposure to Artificial
+    Intelligence" from the Atlas of Global Development 2026.</p>
+    <p><strong>Suggested citation (original):</strong> Mahler, D G, Tulp, J W,
+    Wang, H and Weber, M. 2026. "<a href="https://doi.org/10.60616/7xx4-k167">Inequalities
+    in AI use and exposure</a>." In Atlas of Global Development 2026,
+    edited by A F Pirlea, D Wadhwa, D Mahler, U Serajuddin, M Welch, A Thudt,
+    and M Lambrechts. Washington DC: World Bank. License: Creative Commons
+    Attribution CC BY 3.0 IGO.</p>
+    <p><strong>Credits (original):</strong> Story by Daniel Gerszon Mahler,
+    He Wang &amp; Michael Weber; visuals by Jan Willem Tulp; art direction by
+    Alice Thudt. Acknowledgements: Gordon Blackladder, David Castillo Parra,
+    Gabriel Demombynes, Holly Krambeck, Jorg Gero Langbein, Yan Liu, Aivin
+    Solatorio, Sharada Srinivasan.</p>
+    <h2>References</h2>
+    <ol>
+      <li id="ref-1">World Bank. 2025. <a href="https://doi.org/10.1596/978-1-4648-2264-3">Digital Progress and Trends Report 2025: Strengthening AI Foundations</a>. Washington DC: World Bank.</li>
+      <li id="ref-2">Bergman, B J and Wang, H. 2025. "<a href="https://openknowledge.worldbank.org/server/api/core/bitstreams/d0fdd76b-c77e-481a-b0f6-7096127a039a/content">Case study 3: Co-worker, Coach, or Competitor?</a>" Digital Progress and Trends Report 2025. World Bank.</li>
+      <li id="ref-3">Molina, E, Cobo Romani, J C, Pineda, J A and Rovner, H. 2024. <a href="https://doi.org/10.1596/41806">AI Revolution in Education: What You Need to Know</a>. Digital Innovations in Education Brief No.1. World Bank.</li>
+      <li id="ref-4">Krishnakumari, P K and Shah, P. 2025. <a href="https://documents.worldbank.org/curated/en/099110225213024234">Harnessing Artificial Intelligence for Agricultural Transformation</a>. Washington DC: World Bank Group.</li>
+      <li id="ref-5">Liu, Y, Jingyun, H and Wang, H. 2025. <a href="https://hdl.handle.net/10986/43859">Who on Earth Is Using Generative AI? Global Trends and Shifts in 2025</a>. Policy Research Working Paper 11231. World Bank.</li>
+      <li id="ref-6"><a href="https://www.semrush.com">Semrush</a>. 2025.</li>
+      <li id="ref-7">Misra, A, Wang, J, McCullers, S, White, K and Lavista Ferres, J. 2025. "<a href="https://doi.org/10.48550/arXiv.2511.02781">Measuring AI Diffusion: A Population-Normalized Metric for Tracking Global AI Usage</a>." arXiv preprint arXiv:2511.02781.</li>
+      <li id="ref-8">Anthropic. 2026. <a href="https://www.anthropic.com/economic-index#country-usage">Anthropic Economic Index: Understanding AI's effects on the economy</a>.</li>
+      <li id="ref-9">Pirlea, A F and Corso, L. 2026. "<a href="https://data360.worldbank.org/en/atlas/internet-access">The Unfinished Digital Revolution: Expanding Internet Access</a>." World Bank Atlas of Global Development 2026.</li>
+      <li id="ref-10">Mahler, D G, Yonzan, N, Hill, R, Lakner, C, Wu, H and Yoshida, N. 2022. "<a href="https://blogs.worldbank.org/en/opendata/pandemic-prices-and-poverty">Pandemic, Prices, and Poverty</a>." World Bank Data Blog, April 13.</li>
+      <li id="ref-11">Kim, S and Qiang, C Z. 2025. "<a href="https://blogs.worldbank.org/en/voices/small-ai-big-impact-harnessing-artificial-intelligence-for-development">Small AI, Big Impact: Harnessing Artificial Intelligence for Development</a>." World Bank Blog, published on Voices, September 10.</li>
+      <li id="ref-12">Solatorio, A V, Vicente, G S, Krambeck, H and Dupriez, O. 2024. "<a href="https://doi.org/10.48550/arXiv.2410.10665">Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers</a>." arXiv preprint arXiv:2410.10665.</li>
+      <li id="ref-13">UNESCO. 2025. <a href="https://www.unesco.org/en/global-roadmap-multilingualism">Global Roadmap for Multilingualism in the Digital Era: Advancing the Role of Language Technologies</a>. Paris, France.</li>
+      <li id="ref-14">International Telecommunication Union, <a href="https://datahub.itu.int">ITU DataHub</a>.</li>
+      <li id="ref-15">Demombynes, G, Langbein, J and Weber, M. 2026. "<a href="https://blogs.worldbank.org/en/investinpeople/from-predictions-to-practice--what-ai-usage-data-reveals-about-t">From Predictions to Practice: What AI Usage Data Reveals About the Future of Work</a>." World Bank Blog: Protect and Invest in People, February 19.</li>
+      <li id="ref-16">Felten, E, Raj, M and Seamans, R. 2021. "<a href="https://doi.org/10.1002/smj.3286">Occupational, Industry, and Geographic Exposure to Artificial Intelligence: A Novel Dataset and Its Potential Uses</a>." Strategic Management Journal 42(12): 2195–2217.</li>
+      <li id="ref-17">Eloundou, T., Manning, S., Mishkin, P. and Rock, D. 2024. "<a href="https://www.science.org/doi/10.1126/science.adj0998">GPTs are GPTs: Labor market impact potential of LLMs. Science</a>", 384(6702).</li>
+      <li id="ref-18">Gmyrek, P., Berg, J., Kamiński, K., Konopczyński, F., Ładna, A., Nafradi, B., Rosłaniec, K. and Troszyński, M. 2025. "<a href="https://doi.org/10.54394/HETP0387">Generative AI and jobs: A refined global index of occupational exposure</a>." ILO Working Paper 140.</li>
+      <li id="ref-19">Gmyrek, P, Winkler, H and Garganta, S. 2024. <a href="https://doi.org/10.1596/1813-9450-10863">Buffer or Bottleneck? Employment Exposure to Generative AI and the Digital Divide in Latin America</a>. Policy Research Working Paper 10863. World Bank.</li>
+      <li id="ref-20">Demombynes, G, Langbein, J and Weber, M. 2025. <a href="https://doi.org/10.1596/1813-9450-11057">The Exposure of Workers to Artificial Intelligence in Low- and Middle-Income Countries</a>. Policy Research Working Paper 11057. World Bank.</li>
+      <li id="ref-21">Wadhwa, D and Bonfert, A. 2026. "<a href="https://doi.org/10.60616/mdwd-6c39">Shaping the Future of Women in the Workplace</a>" In Atlas of Global Development 2026, edited by A F Pirlea, D Wadhwa, D Mahler, U Serajuddin, A Thudt, and M Welch. Washington DC: World Bank. License: Creative Commons Attribution CC BY 3.0 IGO.</li>
+    </ol>
+    <p id="ref-i"><strong>i.</strong> Yet the link between use and exposure is not perfect. Managers, for example, show high theoretical exposure to AI but relatively low usage. Since the AIOE index was created, newer frameworks for evaluation occupational exposure to AI have been constructed.<sup><a href="#ref-17">17</a></sup><sup><a href="#ref-18">18</a></sup></p>
+  </div>
+
+  <script src="../../shared/wb-colors.js"></script>
+  <script src="../../shared/svg.js"></script>
+  <script src="../../shared/load.js"></script>
+  <script src="../../shared/country-names.js"></script>
+  <script src="../../shared/particles.js"></script>
+  <script src="../../shared/components/Axis.js"></script>
+  <script src="../../shared/components/LineChart.js"></script>
+  <script src="../../shared/components/BeeswarmChart.js"></script>
+  <script src="../../shared/components/Waffle.js"></script>
+  <script src="../../shared/components/Scatter.js"></script>
+  <script src="../../shared/components/index.js"></script>
+  <script src="../../shared/chapter-scroll.js"></script>
+  <script src="../../shared/story-mount.js"></script>
+  <script>
+    AtlasStoryMount.mount(document.getElementById("story")).then((c) => {
+      window.__chapter = c;
+    }).catch((err) => {
+      console.error(err);
+      document.getElementById("story").innerHTML =
+        `<div style="padding:40px;color:#aa0000"><strong>Story load error</strong><pre>${err}</pre></div>`;
+    });
+  </script>
+</body>
+</html>
