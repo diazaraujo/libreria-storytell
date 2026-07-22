@@ -20,7 +20,7 @@ Queue (chapterTitle → chapter dirs from inventory/inventory.json):
 Per story, mark here when done:
 - [x] measuring-progress (9faddd0)
 - [x] inequality
-- [ ] gender-and-jobs
+- [x] gender-and-jobs
 - [x] learning-and-work
 - [x] artificial-intelligence
 - [x] data-for-development
