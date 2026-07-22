@@ -1,0 +1,45 @@
+{
+ "slug": "global-progress",
+ "title": "Tracking Progress in Global Development",
+ "origin": "https://data360.worldbank.org/en/atlas/global-progress/",
+ "hero": {
+  "kicker": "Global Progress",
+  "title": "Tracking Progress in Global Development",
+  "lead": "After decades of progress, global development has reached a critical phase. Today, progress is taking place at its slowest pace in 75 years. The slowdown spans several areas of development including life expectancy, poverty reduction, education, and women's empowerment. Explore the data to see how progress is unfolding across countries worldwide.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Daniel Gerszon Mahler &amp; Divyanshi Wadhwa </span>, Visuals by <span class=\"font-semibold\">Alice Thudt &amp; Maarten Lambrechts</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "slowest-pace",
+   "type": "prose",
+   "html": "<h3>The world is developing at its slowest pace in 75 years</h3><p>For 75 years, global development moved decisively forward, lifting millions out of poverty and delivering major gains in health, education, and other vital areas. That progress is no longer assured. <strong>Development is now advancing at its slowest pace in generations</strong>, marking a clear break from the steady improvements that have defined progress to date and raising urgent questions about the world's ability to sustain past gains.</p><p>Getting a long-run picture of progress in global development requires decades of data. But data back to 1950 exist for only a handful of key development indicators, such as life expectancy, years of schooling, women's political empowerment, poverty, electricity supply, and carbon intensity of the economy.<sup><a href=\"#ref-1\">1</a></sup> As a result, these will be the focus of this story. But the dire outlook they suggest about global progress also generalizes to 20 indicators with shorter data availability.</p><p>It is difficult to compare progress across this diverse set of development indicators over time. It can be done by comparing a country's progress against the typical progress observed over the past 75 years for countries that were at the same stage of development. For example, if it typically takes 10 years to decrease poverty rates from 20 to 15 percent and a country did this in five years, it can be said to have moved twice as fast as the typical experience. If it achieved the feat in 10 years, it moved at typical speed—a speed of one— and if it took 20 years, it moved at a speed of a half.<sup><a href=\"#ref-i\">i</a></sup></p><p>Calculating individual countries' speed of progress over a five-year span and averaging these across all countries gives us a picture of the changing pace of development over the last 75 years.</p>"
+  },
+  {
+   "id": "indicators-progress",
+   "type": "scroller",
+   "chapterDir": "goal_dashboard/00-indicators-progress",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "consequences",
+   "type": "prose",
+   "html": "<p>The consequences are far reaching. We can measure the impact of the decline by calculating the gap between where we are today and where we would have been if the pace of progress had not slowed. Currently around 800 million people are extremely poor in the world, yet if the speed of progress had not slowed down in the last decade, there would be 150 million fewer.</p><blockquote class=\"ch-callout\"><p>Had the global pace of progress not slowed down in the last decade, <strong>150 million fewer people would be living in extreme poverty</strong>, life expectancy would be nearly <strong>a year longer,</strong> and<strong> women's empowerment would be 15 percent higher </strong>today.</p></blockquote><p>The slowdown is evident across a range of development indicators beyond the six examined here, which were selected partly due to data availability in 1950. Progress is at its slowest on record for many other key outcomes, including stunting, undernourishment, under‑five mortality, gross national income per capita, access to clean cooking fuels, cereal yield, immunization coverage (diphtheria, tetanus, and pertussis and measles), employment share in services, and access to safe drinking water. For others, including rural electricity access, basic water and sanitation, safely managed sanitation, and vulnerable employment, progress has recently slowed. Of the 20 additional indicators examined, only three— gross tertiary enrollment, mobile subscriptions, and Internet use—show accelerating progress.</p><h3>Explore progress across countries and indicators</h3><p>To explore this approach, we can compare countries' progress in 14 key Atlas of Global Development indicators against others over the last 10 years.</p>"
+  },
+  {
+   "id": "dashboard",
+   "type": "scroller",
+   "chapterDir": "goal_dashboard/01-dashboard-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  }
+ ]
+}
