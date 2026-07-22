@@ -1144,6 +1144,44 @@
    "notes": "Collection-level record; verify each data file's original provider before redistribution."
   },
   {
+   "id": "story-artificial-intelligence",
+   "paths": [
+    "stories/artificial-intelligence/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Inequalities in Use of and Exposure to Artificial Intelligence' (Mahler, Tulp, Wang & Weber 2026, doi.org/10.60616/7xx4-k167) under CC BY 3.0 IGO; the five charts come from the cataloged goal_16 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
    "id": "story-water-access",
    "paths": [
     "stories/water-access/**"

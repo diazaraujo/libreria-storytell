@@ -22,7 +22,7 @@ Per story, mark here when done:
 - [x] inequality
 - [ ] gender-and-jobs
 - [x] learning-and-work
-- [ ] artificial-intelligence
+- [x] artificial-intelligence
 - [x] data-for-development
 
 After all six: run full suites, rebuild dist, Antonio redeploys, update
