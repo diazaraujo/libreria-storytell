@@ -14,7 +14,7 @@
     {
       "type": "scene",
       "id": "1",
-      "text": "In 1920, the average adult had only 1.6 years of education—ranging from nearly zero years in <span data-color-id=\"SSF\" class=\"SSF\">Mali</span> to seven in the <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">United States</span>.",
+      "text": "In 1920, the average adult had only 1.6 years of education—ranging from nearly zero years in <span data-color-id=\"SSF\" class=\"SSF\">Mali</span> to seven in the <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">United States</span>.",
       "translationPrefix": "goal_04.content.#9.scenes.#0"
     },
     {
@@ -51,6 +51,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

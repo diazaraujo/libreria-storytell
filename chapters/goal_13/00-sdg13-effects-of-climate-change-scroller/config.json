@@ -17,19 +17,19 @@
     {
       "type": "scene",
       "id": "floods__sat__wld",
-      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">Floods</span>] can severely damage infrastructure and homes, disrupt the economy, and destroy crops and livestock. Impacts become particularly severe when inundation depth exceeds 50 centimeters.[reference: Rentschler] The areas in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">blue</span>] indicate exposure above this level.",
+      "text": "[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">Floods</span>] can severely damage infrastructure and homes, disrupt the economy, and destroy crops and livestock. Impacts become particularly severe when inundation depth exceeds 50 centimeters.[reference: Rentschler] The areas in [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">blue</span>] indicate exposure above this level.",
       "translationPrefix": "goal_13.content.#10.scenes.#0"
     },
     {
       "type": "scene",
       "id": "floods__sat__bbox1",
-      "text": "The [emphasis: population exposed to ][emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] live near rivers, in areas with low elevation, and near the coast. In The Netherlands, more than one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>] due to the country’s  many rivers and low elevation.",
+      "text": "The [emphasis: population exposed to ][emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">floods</span>] live near rivers, in areas with low elevation, and near the coast. In The Netherlands, more than one-third of the population is exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">floods</span>] due to the country’s  many rivers and low elevation.",
       "translationPrefix": "goal_13.content.#10.scenes.#1"
     },
     {
       "type": "scene",
       "id": "floods__vec__wld",
-      "text": "Globally, [emphasis: 775 million people are exposed to] [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods.</span>] Half of them live in three populous countries: China, India, and Bangladesh. In Bangladesh, one-third of the population is exposed to [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">floods</span>].",
+      "text": "Globally, [emphasis: 775 million people are exposed to] [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">floods.</span>] Half of them live in three populous countries: China, India, and Bangladesh. In Bangladesh, one-third of the population is exposed to [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">floods</span>].",
       "translationPrefix": "goal_13.content.#10.scenes.#2"
     }
   ],

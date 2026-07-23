@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "hunger hotspots \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "hunger hotspots · real CSV · Tier B hand (not bulk generator)",
   "graphic": "food_insecurity_hotspots",
   "title": "Food insecurity hotspots"
 }

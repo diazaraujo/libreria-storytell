@@ -83,11 +83,19 @@ node capture.mjs --status ready --seconds 10
 node capture.mjs --target atlas --only data-for-development --seconds 50
 ```
 
-Último QA: **164/164 OK** (loop de autocorrección).
+El estado reproducible se valida con:
+
+```bash
+npm test
+python3 scripts/sync_quality.py --check
+```
+
+El QA visual de Playwright es una comprobación adicional; `status: ready` no implica por sí solo aprobación pixel-perfect.
 
 ### Pixel-perfect (programa completo)
 
 Ver [docs/PIXEL_PERFECT.md](docs/PIXEL_PERFECT.md).
+Estado de salida y gates pendientes: [docs/PRODUCT_READINESS.md](docs/PRODUCT_READINESS.md).
 
 | Tier | Qué | Dónde |
 |------|-----|--------|
@@ -119,17 +127,20 @@ atlas-replicas/
 | | |
 |--|--|
 | Total | **164** visualizaciones |
-| **Ready (con datos + render)** | **~136** vía `AtlasAuto` + ejemplos custom |
-| **Partial** (sin CSV local: mapas/imágenes) | **~28** |
+| **Status** | **164** ready |
+| **Fidelity** | **82** pixel-perfect · **79** tier-B-bulk · **3** unverified |
+| **Approved** | **82** capítulos con aprobación explícita |
 | Kit | Line · Beeswarm · Scatter · Waffle · Load · **Auto-render** |
 | Custom full | `draw_your_chart`, `spi_scroller`, SPI pillars, nigeria, survey_age, missing children, `spi_gdp_scatter` |
 
 ## Pipeline (regenerar desde el Atlas)
 
 ```bash
-./scripts/run_pipeline.sh          # inventory + scaffolds
+./scripts/run_pipeline.sh          # inventory + crea solo archivos ausentes
 python3 scripts/refresh_shells.py  # actualiza HTML con el kit (no toca main.js)
 ```
+
+`config.json#_meta` es la fuente canónica de `status`, `fidelity` y `approved`. Tras editarla, ejecuta `python3 scripts/sync_quality.py --write`; también alinea los campos de calidad de los `meta.json` heredados y CI usa `--check` para detectar deriva. El pipeline preserva archivos existentes salvo que se pase explícitamente `--write-metadata`, `--write-shells`, `--force-data`, `--force-main` o `--sync-ready`.
 
 Fuente: [worldbank/atlas-global-development](https://github.com/worldbank/atlas-global-development)  
 Live: https://data360.worldbank.org/en/atlas  

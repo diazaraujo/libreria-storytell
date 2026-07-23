@@ -22,19 +22,19 @@
     {
       "type": "scene",
       "id": "scene1_Id",
-      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,128,198);\">Safely managed</span>]: The highest service level, this is water from an[emphasis:  improved source] that is [emphasis: available on premises [reference: premises]],[emphasis:  when needed, ]and [emphasis: free from fecal and priority chemical contamination such as arsenic and fluoride]. Global access rose from 61 percent (3.8 billion people) in 2000 to 74 percent (6 billion) in 2024. This means  2.1 billion people still lack access to safe drinking water.",
+      "text": "[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(0,128,198);\">Safely managed</span>]: The highest service level, this is water from an[emphasis:  improved source] that is [emphasis: available on premises [reference: premises]],[emphasis:  when needed, ]and [emphasis: free from fecal and priority chemical contamination such as arsenic and fluoride]. Global access rose from 61 percent (3.8 billion people) in 2000 to 74 percent (6 billion) in 2024. This means  2.1 billion people still lack access to safe drinking water.",
       "translationPrefix": "goal_06.content.#8.scenes.#0"
     },
     {
       "type": "scene",
       "id": "scene2_Id",
-      "text": "[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,184,236);\">Basic</span>][emphasis: : From an improved source, often off-premises but within a 30-minute round trip and without guaranteed water quality. ]In 2024, about 18 percent of the world’s population (1.4 billion people) had access to this level of drinking water. ",
+      "text": "[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(0,184,236);\">Basic</span>][emphasis: : From an improved source, often off-premises but within a 30-minute round trip and without guaranteed water quality. ]In 2024, about 18 percent of the world’s population (1.4 billion people) had access to this level of drinking water. ",
       "translationPrefix": "goal_06.content.#8.scenes.#1"
     },
     {
       "type": "scene",
       "id": "scene3_Id",
-      "text": "In 2024, one-tenth of the global population lacked even basic drinking water: 4 percent had access to an improved source but with a collection time of over 30 minutes ([emphasis: <span style=\"background-color: rgb(206,212,222);\">limited</span>] services) and another 4 percent relied on [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(227,167,99);\">unimproved</span>]sources. The final 1 percent were at high risk of contamination, depending on [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(189,97,38);\">surface</span>] water accessed directly from rivers, dams, and lakes.",
+      "text": "In 2024, one-tenth of the global population lacked even basic drinking water: 4 percent had access to an improved source but with a collection time of over 30 minutes ([emphasis: <span style=\"background-color: rgb(206,212,222);\">limited</span>] services) and another 4 percent relied on [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(227,167,99);\">unimproved</span>]sources. The final 1 percent were at high risk of contamination, depending on [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(189,97,38);\">surface</span>] water accessed directly from rivers, dams, and lakes.",
       "translationPrefix": "goal_06.content.#8.scenes.#2"
     }
   ],

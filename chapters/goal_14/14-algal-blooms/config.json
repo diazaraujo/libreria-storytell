@@ -9,6 +9,21 @@
   "data": "1L5LJ1GUFWspxmZ-5g5gGToeGJsTvqMUUKxwmW_1VIOM",
   "texture": "sdg14/textures/ocean_floor_rivers.jpg",
   "translationPrefix": "goal_14.content.#49",
+  "scenes": [],
+  "dataContract": {
+    "kind": "point-map",
+    "file": "14_data_algal_blooms.csv",
+    "columns": {
+      "event": "eventname",
+      "longitude": "longitude",
+      "latitude": "latitude",
+      "year": "eventyear"
+    }
+  },
+  "limitations": {
+    "aggregation": "The file contains 1,094 records but only 85 distinct coordinate pairs. The renderer aggregates exact coordinate duplicates into site markers whose size encodes record count; it does not treat overlapping rows as separately visible points.",
+    "interpretation": "Record count is not necessarily a count of unique bloom episodes or affected people. Tooltips report record and event-identifier counts separately."
+  },
   "_meta": {
     "index": 124,
     "chapterId": "14",
@@ -17,7 +32,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

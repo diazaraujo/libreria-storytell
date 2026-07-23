@@ -2,7 +2,7 @@
   "type": "scroller",
   "graphic": "tanzania_typical_progress",
   "title": "Progress in improving water quality lags progress in availability and accessibility",
-  "subtitle": "People with access to each component: <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water free from contamination</span><span style=\"color: rgb(255,255,255);\">  </span>or <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">water accessible on premises</span>, or <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">water available when needed</span> and years left to reach universal access (% of people using improved water sources) for Tanzania and “typical” country",
+  "subtitle": "People with access to each component: <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">water free from contamination</span><span style=\"color: rgb(255,255,255);\">  </span>or <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">water accessible on premises</span>, or <span style=\"color: rgb(255,255,255); background-color: rgb(102,74,182);\">water available when needed</span> and years left to reach universal access (% of people using improved water sources) for Tanzania and “typical” country",
   "access": "Accessibility",
   "availability": "Availability",
   "quality": "Quality",
@@ -19,13 +19,13 @@
     {
       "type": "scene",
       "id": "tanzania_start",
-      "text": "In 2000, nearly 15 percent of people in [emphasis: Tanzania ]had access to <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">uncontaminated water</span>, but only 1 percent had access to <span data-color-id=\"cat1\" class=\"cat1\">water on premises</span>.",
+      "text": "In 2000, nearly 15 percent of people in [emphasis: Tanzania ]had access to <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">uncontaminated water</span>, but only 1 percent had access to <span data-color-id=\"cat1\" class=\"cat1\">water on premises</span>.",
       "translationPrefix": "goal_06.content.#21.scenes.#0"
     },
     {
       "type": "scene",
       "id": "tanzania_progress",
-      "text": "Over the next two decades, <span style=\"color: rgb(255,255,255); background-color: rgb(52,167,242);\">accessibility</span> improved dramatically but <span style=\"color: rgb(4,1,16);\">improvements in </span><span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span><span style=\"color: rgb(4,1,16);\"> were more limited</span>. Infrastructure expanded rapidly and by 2024, almost half the population had water on premises. Yet only about one-third had access to <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">uncontaminated water</span>.",
+      "text": "Over the next two decades, <span style=\"color: rgb(4,1,16); background-color: rgb(52,167,242);\">accessibility</span> improved dramatically but <span style=\"color: rgb(4,1,16);\">improvements in </span><span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">water quality</span><span style=\"color: rgb(4,1,16);\"> were more limited</span>. Infrastructure expanded rapidly and by 2024, almost half the population had water on premises. Yet only about one-third had access to <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">uncontaminated water</span>.",
       "translationPrefix": "goal_06.content.#21.scenes.#1"
     },
     {
@@ -43,7 +43,7 @@
     {
       "type": "scene",
       "id": "scene4_Id",
-      "text": "Achieving the same scale of progress in <span style=\"color: rgb(255,255,255); background-color: rgb(78,194,192);\">water quality</span> would take 101 years, or three times longer.",
+      "text": "Achieving the same scale of progress in <span style=\"color: rgb(4,1,16); background-color: rgb(78,194,192);\">water quality</span> would take 101 years, or three times longer.",
       "translationPrefix": "goal_06.content.#21.scenes.#4"
     }
   ],

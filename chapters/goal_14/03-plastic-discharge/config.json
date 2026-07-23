@@ -11,6 +11,16 @@
   "data": "1AuaI4YAk1CtM69PR_JDOW6ctuv00KSAdhfKov_fv8aA",
   "texture": "sdg14/textures/ocean_floor_rivers.jpg",
   "translationPrefix": "goal_14.content.#13",
+  "scenes": [],
+  "dataContract": {
+    "kind": "point-map",
+    "file": "data_14_plastic_discharge.csv",
+    "columns": {
+      "magnitude": "discharge",
+      "longitude": "longitude",
+      "latitude": "latitude"
+    }
+  },
   "_meta": {
     "index": 113,
     "chapterId": "14",
@@ -19,7 +29,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

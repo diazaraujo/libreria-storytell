@@ -123,6 +123,7 @@
 
   const scenes = Array.isArray(config.scenes) ? config.scenes : [];
   let sceneIndex = 0;
+  const renderGate = window.AtlasLoad.createLatestGate();
 
   function ctx() {
     return {
@@ -156,6 +157,90 @@
     // leftover mustache placeholders
     s = s.replace(/\{\{[^}]+\}\}/g, "");
     return s;
+  }
+
+  function rendererAvailable() {
+    return (
+      status === "ready" &&
+      typeof window.AtlasReplica?.render === "function" &&
+      !window.AtlasReplica.isStub
+    );
+  }
+
+  function showRenderError(err) {
+    console.error(err);
+    if (!placeholder) return;
+    const strong = document.createElement("strong");
+    strong.style.color = "#aa0000";
+    strong.textContent = "Render error";
+    const detail = document.createElement("p");
+    detail.textContent = String(err?.message || err);
+    placeholder.replaceChildren(strong, detail);
+    placeholder.hidden = false;
+    placeholder.style.display = "";
+    placeholder.setAttribute("aria-hidden", "false");
+  }
+
+  /** Render off-screen and commit only the newest successfully completed scene. */
+  async function renderReplica(scene, animate) {
+    if (!rendererAvailable()) return false;
+    const base = ctx();
+    const chart = base.chartEl;
+    if (!chart) return false;
+
+    const token = renderGate.start();
+    const staging = document.createElement("div");
+    staging.className = "atlas-render-staging";
+    staging.style.cssText = [
+      "position:absolute",
+      "left:-100000px",
+      `width:${chart.clientWidth || 900}px`,
+      `height:${chart.clientHeight || 440}px`,
+      "visibility:hidden",
+      "pointer-events:none",
+    ].join(";");
+    chart.appendChild(staging);
+
+    let placeholderRequest = { visible: false, html: null };
+    const renderContext = {
+      ...base,
+      chartEl: staging,
+      animate,
+      renderToken: token.id,
+      hidePlaceholder() {
+        placeholderRequest = { visible: false, html: null };
+      },
+      showPlaceholder(html) {
+        placeholderRequest = { visible: true, html: html || null };
+      },
+    };
+
+    try {
+      await Promise.resolve(window.AtlasReplica.render(scene, renderContext));
+    } catch (err) {
+      staging.remove();
+      if (token.isCurrent()) showRenderError(err);
+      return false;
+    }
+    if (!token.isCurrent()) {
+      staging.remove();
+      return false;
+    }
+
+    chart.replaceChildren(...staging.childNodes);
+    if (placeholder) {
+      if (placeholderRequest.visible) {
+        if (placeholderRequest.html) placeholder.innerHTML = placeholderRequest.html;
+        placeholder.hidden = false;
+        placeholder.style.display = "";
+        placeholder.setAttribute("aria-hidden", "false");
+      } else {
+        placeholder.hidden = true;
+        placeholder.style.display = "none";
+        placeholder.setAttribute("aria-hidden", "true");
+      }
+    }
+    return true;
   }
 
   // Format static config fields that may contain Atlas markup
@@ -227,16 +312,10 @@
     );
 
     // Chart scene transition (1s opacity + particles) — never remount
-    if (typeof window.AtlasReplica?.render === "function") {
-      window.AtlasReplica.render(scene, { ...ctx(), animate });
-    }
+    return renderReplica(scene, animate);
   }
 
   async function boot() {
-    const hasRenderer =
-      typeof window.AtlasReplica?.render === "function" &&
-      !window.AtlasReplica.isStub;
-
     if (scenes.length) {
       progressEl.innerHTML = "";
       scenes.forEach((s, i) => {
@@ -287,33 +366,13 @@
     if (scenes.length) {
       // First scene: show annotation + chart (no remount animation)
       try {
-        setScene(0, false);
+        await setScene(0, false);
       } catch (err) {
-        console.error(err);
-        const c = ctx();
-        c.showPlaceholder(
-          `<strong style="color:#aa0000">Render error</strong><p>${String(err.message || err)}</p>`
-        );
+        showRenderError(err);
         return;
       }
-    } else if (typeof window.AtlasReplica?.render === "function") {
-      const c = ctx();
-      try {
-        await window.AtlasReplica.render(null, { ...c, animate: false });
-      } catch (err) {
-        console.error(err);
-      }
-      c.hidePlaceholder();
-    }
-
-    // Always hide scaffold after custom render
-    const c = ctx();
-    c.hidePlaceholder();
-    const ph = document.getElementById("placeholder");
-    if (ph) {
-      ph.hidden = true;
-      ph.style.display = "none";
-      ph.setAttribute("aria-hidden", "true");
+    } else if (rendererAvailable()) {
+      await renderReplica(null, false);
     }
   }
 

@@ -1,0 +1,20 @@
+# License and rights notice
+
+Copyright in the original material in this repository is held by
+`@diazaraujo` and any other identified contributors. All rights are reserved
+unless a file or directory carries a separate, explicit license notice.
+
+No repository-wide open-source or open-content license is granted by this
+file. In particular, the presence of code, data, images, fonts, maps, or other
+material in the repository must not be read as permission to copy, modify, or
+redistribute it.
+
+This repository also contains or refers to third-party code, data, imagery,
+maps, fonts, and services. Those materials remain subject to the rights and
+terms of their respective owners and providers. This notice does not relicense
+them, claim ownership of them, or restrict permissions that their own licenses
+or applicable law already provide.
+
+See `THIRD_PARTY_NOTICES.md` and `docs/DATA_CATALOG.md` before reusing any
+material. An `unknown` license status means that permission has not been
+verified; it does not mean that the material is free of restrictions.

@@ -19,7 +19,7 @@
     {
       "type": "scene",
       "id": "rate4",
-      "text": "You can use the colors from the sidebar or use the Highlight color from the Google Docs menu with the color picker to <span style=\"color: rgb(255,255,255); background-color: rgb(190,98,208);\">highlight parts of your text</span> and associate it with the visualization elements. If the color is too dark. make sure to change the text color to white too.",
+      "text": "You can use the colors from the sidebar or use the Highlight color from the Google Docs menu with the color picker to <span style=\"color: rgb(4,1,16); background-color: rgb(190,98,208);\">highlight parts of your text</span> and associate it with the visualization elements. If the color is too dark. make sure to change the text color to white too.",
       "translationPrefix": "goal_99.content.#39.scenes.#0"
     },
     {

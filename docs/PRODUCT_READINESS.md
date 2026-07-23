@@ -1,0 +1,73 @@
+# Product readiness
+
+Updated: 2026-07-21
+
+## Current assessment
+
+`libreria-storytell` is a technical release candidate suitable for a serious
+demo or internal pilot. It is not yet approved for a public production launch.
+
+## Completed foundation
+
+- Canonical quality metadata for 164 chapters: 82 explicitly approved
+  pixel-perfect, 79 tier-B, and 3 unverified.
+- Explicit data contracts and semantic regression coverage for the corrected
+  renderers; CSV missingness and HTTP failures are handled explicitly.
+- Latest-render gating and visible error handling for asynchronous scenes.
+- Mobile layout regressions at 344 px for the charts corrected in this review.
+- Data catalog, large-file policy, license, third-party notices, and CI checks.
+- Scaffold and mirror operations preserve local work unless destructive flags
+  are passed explicitly.
+
+## Reproducible evidence
+
+Last verified on 2026-07-21:
+
+```bash
+npm test                                      # 36/36
+python3 -B scripts/sync_quality.py --check   # 164, no drift
+python3 -B scripts/check-data-governance.py  # 30 collections; 6 large files
+```
+
+The semantic suite executes every corrected scene branch with its bundled CSV
+and includes responsive assertions. This is not a substitute for visual QA in
+a real browser.
+
+## Open release gates
+
+1. Decide history sanitization for the credential in the companion data
+   repository (`sostenibilidad-data-code`). Resolved 2026-07-21 at `HEAD`:
+   it was a third-party Global Forest Watch `x-api-key` embedded in an
+   upstream CSV's download URLs; it has been stripped there and is not ours
+   to rotate. Only the history-rewrite decision remains, in that repository.
+2. Real-browser QA: done 2026-07-21 in headless Chromium (58 renders at
+   1440/768/344px, keyboard, reduced motion, blocked-CSV error states,
+   axe-core), then extended the same day: all 164 chapter shells carry
+   `<main>` landmarks and telemetry, the chapter contrast debt is resolved
+   (darker --subtle token, 93 prose chips moved to the corpus's dark-text
+   convention, AA text variants for sdg13 stat chips — sampled axe runs
+   report zero violations), WebKit and Firefox pass the same harness
+   (one hexmap legend overflow found and fixed cross-engine), and 320px
+   reflow passes on key pages. Still open: a human screen-reader pass.
+3. CI from clean clones: verified 2026-07-21 (fresh GitHub clones of both
+   repos pass every documented check; see the QA report). Staging: the
+   companion repo's `scripts/build-staging.py` builds the combined site
+   (this library mounted at `/ar`) into a deployable `dist/`, verified by
+   smoke and headless page drives; first deploy pending there.
+4. Observability: gallery pages beacon client errors via
+   `shared/telemetry.js`; availability and alerting run from the companion
+   repo (see its `docs/OBSERVABILITY.md`). Still open: telemetry in the
+   generated chapter template, a real error tracker, and performance
+   budgets.
+5. Catalog provenance: resolved 2026-07-21 for all 30 collections — the
+   Atlas of Global Development 2026 (CC BY 3.0 IGO at publication level,
+   verified against data360.worldbank.org) anchors chapters, stories,
+   heroes, and derived assets; the reusable library is component-verified
+   (h3-js Apache-2.0, Africa grid CC BY 4.0). Open residuals: per-graphic
+   provider terms (ITU, ILO, ACLED, Ookla, papers) are unverified,
+   chapter-goal-03/id4d lack internal source fields, and Space2Stats data
+   terms are unconfirmed. The Git LFS storage decision remains pending.
+
+Production readiness requires every gate above to have an owner, evidence, and
+an explicit sign-off. Passing unit and HTTP tests alone does not grant that
+status.

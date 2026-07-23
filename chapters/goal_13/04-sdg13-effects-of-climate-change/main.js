@@ -19,9 +19,9 @@ window.AtlasReplica = {
     const rows = await AtlasLoad.csv("./data/20260130_hazard_data_prepared.csv");
     const NAMES = window.ATLAS_COUNTRY_NAMES || {};
     const hazards = [
-      { key: "sha_flood", label: "Floods", color: "#089BD4", people: "775M" },
-      { key: "sha_drought", label: "Drought", color: "#BE792B", people: "1.4B" },
-      { key: "sha_cyclone", label: "Cyclones", color: "#A37ACD", people: "8%" },
+      { key: "sha_flood", label: "Floods", color: "#089BD4", text: "#06719b", people: "775M" },
+      { key: "sha_drought", label: "Drought", color: "#BE792B", text: "#8f5c1e", people: "1.4B" },
+      { key: "sha_cyclone", label: "Cyclones", color: "#A37ACD", text: "#76509f", people: "8%" },
       { key: "sha_heatwave", label: "Heatwaves", color: "#C1261A", people: "40%" },
       { key: "sha_all", label: "Any hazard", color: "#081079", people: "57%" },
     ];
@@ -47,8 +47,8 @@ window.AtlasReplica = {
       chip.style.cssText = `padding:8px 12px;border-radius:6px;border:1px solid ${
         active ? hz.color : "#e2e8f0"
       };background:${active ? hz.color + "14" : "#f8fafc"};min-width:88px`;
-      chip.innerHTML = `<div style="font-size:11px;color:#6a7781;font-weight:600">${hz.label}</div>
-        <div style="font-size:18px;font-weight:700;color:${hz.color};line-height:1.2">${hz.people}</div>`;
+      chip.innerHTML = `<div style="font-size:11px;color:#5b6873;font-weight:600">${hz.label}</div>
+        <div style="font-size:18px;font-weight:700;color:${hz.text};line-height:1.2">${hz.people}</div>`;
       strip.appendChild(chip);
     });
     root.appendChild(strip);

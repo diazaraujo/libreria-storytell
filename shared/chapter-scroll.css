@@ -23,7 +23,7 @@
 .ch-story {
   background: var(--ch-bg);
   color: var(--ch-text);
-  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+  font-family: var(--ch-font, "Open Sans"), "Helvetica Neue", system-ui, sans-serif;
 }
 
 /* Hero — full-bleed Atlas dark intro (navy + particles + key facts) */
@@ -248,7 +248,7 @@ html { scroll-behavior: smooth; }
   line-height: 1.25;
   color: var(--ch-text);
   letter-spacing: -0.015em;
-  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+  font-family: var(--ch-font, "Open Sans"), "Helvetica Neue", system-ui, sans-serif;
 }
 .ch-subtitle {
   margin: 0 0 10px;
@@ -283,7 +283,7 @@ html { scroll-behavior: smooth; }
   border-left: 4px solid var(--ch-red);
   border-radius: 2px;
   box-shadow: 0 2px 14px rgba(16, 14, 43, 0.08);
-  font-family: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+  font-family: var(--ch-font, "Open Sans"), "Helvetica Neue", system-ui, sans-serif;
   font-size: 16px; /* --font-size-l-m */
   font-weight: 400;
   line-height: 1.5; /* 24px @ 16 */
@@ -331,7 +331,7 @@ html { scroll-behavior: smooth; }
 }
 .ch-note-text [data-color-id="SAS"],
 .ch-note-text .SAS {
-  color: #fff;
+  color: #040110;
   background: #4ec2c0;
   font-weight: 700;
   padding: 0 4px;
@@ -347,7 +347,7 @@ html { scroll-behavior: smooth; }
 }
 .ch-note-text [data-color-id="EAS"],
 .ch-note-text .EAS {
-  color: #fff;
+  color: #040110;
   background: #f3578e;
   font-weight: 700;
   padding: 0 4px;
@@ -371,7 +371,7 @@ html { scroll-behavior: smooth; }
 }
 .ch-note-text [data-color-id="NAC"],
 .ch-note-text .NAC {
-  color: #fff;
+  color: #040110;
   background: #34a7f2;
   font-weight: 700;
   padding: 0 4px;

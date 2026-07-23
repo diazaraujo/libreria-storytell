@@ -18,6 +18,16 @@
   "data_download": "14_data_plastic_seafood.csv",
   "data": "1m4-ro0_GRGeZ7s-4Jnrh5FfY8f4aqEosq144g7ntsL8",
   "translationPrefix": "goal_14.content.#24",
+  "scenes": [],
+  "dataContract": {
+    "kind": "bars-with-error",
+    "file": "14_data_plastic_seafood.csv",
+    "columns": {
+      "category": "category",
+      "value": "particle_concentration",
+      "error": "standard_error"
+    }
+  },
   "_meta": {
     "index": 117,
     "chapterId": "14",
@@ -26,7 +36,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }

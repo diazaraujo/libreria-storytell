@@ -18,13 +18,13 @@
     {
       "type": "scene",
       "id": "",
-      "text": "The number of economies with  <span style=\"color: rgb(255,255,255); background-color: rgb(190,98,208);\">high inequality</span> (Gini index > 40) has decreased substantially since the 1990s. In 1995, 72 economies had high inequality; by 2024, this had fallen to 43—nearly half the number in 1995.",
+      "text": "The number of economies with  <span style=\"color: rgb(4,1,16); background-color: rgb(190,98,208);\">high inequality</span> (Gini index > 40) has decreased substantially since the 1990s. In 1995, 72 economies had high inequality; by 2024, this had fallen to 43—nearly half the number in 1995.",
       "translationPrefix": "goal_10.content.#5.scenes.#0"
     },
     {
       "type": "scene",
       "id": "",
-      "text": "At the same time, the number of economies with <span style=\"color: rgb(255,255,255); background-color: rgb(78,162,172);\">low inequality</span> (Gini index < 30) increased from 22 in 1995 to 33 in 2024, underlining the progress in reducing inequality.",
+      "text": "At the same time, the number of economies with <span style=\"color: rgb(4,1,16); background-color: rgb(78,162,172);\">low inequality</span> (Gini index < 30) increased from 22 in 1995 to 33 in 2024, underlining the progress in reducing inequality.",
       "translationPrefix": "goal_10.content.#5.scenes.#1"
     }
   ],
@@ -36,6 +36,8 @@
     "dir": "chapters/goal_10/00-high-inequality-trend",
     "status": "ready",
     "template": "scroller",
-    "reference": null
+    "reference": null,
+    "fidelity": "unverified",
+    "approved": false
   }
 }

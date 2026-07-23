@@ -1,0 +1,126 @@
+{
+ "slug": "inequality",
+ "title": "Combining Income Growth with Inequality Reduction Benefits Everyone",
+ "origin": "https://data360.worldbank.org/en/atlas/inequality/",
+ "hero": {
+  "kicker": "Inequality",
+  "title": "Combining Income Growth with Inequality Reduction Benefits Everyone",
+  "lead": "Most inequality measures fail to account for overall economic development. The Prosperity Gap tracks both economic progress and its distribution. Although prosperity has improved globally, many economies—particularly in Sub-Saharan Africa—have regressed in recent decades.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Jonas Helth Lønborg &amp; Nishant Yonzan</span>, Visuals by <span class=\"font-semibold\">Maarten Lambrechts</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "intro",
+   "type": "prose",
+   "html": "<p>A country’s growth in gross domestic product (GDP) per capita is commonly used to measure economic development. But this metric says nothing about how progress is shared among the wider population. Although it is important that the income of the poor continue to increase, it is better if their income grows as quickly—or faster than—the income of the rich. When this happens, prosperity is shared more fairly and inequality decreases.</p><p>Hence, it is important not only to examine growth rates, but also the distribution of benefits across the population. Traditional indicators, such as the Gini index and income growth of the poorest 40 percent, only partially capture this. The Prosperity Gap is a new measure that captures both income growth and its distribution. It importantly gives the most emphasis to income changes of the poorest in society. This story reviews the conventional measures used to assess inequality and provides an overview of the Prosperity Gap.</p><h3>Inequality around the world</h3><p>High levels of inequality impedes poverty reduction and slows shared progress.<sup><a href=\"#ref-1\">1</a></sup><sup><a href=\"#ref-2\">2</a></sup><sup><a href=\"#ref-3\">3</a></sup> Inequalities today also signal differences in opportunities in early life usually stemming from factors that cannot be changed, such as gender, race, family background, or birthplace.<sup><a href=\"#ref-4\">4</a></sup><sup><a href=\"#ref-5\">5</a></sup><sup><a href=\"#ref-6\">6</a></sup></p><p>To that end, in line with SGD 10 to reduce inequality within and across countries, the World Bank has started tracking the<strong> number of economies with high inequality</strong>, defined as economies with a Gini index over 40.<sup><a href=\"#ref-7\">7</a></sup> You can find a visual explanation of how the Gini index works in the 2023 Atlas.<sup><a href=\"#ref-8\">8</a></sup> Of the 169 economies with data to calculate the Gini index, 72 economies had high inequality in 1995 compared to 43 in 2024. This is substantial progress.</p>"
+  },
+  {
+   "id": "high-inequality-trend",
+   "type": "scroller",
+   "chapterDir": "goal_10/00-high-inequality-trend",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "gini-map-intro",
+   "type": "prose",
+   "html": "<p>The map below uses the latest household survey to report the Gini index for each economy. Looking at the regional pattern, we see that high inequality is concentrated in Latin America &amp; the Caribbean and Sub-Saharan Africa. High inequality in Latin American economies is well known<sup><a href=\"#ref-9\">9</a></sup>, whereas similar disparities in Sub-Saharan African economies are only beginning to receive attention.<sup><a href=\"#ref-10\">10</a></sup><sup><a href=\"#ref-11\">11</a></sup></p><p>Sub-Saharan Africa<strong> faces high levels of both poverty and inequality</strong>.<strong> </strong>Despite this, <strong>Benin </strong>is among the economies that have managed to move from high to moderate inequality. Here, a combination of high economic growth and a stronger tax collection system has increased domestic resource mobilization, enabling an expansion of social safety net programs targeting the poorest.<sup><a href=\"#ref-12\">12</a></sup></p>"
+  },
+  {
+   "id": "high-inequality-map",
+   "type": "vis",
+   "chapterDir": "goal_10/01-high-inequality-map"
+  },
+  {
+   "id": "capturing-progress",
+   "type": "prose",
+   "html": "<p>Although it is clear that the number of economies with high inequality has decreased over recent decades, this metric says little about how much the economies grew or which groups experienced progress. In extreme cases, an improvement in the Gini index could be due to the poorest experiencing proportionally smaller income losses than the wealthy, as happened in some cases during the COVID-19 pandemic. In such a case, a reduction in the Gini index would not be the result of progress towards shared prosperity.</p><h3>Capturing progress of the poor</h3><p>Now, let’s take a look at a measure that focuses on the bottom end of the income distribution.</p><p>Comparing the growth experienced by the poorest 40 percent of the population in the economy to the average income growth of the entire population of that economy is one way to assess progress of the poor.<sup><a href=\"#ref-13\">13</a></sup> Progress is more equitable when income growth for the poorest 40 percent is faster than the average in the economy. In many cases, an economy’s outcome using this method aligns quite well with the changes in the Gini index.</p>"
+  },
+  {
+   "id": "shared-prosperity-scatter",
+   "type": "scroller",
+   "chapterDir": "goal_10/02-shared-prosperity-scatter",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "prosperity-gap-intro",
+   "type": "prose",
+   "html": "<p>So, let’s see how economies perform when we compare the growth of the poorest 40 percent with the average income growth of the entire population. Calculating growth of the poorest 40 percent also requires comparable surveys across two years. As a result, the chart only reports growth for 88 economies using data from years around 2016 and 2021. There are not enough recent comparable surveys to calculate growth for a meaningful number of economies beyond 2021.</p><p>A thorough evaluation of prosperity requires analyzing income levels, growth rates, and how gains are shared among the population. This is crucial for identifying vulnerable groups and designing targeted interventions. And if such interventions are to be impactful, analysis needs to be timely in order to be accurate and relevant. The measure introduced below attempts to do this.</p><h3>The Prosperity Gap: combining inequality and progress of the poor</h3><p>The World Bank has introduced the <strong>Global Prosperity Gap</strong> as a key vision indicator <sup><a href=\"#ref-14\">14</a></sup> for monitoring inclusive progress. This measure integrates both average income growth and advancements in equity—reflecting reductions in inequality—into a single metric, assigning the greatest emphasis to growth among the lowest-income segments of the population.</p><p>The <strong>Prosperity Gap</strong> is <strong>the average factor by which individuals’ incomes must be multiplied to reach a global prosperity standard</strong>. This standard is currently set at $28 per person per day, which is approximately equal to the average income of a person living in an economy that is at the threshold of high-income status.<sup><a href=\"#ref-15\">15</a></sup></p><blockquote class=\"ch-callout ch-callout-number\"><p>Global prosperity standard</p><p><span class=\"num-xl\">$28</span> <span class=\"num-md\">per person per day</span></p><hr><p>Approximately equivalent to the average income of a typical individual living in an economy that is graduating from middle- to high-income status.</p></blockquote><p>The Prosperity Gap is a measure that gives higher emphasis to the level of income of the poor. Consider an individual earning $14 a day and another earning $7 a day. To reach the $28 a day standard, the first individual must <strong>double </strong>their income while the second must increase their income <strong>fourfold</strong>. Consequently, the Prosperity Gap is two for the first individual and four for the second. In other words, this measure gives the person with half the income double the emphasis.</p><p>We can calculate the Prosperity Gap for individuals or for any defined population group. So, the Prosperity Gap of the population can be separated to reflect the contribution of each individual. This approach lets us analyze data in more detail and tailor policy suggestions for sub-population groups, unlike the Gini index or poorest 40 percent income growth measure, which only look at groups as a whole.</p><p>To understand how the measure works, let’s consider two economies: Colombia and Peru.</p>"
+  },
+  {
+   "id": "prosperity-gap-scroller",
+   "type": "scroller",
+   "chapterDir": "goal_10/03-prosperity-gap-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "colombia-peru",
+   "type": "prose",
+   "html": "<p>If we only consider the Gini index, we could see that Colombia (with 54) is more unequal than Peru (with 41) today. If we instead only looked at income levels, people in Colombia earn more on average ($20 per day) than people in Peru ($14 per day). <strong>The Prosperity Gap rewards higher levels of income while also imposing a “penalty” for inequality. </strong>In the case of Colombia and Peru, the negative effect of higher inequality in Colombia outweighs its higher average income – the Prosperity Gap is larger in Columbia than in Peru.</p><p>Next, we’ll look at the Prosperity Gap of economies, regions, and the world in 2026, and consider trends to highlight changes over time. Then we will break down these trends to examine the roles that mean income and inequality play in shaping the Prosperity Gap.</p><h3>Linking the national Prosperity Gaps to regional and global Prosperity Gaps</h3><p>Just like an economy’s Prosperity Gap is simply the average Prosperity Gap of everyone in the economy, the region’s or world’s Prosperity Gap is the average across everyone in the region or the world. This is important, as the global gap in prosperity can easily connect to regional, national, or individual gaps.</p>"
+  },
+  {
+   "id": "prosperity-gaps",
+   "type": "scroller",
+   "chapterDir": "goal_10/04-prosperity-gaps",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "east-asia-callout",
+   "type": "prose",
+   "html": "<p>Nations can learn from the East Asian case, where incomes grew rapidly in the past few decades, helping them reduce the Prosperity Gap considerably from close to 21 in 1981 to 2.5 today. In the next section, we will take a closer look at these trends.</p><blockquote class=\"ch-callout ch-callout-number\"><p>Global Prosperity Gap</p><p><span class=\"num-xl\">4.5</span></p><hr><p>Incomes today need to increase nearly <strong>five times, </strong>on average, for everyone to reach the prosperity standard of $28 a day.</p></blockquote><h3>Tracking the Prosperity Gap over time</h3><p>Looking at the Prosperity Gap over time can be useful to understand the patterns of development. A reduction in the Prosperity Gap signals an improvement of welfare.</p>"
+  },
+  {
+   "id": "prosperity-gap-trends",
+   "type": "scroller",
+   "chapterDir": "goal_10/05-prosperity-gap-trends",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "income-changes",
+   "type": "prose",
+   "html": "<h3>The Prosperity Gap improves when average income increases, inequality decreases, or both</h3><p>Changes in the Prosperity Gap can be due to <strong>changes in average income, inequality, </strong>or<strong> both</strong>. To illustrate this, let’s consider scenarios where only average income changes, to a scenario where both inequality and income changes.</p><p>Consider a scenario where everyone earns 10 percent higher income. This raises everyone’s income equally in relative terms, hence, relative inequality stays unchanged. For example, say person A had an initial income of $10 and person B, $20. With a 10 percent increase, A earns $11 and B earns $22. The initial ratio of income between A and B ($20/$10 = 2) remains the same even after the increase ($22/$11 = 2). Since inequality is unchanged, all the change in the Prosperity Gap in that economy is due to the change in average income alone.</p>"
+  },
+  {
+   "id": "income-prosperity-gap",
+   "type": "vis",
+   "chapterDir": "goal_10/06-income-prosperity-gap"
+  },
+  {
+   "id": "absolute-increase",
+   "type": "prose",
+   "html": "<p>Next, consider what happens to the Prosperity Gap if every person’s income increases by $10 instead of 10 percent. This raises everyone’s income, including the average national income, by $10. The difference here is that the $10 increase is a relatively larger increase for those with lower incomes and a relatively smaller increase for those with higher incomes.</p><p>Consider again the same example, with person A earning an initial income of $10 and person B, $20. With a $10 increase, A now earns $20 and B earns $30. This means that the initial ratio of income for A and B ($20/$10 = 2) has now been reduced ($30/$20 = 1.5). With the $10 increase in income, the difference in income between the two individuals has narrowed. In this case, any change in the Prosperity Gap of the economy is due to the change in both average income and inequality.</p>"
+  },
+  {
+   "id": "income-prosperity-gap-2",
+   "type": "vis",
+   "chapterDir": "goal_10/07-income-prosperity-gap-2"
+  },
+  {
+   "id": "playground-intro",
+   "type": "prose",
+   "html": "<h3>Find out what happens to the Prosperity Gap for any country</h3><p>The chart below shows how much a change in income can affect an economy’s Prosperity Gap. There are two ways to change income: (a) the dollar amount (absolute change), and (b) a percent amount (relative change). Selecting only the dollar amount (changing absolute income) will not change inequality, but selecting the percent amount (changing relative income) will change both inequality and average income. Type in the name of any economy and adjust the absolute and relative income sliders below to see changes in their Prosperity Gaps.</p>"
+  },
+  {
+   "id": "prosperity-gap-playground",
+   "type": "vis",
+   "chapterDir": "goal_10/08-prosperity-gap-playground"
+  },
+  {
+   "id": "future",
+   "type": "prose",
+   "html": "<h3>What about the future?</h3><p>The world has made a lot of progress in the last 40 years. The Prosperity Gap has fallen by more than half. A large part of this progress is due to people’s incomes in large populous economies in Asia catching up to their counterparts in richer economies.<sup><a href=\"#ref-16\">16</a></sup> But there is still a long way to go. Worldwide, people need to increase their incomes by nearly five times, on average, to reach the prosperity standard of a typical person in an economy moving into high-income status.</p><p>Prosperity Gaps vary by region. In East Asia &amp; Pacific, which had the highest Prosperity Gap (21) in 1981, incomes today need to grow close to three times, on average, to reach the global prosperity standard. In Sub-Saharan Africa, on the other hand, incomes must increase at least 11 times to reach the same standard, placing the region at the level equivalent to the global gap in the 1980s. Most of the global progress has come from high income growth in populous Asian economies, although reduced inequality has made a significant contribution.<sup><a href=\"#ref-17\">17</a></sup></p><p>To further close the prosperity gaps, high income growth is a prerequisite, not just for economies in Sub-Saharan, but also for those in South Asia and the Middle East, North Africa, Afghanistan &amp; Pakistan. In some regions, particularly Sub-Saharan Africa and Latin America &amp; the Caribbean, ongoing high levels of inequality require continued attention to improve prosperity.</p>"
+  }
+ ]
+}

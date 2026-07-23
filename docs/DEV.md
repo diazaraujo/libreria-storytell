@@ -50,7 +50,8 @@ window.AtlasReplica = {
 ```
 
 5. **Recarga** el navegador (`Cmd+Shift+R`).
-6. **Marca ready** en `config.json` → `_meta.status: "ready"` (y en inventory si quieres).
+6. **Actualiza calidad** en `config.json` → `_meta.status`, `_meta.fidelity` y `_meta.approved`.
+   Luego ejecuta `python3 scripts/sync_quality.py --write`; no edites los inventarios derivados.
 7. **Graba** (opcional):  
    `cd scripts/capture && node capture.mjs --only <graphic>`
 
@@ -88,6 +89,12 @@ En `render(scene, ctx)` reacciona a `scene.id` o `ctx.sceneIndex`.
 # Regenerar inventario desde el clone del Atlas
 ./scripts/run_pipeline.sh
 
+# Verificar contratos, semántica y parser CSV
+npm test
+
+# Verificar que inventarios y registry coincidan con config.json
+python3 scripts/sync_quality.py --check
+
 # Reaplicar shell HTML (kit scripts) sin tocar main.js
 python3 scripts/refresh_shells.py
 
@@ -121,6 +128,6 @@ cd scripts/capture && node capture.mjs --status ready --seconds 10
 
 ## Estado actual
 
-- **164** scaffolds con config + (casi todos) datos  
-- **2** ready (draw_your_chart, spi_scroller)  
+- **164** implementaciones con `status: ready`
+- **82** capítulos pixel-perfect aprobados; **79** tier-B-bulk; **3** unverified
 - Kit de componentes **v0.1** usable ya  

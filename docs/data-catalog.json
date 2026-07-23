@@ -1,0 +1,1408 @@
+{
+ "schema_version": "1.0",
+ "reviewed_at": "2026-07-21",
+ "unknown_value_policy": "unknown means not verified from repository evidence; it never grants permission or asserts that data are non-sensitive",
+ "storage_policy": {
+  "catalog_required_over_bytes": 10485760,
+  "review_required_over_bytes": 26214400,
+  "reject_uncatalogued_over_bytes": 52428800,
+  "hard_limit_bytes": 104857600
+ },
+ "collections": [
+  {
+   "id": "chapter-goal-01",
+   "paths": [
+    "chapters/goal_01/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_01/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_01/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-02",
+   "paths": [
+    "chapters/goal_02/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_02/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_02/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-03",
+   "paths": [
+    "chapters/goal_03/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "config.json source fields are empty for this chapter; provenance rests on the Atlas publication level only"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_03/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_03/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-04",
+   "paths": [
+    "chapters/goal_04/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_04/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_04/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-05",
+   "paths": [
+    "chapters/goal_05/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_05/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_05/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-06",
+   "paths": [
+    "chapters/goal_06/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_06/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_06/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-07",
+   "paths": [
+    "chapters/goal_07/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_07/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_07/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-08",
+   "paths": [
+    "chapters/goal_08/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_08/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_08/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-09",
+   "paths": [
+    "chapters/goal_09/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_09/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_09/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-10",
+   "paths": [
+    "chapters/goal_10/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_10/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_10/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-11",
+   "paths": [
+    "chapters/goal_11/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_11/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_11/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-12",
+   "paths": [
+    "chapters/goal_12/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_12/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_12/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-13",
+   "paths": [
+    "chapters/goal_13/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_13/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_13/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-14",
+   "paths": [
+    "chapters/goal_14/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_14/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_14/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-15",
+   "paths": [
+    "chapters/goal_15/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_15/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_15/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-16",
+   "paths": [
+    "chapters/goal_16/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_16/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_16/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-17",
+   "paths": [
+    "chapters/goal_17/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_17/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_17/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-99",
+   "paths": [
+    "chapters/goal_99/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_99/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_99/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-dashboard",
+   "paths": [
+    "chapters/goal_dashboard/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_dashboard/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_dashboard/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-id4d",
+   "paths": [
+    "chapters/goal_id4d/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "no per-graphic sources recorded internally; Atlas publication level only"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_id4d/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_id4d/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "chapter-goal-progress",
+   "paths": [
+    "chapters/goal_progress/**"
+   ],
+   "kind": "storytelling-chapter-collection",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/scaffold_all.py",
+    "chapters/goal_progress/**/main.js"
+   ],
+   "outputs": [
+    "chapters/goal_progress/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; individual embedded datasets may have different providers and terms."
+  },
+  {
+   "id": "story-climate",
+   "paths": [
+    "stories/climate/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/climate/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/climate/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-electricity-access",
+   "paths": [
+    "stories/electricity-access/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/electricity-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/electricity-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-internet-access",
+   "paths": [
+    "stories/internet-access/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/internet-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/internet-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-urban-development",
+   "paths": [
+    "stories/urban-development/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/urban-development/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/urban-development/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-extreme-poverty",
+   "paths": [
+    "stories/extreme-poverty/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Past, Present, and Future: 100 Years of Challenges in Tackling Extreme Poverty' (Mahler & Lambrechts 2026, doi.org/10.60616/r04r-m955) under CC BY 3.0 IGO with suggested citation reproduced in the story's About section; charts and data come from the already-cataloged chapter-goal-01 collection"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-global-progress",
+   "paths": [
+    "stories/global-progress/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Global Progress is Grinding to a Halt' (Lambrechts, Mahler, Thudt & Wadhwa 2026, doi.org/10.60616/hy02-4e74) under CC BY 3.0 IGO with suggested citation reproduced in the story's About section; both scrollers come from the cataloged goal_dashboard chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-measuring-progress",
+   "paths": [
+    "stories/measuring-progress/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'A New Framework for Measuring Progress' (Mahler & Lambrechts 2026, doi.org/10.60616/bac1-pq35) under CC BY 3.0 IGO; the three scrollers come from the cataloged goal_progress chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-data-for-development",
+   "paths": [
+    "stories/data-for-development/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'The State of Development Data' (Prinsloo, Stacy & Lambrechts 2026, doi.org/10.60616/ttes-8t11) under CC BY 3.0 IGO; charts come from the cataloged goal_17 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-inequality",
+   "paths": [
+    "stories/inequality/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Combining Income Growth with Inequality Reduction Benefits Everyone' (L\u00f8nborg, Lambrechts & Yonzan 2026, doi.org/10.60616/76hj-ty07) under CC BY 3.0 IGO; the nine charts come from the cataloged goal_10 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-learning-and-work",
+   "paths": [
+    "stories/learning-and-work/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Skills Are Used and Built on the Job' (Stacy & Laesser 2026) under CC BY 3.0 IGO; the seven charts come from the cataloged goal_04 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-artificial-intelligence",
+   "paths": [
+    "stories/artificial-intelligence/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Inequalities in Use of and Exposure to Artificial Intelligence' (Mahler, Tulp, Wang & Weber 2026, doi.org/10.60616/7xx4-k167) under CC BY 3.0 IGO; the five charts come from the cataloged goal_16 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-gender-and-jobs",
+   "paths": [
+    "stories/gender-and-jobs/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "prose replicated verbatim from the Atlas story 'Shaping the Future of Women in the Workplace' (Wadhwa, Bonfert, Rininsland & Lambrechts 2026, doi.org/10.60616/mdwd-6c39) under CC BY 3.0 IGO; the ten charts come from the cataloged goal_05 chapters"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "story-water-access",
+   "paths": [
+    "stories/water-access/**"
+   ],
+   "kind": "curated-story-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "https://github.com/worldbank/atlas-global-development",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "stories/water-access/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "stories/water-access/**/index.html",
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Collection-level record; verify each data file's original provider before redistribution."
+  },
+  {
+   "id": "ready-hero-datasets",
+   "paths": [
+    "_ready/**"
+   ],
+   "kind": "curated-hero-data-and-renderers",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "unknown",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "each hero meta.json records its original Atlas story URL; SPI data is WB Statistical Performance Indicators (CC BY 4.0 WB default)"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "_ready/**/main.js",
+    "shared/load.js"
+   ],
+   "outputs": [
+    "_ready/**/index.html"
+   ],
+   "large_file_exception": false,
+   "notes": "Source and rights must be resolved per hero before publication."
+  },
+  {
+   "id": "reusable-library",
+   "paths": [
+    "library/**"
+   ],
+   "kind": "components-vendored-code-and-geospatial-data",
+   "source": {
+    "name": "Mixed sources, including H3, OpenStreetMap-attributed grid data, and runtime map services",
+    "url": "unknown",
+    "version": "unknown",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "component-level-verified",
+    "identifier": "mixed: h3-js Apache-2.0; Africa grid GeoJSON CC-BY-4.0; Space2Stats data terms unverified",
+    "evidence": "h3-js vendored with Uber Apache-2.0 notices (library/nightlights-hexmap/vendor-h3/h3-js.js). Africa grid GeoJSONs match the WB 'Africa Electricity Transmission and Distribution Grid Map' (per-feature source fields: Umeme, NamPower, World Bank Group, OSM, REA, AICD, ECREEE); energydata.info dataset page declares CC BY 4.0 (verified 2026-07-21) \u2014 OSM-attributed features may carry ODbL obligations. Space2Stats H3 data fetched from space2stats.ds.io; its data license is unverified (the repo LICENSE covers the software). Mapbox/CARTO basemaps are runtime services under their own ToS, not redistributed."
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "public-or-unknown",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "library/nightlights-hexmap/scripts/**",
+    "library/**/main.js"
+   ],
+   "outputs": [
+    "library/**/index.html",
+    "library/nightlights-hexmap/data/**"
+   ],
+   "large_file_exception": false,
+   "storage_rationale": "Maintainer-reviewed legacy assets: the two pre-existing Africa grid GeoJSON files are retained so the nightlights demo works offline. They remain below 50 MiB; migration to external versioned storage requires a separately tested change and no history rewrite is authorized here.",
+   "notes": "Existing GeoJSON blobs over 25 MiB are retained without history rewriting; see docs/STORAGE_POLICY.md."
+  },
+  {
+   "id": "gallery-assets",
+   "paths": [
+    "assets/**"
+   ],
+   "kind": "gallery-and-interface-assets",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "unknown",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "derivative renders/thumbnails of Atlas graphics; attribution obligations flow from CC BY 3.0 IGO plus underlying provider terms"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "non-personal-media-unverified",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/mirror/build-graphic-catalog.py",
+    "scripts/capture/thumbs.mjs"
+   ],
+   "outputs": [
+    "assets/gallery_thumbnails/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Generated appearance does not establish rights in underlying source imagery."
+  },
+  {
+   "id": "animated-thumbnails",
+   "paths": [
+    "thumbs/**"
+   ],
+   "kind": "generated-preview-media",
+   "source": {
+    "name": "World Bank, Atlas of Global Development 2026 (data360.worldbank.org/en/atlas)",
+    "url": "local-derived",
+    "version": "Atlas 2026 edition (upstream repo has no tags; commit-level version unknown)",
+    "retrieved_at": "unknown"
+   },
+   "license": {
+    "status": "publication-level-verified",
+    "identifier": "CC-BY-3.0-IGO (Atlas of Global Development 2026, publication level)",
+    "evidence": "data360.worldbank.org/en/atlas declares 'License: Creative Commons Attribution CC BY 3.0 IGO' with citation Pirlea et al. 2026 (verified 2026-07-21); the worldbank/atlas-global-development GitHub repo carries no LICENSE file, so the anchor is the publisher's site. Per-graphic provider terms follow each chapter config.json source field and are individually unverified unless noted.",
+    "note": "derivative renders/thumbnails of Atlas graphics; attribution obligations flow from CC BY 3.0 IGO plus underlying provider terms"
+   },
+   "integrity": {
+    "status": "tracked-in-git-no-upstream-sha256",
+    "checksum_manifest": "unknown"
+   },
+   "sensitivity": {
+    "classification": "non-personal-media-unverified",
+    "review_status": "not-reviewed",
+    "personal_data": "unknown"
+   },
+   "transformers": [
+    "scripts/capture/thumbs.mjs"
+   ],
+   "outputs": [
+    "thumbs/**"
+   ],
+   "large_file_exception": false,
+   "notes": "Do not assume a rendered preview can be relicensed separately from its inputs."
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "slug": "learning-and-work",
+ "title": "Skills Are Used and Built on the Job",
+ "origin": "https://data360.worldbank.org/en/atlas/learning-and-work/",
+ "hero": {
+  "kicker": "Learning and Work",
+  "title": "Skills Are Used and Built on the Job",
+  "lead": "Education is one of the most powerful drivers of growth and poverty reduction. Each year of schooling that a worker attains improves productivity and wages. But learning does not end at school; workers acquire a significant share of their skills through on-the-job learning.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Brian Stacy</span>, Visuals by <span class=\"font-semibold\">Christian Laesser</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "education-and-work",
+   "type": "prose",
+   "html": "<h3>Education and work</h3><p>Education can drive growth and reduce poverty. In economics, human capital refers to the knowledge, skills, health, and capabilities that people accumulate over their lives, which enable them to be productive contributors to the economy. Human capital increases people's wages, employment prospects, and adaptability throughout their career. Around 2/3rds of the difference in income between high-income and low-and middle-income countries can be accounted for by differences in human capital.<sup><a href=\"#ref-1\">1</a></sup><sup><a href=\"#ref-2\">2</a></sup><sup><a href=\"#ref-3\">3</a></sup> And roughly 1/3rd of the improvements in extreme poverty since 1980 can be traced to an increase in the number of years of schooling.<sup><a href=\"#ref-4\">4</a></sup></p><blockquote class=\"ch-callout ch-callout-number\"><p></p><p><span class=\"num-xl\">2/3rds</span></p><p>of the differences in income between high-income and low- and middle-income countries can be accounted for by human capital</p></blockquote><p>Schools build foundational skills that people will use in their career or work. But this is only part of the story. People learn at least 25 percent of the skills they use in their careers at work through on-the-job learning.<sup><a href=\"#ref-1\">1</a></sup><sup><a href=\"#ref-5\">5</a></sup><sup><a href=\"#ref-6\">6</a></sup> Here, we look at the learning that takes place, or does not take place, in the classroom and the learning that continues in the workplace.</p><h3>Learning at school</h3><p>While we often measure an economy's wealth by its natural resources or industries, one of the most valuable assets is its human capital. Education typically makes up a significant share of a person's human capital. Expected years of schooling is a measure of the number of years of schooling a child starting school today is likely to receive by the time they turn 18.</p>"
+  },
+  {
+   "id": "schooling-regions",
+   "type": "vis",
+   "chapterDir": "goal_04/00-schooling-regions"
+  },
+  {
+   "id": "human-capital-stock",
+   "type": "prose",
+   "html": "<p>Measuring how many years a child will spend in school is vital for planning the future. But to understand the economy today, we must look at the average years of schooling for today's adults (aged 25–64). This represents a country's current stock of human capital—the collective skills and knowledge of its existing workforce and the adult population that will be building the human capital of the next generation.</p><p>The average number of years of schooling has expanded dramatically. The Barro-Lee dataset combines national census and survey records to estimate average years of schooling for adults over time.<sup><a href=\"#ref-7\">7</a></sup> This harmonized data across nearly 150 countries and multiple decades creates a consistent picture of educational attainment from 1870 to today, making it possible to track long-run trends that show how countries have expanded schooling and converged (or diverged) in educational outcomes over the past century.</p>"
+  },
+  {
+   "id": "schooling-scroller",
+   "type": "scroller",
+   "chapterDir": "goal_04/01-schooling-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "enrollment",
+   "type": "prose",
+   "html": "<p>These changes have been driven by improvements in enrollment rates, most notably for primary school, but also for secondary school. In 2000, a child in a low-income country had only a 50 percent chance of being enrolled in secondary school, with girls being around 5 percentage points less likely to be enrolled than boys. By 2020, the odds had risen to 70 percent. The closing of gender gaps in educational attainment is a significant factor in this improvement.</p><blockquote class=\"ch-callout ch-callout-number\"><p>In 2000, a child in a low-income country had around a</p><p><span class=\"num-xl\">50 %</span></p><p>chance of completing secondary school. By 2020, this had risen to 70%.</p></blockquote><h3>Learning quality</h3><p>The quantity of schooling alone is not the full story. Students in high-income countries tend to learn more per year of schooling than those in poorer countries. So, if we adjust for learning, the gaps are even larger. Improving education quality could therefore unlock even greater gains.</p>"
+  },
+  {
+   "id": "education-quality",
+   "type": "vis",
+   "chapterDir": "goal_04/02-education-quality-details"
+  },
+  {
+   "id": "quality-gaps",
+   "type": "prose",
+   "html": "<p>This gap is visible across the entire income distribution. In high-income countries, a child born today can expect about 12.2 years of schooling, which translates into roughly 9.5 learning-adjusted years. In low-income countries, expected years of schooling are just over 7 years, but this amounts to just 3.7 learning-adjusted years. Middle-income countries sit between these extremes, with just over 9.7 years (and around 5.7 learning-adjusted years) of schooling in lower-middle-income countries and over 11.5 years (and 7.8 learning-adjusted years) in upper-middle-income countries.</p><p>One reason learning quality is lower in poorer countries is that it partly reflects what children bring from home. Children whose mothers have completed secondary education are dramatically more likely to have adequate nutrition and mathematics proficiency than those whose mothers have little schooling, and these gaps remain virtually constant throughout childhood and adolescence, even after children begin attending school.<sup><a href=\"#ref-5\">5</a></sup> Improving learning quality in schools and improving the home environments of children can be complementary. It also means that the returns to girls' education compound across generations, as educating mothers today raises the human capital of children tomorrow.</p><blockquote class=\"ch-callout ch-callout-number\"><p>Learning-adjusted years of schooling have decreased in around</p><p><span class=\"num-xl\">1/3 rd</span></p><p>of low or lower-middle income countries with data since 2010.</p></blockquote><p>A concerning trend is that learning has been declining in many low- and lower-middle-income countries, especially in Sub-Saharan Africa.<sup><a href=\"#ref-5\">5</a></sup> In some cases, this declining trend in learning is cancelling out the increase in years of schooling that have taken place in recent years, with learning-adjusted years of schooling falling. Out of 37 low- or lower-middle-income countries with internationally comparable data in both 2010 and 2025, 13 of these countries saw declines in learning-adjusted years of school, despite an overall trend of rising enrollment.</p>"
+  },
+  {
+   "id": "lays-change",
+   "type": "vis",
+   "chapterDir": "goal_04/03-lays-change"
+  },
+  {
+   "id": "schooling-jobs",
+   "type": "prose",
+   "html": "<h3>How does schooling impact jobs?</h3><p>Few economic policies consistently yield double-digit returns at scale. But education is one that can, with each year of schooling improving earnings by around 10 percent.<sup><a href=\"#ref-8\">8</a></sup> Each year of education also increases the likelihood of employment and improves the quality of job that an individual is likely to have.</p><p>In low- and middle-income countries, men with college education are about 5 percentage points more likely to work than those with little schooling. The gap is even larger for women, at 16 percentage points.<sup><a href=\"#ref-i\">i</a></sup> Wage workers typically have 2.5 more years of schooling than the self-employed, and wage jobs tend to deliver more earnings growth over time.<sup><a href=\"#ref-9\">9</a></sup> But even among workers with similar levels of education, the self-employed in low- and middle-income countries tend to earn less than their counterparts in wage employment, suggesting that the type of job matters for earnings, not just the schooling a worker brings to it.<sup><a href=\"#ref-5\">5</a></sup></p><blockquote class=\"ch-callout ch-callout-number\"><p>Women who go to college are</p><p><span class=\"num-xl\">16 percentage points</span></p><p>more likely to work than those with less than a primary education</p></blockquote><p>These gaps in educational attainment and job quality do not arise at random. Where a child grows up shapes their access to schools, health services, and social or environmental conditions. In Brazil, children from low-income families who grew up in wealthier neighborhoods completed 2.3 more years of schooling compared to similarly low-income children who grew up in poorer neighborhoods.<sup><a href=\"#ref-5\">5</a></sup></p><p>The payoff to education shows clearly in wages across countries. In Brazil, workers with secondary education earn nearly twice as much as those who do not complete primary school. With a university degree, the premium rises to 167 percent. Similar patterns hold in Georgia, India, the Philippines, and South Africa.</p>"
+  },
+  {
+   "id": "wages",
+   "type": "vis",
+   "chapterDir": "goal_04/04-wages"
+  },
+  {
+   "id": "returns",
+   "type": "prose",
+   "html": "<p>The earnings boost from an extra year of schooling varies widely across countries, reflecting differences in school quality, labor markets, demand for skills, and measurement, but the returns are consistently positive. There is no strong link between a country's income level and the return to education, and high returns to education can be found in both high-and low-income countries. On average across countries, each additional year of schooling raises earnings by close to 10 percent.</p><blockquote class=\"ch-callout ch-callout-number\"><p>Each additional year of schooling boosts earnings by about</p><p><span class=\"num-xl\">10 %</span></p></blockquote><p>These returns easily outweigh the modest costs of schooling in many countries. In Sub-Saharan Africa, public spending averages about $283 per child per year of schooling.<sup><a href=\"#ref-10\">10</a></sup> If one additional year of education raises earnings by ten percent, applied to average annual earnings of $1,727, the lifetime gains are substantial. Over a 40-year career, and discounting future earnings at five percent, this translates into roughly $3,000 in additional lifetime income.<sup><a href=\"#ref-i2\">i</a></sup> In other words, a single year of schooling delivers returns on the order of ten times its upfront cost. This does not even account for the broader fiscal benefits of education, including higher tax revenues, reduced crime, and lower dependence on social assistance.<sup><a href=\"#ref-11\">11</a></sup></p>"
+  },
+  {
+   "id": "mincer",
+   "type": "vis",
+   "chapterDir": "goal_04/05-mincer-coefficients"
+  },
+  {
+   "id": "jobs-learning",
+   "type": "prose",
+   "html": "<h3>How do jobs impact learning?</h3><p>Learning in formal classroom settings is a critical driver of human capital accumulation. But the classroom is not the only place where people learn. Learning also happens in the workplace.</p><p>Each year of work experience increases productivity by around 2.5 percent per year, and individuals tend to spend more time working than in schooling. Globally, the average person has around nine years of education, while careers often span 40 years or more. Because of differences in workplace learning, workers in high-income countries earn another 1/3rd more, on average, than those in low- and middle-income countries.<sup><a href=\"#ref-1\">1</a></sup><sup><a href=\"#ref-5\">5</a></sup></p><blockquote class=\"ch-callout ch-callout-number\"><p>Each year of experience makes workers around</p><p><span class=\"num-xl\">2.5 %</span></p><p>more productive, on average.</p></blockquote><h3>Learning on the job</h3><p>Labor force surveys allow us to go beyond simple averages to understand how earnings evolve with age and experience. In competitive labor markets, an increase in productivity directly translates into an increase in wages, so changes in wages can be interpreted as a measure of skills gained on the job. By breaking down wages across cohorts, we can observe not just how schooling raises earnings, but how learning continues in the workplace over the course of a career. This shows how education and experience interact to shape lifetime earnings trajectories.</p>"
+  },
+  {
+   "id": "wage-scroller",
+   "type": "scroller",
+   "chapterDir": "goal_04/06-wage-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "path-forward",
+   "type": "prose",
+   "html": "<p>These differences over time arise from two advantages conferred by education: higher entry-level wages and steeper experiential wage growth for more educated workers. Thus experience appears to amplify (rather than narrow) education-based disparities over the lifecycle.</p><p>Why does this happen? In many cases, people with lower levels of education work in jobs where little to no learning takes place. In low- and lower-middle-income countries, around 69 percent of workers are self-employed. And these workers tend to accumulate around half as much human capital as workers in wage employment.<sup><a href=\"#ref-5\">5</a></sup> At the same time, workers in sectors with lower exposure to technology, such as agriculture, and those employed in domestic or manual occupations or micro firms also accumulate less human capital. This is because there is less opportunity to learn from peers or managers and less access to explicit workplace training. Occupational choice is closely tied to education levels, and as a result, gaps in earnings between highly and lesser educated workers tend to expand over time.</p><blockquote class=\"ch-callout ch-callout-number\"><p></p><p><span class=\"num-xl\">70 %</span></p><p>of workers in low- and middle-income countries are farmers, self-employed, or wage workers in microfirms and have less access to skills improvement.</p></blockquote><h3>The path forward</h3><p>Education is one of the key drivers of economic growth and poverty reduction. While we learn a substantial portion of what we know at school, learning occurs in other settings. It begins even earlier in the home, where nutrition, early stimulation, and parental engagement shape the foundations of a child's cognitive and social-emotional development.<sup><a href=\"#ref-5\">5</a></sup> And learning continues throughout the working life, with on-the-job learning delivering at least 25 percent of the human capital workers acquire during their careers.</p><p>There have been considerable improvements in average educational attainment over the past century, which rose from around 1 to close to 9 years of schooling. This progress has substantially increased earnings over time. But completion rates still need to improve, particularly for secondary and tertiary education. And while there has been some progress on increasing completion rates, there is still much to do to improve the quality of education. Critically, gaps in learning quality often reflect gaps in the home and the neighborhood: children whose mothers have little schooling, or who grow up in disadvantaged neighborhoods with poorly resourced local schools, arrive in the classroom already behind. Those gaps tend to persist throughout childhood even after years of schooling.<sup><a href=\"#ref-5\">5</a></sup></p><p>Investing in skills, by expanding access to education and improving learning quality and fostering skill formation at work, is essential for broad-based growth. Today, many workers, particularly the least educated, are trapped in jobs with little opportunity to learn or advance: more than two-thirds of workers in low- and middle-income countries work in occupations with low skills growth. Strengthening learning in homes, schools, neighborhoods, and workplaces is central to raising employment, earnings, and living standards worldwide.</p>"
+  }
+ ]
+}

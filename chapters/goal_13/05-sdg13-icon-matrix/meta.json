@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "hand icon matrix 1000 cells \u00b7 vuln by region \u00b7 climate quality v1",
+  "note": "hand icon matrix 1000 cells · vuln by region · climate quality v1",
   "graphic": "sdg13_icon_matrix",
   "title": "Climate effects icon matrix",
   "qualityPass": "climate-v1"

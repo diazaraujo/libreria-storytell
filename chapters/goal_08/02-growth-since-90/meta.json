@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "LIC growth rates \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "LIC growth rates · real CSV · Tier B hand (not bulk generator)",
   "graphic": "growth_since_90",
   "title": "Growth since 1990 (LICs)"
 }

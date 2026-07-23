@@ -1,0 +1,82 @@
+{
+ "slug": "data-for-development",
+ "title": "The State of Development Data",
+ "origin": "https://data360.worldbank.org/en/atlas/data-for-development/",
+ "hero": {
+  "kicker": "Data for Development",
+  "title": "The State of Development Data",
+  "lead": "Without reliable data, the true extent of extreme poverty or gaps in children's health and learning outcomes remains hidden from the people tasked with fixing them. But as the World Bank's Statistical Performance Indicators (SPI) shows, low data availability is not inevitable. Some economies build strong, reliable data systems, even with limited resources.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Zander Prinsloo &amp; Brian Stacy</span>, Visuals by <span class=\"font-semibold\">Maarten Lambrechts</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "decisions",
+   "type": "prose",
+   "html": "<h3>Decisions and data</h3><p>Imagine you've just been appointed Minister of Finance. Tomorrow morning, you must decide where to build schools and clinics, how much to borrow, which programs to prioritize. Every decision will affect millions of lives. To govern well, you need answers to basic questions: How fast is the economy growing? How many children are healthy? How many young people are unemployed?</p><h3>Missing data sources</h3><p>The answers to each of these questions lie in national accounts, population censuses, health surveys, household surveys, labor force surveys, and other types of data. Now imagine opening your briefing folders and discovering that much of the available data are years old.</p><blockquote class=\"ch-callout ch-callout-number\"><p>In nearly</p><p><span class=\"num-xl\">6 out of 10</span></p><p>low- and middle-income economies, the most recent poverty survey is more than five years old.</p></blockquote><p>Every day, governments make decisions that affect millions of lives, such as setting budgets and regulating the scope and quality of services. Yet for many economies, the data guiding those decisions are years out of date, leaving millions of people invisible to policy makers.</p><p>Take data on unemployment, for instance. For the average low- and middle-income economy, the latest labor force survey is from 2019, the most recent poverty survey is from 2020, and the most recent health survey—measuring everything from child vaccinations to malnourishment and access to health care— is from 2015, more than 10 years ago. So, most of the surveys informing our current understanding of labor markets and public health are from before the COVID-19 pandemic.</p><p>In more than 30 low- and middle-income economies, the latest labor force, health, business, agriculture, and poverty surveys <strong>are more than five years old</strong>. In another 46 economies, four out five of these surveys are more than five years old. Together, this amounts to around 60 percent of all low- and middle-income economies. So, when these economies try to make data-informed decisions, they are charting their future using an outdated picture.</p>"
+  },
+  {
+   "id": "survey-age",
+   "type": "vis",
+   "chapterDir": "goal_17/00-survey-age"
+  },
+  {
+   "id": "nigeria-intro",
+   "type": "prose",
+   "html": "<p>When survey data are missing, policy makers rely on models. But these, while useful, can miss the truth by a wide margin, as illustrated by <strong>Nigeria's</strong> poverty data. In Nigeria's case, any programs targeting households by poverty status would have missed millions of households.</p>"
+  },
+  {
+   "id": "nigeria",
+   "type": "scroller",
+   "chapterDir": "goal_17/01-nigeria-poverty-extrapolation",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "methods-children",
+   "type": "prose",
+   "html": "<h3>Methods matter</h3><p>The timeliness of statistics is not the only issue. In many cases, the methods and data used to calculate statistics are outdated, producing misleading estimates. An example from Ghana illustrates this starkly. When it updated its national accounts framework in 2010, incorporating new industrial census data, value added tax records, and household surveys and modernizing the way it classified the services sector, <strong>reported GDP rose by more than 60 percent</strong>.<sup><a href=\"#ref-1\">1</a></sup><sup><a href=\"#ref-2\">2</a></sup> Three-quarters of that increase came from the services sector alone, which had been systematically undercounted under the old framework. But many economies continue to use old methodologies, with 52 still using a 1993 manual to report GDP statistics today.</p><blockquote class=\"ch-callout ch-callout-number\"><p>Changes to the methodology and data used to produce GDP led to a</p><p><span class=\"num-xl\">60 percent</span></p><p>increase in Ghana's estimated GDP in 2010.</p></blockquote><h3>Invisible children</h3><p>The absence of data also severely limits an economy's ability to understand the needs of important populations, such as children, leaving policy makers unable to address the most pressing challenges they face.</p><blockquote class=\"ch-callout ch-callout-number\"><p></p><p><span class=\"num-xl\">778 million</span></p><p>children aged 5–14, or nearly half of the world's children in that age range, live in a country with no recent internationally comparable learning assessment.</p></blockquote>"
+  },
+  {
+   "id": "children",
+   "type": "scroller",
+   "chapterDir": "goal_17/02-missing-children-data-waffles",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "spi-intro",
+   "type": "prose",
+   "html": "<p>Without these data, it is impossible to know how many children live in a country and whether they are healthy and learning. And without such basic information, how can a government plan where to build schools and clinics, how many teachers and health care staff to hire, or what kind of programs are needed to address nutrition or skill deficits before they become permanent?</p><h3>Measuring statistical systems</h3><p>The SPI measures the performance of statistical systems across five pillars using 51 indicators that cover everything from whether surveys are conducted to whether key data are produced and used, data are accessible online, and the legal foundations and financial resources for statistics are in place. It includes an overall score that measures statistical performance on a scale from 0–100, where 100 represents the best possible statistical system.<sup><a href=\"#ref-3\">3</a></sup></p>"
+  },
+  {
+   "id": "spi",
+   "type": "scroller",
+   "chapterDir": "goal_17/03-spi-scroller",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "income-not-destiny",
+   "type": "prose",
+   "html": "<p>An economy's income tends to be correlated with the performance and maturity of its statistical system. But this relationship is not deterministic. Many economies perform at the same level as far richer economies, providing valuable insights for how to improve statistical systems in the places where it is most needed.</p>"
+  },
+  {
+   "id": "spi-gdp",
+   "type": "vis",
+   "chapterDir": "goal_17/04-spi-gdp-scatter"
+  },
+  {
+   "id": "capacity",
+   "type": "prose",
+   "html": "<h3>Building capacity for mature statistical systems</h3><p>The information available to guide policy is often incomplete, outdated, or uneven in quality. These constraints are not distributed randomly. They tend to be most binding in low-income and FCV settings where the demands on the state are greatest and the costs of policy error are highest. It is precisely in such settings that rapid shifts in economic conditions, prices, displacement, and service delivery can quickly render old statistics misleading.</p><p>But the evidence also cautions against a deterministic view of capacity. Several countries, such as <strong>Mexico</strong>, <strong>Burkina Faso</strong>, <strong>Senegal</strong>, <strong>Uzbekistan</strong>, and the <strong>Philippines</strong>, achieve levels of statistical performance comparable to peers with far higher GDP per capita.</p><p>The implication is straightforward but important: while resources matter, income alone does not determine statistical effectiveness. Institutions, incentives, and sustained investments in statistical systems are critical for good performance.</p><p>For policy makers and development partners, this finding points to a need to organize improvements in statistical performance around strengthening data sources. This includes traditional instruments, such as household surveys and administrative systems, and complementary sources, such as geospatial and other high-frequency data. At the same time, modernizing methods for integrating, validating, and using these inputs is vital.</p><p>Emerging technologies, including artificial intelligence, offer genuine opportunities to reduce the costs of data collection and processing and expand data use by improving discoverability, timeliness, and dissemination. But realizing these gains will require deliberate investments in governance, skills, and quality assurance, as well as technology.</p><p>National statistical offices can rarely meet these demands in isolation. Building durable foundational and frontier statistical capacity will increasingly depend on international partnerships that support training, peer learning, and the adoption of best-practice standards. For a finance minister tasked with making decisions under uncertainty, such investments are not ancillary. Rather, they are part of the core infrastructure of effective economic management.</p>"
+  }
+ ]
+}

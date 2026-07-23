@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "unverified",
+  "approved": false,
   "tier": "B",
-  "note": "urban-pop-scroller library \u00b7 regional U/R \u00b7 urban v2",
+  "note": "urban-pop-scroller library · regional U/R · urban v2",
   "graphic": "urban_rural_pop_scroller",
   "title": "Urban/rural population",
   "qualityPass": "urban-v2"

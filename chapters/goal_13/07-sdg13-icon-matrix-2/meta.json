@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "hand country compare matrix BFA/KEN PHL/VNM \u00b7 climate quality v1",
+  "note": "hand country compare matrix BFA/KEN PHL/VNM · climate quality v1",
   "graphic": "sdg13_icon_matrix_2",
   "title": "Climate effects icon matrix (2)",
   "qualityPass": "climate-v1"

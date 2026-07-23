@@ -42,6 +42,17 @@
       "dashboard": 2,
       "id4d": 12,
       "progress": 3
+    },
+    "quality": {
+      "byStatus": {
+        "ready": 164
+      },
+      "byFidelity": {
+        "pixel-perfect": 82,
+        "tier-B-bulk": 79,
+        "unverified": 3
+      },
+      "approved": 82
     }
   },
   "stories": {
@@ -139,7 +150,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 1,
@@ -156,7 +168,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 2,
@@ -173,7 +186,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 3,
@@ -185,12 +199,13 @@
       "sceneCount": 4,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_99/01-poverty-projections/config.json",
+      "configPath": "chapters/goal_01/03-poverty-projections/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/extreme-poverty/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 4,
@@ -207,7 +222,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 5,
@@ -224,7 +240,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/extreme-poverty/",
       "storySlug": "extreme-poverty",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 6,
@@ -241,7 +258,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 7,
@@ -258,7 +276,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 8,
@@ -275,7 +294,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 9,
@@ -291,8 +311,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 10,
@@ -309,7 +330,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 11,
@@ -326,7 +348,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 12,
@@ -342,8 +365,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 13,
@@ -360,7 +384,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 14,
@@ -377,7 +402,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 15,
@@ -394,7 +420,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 16,
@@ -411,7 +438,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 17,
@@ -428,7 +456,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 18,
@@ -445,7 +474,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 19,
@@ -462,7 +492,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 20,
@@ -479,7 +510,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 21,
@@ -496,7 +528,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 22,
@@ -513,7 +546,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 23,
@@ -530,7 +564,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 24,
@@ -547,7 +582,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 25,
@@ -564,7 +600,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 26,
@@ -581,7 +618,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 27,
@@ -598,7 +636,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 28,
@@ -615,7 +654,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 29,
@@ -632,7 +672,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/learning-and-work/",
       "storySlug": "learning-and-work",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 30,
@@ -649,7 +690,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 31,
@@ -666,7 +708,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 32,
@@ -683,7 +726,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 33,
@@ -700,7 +744,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 34,
@@ -717,7 +762,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 35,
@@ -733,8 +779,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/gender-and-jobs/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 36,
@@ -751,7 +798,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 37,
@@ -767,8 +815,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/gender-and-jobs/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 38,
@@ -785,7 +834,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 39,
@@ -802,7 +852,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/gender-and-jobs/",
       "storySlug": "gender-and-jobs",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 40,
@@ -819,7 +870,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 41,
@@ -836,7 +888,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 42,
@@ -853,7 +906,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 43,
@@ -870,7 +924,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 44,
@@ -887,7 +942,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 45,
@@ -904,7 +960,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 46,
@@ -921,7 +978,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 47,
@@ -938,7 +996,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 48,
@@ -955,7 +1014,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 49,
@@ -972,7 +1032,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 50,
@@ -989,7 +1050,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/water-access/",
       "storySlug": "water-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 51,
@@ -1013,7 +1075,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 52,
@@ -1037,7 +1100,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 53,
@@ -1061,7 +1125,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 54,
@@ -1085,7 +1150,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 55,
@@ -1109,7 +1175,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 56,
@@ -1133,7 +1200,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 57,
@@ -1157,7 +1225,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/electricity-access/",
       "storySlug": "electricity-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 58,
@@ -1174,7 +1243,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 59,
@@ -1191,7 +1261,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 60,
@@ -1208,7 +1279,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 61,
@@ -1225,7 +1297,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 62,
@@ -1242,7 +1315,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 63,
@@ -1259,7 +1333,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 64,
@@ -1276,7 +1351,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 65,
@@ -1293,7 +1369,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 66,
@@ -1310,7 +1387,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 67,
@@ -1327,7 +1405,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 68,
@@ -1344,7 +1423,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 69,
@@ -1361,7 +1441,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 70,
@@ -1378,7 +1459,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 71,
@@ -1394,8 +1476,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/internet-access/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
-      "fidelityMeta": null,
-      "statusMeta": "ready"
+      "fidelityMeta": "unverified",
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 72,
@@ -1412,7 +1495,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 73,
@@ -1429,7 +1513,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 74,
@@ -1446,7 +1531,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 75,
@@ -1463,7 +1549,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/internet-access/",
       "storySlug": "internet-access",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 76,
@@ -1479,8 +1566,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/inequality/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
-      "fidelityMeta": null,
-      "statusMeta": "ready"
+      "fidelityMeta": "unverified",
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 77,
@@ -1497,7 +1585,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 78,
@@ -1514,7 +1603,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 79,
@@ -1531,7 +1621,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 80,
@@ -1548,7 +1639,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 81,
@@ -1565,7 +1657,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 82,
@@ -1577,12 +1670,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_10/07-income-prosperity-gap-2/config.json",
+      "configPath": "chapters/goal_10/06-income-prosperity-gap/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/inequality/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 83,
@@ -1599,7 +1693,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 84,
@@ -1616,7 +1711,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/inequality/",
       "storySlug": "inequality",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 85,
@@ -1632,8 +1728,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": null,
-      "statusMeta": "ready"
+      "fidelityMeta": "unverified",
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 86,
@@ -1650,7 +1747,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 87,
@@ -1667,7 +1765,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 88,
@@ -1683,8 +1782,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 89,
@@ -1700,8 +1800,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 90,
@@ -1717,8 +1818,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 91,
@@ -1735,7 +1837,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 92,
@@ -1752,7 +1855,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 93,
@@ -1768,8 +1872,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 94,
@@ -1785,8 +1890,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/urban-development/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/urban-development/",
       "storySlug": "urban-development",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 95,
@@ -1798,12 +1904,13 @@
       "sceneCount": 6,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_12/04-intro-scroller-2/config.json",
+      "configPath": "chapters/goal_12/00-intro-scroller/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 96,
@@ -1819,8 +1926,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 97,
@@ -1837,7 +1945,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 98,
@@ -1854,7 +1963,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 99,
@@ -1871,7 +1981,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 100,
@@ -1888,7 +1999,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 101,
@@ -1905,7 +2017,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 102,
@@ -1917,12 +2030,13 @@
       "sceneCount": 3,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/config.json",
+      "configPath": "chapters/goal_13/00-sdg13-effects-of-climate-change-scroller/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/climate/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 103,
@@ -1934,12 +2048,13 @@
       "sceneCount": 3,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/config.json",
+      "configPath": "chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/climate/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 104,
@@ -1955,8 +2070,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/climate/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 105,
@@ -1968,12 +2084,13 @@
       "sceneCount": 3,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3/config.json",
+      "configPath": "chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/climate/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 106,
@@ -1990,7 +2107,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 107,
@@ -2007,7 +2125,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 108,
@@ -2024,7 +2143,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 109,
@@ -2036,12 +2156,13 @@
       "sceneCount": 4,
       "tier": "C-scroller-shell",
       "library": null,
-      "configPath": "chapters/goal_13/05-sdg13-icon-matrix/config.json",
+      "configPath": "chapters/goal_13/07-sdg13-icon-matrix-2/config.json",
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/climate/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/climate/",
       "storySlug": "climate",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 110,
@@ -2058,7 +2179,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 111,
@@ -2075,7 +2197,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 112,
@@ -2092,7 +2215,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 113,
@@ -2109,7 +2233,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 114,
@@ -2125,8 +2250,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 115,
@@ -2142,8 +2268,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 116,
@@ -2160,7 +2287,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 117,
@@ -2177,7 +2305,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 118,
@@ -2194,7 +2323,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 119,
@@ -2210,8 +2340,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 120,
@@ -2227,8 +2358,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 121,
@@ -2244,8 +2376,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 122,
@@ -2262,7 +2395,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 123,
@@ -2278,8 +2412,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 124,
@@ -2296,7 +2431,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 125,
@@ -2313,7 +2449,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 126,
@@ -2329,8 +2466,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 127,
@@ -2346,8 +2484,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 128,
@@ -2363,8 +2502,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 129,
@@ -2380,8 +2520,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 130,
@@ -2393,12 +2534,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_15/05-image/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 131,
@@ -2414,8 +2556,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 132,
@@ -2432,7 +2575,8 @@
       "liveUrl": null,
       "storySlug": null,
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 133,
@@ -2444,12 +2588,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_15/08-image-2/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 134,
@@ -2466,7 +2611,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
       "storySlug": "artificial-intelligence",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 135,
@@ -2483,7 +2629,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
       "storySlug": "artificial-intelligence",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 136,
@@ -2500,7 +2647,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
       "storySlug": "artificial-intelligence",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 137,
@@ -2516,8 +2664,9 @@
       "localOriginUrl": "http://127.0.0.1:8765/en/atlas/artificial-intelligence/",
       "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
       "storySlug": "artificial-intelligence",
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 138,
@@ -2534,7 +2683,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
       "storySlug": "artificial-intelligence",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 139,
@@ -2551,7 +2701,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
       "storySlug": "data-for-development",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 140,
@@ -2568,7 +2719,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
       "storySlug": "data-for-development",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 141,
@@ -2585,7 +2737,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
       "storySlug": "data-for-development",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 142,
@@ -2602,7 +2755,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
       "storySlug": "data-for-development",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 143,
@@ -2619,7 +2773,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/data-for-development/",
       "storySlug": "data-for-development",
       "fidelityMeta": "pixel-perfect",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 144,
@@ -2635,8 +2790,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 145,
@@ -2652,8 +2808,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 146,
@@ -2669,8 +2826,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": null,
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 147,
@@ -2687,7 +2845,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/",
       "storySlug": "global-progress",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 148,
@@ -2704,7 +2863,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/global-progress/",
       "storySlug": "global-progress",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 149,
@@ -2716,12 +2876,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/00-image/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 150,
@@ -2733,12 +2894,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/01-image-2/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 151,
@@ -2750,12 +2912,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/02-image-3/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 152,
@@ -2767,12 +2930,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/03-image-4/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 153,
@@ -2784,12 +2948,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/04-image-5/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 154,
@@ -2801,12 +2966,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/05-image-6/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 155,
@@ -2818,12 +2984,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/06-image-7/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 156,
@@ -2835,12 +3002,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/07-image-8/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 157,
@@ -2852,12 +3020,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/08-image-9/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 158,
@@ -2869,12 +3038,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/09-image-10/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 159,
@@ -2890,8 +3060,9 @@
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 160,
@@ -2903,12 +3074,13 @@
       "sceneCount": 0,
       "tier": "D-bulk",
       "library": null,
-      "configPath": "chapters/goal_id4d/10-image-11/config.json",
+      "configPath": "chapters/goal_id4d/11-image-12/config.json",
       "localOriginUrl": "",
       "liveUrl": null,
       "storySlug": null,
-      "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "fidelityMeta": "pixel-perfect",
+      "statusMeta": "ready",
+      "approvedMeta": true
     },
     {
       "index": 161,
@@ -2925,7 +3097,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
       "storySlug": "measuring-progress",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 162,
@@ -2942,7 +3115,8 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
       "storySlug": "measuring-progress",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     },
     {
       "index": 163,
@@ -2959,7 +3133,9 @@
       "liveUrl": "https://data360.worldbank.org/en/atlas/measuring-progress/",
       "storySlug": "measuring-progress",
       "fidelityMeta": "tier-B-bulk",
-      "statusMeta": "ready"
+      "statusMeta": "ready",
+      "approvedMeta": false
     }
-  ]
+  ],
+  "qualitySource": "chapters/**/config.json#_meta"
 }

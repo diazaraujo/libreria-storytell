@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "intro scroller multi-visual \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)",
   "graphic": "sdg12_intro_scroller",
   "title": "Resource use intro"
 }

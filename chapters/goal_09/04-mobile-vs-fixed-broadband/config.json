@@ -27,19 +27,19 @@
     {
       "type": "scene",
       "id": "hic",
-      "text": "[emphasis: Fixed broadband] is common in many high-income countries. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">Germany</span>], for example, there are approximately 46 fixed broadband connections per 100 people. [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(115,175,72);\">China</span>], an upper-middle-income country, is also highly connected, with 47 fixed high-speed Internet subscriptions per 100 people in 2024. ",
+      "text": "[emphasis: Fixed broadband] is common in many high-income countries. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(1,107,108);\">Germany</span>], for example, there are approximately 46 fixed broadband connections per 100 people. [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(115,175,72);\">China</span>], an upper-middle-income country, is also highly connected, with 47 fixed high-speed Internet subscriptions per 100 people in 2024. ",
       "translationPrefix": "goal_09.content.#27.scenes.#1"
     },
     {
       "type": "scene",
       "id": "income_levels",
-      "text": "But fixed broadband is nearly absent in low and lower middle-income economies. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Morocco</span>]and[emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Eswatini</span>], for example, penetration is minimal, with 7 and 2.5 fixed broadband subscriptions per 100 people, respectively.",
+      "text": "But fixed broadband is nearly absent in low and lower middle-income economies. In [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Morocco</span>]and[emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Eswatini</span>], for example, penetration is minimal, with 7 and 2.5 fixed broadband subscriptions per 100 people, respectively.",
       "translationPrefix": "goal_09.content.#27.scenes.#2"
     },
     {
       "type": "scene",
       "id": "civ_sen",
-      "text": "Across much of the world, people connect to the Internet through mobile phones. In [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Morocco</span>] and in [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(219,149,215);\">Eswatini</span>][emphasis: , ]there are 98 and 116 active [emphasis: mobile broadband] subscriptions, respectively, per 100 people. (In many countries, there are more than 100 mobile broadband subscriptions per 100 people due to  multiple connections—for example, through smartphones, tablets, work devices, or other connected equipment.)[reference: mrbs1]",
+      "text": "Across much of the world, people connect to the Internet through mobile phones. In [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Morocco</span>] and in [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(219,149,215);\">Eswatini</span>][emphasis: , ]there are 98 and 116 active [emphasis: mobile broadband] subscriptions, respectively, per 100 people. (In many countries, there are more than 100 mobile broadband subscriptions per 100 people due to  multiple connections—for example, through smartphones, tablets, work devices, or other connected equipment.)[reference: mrbs1]",
       "translationPrefix": "goal_09.content.#27.scenes.#3"
     }
   ],

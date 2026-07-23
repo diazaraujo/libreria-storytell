@@ -67,7 +67,7 @@
     {
       "type": "scene",
       "id": "progress_comparison",
-      "text": "Let’s look at a [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(180,175,154);\">slow-</span>], a [emphasis: <span style=\"background-color: rgb(255,221,146);\">typical-</span>], and a [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,161,196);\">fast-</span>][emphasis: progressing country]. For the country with [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(0,161,196);\">fast</span>] progress, the dark triangle is ahead of the transparent triangle, so the country is outperforming the typical pattern. For the [emphasis: <span style=\"color: rgb(255,255,255); background-color: rgb(180,175,154);\">slow</span>] country, outcomes are worse than they would have been under the typical pace of progress. ",
+      "text": "Let’s look at a [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(180,175,154);\">slow-</span>], a [emphasis: <span style=\"background-color: rgb(255,221,146);\">typical-</span>], and a [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(0,161,196);\">fast-</span>][emphasis: progressing country]. For the country with [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(0,161,196);\">fast</span>] progress, the dark triangle is ahead of the transparent triangle, so the country is outperforming the typical pattern. For the [emphasis: <span style=\"color: rgb(4,1,16); background-color: rgb(180,175,154);\">slow</span>] country, outcomes are worse than they would have been under the typical pace of progress. ",
       "translationPrefix": "goal_dashboard.content.#11.scenes.#3"
     },
     {
@@ -92,6 +92,7 @@
     "status": "ready",
     "template": "scroller",
     "reference": null,
-    "fidelity": "tier-B-bulk"
+    "fidelity": "tier-B-bulk",
+    "approved": false
   }
 }

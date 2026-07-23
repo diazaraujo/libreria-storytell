@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "FLFP fertility \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "FLFP fertility · real CSV · Tier B hand (not bulk generator)",
   "graphic": "sdg5_turkiye_fertility",
-  "title": "T\u00fcrkiye fertility drivers"
+  "title": "Türkiye fertility drivers"
 }

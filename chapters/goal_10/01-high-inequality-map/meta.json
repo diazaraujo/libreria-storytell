@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "country inequality ranking/map proxy \u00b7 real CSV",
+  "note": "country inequality ranking/map proxy · real CSV",
   "graphic": "high_inequality_map",
   "title": "High inequality countries"
 }

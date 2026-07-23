@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "regional slum share multi-line \u00b7 urban v1",
+  "note": "regional slum share multi-line · urban v1",
   "graphic": "slum_regions",
   "title": "Slum population by region",
   "qualityPass": "urban-v2"

@@ -1,7 +1,7 @@
 {
   "approvedAt": "2026-07-20",
-  "criteria": "Hand-crafted, reverse-engineered, bulk CSV binds, or hardened image/map panels for full gallery coverage. Heroes Tier A; story graphics match chart type/scenes/colors where RE'd. Bulk beeswarm/waffle and image panels included for 164/164 chapter completeness (see notes per item).",
-  "count": 185,
+  "criteria": "Registry of chapter and non-chapter quality records. Pixel-perfect fidelity and explicit approval are separate fields; chapter values are synchronized from config.json _meta.",
+  "count": 103,
   "items": [
     {
       "path": "_ready/artificial-intelligence-hero",
@@ -154,7 +154,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "draw_your_chart",
-      "title": "How has global extreme poverty evolved since 1950?"
+      "title": "How has global extreme poverty evolved since 1950?",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_01/01-poverty-regions",
@@ -165,7 +166,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "poverty_regions",
-      "title": "Extreme poverty has fallen in most regions since 1950"
+      "title": "Extreme poverty has fallen in most regions since 1950",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_01/02-poverty-scroller",
@@ -176,7 +178,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "poverty_scroller",
-      "title": "Several countries have eliminated poverty since 1950"
+      "title": "Several countries have eliminated poverty since 1950",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_01/03-poverty-projections",
@@ -187,7 +190,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "poverty_projections",
-      "title": "Global poverty could increase if current trends continue"
+      "title": "Global poverty could increase if current trends continue",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_01/04-venn-diagram",
@@ -198,7 +202,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "venn_diagram",
-      "title": "Most of the world’s poor live in countries that suffer from conflict, poor economic management, and/or high corruption"
+      "title": "Most of the world’s poor live in countries that suffer from conflict, poor economic management, and/or high corruption",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_01/05-national-poverty-comparison",
@@ -209,40 +214,44 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "national_poverty_comparison",
-      "title": "Countries with low extreme poverty rates often suffer from other forms of poverty"
+      "title": "Countries with low extreme poverty rates often suffer from other forms of poverty",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/00-prevalence-undernourishment-regions",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Hunger",
       "note": "regional undernourishment · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "prevalence_undernourishment_regions",
-      "title": "Undernourishment by region"
+      "title": "Undernourishment by region",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/01-prevalence-undernourishment-gridmap",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Hunger",
       "note": "country undernourishment · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "prevalence_undernourishment_gridmap",
-      "title": "Undernourishment countries"
+      "title": "Undernourishment countries",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/02-food-insecurity-hotspots",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Hunger",
       "note": "hunger hotspots · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "food_insecurity_hotspots",
-      "title": "Food insecurity hotspots"
+      "title": "Food insecurity hotspots",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/03-food-insecurity-matrix",
@@ -253,29 +262,32 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "food_insecurity_matrix",
-      "title": "Food insecurity hotspots matrix"
+      "title": "Food insecurity hotspots matrix",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/04-undernourishment-conflict",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Hunger",
       "note": "conflict link · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "undernourishment_conflict",
-      "title": "Undernourishment and conflict"
+      "title": "Undernourishment and conflict",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/05-myanmar-foodprices-conflict",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Hunger",
       "note": "markets + events · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "myanmar_foodprices_conflict",
-      "title": "Myanmar food prices & conflict"
+      "title": "Myanmar food prices & conflict",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_02/06-ndvi-map-scroller",
@@ -286,249 +298,272 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "ndvi_map_scroller",
-      "title": "Extreme floods damaged more than half of Sindh’s cropland"
+      "title": "Extreme floods damaged more than half of Sindh’s cropland",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/00-uhc-chart",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "UHC chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "uhc_chart",
-      "title": "UHC service coverage"
+      "title": "UHC service coverage",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/01-uhc-small-multiple",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "UHC small multiples · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "uhc_small_multiple",
-      "title": "UHC small multiples"
+      "title": "UHC small multiples",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/02-uhc-index-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "UHC country scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "uhc_index_scroller",
-      "title": "UHC index scroller"
+      "title": "UHC index scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/03-mortality-plot",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "mortality chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "mortality_plot",
-      "title": "Mortality plot"
+      "title": "Mortality plot",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/04-mortality-region-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "regional mortality scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "mortality_region_scroller",
-      "title": "Mortality by region"
+      "title": "Mortality by region",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/05-uhc-speed-scores-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "speed scores scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "uhc_speed_scores_scroller",
-      "title": "UHC speed scores"
+      "title": "UHC speed scores",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/06-uhc-outcomes-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "UHC outcomes scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "uhc_outcomes_scroller",
-      "title": "UHC outcomes"
+      "title": "UHC outcomes",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/07-rmnch-progress-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "RMNCH progress scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "rmnch_progress_scroller",
-      "title": "RMNCH progress"
+      "title": "RMNCH progress",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/08-financial-hardship-chart",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "financial hardship · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "financial_hardship_chart",
-      "title": "Financial hardship"
+      "title": "Financial hardship",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_03/09-medical-cost-chart",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Health",
       "note": "medical cost chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "medical_cost_chart",
-      "title": "Medical costs"
+      "title": "Medical costs",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/00-schooling-regions",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "regional schooling series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "schooling_regions",
-      "title": "Schooling by region"
+      "title": "Schooling by region",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/01-schooling-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "schooling trends over time · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "schooling_scroller",
-      "title": "Schooling trends scroller"
+      "title": "Schooling trends scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/02-education-quality-details",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "education quality detail chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "education_quality_details",
-      "title": "Education quality details"
+      "title": "Education quality details",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/03-lays-change",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "LAYS scatter/change · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "lays_change",
-      "title": "Learning-adjusted years of school"
+      "title": "Learning-adjusted years of school",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/04-wages",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "wage levels chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "wages",
-      "title": "Wages and education"
+      "title": "Wages and education",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/05-mincer-coefficients",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "returns to schooling · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "mincer_coefficients",
-      "title": "Mincer coefficients"
+      "title": "Mincer coefficients",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_04/06-wage-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Learning & work",
       "note": "wage scroller scenes · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "wage_scroller",
-      "title": "Wage scroller"
+      "title": "Wage scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/00-global-labor-force-participation",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "LFP gender series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "global_lfp_gender",
-      "title": "Labor force participation by gender"
+      "title": "Labor force participation by gender",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/01-sdg5-350-years",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "typical path / speeds · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_350_years",
-      "title": "Path to gender parity"
+      "title": "Path to gender parity",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/02-sdg5-turkiye-lfp-drivers",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "FLFP drivers sectors · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_turkiye_lfp_drivers",
-      "title": "Türkiye LFP sector drivers"
+      "title": "Türkiye LFP sector drivers",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/03-sdg5-turkiye-fertility",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "FLFP fertility · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_turkiye_fertility",
-      "title": "Türkiye fertility drivers"
+      "title": "Türkiye fertility drivers",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/04-sdg5-turkiye-education",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "FLFP education · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_turkiye_education",
-      "title": "Türkiye education drivers"
+      "title": "Türkiye education drivers",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/05-sdg5-better-jobs-for-women",
@@ -539,18 +574,20 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_better_jobs_for_women",
-      "title": "Better jobs for women (employment types)"
+      "title": "Better jobs for women (employment types)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/06-gender-gap-informal-gdp",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "vulnerable employment · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "gender_gap_informal_gdp",
-      "title": "Vulnerable employment gap"
+      "title": "Vulnerable employment gap",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/07-sdg5-wage-gap-beeswarm",
@@ -561,29 +598,32 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_wage_gap_beeswarm",
-      "title": "Gender wage gap"
+      "title": "Gender wage gap",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/08-unpaid-time-animation",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "unpaid work + LFP · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "unpaid_time_animation",
-      "title": "Unpaid work time"
+      "title": "Unpaid work time",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_05/09-sdg5-ai-occupational-exposure-by-gender",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Gender & jobs",
       "note": "ILO AI exposure · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg5_ai_exposure_gender",
-      "title": "AI occupational exposure by gender"
+      "title": "AI occupational exposure by gender",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/00-safely-managed",
@@ -594,7 +634,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "safely_managed",
-      "title": "A quarter of the world’s population lacks access to safe drinking water"
+      "title": "A quarter of the world’s population lacks access to safe drinking water",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/01-safely-managed-grouped",
@@ -605,7 +646,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "safely_managed_grouped",
-      "title": "Access to safely managed drinking water remains much lower in rural areas"
+      "title": "Access to safely managed drinking water remains much lower in rural areas",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/02-safely-managed-country",
@@ -616,7 +658,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "safely_managed_country",
-      "title": "Access to safely managed drinking water is low in Sub-Saharan Africa and small island economies in the Pacific"
+      "title": "Access to safely managed drinking water is low in Sub-Saharan Africa and small island economies in the Pacific",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/03-estimating",
@@ -627,7 +670,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "estimating",
-      "title": "Safely managed drinking water access is determined by the lowest value of the three component"
+      "title": "Safely managed drinking water access is determined by the lowest value of the three component",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/04-limiting-factors",
@@ -638,7 +682,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "limiting_factors",
-      "title": "Countries face different challenges in achieving access to safely managed drinking water "
+      "title": "Countries face different challenges in achieving access to safely managed drinking water ",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/05-tanzania-typical-progress",
@@ -649,7 +694,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "tanzania_typical_progress",
-      "title": "Progress in improving water quality lags progress in availability and accessibility"
+      "title": "Progress in improving water quality lags progress in availability and accessibility",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/06-ecoli-table",
@@ -660,7 +706,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "ecoli_table",
-      "title": "Levels of fecal contamination risk"
+      "title": "Levels of fecal contamination risk",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/07-e-coli",
@@ -671,7 +718,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "e_coli",
-      "title": "<i>E. coli</i> contamination at point of use is worse than at point of water collection"
+      "title": "<i>E. coli</i> contamination at point of use is worse than at point of water collection",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/08-e-coli-urban-rural",
@@ -682,7 +730,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "e_coli_urban_rural",
-      "title": "Exposure to <i>E. coli</i> contamination is higher among rural than urban residents"
+      "title": "Exposure to <i>E. coli</i> contamination is higher among rural than urban residents",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/09-bangladesh-arsenic-grouped",
@@ -693,7 +742,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "bangladesh_arsenic_grouped",
-      "title": "In Bangladesh, rural dwellers and poorer people are more exposed to arsenic-contaminated water"
+      "title": "In Bangladesh, rural dwellers and poorer people are more exposed to arsenic-contaminated water",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_06/10-arsenic-by-source",
@@ -704,7 +754,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "arsenic_by_source",
-      "title": "Arsenic contamination levels are highest in wells—including tubewells—in Bangladesh"
+      "title": "Arsenic contamination levels are highest in wells—including tubewells—in Bangladesh",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/00-access-electricity-regions",
@@ -715,7 +766,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "access_electricity_regions",
-      "title": "Electricity access is advancing globally and across all regions"
+      "title": "Electricity access is advancing globally and across all regions",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/01-access-electricity-population",
@@ -726,7 +778,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "access_electricity_population",
-      "title": "There are fewer people without electricity, even as the global population grows"
+      "title": "There are fewer people without electricity, even as the global population grows",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/02-access-electricity-urban-rural",
@@ -737,7 +790,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "access_electricity_urban_rural",
-      "title": "Access to electricity is lower in rural areas "
+      "title": "Access to electricity is lower in rural areas ",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/03-access-electricity-progress",
@@ -748,7 +802,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "access_electricity_progress",
-      "title": "Ethiopia’s progress towards universal electrification outpaced Nigeria and the Democratic Republic of Congo "
+      "title": "Ethiopia’s progress towards universal electrification outpaced Nigeria and the Democratic Republic of Congo ",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/04-access-electricity-urban-rural-countries",
@@ -759,7 +814,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "access_electricity_urban_rural_countries",
-      "title": "Rapid rural progress in Ethiopia has reduced the urban–rural gap, while the Democratic Republic of Congo and Nigeria have made limited progress"
+      "title": "Rapid rural progress in Ethiopia has reduced the urban–rural gap, while the Democratic Republic of Congo and Nigeria have made limited progress",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/05-hexmap-nigeria",
@@ -770,7 +826,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "hexmap_nigeria",
-      "title": "Nigeria: uneven and unreliable access "
+      "title": "Nigeria: uneven and unreliable access ",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_07/06-hexmap-ethiopia",
@@ -781,95 +838,104 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "hexmap_ethiopia",
-      "title": "Ethiopia: progress in rural areas"
+      "title": "Ethiopia: progress in rural areas",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/00-gdp-growth-global-countries",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "global GDP growth · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "gdp_growth_global_countries",
-      "title": "GDP growth by country"
+      "title": "GDP growth by country",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/01-gdp-growth-income-levels",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "income-group growth · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "gdp_growth_income_levels",
-      "title": "GDP growth by income level"
+      "title": "GDP growth by income level",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/02-growth-since-90",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "LIC growth rates · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "growth_since_90",
-      "title": "Growth since 1990 (LICs)"
+      "title": "Growth since 1990 (LICs)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/03-gdp-progress-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "GDP progress scenes · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "gdp_progress_scroller",
-      "title": "GDP progress scroller"
+      "title": "GDP progress scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/04-income-world-map",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "income classification chart/map proxy · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "income_world_map",
-      "title": "Income levels world"
+      "title": "Income levels world",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/05-income-classification-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "income class transitions · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "income_classification_scroller",
-      "title": "Income classification scroller"
+      "title": "Income classification scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/06-unemployment-global",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "unemployment series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "unemployment_global",
-      "title": "Global unemployment"
+      "title": "Global unemployment",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_08/07-neet-gdp",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Growth & jobs",
       "note": "NEET vs GDP · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "neet_gdp",
-      "title": "NEET and GDP"
+      "title": "NEET and GDP",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/00-internet-access-scroller",
@@ -880,7 +946,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "internet_access_scroller",
-      "title": "Global Internet access: trends and divides"
+      "title": "Global Internet access: trends and divides",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/01-internet-access-urban-rural",
@@ -891,7 +958,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "internet_access_urban_rural",
-      "title": "The urban-rural digital divide"
+      "title": "The urban-rural digital divide",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/02-income-gender-gap",
@@ -902,7 +970,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "income_gender_gap",
-      "title": "Gender gaps in Internet access are wide in low- and lower-middle-income economies"
+      "title": "Gender gaps in Internet access are wide in low- and lower-middle-income economies",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/03-internet-progress",
@@ -913,7 +982,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "internet_progress",
-      "title": "Almost all economies have increased their Internet access since 2015"
+      "title": "Almost all economies have increased their Internet access since 2015",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/04-mobile-vs-fixed-broadband",
@@ -924,18 +994,20 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "mobile_vs_fixed_broadband",
-      "title": "Worldwide, mobile broadband far surpasses fixed broadband adoption"
+      "title": "Worldwide, mobile broadband far surpasses fixed broadband adoption",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/05-coverage-map",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "unverified",
       "label": "Internet body",
       "note": "ranked-bars proxy for Mapbox coverage map · narrative match",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "coverage_map",
-      "title": "Network coverage by generation (proxy map)"
+      "title": "Network coverage by generation (proxy map)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/06-speed-test",
@@ -946,7 +1018,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "speed_test",
-      "title": "High-income economies enjoy high-speed Internet"
+      "title": "High-income economies enjoy high-speed Internet",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/07-coverage-access-slopes",
@@ -957,7 +1030,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "coverage_access_slopes",
-      "title": "Mobile networks now reach most of the population, but many people remain offline"
+      "title": "Mobile networks now reach most of the population, but many people remain offline",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/08-can-send-text-message",
@@ -968,7 +1042,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "can_send_text_message",
-      "title": "In 27 countries, more than 50% of people have never sent a text message"
+      "title": "In 27 countries, more than 50% of people have never sent a text message",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_09/09-smartphone-ownership",
@@ -979,51 +1054,56 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "smartphone_ownership",
-      "title": "Few people in low-income countries own a smartphone"
+      "title": "Few people in low-income countries own a smartphone",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/00-high-inequality-trend",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "unverified",
       "label": "Prosperity gaps",
       "note": "line chart high-inequality countries over time · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "high_inequality_trend",
-      "title": "High inequality trend"
+      "title": "High inequality trend",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/01-high-inequality-map",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "country inequality ranking/map proxy · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "high_inequality_map",
-      "title": "High inequality countries"
+      "title": "High inequality countries",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/02-shared-prosperity-scatter",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "scatter Tier B hand · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "shared_prosperity_scatter",
-      "title": "Shared prosperity scatter"
+      "title": "Shared prosperity scatter",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/03-prosperity-gap-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "prosperity gap scroller · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "prosperity_gap_scroller",
-      "title": "Prosperity gap scroller"
+      "title": "Prosperity gap scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/04-prosperity-gaps",
@@ -1034,84 +1114,92 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "prosperity_gaps",
-      "title": "From national gaps to regional and global gaps"
+      "title": "From national gaps to regional and global gaps",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/05-prosperity-gap-trends",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "timeseries prosperity gap · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "prosperity_gap_trends",
-      "title": "Prosperity gap trends"
+      "title": "Prosperity gap trends",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/06-income-prosperity-gap",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "income vs prosperity gap · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "income_prosperity_gap",
-      "title": "Income and prosperity gap"
+      "title": "Income and prosperity gap",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/07-income-prosperity-gap-2",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "income vs prosperity gap (variant) · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "income_prosperity_gap_2",
-      "title": "Income and prosperity gap (2)"
+      "title": "Income and prosperity gap (2)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_10/08-prosperity-gap-playground",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Prosperity gaps",
       "note": "interactive prosperity gap playground · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "prosperity_gap_playground",
-      "title": "Prosperity gap playground"
+      "title": "Prosperity gap playground",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/00-urban-rural-pop-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "unverified",
       "label": "Urban development",
       "note": "urban-rural population scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "urban_rural_pop_scroller",
-      "title": "Urban/rural population"
+      "title": "Urban/rural population",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/01-city-map",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Urban development",
       "note": "city values chart/map proxy · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "city_map",
-      "title": "City map values"
+      "title": "City map values",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/02-urban-gdp-scatterplot",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Urban development",
       "note": "urbanization vs GDP · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "urban_gdp_scatterplot",
-      "title": "Urban GDP scatter"
+      "title": "Urban GDP scatter",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/03-skill-violin",
@@ -1122,7 +1210,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "skill_violin",
-      "title": "Urban areas offer jobs of a variety of skills"
+      "title": "Urban areas offer jobs of a variety of skills",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/04-skill-violin-groups",
@@ -1133,7 +1222,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "skill_violin_groups",
-      "title": "Urban areas offer a variety of occupations"
+      "title": "Urban areas offer a variety of occupations",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/05-pay-beeswarm",
@@ -1144,29 +1234,32 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "pay_beeswarm",
-      "title": "In most countries, hourly earnings are higher in urban than rural areas"
+      "title": "In most countries, hourly earnings are higher in urban than rural areas",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/06-buildup-area-overtime",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Urban development",
       "note": "built-up area series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "buildup_area_overtime",
-      "title": "Built-up area over time"
+      "title": "Built-up area over time",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/07-slum-regions",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Urban development",
       "note": "slum regional chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "slum_regions",
-      "title": "Slum population by region"
+      "title": "Slum population by region",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/08-slum-waffle",
@@ -1177,7 +1270,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "slum_waffle",
-      "title": "Globally, the number of people living in slums increased by 25% in just four …"
+      "title": "Globally, the number of people living in slums increased by 25% in just four …",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_11/09-buildup-area-income",
@@ -1188,18 +1282,20 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "buildup_area_income",
-      "title": "Built-up area by income"
+      "title": "Built-up area by income",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/00-intro-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "intro scroller multi-visual · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg12_intro_scroller",
-      "title": "Resource use intro"
+      "title": "Resource use intro",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/01-efficient-price-explanation",
@@ -1210,62 +1306,68 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "efficient_price_explanation",
-      "title": "Efficient fuel price"
+      "title": "Efficient fuel price",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/02-sdg12-efficient-price-dotplot",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "fossil subsidy / efficient prices · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg12_efficient_price_dotplot",
-      "title": "Efficient prices dotplot"
+      "title": "Efficient prices dotplot",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/03-efficient-price-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "efficient price scenes · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "efficient_price_scroller",
-      "title": "Efficient prices scroller"
+      "title": "Efficient prices scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/04-intro-scroller-2",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "intro scroller variant · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg12_intro_scroller_2",
-      "title": "Resource use intro (2)"
+      "title": "Resource use intro (2)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/05-sdg12-challenges-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "challenges scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg12_challenges_scroller",
-      "title": "Fuel challenges scroller"
+      "title": "Fuel challenges scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_12/06-ch12-reforms-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Responsible consumption",
       "note": "policy reforms scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "ch12_reforms_scroller",
-      "title": "Reforms scroller"
+      "title": "Reforms scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/00-sdg13-effects-of-climate-change-scroller",
@@ -1276,7 +1378,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "sdg13_effects_of_climate_change_scroller",
-      "title": "775 million people are exposed to floods globally"
+      "title": "775 million people are exposed to floods globally",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/01-sdg13-effects-of-climate-change-scroller-2",
@@ -1287,7 +1390,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "01_sdg13_effects_of_climate_change_scroller_2",
-      "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultura…"
+      "title": "Globally, almost 1.4 billion people in rural areas are exposed to agricultura…",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/02-sdg13-effects-of-climate-change-scroller-3",
@@ -1298,7 +1402,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "02_sdg13_effects_of_climate_change_scroller_3",
-      "title": "Globally, almost 8 percent of the population is exposed to cyclones"
+      "title": "Globally, almost 8 percent of the population is exposed to cyclones",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/03-sdg13-effects-of-climate-change-scroller-4",
@@ -1309,95 +1414,104 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "03_sdg13_effects_of_climate_change_scroller_4",
-      "title": "40 percent of the global population is exposed to heatwaves"
+      "title": "40 percent of the global population is exposed to heatwaves",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/04-sdg13-effects-of-climate-change",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Climate",
       "note": "climate effects overview graphic · real data bind",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg13_effects_of_climate_change",
-      "title": "Effects of climate change"
+      "title": "Effects of climate change",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/05-sdg13-icon-matrix",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Climate",
       "note": "icon matrix of climate effects · chapter graphic",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg13_icon_matrix",
-      "title": "Climate effects icon matrix"
+      "title": "Climate effects icon matrix",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/06-sdg13-regional-exposure-vuln",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Climate",
       "note": "readiness/vulnerability scatter Tier B · real CSV",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg13_regional_exposure_vuln",
-      "title": "Climate readiness vs vulnerability"
+      "title": "Climate readiness vs vulnerability",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_13/07-sdg13-icon-matrix-2",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Climate",
       "note": "icon matrix variant · chapter graphic",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "sdg13_icon_matrix_2",
-      "title": "Climate effects icon matrix (2)"
+      "title": "Climate effects icon matrix (2)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/00-plastic-production",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "production series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_production",
-      "title": "Plastic production"
+      "title": "Plastic production",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/01-plastic-waste",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "waste series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_waste",
-      "title": "Plastic waste"
+      "title": "Plastic waste",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/02-plastic-leakage",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "leakage chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_leakage",
-      "title": "Plastic leakage"
+      "title": "Plastic leakage",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/03-plastic-discharge",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "discharge chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_discharge",
-      "title": "Plastic discharge"
+      "title": "Plastic discharge",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/04-plastic-concentration",
@@ -1408,7 +1522,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_concentration",
-      "title": "Large plastic accumulations in the oceans (garbage patches)"
+      "title": "Large plastic accumulations in the oceans (garbage patches)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/05-north-pacific-garbage-patch",
@@ -1419,40 +1534,44 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "north_pacific_garbage_patch",
-      "title": "The North Pacific Garbage Patch"
+      "title": "The North Pacific Garbage Patch",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/06-fish-mortality",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "mortality chart · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "fish_mortality",
-      "title": "Fish mortality from plastics"
+      "title": "Fish mortality from plastics",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/07-plastic-seafood",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "seafood exposure · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "plastic_seafood",
-      "title": "Plastic in seafood"
+      "title": "Plastic in seafood",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/08-nitrogen-phosphorus",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "nutrient loads · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "nitrogen_phosphorus",
-      "title": "Nitrogen & phosphorus"
+      "title": "Nitrogen & phosphorus",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/09-phosphorus-increase",
@@ -1463,7 +1582,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "phosphorus_increase",
-      "title": "Increase in total phosphorus concentration in rivers and streams due to human…"
+      "title": "Increase in total phosphorus concentration in rivers and streams due to human…",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/10-nitrogen-increase",
@@ -1474,7 +1594,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "nitrogen_increase",
-      "title": "Increase in total nitrogen concentration in rivers and streams due to human a…"
+      "title": "Increase in total nitrogen concentration in rivers and streams due to human a…",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/11-chlorophyll-a-trend",
@@ -1485,18 +1606,20 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "chlorophyll_a_trend",
-      "title": "Chlorophyll-a trend, 1997-2021"
+      "title": "Chlorophyll-a trend, 1997-2021",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/12-chlorophyll-deviation",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "chlorophyll anomaly · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "chlorophyll_deviation",
-      "title": "Chlorophyll deviation"
+      "title": "Chlorophyll deviation",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/13-phytoplankton-blooms",
@@ -1507,29 +1630,32 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "phytoplankton_blooms",
-      "title": "Average yearly phytoplankton bloom count, 2002-2023"
+      "title": "Average yearly phytoplankton bloom count, 2002-2023",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_14/14-algal-blooms",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Oceans & plastics",
       "note": "bloom events · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "algal_blooms",
-      "title": "Algal blooms"
+      "title": "Algal blooms",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/00-land-use",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Life on land",
       "note": "agricultural / land use · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "land_use",
-      "title": "Land use"
+      "title": "Land use",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/01-arable-land-degradation",
@@ -1540,7 +1666,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "arable_land_degradation",
-      "title": "Arable land degradation"
+      "title": "Arable land degradation",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/02-aridity-classes",
@@ -1551,7 +1678,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "aridity_classes",
-      "title": "Global distribution of aridity classes"
+      "title": "Global distribution of aridity classes",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/03-aridity-difference",
@@ -1562,7 +1690,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "aridity_difference",
-      "title": "Most regions are getting more arid"
+      "title": "Most regions are getting more arid",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/04-new-drylands",
@@ -1573,7 +1702,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "new_drylands",
-      "title": "4.3 million km2 humid areas turned to drylands since 30 years ago"
+      "title": "4.3 million km2 humid areas turned to drylands since 30 years ago",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/05-image",
@@ -1584,7 +1714,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "05_image",
-      "title": "Consequences of increased aridity on ecosystems and land degradation"
+      "title": "Consequences of increased aridity on ecosystems and land degradation",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/06-aridity-biodiversity-map",
@@ -1595,18 +1726,20 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "aridity_biodiversity_map",
-      "title": "Where species are projected to lose their local habitat due to rising aridity"
+      "title": "Where species are projected to lose their local habitat due to rising aridity",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/07-protected-areas",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Life on land",
       "note": "protected areas series · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "protected_areas",
-      "title": "Protected areas"
+      "title": "Protected areas",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_15/08-image-2",
@@ -1617,40 +1750,44 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "08_image_2",
-      "title": "Protected areas remain productive under increasingly dry conditions"
+      "title": "Protected areas remain productive under increasingly dry conditions",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_16/00-ai-adoption",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Digital (goal_16 pack)",
       "note": "ChatGPT adoption · real CSV · digital suite · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "ai_adoption",
-      "title": "AI adoption"
+      "title": "AI adoption",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_16/01-affordability-barrier",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Digital (goal_16 pack)",
       "note": "income-group affordability · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "affordability_barrier",
-      "title": "Affordability barrier"
+      "title": "Affordability barrier",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_16/02-digital-language-divide",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Digital (goal_16 pack)",
       "note": "language coverage · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "digital_language_divide",
-      "title": "Digital language divide"
+      "title": "Digital language divide",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_16/03-digital-skills",
@@ -1661,18 +1798,20 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "digital_skills",
-      "title": "Digital skills by income"
+      "title": "Digital skills by income",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_16/04-exposure",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Digital (goal_16 pack)",
       "note": "exposure beeswarm · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "digital_exposure",
-      "title": "Digital exposure beeswarm"
+      "title": "Digital exposure beeswarm",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_17/00-survey-age",
@@ -1683,7 +1822,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "survey_age",
-      "title": "Many economies rely on survey data that are more than five years old"
+      "title": "Many economies rely on survey data that are more than five years old",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_17/01-nigeria-poverty-extrapolation",
@@ -1694,7 +1834,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "nigeria_poverty_extrapolation",
-      "title": "Nigeria’s rate of extreme poverty"
+      "title": "Nigeria’s rate of extreme poverty",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_17/02-missing-children-data-waffles",
@@ -1705,7 +1846,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "missing_children_data_waffles",
-      "title": "Key data are missing for millions of children "
+      "title": "Key data are missing for millions of children ",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_17/03-spi-scroller",
@@ -1716,7 +1858,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "spi_scroller",
-      "title": "Statistical performance varies widely across economies"
+      "title": "Statistical performance varies widely across economies",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_17/04-spi-gdp-scatter",
@@ -1727,7 +1870,8 @@
       "approved": true,
       "approvedAt": "2026-07-18",
       "graphic": "spi_gdp_scatter",
-      "title": "Income matters, but it is not destiny"
+      "title": "Income matters, but it is not destiny",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_99/00-basic-scatterplot",
@@ -1738,7 +1882,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "basic_scatterplot",
-      "title": "Global poverty could increase if current trends continue"
+      "title": "Global poverty could increase if current trends continue",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_99/01-poverty-projections",
@@ -1749,7 +1894,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "poverty_projections",
-      "title": "Global poverty projections (goal_99)"
+      "title": "Global poverty projections (goal_99)",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_99/02-basic-scatterplot-particles",
@@ -1760,29 +1906,32 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "basic_scatterplot_particles",
-      "title": "Affordability of a diet depends on cost and income"
+      "title": "Affordability of a diet depends on cost and income",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_dashboard/00-indicators-progress",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Dashboard",
       "note": "dashboard speeds · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "indicators_progress",
-      "title": "Indicators progress speeds"
+      "title": "Indicators progress speeds",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_dashboard/01-dashboard-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Dashboard",
       "note": "dashboard scenes · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "dashboard_scroller",
-      "title": "Dashboard scroller"
+      "title": "Dashboard scroller",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/00-image",
@@ -1793,7 +1942,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "00_image",
-      "title": "Types of credentials"
+      "title": "Types of credentials",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/01-image-2",
@@ -1804,7 +1954,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "01_image_2",
-      "title": "Adults with ID by region"
+      "title": "Adults with ID by region",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/02-image-3",
@@ -1815,7 +1966,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "02_image_3",
-      "title": "Foundational coverage"
+      "title": "Foundational coverage",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/03-image-4",
@@ -1826,7 +1978,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "03_image_4",
-      "title": "Population with and without ID"
+      "title": "Population with and without ID",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/04-image-5",
@@ -1837,7 +1990,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "04_image_5",
-      "title": "Indicators of lacking ID"
+      "title": "Indicators of lacking ID",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/05-image-6",
@@ -1848,7 +2002,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "05_image_6",
-      "title": "Gender gap"
+      "title": "Gender gap",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/06-image-7",
@@ -1859,7 +2014,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "06_image_7",
-      "title": "Barriers of lacking ID"
+      "title": "Barriers of lacking ID",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/07-image-8",
@@ -1870,7 +2026,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "07_image_8",
-      "title": "Barriers experienced"
+      "title": "Barriers experienced",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/08-image-9",
@@ -1881,7 +2038,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "08_image_9",
-      "title": "Digital ID issued"
+      "title": "Digital ID issued",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/09-image-10",
@@ -1892,7 +2050,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "09_image_10",
-      "title": "Digital ID ownership"
+      "title": "Digital ID ownership",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/10-image-11",
@@ -1903,7 +2062,8 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "10_image_11",
-      "title": "Digital ID usage"
+      "title": "Digital ID usage",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_id4d/11-image-12",
@@ -1914,40 +2074,44 @@
       "approved": true,
       "approvedAt": "2026-07-20",
       "graphic": "11_image_12",
-      "title": "Digital ID ownership and usage"
+      "title": "Digital ID ownership and usage",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_progress/00-poverty-progress-comparison",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Progress",
       "note": "slopecharts · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "poverty_progress_comparison",
-      "title": "Poverty progress comparison"
+      "title": "Poverty progress comparison",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_progress/01-poverty-rate-change-scroller",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Progress",
       "note": "rate change scroller · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "poverty_rate_change_scroller",
-      "title": "Poverty rate change"
+      "title": "Poverty rate change",
+      "status": "ready"
     },
     {
       "path": "chapters/goal_progress/02-projection-country",
       "tier": "B",
-      "fidelity": "pixel-perfect",
+      "fidelity": "tier-B-bulk",
       "label": "Progress",
       "note": "country projections · real CSV · Tier B hand (not bulk generator)",
-      "approved": true,
+      "approved": false,
       "approvedAt": "2026-07-20",
       "graphic": "projection_country",
-      "title": "Country poverty projections"
+      "title": "Country poverty projections",
+      "status": "ready"
     },
     {
       "path": "library/access-trends-scroller",
@@ -2037,5 +2201,9 @@
       "graphic": "value_beeswarm",
       "title": "Library · Value Beeswarm"
     }
-  ]
+  ],
+  "registryCount": 185,
+  "approvedCount": 103,
+  "pixelPerfectCount": 103,
+  "chapterQualitySource": "chapters/**/config.json#_meta"
 }

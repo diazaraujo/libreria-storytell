@@ -18,13 +18,13 @@
     {
       "type": "scene",
       "id": "nightlights12",
-      "text": "Let’s focus on Ethiopia’s [emphasis: rural areas only][footnote: Urban areas are left blank to focus on the nighttime lights view in rural areas.]and take a look at the nighttime lights view of 2012. The areas where at least <span style=\"color: rgb(255,255,255); background-color: rgb(129,176,225);\">some light</span> (weak or strong) was detected are shown in light blue, and areas where no nighttime light was detected, in <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark blue</span>. While western parts of rural Ethiopia had some nighttime lights coverage in 2012, eastern and southern rural Ethiopia remained largely in the dark.",
+      "text": "Let’s focus on Ethiopia’s [emphasis: rural areas only][footnote: Urban areas are left blank to focus on the nighttime lights view in rural areas.]and take a look at the nighttime lights view of 2012. The areas where at least <span style=\"color: rgb(4,1,16); background-color: rgb(129,176,225);\">some light</span> (weak or strong) was detected are shown in light blue, and areas where no nighttime light was detected, in <span style=\"color: rgb(255,255,255); background-color: rgb(0,34,81);\">dark blue</span>. While western parts of rural Ethiopia had some nighttime lights coverage in 2012, eastern and southern rural Ethiopia remained largely in the dark.",
       "translationPrefix": "goal_07.content.#27.scenes.#0"
     },
     {
       "type": "scene",
       "id": "nightlights12_powerlines",
-      "text": "The <span style=\"color: rgb(255,255,255); background-color: rgb(235,87,87);\">power grid lines</span> reached only a few rural areas in 2012. So how did the illuminated rural areas have access to electricity? About 75 percent of the [emphasis: rural population] in Ethiopia with access consumed electricity through[emphasis:  solar power.][reference: ethiopia_survey]",
+      "text": "The <span style=\"color: rgb(4,1,16); background-color: rgb(235,87,87);\">power grid lines</span> reached only a few rural areas in 2012. So how did the illuminated rural areas have access to electricity? About 75 percent of the [emphasis: rural population] in Ethiopia with access consumed electricity through[emphasis:  solar power.][reference: ethiopia_survey]",
       "translationPrefix": "goal_07.content.#27.scenes.#1"
     },
     {

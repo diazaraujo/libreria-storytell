@@ -1,0 +1,78 @@
+{
+ "slug": "artificial-intelligence",
+ "title": "Inequalities in Use of and Exposure to Artificial Intelligence",
+ "origin": "https://data360.worldbank.org/en/atlas/artificial-intelligence/",
+ "hero": {
+  "kicker": "Artificial Intelligence (AI)",
+  "title": "Inequalities in Use of and Exposure to Artificial Intelligence",
+  "lead": "Artificial Intelligence is reshaping the world, but the digital shift is filtering slowly to the global poor. While wealthy nations race ahead, high costs and a lack of digital skills leave billions behind. In poorer countries, the workplace remains mostly untouched by AI, threatening to turn a technological leap into a permanent global divide.",
+  "byline": "May 2026, Story by <span class=\"font-semibold\">Daniel Gerszon Mahler, He Wang &amp; Michael Weber</span>, Visuals by <span class=\"font-semibold\">Jan Willem Tulp</span>",
+  "bg": "#071a3d",
+  "particles": {
+   "color": "#f06a5a",
+   "count": 900,
+   "opacity": 0.82,
+   "mode": "world",
+   "centroidsUrl": "../../library/particles-world/centroids.json"
+  }
+ },
+ "blocks": [
+  {
+   "id": "diffusion",
+   "type": "prose",
+   "html": "<h3>The diffusion of AI</h3><p>AI is a rapidly spreading transformative technology that can be defined as a branch of computer science dedicated to creating systems capable of performing tasks that typically require human intelligence.<sup><a href=\"#ref-1\">1</a></sup> It has the potential to fundamentally shift the way we learn, work, and live our daily lives. The unprecedented pace of AI adoption also holds immense potential for accelerating global development and improving living standards, by boosting growth,<sup><a href=\"#ref-2\">2</a></sup> personalizing education,<sup><a href=\"#ref-3\">3</a></sup> and transforming the agricultural sector.<sup><a href=\"#ref-4\">4</a></sup> But the spread of AI is far from even.</p><p>Measuring the use of AI is a challenge, partly due to the many possible ways of interacting with AI and the speed with which this is changing. High-frequency website traffic data reveals a great divergence in the use of AI across countries. Although this is partly due to greater internet penetration in wealthier nations, AI use per internet user is also much greater in wealthier nations. Focusing on the most-used AI platform, ChatGPT, as of May 2025, visits per internet user in high-income countries was nearly 50 times that of low-income countries, 8 times that of lower-middle income countries, and 3 times that of upper-middle income countries.<sup><a href=\"#ref-5\">5</a></sup><sup><a href=\"#ref-6\">6</a></sup></p><blockquote class=\"ch-callout\"><p>Visits to ChatGPT per internet user is <strong>50 times</strong> greater in high-income countries than in low-income countries, as of May 2025.</p></blockquote>"
+  },
+  {
+   "id": "ai-adoption",
+   "type": "vis",
+   "chapterDir": "goal_16/00-ai-adoption"
+  },
+  {
+   "id": "barriers",
+   "type": "prose",
+   "html": "<p>This discrepancy is partly due to the use of different AI platforms around the world. For example, OpenAI, the company behind ChatGPT, is less present in China, where other companies dominate. Measures that account for multiple platforms also find that in most Sub-Saharan African countries, less than 10 percent of the working-age population uses AI.<sup><a href=\"#ref-7\">7</a></sup> Evidence from Anthropic, the company behind the AI assistant, Claude, also suggests that country usage is lowest in poorer countries, which have usage scores 10 times smaller than high-income countries.<sup><a href=\"#ref-8\">8</a></sup></p><h3>What is holding back AI adoption?</h3><p>The disparity in AI adoption is not accidental. Rather, it is rooted in difficult development challenges. The World Bank's <a href=\"https://www.worldbank.org/en/publication/dptr2025-ai-foundations\" target=\"_blank\" rel=\"external\">Digital Progress and Trends Report 2025</a> finds that to fully benefit from AI, countries need four things: reliable and affordable internet connectivity, local data that make AI tools useful and accurate, a digitally skilled population, and enough computing power. Without these elements in place, the promise of AI could remain out of reach for a significant portion of the world's population. Let's take a look at each of these in more detail.</p><h4>Connectivity and affordability</h4><p>Inadequate internet infrastructure is a primary barrier to AI adoption in low- and middle-income countries.<sup><a href=\"#ref-9\">9</a></sup> The absence of fiber networks means that many rural and low-income populations have to rely on mobile devices. But even among those with internet access over phones, usage remains low. This is partly because data packages are prohibitively costly for many in poorer countries, where a data-only 5GB mobile package costs more than 15 percent of the average person's total budget. With around 60 percent of the household budget allocated to food in these countries,<sup><a href=\"#ref-10\">10</a></sup> a data package would take up nearly half of the remaining budget.</p><blockquote class=\"ch-callout\"><p>In low-income countries, a data-only 5GB mobile package would take up <strong>nearly half</strong> of a household's remaining budget after food consumption.</p></blockquote><p>As a result, many households in low‑income countries face a trade‑off between affording a 5 GB data package and spending on essentials such as health care, education, or clothing.</p>"
+  },
+  {
+   "id": "affordability",
+   "type": "vis",
+   "chapterDir": "goal_16/01-affordability-barrier"
+  },
+  {
+   "id": "small-ai-language",
+   "type": "prose",
+   "html": "<p>The relatively high cost of mobile phone data and the difficulty of creating fiber networks in low- and middle-income countries underscore the importance of Small AI – lightweight applications optimized for mobile-first environments that can function with limited or intermittent connectivity. For example, agricultural AI tools that identify crop diseases from a photo can perform their core analysis on-device, minimizing data usage and making them viable for farmers in remote areas.<sup><a href=\"#ref-11\">11</a></sup></p><h4>The digital divide in language</h4><p>Large language models are AI systems built on vast datasets that predict and generate human-like text. These models are only effective when they have a good understanding of a language. And the digital world is dominated by English, which accounts for nearly half of global URLs and a disproportionate share of the high-quality text data used to build leading AI models. While substantial datasets exist for other languages spoken in high-income countries, there is a significant deficit for languages that are primarily spoken in low and middle-income countries. Consequently, AI models often lack the accuracy and nuance needed to be useful in these contexts.<sup><a href=\"#ref-12\">12</a></sup> This limits the utility of AI tools and perpetuates a digital world where only a fraction of global cultures and languages are well represented. If AI is to be a universal tool, it must learn to navigate the world's full linguistic map.<sup><a href=\"#ref-13\">13</a></sup></p>"
+  },
+  {
+   "id": "language-divide",
+   "type": "vis",
+   "chapterDir": "goal_16/02-digital-language-divide"
+  },
+  {
+   "id": "competency",
+   "type": "prose",
+   "html": "<h4>Competency: the human capital gap</h4><p>Effective use of AI requires digital literacy. Basic skills are necessary for adopting AI tools, while advanced skills determine adaptation to local contexts and advancement toward the frontier of AI applications. But there is a global deficit in digital skills, particularly in low- and middle-income countries. In 2023, it was estimated that less than five percent of the population of low-income countries used basic digital devices and services such as email communication, web search, and online transactions.<sup><a href=\"#ref-14\">14</a></sup></p><blockquote class=\"ch-callout ch-callout-number\"><p><span class=\"num-xl\">5%</span> <span class=\"num-md\">of the population</span></p><p>of low-income countries had basic digital skills in 2023</p></blockquote><p>The gap is even more severe for advanced skills related to data analysis, software development, and high-level computing competences with AI systems. Without a concerted effort to build digital skills at all levels of the education system and retain local talent, poorer countries risk being unable to move from passive AI consumers to active participants and creators in the AI economy.</p>"
+  },
+  {
+   "id": "digital-skills",
+   "type": "vis",
+   "chapterDir": "goal_16/03-digital-skills"
+  },
+  {
+   "id": "computing-exposure",
+   "type": "prose",
+   "html": "<h4>Computing power</h4><p>A lack of AI, memory, and storage chips, needed to build servers, constrains computing power in many poorer countries. As of June 2025, high-income countries accounted for 77 percent of global data center capacity, middle-income countries for 23 percent, and low-income countries for less than 0.1 percent.<sup><a href=\"#ref-1\">1</a></sup> On a per capita basis, the United States had 20,000 times as many servers as low-income countries and 200 times as many as middle-income countries.<sup><a href=\"#ref-1\">1</a></sup> High entry costs, a lack of energy, and digital infrastructure constraints often deter private investment in poorer countries. Fortunately, computing power is highly tradable across countries. With access from other nations, poor countries can use AI without having national computing power.</p><h3>Exposure to AI at work</h3><p>There is a direct link between this lack of use of AI in low- and middle-income countries and a lack of exposure to AI at work.<sup><a href=\"#ref-15\">15</a></sup> Exposure to AI allows some tasks to be augmented by AI, which can increase workers' productivity, while other tasks may become fully automated, reducing demand for some jobs. Whichever it is, high exposure suggests that the nature of jobs is likely to change.</p><p>One approach to measuring workers' exposure is the AI Occupational Exposure (AIOE) index, which links human job tasks to various AI capabilities.<sup><a href=\"#ref-16\">16</a></sup> It uses a detailed database of occupations to determine how much of a person's daily work duties overlap with current AI capabilities. By analyzing these connections, the index identifies which jobs are most likely to be affected or assisted by AI. The scale ranges from 0 to 100, where 0 represents an occupation with no tasks suitable for AI and 100 indicates a role where every task is fully exposed to AI capabilities. Although the capabilities of AI have expanded significantly since this index was built, recent usage data are broadly consistent with the index, showing that AI use is closely aligned with the occupations most exposed to AI according to the index.<sup><a href=\"#ref-15\">15</a></sup><sup><a href=\"#ref-i\">i</a></sup></p>"
+  },
+  {
+   "id": "exposure",
+   "type": "scroller",
+   "chapterDir": "goal_16/04-exposure",
+   "scenesFromChapter": true,
+   "vhPerScene": 0.9
+  },
+  {
+   "id": "path-forward",
+   "type": "prose",
+   "html": "<p>The difference between exposure in poor and rich countries is likely underestimated for two reasons. First, many people in poorer countries do not have access to the internet or computers at home or work. Even if their occupational tasks could be exposed to AI, in practice, they are not.<sup><a href=\"#ref-19\">19</a></sup> Second, the tasks associated with an occupation differ in rich and poor countries. The AIOE Index is based on the tasks associated with occupations in the United States. In poorer countries, similar occupations are likely to involve tasks with less AI exposure.</p><p>AI exposure also varies notably within countries, and is heavily concentrated among urban populations, with city dwellers facing much higher exposure than those in rural areas due to the nature of urban employment. Education is the strongest predictor of exposure, as individuals with post-secondary degrees occupy roles with high cognitive task intensity that are most susceptible to AI integration. A notable gender gap exists, with women generally experiencing higher exposure than men, largely because they are more concentrated in clerical, professional, and service roles.<sup><a href=\"#ref-20\">20</a></sup><sup><a href=\"#ref-21\">21</a></sup> Understanding these differences in exposure is vital to anticipate how AI will transform the labor market, and the socioeconomic consequences of this transformation.</p><p>In middle-income countries, AI usage is highly concentrated among a few professions. Here, ICT workers and teachers account for nearly three-quarters of all AI usage, whereas in high-income countries, there is a much broader spread. This concentration reinforces the impact of foundational barriers, as adoption remains restricted to workers with the strongest digital access and text-heavy tasks.<sup><a href=\"#ref-15\">15</a></sup></p><h3>Navigating the path forward</h3><p>Although the rise of AI offers a powerful engine for productivity and human development, it also threatens to deepen inequalities between and within countries. The impact of AI on jobs remains a subject of intense debate, with the future likely to involve a complex mix of both augmentation, where AI enhances human capabilities, and automation, where AI replaces certain tasks. Until now, the direct impact on the poorest countries has been limited by structural barriers and predominant occupations. As AI adoption follows a predictable diffusion pattern—starting with ICT professionals and spreading outward to other sectors—it offers a window for proactive policy.</p><p>For low- and middle-income countries, the path forward involves a dual strategy. First, governments can strengthen foundational pillars by investing in the essentials, such as affordable internet, data infrastructure, and digital skills. And second, they can build the bedrock for Small AI, which does not require massive infrastructure or cutting-edge servers but flourishes instead on smaller, local datasets and is fine-tuned to address immediate challenges. By focusing on solutions that can run on everyday smartphones using minimal resources, poorer countries can harness AI to create tangible impact in key sectors, such as public health, agriculture, and education.</p>"
+  }
+ ]
+}

@@ -14,7 +14,16 @@ The World Bank ships a **minified production build**, not source. True 1:1 for e
 
 **Source of truth:** [`docs/APPROVED_PIXEL_PERFECT.md`](./APPROVED_PIXEL_PERFECT.md) · [`docs/APPROVED_PIXEL_PERFECT.json`](./APPROVED_PIXEL_PERFECT.json)
 
-**185 items** marked `_meta.fidelity = "pixel-perfect"` + `_meta.approved = true` (see `APPROVED_PIXEL_PERFECT.md`):
+El registry contiene **185 registros**. Actualmente **103** tienen `fidelity: pixel-perfect` y `approved: true`: **82 capítulos** cuya fuente canónica es `config.json#_meta`, más **21** heroes/librerías/artefactos no-capítulo. `fidelity` y `approved` son campos distintos, aunque la política exige pixel-perfect para aprobar.
+
+| Calidad de capítulos | Conteo |
+|----------------------|-------:|
+| `status: ready` | 164 |
+| `fidelity: pixel-perfect`, `approved: true` | 82 |
+| `fidelity: tier-B-bulk`, `approved: false` | 79 |
+| `fidelity: unverified`, `approved: false` | 3 |
+
+Los siguientes grupos son una selección histórica de trabajo de alta fidelidad, no un conteo exhaustivo del registry:
 
 | Group | Count | Notes |
 |-------|------:|-------|
@@ -80,7 +89,7 @@ Water values validated against the original recording (AFG ~30.6, IRL ~96.1, MMR
 
 **Full index:** `/_ready/all-chapters.html` (164 graphics)
 
-**QA (2026-07-18):** `node qa-pass.mjs --status ready` → **164/164 OK**
+**QA reproducible:** `npm test` cubre parser, 21 contratos y las regresiones semánticas críticas. `node qa-pass.mjs --status ready` sigue siendo el pase visual y debe reportarse con fecha/artefactos; no convierte automáticamente un capítulo en aprobado.
 
 ### Chapter hubs
 

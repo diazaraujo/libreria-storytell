@@ -1,9 +1,8 @@
 {
-  "fidelity": "pixel-perfect",
-  "approved": true,
-  "approvedAt": "2026-07-20",
+  "fidelity": "tier-B-bulk",
+  "approved": false,
   "tier": "B",
-  "note": "regional schooling series \u00b7 real CSV \u00b7 Tier B hand (not bulk generator)",
+  "note": "regional schooling series · real CSV · Tier B hand (not bulk generator)",
   "graphic": "schooling_regions",
   "title": "Schooling by region"
 }

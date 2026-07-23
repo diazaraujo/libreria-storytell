@@ -20,6 +20,20 @@
   "languageHighlightEnglish": "English",
   "languageHighlightChinese": "Chinese",
   "translationPrefix": "goal_16.content.#20",
+  "scenes": [],
+  "dataContract": {
+    "kind": "representation-gap",
+    "file": "language.csv",
+    "columns": {
+      "code": "language_code",
+      "category": "language_name",
+      "speakers": "n_speakers",
+      "speakerPercent": "speaker_percent",
+      "urls": "url_count",
+      "urlPercent": "url_percent",
+      "incomeGroup": "dominant_incgroup"
+    }
+  },
   "_meta": {
     "index": 136,
     "chapterId": "16",
@@ -28,7 +42,7 @@
     "status": "ready",
     "template": "vis",
     "reference": null,
-    "fidelity": "tier-B-bulk"
-  },
-  "scenes": []
+    "fidelity": "tier-B-bulk",
+    "approved": false
+  }
 }
