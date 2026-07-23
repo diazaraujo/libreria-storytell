@@ -44,6 +44,48 @@ function loadEnv() {
   }
 }
 
+// ── Guarda de gasto ──────────────────────────────────────────────────────
+// Firecrawl cobra por scrape/agent. Esta guarda muestra un WARNING y exige
+// confirmación ANTES de cualquier llamada que consuma créditos. Fail-safe:
+// en sesión no interactiva aborta salvo --yes / FIRECRAWL_CONFIRM=1.
+// Los comandos que NO gastan (credits/gallery/help) nunca pasan por acá.
+async function confirmFirecrawlSpend(action, target) {
+  const argv = process.argv.slice(2);
+  const assumeYes =
+    argv.includes("--yes") ||
+    argv.includes("-y") ||
+    process.env.FIRECRAWL_CONFIRM === "1" ||
+    process.env.FIRECRAWL_YES === "1";
+  process.stderr.write(
+    `\n\x1b[33m⚠️  FIRECRAWL — esto CONSUME créditos de pago\x1b[0m\n` +
+      `   acción: ${action}\n` +
+      (target ? `   url:    ${target}\n` : "")
+  );
+  if (assumeYes) {
+    process.stderr.write("   confirmado (--yes / FIRECRAWL_CONFIRM=1)\n\n");
+    return;
+  }
+  if (!process.stdin.isTTY) {
+    process.stderr.write(
+      "\x1b[31m   Abortado: sesión no interactiva y sin --yes / FIRECRAWL_CONFIRM=1.\x1b[0m\n\n"
+    );
+    process.exit(1);
+  }
+  const rl = (await import("node:readline/promises")).createInterface({
+    input: process.stdin,
+    output: process.stderr,
+  });
+  const ans = (await rl.question("   ¿Continuar y gastar créditos? [y/N] "))
+    .trim()
+    .toLowerCase();
+  rl.close();
+  if (!["y", "yes", "s", "si", "sí"].includes(ans)) {
+    process.stderr.write("\x1b[31m   Cancelado — no se llamó a Firecrawl.\x1b[0m\n\n");
+    process.exit(0);
+  }
+  process.stderr.write("\n");
+}
+
 function resolveUrl(arg) {
   if (!arg) return SLUGS["electricity-access"];
   if (arg.startsWith("http")) return arg;
@@ -128,7 +170,8 @@ ${cards || "<p>Sin capturas aún.</p>"}
 
 async function main() {
   loadEnv();
-  const [cmd, target] = process.argv.slice(2);
+  const positional = process.argv.slice(2).filter((a) => !a.startsWith("-"));
+  const [cmd, target] = positional;
   if (!cmd || cmd === "help" || cmd === "-h") {
     console.log(`Firecrawl API helper
 
@@ -161,6 +204,10 @@ async function main() {
 
   const url = resolveUrl(target);
   const slug = slugFromUrl(url);
+
+  // scrape y agent gastan créditos → warning + confirmación
+  if (cmd === "scrape" || cmd === "agent") await confirmFirecrawlSpend(cmd, url);
+
   const dir = path.join(OUT, slug);
   fs.mkdirSync(dir, { recursive: true });
 
