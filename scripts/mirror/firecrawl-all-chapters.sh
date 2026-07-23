@@ -24,9 +24,21 @@ SLUGS=(
   measuring-progress
 )
 
+# Warning + confirmación única (esto scrapea los 13 capítulos = 13 llamadas de pago)
+if [[ "${FIRECRAWL_CONFIRM:-}" != "1" ]]; then
+  printf '\n\033[33m⚠️  FIRECRAWL — vas a scrapear %s capítulos (CONSUME créditos de pago).\033[0m\n' "${#SLUGS[@]}"
+  if [[ -t 0 ]]; then
+    read -r -p "   ¿Continuar? [y/N] " ans </dev/tty || ans=""
+    case "$ans" in y|Y|s|S|yes|si|sí) ;; *) echo "   Cancelado."; exit 0 ;; esac
+  else
+    echo "   Abortado: no interactivo y sin FIRECRAWL_CONFIRM=1." >&2
+    exit 1
+  fi
+fi
+
 for s in "${SLUGS[@]}"; do
   echo "=== Firecrawl $s ==="
-  node firecrawl-api.mjs scrape "$s" || echo "WARN: failed $s"
+  node firecrawl-api.mjs scrape "$s" --yes || echo "WARN: failed $s"
 done
 
 echo "Done → $ROOT/recordings/firecrawl/"

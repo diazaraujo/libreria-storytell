@@ -48,6 +48,46 @@ const SLUGS = {
   "measuring-progress": "https://data360.worldbank.org/en/atlas/measuring-progress/",
 };
 
+// ── Guarda de gasto ──────────────────────────────────────────────────────
+// Firecrawl cobra por cada scrape. Warning + confirmación ANTES de la llamada.
+// Fail-safe: en sesión no interactiva aborta salvo --yes / FIRECRAWL_CONFIRM=1.
+async function confirmFirecrawlSpend(action, target) {
+  const argv = process.argv.slice(2);
+  const assumeYes =
+    argv.includes("--yes") ||
+    argv.includes("-y") ||
+    process.env.FIRECRAWL_CONFIRM === "1" ||
+    process.env.FIRECRAWL_YES === "1";
+  process.stderr.write(
+    `\n\x1b[33m⚠️  FIRECRAWL — esto CONSUME créditos de pago\x1b[0m\n` +
+      `   acción: ${action}\n` +
+      (target ? `   url:    ${target}\n` : "")
+  );
+  if (assumeYes) {
+    process.stderr.write("   confirmado (--yes / FIRECRAWL_CONFIRM=1)\n\n");
+    return;
+  }
+  if (!process.stdin.isTTY) {
+    process.stderr.write(
+      "\x1b[31m   Abortado: sesión no interactiva y sin --yes / FIRECRAWL_CONFIRM=1.\x1b[0m\n\n"
+    );
+    process.exit(1);
+  }
+  const rl = (await import("node:readline/promises")).createInterface({
+    input: process.stdin,
+    output: process.stderr,
+  });
+  const ans = (await rl.question("   ¿Continuar y gastar créditos? [y/N] "))
+    .trim()
+    .toLowerCase();
+  rl.close();
+  if (!["y", "yes", "s", "si", "sí"].includes(ans)) {
+    process.stderr.write("\x1b[31m   Cancelado — no se llamó a Firecrawl.\x1b[0m\n\n");
+    process.exit(0);
+  }
+  process.stderr.write("\n");
+}
+
 function parseArgs(argv) {
   const args = { slug: "electricity-access", url: null, list: false, waitMs: 4000 };
   for (let i = 2; i < argv.length; i++) {
@@ -112,6 +152,9 @@ Do NOT paste the key into chat or commit it.`);
 
   const dir = path.join(OUT, slug);
   fs.mkdirSync(dir, { recursive: true });
+
+  // scrape gasta créditos → warning + confirmación
+  await confirmFirecrawlSpend("scrape", url);
 
   console.log(`Firecrawl scrape (live origin)\n  url: ${url}\n  out: ${dir}`);
 
