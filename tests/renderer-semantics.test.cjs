@@ -789,3 +789,28 @@ test("fossil subsidy scrollers render every scene through the shared renderer", 
     });
   }
 });
+
+test("story placeholders interpolate against datasets and fail visibly", () => {
+  const previousWindow = global.window;
+  global.window = {};
+  try {
+    delete require.cache[require.resolve("../shared/story-mount.js")];
+    require("../shared/story-mount.js");
+    const M = global.window.AtlasStoryMount;
+    const context = {
+      d: { s: { total: 6899, solo1: 1440 }, rows: [{ m: 10 }, { m: 20 }] },
+      fmt: (n) => Number(n).toLocaleString("es-CL"),
+      pct: (a, b, digits = 0) => (100 * a / b).toFixed(digits).replace(".", ","),
+      sum: (rows, col) => rows.reduce((s, r) => s + (Number(r[col]) || 0), 0),
+    };
+    assert.equal(
+      M.interpolate("{{fmt(d.s.total)}} · {{pct(d.s.solo1, d.s.total)}}% · {{sum(d.rows, 'm')}}", context),
+      "6.899 · 21% · 30"
+    );
+    assert.match(M.interpolate("{{d.nope.x}}", context), /⚠\{\{d\.nope\.x\}\}/);
+    assert.equal(M.interpolate("sin placeholders", context), "sin placeholders");
+  } finally {
+    if (previousWindow === undefined) delete global.window;
+    else global.window = previousWindow;
+  }
+});

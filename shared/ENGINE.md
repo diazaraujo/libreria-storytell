@@ -96,3 +96,26 @@ pre-built `story` object.
   site mount (URL rewriting handles chapter-relative fetches).
 - Keep prose in `story.json` (or `proseFile` per block) — the engine owns
   layout and scene choreography only.
+
+## Calculated prose (placeholders)
+
+Declare datasets at the story level and interpolate `{{expr}}` anywhere in
+prose html, hero text, key facts, titles, sources, or scene text — numbers
+always come from data at load time:
+
+```jsonc
+{
+  "datasets": { "s": "./data/stats.json", "ofertas": "./data/ofertas.csv" },
+  "blocks": [{ "type": "prose",
+    "html": "<p>De {{fmt(d.s.total)}} licitaciones, {{fmt(d.s.solo1)}} ({{pct(d.s.solo1, d.s.total)}}%) recibieron una oferta o ninguna.</p>" }]
+}
+```
+
+Context inside `{{…}}`: `d.<name>` (parsed JSON, or CSV rows), plus helpers
+`fmt(n)` (es-CL thousands), `pct(a, b, digits=0)` (comma decimal),
+`clp(n)`, `sum(rows, col)`. A failing or empty expression renders visibly
+as `⚠{{expr}}` and logs to console — broken references cannot hide.
+
+Recommended pattern: the same committed script that derives the story's
+CSVs also emits a `stats.json` with every figure the prose cites, so text
+and data are regenerated together and can never diverge.

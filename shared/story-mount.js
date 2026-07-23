@@ -34,6 +34,57 @@
       && !url.startsWith("blob:");
   }
 
+  // {{expr}} placeholders in prose/scene/hero text, evaluated against the
+  // story's declared datasets (story.datasets: {name: url}). Numbers come
+  // from data at load time, never hardcoded prose. A failing expression
+  // renders visibly as ⚠ so stale or broken references cannot hide.
+  function interpolate(text, context) {
+    if (typeof text !== "string" || !text.includes("{{")) return text;
+    return text.replace(/\{\{([^}]+)\}\}/g, (raw, expr) => {
+      try {
+        const fn = new Function(...Object.keys(context), `return (${expr});`);
+        const value = fn(...Object.values(context));
+        if (value === undefined || value === null || Number.isNaN(value)) {
+          throw new Error("empty result");
+        }
+        return String(value);
+      } catch (error) {
+        console.error(`story placeholder failed: {{${expr}}}`, error);
+        return `⚠{{${expr}}}`;
+      }
+    });
+  }
+
+  const FMT = {
+    fmt: (n) => Number(n).toLocaleString("es-CL"),
+    pct: (a, b, digits = 0) => (100 * a / b).toFixed(digits).replace(".", ","),
+    clp: (n) => "$" + Number(n).toLocaleString("es-CL"),
+    sum: (rows, col) => rows.reduce((s, r) => s + (Number(r[col]) || 0), 0),
+  };
+
+  async function loadDatasets(story) {
+    const d = {};
+    for (const [name, url] of Object.entries(story.datasets || {})) {
+      d[name] = url.endsWith(".json")
+        ? await (await fetch(url)).json()
+        : await AtlasLoad.csv(url);
+    }
+    return d;
+  }
+
+  function interpolateStory(story, d) {
+    const context = { d, ...FMT };
+    const walk = (obj, keys) => {
+      for (const k of keys) if (obj && obj[k]) obj[k] = interpolate(obj[k], context);
+    };
+    walk(story.hero || {}, ["lead", "title", "byline"]);
+    (story.hero?.keyFacts || []).forEach((f) => walk(f, ["value", "label"]));
+    for (const b of story.blocks) {
+      walk(b, ["html", "title", "subtitle", "source"]);
+      (b.scenes || []).forEach((s) => walk(s, ["text"]));
+    }
+  }
+
   function columnAccessors(options) {
     // Declarative blocks name columns in JSON; components expect accessors.
     const out = {};
@@ -51,6 +102,9 @@
 
   async function prepare(story, opts) {
     const chaptersRoot = (opts && opts.chaptersRoot) || DEFAULT_CHAPTERS_ROOT;
+    if (story.datasets) {
+      interpolateStory(story, await loadDatasets(story));
+    }
     const replicas = {};
     const configs = {};
     const chapterBlocks = story.blocks.filter((b) => b.chapterDir);
@@ -156,6 +210,8 @@
   }
 
   global.AtlasStoryMount = {
+    interpolate,
+    interpolateStory,
     async mount(container, opts) {
       const storyUrl = (opts && opts.storyUrl) || "./story.json";
       const story = (opts && opts.story)
